@@ -241,21 +241,82 @@
         .overall-score .score { font-size: 3rem; font-weight: 700; }
         .overall-score .label { opacity: 0.9; }
         
+        /* Category Summary Cards */
+        .category-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .category-card {
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .category-card.spirit { background: var(--spirit-light); }
+        .category-card.soul { background: var(--soul-light); }
+        .category-card.body { background: var(--body-light); }
+        .category-card .cat-name {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .category-card.spirit .cat-name { color: #553c9a; }
+        .category-card.soul .cat-name { color: #2b6cb0; }
+        .category-card.body .cat-name { color: #276749; }
+        .category-card .cat-score {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+        .category-card.spirit .cat-score { color: var(--spirit); }
+        .category-card.soul .cat-score { color: var(--soul); }
+        .category-card.body .cat-score { color: var(--body); }
+        .category-card .cat-level {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        
+        /* Category Groups in Conclusion */
+        .category-group {
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            font-weight: 600;
+        }
+        .category-header.spirit { background: var(--spirit-light); color: #553c9a; }
+        .category-header.soul { background: var(--soul-light); color: #2b6cb0; }
+        .category-header.body { background: var(--body-light); color: #276749; }
+        .category-header .cat-avg {
+            font-size: 1.1rem;
+        }
+        .category-dimensions {
+            padding: 8px 16px;
+        }
+        
         .score-row {
             display: flex;
             align-items: center;
-            padding: 12px 0;
+            padding: 10px 0;
             border-bottom: 1px solid var(--border);
         }
         .score-row:last-child { border-bottom: none; }
-        .score-row .name { flex: 1; font-weight: 500; }
+        .score-row .name { flex: 1; font-weight: 500; font-size: 0.9rem; }
         .score-row .bar-container {
             flex: 2;
-            height: 24px;
+            height: 20px;
             background: var(--bg);
             border-radius: 4px;
             overflow: hidden;
-            margin: 0 16px;
+            margin: 0 12px;
         }
         .score-row .bar {
             height: 100%;
@@ -263,9 +324,10 @@
             transition: width 0.5s ease;
         }
         .score-row .value { 
-            width: 60px; 
+            width: 50px; 
             text-align: right; 
             font-weight: 600;
+            font-size: 0.9rem;
         }
         
         .level-crisis { background: var(--crisis); }
@@ -273,6 +335,21 @@
         .level-maintaining { background: var(--maintaining); }
         .level-target { background: var(--target); }
         .level-exceptional { background: var(--exceptional); }
+        
+        /* Category Insight Box */
+        .category-insight {
+            padding: 16px;
+            background: var(--bg);
+            border-radius: 8px;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--primary);
+        }
+        .category-insight .insight-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .category-insight .strongest { color: var(--target); font-weight: 500; }
+        .category-insight .weakest { color: var(--crisis); font-weight: 500; }
         
         .recommendation {
             padding: 20px;
@@ -296,6 +373,16 @@
             font-weight: 600;
             font-size: 1.1rem;
         }
+        .recommendation .cat-tag {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .recommendation .cat-tag.spirit { background: var(--spirit-light); color: #553c9a; }
+        .recommendation .cat-tag.soul { background: var(--soul-light); color: #2b6cb0; }
+        .recommendation .cat-tag.body { background: var(--body-light); color: #276749; }
         .recommendation .score-badge {
             float: right;
             padding: 4px 12px;
@@ -346,7 +433,7 @@
         
         .chart-container {
             position: relative;
-            height: 400px;
+            height: 350px;
             margin: 20px 0;
         }
         
@@ -410,8 +497,9 @@
             .card { padding: 20px; }
             .tabs { overflow-x: auto; }
             .tab { padding: 12px 16px; white-space: nowrap; }
-            .chart-container { height: 300px; }
+            .chart-container { height: 280px; }
             .dimension-list { grid-template-columns: 1fr; }
+            .category-summary { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -423,13 +511,11 @@
             
             <div class="wheel-container">
                 <svg class="wheel-svg" viewBox="0 0 300 300" width="300" height="300">
-                    <!-- Background circle -->
                     <circle cx="150" cy="150" r="140" fill="none" stroke="#e2e8f0" stroke-width="2"/>
                     <circle cx="150" cy="150" r="105" fill="none" stroke="#e2e8f0" stroke-width="1"/>
                     <circle cx="150" cy="150" r="70" fill="none" stroke="#e2e8f0" stroke-width="1"/>
                     <circle cx="150" cy="150" r="35" fill="none" stroke="#e2e8f0" stroke-width="1"/>
                     
-                    <!-- Spokes -->
                     <g stroke="#e2e8f0" stroke-width="1">
                         <line x1="150" y1="150" x2="150" y2="10"/>
                         <line x1="150" y1="150" x2="254" y2="60"/>
@@ -442,50 +528,35 @@
                         <line x1="150" y1="150" x2="105" y2="17"/>
                     </g>
                     
-                    <!-- Category arcs -->
-                    <!-- Spirit (top 3 - purple) -->
                     <path d="M 150 10 A 140 140 0 0 1 254 60" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 254 60 A 140 140 0 0 1 286 150" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 105 17 A 140 140 0 0 1 150 10" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     
-                    <!-- Soul (middle 3 - blue) -->
                     <path d="M 286 150 A 140 140 0 0 1 254 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 254 240 A 140 140 0 0 1 150 290" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 150 290 A 140 140 0 0 1 46 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     
-                    <!-- Body (bottom 3 - green) -->
                     <path d="M 46 240 A 140 140 0 0 1 14 150" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 14 150 A 140 140 0 0 1 46 60" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 46 60 A 140 140 0 0 1 105 17" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     
-                    <!-- Dimension labels -->
-                    <!-- Spirit dimensions -->
                     <text x="150" y="28" text-anchor="middle" class="wheel-label" fill="#805ad5">Connection</text>
                     <text x="150" y="38" text-anchor="middle" class="wheel-label-small" fill="#805ad5">to God</text>
-                    
                     <text x="248" y="55" text-anchor="middle" class="wheel-label" fill="#805ad5">Conscience</text>
-                    
                     <text x="275" y="135" text-anchor="start" class="wheel-label" fill="#805ad5">Purpose</text>
                     <text x="275" y="145" text-anchor="start" class="wheel-label-small" fill="#805ad5">/Calling</text>
                     
-                    <!-- Soul dimensions -->
                     <text x="270" y="195" text-anchor="start" class="wheel-label" fill="#3182ce">Mind</text>
-                    
                     <text x="230" y="255" text-anchor="middle" class="wheel-label" fill="#3182ce">Will</text>
-                    
                     <text x="150" y="285" text-anchor="middle" class="wheel-label" fill="#3182ce">Emotions</text>
                     
-                    <!-- Body dimensions -->
                     <text x="55" y="255" text-anchor="middle" class="wheel-label" fill="#38a169">Fuel &amp;</text>
                     <text x="55" y="265" text-anchor="middle" class="wheel-label-small" fill="#38a169">Recovery</text>
-                    
                     <text x="25" y="165" text-anchor="start" class="wheel-label" fill="#38a169">Capacity</text>
                     <text x="25" y="175" text-anchor="start" class="wheel-label-small" fill="#38a169">&amp; Function</text>
-                    
                     <text x="60" y="50" text-anchor="middle" class="wheel-label" fill="#38a169">Health &amp;</text>
                     <text x="60" y="60" text-anchor="middle" class="wheel-label-small" fill="#38a169">Wholeness</text>
                     
-                    <!-- Center text -->
                     <text x="150" y="145" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3748">DISCIPLINE</text>
                     <text x="150" y="160" text-anchor="middle" font-size="8" fill="#718096">Layer 4</text>
                 </svg>
@@ -582,6 +653,25 @@
                     <div class="score" id="overall-score">0.0</div>
                     <div class="label" id="overall-level">Overall Score</div>
                 </div>
+                
+                <div class="category-summary">
+                    <div class="category-card spirit">
+                        <div class="cat-name">Spirit</div>
+                        <div class="cat-score" id="cat-spirit-score">0.0</div>
+                        <div class="cat-level" id="cat-spirit-level">-</div>
+                    </div>
+                    <div class="category-card soul">
+                        <div class="cat-name">Soul</div>
+                        <div class="cat-score" id="cat-soul-score">0.0</div>
+                        <div class="cat-level" id="cat-soul-level">-</div>
+                    </div>
+                    <div class="category-card body">
+                        <div class="cat-name">Body</div>
+                        <div class="cat-score" id="cat-body-score">0.0</div>
+                        <div class="cat-level" id="cat-body-level">-</div>
+                    </div>
+                </div>
+                
                 <div class="chart-container">
                     <canvas id="radar-chart"></canvas>
                 </div>
@@ -593,8 +683,7 @@
                     <div class="label" id="overall-level-2">Overall Score</div>
                 </div>
                 
-                <h3 style="margin-top: 24px;">Scores by Dimension</h3>
-                <div id="score-list"></div>
+                <div id="category-groups"></div>
                 
                 <div id="crisis-section" class="hidden" style="margin-top: 24px;">
                     <h3 style="color: var(--crisis);">&#9888;&#65039; Crisis Areas</h3>
@@ -608,6 +697,8 @@
             </div>
             
             <div class="tab-content" id="tab-suggestions">
+                <div class="category-insight" id="category-insight"></div>
+                
                 <h3>Focus Areas (Top 3 Priorities)</h3>
                 <div id="recommendations"></div>
                 
@@ -638,11 +729,18 @@
     
     <script>
     let assessment = null;
-    let questions = [];      // Flattened, shuffled questions with metadata
-    let answers = {};        // questionId -> answer
-    let questionOrder = [];  // Shuffled indices for URL encoding
+    let questions = [];
+    let answers = {};
+    let questionOrder = [];
     let currentIndex = 0;
     let chart = null;
+    
+    const CATEGORIES = ['Spirit', 'Soul', 'Body'];
+    const CATEGORY_DIMS = {
+        Spirit: [1, 2, 3],
+        Soul: [4, 5, 6],
+        Body: [7, 8, 9]
+    };
     
     const SCALE = {
         1: { label: 'Almost Never', range: '0-20% of the time' },
@@ -652,7 +750,6 @@
         5: { label: 'Almost Always', range: '81-100% of the time' }
     };
     
-    // Seeded random for reproducible shuffle from URL
     function seededRandom(seed) {
         const x = Math.sin(seed++) * 10000;
         return x - Math.floor(x);
@@ -671,7 +768,6 @@
         const response = await fetch('data/discipline-assessment.json');
         assessment = await response.json();
         
-        // Flatten all questions with metadata
         questions = [];
         for (const dim of assessment.dimensions) {
             for (const q of dim.questions) {
@@ -686,7 +782,6 @@
             }
         }
         
-        // Check URL for existing answers
         const hash = window.location.hash.slice(1);
         if (hash.startsWith('r=')) {
             const parts = hash.slice(2).split('.');
@@ -697,7 +792,6 @@
                     const answerArray = decodeAnswers(encoded);
                     
                     if (answerArray.length === 45) {
-                        // Reconstruct answers using the same shuffle
                         questionOrder = shuffleWithSeed([...Array(45).keys()], seed);
                         for (let i = 0; i < 45; i++) {
                             const origIndex = questionOrder[i];
@@ -727,11 +821,8 @@
         document.getElementById('start-screen').classList.add('hidden');
         document.getElementById('question-screen').classList.remove('hidden');
         
-        // Generate random seed and shuffle
         const seed = Math.floor(Math.random() * 1000000);
         questionOrder = shuffleWithSeed([...Array(45).keys()], seed);
-        
-        // Store seed for URL encoding
         window.quizSeed = seed;
         
         currentIndex = 0;
@@ -746,7 +837,6 @@
     }
     
     function updateProgressBar() {
-        // Count answered questions by category
         const counts = { Spirit: 0, Soul: 0, Body: 0 };
         
         for (const qId in answers) {
@@ -754,26 +844,20 @@
             if (q) counts[q.category]++;
         }
         
-        // Update fill widths (15 questions per category)
         document.getElementById('fill-spirit').style.width = `${(counts.Spirit / 15) * 100}%`;
         document.getElementById('fill-soul').style.width = `${(counts.Soul / 15) * 100}%`;
         document.getElementById('fill-body').style.width = `${(counts.Body / 15) * 100}%`;
         
-        // Update counts
         document.getElementById('spirit-count').textContent = counts.Spirit;
         document.getElementById('soul-count').textContent = counts.Soul;
         document.getElementById('body-count').textContent = counts.Body;
     }
     
     function showQuestion() {
-        const totalQuestions = 45;
-        const answeredCount = Object.keys(answers).length;
-        
-        // Get current question from shuffled order
         const origIndex = questionOrder[currentIndex];
         const question = questions[origIndex];
         
-        document.getElementById('progress-label').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
+        document.getElementById('progress-label').textContent = `Question ${currentIndex + 1} of 45`;
         document.getElementById('dimension-progress').textContent = question.dimensionName;
         
         updateProgressBar();
@@ -819,7 +903,6 @@
         currentIndex++;
         
         if (currentIndex >= 45) {
-            // Build answer array in shuffled order for URL
             const answerArray = questionOrder.map(idx => answers[questions[idx].id]);
             const encoded = encodeAnswers(answerArray);
             window.location.hash = `r=${window.quizSeed}.${encoded}`;
@@ -832,7 +915,6 @@
     function goBack() {
         if (currentIndex > 0) {
             currentIndex--;
-            // Remove the answer for the question we're going back to
             const origIndex = questionOrder[currentIndex];
             delete answers[questions[origIndex].id];
             showQuestion();
@@ -868,6 +950,16 @@
         return scores;
     }
     
+    function calculateCategoryScores(scores) {
+        const catScores = {};
+        for (const cat of CATEGORIES) {
+            const dimIds = CATEGORY_DIMS[cat];
+            const sum = dimIds.reduce((acc, id) => acc + scores[id], 0);
+            catScores[cat] = Math.round(sum / 3 * 10) / 10;
+        }
+        return catScores;
+    }
+    
     function interpretScore(score) {
         if (score <= 2) return { level: 'Crisis', class: 'crisis', desc: 'Immediate attention required' };
         if (score <= 4) return { level: 'Below Baseline', class: 'below', desc: 'Needs focused work' };
@@ -882,6 +974,7 @@
         document.getElementById('results-screen').classList.remove('hidden');
         
         const scores = calculateScores();
+        const catScores = calculateCategoryScores(scores);
         const overall = Math.round(Object.values(scores).reduce((a, b) => a + b, 0) / 9 * 10) / 10;
         const overallInterp = interpretScore(overall);
         
@@ -894,11 +987,51 @@
         document.getElementById('overall-score-2').textContent = overall.toFixed(1);
         document.getElementById('overall-level-2').textContent = `${overallInterp.level} - ${overallInterp.desc}`;
         
+        // Category summary cards
+        for (const cat of CATEGORIES) {
+            const catInterp = interpretScore(catScores[cat]);
+            document.getElementById(`cat-${cat.toLowerCase()}-score`).textContent = catScores[cat].toFixed(1);
+            document.getElementById(`cat-${cat.toLowerCase()}-level`).textContent = catInterp.level;
+        }
+        
         renderChart(scores);
         
-        const scoreList = document.getElementById('score-list');
-        scoreList.innerHTML = '';
+        // Category groups in conclusion
+        const groupsDiv = document.getElementById('category-groups');
+        groupsDiv.innerHTML = '';
         
+        for (const cat of CATEGORIES) {
+            const dimIds = CATEGORY_DIMS[cat];
+            const catInterp = interpretScore(catScores[cat]);
+            
+            let dimsHtml = '';
+            for (const dimId of dimIds) {
+                const dim = assessment.dimensions.find(d => d.id === dimId);
+                const score = scores[dimId];
+                const interp = interpretScore(score);
+                dimsHtml += `
+                    <div class="score-row">
+                        <span class="name">${dim.name}</span>
+                        <div class="bar-container">
+                            <div class="bar level-${interp.class}" style="width: ${score * 10}%"></div>
+                        </div>
+                        <span class="value">${score.toFixed(1)}</span>
+                    </div>
+                `;
+            }
+            
+            groupsDiv.innerHTML += `
+                <div class="category-group">
+                    <div class="category-header ${cat.toLowerCase()}">
+                        <span>${cat}</span>
+                        <span class="cat-avg">${catScores[cat].toFixed(1)}/10 &bull; ${catInterp.level}</span>
+                    </div>
+                    <div class="category-dimensions">${dimsHtml}</div>
+                </div>
+            `;
+        }
+        
+        // Crisis and strength areas
         const crisisList = document.getElementById('crisis-list');
         const strengthList = document.getElementById('strength-list');
         crisisList.innerHTML = '';
@@ -911,29 +1044,37 @@
             const score = scores[dim.id];
             const interp = interpretScore(score);
             
-            scoreList.innerHTML += `
-                <div class="score-row">
-                    <span class="name">${dim.name}</span>
-                    <div class="bar-container">
-                        <div class="bar level-${interp.class}" style="width: ${score * 10}%"></div>
-                    </div>
-                    <span class="value">${score.toFixed(1)}</span>
-                </div>
-            `;
-            
             if (score <= 4) {
                 hasCrisis = true;
-                crisisList.innerHTML += `<p style="padding: 8px 0;">&bull; ${dim.name} (${score.toFixed(1)}/10) - ${interp.desc}</p>`;
+                crisisList.innerHTML += `<p style="padding: 8px 0;">&bull; ${dim.name} <span style="color: var(--text-muted);">(${dim.category})</span> &mdash; ${score.toFixed(1)}/10</p>`;
             }
             if (score >= 7) {
                 hasStrength = true;
-                strengthList.innerHTML += `<p style="padding: 8px 0;">&bull; ${dim.name} (${score.toFixed(1)}/10)</p>`;
+                strengthList.innerHTML += `<p style="padding: 8px 0;">&bull; ${dim.name} <span style="color: var(--text-muted);">(${dim.category})</span> &mdash; ${score.toFixed(1)}/10</p>`;
             }
         }
         
         document.getElementById('crisis-section').classList.toggle('hidden', !hasCrisis);
         document.getElementById('strength-section').classList.toggle('hidden', !hasStrength);
         
+        // Category insight
+        const sortedCats = CATEGORIES.slice().sort((a, b) => catScores[b] - catScores[a]);
+        const strongest = sortedCats[0];
+        const weakest = sortedCats[2];
+        
+        const insightDiv = document.getElementById('category-insight');
+        insightDiv.innerHTML = `
+            <div class="insight-title">Category Analysis</div>
+            <p>Your <span class="strongest">${strongest}</span> disciplines are strongest (${catScores[strongest].toFixed(1)}/10), 
+            while your <span class="weakest">${weakest}</span> disciplines need the most attention (${catScores[weakest].toFixed(1)}/10).</p>
+            <p style="margin-top: 8px; font-size: 0.9rem; color: var(--text-muted);">
+                ${weakest === 'Spirit' ? 'The spiritual disciplines anchor everything else. Without connection to God, purpose, and conscience, the other areas lack their foundation.' : ''}
+                ${weakest === 'Soul' ? 'The soul disciplines (mind, will, emotions) are the bridge between spirit and body. Strengthening these enables better follow-through in all areas.' : ''}
+                ${weakest === 'Body' ? 'The body disciplines provide the physical foundation. Fuel, capacity, and health directly impact your ability to sustain disciplines in other areas.' : ''}
+            </p>
+        `;
+        
+        // Recommendations
         const sorted = Object.entries(scores).sort((a, b) => a[1] - b[1]).slice(0, 3);
         const recsDiv = document.getElementById('recommendations');
         recsDiv.innerHTML = '';
@@ -946,7 +1087,8 @@
                 <div class="recommendation">
                     <span class="priority">${index + 1}</span>
                     <span class="title">${dim.name}</span>
-                    <span class="score-badge level-${interp.class}" style="color: white;">${score.toFixed(1)}/10 - ${interp.level}</span>
+                    <span class="cat-tag ${dim.category.toLowerCase()}">${dim.category}</span>
+                    <span class="score-badge level-${interp.class}" style="color: white;">${score.toFixed(1)}/10</span>
                     <div class="advice">${dim.remediation.advice}</div>
                     <div class="scripture">
                         "${dim.remediation.scripture.text}"
@@ -1008,10 +1150,10 @@
                         max: 10,
                         ticks: {
                             stepSize: 2,
-                            font: { size: 11 }
+                            font: { size: 10 }
                         },
                         pointLabels: {
-                            font: { size: 12 }
+                            font: { size: 10 }
                         }
                     }
                 },
