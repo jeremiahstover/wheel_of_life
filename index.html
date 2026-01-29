@@ -19,6 +19,12 @@
             --text: #2d3748;
             --text-muted: #718096;
             --border: #e2e8f0;
+            --spirit: #805ad5;
+            --spirit-light: #e9d8fd;
+            --soul: #3182ce;
+            --soul-light: #bee3f8;
+            --body: #38a169;
+            --body-light: #c6f6d5;
         }
         
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -51,18 +57,51 @@
         
         .subtitle { color: var(--text-muted); margin-bottom: 24px; }
         
-        .progress-container {
-            background: var(--border);
-            border-radius: 8px;
-            height: 8px;
-            margin-bottom: 24px;
+        /* Segmented Progress Bar */
+        .segmented-progress {
+            display: flex;
+            height: 12px;
+            border-radius: 6px;
             overflow: hidden;
+            background: var(--border);
+            margin-bottom: 8px;
         }
-        .progress-bar {
-            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+        .segment {
+            display: flex;
+            transition: all 0.3s ease;
+        }
+        .segment-spirit { background: var(--spirit-light); }
+        .segment-soul { background: var(--soul-light); }
+        .segment-body { background: var(--body-light); }
+        .segment-fill {
             height: 100%;
             transition: width 0.3s ease;
         }
+        .segment-spirit .segment-fill { background: var(--spirit); }
+        .segment-soul .segment-fill { background: var(--soul); }
+        .segment-body .segment-fill { background: var(--body); }
+        
+        .progress-legend {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .progress-legend span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .legend-dot.spirit { background: var(--spirit); }
+        .legend-dot.soul { background: var(--soul); }
+        .legend-dot.body { background: var(--body); }
+        
         .progress-text {
             font-size: 0.875rem;
             color: var(--text-muted);
@@ -81,9 +120,9 @@
             letter-spacing: 0.5px;
             margin-bottom: 12px;
         }
-        .category-Spirit { background: #e9d8fd; color: #553c9a; }
-        .category-Soul { background: #bee3f8; color: #2b6cb0; }
-        .category-Body { background: #c6f6d5; color: #276749; }
+        .category-Spirit { background: var(--spirit-light); color: #553c9a; }
+        .category-Soul { background: var(--soul-light); color: #2b6cb0; }
+        .category-Body { background: var(--body-light); color: #276749; }
         
         .dimension-name {
             font-size: 0.9rem;
@@ -311,6 +350,26 @@
             margin: 20px 0;
         }
         
+        /* Wheel Diagram */
+        .wheel-container {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+        .wheel-svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .wheel-label {
+            font-size: 9px;
+            font-weight: 500;
+            fill: var(--text);
+        }
+        .wheel-label-small {
+            font-size: 7px;
+            fill: var(--text-muted);
+        }
+        
         .start-screen { text-align: center; }
         .start-screen .definition {
             padding: 16px;
@@ -318,12 +377,31 @@
             border-radius: 8px;
             margin: 24px 0;
         }
-        .start-screen ul {
-            text-align: left;
+        
+        .dimension-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
             margin: 24px 0;
-            padding-left: 24px;
+            text-align: left;
         }
-        .start-screen li { margin-bottom: 8px; }
+        .dimension-group h4 {
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .dimension-group.spirit h4 { background: var(--spirit-light); color: #553c9a; }
+        .dimension-group.soul h4 { background: var(--soul-light); color: #2b6cb0; }
+        .dimension-group.body h4 { background: var(--body-light); color: #276749; }
+        .dimension-group ul {
+            list-style: none;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .dimension-group li {
+            padding: 2px 0;
+        }
         
         .hidden { display: none !important; }
         
@@ -333,6 +411,7 @@
             .tabs { overflow-x: auto; }
             .tab { padding: 12px 16px; white-space: nowrap; }
             .chart-container { height: 300px; }
+            .dimension-list { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -342,19 +421,108 @@
             <h1>Wheel of Life Assessment</h1>
             <p class="subtitle">Discipline Layer (Layer 4 of 8)</p>
             
+            <div class="wheel-container">
+                <svg class="wheel-svg" viewBox="0 0 300 300" width="300" height="300">
+                    <!-- Background circle -->
+                    <circle cx="150" cy="150" r="140" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+                    <circle cx="150" cy="150" r="105" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                    <circle cx="150" cy="150" r="70" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                    <circle cx="150" cy="150" r="35" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                    
+                    <!-- Spokes -->
+                    <g stroke="#e2e8f0" stroke-width="1">
+                        <line x1="150" y1="150" x2="150" y2="10"/>
+                        <line x1="150" y1="150" x2="254" y2="60"/>
+                        <line x1="150" y1="150" x2="286" y2="150"/>
+                        <line x1="150" y1="150" x2="254" y2="240"/>
+                        <line x1="150" y1="150" x2="150" y2="290"/>
+                        <line x1="150" y1="150" x2="46" y2="240"/>
+                        <line x1="150" y1="150" x2="14" y2="150"/>
+                        <line x1="150" y1="150" x2="46" y2="60"/>
+                        <line x1="150" y1="150" x2="105" y2="17"/>
+                    </g>
+                    
+                    <!-- Category arcs -->
+                    <!-- Spirit (top 3 - purple) -->
+                    <path d="M 150 10 A 140 140 0 0 1 254 60" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 254 60 A 140 140 0 0 1 286 150" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 105 17 A 140 140 0 0 1 150 10" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
+                    
+                    <!-- Soul (middle 3 - blue) -->
+                    <path d="M 286 150 A 140 140 0 0 1 254 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 254 240 A 140 140 0 0 1 150 290" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 150 290 A 140 140 0 0 1 46 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
+                    
+                    <!-- Body (bottom 3 - green) -->
+                    <path d="M 46 240 A 140 140 0 0 1 14 150" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 14 150 A 140 140 0 0 1 46 60" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 46 60 A 140 140 0 0 1 105 17" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
+                    
+                    <!-- Dimension labels -->
+                    <!-- Spirit dimensions -->
+                    <text x="150" y="28" text-anchor="middle" class="wheel-label" fill="#805ad5">Connection</text>
+                    <text x="150" y="38" text-anchor="middle" class="wheel-label-small" fill="#805ad5">to God</text>
+                    
+                    <text x="248" y="55" text-anchor="middle" class="wheel-label" fill="#805ad5">Conscience</text>
+                    
+                    <text x="275" y="135" text-anchor="start" class="wheel-label" fill="#805ad5">Purpose</text>
+                    <text x="275" y="145" text-anchor="start" class="wheel-label-small" fill="#805ad5">/Calling</text>
+                    
+                    <!-- Soul dimensions -->
+                    <text x="270" y="195" text-anchor="start" class="wheel-label" fill="#3182ce">Mind</text>
+                    
+                    <text x="230" y="255" text-anchor="middle" class="wheel-label" fill="#3182ce">Will</text>
+                    
+                    <text x="150" y="285" text-anchor="middle" class="wheel-label" fill="#3182ce">Emotions</text>
+                    
+                    <!-- Body dimensions -->
+                    <text x="55" y="255" text-anchor="middle" class="wheel-label" fill="#38a169">Fuel &amp;</text>
+                    <text x="55" y="265" text-anchor="middle" class="wheel-label-small" fill="#38a169">Recovery</text>
+                    
+                    <text x="25" y="165" text-anchor="start" class="wheel-label" fill="#38a169">Capacity</text>
+                    <text x="25" y="175" text-anchor="start" class="wheel-label-small" fill="#38a169">&amp; Function</text>
+                    
+                    <text x="60" y="50" text-anchor="middle" class="wheel-label" fill="#38a169">Health &amp;</text>
+                    <text x="60" y="60" text-anchor="middle" class="wheel-label-small" fill="#38a169">Wholeness</text>
+                    
+                    <!-- Center text -->
+                    <text x="150" y="145" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3748">DISCIPLINE</text>
+                    <text x="150" y="160" text-anchor="middle" font-size="8" fill="#718096">Layer 4</text>
+                </svg>
+            </div>
+            
             <div class="definition">
                 <strong>Discipline:</strong> Consistently making yourself do what needs to be done, especially when you don't feel like doing it.
             </div>
             
-            <p>This assessment covers <strong>9 dimensions</strong> across Spirit, Soul, and Body:</p>
+            <div class="dimension-list">
+                <div class="dimension-group spirit">
+                    <h4>Spirit</h4>
+                    <ul>
+                        <li>Connection to God</li>
+                        <li>Conscience</li>
+                        <li>Purpose/Calling</li>
+                    </ul>
+                </div>
+                <div class="dimension-group soul">
+                    <h4>Soul</h4>
+                    <ul>
+                        <li>Mind</li>
+                        <li>Will</li>
+                        <li>Emotions</li>
+                    </ul>
+                </div>
+                <div class="dimension-group body">
+                    <h4>Body</h4>
+                    <ul>
+                        <li>Fuel &amp; Recovery</li>
+                        <li>Capacity &amp; Function</li>
+                        <li>Health &amp; Wholeness</li>
+                    </ul>
+                </div>
+            </div>
             
-            <ul>
-                <li><strong>Spirit:</strong> Connection to God, Conscience, Purpose/Calling</li>
-                <li><strong>Soul:</strong> Mind, Will, Emotions</li>
-                <li><strong>Body:</strong> Fuel &amp; Recovery, Capacity &amp; Function, Health &amp; Wholeness</li>
-            </ul>
-            
-            <p><strong>45 questions</strong> &bull; ~10 minutes</p>
+            <p><strong>45 questions</strong> &bull; ~10 minutes &bull; randomized order</p>
             <p style="margin-top: 12px; color: var(--text-muted);">Answer honestly based on actual behavior, not aspirations.</p>
             
             <button class="btn btn-primary" style="margin-top: 24px; width: 100%;" onclick="startQuiz()">
@@ -367,8 +535,23 @@
                 <span id="progress-label">Question 1 of 45</span>
                 <span id="dimension-progress"></span>
             </div>
-            <div class="progress-container">
-                <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+            
+            <div class="segmented-progress">
+                <div class="segment segment-spirit" id="seg-spirit" style="width: 33.33%">
+                    <div class="segment-fill" id="fill-spirit" style="width: 0%"></div>
+                </div>
+                <div class="segment segment-soul" id="seg-soul" style="width: 33.33%">
+                    <div class="segment-fill" id="fill-soul" style="width: 0%"></div>
+                </div>
+                <div class="segment segment-body" id="seg-body" style="width: 33.34%">
+                    <div class="segment-fill" id="fill-body" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="progress-legend">
+                <span><span class="legend-dot spirit"></span> Spirit <span id="spirit-count">0</span>/15</span>
+                <span><span class="legend-dot soul"></span> Soul <span id="soul-count">0</span>/15</span>
+                <span><span class="legend-dot body"></span> Body <span id="body-count">0</span>/15</span>
             </div>
             
             <span class="category-badge" id="category-badge">Spirit</span>
@@ -455,8 +638,10 @@
     
     <script>
     let assessment = null;
-    let answers = [];
-    let currentQuestion = 0;
+    let questions = [];      // Flattened, shuffled questions with metadata
+    let answers = {};        // questionId -> answer
+    let questionOrder = [];  // Shuffled indices for URL encoding
+    let currentIndex = 0;
     let chart = null;
     
     const SCALE = {
@@ -467,42 +652,90 @@
         5: { label: 'Almost Always', range: '81-100% of the time' }
     };
     
+    // Seeded random for reproducible shuffle from URL
+    function seededRandom(seed) {
+        const x = Math.sin(seed++) * 10000;
+        return x - Math.floor(x);
+    }
+    
+    function shuffleWithSeed(array, seed) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(seededRandom(seed + i) * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+    
     async function loadAssessment() {
         const response = await fetch('data/discipline-assessment.json');
         assessment = await response.json();
         
-        const hash = window.location.hash.slice(1);
-        if (hash.startsWith('r=')) {
-            const encoded = hash.slice(2);
-            try {
-                answers = decodeAnswers(encoded);
-                if (answers.length === 45) {
-                    showResults();
-                    return;
-                }
-            } catch (e) {
-                console.error('Invalid results in URL');
+        // Flatten all questions with metadata
+        questions = [];
+        for (const dim of assessment.dimensions) {
+            for (const q of dim.questions) {
+                questions.push({
+                    id: q.id,
+                    text: q.text,
+                    principle: q.principle,
+                    dimensionId: dim.id,
+                    dimensionName: dim.name,
+                    category: dim.category
+                });
             }
         }
         
-        answers = new Array(45).fill(0);
+        // Check URL for existing answers
+        const hash = window.location.hash.slice(1);
+        if (hash.startsWith('r=')) {
+            const parts = hash.slice(2).split('.');
+            if (parts.length === 2) {
+                try {
+                    const seed = parseInt(parts[0]);
+                    const encoded = parts[1];
+                    const answerArray = decodeAnswers(encoded);
+                    
+                    if (answerArray.length === 45) {
+                        // Reconstruct answers using the same shuffle
+                        questionOrder = shuffleWithSeed([...Array(45).keys()], seed);
+                        for (let i = 0; i < 45; i++) {
+                            const origIndex = questionOrder[i];
+                            answers[questions[origIndex].id] = answerArray[i];
+                        }
+                        showResults();
+                        return;
+                    }
+                } catch (e) {
+                    console.error('Invalid results in URL', e);
+                }
+            }
+        }
+        
+        answers = {};
     }
     
-    function encodeAnswers(arr) {
-        let binary = arr.map(a => a.toString()).join('');
-        return btoa(binary);
+    function encodeAnswers(answerArray) {
+        return btoa(answerArray.map(a => a.toString()).join(''));
     }
     
     function decodeAnswers(encoded) {
-        let binary = atob(encoded);
-        return binary.split('').map(Number);
+        return atob(encoded).split('').map(Number);
     }
     
     function startQuiz() {
         document.getElementById('start-screen').classList.add('hidden');
         document.getElementById('question-screen').classList.remove('hidden');
-        currentQuestion = 0;
-        answers = new Array(45).fill(0);
+        
+        // Generate random seed and shuffle
+        const seed = Math.floor(Math.random() * 1000000);
+        questionOrder = shuffleWithSeed([...Array(45).keys()], seed);
+        
+        // Store seed for URL encoding
+        window.quizSeed = seed;
+        
+        currentIndex = 0;
+        answers = {};
         showQuestion();
     }
     
@@ -512,32 +745,42 @@
         document.getElementById('start-screen').classList.remove('hidden');
     }
     
-    function showQuestion() {
-        const totalQuestions = 45;
-        const progress = ((currentQuestion) / totalQuestions) * 100;
+    function updateProgressBar() {
+        // Count answered questions by category
+        const counts = { Spirit: 0, Soul: 0, Body: 0 };
         
-        let qIndex = currentQuestion;
-        let dimension = null;
-        let questionInDim = 0;
-        
-        for (const dim of assessment.dimensions) {
-            if (qIndex < dim.questions.length) {
-                dimension = dim;
-                questionInDim = qIndex;
-                break;
-            }
-            qIndex -= dim.questions.length;
+        for (const qId in answers) {
+            const q = questions.find(x => x.id === qId);
+            if (q) counts[q.category]++;
         }
         
-        const question = dimension.questions[questionInDim];
+        // Update fill widths (15 questions per category)
+        document.getElementById('fill-spirit').style.width = `${(counts.Spirit / 15) * 100}%`;
+        document.getElementById('fill-soul').style.width = `${(counts.Soul / 15) * 100}%`;
+        document.getElementById('fill-body').style.width = `${(counts.Body / 15) * 100}%`;
         
-        document.getElementById('progress-label').textContent = `Question ${currentQuestion + 1} of ${totalQuestions}`;
-        document.getElementById('dimension-progress').textContent = `${dimension.name} (${questionInDim + 1}/5)`;
-        document.getElementById('progress-bar').style.width = `${progress}%`;
+        // Update counts
+        document.getElementById('spirit-count').textContent = counts.Spirit;
+        document.getElementById('soul-count').textContent = counts.Soul;
+        document.getElementById('body-count').textContent = counts.Body;
+    }
+    
+    function showQuestion() {
+        const totalQuestions = 45;
+        const answeredCount = Object.keys(answers).length;
         
-        document.getElementById('category-badge').textContent = dimension.category;
-        document.getElementById('category-badge').className = `category-badge category-${dimension.category}`;
-        document.getElementById('dimension-name').textContent = dimension.name;
+        // Get current question from shuffled order
+        const origIndex = questionOrder[currentIndex];
+        const question = questions[origIndex];
+        
+        document.getElementById('progress-label').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
+        document.getElementById('dimension-progress').textContent = question.dimensionName;
+        
+        updateProgressBar();
+        
+        document.getElementById('category-badge').textContent = question.category;
+        document.getElementById('category-badge').className = `category-badge category-${question.category}`;
+        document.getElementById('dimension-name').textContent = question.dimensionName;
         document.getElementById('question-text').textContent = question.text;
         
         const principle = document.getElementById('principle');
@@ -565,16 +808,21 @@
             answersDiv.appendChild(btn);
         }
         
-        document.getElementById('back-btn').disabled = currentQuestion === 0;
+        document.getElementById('back-btn').disabled = currentIndex === 0;
     }
     
     function selectAnswer(value) {
-        answers[currentQuestion] = value;
-        currentQuestion++;
+        const origIndex = questionOrder[currentIndex];
+        const question = questions[origIndex];
+        answers[question.id] = value;
         
-        if (currentQuestion >= 45) {
-            const encoded = encodeAnswers(answers);
-            window.location.hash = `r=${encoded}`;
+        currentIndex++;
+        
+        if (currentIndex >= 45) {
+            // Build answer array in shuffled order for URL
+            const answerArray = questionOrder.map(idx => answers[questions[idx].id]);
+            const encoded = encodeAnswers(answerArray);
+            window.location.hash = `r=${window.quizSeed}.${encoded}`;
             showResults();
         } else {
             showQuestion();
@@ -582,8 +830,11 @@
     }
     
     function goBack() {
-        if (currentQuestion > 0) {
-            currentQuestion--;
+        if (currentIndex > 0) {
+            currentIndex--;
+            // Remove the answer for the question we're going back to
+            const origIndex = questionOrder[currentIndex];
+            delete answers[questions[origIndex].id];
             showQuestion();
         }
     }
@@ -595,19 +846,23 @@
         if (key >= 1 && key <= 5) {
             selectAnswer(key);
         } else if (e.key === 'Backspace' || e.key === 'ArrowLeft') {
+            e.preventDefault();
             goBack();
         }
     });
     
     function calculateScores() {
         const scores = {};
-        let answerIndex = 0;
         
         for (const dim of assessment.dimensions) {
-            const dimAnswers = answers.slice(answerIndex, answerIndex + 5);
+            const dimAnswers = [];
+            for (const q of dim.questions) {
+                if (answers[q.id]) {
+                    dimAnswers.push(answers[q.id]);
+                }
+            }
             const sum = dimAnswers.reduce((a, b) => a + b, 0);
             scores[dim.id] = Math.round((sum / 5) * 2 * 10) / 10;
-            answerIndex += 5;
         }
         
         return scores;
@@ -719,16 +974,13 @@
         
         const labels = assessment.dimensions.map(d => d.name);
         const data = assessment.dimensions.map(d => scores[d.id]);
-        const colors = assessment.dimensions.map(d => {
-            const interp = interpretScore(scores[d.id]);
+        const categoryColors = assessment.dimensions.map(d => {
             const colorMap = {
-                crisis: 'rgba(229, 62, 62, 0.7)',
-                below: 'rgba(237, 137, 54, 0.7)',
-                maintaining: 'rgba(236, 201, 75, 0.7)',
-                target: 'rgba(72, 187, 120, 0.7)',
-                exceptional: 'rgba(66, 153, 225, 0.7)'
+                Spirit: 'rgba(128, 90, 213, 0.8)',
+                Soul: 'rgba(49, 130, 206, 0.8)',
+                Body: 'rgba(56, 161, 105, 0.8)'
             };
-            return colorMap[interp.class];
+            return colorMap[d.category];
         });
         
         chart = new Chart(ctx, {
@@ -741,7 +993,7 @@
                     backgroundColor: 'rgba(44, 82, 130, 0.2)',
                     borderColor: 'rgba(44, 82, 130, 1)',
                     borderWidth: 2,
-                    pointBackgroundColor: colors,
+                    pointBackgroundColor: categoryColors,
                     pointBorderColor: '#fff',
                     pointBorderWidth: 2,
                     pointRadius: 6
