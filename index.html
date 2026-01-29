@@ -57,7 +57,6 @@
         
         .subtitle { color: var(--text-muted); margin-bottom: 24px; }
         
-        /* Segmented Progress Bar */
         .segmented-progress {
             display: flex;
             height: 12px;
@@ -241,7 +240,6 @@
         .overall-score .score { font-size: 3rem; font-weight: 700; }
         .overall-score .label { opacity: 0.9; }
         
-        /* Category Summary Cards */
         .category-summary {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -278,7 +276,6 @@
             color: var(--text-muted);
         }
         
-        /* Category Groups in Conclusion */
         .category-group {
             margin-bottom: 24px;
             border: 1px solid var(--border);
@@ -336,7 +333,6 @@
         .level-target { background: var(--target); }
         .level-exceptional { background: var(--exceptional); }
         
-        /* Category Insight Box */
         .category-insight {
             padding: 16px;
             background: var(--bg);
@@ -437,7 +433,6 @@
             margin: 20px 0;
         }
         
-        /* Wheel Diagram */
         .wheel-container {
             display: flex;
             justify-content: center;
@@ -750,6 +745,47 @@
         5: { label: 'Almost Always', range: '81-100% of the time' }
     };
     
+    // Custom Chart.js plugin to draw category-colored background wedges
+    const categoryWedgesPlugin = {
+        id: 'categoryWedges',
+        beforeDraw: (chart) => {
+            const ctx = chart.ctx;
+            const chartArea = chart.chartArea;
+            const centerX = (chartArea.left + chartArea.right) / 2;
+            const centerY = (chartArea.top + chartArea.bottom) / 2;
+            const radius = Math.min(chartArea.right - centerX, chartArea.bottom - centerY);
+            
+            // Category colors (dark pastels)
+            const wedges = [
+                { color: 'rgba(128, 90, 213, 0.12)', start: -110, end: 10 },    // Spirit (purple)
+                { color: 'rgba(49, 130, 206, 0.12)', start: 10, end: 130 },     // Soul (blue)
+                { color: 'rgba(56, 161, 105, 0.12)', start: 130, end: 250 }     // Body (green)
+            ];
+            
+            ctx.save();
+            
+            wedges.forEach(wedge => {
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(
+                    centerX, 
+                    centerY, 
+                    radius, 
+                    (wedge.start * Math.PI) / 180, 
+                    (wedge.end * Math.PI) / 180
+                );
+                ctx.closePath();
+                ctx.fillStyle = wedge.color;
+                ctx.fill();
+            });
+            
+            ctx.restore();
+        }
+    };
+    
+    // Register the plugin
+    Chart.register(categoryWedgesPlugin);
+    
     function seededRandom(seed) {
         const x = Math.sin(seed++) * 10000;
         return x - Math.floor(x);
@@ -987,7 +1023,6 @@
         document.getElementById('overall-score-2').textContent = overall.toFixed(1);
         document.getElementById('overall-level-2').textContent = `${overallInterp.level} - ${overallInterp.desc}`;
         
-        // Category summary cards
         for (const cat of CATEGORIES) {
             const catInterp = interpretScore(catScores[cat]);
             document.getElementById(`cat-${cat.toLowerCase()}-score`).textContent = catScores[cat].toFixed(1);
@@ -996,7 +1031,6 @@
         
         renderChart(scores);
         
-        // Category groups in conclusion
         const groupsDiv = document.getElementById('category-groups');
         groupsDiv.innerHTML = '';
         
@@ -1031,7 +1065,6 @@
             `;
         }
         
-        // Crisis and strength areas
         const crisisList = document.getElementById('crisis-list');
         const strengthList = document.getElementById('strength-list');
         crisisList.innerHTML = '';
@@ -1057,7 +1090,6 @@
         document.getElementById('crisis-section').classList.toggle('hidden', !hasCrisis);
         document.getElementById('strength-section').classList.toggle('hidden', !hasStrength);
         
-        // Category insight
         const sortedCats = CATEGORIES.slice().sort((a, b) => catScores[b] - catScores[a]);
         const strongest = sortedCats[0];
         const weakest = sortedCats[2];
@@ -1074,7 +1106,6 @@
             </p>
         `;
         
-        // Recommendations
         const sorted = Object.entries(scores).sort((a, b) => a[1] - b[1]).slice(0, 3);
         const recsDiv = document.getElementById('recommendations');
         recsDiv.innerHTML = '';
@@ -1118,9 +1149,9 @@
         const data = assessment.dimensions.map(d => scores[d.id]);
         const categoryColors = assessment.dimensions.map(d => {
             const colorMap = {
-                Spirit: 'rgba(128, 90, 213, 0.8)',
-                Soul: 'rgba(49, 130, 206, 0.8)',
-                Body: 'rgba(56, 161, 105, 0.8)'
+                Spirit: 'rgba(128, 90, 213, 0.9)',
+                Soul: 'rgba(49, 130, 206, 0.9)',
+                Body: 'rgba(56, 161, 105, 0.9)'
             };
             return colorMap[d.category];
         });
@@ -1132,7 +1163,7 @@
                 datasets: [{
                     label: 'Your Scores',
                     data: data,
-                    backgroundColor: 'rgba(44, 82, 130, 0.2)',
+                    backgroundColor: 'rgba(44, 82, 130, 0.25)',
                     borderColor: 'rgba(44, 82, 130, 1)',
                     borderWidth: 2,
                     pointBackgroundColor: categoryColors,
@@ -1150,10 +1181,17 @@
                         max: 10,
                         ticks: {
                             stepSize: 2,
-                            font: { size: 10 }
+                            font: { size: 10 },
+                            backdropColor: 'transparent'
                         },
                         pointLabels: {
                             font: { size: 10 }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.08)'
+                        },
+                        angleLines: {
+                            color: 'rgba(0, 0, 0, 0.08)'
                         }
                     }
                 },
