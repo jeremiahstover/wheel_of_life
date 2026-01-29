@@ -1,86 +1,98 @@
 # Wheel of Life - Discipline Assessment
 
-A CLI PHP application that runs the Discipline layer assessment from the Wheel of Life framework.
+Assessment tool for the Discipline layer (Layer 4 of 8) from the Wheel of Life framework.
 
-## Requirements
+## Two Interfaces
 
-- PHP 8.1+
-- No external dependencies (vanilla PHP)
+### Web Interface (Recommended)
 
-## Usage
+Single HTML file, no server required. Results stored in URL for easy bookmarking and sharing.
 
+**To use:**
+1. Enable GitHub Pages on this repo (Settings → Pages → Deploy from main branch)
+2. Visit: `https://jeremiahstover.github.io/wheel_of_life/`
+
+Or open `index.html` locally with a web server:
 ```bash
-# Run the full 45-question assessment
-php quiz.php
+# Python
+python -m http.server 8000
 
-# View your most recent results without retaking
-php quiz.php --report
+# PHP
+php -S localhost:8000
 
-# Help
-php quiz.php --help
+# Node
+npx serve
 ```
 
-## What It Does
+**Features:**
+- One question per page with progress indicator
+- Keyboard shortcuts (1-5 to answer, Backspace to go back)
+- Results stored in URL hash - bookmark or share the link
+- Three-tab results view:
+  - **Graph**: Radar chart visualization of all 9 dimensions
+  - **Conclusion**: Score bars, crisis areas, strength areas
+  - **Suggestions**: Top 3 priorities with remediation advice and scripture
 
-1. **Runs the Quiz**: 45 questions across 9 dimensions (Spirit, Soul, Body)
-2. **Generates Summary**: Scores per dimension on 1-10 scale with interpretation
-3. **Provides Recommendations**: Prioritized next steps with remediation advice and scripture
+### CLI Interface
 
-## Structure (DLPR)
+Vanilla PHP, no dependencies.
+
+```bash
+php quiz.php           # Take the assessment
+php quiz.php --report  # View last saved results
+php quiz.php --help    # Help
+```
+
+Results saved to `/storage/result_*.json` for tracking progress over time.
+
+## The Assessment
+
+**Definition of Discipline:** Consistently making yourself do what needs to be done, especially when you don't feel like doing it.
+
+### 9 Dimensions (5 questions each = 45 total)
+
+| Category | Dimension | Focus |
+|----------|-----------|-------|
+| Spirit | Connection to God | Communion through spiritual practices |
+| Spirit | Conscience | Acting on moral conviction |
+| Spirit | Purpose/Calling | Staying aligned, resisting distractions |
+| Soul | Mind | Learning, intellectual growth |
+| Soul | Will | Follow-through, integrity with self |
+| Soul | Emotions | Processing feelings, managing actions |
+| Body | Fuel &amp; Recovery | Nutrition, sleep, environment |
+| Body | Capacity &amp; Function | Exercise, movement, physical ability |
+| Body | Health &amp; Wholeness | Preventive care, integrated wellness |
+
+### Scoring
+
+- **Questions**: 1-5 scale (Almost Never → Almost Always)
+- **Dimension Score**: (sum / 5) × 2 = 1-10 scale
+
+| Score | Level | Meaning |
+|-------|-------|---------|
+| 1-2 | Crisis | Immediate attention required |
+| 3-4 | Below Baseline | Needs focused work |
+| 5-6 | Maintaining | Functional but not growing |
+| 7-8 | Target Zone | Disciplines established |
+| 9-10 | Exceptional | Approaching mastery |
+
+## Project Structure (DLPR)
 
 ```
 wheel_of_life/
-├── quiz.php                      # Entry point
+├── index.html                    # Web interface (single file)
+├── quiz.php                      # CLI entry point
 ├── data/
 │   ├── discipline-assessment.json  # Source data
-│   ├── entities/
-│   │   └── Entities.php          # Anemic structures
-│   └── persistence/
-│       └── Persistence.php       # JSON loader, result storage
+│   ├── discipline-assessment.md    # Human-readable reference
+│   ├── entities/Entities.php
+│   └── persistence/Persistence.php
 ├── logic/
-│   ├── rules/
-│   │   └── ScoringRules.php      # Scoring calculations
-│   └── usecases/
-│       └── UseCases.php          # Quiz runner, report generator
-├── presentation/
-│   └── CliPresenter.php          # CLI output formatting
-└── storage/                      # Saved results (auto-created)
+│   ├── rules/ScoringRules.php
+│   └── usecases/UseCases.php
+├── presentation/CliPresenter.php
+└── storage/                      # CLI results (gitignored)
 ```
-
-## Scoring
-
-- Questions: 1-5 scale (Almost Never → Almost Always)
-- Dimension Score: (sum / 5) * 2 = 1-10 scale
-
-### Interpretation
-
-| Score | Level           | Meaning                        |
-|-------|-----------------|--------------------------------|
-| 1-2   | Crisis          | Immediate attention required   |
-| 3-4   | Below Baseline  | Needs focused work             |
-| 5-6   | Maintaining     | Functional but not growing     |
-| 7-8   | Target Zone     | Disciplines established        |
-| 9-10  | Exceptional     | Approaching mastery            |
-
-## The 9 Dimensions
-
-| Category | Dimension              | Focus                              |
-|----------|------------------------|------------------------------------||
-| Spirit   | Connection to God      | Communion through spiritual practices |
-| Spirit   | Conscience             | Acting on moral conviction         |
-| Spirit   | Purpose/Calling        | Staying aligned, resisting distractions |
-| Soul     | Mind                   | Learning, intellectual growth      |
-| Soul     | Will                   | Follow-through, integrity with self |
-| Soul     | Emotions               | Processing feelings, managing actions |
-| Body     | Fuel & Recovery        | Nutrition, sleep, environment      |
-| Body     | Capacity & Function    | Exercise, movement, physical ability |
-| Body     | Health & Wholeness     | Preventive care, integrated wellness |
-
-## Progress Tracking
-
-Results are automatically saved to `/storage/result_YYYY-MM-DD_HHMMSS.json`. 
-
-When you retake the assessment, the report compares your current scores to your previous attempt.
 
 ## The Remediation Principle
 
@@ -89,3 +101,16 @@ If Discipline is weak, shore up Responsibility. Go down the layers until you fin
 ```
 Discipline ← Responsibility ← Causality ← Order
 ```
+
+## URL Format
+
+Web results are encoded in the URL hash:
+```
+https://example.com/index.html#r=MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1
+```
+
+The `r=` parameter contains base64-encoded answers (45 digits, each 1-5). This allows:
+- Bookmarking results
+- Sharing via link
+- No server-side storage needed
+- Privacy (results never leave the browser)
