@@ -1,58 +1,91 @@
-# Wheel of Life
+# Wheel of Life - Discipline Assessment
 
-Assessment tool based on 9-dimensional tripartite model (Spirit, Soul, Body) with discipline-focused diagnostic questions.
+A CLI PHP application that runs the Discipline layer assessment from the Wheel of Life framework.
 
-## Structure
+## Requirements
 
-```
-data/
-  discipline-assessment.json  # Machine-readable assessment data
-  discipline-assessment.md    # Human-readable documentation
-```
-
-## The 9 Dimensions
-
-| Category | Dimension | Focus |
-|----------|-----------|-------|
-| Spirit | 1. Connection to God | Communion through spiritual practices |
-| Spirit | 2. Conscience | Acting on moral conviction |
-| Spirit | 3. Purpose/Calling | Staying aligned, resisting distractions |
-| Soul | 4. Mind | Learning, intellectual growth |
-| Soul | 5. Will | Follow-through, integrity with self |
-| Soul | 6. Emotions | Processing feelings, managing actions |
-| Body | 7. Fuel & Recovery | Nutrition, sleep, environment |
-| Body | 8. Capacity & Function | Exercise, movement, physical ability |
-| Body | 9. Health & Wholeness | Preventive care, integrated wellness |
-
-## Philosophical Foundation
-
-Based on Christian philosophical framework grounded in biblical stewardship. Assessment focuses on Layer 4 (Discipline) of the 8-layer Personal Development model.
-
-The 8 Layers (foundational → advanced):
-1. Order
-2. Causality  
-3. Responsibility
-4. **Discipline** ← Current assessment focus
-5. Skill
-6. Resources
-7. Fellowship
-8. Sacrifice
+- PHP 8.1+
+- No external dependencies (vanilla PHP)
 
 ## Usage
 
-The JSON file contains structured assessment data including:
-- 45 questions (5 per dimension)
-- Scoring configuration
-- Remediation guidance per dimension
-- Scripture anchors
+```bash
+# Run the full 45-question assessment
+php quiz.php
 
-## External Voice Influences
+# View your most recent results without retaking
+php quiz.php --report
 
-Assessment questions draw on tactics from:
-- Brian Tracy (goal execution, "eat the frog", time management)
-- Jordan Peterson (responsibility, order vs chaos)
-- Cloud & Townsend (boundaries, integrity)
-- Simon Sinek (purpose, "Start with Why")
-- Chase Hughes (behavioral patterns)
+# Help
+php quiz.php --help
+```
 
-All filtered through the primary biblical framework.
+## What It Does
+
+1. **Runs the Quiz**: 45 questions across 9 dimensions (Spirit, Soul, Body)
+2. **Generates Summary**: Scores per dimension on 1-10 scale with interpretation
+3. **Provides Recommendations**: Prioritized next steps with remediation advice and scripture
+
+## Structure (DLPR)
+
+```
+wheel_of_life/
+├── quiz.php                      # Entry point
+├── data/
+│   ├── discipline-assessment.json  # Source data
+│   ├── entities/
+│   │   └── Entities.php          # Anemic structures
+│   └── persistence/
+│       └── Persistence.php       # JSON loader, result storage
+├── logic/
+│   ├── rules/
+│   │   └── ScoringRules.php      # Scoring calculations
+│   └── usecases/
+│       └── UseCases.php          # Quiz runner, report generator
+├── presentation/
+│   └── CliPresenter.php          # CLI output formatting
+└── storage/                      # Saved results (auto-created)
+```
+
+## Scoring
+
+- Questions: 1-5 scale (Almost Never → Almost Always)
+- Dimension Score: (sum / 5) * 2 = 1-10 scale
+
+### Interpretation
+
+| Score | Level           | Meaning                        |
+|-------|-----------------|--------------------------------|
+| 1-2   | Crisis          | Immediate attention required   |
+| 3-4   | Below Baseline  | Needs focused work             |
+| 5-6   | Maintaining     | Functional but not growing     |
+| 7-8   | Target Zone     | Disciplines established        |
+| 9-10  | Exceptional     | Approaching mastery            |
+
+## The 9 Dimensions
+
+| Category | Dimension              | Focus                              |
+|----------|------------------------|------------------------------------||
+| Spirit   | Connection to God      | Communion through spiritual practices |
+| Spirit   | Conscience             | Acting on moral conviction         |
+| Spirit   | Purpose/Calling        | Staying aligned, resisting distractions |
+| Soul     | Mind                   | Learning, intellectual growth      |
+| Soul     | Will                   | Follow-through, integrity with self |
+| Soul     | Emotions               | Processing feelings, managing actions |
+| Body     | Fuel & Recovery        | Nutrition, sleep, environment      |
+| Body     | Capacity & Function    | Exercise, movement, physical ability |
+| Body     | Health & Wholeness     | Preventive care, integrated wellness |
+
+## Progress Tracking
+
+Results are automatically saved to `/storage/result_YYYY-MM-DD_HHMMSS.json`. 
+
+When you retake the assessment, the report compares your current scores to your previous attempt.
+
+## The Remediation Principle
+
+If Discipline is weak, shore up Responsibility. Go down the layers until you find solid ground:
+
+```
+Discipline ← Responsibility ← Causality ← Order
+```
