@@ -1,6 +1,8 @@
-# Answer Writing Guide — Layer 3 (Responsibility)
+# Answer Writing Guide
 
 Guidelines for writing conversational answer text for assessment questions.
+
+*Originally developed for Layer 3 (Responsibility), now applies to all layers with layer-specific adjustments.*
 
 ---
 
@@ -143,6 +145,66 @@ A question that:
 
 **Every question is load-bearing. No throwaway questions.**
 
+
+---
+
+## Readable Concatenation
+
+Stem + answer must form a grammatically correct sentence.
+
+- ✓ "My learning is ... intentional — I learn what I need for what I'm building"
+- ✗ "My learning is ... I have a regular practice of reading"
+
+Test by reading the stem and answer together out loud.
+
+---
+
+## Internal Narrative vs Diagnosis
+
+Use what they actually tell themselves, not your analysis of their behavior.
+
+- ✓ "push them down — if they're important I'll deal with them later" (their self-talk)
+- ✗ "push them down until they come out sideways" (your diagnosis)
+
+- ✓ "find the reasons why it was not my fault" (their framing)
+- ✗ "make excuses" (your label)
+
+- ✓ "skip it and plan to make up for it later" (what they think)
+- ✗ "skip it and plan to make up for it later (I don't)" (your editorial)
+
+The parenthetical diagnosis is you editorializing. Let the answer stand on its own.
+
+---
+
+## Layer-Specific Spectrums
+
+Each layer has its own spectrum. The answer progression (1→5) must fit the layer's nature.
+
+| Layer | Definition | Opposite | Spectrum (1→5) |
+|-------|------------|----------|----------------|
+| 1 - Order | Arrangement displaying relationship between elements | Nihilism | Chaos → Some awareness → Inconsistent application → Usually ordered → Order is foundational |
+| 2 - Causality | Relationship between cause and effect | Fatalism | Things happen to me → Vague sense of connection → See some links → Usually connect actions to outcomes → Causal thinking informs all decisions |
+| 3 - Responsibility | Duty to deal with something | Entitlement | External locus → Mostly external → Split → Mostly owned → Internal locus |
+| 4 - Discipline | Controlled, habitual training | Hedonism | Not doing → Trying but failing → Inconsistent → Usually → Non-negotiable |
+| 5 - Skill | Ability to do something well | Incompetence | Can't do it → Struggling → Competent but inconsistent → Proficient → Mastery |
+| 6 - Resources | Produce of skill (money, time, relationships) | Poverty | Depleted/no margin → Occasional surplus → Some margin → Usually have margin → Abundant, actively stewarding |
+| 7 - Fellowship | Mutual investment, transparency, sharpening | Isolation/Pride | Isolated → Surface only → Some depth but guarded → Usually open → Deep mutual sharpening |
+| 8 - Sacrifice | Benefit others freely, no expectation of return | Hoarding | Self-focused → Give when convenient → Give from surplus → Generous with limits → Pour out freely |
+
+---
+
+## Discipline vs Skill Distinction
+
+These are easy to confuse. The key question:
+
+- **Discipline (Layer 4)**: Do you do it at all? Do you show up?
+- **Skill (Layer 5)**: How well do you do it? What's your capability?
+
+If a question is about *quality* or *capability*, it belongs at Skill, not Discipline.
+
+Example:
+- "Do you set aside time to think?" → Discipline (whether you do it)
+- "What kind of thinking can you do?" → Skill (how well you do it)
 ---
 
 ## Advanced Patterns (from refinement)
@@ -197,3 +259,4 @@ Show what they actually do, not what they call it:
 
 - ✓ "look for a new church, group, or environment to fix it"
 - ✗ "blame my circumstances"
+
