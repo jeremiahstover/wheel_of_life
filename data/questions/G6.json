@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G6a",
-      "text": "I have consistent access to quality nutrition — I'm not constantly compromising due to scarcity or poor planning.",
+      "text": "My access to quality nutrition is ...",
       "voice": "Core Philosophy",
-      "principle": "Nutritional sufficiency is foundational"
+      "principle": "Nutritional sufficiency is foundational",
+      "answers": {
+        "4": "reliable — I have consistent access to good food",
+        "5": "excellent — quality nutrition is built into my life",
+        "2": "inconsistent — sometimes good, often not",
+        "3": "moderate — decent most of the time",
+        "1": "compromised — I eat whatever's available"
+      }
     },
     {
       "id": "G6b",
-      "text": "I get enough quality sleep that I have energy reserves, not just enough to get by.",
+      "text": "My sleep giving me energy reserves (not just enough to get by) is ...",
       "voice": "Brian Tracy",
-      "principle": "Sleep surplus creates daytime capacity"
+      "principle": "Sleep surplus creates daytime capacity",
+      "answers": {
+        "4": "usually — I have energy most days",
+        "5": "consistent — I wake with reserves to deploy",
+        "2": "rare — occasionally I feel rested",
+        "3": "inconsistent — some weeks good, others exhausted",
+        "1": "not happening — I'm always tired"
+      }
     },
     {
       "id": "G6c",
-      "text": "My living environment supports rather than drains me — it's a resource, not a liability.",
+      "text": "My living environment as a resource (not a liability) is ...",
       "voice": "Jordan Peterson",
-      "principle": "Environment can add or subtract energy"
+      "principle": "Environment can add or subtract energy",
+      "answers": {
+        "4": "supportive — my environment generally helps",
+        "5": "excellent — my space actively contributes to my wellbeing",
+        "2": "neutral at best — it doesn't help",
+        "3": "mixed — some aspects support me, others don't",
+        "1": "draining — my space works against me"
+      }
     },
     {
       "id": "G6d",
-      "text": "I have financial margin for quality food, proper rest, and environmental maintenance.",
+      "text": "Financial margin for quality food, rest, and environment is ...",
       "voice": "Core Philosophy",
-      "principle": "Financial resources enable physical resources"
+      "principle": "Financial resources enable physical resources",
+      "answers": {
+        "4": "comfortable — I can afford what I need",
+        "5": "abundant — resources for quality self-care",
+        "2": "tight — barely covering necessities",
+        "3": "moderate — enough for basics, little extra",
+        "1": "absent — I can't afford basics"
+      }
     },
     {
       "id": "G6e",
-      "text": "My physical recovery consistently exceeds my physical expenditure — I'm building reserves, not depleting them.",
+      "text": "Physical recovery exceeding expenditure (building reserves) is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Recovery surplus enables sustained output"
+      "principle": "Recovery surplus enables sustained output",
+      "answers": {
+        "4": "usually — I'm generally building reserves",
+        "5": "consistent — I'm clearly accumulating physical capital",
+        "2": "barely breaking even — surviving but not building",
+        "3": "variable — sometimes building, sometimes depleting",
+        "1": "not happening — I'm depleting faster than recovering"
+      }
     }
   ]
 }

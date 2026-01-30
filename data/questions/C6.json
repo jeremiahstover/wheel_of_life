@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C6a",
-      "text": "I have enough spiritual strength that I can help others fight their battles without being pulled down myself.",
+      "text": "My spiritual strength to help others without being pulled down is ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual surplus enables ministry to others"
+      "principle": "Spiritual surplus enables ministry to others",
+      "answers": {
+        "4": "solid — I can usually help without losing ground",
+        "5": "strong — I have reserves to pour out without depleting myself",
+        "2": "weak — helping others often destabilizes me",
+        "3": "moderate — I can help sometimes, but it costs me",
+        "1": "absent — I get pulled down easily"
+      }
     },
     {
       "id": "C6b",
-      "text": "I have built up enough resistance to temptation that I'm not constantly in survival mode spiritually.",
+      "text": "My resistance to temptation is ...",
       "voice": "Chase Hughes",
-      "principle": "Spiritual resilience accumulates"
+      "principle": "Spiritual resilience accumulates",
+      "answers": {
+        "4": "generally strong — temptation is manageable",
+        "5": "robust — I've built real resistance over time",
+        "2": "fragile — I manage but it's exhausting",
+        "3": "variable — strong in some areas, weak in others",
+        "1": "minimal — I'm constantly in survival mode"
+      }
     },
     {
       "id": "C6c",
-      "text": "My spiritual health is robust enough to absorb setbacks without crisis — I have margin.",
+      "text": "My spiritual margin to absorb setbacks is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Margin provides stability"
+      "principle": "Margin provides stability",
+      "answers": {
+        "4": "substantial — most setbacks don't destabilize me",
+        "5": "deep — I have real reserves for hard seasons",
+        "2": "thin — I barely stay upright",
+        "3": "moderate — I can handle small setbacks",
+        "1": "nonexistent — any setback is a crisis"
+      }
     },
     {
       "id": "C6d",
-      "text": "I have accumulated enough victory over specific sins that I can mentor others facing the same battles.",
+      "text": "Victory over specific sins that allows me to mentor others is ...",
       "voice": "Core Philosophy",
-      "principle": "Tested victory becomes teachable wisdom"
+      "principle": "Tested victory becomes teachable wisdom",
+      "answers": {
+        "4": "substantial — I have real wins to share",
+        "5": "accumulated — years of victory I can draw on to help others",
+        "2": "minimal — barely surviving, not thriving",
+        "3": "partial — victory in some areas, not others",
+        "1": "not there — I'm still losing these battles myself"
+      }
     },
     {
       "id": "C6e",
-      "text": "My spiritual immune system is strong — exposure to darkness doesn't destabilize me the way it once did.",
+      "text": "My spiritual immune system when exposed to darkness is ...",
       "voice": "Jordan Peterson",
-      "principle": "Spiritual strength develops through tested exposure"
+      "principle": "Spiritual strength develops through tested exposure",
+      "answers": {
+        "4": "strong — most exposure doesn't affect me",
+        "5": "robust — I can go into dark places without being destabilized",
+        "2": "fragile — exposure is risky for me",
+        "3": "moderate — I can handle some exposure",
+        "1": "weak — I get infected easily"
+      }
     }
   ]
 }

@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D6a",
-      "text": "I have accumulated knowledge that others find valuable — people seek my expertise or perspective.",
+      "text": "Knowledge that others find valuable and seek from me is ...",
       "voice": "Brian Tracy",
-      "principle": "Knowledge becomes capital when others value it"
+      "principle": "Knowledge becomes capital when others value it",
+      "answers": {
+        "4": "substantial — people regularly seek my perspective",
+        "5": "abundant — I'm a go-to resource in multiple areas",
+        "2": "minimal — occasionally helpful in narrow areas",
+        "3": "developing — I'm becoming known for some things",
+        "1": "nonexistent — no one comes to me for expertise"
+      }
     },
     {
       "id": "D6b",
-      "text": "I have mental models and frameworks that help me navigate situations I haven't seen before.",
+      "text": "Mental models and frameworks for navigating new situations are ...",
       "voice": "Core Philosophy",
-      "principle": "Wisdom is portable across contexts"
+      "principle": "Wisdom is portable across contexts",
+      "answers": {
+        "4": "substantial — I have reliable tools for most situations",
+        "5": "comprehensive — I've built an integrated system for thinking",
+        "2": "basic — a few principles I can apply",
+        "3": "moderate — helpful frameworks in some domains",
+        "1": "absent — I figure things out from scratch each time"
+      }
     },
     {
       "id": "D6c",
-      "text": "I can teach or explain things in my areas of competence — my knowledge is organized enough to transfer.",
+      "text": "My ability to teach or transfer knowledge is ...",
       "voice": "Brian Tracy",
-      "principle": "Teachable knowledge is usable capital"
+      "principle": "Teachable knowledge is usable capital",
+      "answers": {
+        "4": "good — my knowledge is organized enough to share",
+        "5": "excellent — I can teach at multiple levels effectively",
+        "2": "limited — I can teach basics with effort",
+        "3": "moderate — I can transfer knowledge in some areas",
+        "1": "poor — I know things but can't explain them"
+      }
     },
     {
       "id": "D6d",
-      "text": "I have intellectual reserves to draw on — I'm not always scrambling to figure things out from scratch.",
+      "text": "Intellectual reserves to draw on vs. always scrambling are ...",
       "voice": "Core Philosophy",
-      "principle": "Accumulated learning creates efficiency"
+      "principle": "Accumulated learning creates efficiency",
+      "answers": {
+        "4": "substantial — I usually have knowledge to apply",
+        "5": "deep — I've accumulated reserves I can deploy anywhere",
+        "2": "thin — barely enough for current demands",
+        "3": "moderate — reserves in some areas, scrambling in others",
+        "1": "empty — I'm always starting from scratch"
+      }
     },
     {
       "id": "D6e",
-      "text": "My thinking has produced insights, systems, or content that has value beyond my personal use.",
+      "text": "Insights, systems, or content I've produced that has value beyond my personal use is ...",
       "voice": "Brian Tracy",
-      "principle": "Thought capital can be externalized"
+      "principle": "Thought capital can be externalized",
+      "answers": {
+        "4": "substantial — I've built things others benefit from",
+        "5": "significant — my thinking has produced lasting value",
+        "2": "minimal — a few things, nothing significant",
+        "3": "some — I've created useful things for limited audiences",
+        "1": "nothing — I haven't produced anything shareable"
+      }
     }
   ]
 }

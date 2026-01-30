@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I6a",
-      "text": "My health is robust enough to absorb a setback (illness, injury, stress) without cascade failure.",
+      "text": "Health robustness to absorb setbacks without cascade failure is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Health margin absorbs variance"
+      "principle": "Health margin absorbs variance",
+      "answers": {
+        "4": "solid — I can absorb significant setbacks",
+        "5": "robust — my health has real shock absorbers",
+        "2": "weak — small issues become big problems",
+        "3": "moderate — I can handle minor setbacks",
+        "1": "fragile — any setback cascades into crisis"
+      }
     },
     {
       "id": "I6b",
-      "text": "I recover from illness or injury faster than average — my body has resources to heal.",
+      "text": "My recovery speed from illness or injury is ...",
       "voice": "Core Philosophy",
-      "principle": "Recovery capacity indicates reserves"
+      "principle": "Recovery capacity indicates reserves",
+      "answers": {
+        "4": "good — I bounce back fairly quickly",
+        "5": "fast — my body has resources to heal quickly",
+        "2": "below average — I take longer than most",
+        "3": "average — about what you'd expect",
+        "1": "slow — things linger and complicate"
+      }
     },
     {
       "id": "I6c",
-      "text": "My overall wellness creates capacity for life rather than limiting it.",
+      "text": "My overall wellness creating capacity for life is ...",
       "voice": "Core Philosophy",
-      "principle": "Health is enabling, not just absence of disease"
+      "principle": "Health is enabling, not just absence of disease",
+      "answers": {
+        "4": "enabling — my health supports my goals",
+        "5": "multiplying — wellness is a genuine asset",
+        "2": "constraining — health issues hold me back",
+        "3": "neutral — health neither helps nor hurts much",
+        "1": "limiting — my health restricts what I can do"
+      }
     },
     {
       "id": "I6d",
-      "text": "I have invested in preventive care and maintenance that is paying dividends in current health.",
+      "text": "Preventive care and maintenance paying dividends is ...",
       "voice": "Brian Tracy",
-      "principle": "Health investment compounds"
+      "principle": "Health investment compounds",
+      "answers": {
+        "4": "clear — my investments are paying off",
+        "5": "substantial — years of care yielding significant returns",
+        "2": "minimal — little investment, little return",
+        "3": "starting — beginning to see some benefits",
+        "1": "not happening — I haven't invested"
+      }
     },
     {
       "id": "I6e",
-      "text": "My integrated health (body, soul, spirit) creates synergy — each area supports the others rather than dragging them down.",
+      "text": "Integration of body, soul, spirit creating synergy is ...",
       "voice": "Core Philosophy",
-      "principle": "Integrated health multiplies resources"
+      "principle": "Integrated health multiplies resources",
+      "answers": {
+        "4": "substantial — good integration most of the time",
+        "5": "deep — each area multiplies the others",
+        "2": "minimal — little positive interaction",
+        "3": "partial — some areas support each other",
+        "1": "absent — the areas drag each other down"
+      }
     }
   ]
 }

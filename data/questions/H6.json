@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H6a",
-      "text": "My physical capability exceeds what my daily life requires — I have reserves for the unexpected.",
+      "text": "Physical capability exceeding daily requirements is ...",
       "voice": "Core Philosophy",
-      "principle": "Physical margin provides security"
+      "principle": "Physical margin provides security",
+      "answers": {
+        "4": "substantial — I have reserves for unexpected demands",
+        "5": "abundant — significant capacity beyond what I need",
+        "2": "minimal — barely enough for daily life",
+        "3": "moderate — enough for normal days, tight for hard ones",
+        "1": "absent — I struggle with basic demands"
+      }
     },
     {
       "id": "H6b",
-      "text": "I can physically help others (move, lift, serve) because I have capacity beyond my own needs.",
+      "text": "Capacity to physically help others (move, lift, serve) is ...",
       "voice": "Core Philosophy",
-      "principle": "Physical surplus enables service"
+      "principle": "Physical surplus enables service",
+      "answers": {
+        "4": "good — I can be genuinely useful physically",
+        "5": "substantial — I have real capacity to serve others physically",
+        "2": "limited — I can help a little but it costs me",
+        "3": "moderate — I can help with some things",
+        "1": "absent — I can barely help myself"
+      }
     },
     {
       "id": "H6c",
-      "text": "My fitness level gives me options — I can hike, travel, play, work physically if needed.",
+      "text": "Physical options (hiking, travel, play, physical work) available to me are ...",
       "voice": "Brian Tracy",
-      "principle": "Physical capacity creates life options"
+      "principle": "Physical capacity creates life options",
+      "answers": {
+        "4": "good — most activities are available to me",
+        "5": "wide open — my fitness gives me many options",
+        "2": "constrained — many activities are off limits",
+        "3": "moderate — some options, some limitations",
+        "1": "very limited — my body restricts what I can do"
+      }
     },
     {
       "id": "H6d",
-      "text": "I'm building physical capacity rather than just maintaining or losing it — investing, not just spending.",
+      "text": "Building physical capacity vs. just maintaining or losing it is ...",
       "voice": "Brian Tracy",
-      "principle": "Physical investment compounds"
+      "principle": "Physical investment compounds",
+      "answers": {
+        "4": "usually building — I'm investing more than spending",
+        "5": "consistently building — I'm growing stronger over time",
+        "2": "barely maintaining — fighting to stay even",
+        "3": "variable — sometimes building, sometimes declining",
+        "1": "losing — I'm declining"
+      }
     },
     {
       "id": "H6e",
-      "text": "I have energy left at the end of the day — I'm not completely depleted by normal activities.",
+      "text": "Energy left at the end of the day is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Daily surplus indicates sufficient capacity"
+      "principle": "Daily surplus indicates sufficient capacity",
+      "answers": {
+        "4": "usually there — I end most days with something left",
+        "5": "consistent — I rarely end a day depleted",
+        "2": "rare — most days I'm exhausted",
+        "3": "variable — depends on the day",
+        "1": "nonexistent — I'm completely depleted by normal activities"
+      }
     }
   ]
 }

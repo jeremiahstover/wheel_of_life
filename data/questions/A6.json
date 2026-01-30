@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "A6a",
-      "text": "I have spiritual reserves I can draw on in difficult times — my tank is not perpetually near empty.",
+      "text": "My spiritual reserves in difficult times are ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual surplus provides resilience"
+      "principle": "Spiritual surplus provides resilience",
+      "answers": {
+        "4": "usually sufficient — I can weather most storms",
+        "5": "deep — I have substantial reserves built up over time",
+        "2": "thin — barely enough to get through",
+        "3": "variable — sometimes I have reserves, sometimes not",
+        "1": "empty — I have nothing to draw on"
+      }
     },
     {
       "id": "A6b",
-      "text": "I have accumulated spiritual insights, experiences, and wisdom that I can share with others.",
+      "text": "Spiritual insights and wisdom I can share with others are ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual capital can be transferred"
+      "principle": "Spiritual capital can be transferred",
+      "answers": {
+        "4": "substantial — I have real wisdom to offer in many areas",
+        "5": "abundant — years of accumulated insight ready to deploy",
+        "2": "minimal — I have little to offer others",
+        "3": "developing — I have some insights in some areas",
+        "1": "nonexistent — I'm still just trying to figure things out myself"
+      }
     },
     {
       "id": "A6c",
-      "text": "My spiritual life generates more than it consumes — I'm not constantly depleted, running on fumes.",
+      "text": "My spiritual life generates ...",
       "voice": "Cloud & Townsend",
-      "principle": "Healthy spirituality produces surplus"
+      "principle": "Healthy spirituality produces surplus",
+      "answers": {
+        "4": "more than I consume most of the time",
+        "5": "abundance — I have plenty to give away",
+        "2": "barely enough to survive",
+        "3": "enough to maintain, with occasional surplus",
+        "1": "nothing — I'm constantly running on fumes"
+      }
     },
     {
       "id": "A6d",
-      "text": "I have developed a relationship with God deep enough that I have something real to offer others seeking Him.",
+      "text": "What I have to offer others seeking God is ...",
       "voice": "Core Philosophy",
-      "principle": "Deep relationship produces shareable fruit"
+      "principle": "Deep relationship produces shareable fruit",
+      "answers": {
+        "4": "substantial — I have a real relationship to draw from",
+        "5": "deep — years of walking with God that I can share",
+        "2": "very little — my own relationship is too shallow",
+        "3": "something — I can help in limited ways",
+        "1": "nothing real — I'm seeking too"
+      }
     },
     {
       "id": "A6e",
-      "text": "My prayer life, Scripture knowledge, and spiritual practices have accumulated into a resource I can deploy.",
+      "text": "My prayer life, Scripture knowledge, and spiritual practices have accumulated into ...",
       "voice": "Brian Tracy",
-      "principle": "Consistent investment produces capital"
+      "principle": "Consistent investment produces capital",
+      "answers": {
+        "4": "a solid resource — I have real capital to deploy",
+        "5": "a deep well — substantial reserves ready to draw from",
+        "2": "a thin foundation — easily depleted",
+        "3": "a moderate base — helpful but not robust",
+        "1": "almost nothing — I haven't built much"
+      }
     }
   ]
 }

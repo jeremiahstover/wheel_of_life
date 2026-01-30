@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E6a",
-      "text": "I have capacity beyond what's required to maintain my current life — I could take on more if needed.",
+      "text": "Capacity beyond what's required to maintain my current life is ...",
       "voice": "Brian Tracy",
-      "principle": "Surplus capacity creates opportunity"
+      "principle": "Surplus capacity creates opportunity",
+      "answers": {
+        "4": "usually present — I could take on more if needed",
+        "5": "substantial — I have real reserve capacity",
+        "2": "barely there — surviving, nothing extra",
+        "3": "variable — sometimes margin, sometimes maxed out",
+        "1": "negative — I can't keep up with current demands"
+      }
     },
     {
       "id": "E6b",
-      "text": "My systems and habits are efficient enough that I have time and energy left over.",
+      "text": "The efficiency of my systems and habits is ...",
       "voice": "Brian Tracy",
-      "principle": "Efficiency creates margin"
+      "principle": "Efficiency creates margin",
+      "answers": {
+        "4": "good — I accomplish things with reasonable efficiency",
+        "5": "high — my systems free up significant time and energy",
+        "2": "low — more inefficient than efficient",
+        "3": "moderate — some systems work, others don't",
+        "1": "poor — I waste huge amounts of time and energy"
+      }
     },
     {
       "id": "E6c",
-      "text": "I'm not constantly maxed out — I have reserves of willpower and execution capacity.",
+      "text": "Reserves of willpower and execution capacity are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Reserve prevents burnout"
+      "principle": "Reserve prevents burnout",
+      "answers": {
+        "4": "usually available — I have reserves most of the time",
+        "5": "substantial — deep wells I can draw from",
+        "2": "thin — barely enough for the day",
+        "3": "variable — depends on the week",
+        "1": "depleted — I'm running on empty"
+      }
     },
     {
       "id": "E6d",
-      "text": "I have developed enough personal productivity that I accomplish more than most with similar time.",
+      "text": "My productivity compared to others with similar time is ...",
       "voice": "Brian Tracy",
-      "principle": "Productivity skill creates time surplus"
+      "principle": "Productivity skill creates time surplus",
+      "answers": {
+        "4": "above average — I accomplish more than most",
+        "5": "significantly higher — my systems multiply output",
+        "2": "below average — I struggle to keep up",
+        "3": "average — about the same as most people",
+        "1": "lower — I accomplish less than most"
+      }
     },
     {
       "id": "E6e",
-      "text": "I have margin in my schedule and energy — unexpected demands don't automatically create crisis.",
+      "text": "Margin in my schedule and energy for unexpected demands is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Margin absorbs variance"
+      "principle": "Margin absorbs variance",
+      "answers": {
+        "4": "usually available — surprises are absorbable",
+        "5": "substantial — I've built in real buffer",
+        "2": "thin — small surprises are manageable, but barely",
+        "3": "moderate — I can handle some unexpected things",
+        "1": "nonexistent — any surprise creates crisis"
+      }
     }
   ]
 }

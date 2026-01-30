@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B6a",
-      "text": "I have built a reputation for integrity that precedes me — people trust my word before I speak.",
+      "text": "My reputation for integrity is ...",
       "voice": "Jordan Peterson",
-      "principle": "Moral capital is accumulated through consistent action"
+      "principle": "Moral capital is accumulated through consistent action",
+      "answers": {
+        "4": "solid — people generally trust my word",
+        "5": "established — my reputation precedes me",
+        "2": "fragile — some trust, easily broken",
+        "3": "developing — building credibility in some areas",
+        "1": "damaged or nonexistent — I have to prove myself constantly"
+      }
     },
     {
       "id": "B6b",
-      "text": "I have relational credit built up from past faithfulness that I could draw on if needed.",
+      "text": "Relational credit from past faithfulness that I could draw on is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Trust is a bankable resource"
+      "principle": "Trust is a bankable resource",
+      "answers": {
+        "4": "substantial — I have real reserves with most people",
+        "5": "abundant — deep relational capital built over years",
+        "2": "thin — little goodwill built up",
+        "3": "moderate — some credit in some relationships",
+        "1": "empty — I've burned through whatever I had"
+      }
     },
     {
       "id": "B6c",
-      "text": "My track record of keeping commitments gives me credibility when I make new ones.",
+      "text": "My track record of keeping commitments gives me ...",
       "voice": "Brian Tracy",
-      "principle": "Past performance creates future opportunity"
+      "principle": "Past performance creates future opportunity",
+      "answers": {
+        "4": "good credibility — people expect me to deliver",
+        "5": "strong credibility — my commitment is trusted implicitly",
+        "2": "limited credibility — I have to over-prove myself",
+        "3": "some credibility — mixed track record",
+        "1": "no credibility — people doubt my follow-through"
+      }
     },
     {
       "id": "B6d",
-      "text": "I have enough moral standing that people come to me for ethical guidance or as a character reference.",
+      "text": "People coming to me for ethical guidance or character references is ...",
       "voice": "Core Philosophy",
-      "principle": "Moral surplus enables influence"
+      "principle": "Moral surplus enables influence",
+      "answers": {
+        "4": "common — people see me as a resource",
+        "5": "frequent — I'm a go-to person for moral questions",
+        "2": "rare — maybe occasionally",
+        "3": "occasional — in some specific areas",
+        "1": "unthinkable — I'm not that person"
+      }
     },
     {
       "id": "B6e",
-      "text": "My integrity has compounded over time into a genuine asset — doors open because of who I've proven to be.",
+      "text": "My integrity compounding into doors opening is ...",
       "voice": "Brian Tracy",
-      "principle": "Character compounds like interest"
+      "principle": "Character compounds like interest",
+      "answers": {
+        "4": "real — my character opens doors regularly",
+        "5": "substantial — my reputation is a genuine asset",
+        "2": "barely visible — maybe someday",
+        "3": "starting — I see some connection",
+        "1": "not happening — if anything, doors are closing"
+      }
     }
   ]
 }

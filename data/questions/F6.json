@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F6a",
-      "text": "I have emotional reserves — I can absorb difficulty without immediately destabilizing.",
+      "text": "Emotional reserves to absorb difficulty without destabilizing are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional reserves provide resilience"
+      "principle": "Emotional reserves provide resilience",
+      "answers": {
+        "4": "substantial — I can weather most storms",
+        "5": "deep — I have real reserves for hard seasons",
+        "2": "thin — small things tip me over",
+        "3": "moderate — I can handle some difficulty",
+        "1": "empty — any difficulty overwhelms me"
+      }
     },
     {
       "id": "F6b",
-      "text": "I have enough emotional stability to be present for others' emotions without being overwhelmed.",
+      "text": "My stability to be present for others' emotions without being overwhelmed is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional surplus enables ministry"
+      "principle": "Emotional surplus enables ministry",
+      "answers": {
+        "4": "solid — I can usually hold space for others",
+        "5": "strong — I can be a steady presence in emotional storms",
+        "2": "fragile — I can help briefly but it costs me heavily",
+        "3": "moderate — I can be present sometimes",
+        "1": "absent — their emotions pull me under"
+      }
     },
     {
       "id": "F6c",
-      "text": "I'm not constantly emotionally depleted — I have energy for connection and relationship.",
+      "text": "Emotional energy for connection and relationship is ...",
       "voice": "Core Philosophy",
-      "principle": "Emotional margin enables relationship"
+      "principle": "Emotional margin enables relationship",
+      "answers": {
+        "4": "usually available — I can engage most of the time",
+        "5": "abundant — I have plenty for deep connection",
+        "2": "thin — basic connection is all I can manage",
+        "3": "variable — sometimes I have energy, sometimes not",
+        "1": "depleted — I have nothing left to give"
+      }
     },
     {
       "id": "F6d",
-      "text": "I've processed enough of my own baggage that I'm not triggered by everyone else's.",
+      "text": "Processing of my own baggage so I'm not triggered by everyone else's is ...",
       "voice": "Jordan Peterson",
-      "principle": "Processed pain becomes capacity"
+      "principle": "Processed pain becomes capacity",
+      "answers": {
+        "4": "substantial — most major things worked through",
+        "5": "thorough — I've done the deep work",
+        "2": "minimal — lots of unprocessed material",
+        "3": "partial — some things processed, others not",
+        "1": "undone — everything triggers me"
+      }
     },
     {
       "id": "F6e",
-      "text": "I have developed emotional wealth — peace, joy, contentment — that overflows to others.",
+      "text": "Emotional wealth (peace, joy, contentment) that overflows to others is ...",
       "voice": "Core Philosophy",
-      "principle": "Positive emotions can be shared"
+      "principle": "Positive emotions can be shared",
+      "answers": {
+        "4": "present — I usually have overflow for others",
+        "5": "abundant — deep wells of peace and joy to share",
+        "2": "minimal — barely enough for myself",
+        "3": "developing — some to share in some seasons",
+        "1": "absent — I'm running on empty emotionally"
+      }
     }
   ]
 }
