@@ -25,7 +25,9 @@ See `GUIDE-layer3.md` for the full writing guide.
 | F3 | Emotions | ✓ Complete | 5/5 questions revised |
 | G3 | Sustenance | ✓ Complete | 5/5 questions revised |
 | H3 | Capability | ✓ Complete | 5/5 questions revised |
-| I3 | Wholeness | ✗ Pending | |
+| I3 | Wholeness | ✓ Complete | 5/5 questions revised |
+
+## ✓ LAYER 3 COMPLETE — 45/45 questions revised
 
 ## Completed Questions
 
@@ -85,9 +87,12 @@ See `GUIDE-layer3.md` for the full writing guide.
 - H3d: My body's ability to function is mostly determined by ...
 - H3e: When I face physical limitations, I ...
 
-## Next Up
-
-**I3 (Wholeness at Responsibility)** — Body / State
+### I3 (Wholeness at Responsibility)
+- I3a: My health outcomes are ...
+- I3b: When my health suffers, it's usually because of ...
+- I3c: When my body needs attention, I ...
+- I3d: Integrated wellness — physical, mental, spiritual — is ...
+- I3e: Preventive care and maintenance for my body is ...
 
 ---
 

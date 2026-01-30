@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I3a",
-      "text": "I take responsibility for my health outcomes that are within my control, rather than feeling helpless about my body.",
+      "text": "My health outcomes are ...",
       "voice": "Core Philosophy",
-      "principle": "Agency over controllable factors"
+      "principle": "Agency over controllable factors",
+      "answers": {
+        "4": "mostly my responsibility, though some things aren't",
+        "5": "my responsibility for what I can control",
+        "2": "influenced by factors I can't do much about",
+        "3": "partly my responsibility, partly beyond my control",
+        "1": "mostly out of my hands"
+      }
     },
     {
       "id": "I3b",
-      "text": "I don't blame genetics, age, or 'bad luck' for things I can actually influence through my choices.",
+      "text": "When my health suffers, it's usually because of ...",
       "voice": "Jordan Peterson",
-      "principle": "No blame-shifting for controllable factors"
+      "principle": "No blame-shifting for controllable factors",
+      "answers": {
+        "4": "my choices, though some factors are real",
+        "5": "my choices",
+        "2": "factors I didn't choose and can't change",
+        "3": "some things I can't control, some choices I've made",
+        "1": "genetics, age, or bad luck"
+      }
     },
     {
       "id": "I3c",
-      "text": "I own that addressing health issues is my job — I don't wait for others to notice problems or push me to act.",
+      "text": "When my body needs attention, I ...",
       "voice": "Core Philosophy",
-      "principle": "Proactive health ownership"
+      "principle": "Proactive health ownership",
+      "answers": {
+        "4": "care for it, though not always promptly",
+        "5": "care for it — it's worth caring for",
+        "2": "wish I didn't have to deal with it",
+        "3": "sometimes care for it, sometimes resent the need",
+        "1": "resent that it's failing me"
+      }
     },
     {
       "id": "I3d",
-      "text": "I recognize that integrated wellness (physical, mental, spiritual) is my responsibility to pursue, not separate from my 'spiritual life.'",
+      "text": "Integrated wellness — physical, mental, spiritual — is ...",
       "voice": "Core Philosophy",
-      "principle": "Holistic stewardship"
+      "principle": "Holistic stewardship",
+      "answers": {
+        "4": "my responsibility, though I don't always integrate well",
+        "5": "my responsibility — it's all connected",
+        "2": "hard to pursue with everything else demanding attention",
+        "3": "something I value, but I tend to compartmentalize",
+        "1": "an ideal, but I can only focus on one area at a time"
+      }
     },
     {
       "id": "I3e",
-      "text": "I take ownership of preventive care and maintenance rather than ignoring my body until something breaks.",
+      "text": "Preventive care and maintenance for my body is ...",
       "voice": "Core Philosophy",
-      "principle": "Maintenance before repair"
+      "principle": "Maintenance before repair",
+      "answers": {
+        "4": "my responsibility, though I'm not always consistent",
+        "5": "my responsibility — I don't wait for breakdown",
+        "2": "hard to prioritize when nothing feels wrong",
+        "3": "something I do sometimes, but mostly when there's a warning sign",
+        "1": "something I'll get to when something breaks"
+      }
     }
   ]
 }
