@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G1a",
-      "text": "I believe the body operates according to discoverable principles — there are right and wrong ways to fuel it.",
+      "text": "The body operates according to discoverable principles ...",
       "voice": "Core Philosophy",
-      "principle": "Physical order exists"
+      "principle": "Physical order exists",
+      "answers": {
+        "4": "mostly — there are reliable patterns for physical health",
+        "5": "absolutely — the body follows consistent, knowable laws",
+        "2": "somewhat — but everyone's different",
+        "3": "partially — some principles work, others don't",
+        "1": "not really — bodies are unpredictable"
+      }
     },
     {
       "id": "G1b",
-      "text": "I believe nutrition, sleep, and environment affect the body in predictable, patterned ways.",
+      "text": "Nutrition, sleep, and environment affect the body in predictable ways ...",
       "voice": "Brian Tracy",
-      "principle": "Physical inputs follow physical laws"
+      "principle": "Physical inputs follow physical laws",
+      "answers": {
+        "4": "usually — cause and effect in physical health is fairly reliable",
+        "5": "consistently — the body responds predictably to how we treat it",
+        "2": "possibly — but the connections seem weak",
+        "3": "sometimes — some inputs have clear effects, others don't",
+        "1": "not really — it's all individual variation"
+      }
     },
     {
       "id": "G1c",
-      "text": "I see evidence of physical order in how the body consistently responds to good or poor treatment.",
+      "text": "The body's consistent response to good or poor treatment shows ...",
       "voice": "Jordan Peterson",
-      "principle": "Physical patterns are observable"
+      "principle": "Physical patterns are observable",
+      "answers": {
+        "4": "significant order — treatment generally produces predictable results",
+        "5": "clear evidence of physical order — you reap what you sow",
+        "2": "weak patterns — but with too many exceptions",
+        "3": "some order — but it's not totally reliable",
+        "1": "nothing — some people abuse their bodies and thrive"
+      }
     },
     {
       "id": "G1d",
-      "text": "I reject the idea that the body is random, unknowable, or that 'anything goes' for physical health.",
+      "text": "The idea that the body is random or 'anything goes' for health is ...",
       "voice": "Core Philosophy",
-      "principle": "Physical nihilism is false"
+      "principle": "Physical nihilism is false",
+      "answers": {
+        "4": "mostly wrong — the body follows rules we can learn",
+        "5": "completely wrong — physical health is highly ordered and knowable",
+        "2": "partly true — so much is out of our control",
+        "3": "mixed — some things matter, others don't seem to",
+        "1": "mostly true — health is largely luck"
+      }
     },
     {
       "id": "G1e",
-      "text": "I believe physical health can be studied, understood, and pursued systematically.",
+      "text": "Physical health can be studied, understood, and pursued systematically ...",
       "voice": "Brian Tracy",
-      "principle": "Physical health has discoverable order"
+      "principle": "Physical health has discoverable order",
+      "answers": {
+        "4": "mostly — health follows learnable principles",
+        "5": "absolutely — the path to physical health is mappable",
+        "2": "somewhat — but mostly you just hope for the best",
+        "3": "partially — some aspects can be systematized, others can't",
+        "1": "not really — it's too complex and individual"
+      }
     }
   ]
 }

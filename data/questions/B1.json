@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B1a",
-      "text": "I believe there is an objective moral order — right and wrong are real, not just personal preferences.",
+      "text": "Objective moral order — right and wrong as real things — is ...",
       "voice": "Jordan Peterson",
-      "principle": "Moral reality exists independently of opinion"
+      "principle": "Moral reality exists independently of opinion",
+      "answers": {
+        "4": "generally real — most moral truths exist objectively",
+        "5": "foundational — right and wrong exist independent of opinion",
+        "2": "uncertain — maybe there's something, but I can't be sure",
+        "3": "partially real — some things are truly wrong, others are preference",
+        "1": "a fiction — morality is just personal preference"
+      }
     },
     {
       "id": "B1b",
-      "text": "I believe moral truth can be discovered through reason, revelation, and conscience.",
+      "text": "Moral truth can be discovered through reason, revelation, and conscience ...",
       "voice": "Core Philosophy",
-      "principle": "Moral order is knowable"
+      "principle": "Moral order is knowable",
+      "answers": {
+        "4": "generally — these are reliable guides to moral reality",
+        "5": "absolutely — God gave us tools to know right from wrong",
+        "2": "possibly — but I'm skeptical",
+        "3": "sometimes — some truths seem discoverable, others not",
+        "1": "not really — morality is constructed, not discovered"
+      }
     },
     {
       "id": "B1c",
-      "text": "I see evidence of moral order in the consistency of conscience across cultures and throughout history.",
+      "text": "The consistency of conscience across cultures and history suggests ...",
       "voice": "Jordan Peterson",
-      "principle": "Universal moral patterns indicate moral reality"
+      "principle": "Universal moral patterns indicate moral reality",
+      "answers": {
+        "4": "an ordered moral reality that humans can access",
+        "5": "clear evidence of moral order built into creation",
+        "2": "maybe something — but I'm not convinced",
+        "3": "some underlying reality — but with lots of variation",
+        "1": "nothing — it's coincidence or social conditioning"
+      }
     },
     {
       "id": "B1d",
-      "text": "I reject the idea that morality is purely constructed, arbitrary, or meaningless.",
+      "text": "The idea that morality is purely constructed or arbitrary is ...",
       "voice": "Jordan Peterson",
-      "principle": "Moral nihilism is false"
+      "principle": "Moral nihilism is false",
+      "answers": {
+        "4": "mostly wrong — there's real moral order underlying things",
+        "5": "completely wrong — moral order is as real as physical order",
+        "2": "probably true — I don't see evidence otherwise",
+        "3": "partly true — some morality is constructed, some isn't",
+        "1": "accurate — morality is a human invention"
+      }
     },
     {
       "id": "B1e",
-      "text": "I believe living in alignment with moral order leads to flourishing, while violating it leads to destruction.",
+      "text": "Living in alignment with moral order leads to flourishing ...",
       "voice": "Core Philosophy",
-      "principle": "Moral order has real consequences"
+      "principle": "Moral order has real consequences",
+      "answers": {
+        "4": "generally — moral alignment usually produces good outcomes",
+        "5": "reliably — this is how reality is structured",
+        "2": "sometimes — but the connection is weak",
+        "3": "often — there's some pattern, but with many exceptions",
+        "1": "not necessarily — good people suffer, bad people thrive"
+      }
     }
   ]
 }

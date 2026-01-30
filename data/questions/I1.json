@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I1a",
-      "text": "I believe health and wellness follow discoverable patterns — they're not random luck.",
+      "text": "Health and wellness follow discoverable patterns ...",
       "voice": "Core Philosophy",
-      "principle": "Health has order"
+      "principle": "Health has order",
+      "answers": {
+        "4": "mostly — there are reliable principles for wellness",
+        "5": "absolutely — health follows consistent, knowable patterns",
+        "2": "possibly — but there's so much we don't understand",
+        "3": "somewhat — some patterns are clear, others aren't",
+        "1": "not really — health is mostly luck"
+      }
     },
     {
       "id": "I1b",
-      "text": "I believe the integration of body, soul, and spirit follows principles that can be understood.",
+      "text": "The integration of body, soul, and spirit follows principles that can be understood ...",
       "voice": "Core Philosophy",
-      "principle": "Holistic health has discoverable patterns"
+      "principle": "Holistic health has discoverable patterns",
+      "answers": {
+        "4": "mostly — the integration has discernible patterns",
+        "5": "clearly — holistic wellness follows ordered principles",
+        "2": "possibly — but I don't see how",
+        "3": "partially — some connections are visible, others hidden",
+        "1": "not really — it's all too mysterious"
+      }
     },
     {
       "id": "I1c",
-      "text": "I see evidence of ordered wholeness in how neglect in one area (body, soul, or spirit) affects the others predictably.",
+      "text": "Neglect in one area (body, soul, or spirit) affecting the others predictably shows ...",
       "voice": "Jordan Peterson",
-      "principle": "Integrated health follows consistent patterns"
+      "principle": "Integrated health follows consistent patterns",
+      "answers": {
+        "4": "significant order — the parts clearly affect each other",
+        "5": "deep integration — neglect anywhere shows up everywhere",
+        "2": "weak connection — maybe some influence",
+        "3": "some order — there's connection, but it varies",
+        "1": "coincidence — the areas are separate"
+      }
     },
     {
       "id": "I1d",
-      "text": "I reject the idea that health is purely genetic, fated, or beyond systematic pursuit.",
+      "text": "The idea that health is purely genetic or fated is ...",
       "voice": "Brian Tracy",
-      "principle": "Health nihilism is false"
+      "principle": "Health nihilism is false",
+      "answers": {
+        "4": "mostly wrong — health is highly influenced by behavior",
+        "5": "completely wrong — we have significant control within ordered principles",
+        "2": "partly true — genetics set most of the outcome",
+        "3": "mixed — genetics matter, but so do choices",
+        "1": "mostly true — you get what you're dealt"
+      }
     },
     {
       "id": "I1e",
-      "text": "I believe there is an ordered path to wholeness that can be discovered and walked.",
+      "text": "There is an ordered path to wholeness that can be discovered and walked ...",
       "voice": "Core Philosophy",
-      "principle": "Wholeness has a learnable path"
+      "principle": "Wholeness has a learnable path",
+      "answers": {
+        "4": "mostly — the path exists and can be found",
+        "5": "absolutely — wholeness follows a discoverable, walkable path",
+        "2": "possibly — but the path is unclear",
+        "3": "partially — some directions are visible, others aren't",
+        "1": "not really — wholeness is either given or not"
+      }
     }
   ]
 }

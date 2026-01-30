@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F1a",
-      "text": "I believe emotions carry meaningful information — they are signals, not random noise.",
+      "text": "Emotions carry meaningful information ...",
       "voice": "Core Philosophy",
-      "principle": "Emotions have meaning"
+      "principle": "Emotions have meaning",
+      "answers": {
+        "4": "generally — they signal something worth attending to",
+        "5": "absolutely — emotions are reliable signals about reality",
+        "2": "possibly — but they're hard to interpret",
+        "3": "sometimes — some emotions seem meaningful, others don't",
+        "1": "not really — they're just random noise"
+      }
     },
     {
       "id": "F1b",
-      "text": "I believe emotional patterns can be understood, studied, and interpreted.",
+      "text": "Emotional patterns can be understood and interpreted ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional life has discoverable order"
+      "principle": "Emotional life has discoverable order",
+      "answers": {
+        "4": "mostly — with attention, emotions become readable",
+        "5": "reliably — there's a logic to emotional life that can be learned",
+        "2": "somewhat — but it's mostly guesswork",
+        "3": "partially — some patterns are clear, others aren't",
+        "1": "not really — emotions are too chaotic to understand"
+      }
     },
     {
       "id": "F1c",
-      "text": "I see evidence that emotions consistently point to something — unmet needs, violated values, important truths.",
+      "text": "Emotions consistently point to something — unmet needs, violated values, important truths ...",
       "voice": "Chase Hughes",
-      "principle": "Emotions are diagnostic"
+      "principle": "Emotions are diagnostic",
+      "answers": {
+        "4": "usually — emotions are generally connected to something real",
+        "5": "always — emotions are designed to reveal what matters",
+        "2": "maybe — but the link is fuzzy",
+        "3": "sometimes — some emotions clearly point somewhere, others don't",
+        "1": "I don't see the connection — they just happen"
+      }
     },
     {
       "id": "F1d",
-      "text": "I reject the idea that emotions are meaningless chemical fluctuations with no connection to reality.",
+      "text": "The idea that emotions are meaningless chemical fluctuations is ...",
       "voice": "Jordan Peterson",
-      "principle": "Emotional nihilism is false"
+      "principle": "Emotional nihilism is false",
+      "answers": {
+        "4": "mostly wrong — emotions are meaningful signals, not just chemistry",
+        "5": "completely wrong — emotions carry real information about reality",
+        "2": "possibly true — emotions might just be brain chemistry",
+        "3": "partly true — there's biology, but maybe also meaning",
+        "1": "probably accurate — we're just biological machines"
+      }
     },
     {
       "id": "F1e",
-      "text": "I believe there is an ordered path to emotional health that can be discovered and followed.",
+      "text": "There is an ordered path to emotional health ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional health follows patterns"
+      "principle": "Emotional health follows patterns",
+      "answers": {
+        "4": "mostly — there are principles that generally work",
+        "5": "absolutely — emotional health follows discoverable patterns",
+        "2": "possibly — but I don't know what it is",
+        "3": "partially — some aspects can be worked on, others can't",
+        "1": "not really — emotional health is luck or genetics"
+      }
     }
   ]
 }

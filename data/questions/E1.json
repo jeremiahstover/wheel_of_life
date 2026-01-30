@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E1a",
-      "text": "I believe my choices matter because they interact with an ordered reality that responds predictably.",
+      "text": "My choices matter because they interact with ordered reality ...",
       "voice": "Core Philosophy",
-      "principle": "Choices matter because order exists"
+      "principle": "Choices matter because order exists",
+      "answers": {
+        "4": "generally — choices produce predictable results",
+        "5": "absolutely — reality responds consistently to my choices",
+        "2": "possibly — but the connection feels weak",
+        "3": "sometimes — some choices matter, others seem random",
+        "1": "I'm not sure choices really matter — things happen regardless"
+      }
     },
     {
       "id": "E1b",
-      "text": "I believe there are better and worse ways to live — not all paths are equal.",
+      "text": "There are better and worse ways to live ...",
       "voice": "Jordan Peterson",
-      "principle": "Some choices are objectively better"
+      "principle": "Some choices are objectively better",
+      "answers": {
+        "4": "generally — there are real differences in outcomes",
+        "5": "absolutely — some paths lead to flourishing, others to destruction",
+        "2": "possibly — but who's to say which is which?",
+        "3": "in some respects — some things are clearly better, others are preference",
+        "1": "not objectively — all paths are equally valid"
+      }
     },
     {
       "id": "E1c",
-      "text": "I see evidence that certain behaviors consistently lead to flourishing while others lead to destruction.",
+      "text": "Certain behaviors consistently lead to flourishing while others lead to destruction ...",
       "voice": "Brian Tracy",
-      "principle": "Behavioral patterns reveal ordered consequences"
+      "principle": "Behavioral patterns reveal ordered consequences",
+      "answers": {
+        "4": "usually — cause and effect in behavior is fairly predictable",
+        "5": "reliably — this is how reality is wired",
+        "2": "maybe — but there are so many exceptions",
+        "3": "often — there are patterns, but with significant variation",
+        "1": "not really — outcomes seem random"
+      }
     },
     {
       "id": "E1d",
-      "text": "I reject the idea that all choices are equally valid or that 'whatever works for you' is sufficient guidance.",
+      "text": "The idea that all choices are equally valid is ...",
       "voice": "Jordan Peterson",
-      "principle": "Moral relativism denies observable order"
+      "principle": "Moral relativism denies observable order",
+      "answers": {
+        "4": "mostly wrong — some choices clearly lead to better outcomes",
+        "5": "completely wrong — reality distinguishes good choices from bad",
+        "2": "probably true — we can't really know better or worse",
+        "3": "partly true — in some areas, but not all",
+        "1": "true — who am I to judge someone else's path?"
+      }
     },
     {
       "id": "E1e",
-      "text": "I believe human action has meaning because it takes place within a structured, meaningful reality.",
+      "text": "Human action has meaning because it takes place within structured reality ...",
       "voice": "Core Philosophy",
-      "principle": "Action has meaning because reality has meaning"
+      "principle": "Action has meaning because reality has meaning",
+      "answers": {
+        "4": "generally — the structure of reality gives action significance",
+        "5": "absolutely — meaning flows from the ordered nature of existence",
+        "2": "possibly — but meaning might be something we create",
+        "3": "somewhat — actions matter in some contexts more than others",
+        "1": "I'm not sure action has inherent meaning"
+      }
     }
   ]
 }

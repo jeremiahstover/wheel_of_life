@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C1a",
-      "text": "I believe spiritual growth follows discoverable patterns — it's not random or mysterious.",
+      "text": "Spiritual growth follows discoverable patterns ...",
       "voice": "Core Philosophy",
-      "principle": "Sanctification has order"
+      "principle": "Sanctification has order",
+      "answers": {
+        "4": "generally — I can see how growth usually works",
+        "5": "absolutely — there are clear principles for spiritual development",
+        "2": "possibly — but I haven't found them",
+        "3": "sometimes — some patterns are visible, others hidden",
+        "1": "not at all — it's random or mysterious"
+      }
     },
     {
       "id": "C1b",
-      "text": "I believe there are identifiable steps and practices that lead toward holiness.",
+      "text": "Identifiable steps and practices that lead toward holiness are ...",
       "voice": "Brian Tracy",
-      "principle": "Spiritual development can be mapped"
+      "principle": "Spiritual development can be mapped",
+      "answers": {
+        "4": "generally known — the path is mostly mapped",
+        "5": "well established — Scripture and tradition show the way",
+        "2": "unclear — maybe they exist but I don't know them",
+        "3": "partially known — some steps are clear, others aren't",
+        "1": "a myth — holiness is either given or not"
+      }
     },
     {
       "id": "C1c",
-      "text": "I see evidence of ordered spiritual development in Scripture (the progression from milk to solid food, from faith to love in 2 Peter 1).",
+      "text": "Scripture's progression (milk to solid food, faith to love in 2 Peter 1) suggests ...",
       "voice": "Core Philosophy",
-      "principle": "Biblical patterns reveal spiritual order"
+      "principle": "Biblical patterns reveal spiritual order",
+      "answers": {
+        "4": "an ordered developmental path we can follow",
+        "5": "clear evidence that spiritual growth is structured and sequential",
+        "2": "maybe some pattern — but hard to apply",
+        "3": "a general direction — though not a precise map",
+        "1": "nothing specific — just metaphors"
+      }
     },
     {
       "id": "C1d",
-      "text": "I reject the idea that holiness is just luck, special grace for special people, or unattainable mystery.",
+      "text": "Holiness being just luck or unattainable mystery is ...",
       "voice": "Jordan Peterson",
-      "principle": "Holiness is accessible through ordered practice"
+      "principle": "Holiness is accessible through ordered practice",
+      "answers": {
+        "4": "mostly wrong — holiness is achievable through known means",
+        "5": "completely wrong — the path is open to anyone who walks it",
+        "2": "probably true — I don't see how to get there myself",
+        "3": "partly true — there's effort involved, but also factors beyond me",
+        "1": "accurate — some people are just more spiritual"
+      }
     },
     {
       "id": "C1e",
-      "text": "I believe the path to spiritual maturity can be studied, understood, and followed.",
+      "text": "The path to spiritual maturity can be studied and followed ...",
       "voice": "Brian Tracy",
-      "principle": "Spiritual maturity has a learnable path"
+      "principle": "Spiritual maturity has a learnable path",
+      "answers": {
+        "4": "mostly — the main principles are learnable",
+        "5": "absolutely — it's a well-marked trail for those who look",
+        "2": "somewhat — but mostly you just have to hope",
+        "3": "partially — some aspects can be studied, others can't",
+        "1": "not really — it's too personal and mysterious"
+      }
     }
   ]
 }

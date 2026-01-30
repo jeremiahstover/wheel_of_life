@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "A1a",
-      "text": "I believe there is a spiritual reality that is ordered and knowable, not random or chaotic.",
+      "text": "I believe spiritual reality is ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual order exists and can be discovered"
+      "principle": "Spiritual order exists and can be discovered",
+      "answers": {
+        "4": "generally ordered and knowable",
+        "5": "deeply ordered — there are patterns waiting to be discovered",
+        "2": "possibly ordered, but I'm not sure",
+        "3": "ordered in some ways, chaotic in others",
+        "1": "random — there's no pattern or structure to it"
+      }
     },
     {
       "id": "A1b",
-      "text": "I believe God has established patterns and practices through which He can be known and experienced.",
+      "text": "God's patterns and practices for knowing Him are ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual connection follows discoverable patterns"
+      "principle": "Spiritual connection follows discoverable patterns",
+      "answers": {
+        "4": "generally clear — I recognize most of them",
+        "5": "established and discoverable — He's shown us how He works",
+        "2": "unclear — maybe there are some, but I can't identify them",
+        "3": "partially visible — I see some patterns but not consistently",
+        "1": "nonexistent — spirituality is purely personal"
+      }
     },
     {
       "id": "A1c",
-      "text": "I see evidence of divine order in Scripture, creation, and the lives of faithful people throughout history.",
+      "text": "Evidence of divine order in Scripture, creation, and faithful lives is ...",
       "voice": "Jordan Peterson",
-      "principle": "Order is observable in spiritual reality"
+      "principle": "Order is observable in spiritual reality",
+      "answers": {
+        "4": "generally visible — I see it in most places",
+        "5": "overwhelming — it's everywhere once you look",
+        "2": "faint — maybe there's something there",
+        "3": "mixed — some evidence, some randomness",
+        "1": "absent — I don't see it"
+      }
     },
     {
       "id": "A1d",
-      "text": "I believe the spiritual disciplines (prayer, Scripture, worship) work because they align with how God designed spiritual reality.",
+      "text": "Spiritual disciplines work because ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual practices reflect spiritual design"
+      "principle": "Spiritual practices reflect spiritual design",
+      "answers": {
+        "4": "they align with how spiritual growth generally works",
+        "5": "they align precisely with how God designed spiritual reality",
+        "2": "I'm not sure why — maybe coincidence",
+        "3": "something is happening, but I don't understand the connection",
+        "1": "they don't really work — results are random"
+      }
     },
     {
       "id": "A1e",
-      "text": "I reject the idea that spiritual experience is purely subjective, random, or meaningless.",
+      "text": "Spiritual experience is ...",
       "voice": "Jordan Peterson",
-      "principle": "Spiritual reality is objective, not arbitrary"
+      "principle": "Spiritual reality is objective, not arbitrary",
+      "answers": {
+        "4": "grounded in objective reality, though experienced personally",
+        "5": "rooted in ordered reality that can be known and shared",
+        "2": "mostly subjective with maybe some shared elements",
+        "3": "a mix of subjective and objective",
+        "1": "purely subjective — everyone's reality is different"
+      }
     }
   ]
 }

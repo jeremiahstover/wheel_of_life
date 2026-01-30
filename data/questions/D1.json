@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D1a",
-      "text": "I believe reality is ordered and intelligible — it can be studied, understood, and predicted.",
+      "text": "Reality is ordered and intelligible ...",
       "voice": "Core Philosophy",
-      "principle": "Reality is knowable"
+      "principle": "Reality is knowable",
+      "answers": {
+        "4": "mostly — reality follows patterns we can discover",
+        "5": "absolutely — the universe is deeply structured and knowable",
+        "2": "possibly — but we can only scratch the surface",
+        "3": "partly — some things can be understood, others can't",
+        "1": "not really — things are fundamentally chaotic"
+      }
     },
     {
       "id": "D1b",
-      "text": "I believe knowledge is possible because there are patterns in reality waiting to be discovered.",
+      "text": "Knowledge is possible because there are patterns waiting to be discovered ...",
       "voice": "Jordan Peterson",
-      "principle": "Knowledge requires underlying order"
+      "principle": "Knowledge requires underlying order",
+      "answers": {
+        "4": "generally — patterns exist across most of reality",
+        "5": "certainly — order in reality makes knowledge possible",
+        "2": "possibly — but how would we know for sure?",
+        "3": "in some domains — science works, other areas are murky",
+        "1": "I'm skeptical — maybe knowledge is illusion"
+      }
     },
     {
       "id": "D1c",
-      "text": "I see evidence of order in the success of science, mathematics, and logic in describing reality.",
+      "text": "The success of science, mathematics, and logic in describing reality suggests ...",
       "voice": "Core Philosophy",
-      "principle": "Scientific success demonstrates cosmic order"
+      "principle": "Scientific success demonstrates cosmic order",
+      "answers": {
+        "4": "significant order — these tools work because reality cooperates",
+        "5": "deep order — reality is structured to be understood",
+        "2": "maybe some order — but we could be missing the chaos underneath",
+        "3": "partial order — some domains are orderly, others aren't",
+        "1": "nothing certain — they're just useful models"
+      }
     },
     {
       "id": "D1d",
-      "text": "I reject the idea that reality is fundamentally chaotic, unknowable, or meaningless.",
+      "text": "The idea that reality is fundamentally chaotic or unknowable is ...",
       "voice": "Jordan Peterson",
-      "principle": "Epistemological nihilism is false"
+      "principle": "Epistemological nihilism is false",
+      "answers": {
+        "4": "mostly wrong — reality has deep structure",
+        "5": "completely wrong — order is fundamental to existence",
+        "2": "possibly true — certainty seems impossible",
+        "3": "partly true — some things will never be known",
+        "1": "probably true — we're just pattern-seeking animals"
+      }
     },
     {
       "id": "D1e",
-      "text": "I believe clear thinking is possible because reality itself has clarity and structure.",
+      "text": "Clear thinking is possible because reality itself has structure ...",
       "voice": "Core Philosophy",
-      "principle": "Mental clarity reflects cosmic order"
+      "principle": "Mental clarity reflects cosmic order",
+      "answers": {
+        "4": "generally — thinking can match reality's structure",
+        "5": "absolutely — our minds can grasp reality because both are ordered",
+        "2": "possibly — but it's hard to know if we're getting it right",
+        "3": "sometimes — in some areas clarity is possible",
+        "1": "I'm not sure thinking is ever truly clear"
+      }
     }
   ]
 }

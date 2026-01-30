@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H1a",
-      "text": "I believe physical training works because the body adapts according to predictable principles.",
+      "text": "Physical training works because the body adapts according to predictable principles ...",
       "voice": "Core Philosophy",
-      "principle": "Adaptation follows ordered laws"
+      "principle": "Adaptation follows ordered laws",
+      "answers": {
+        "4": "generally — the body responds to training in known ways",
+        "5": "absolutely — adaptation follows consistent, discoverable laws",
+        "2": "possibly — but there's so much individual variation",
+        "3": "often — training usually helps, but not always predictably",
+        "1": "not reliably — some people train hard and don't improve"
+      }
     },
     {
       "id": "H1b",
-      "text": "I believe there are discoverable principles for building strength, endurance, and physical capability.",
+      "text": "There are discoverable principles for building physical capability ...",
       "voice": "Brian Tracy",
-      "principle": "Fitness has learnable principles"
+      "principle": "Fitness has learnable principles",
+      "answers": {
+        "4": "many — there's real science to physical development",
+        "5": "clear, established principles — the path is well documented",
+        "2": "possibly — but I don't know them",
+        "3": "some — but they don't work for everyone",
+        "1": "not really — it's mostly genetics"
+      }
     },
     {
       "id": "H1c",
-      "text": "I see evidence of physical order in how athletes consistently improve through systematic training.",
+      "text": "Athletes consistently improving through systematic training suggests ...",
       "voice": "Brian Tracy",
-      "principle": "Athletic success demonstrates physical order"
+      "principle": "Athletic success demonstrates physical order",
+      "answers": {
+        "4": "significant order — systematic training reliably produces results",
+        "5": "clear evidence — physical development follows laws anyone can apply",
+        "2": "maybe some order — but talent matters more",
+        "3": "partial order — systems help, but genetics set the ceiling",
+        "1": "nothing — they're just gifted to begin with"
+      }
     },
     {
       "id": "H1d",
-      "text": "I reject the idea that physical capability is purely genetic, random, or beyond systematic development.",
+      "text": "The idea that physical capability is purely genetic or random is ...",
       "voice": "Jordan Peterson",
-      "principle": "Physical fatalism is false"
+      "principle": "Physical fatalism is false",
+      "answers": {
+        "4": "mostly wrong — capability is highly trainable",
+        "5": "completely wrong — systematic work produces predictable improvement",
+        "2": "partly true — genetics set hard limits",
+        "3": "mixed — genetics matter, but so does training",
+        "1": "mostly true — you have what you have"
+      }
     },
     {
       "id": "H1e",
-      "text": "I believe the path to physical improvement can be mapped, studied, and followed.",
+      "text": "The path to physical improvement can be mapped and followed ...",
       "voice": "Brian Tracy",
-      "principle": "Physical development has ordered paths"
+      "principle": "Physical development has ordered paths",
+      "answers": {
+        "4": "mostly — proven methods work for most people",
+        "5": "absolutely — physical development is a well-understood science",
+        "2": "somewhat — but you mostly have to experiment",
+        "3": "partially — general directions exist, but details vary",
+        "1": "not really — it's different for everyone"
+      }
     }
   ]
 }
