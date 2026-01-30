@@ -127,3 +127,18 @@ Key behaviors to probe:
 ---
 
 *This guide may need adjustment for other layers. Each layer has its own ownership spectrum.*
+
+---
+
+## Why Quality Matters
+
+The diagnostic uses ~45 questions instead of 360. Each question carries 8x more weight.
+
+A question that:
+- Triggers defensiveness → gets an inflated score
+- Is misunderstood → gives false signal
+- Has unclear distinctions between answers → adds noise
+
+...can send the algorithm down the wrong branch and misidentify the break point.
+
+**Every question is load-bearing. No throwaway questions.**
