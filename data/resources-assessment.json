@@ -1,0 +1,506 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Resources Layer",
+    "version": "1.0",
+    "layer_focus": "Resources (Layer 6 of 8)",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough.",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Resources are produced by Skill (Layer 5). If Resources are lacking, check if Skill is developed — you can't generate surplus without competence. Resources enable Fellowship (Layer 7) — you need something to bring to mutual relationships, and they enable Sacrifice (Layer 8) — you can only give away what you have.",
+    "key_principle": "We are commanded to give away our second cloak, never our first. Maintain your foundation; steward your surplus."
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "Poverty — consuming more than producing; immediate attention required" },
+      "3-4": { "label": "Below Baseline", "description": "Subsistence — barely enough, no surplus to work with" },
+      "5-6": { "label": "Maintaining", "description": "Stability — needs are met but little margin" },
+      "7-8": { "label": "Target Zone", "description": "Surplus — generating more than consuming, able to invest" },
+      "9-10": { "label": "Exceptional", "description": "Abundance — significant surplus available for giving and investing" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Having spiritual surplus — not just getting by spiritually, but having overflow to draw from and share",
+      "scripture_anchor": {
+        "text": "Out of his heart will flow rivers of living water.",
+        "reference": "John 7:38"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I have spiritual reserves I can draw on in difficult times — my tank is not perpetually near empty.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual surplus provides resilience"
+        },
+        {
+          "id": "1.2",
+          "text": "I have accumulated spiritual insights, experiences, and wisdom that I can share with others.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual capital can be transferred"
+        },
+        {
+          "id": "1.3",
+          "text": "My spiritual life generates more than it consumes — I'm not constantly depleted, running on fumes.",
+          "voice": "Cloud & Townsend",
+          "principle": "Healthy spirituality produces surplus"
+        },
+        {
+          "id": "1.4",
+          "text": "I have developed a relationship with God deep enough that I have something real to offer others seeking Him.",
+          "voice": "Core Philosophy",
+          "principle": "Deep relationship produces shareable fruit"
+        },
+        {
+          "id": "1.5",
+          "text": "My prayer life, Scripture knowledge, and spiritual practices have accumulated into a resource I can deploy.",
+          "voice": "Brian Tracy",
+          "principle": "Consistent investment produces capital"
+        }
+      ],
+      "remediation": {
+        "advice": "Spiritual surplus comes from consistent investment over time. If you're always running on empty, you're either not investing enough (discipline/skill issue) or you're giving away your first cloak (boundary issue). Build reserves before increasing output.",
+        "scripture": {
+          "text": "I have stored up your word in my heart, that I might not sin against you.",
+          "reference": "Psalm 119:11"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Having moral capital — accumulated trust, integrity, and credibility that gives weight to your words and actions",
+      "scripture_anchor": {
+        "text": "A good name is to be chosen rather than great riches, and favor is better than silver or gold.",
+        "reference": "Proverbs 22:1"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "I have built a reputation for integrity that precedes me — people trust my word before I speak.",
+          "voice": "Jordan Peterson",
+          "principle": "Moral capital is accumulated through consistent action"
+        },
+        {
+          "id": "2.2",
+          "text": "I have relational credit built up from past faithfulness that I could draw on if needed.",
+          "voice": "Cloud & Townsend",
+          "principle": "Trust is a bankable resource"
+        },
+        {
+          "id": "2.3",
+          "text": "My track record of keeping commitments gives me credibility when I make new ones.",
+          "voice": "Brian Tracy",
+          "principle": "Past performance creates future opportunity"
+        },
+        {
+          "id": "2.4",
+          "text": "I have enough moral standing that people come to me for ethical guidance or as a character reference.",
+          "voice": "Core Philosophy",
+          "principle": "Moral surplus enables influence"
+        },
+        {
+          "id": "2.5",
+          "text": "My integrity has compounded over time into a genuine asset — doors open because of who I've proven to be.",
+          "voice": "Brian Tracy",
+          "principle": "Character compounds like interest"
+        }
+      ],
+      "remediation": {
+        "advice": "Moral capital is built one kept promise at a time. If you lack credibility, the answer isn't marketing — it's accumulating a track record. Every commitment kept is a deposit. Every promise broken is a withdrawal. Build the account.",
+        "scripture": {
+          "text": "The integrity of the upright guides them, but the crookedness of the treacherous destroys them.",
+          "reference": "Proverbs 11:3"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Having spiritual health reserves — enough purity and strength to weather temptation and help others in their battles",
+      "scripture_anchor": {
+        "text": "Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "reference": "Galatians 6:1"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I have enough spiritual strength that I can help others fight their battles without being pulled down myself.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual surplus enables ministry to others"
+        },
+        {
+          "id": "3.2",
+          "text": "I have built up enough resistance to temptation that I'm not constantly in survival mode spiritually.",
+          "voice": "Chase Hughes",
+          "principle": "Spiritual resilience accumulates"
+        },
+        {
+          "id": "3.3",
+          "text": "My spiritual health is robust enough to absorb setbacks without crisis — I have margin.",
+          "voice": "Cloud & Townsend",
+          "principle": "Margin provides stability"
+        },
+        {
+          "id": "3.4",
+          "text": "I have accumulated enough victory over specific sins that I can mentor others facing the same battles.",
+          "voice": "Core Philosophy",
+          "principle": "Tested victory becomes teachable wisdom"
+        },
+        {
+          "id": "3.5",
+          "text": "My spiritual immune system is strong — exposure to darkness doesn't destabilize me the way it once did.",
+          "voice": "Jordan Peterson",
+          "principle": "Spiritual strength develops through tested exposure"
+        }
+      ],
+      "remediation": {
+        "advice": "Spiritual health reserves are built through Layer 4 (discipline) and Layer 5 (skill) applied consistently. If you're always in survival mode, you're either under-investing or over-extending. Establish your foundation before expanding your exposure.",
+        "scripture": {
+          "text": "But solid food is for the mature, for those who have their powers of discernment trained by constant practice.",
+          "reference": "Hebrews 5:14"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Having intellectual capital — accumulated knowledge, wisdom, and mental frameworks that you can apply and share",
+      "scripture_anchor": {
+        "text": "The wise lay up knowledge, but the mouth of a fool brings ruin near.",
+        "reference": "Proverbs 10:14"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I have accumulated knowledge that others find valuable — people seek my expertise or perspective.",
+          "voice": "Brian Tracy",
+          "principle": "Knowledge becomes capital when others value it"
+        },
+        {
+          "id": "4.2",
+          "text": "I have mental models and frameworks that help me navigate situations I haven't seen before.",
+          "voice": "Core Philosophy",
+          "principle": "Wisdom is portable across contexts"
+        },
+        {
+          "id": "4.3",
+          "text": "I can teach or explain things in my areas of competence — my knowledge is organized enough to transfer.",
+          "voice": "Brian Tracy",
+          "principle": "Teachable knowledge is usable capital"
+        },
+        {
+          "id": "4.4",
+          "text": "I have intellectual reserves to draw on — I'm not always scrambling to figure things out from scratch.",
+          "voice": "Core Philosophy",
+          "principle": "Accumulated learning creates efficiency"
+        },
+        {
+          "id": "4.5",
+          "text": "My thinking has produced insights, systems, or content that has value beyond my personal use.",
+          "voice": "Brian Tracy",
+          "principle": "Thought capital can be externalized"
+        }
+      ],
+      "remediation": {
+        "advice": "Intellectual capital is built through Layer 5 (skill in learning and thinking) applied over time. If you're always scrambling, invest in developing expertise in fewer areas rather than shallow knowledge in many. Depth produces surplus; breadth often produces scarcity.",
+        "scripture": {
+          "text": "An intelligent heart acquires knowledge, and the ear of the wise seeks knowledge.",
+          "reference": "Proverbs 18:15"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Having capacity surplus — the bandwidth, energy, and follow-through ability to take on more than the minimum",
+      "scripture_anchor": {
+        "text": "I can do all things through him who strengthens me.",
+        "reference": "Philippians 4:13"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I have capacity beyond what's required to maintain my current life — I could take on more if needed.",
+          "voice": "Brian Tracy",
+          "principle": "Surplus capacity creates opportunity"
+        },
+        {
+          "id": "5.2",
+          "text": "My systems and habits are efficient enough that I have time and energy left over.",
+          "voice": "Brian Tracy",
+          "principle": "Efficiency creates margin"
+        },
+        {
+          "id": "5.3",
+          "text": "I'm not constantly maxed out — I have reserves of willpower and execution capacity.",
+          "voice": "Cloud & Townsend",
+          "principle": "Reserve prevents burnout"
+        },
+        {
+          "id": "5.4",
+          "text": "I have developed enough personal productivity that I accomplish more than most with similar time.",
+          "voice": "Brian Tracy",
+          "principle": "Productivity skill creates time surplus"
+        },
+        {
+          "id": "5.5",
+          "text": "I have margin in my schedule and energy — unexpected demands don't automatically create crisis.",
+          "voice": "Cloud & Townsend",
+          "principle": "Margin absorbs variance"
+        }
+      ],
+      "remediation": {
+        "advice": "Capacity surplus comes from skill in execution (Layer 5) plus boundaries (not over-committing). If you're perpetually maxed out, either your skill is lacking (you're inefficient) or your boundaries are (you're saying yes to too much). Fix the root cause.",
+        "scripture": {
+          "text": "The plans of the diligent lead surely to abundance, but everyone who is hasty comes only to poverty.",
+          "reference": "Proverbs 21:5"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Having emotional bandwidth — enough stability and reserve to handle your own emotions AND be present for others",
+      "scripture_anchor": {
+        "text": "Rejoice with those who rejoice, weep with those who weep.",
+        "reference": "Romans 12:15"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I have emotional reserves — I can absorb difficulty without immediately destabilizing.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional reserves provide resilience"
+        },
+        {
+          "id": "6.2",
+          "text": "I have enough emotional stability to be present for others' emotions without being overwhelmed.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional surplus enables ministry"
+        },
+        {
+          "id": "6.3",
+          "text": "I'm not constantly emotionally depleted — I have energy for connection and relationship.",
+          "voice": "Core Philosophy",
+          "principle": "Emotional margin enables relationship"
+        },
+        {
+          "id": "6.4",
+          "text": "I've processed enough of my own baggage that I'm not triggered by everyone else's.",
+          "voice": "Jordan Peterson",
+          "principle": "Processed pain becomes capacity"
+        },
+        {
+          "id": "6.5",
+          "text": "I have developed emotional wealth — peace, joy, contentment — that overflows to others.",
+          "voice": "Core Philosophy",
+          "principle": "Positive emotions can be shared"
+        }
+      ],
+      "remediation": {
+        "advice": "Emotional surplus comes from processing your own stuff (Layer 5 emotional skill) and maintaining boundaries. If you're always emotionally depleted, you're either not processing (accumulating debt) or not protecting (giving away your first cloak). Address the leak.",
+        "scripture": {
+          "text": "A tranquil heart gives life to the flesh, but envy makes the bones rot.",
+          "reference": "Proverbs 14:30"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Having physical provision surplus — enough food, rest, and environmental quality that you're not constantly in deficit",
+      "scripture_anchor": {
+        "text": "And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work.",
+        "reference": "2 Corinthians 9:8"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I have consistent access to quality nutrition — I'm not constantly compromising due to scarcity or poor planning.",
+          "voice": "Core Philosophy",
+          "principle": "Nutritional sufficiency is foundational"
+        },
+        {
+          "id": "7.2",
+          "text": "I get enough quality sleep that I have energy reserves, not just enough to get by.",
+          "voice": "Brian Tracy",
+          "principle": "Sleep surplus creates daytime capacity"
+        },
+        {
+          "id": "7.3",
+          "text": "My living environment supports rather than drains me — it's a resource, not a liability.",
+          "voice": "Jordan Peterson",
+          "principle": "Environment can add or subtract energy"
+        },
+        {
+          "id": "7.4",
+          "text": "I have financial margin for quality food, proper rest, and environmental maintenance.",
+          "voice": "Core Philosophy",
+          "principle": "Financial resources enable physical resources"
+        },
+        {
+          "id": "7.5",
+          "text": "My physical recovery consistently exceeds my physical expenditure — I'm building reserves, not depleting them.",
+          "voice": "Cloud & Townsend",
+          "principle": "Recovery surplus enables sustained output"
+        }
+      ],
+      "remediation": {
+        "advice": "Physical provision surplus requires both skill (knowing what your body needs) and financial/time resources to provide it. If you're constantly running a deficit, identify whether it's knowledge, money, time, or priority that's the bottleneck.",
+        "scripture": {
+          "text": "It is in vain that you rise up early and go late to rest, eating the bread of anxious toil; for he gives to his beloved sleep.",
+          "reference": "Psalm 127:2"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Having physical capacity surplus — strength, endurance, and capability beyond what's required for daily life",
+      "scripture_anchor": {
+        "text": "He gives power to the faint, and to him who has no might he increases strength.",
+        "reference": "Isaiah 40:29"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "My physical capability exceeds what my daily life requires — I have reserves for the unexpected.",
+          "voice": "Core Philosophy",
+          "principle": "Physical margin provides security"
+        },
+        {
+          "id": "8.2",
+          "text": "I can physically help others (move, lift, serve) because I have capacity beyond my own needs.",
+          "voice": "Core Philosophy",
+          "principle": "Physical surplus enables service"
+        },
+        {
+          "id": "8.3",
+          "text": "My fitness level gives me options — I can hike, travel, play, work physically if needed.",
+          "voice": "Brian Tracy",
+          "principle": "Physical capacity creates life options"
+        },
+        {
+          "id": "8.4",
+          "text": "I'm building physical capacity rather than just maintaining or losing it — investing, not just spending.",
+          "voice": "Brian Tracy",
+          "principle": "Physical investment compounds"
+        },
+        {
+          "id": "8.5",
+          "text": "I have energy left at the end of the day — I'm not completely depleted by normal activities.",
+          "voice": "Cloud & Townsend",
+          "principle": "Daily surplus indicates sufficient capacity"
+        }
+      ],
+      "remediation": {
+        "advice": "Physical capacity surplus is built through consistent training (discipline) and smart training (skill). If your physical capability is barely enough for daily life, you're one injury or illness away from crisis. Build margin through progressive training.",
+        "scripture": {
+          "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+          "reference": "1 Corinthians 9:24"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Having health reserves — robust enough wellness that you can absorb setbacks and still function well",
+      "scripture_anchor": {
+        "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
+        "reference": "3 John 1:2"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "My health is robust enough to absorb a setback (illness, injury, stress) without cascade failure.",
+          "voice": "Cloud & Townsend",
+          "principle": "Health margin absorbs variance"
+        },
+        {
+          "id": "9.2",
+          "text": "I recover from illness or injury faster than average — my body has resources to heal.",
+          "voice": "Core Philosophy",
+          "principle": "Recovery capacity indicates reserves"
+        },
+        {
+          "id": "9.3",
+          "text": "My overall wellness creates capacity for life rather than limiting it.",
+          "voice": "Core Philosophy",
+          "principle": "Health is enabling, not just absence of disease"
+        },
+        {
+          "id": "9.4",
+          "text": "I have invested in preventive care and maintenance that is paying dividends in current health.",
+          "voice": "Brian Tracy",
+          "principle": "Health investment compounds"
+        },
+        {
+          "id": "9.5",
+          "text": "My integrated health (body, soul, spirit) creates synergy — each area supports the others rather than dragging them down.",
+          "voice": "Core Philosophy",
+          "principle": "Integrated health multiplies resources"
+        }
+      ],
+      "remediation": {
+        "advice": "Health reserves are built through all previous layers: order (believing health follows patterns), causality (seeing cause-effect), responsibility (owning your health), discipline (consistent practices), and skill (knowing what works). If reserves are low, trace back to find the weak link.",
+        "scripture": {
+          "text": "And the God of peace will sanctify you completely, and may your whole spirit and soul and body be kept blameless.",
+          "reference": "1 Thessalonians 5:23"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 indicates poverty in that area — you're consuming more than you're producing, or just barely surviving. Without surplus, you have nothing to invest and nothing to give. Address the skill and discipline issues that are preventing resource generation.",
+      "maintenance": "Dimensions scoring 5-6 show stability but no margin. You're meeting needs but not building surplus. This is sustainable short-term but leaves you vulnerable to disruption and unable to invest in growth or give to others.",
+      "strength": "Dimensions scoring 7+ show genuine surplus. You're producing more than you consume and have resources to steward. Now check if Fellowship (Layer 7) is following — are you bringing your surplus into mutual relationships?",
+      "integration": "Resources apply across all domains. Financial surplus without relational capital is poverty in what matters most. Physical resources without spiritual reserves leaves you vulnerable. Build surplus in all areas, flowing upward per the Ladder of Wealth: money → time → relationships (eternal)."
+    },
+    "next_steps": [
+      "Identify areas of poverty (consuming more than producing) vs surplus (producing more than consuming)",
+      "For poverty areas, trace back: is Skill lacking? Discipline? Go down the layers.",
+      "For surplus areas, ask: Am I stewarding this well? Investing? Or hoarding?",
+      "Check if you're giving away your first cloak anywhere — depleting your foundation rather than giving from surplus",
+      "Where resources are strong, check if Fellowship (Layer 7) is following",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_skill": "Skill without resources is competence that isn't producing — you can do it well but it's not generating surplus. Resources without skill is unsustainable — you have surplus now but you're not building the competence to maintain it. Both are needed: skill produces; resources accumulate.",
+    "ladder_of_wealth_application": "Resources exist in three tiers: money (most basic), time (more limited), relationships (most eternal). Surplus should flow upward: use money surplus to buy back time; use time surplus to invest in relationships. Don't hoard at lower levels when you could be investing at higher ones."
+  }
+}
