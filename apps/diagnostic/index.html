@@ -28,7 +28,7 @@
         }
         
         .container {
-            max-width: 700px;
+            max-width: 900px;
             margin: 0 auto;
         }
         
@@ -50,10 +50,18 @@
             border: 1px solid var(--border);
         }
         
-        .card h2 {
+        .card h2, .card h3 {
             font-size: 1.1rem;
             margin-bottom: 16px;
             color: var(--text);
+        }
+        
+        .card h3 {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
         }
         
         /* Phase: Dimension Selection */
@@ -130,6 +138,25 @@
         .question-counter {
             color: var(--text-muted);
             font-size: 0.85rem;
+        }
+        
+        .probe-mode {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+        
+        .probe-mode.quick {
+            background: rgba(88, 166, 255, 0.2);
+            color: var(--accent);
+        }
+        
+        .probe-mode.full {
+            background: rgba(104, 211, 145, 0.2);
+            color: #68d391;
         }
         
         .question-text {
@@ -227,6 +254,18 @@
         }
         
         /* Results */
+        .results-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 24px;
+        }
+        
+        @media (max-width: 800px) {
+            .results-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
         .result-summary {
             text-align: center;
             margin-bottom: 24px;
@@ -235,6 +274,8 @@
         .result-summary h3 {
             font-size: 1.3rem;
             margin-bottom: 8px;
+            text-transform: none;
+            letter-spacing: normal;
         }
         
         .result-summary .break-info {
@@ -248,6 +289,12 @@
         
         .result-summary .break-info.solid strong {
             color: #68d391;
+        }
+        
+        .result-stats {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 12px;
         }
         
         .btn {
@@ -277,16 +324,161 @@
             margin-top: 20px;
         }
         
-        /* Wheel embed */
+        /* Wheel */
         .wheel-container {
-            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         #wheel {
             max-width: 100%;
             height: auto;
-            display: block;
-            margin: 0 auto;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .sidebar .card {
+            margin-bottom: 0;
+            padding: 16px;
+        }
+        
+        .category-scores {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .category-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 8px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 6px;
+        }
+        
+        .category-row .cat-name {
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        
+        .category-row .cat-name.spirit { color: var(--spirit); }
+        .category-row .cat-name.soul { color: var(--soul); }
+        .category-row .cat-name.body { color: var(--body); }
+        
+        .category-row .cat-score {
+            font-weight: bold;
+        }
+        
+        .category-row .cat-score.strong { color: #68d391; }
+        .category-row .cat-score.weak { color: #fc8181; }
+        
+        .overall-row {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .overall-row .label {
+            font-weight: bold;
+            color: var(--text);
+        }
+        
+        .overall-row .score {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .overall-row .score.strong { color: #68d391; }
+        .overall-row .score.weak { color: #fc8181; }
+        
+        .breaks-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .break-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 6px;
+        }
+        
+        .break-item .dim {
+            font-weight: bold;
+        }
+        
+        .break-item .dim.spirit { color: var(--spirit); }
+        .break-item .dim.soul { color: var(--soul); }
+        .break-item .dim.body { color: var(--body); }
+        
+        .break-item .layer {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .break-item .layer.solid {
+            color: #68d391;
+        }
+        
+        .break-item .layer.crisis {
+            color: #fc8181;
+        }
+        
+        .legend {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .legend-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-label {
+            width: 50px;
+            font-size: 0.75rem;
+        }
+        
+        .legend-gradient {
+            flex: 1;
+            height: 12px;
+            border-radius: 4px;
+        }
+        
+        .legend-gradient.spirit {
+            background: linear-gradient(to right, #000, #805ad5);
+        }
+        
+        .legend-gradient.soul {
+            background: linear-gradient(to right, #000, #3182ce);
+        }
+        
+        .legend-gradient.body {
+            background: linear-gradient(to right, #000, #38a169);
+        }
+        
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            margin-left: 58px;
         }
         
         .hidden { display: none !important; }
@@ -313,8 +505,9 @@
                 <div>
                     <span class="cell-label" id="cell-label">A1</span>
                     <span class="cell-layer" id="cell-layer">Order</span>
+                    <span class="probe-mode" id="probe-mode">quick</span>
                 </div>
-                <span class="question-counter" id="question-counter">Q1 of 5</span>
+                <span class="question-counter" id="question-counter">Q1 of 2</span>
             </div>
             
             <div class="question-voice" id="question-voice"></div>
@@ -334,18 +527,63 @@
         </div>
         
         <!-- Phase 4: Results -->
-        <div id="phase-results" class="card hidden">
-            <div class="result-summary">
-                <h3 id="result-title">Assessment Complete</h3>
-                <p class="break-info" id="break-info"></p>
-            </div>
-            
-            <div class="wheel-container">
-                <svg id="wheel" viewBox="-260 -260 520 520" width="400" height="400"></svg>
-            </div>
-            
-            <div class="btn-row">
-                <button class="btn btn-secondary" onclick="restart()">Start Over</button>
+        <div id="phase-results" class="hidden">
+            <div class="results-layout">
+                <div class="wheel-section">
+                    <div class="card">
+                        <div class="result-summary">
+                            <h3 id="result-title">Assessment Complete</h3>
+                            <p class="break-info" id="break-info"></p>
+                            <p class="result-stats" id="result-stats"></p>
+                        </div>
+                        
+                        <div class="wheel-container">
+                            <svg id="wheel" viewBox="-260 -260 520 520" width="400" height="400"></svg>
+                        </div>
+                        
+                        <div class="btn-row">
+                            <button class="btn btn-secondary" onclick="restart()">Start Over</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="card">
+                        <h3>Limiting Factors</h3>
+                        <div class="category-scores" id="category-scores"></div>
+                        <div class="overall-row">
+                            <span class="label">Overall</span>
+                            <span class="score" id="overall-score">—</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Break Points</h3>
+                        <div class="breaks-list" id="breaks-list"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Legend</h3>
+                        <div class="legend">
+                            <div class="legend-row">
+                                <span class="legend-label" style="color: var(--spirit)">Spirit</span>
+                                <div class="legend-gradient spirit"></div>
+                            </div>
+                            <div class="legend-row">
+                                <span class="legend-label" style="color: var(--soul)">Soul</span>
+                                <div class="legend-gradient soul"></div>
+                            </div>
+                            <div class="legend-row">
+                                <span class="legend-label" style="color: var(--body)">Body</span>
+                                <div class="legend-gradient body"></div>
+                            </div>
+                        </div>
+                        <div class="legend-labels">
+                            <span>2 (Crisis)</span>
+                            <span>10 (Exceptional)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -378,6 +616,12 @@
         8: 'Sacrifice'
     };
     
+    const CATEGORIES = {
+        Spirit: ['A', 'B', 'C'],
+        Soul: ['D', 'E', 'F'],
+        Body: ['G', 'H', 'I']
+    };
+    
     // Fallback Likert scale if answers not provided
     const LIKERT_SCALE = {
         1: 'Strongly Disagree',
@@ -391,6 +635,12 @@
     const THRESHOLD = 3.5;
     const DATA_PATH = 'data/questions/';
     
+    // Quick probe settings
+    const QUICK_PROBE_COUNT = 2;      // Questions for initial probes
+    const QUICK_PROBE_TIEBREAK = 1;   // Extra question if mixed results
+    const STRONG_THRESHOLD = 4;       // Both answers >= this = strong
+    const WEAK_THRESHOLD = 2;         // Both answers <= this = weak
+    
     // ============================================
     // STATE
     // ============================================
@@ -398,14 +648,15 @@
     let currentDim = null;
     let scores = {};           // { layer: score }
     let probeTrail = [];       // [{ layer, score, status }]
-    let currentCell = null;    // { dim, layer, questions }
+    let currentCell = null;    // { dim, layer, questions, isFullProbe }
     let currentQuestionIdx = 0;
     let currentAnswers = [];   // answers for current cell
     let questionsAnswered = 0;
+    let breakLayer = null;     // Once identified, this is the break point
     
     // Binary search state
     let searchState = {
-        phase: 'initial',      // initial, narrowing, confirming
+        phase: 'initial',      // initial, narrowing, confirming, full
         probeQueue: [],
     };
     
@@ -414,7 +665,8 @@
     // ============================================
     
     function showPhase(phase) {
-        document.querySelectorAll('.card').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('#phase-select, #phase-questions, #phase-processing, #phase-results')
+            .forEach(el => el.classList.add('hidden'));
         document.getElementById(`phase-${phase}`).classList.remove('hidden');
     }
     
@@ -444,6 +696,7 @@
         scores = {};
         probeTrail = [];
         questionsAnswered = 0;
+        breakLayer = null;
         
         // Initialize binary search - start with L3 and L6
         searchState = {
@@ -464,78 +717,85 @@
         const nextLayer = determineNextProbe();
         
         if (nextLayer === null) {
-            // Done probing
+            // Done probing - do full assessment on break layer if we have one
+            if (breakLayer !== null && !scores[breakLayer]?.fullProbe) {
+                await loadCell(currentDim, breakLayer, true); // Full probe
+                return;
+            }
             finishAssessment();
             return;
         }
         
-        // Load and display questions for this cell
-        await loadCell(currentDim, nextLayer);
+        // Load and display questions for this cell (quick probe)
+        await loadCell(currentDim, nextLayer, false);
     }
     
     function determineNextProbe() {
         if (searchState.phase === 'initial') {
-            // First probe L3, then L6
             if (searchState.probeQueue.length > 0) {
                 return searchState.probeQueue.shift();
             }
-            
-            // After initial probes, analyze and decide
             searchState.phase = 'narrowing';
             return determineNextProbe();
         }
         
         if (searchState.phase === 'narrowing') {
-            const l3Score = scores[3];
-            const l6Score = scores[6];
-            const l3Strong = l3Score >= THRESHOLD;
-            const l6Strong = l6Score >= THRESHOLD;
+            const l3Strong = scores[3] >= THRESHOLD;
+            const l6Strong = scores[6] >= THRESHOLD;
             
             if (l3Strong && l6Strong) {
-                // Both strong - check upper layers (L7, L8)
-                if (!scores[7]) return 7;
-                if (!scores[8]) return 8;
+                // Both strong - check upper layers
+                if (scores[7] === undefined) return 7;
+                if (scores[8] === undefined) return 8;
+                // All strong through L8
+                breakLayer = null;
             } else if (!l3Strong && !l6Strong) {
-                // Both weak - check lower layers (L1, L2)
-                if (!scores[2]) return 2;
-                if (!scores[1]) return 1;
+                // Both weak - check lower layers
+                if (scores[2] === undefined) return 2;
+                if (scores[1] === undefined) return 1;
+                // Find the break
+                if (scores[1] >= THRESHOLD) breakLayer = 2;
+                else if (scores[2] >= THRESHOLD) breakLayer = 3;
+                else breakLayer = 1; // L1 crisis
             } else if (l3Strong && !l6Strong) {
                 // Break somewhere in L4-L6
-                if (!scores[4]) return 4;
-                if (!scores[5]) return 5;
+                if (scores[4] === undefined) return 4;
+                if (scores[5] === undefined) return 5;
+                // Find exact break
+                if (scores[4] >= THRESHOLD && scores[5] >= THRESHOLD) breakLayer = 6;
+                else if (scores[4] >= THRESHOLD) breakLayer = 5;
+                else breakLayer = 4;
             } else {
-                // l3 weak, l6 strong - anomaly, check L4, L5, L2, L1
-                if (!scores[4]) return 4;
-                if (!scores[5]) return 5;
-                if (!scores[2]) return 2;
-                if (!scores[1]) return 1;
+                // Anomaly: L3 weak, L6 strong
+                if (scores[2] === undefined) return 2;
+                if (scores[1] === undefined) return 1;
+                if (scores[4] === undefined) return 4;
+                if (scores[5] === undefined) return 5;
+                // Find the real break
+                for (let l = 1; l <= 8; l++) {
+                    if (scores[l] !== undefined && scores[l] < THRESHOLD) {
+                        breakLayer = l;
+                        break;
+                    }
+                }
             }
             
-            // Fill in any remaining gaps for confirmation
             searchState.phase = 'confirming';
             return determineNextProbe();
         }
         
         if (searchState.phase === 'confirming') {
-            // Find break point from what we have
-            const breakInfo = findBreakPoint();
-            
-            // If we have a break, confirm the floor is solid
-            if (breakInfo.break !== null && breakInfo.floor > 0) {
-                const floorLayer = breakInfo.floor;
-                if (!scores[floorLayer]) return floorLayer;
-            }
-            
-            // Make sure we've tested the break layer
-            if (breakInfo.break !== null && !scores[breakInfo.break]) {
-                return breakInfo.break;
+            // Confirm floor is solid if we have a break
+            if (breakLayer !== null && breakLayer > 1) {
+                const floorLayer = breakLayer - 1;
+                if (scores[floorLayer] === undefined) return floorLayer;
             }
         }
         
-        return null; // Done
+        return null; // Done with quick probes
     }
     
-    async function loadCell(dim, layer) {
+    async function loadCell(dim, layer, isFullProbe) {
         const url = `${DATA_PATH}${dim}${layer}.json`;
         
         try {
@@ -548,6 +808,7 @@
                 layer,
                 questions: cellData.questions,
                 layerName: LAYERS[layer],
+                isFullProbe,
             };
             currentQuestionIdx = 0;
             currentAnswers = [];
@@ -556,21 +817,48 @@
             updateProbeTrail();
         } catch (error) {
             console.error('Error loading cell:', error);
-            // Fallback: generate dummy score
-            recordCellScore(layer, 3.0);
+            recordCellScore(layer, 3.0, false);
             probeNextLayer();
         }
     }
     
+    function getQuestionsToAsk() {
+        if (currentCell.isFullProbe) {
+            return currentCell.questions.length; // All 5
+        }
+        
+        // Quick probe: start with 2, maybe add tiebreaker
+        if (currentAnswers.length < QUICK_PROBE_COUNT) {
+            return QUICK_PROBE_COUNT;
+        }
+        
+        // Check if we need a tiebreaker
+        const allStrong = currentAnswers.every(a => a >= STRONG_THRESHOLD);
+        const allWeak = currentAnswers.every(a => a <= WEAK_THRESHOLD);
+        
+        if (allStrong || allWeak) {
+            return QUICK_PROBE_COUNT; // Clear signal, no tiebreaker needed
+        }
+        
+        // Mixed results - need tiebreaker
+        return QUICK_PROBE_COUNT + QUICK_PROBE_TIEBREAK;
+    }
+    
     function displayQuestion() {
         const q = currentCell.questions[currentQuestionIdx];
+        const questionsToAsk = getQuestionsToAsk();
         
         document.getElementById('cell-label').textContent = 
             `${currentCell.dim}${currentCell.layer}: ${DIMENSIONS[currentCell.dim].name}`;
         document.getElementById('cell-layer').textContent = 
             `Layer ${currentCell.layer}: ${currentCell.layerName}`;
+        
+        const modeEl = document.getElementById('probe-mode');
+        modeEl.textContent = currentCell.isFullProbe ? 'full' : 'quick';
+        modeEl.className = `probe-mode ${currentCell.isFullProbe ? 'full' : 'quick'}`;
+        
         document.getElementById('question-counter').textContent = 
-            `Q${currentQuestionIdx + 1} of ${currentCell.questions.length}`;
+            `Q${currentQuestionIdx + 1} of ${questionsToAsk}`;
         
         document.getElementById('question-voice').textContent = 
             q.voice ? `Voice: ${q.voice}` : '';
@@ -580,7 +868,6 @@
         const answersEl = document.getElementById('answers');
         answersEl.innerHTML = '';
         
-        // Use custom answers if available, otherwise fallback to Likert
         const hasCustomAnswers = q.answers && typeof q.answers === 'object';
         
         for (let i = 1; i <= 5; i++) {
@@ -597,7 +884,7 @@
         }
         
         // Update progress
-        const totalEstimated = 25; // ~5 cells × 5 questions
+        const totalEstimated = 15; // Optimistic with quick probes
         const progress = Math.min(100, (questionsAnswered / totalEstimated) * 100);
         document.getElementById('progress-fill').style.width = `${progress}%`;
     }
@@ -607,22 +894,31 @@
         questionsAnswered++;
         currentQuestionIdx++;
         
-        if (currentQuestionIdx < currentCell.questions.length) {
+        const questionsToAsk = getQuestionsToAsk();
+        
+        if (currentQuestionIdx < questionsToAsk && currentQuestionIdx < currentCell.questions.length) {
             displayQuestion();
         } else {
             // Cell complete - calculate score
             const avg = currentAnswers.reduce((a, b) => a + b, 0) / currentAnswers.length;
-            recordCellScore(currentCell.layer, avg);
+            recordCellScore(currentCell.layer, avg, currentCell.isFullProbe);
             probeNextLayer();
         }
     }
     
-    function recordCellScore(layer, score) {
+    function recordCellScore(layer, score, isFullProbe) {
         scores[layer] = score;
+        scores[layer] = { value: score, fullProbe: isFullProbe };
+        
+        // For compatibility, also store just the value
+        const actualScore = typeof scores[layer] === 'object' ? scores[layer].value : scores[layer];
+        scores[layer] = actualScore;
+        
         probeTrail.push({
             layer,
-            score,
-            status: score >= THRESHOLD ? 'strong' : 'weak'
+            score: actualScore,
+            status: actualScore >= THRESHOLD ? 'strong' : 'weak',
+            mode: isFullProbe ? 'full' : 'quick'
         });
     }
     
@@ -634,6 +930,7 @@
             const item = document.createElement('span');
             item.className = `probe-item ${p.status}`;
             item.textContent = `L${p.layer}: ${(p.score * 2).toFixed(1)}`;
+            if (p.mode === 'full') item.textContent += '★';
             trailEl.appendChild(item);
         });
         
@@ -648,30 +945,28 @@
     
     function findBreakPoint() {
         let floor = 0;
-        let breakPoint = null;
+        let bp = null;
         
-        // We may not have all layers, so work with what we have
         for (let layer = 1; layer <= 8; layer++) {
             if (scores[layer] !== undefined) {
                 if (scores[layer] >= THRESHOLD) {
                     floor = layer;
-                } else if (breakPoint === null) {
-                    breakPoint = layer;
+                } else if (bp === null) {
+                    bp = layer;
                 }
             }
         }
         
-        // Infer break from gaps if needed
-        if (breakPoint === null && floor < 8) {
+        if (bp === null && floor < 8) {
             for (let layer = floor + 1; layer <= 8; layer++) {
                 if (scores[layer] !== undefined && scores[layer] < THRESHOLD) {
-                    breakPoint = layer;
+                    bp = layer;
                     break;
                 }
             }
         }
         
-        if (breakPoint === null && floor > 0) {
+        if (bp === null && floor > 0) {
             return { floor: 8, break: null };
         }
         
@@ -679,7 +974,7 @@
             return { floor: 0, break: 1 };
         }
         
-        return { floor, break: breakPoint };
+        return { floor, break: bp };
     }
     
     // ============================================
@@ -689,13 +984,12 @@
     function finishAssessment() {
         showPhase('processing');
         
-        // Fill in any missing layers by interpolation
         fillMissingLayers();
         
         setTimeout(() => {
             showPhase('results');
             displayResults();
-        }, 1000);
+        }, 800);
     }
     
     function fillMissingLayers() {
@@ -727,6 +1021,7 @@
         
         const titleEl = document.getElementById('result-title');
         const infoEl = document.getElementById('break-info');
+        const statsEl = document.getElementById('result-stats');
         
         if (breakInfo.break === null) {
             titleEl.textContent = `${currentDim}: ${DIMENSIONS[currentDim].name} — Solid`;
@@ -738,6 +1033,8 @@
             infoEl.innerHTML = `Break at <strong>L${breakInfo.break} ${LAYERS[breakInfo.break]}</strong> — focus here`;
         }
         
+        statsEl.textContent = `${questionsAnswered} questions answered`;
+        
         // Build full data (mirror to all dimensions)
         const fullData = {};
         DIM_ORDER.forEach(dim => {
@@ -748,6 +1045,95 @@
         });
         
         renderWheel(fullData);
+        renderSidebar(fullData);
+    }
+    
+    // ============================================
+    // SIDEBAR RENDERING
+    // ============================================
+    
+    function getCategoryMin(data, category) {
+        let min = 5;
+        for (const dim of CATEGORIES[category]) {
+            for (let layer = 1; layer <= 8; layer++) {
+                if (data[dim][layer] < min) {
+                    min = data[dim][layer];
+                }
+            }
+        }
+        return min;
+    }
+    
+    function getOverallScore(data) {
+        const spiritMin = getCategoryMin(data, 'Spirit');
+        const soulMin = getCategoryMin(data, 'Soul');
+        const bodyMin = getCategoryMin(data, 'Body');
+        return Math.min(spiritMin, soulMin, bodyMin);
+    }
+    
+    function renderSidebar(data) {
+        // Category scores
+        const container = document.getElementById('category-scores');
+        container.innerHTML = '';
+        
+        ['Spirit', 'Soul', 'Body'].forEach(cat => {
+            const min = getCategoryMin(data, cat);
+            const displayMin = min * 2;
+            const isStrong = min >= THRESHOLD;
+            
+            const row = document.createElement('div');
+            row.className = 'category-row';
+            row.innerHTML = `
+                <span class="cat-name ${cat.toLowerCase()}">${cat}</span>
+                <span class="cat-score ${isStrong ? 'strong' : 'weak'}">${displayMin.toFixed(1)}</span>
+            `;
+            container.appendChild(row);
+        });
+        
+        // Overall
+        const overall = getOverallScore(data);
+        const displayOverall = overall * 2;
+        const overallEl = document.getElementById('overall-score');
+        overallEl.textContent = displayOverall.toFixed(1);
+        overallEl.className = 'score ' + (overall >= THRESHOLD ? 'strong' : 'weak');
+        
+        // Break points list
+        const breaksList = document.getElementById('breaks-list');
+        breaksList.innerHTML = '';
+        
+        DIM_ORDER.forEach(dim => {
+            const info = DIMENSIONS[dim];
+            
+            // Find break for this dimension
+            let floor = 0, bp = null;
+            for (let layer = 1; layer <= 8; layer++) {
+                if (data[dim][layer] >= THRESHOLD) {
+                    floor = layer;
+                } else if (bp === null) {
+                    bp = layer;
+                }
+            }
+            
+            let layerText, layerClass;
+            if (bp === null) {
+                layerText = 'Solid';
+                layerClass = 'solid';
+            } else if (bp === 1) {
+                layerText = 'L1 Crisis';
+                layerClass = 'crisis';
+            } else {
+                layerText = `L${bp} ${LAYERS[bp]}`;
+                layerClass = '';
+            }
+            
+            const item = document.createElement('div');
+            item.className = 'break-item';
+            item.innerHTML = `
+                <span class="dim ${info.category.toLowerCase()}">${dim} ${info.name}</span>
+                <span class="layer ${layerClass}">${layerText}</span>
+            `;
+            breaksList.appendChild(item);
+        });
     }
     
     // ============================================
@@ -810,14 +1196,14 @@
     function getEarliestBreak(data) {
         let earliest = null;
         for (const dim of DIM_ORDER) {
-            let breakPoint = null;
+            let bp = null;
             for (let layer = 1; layer <= 8; layer++) {
-                if (data[dim][layer] < THRESHOLD && breakPoint === null) {
-                    breakPoint = layer;
+                if (data[dim][layer] < THRESHOLD && bp === null) {
+                    bp = layer;
                 }
             }
-            if (breakPoint !== null && (earliest === null || breakPoint < earliest)) {
-                earliest = breakPoint;
+            if (bp !== null && (earliest === null || bp < earliest)) {
+                earliest = bp;
             }
         }
         return earliest;
@@ -943,6 +1329,7 @@
         scores = {};
         probeTrail = [];
         currentCell = null;
+        breakLayer = null;
         showPhase('select');
     }
     
