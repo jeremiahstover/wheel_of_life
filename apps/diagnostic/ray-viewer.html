@@ -373,13 +373,18 @@
         data = {};
         for (const dim of Object.keys(DIMENSIONS)) {
             data[dim] = {};
-            // Simulate: lower layers tend to be stronger
+            
+            // L1 starts with random value between 2.5 and 5
+            let ceiling = 2.5 + Math.random() * 2.5;
+            
             for (let layer = 1; layer <= 8; layer++) {
-                // Base score decreases as layer increases (foundation stronger)
-                const base = 4.5 - (layer * 0.15);
-                // Add randomness
-                const variance = (Math.random() - 0.5) * 1.5;
-                data[dim][layer] = Math.max(1, Math.min(5, base + variance));
+                // Score is random from 1 to ceiling (can't exceed layer below)
+                const floor = 1;
+                const score = floor + Math.random() * (ceiling - floor);
+                data[dim][layer] = Math.round(score * 100) / 100;
+                
+                // Next layer's ceiling is this layer's score
+                ceiling = data[dim][layer];
             }
         }
     }
