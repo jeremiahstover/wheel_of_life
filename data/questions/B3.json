@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "B3.A",
+      "id": "B3a",
       "text": "When I do something wrong, I own it rather than making excuses, minimizing, or shifting blame to circumstances.",
       "voice": "Jordan Peterson",
       "principle": "Tell the truth; take responsibility"
     },
     {
-      "id": "B3.B",
+      "id": "B3b",
       "text": "I take responsibility for the impact of my actions on others, including unintended consequences.",
       "voice": "Cloud & Townsend",
       "principle": "Own your impact, not just your intent"
     },
     {
-      "id": "B3.C",
+      "id": "B3c",
       "text": "When confronted with a moral failure, I resist the urge to defend myself or point to what others did.",
       "voice": "Jordan Peterson",
       "principle": "No blame-shifting when confronted"
     },
     {
-      "id": "B3.D",
+      "id": "B3d",
       "text": "I recognize that my integrity is my responsibility — no one else can give it to me or take it away without my participation.",
       "voice": "Core Philosophy",
       "principle": "Integrity is personally owned"
     },
     {
-      "id": "B3.E",
+      "id": "B3e",
       "text": "When I'm convicted of something, I own that addressing it is my job — I don't wait for someone else to fix it or hold me accountable.",
       "voice": "Chase Hughes",
       "principle": "Self-accountability precedes external accountability"

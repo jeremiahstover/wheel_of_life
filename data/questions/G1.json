@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G1.A",
+      "id": "G1a",
       "text": "I believe the body operates according to discoverable principles — there are right and wrong ways to fuel it.",
       "voice": "Core Philosophy",
       "principle": "Physical order exists"
     },
     {
-      "id": "G1.B",
+      "id": "G1b",
       "text": "I believe nutrition, sleep, and environment affect the body in predictable, patterned ways.",
       "voice": "Brian Tracy",
       "principle": "Physical inputs follow physical laws"
     },
     {
-      "id": "G1.C",
+      "id": "G1c",
       "text": "I see evidence of physical order in how the body consistently responds to good or poor treatment.",
       "voice": "Jordan Peterson",
       "principle": "Physical patterns are observable"
     },
     {
-      "id": "G1.D",
+      "id": "G1d",
       "text": "I reject the idea that the body is random, unknowable, or that 'anything goes' for physical health.",
       "voice": "Core Philosophy",
       "principle": "Physical nihilism is false"
     },
     {
-      "id": "G1.E",
+      "id": "G1e",
       "text": "I believe physical health can be studied, understood, and pursued systematically.",
       "voice": "Brian Tracy",
       "principle": "Physical health has discoverable order"

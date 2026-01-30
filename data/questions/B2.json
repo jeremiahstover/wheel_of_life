@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "B2.A",
+      "id": "B2a",
       "text": "I understand that small compromises in integrity compound into larger character issues over time.",
       "voice": "Jordan Peterson",
       "principle": "Small causes compound into large effects"
     },
     {
-      "id": "B2.B",
+      "id": "B2b",
       "text": "I can see that most 'sudden' moral failures are actually the result of many small prior choices.",
       "voice": "Chase Hughes",
       "principle": "Big failures have small precursors"
     },
     {
-      "id": "B2.C",
+      "id": "B2c",
       "text": "I recognize that honesty and deception both have natural consequences — trust or suspicion, clarity or confusion.",
       "voice": "Jordan Peterson",
       "principle": "Truth and lies produce predictable outcomes"
     },
     {
-      "id": "B2.D",
+      "id": "B2d",
       "text": "I understand that when I ignore my conscience repeatedly, it becomes harder to hear — this is cause and effect, not random.",
       "voice": "Core Philosophy",
       "principle": "Conscience sensitivity responds to how you treat it"
     },
     {
-      "id": "B2.E",
+      "id": "B2e",
       "text": "I can connect the quality of my relationships to how I've treated people — the harvest matches the seed.",
       "voice": "Cloud & Townsend",
       "principle": "Relational reaping follows relational sowing"

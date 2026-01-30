@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "I2.A",
+      "id": "I2a",
       "text": "I understand that most of my health outcomes are influenced by my accumulated choices, not just genetics or luck.",
       "voice": "Core Philosophy",
       "principle": "Health results from accumulated stewardship"
     },
     {
-      "id": "I2.B",
+      "id": "I2b",
       "text": "I can see that chronic health issues often have lifestyle factors that contributed to them, even if genetics played a role.",
       "voice": "Jordan Peterson",
       "principle": "Lifestyle choices affect health trajectories"
     },
     {
-      "id": "I2.C",
+      "id": "I2c",
       "text": "I recognize that preventive care and maintenance produce different health outcomes than reactive crisis management.",
       "voice": "Brian Tracy",
       "principle": "Maintenance prevents breakdown"
     },
     {
-      "id": "I2.D",
+      "id": "I2d",
       "text": "I understand that my body, soul, and spirit are connected — neglect in one area affects the others.",
       "voice": "Core Philosophy",
       "principle": "Holistic cause-effect across domains"
     },
     {
-      "id": "I2.E",
+      "id": "I2e",
       "text": "I can see that people who are healthy in their 60s, 70s, and beyond usually made different choices than those who aren't.",
       "voice": "Brian Tracy",
       "principle": "Long-term health reflects long-term choices"

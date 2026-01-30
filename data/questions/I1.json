@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "I1.A",
+      "id": "I1a",
       "text": "I believe health and wellness follow discoverable patterns — they're not random luck.",
       "voice": "Core Philosophy",
       "principle": "Health has order"
     },
     {
-      "id": "I1.B",
+      "id": "I1b",
       "text": "I believe the integration of body, soul, and spirit follows principles that can be understood.",
       "voice": "Core Philosophy",
       "principle": "Holistic health has discoverable patterns"
     },
     {
-      "id": "I1.C",
+      "id": "I1c",
       "text": "I see evidence of ordered wholeness in how neglect in one area (body, soul, or spirit) affects the others predictably.",
       "voice": "Jordan Peterson",
       "principle": "Integrated health follows consistent patterns"
     },
     {
-      "id": "I1.D",
+      "id": "I1d",
       "text": "I reject the idea that health is purely genetic, fated, or beyond systematic pursuit.",
       "voice": "Brian Tracy",
       "principle": "Health nihilism is false"
     },
     {
-      "id": "I1.E",
+      "id": "I1e",
       "text": "I believe there is an ordered path to wholeness that can be discovered and walked.",
       "voice": "Core Philosophy",
       "principle": "Wholeness has a learnable path"

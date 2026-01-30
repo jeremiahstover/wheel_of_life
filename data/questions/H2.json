@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "H2.A",
+      "id": "H2a",
       "text": "I understand that my current physical capability is the result of what I've been doing (or not doing) physically.",
       "voice": "Core Philosophy",
       "principle": "Physical capability reflects physical history"
     },
     {
-      "id": "H2.B",
+      "id": "H2b",
       "text": "I can see that people who are physically fit built that fitness through consistent effort over time — not genetics alone.",
       "voice": "Brian Tracy",
       "principle": "Fitness is built, not born"
     },
     {
-      "id": "H2.C",
+      "id": "H2c",
       "text": "I recognize that 'use it or lose it' is a law of the body — physical capability declines without maintenance.",
       "voice": "Jordan Peterson",
       "principle": "Physical capability requires ongoing investment"
     },
     {
-      "id": "H2.D",
+      "id": "H2d",
       "text": "I understand that expecting physical improvement without physical effort is asking for magic, not reasonable results.",
       "voice": "Brian Tracy",
       "principle": "Physical results require physical inputs"
     },
     {
-      "id": "H2.E",
+      "id": "H2e",
       "text": "I can trace my current strength, endurance, and mobility back to my exercise and movement patterns.",
       "voice": "Chase Hughes",
       "principle": "Physical state is traceable to physical practices"

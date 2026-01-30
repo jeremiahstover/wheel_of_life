@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "H5.A",
+      "id": "H5a",
       "text": "I know proper form and technique for my physical practices — I've learned how to train effectively, not just hard.",
       "voice": "Brian Tracy",
       "principle": "Training technique is learnable"
     },
     {
-      "id": "H5.B",
+      "id": "H5b",
       "text": "I understand principles of progression — I know how to systematically build capacity rather than just randomly exercising.",
       "voice": "Brian Tracy",
       "principle": "Progressive training follows principles"
     },
     {
-      "id": "H5.C",
+      "id": "H5c",
       "text": "I can program my own training effectively — I have enough knowledge to design workouts that achieve my goals.",
       "voice": "Core Philosophy",
       "principle": "Training design is a skill"
     },
     {
-      "id": "H5.D",
+      "id": "H5d",
       "text": "I know how to prevent injury and recover from setbacks — I've developed practical physical maintenance skills.",
       "voice": "Core Philosophy",
       "principle": "Injury prevention is learned"
     },
     {
-      "id": "H5.E",
+      "id": "H5e",
       "text": "I can assess my own physical state accurately — I know when to push and when to back off based on real signals.",
       "voice": "Chase Hughes",
       "principle": "Physical self-awareness is developable"

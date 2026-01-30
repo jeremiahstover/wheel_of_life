@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "D1.A",
+      "id": "D1a",
       "text": "I believe reality is ordered and intelligible — it can be studied, understood, and predicted.",
       "voice": "Core Philosophy",
       "principle": "Reality is knowable"
     },
     {
-      "id": "D1.B",
+      "id": "D1b",
       "text": "I believe knowledge is possible because there are patterns in reality waiting to be discovered.",
       "voice": "Jordan Peterson",
       "principle": "Knowledge requires underlying order"
     },
     {
-      "id": "D1.C",
+      "id": "D1c",
       "text": "I see evidence of order in the success of science, mathematics, and logic in describing reality.",
       "voice": "Core Philosophy",
       "principle": "Scientific success demonstrates cosmic order"
     },
     {
-      "id": "D1.D",
+      "id": "D1d",
       "text": "I reject the idea that reality is fundamentally chaotic, unknowable, or meaningless.",
       "voice": "Jordan Peterson",
       "principle": "Epistemological nihilism is false"
     },
     {
-      "id": "D1.E",
+      "id": "D1e",
       "text": "I believe clear thinking is possible because reality itself has clarity and structure.",
       "voice": "Core Philosophy",
       "principle": "Mental clarity reflects cosmic order"

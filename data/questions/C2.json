@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "C2.A",
+      "id": "C2a",
       "text": "I understand that my current spiritual state is largely the accumulated result of my past spiritual choices.",
       "voice": "Core Philosophy",
       "principle": "State results from accumulated choices"
     },
     {
-      "id": "C2.B",
+      "id": "C2b",
       "text": "I recognize that habitual sin doesn't appear overnight — it grows from seeds I planted and watered.",
       "voice": "Jordan Peterson",
       "principle": "Sin patterns have cultivation histories"
     },
     {
-      "id": "C2.C",
+      "id": "C2c",
       "text": "I can see that people who are spiritually mature got there through specific practices over time — not special grace unavailable to me.",
       "voice": "Brian Tracy",
       "principle": "Spiritual maturity follows spiritual investment"
     },
     {
-      "id": "C2.D",
+      "id": "C2d",
       "text": "I understand that 'sowing to the Spirit' (Galatians 6:8) means specific actions that produce specific spiritual results.",
       "voice": "Core Philosophy",
       "principle": "Biblical sowing/reaping is concrete, not metaphorical"
     },
     {
-      "id": "C2.E",
+      "id": "C2e",
       "text": "I recognize that asking God to change my spiritual state without changing my spiritual inputs is asking for magic, not faith.",
       "voice": "Jordan Peterson",
       "principle": "Faith cooperates with causality; it doesn't bypass it"

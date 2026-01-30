@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "D2.A",
+      "id": "D2a",
       "text": "I understand that my thinking patterns are shaped by what I consistently consume — content, conversations, information.",
       "voice": "Core Philosophy",
       "principle": "Mental inputs shape mental outputs"
     },
     {
-      "id": "D2.B",
+      "id": "D2b",
       "text": "I can see the connection between information diet and worldview — garbage in, garbage out applies to the mind.",
       "voice": "Brian Tracy",
       "principle": "Information quality affects thinking quality"
     },
     {
-      "id": "D2.C",
+      "id": "D2c",
       "text": "I recognize that people who think clearly didn't get that way by accident — clear thinking is built through specific practices.",
       "voice": "Jordan Peterson",
       "principle": "Mental clarity results from mental discipline"
     },
     {
-      "id": "D2.D",
+      "id": "D2d",
       "text": "I understand that chronic anxiety, negativity, or confusion often have identifiable inputs that are feeding them.",
       "voice": "Chase Hughes",
       "principle": "Mental states have traceable causes"
     },
     {
-      "id": "D2.E",
+      "id": "D2e",
       "text": "I can connect periods of mental clarity or fog to what I was consuming and practicing during those times.",
       "voice": "Core Philosophy",
       "principle": "Mental state correlates with mental investment"

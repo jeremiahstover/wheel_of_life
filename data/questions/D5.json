@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "D5.A",
+      "id": "D5a",
       "text": "I have developed effective learning methods — I know how I learn best and I use that knowledge intentionally.",
       "voice": "Brian Tracy",
       "principle": "Learning how to learn is foundational skill"
     },
     {
-      "id": "D5.B",
+      "id": "D5b",
       "text": "I can synthesize information from multiple sources into coherent understanding — not just collect facts, but integrate them.",
       "voice": "Core Philosophy",
       "principle": "Synthesis is a higher-order skill"
     },
     {
-      "id": "D5.C",
+      "id": "D5c",
       "text": "I have developed critical thinking skills — I can evaluate arguments, spot logical fallacies, and think clearly under pressure.",
       "voice": "Jordan Peterson",
       "principle": "Critical thinking is trainable"
     },
     {
-      "id": "D5.D",
+      "id": "D5d",
       "text": "I can explain complex ideas simply — my understanding is deep enough to translate for others.",
       "voice": "Brian Tracy",
       "principle": "Teaching ability indicates mastery"
     },
     {
-      "id": "D5.E",
+      "id": "D5e",
       "text": "I actively work to improve my thinking — I treat my mind as a tool to be sharpened, not just used.",
       "voice": "Core Philosophy",
       "principle": "Mental capability responds to training"

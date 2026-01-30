@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "H1.A",
+      "id": "H1a",
       "text": "I believe physical training works because the body adapts according to predictable principles.",
       "voice": "Core Philosophy",
       "principle": "Adaptation follows ordered laws"
     },
     {
-      "id": "H1.B",
+      "id": "H1b",
       "text": "I believe there are discoverable principles for building strength, endurance, and physical capability.",
       "voice": "Brian Tracy",
       "principle": "Fitness has learnable principles"
     },
     {
-      "id": "H1.C",
+      "id": "H1c",
       "text": "I see evidence of physical order in how athletes consistently improve through systematic training.",
       "voice": "Brian Tracy",
       "principle": "Athletic success demonstrates physical order"
     },
     {
-      "id": "H1.D",
+      "id": "H1d",
       "text": "I reject the idea that physical capability is purely genetic, random, or beyond systematic development.",
       "voice": "Jordan Peterson",
       "principle": "Physical fatalism is false"
     },
     {
-      "id": "H1.E",
+      "id": "H1e",
       "text": "I believe the path to physical improvement can be mapped, studied, and followed.",
       "voice": "Brian Tracy",
       "principle": "Physical development has ordered paths"

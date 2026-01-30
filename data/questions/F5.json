@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "F5.A",
+      "id": "F5a",
       "text": "I can accurately identify what I'm feeling — I have a developed emotional vocabulary and self-awareness.",
       "voice": "Cloud & Townsend",
       "principle": "Emotional granularity is a skill"
     },
     {
-      "id": "F5.B",
+      "id": "F5b",
       "text": "I can read others' emotional states with reasonable accuracy — I've developed social perception skills.",
       "voice": "Chase Hughes",
       "principle": "Reading others is trainable"
     },
     {
-      "id": "F5.C",
+      "id": "F5c",
       "text": "I have practical techniques for regulating strong emotions that actually work for me — tested, not theoretical.",
       "voice": "Chase Hughes",
       "principle": "Regulation techniques require practice"
     },
     {
-      "id": "F5.D",
+      "id": "F5d",
       "text": "I can have difficult emotional conversations productively — I've developed skill in navigating conflict and vulnerability.",
       "voice": "Cloud & Townsend",
       "principle": "Difficult conversations are a learnable skill"
     },
     {
-      "id": "F5.E",
+      "id": "F5e",
       "text": "I understand the connection between my thoughts, beliefs, and emotions — I can work at the cognitive level to affect the emotional level.",
       "voice": "Core Philosophy",
       "principle": "Cognitive-emotional connection can be leveraged skillfully"

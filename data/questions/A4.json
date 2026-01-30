@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "A4.A",
+      "id": "A4a",
       "text": "When my alarm goes off for morning prayer/devotion time, I get up and do it even when I don't feel like it.",
       "voice": "Brian Tracy",
       "principle": "Eat the Frog: Do the most important thing first"
     },
     {
-      "id": "A4.B",
+      "id": "A4b",
       "text": "I have a specific, scheduled time for prayer and Scripture reading that I protect from other demands.",
       "voice": "Brian Tracy",
       "principle": "Time blocking for priorities"
     },
     {
-      "id": "A4.C",
+      "id": "A4c",
       "text": "When I miss a day of spiritual disciplines, I return to them the next day without spiraling into guilt or giving up.",
       "voice": "Jordan Peterson",
       "principle": "Order from chaos, getting back up"
     },
     {
-      "id": "A4.D",
+      "id": "A4d",
       "text": "I practice Sabbath rest intentionally, even when there's work I could be doing.",
       "voice": "Cloud & Townsend",
       "principle": "Boundaries around rest"
     },
     {
-      "id": "A4.E",
+      "id": "A4e",
       "text": "I follow through on spiritual commitments (church attendance, small group, serving) even when inconvenient.",
       "voice": "Simon Sinek",
       "principle": "Commitment to the 'why' even when 'what' is hard"

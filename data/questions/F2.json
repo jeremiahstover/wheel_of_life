@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "F2.A",
+      "id": "F2a",
       "text": "I understand that my emotional patterns are influenced by what I consistently think, believe, and practice.",
       "voice": "Core Philosophy",
       "principle": "Emotions respond to cognitive and behavioral inputs"
     },
     {
-      "id": "F2.B",
+      "id": "F2b",
       "text": "I can usually identify what triggered a strong emotional response rather than feeling like emotions 'just happen.'",
       "voice": "Cloud & Townsend",
       "principle": "Emotional responses have identifiable triggers"
     },
     {
-      "id": "F2.C",
+      "id": "F2c",
       "text": "I recognize that people who are emotionally healthy built that health through specific practices over time.",
       "voice": "Jordan Peterson",
       "principle": "Emotional health is cultivated, not inherited"
     },
     {
-      "id": "F2.D",
+      "id": "F2d",
       "text": "I understand that chronic emotional struggles (anxiety, anger, depression) usually have root causes that can be identified.",
       "voice": "Chase Hughes",
       "principle": "Chronic emotional patterns have root causes"
     },
     {
-      "id": "F2.E",
+      "id": "F2e",
       "text": "I can see the connection between how I treat my body, mind, and spirit and my emotional state.",
       "voice": "Core Philosophy",
       "principle": "Emotional state connects to holistic health"

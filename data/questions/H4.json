@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "H4.A",
+      "id": "H4a",
       "text": "I exercise regularly according to a schedule rather than only when I feel like it.",
       "voice": "Brian Tracy",
       "principle": "Schedule it or it won't happen"
     },
     {
-      "id": "H4.B",
+      "id": "H4b",
       "text": "I do my planned workout even when I don't feel motivated, knowing motivation follows action.",
       "voice": "Brian Tracy / Jordan Peterson",
       "principle": "Action creates motivation; do it anyway"
     },
     {
-      "id": "H4.C",
+      "id": "H4c",
       "text": "I incorporate movement throughout my day (standing, walking, stretching) rather than being sedentary for long periods.",
       "voice": "Core Philosophy",
       "principle": "Functional capacity through daily movement"
     },
     {
-      "id": "H4.D",
+      "id": "H4d",
       "text": "I progressively challenge my body (increased weight, distance, intensity) rather than staying in my comfort zone.",
       "voice": "Jordan Peterson",
       "principle": "Voluntary exposure to challenge makes you stronger"
     },
     {
-      "id": "H4.E",
+      "id": "H4e",
       "text": "I maintain my exercise habit even during travel, busy seasons, or disrupted routines.",
       "voice": "Brian Tracy",
       "principle": "Non-negotiable habits"

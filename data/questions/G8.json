@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G8.A",
+      "id": "G8a",
       "text": "I give financial resources to people in need without expecting repayment or reciprocity.",
       "voice": "Core Philosophy",
       "principle": "Financial giving without strings"
     },
     {
-      "id": "G8.B",
+      "id": "G8b",
       "text": "I share my physical resources — home, food, possessions — freely with others who have need.",
       "voice": "Core Philosophy",
       "principle": "Hospitality is sacrificial"
     },
     {
-      "id": "G8.C",
+      "id": "G8c",
       "text": "I give generously to causes and people even when I can't see how my giving makes a difference.",
       "voice": "Core Philosophy",
       "principle": "Giving without guaranteed results"
     },
     {
-      "id": "G8.D",
+      "id": "G8d",
       "text": "I help meet others' physical needs even when my own resources are not abundant — I give from what I have, not just from excess.",
       "voice": "Core Philosophy",
       "principle": "Sacrifice from limited resources"
     },
     {
-      "id": "G8.E",
+      "id": "G8e",
       "text": "I have given significant financial or material help to people who later wasted it, rejected me, or didn't change — and I would give again.",
       "voice": "Core Philosophy",
       "principle": "True giving doesn't require good outcomes"

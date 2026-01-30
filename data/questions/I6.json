@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "I6.A",
+      "id": "I6a",
       "text": "My health is robust enough to absorb a setback (illness, injury, stress) without cascade failure.",
       "voice": "Cloud & Townsend",
       "principle": "Health margin absorbs variance"
     },
     {
-      "id": "I6.B",
+      "id": "I6b",
       "text": "I recover from illness or injury faster than average — my body has resources to heal.",
       "voice": "Core Philosophy",
       "principle": "Recovery capacity indicates reserves"
     },
     {
-      "id": "I6.C",
+      "id": "I6c",
       "text": "My overall wellness creates capacity for life rather than limiting it.",
       "voice": "Core Philosophy",
       "principle": "Health is enabling, not just absence of disease"
     },
     {
-      "id": "I6.D",
+      "id": "I6d",
       "text": "I have invested in preventive care and maintenance that is paying dividends in current health.",
       "voice": "Brian Tracy",
       "principle": "Health investment compounds"
     },
     {
-      "id": "I6.E",
+      "id": "I6e",
       "text": "My integrated health (body, soul, spirit) creates synergy — each area supports the others rather than dragging them down.",
       "voice": "Core Philosophy",
       "principle": "Integrated health multiplies resources"

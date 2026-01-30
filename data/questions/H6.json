@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "H6.A",
+      "id": "H6a",
       "text": "My physical capability exceeds what my daily life requires — I have reserves for the unexpected.",
       "voice": "Core Philosophy",
       "principle": "Physical margin provides security"
     },
     {
-      "id": "H6.B",
+      "id": "H6b",
       "text": "I can physically help others (move, lift, serve) because I have capacity beyond my own needs.",
       "voice": "Core Philosophy",
       "principle": "Physical surplus enables service"
     },
     {
-      "id": "H6.C",
+      "id": "H6c",
       "text": "My fitness level gives me options — I can hike, travel, play, work physically if needed.",
       "voice": "Brian Tracy",
       "principle": "Physical capacity creates life options"
     },
     {
-      "id": "H6.D",
+      "id": "H6d",
       "text": "I'm building physical capacity rather than just maintaining or losing it — investing, not just spending.",
       "voice": "Brian Tracy",
       "principle": "Physical investment compounds"
     },
     {
-      "id": "H6.E",
+      "id": "H6e",
       "text": "I have energy left at the end of the day — I'm not completely depleted by normal activities.",
       "voice": "Cloud & Townsend",
       "principle": "Daily surplus indicates sufficient capacity"

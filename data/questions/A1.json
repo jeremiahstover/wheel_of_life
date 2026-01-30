@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "A1.A",
+      "id": "A1a",
       "text": "I believe there is a spiritual reality that is ordered and knowable, not random or chaotic.",
       "voice": "Core Philosophy",
       "principle": "Spiritual order exists and can be discovered"
     },
     {
-      "id": "A1.B",
+      "id": "A1b",
       "text": "I believe God has established patterns and practices through which He can be known and experienced.",
       "voice": "Core Philosophy",
       "principle": "Spiritual connection follows discoverable patterns"
     },
     {
-      "id": "A1.C",
+      "id": "A1c",
       "text": "I see evidence of divine order in Scripture, creation, and the lives of faithful people throughout history.",
       "voice": "Jordan Peterson",
       "principle": "Order is observable in spiritual reality"
     },
     {
-      "id": "A1.D",
+      "id": "A1d",
       "text": "I believe the spiritual disciplines (prayer, Scripture, worship) work because they align with how God designed spiritual reality.",
       "voice": "Core Philosophy",
       "principle": "Spiritual practices reflect spiritual design"
     },
     {
-      "id": "A1.E",
+      "id": "A1e",
       "text": "I reject the idea that spiritual experience is purely subjective, random, or meaningless.",
       "voice": "Jordan Peterson",
       "principle": "Spiritual reality is objective, not arbitrary"

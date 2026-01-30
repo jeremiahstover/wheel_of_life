@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "I3.A",
+      "id": "I3a",
       "text": "I take responsibility for my health outcomes that are within my control, rather than feeling helpless about my body.",
       "voice": "Core Philosophy",
       "principle": "Agency over controllable factors"
     },
     {
-      "id": "I3.B",
+      "id": "I3b",
       "text": "I don't blame genetics, age, or 'bad luck' for things I can actually influence through my choices.",
       "voice": "Jordan Peterson",
       "principle": "No blame-shifting for controllable factors"
     },
     {
-      "id": "I3.C",
+      "id": "I3c",
       "text": "I own that addressing health issues is my job — I don't wait for others to notice problems or push me to act.",
       "voice": "Core Philosophy",
       "principle": "Proactive health ownership"
     },
     {
-      "id": "I3.D",
+      "id": "I3d",
       "text": "I recognize that integrated wellness (physical, mental, spiritual) is my responsibility to pursue, not separate from my 'spiritual life.'",
       "voice": "Core Philosophy",
       "principle": "Holistic stewardship"
     },
     {
-      "id": "I3.E",
+      "id": "I3e",
       "text": "I take ownership of preventive care and maintenance rather than ignoring my body until something breaks.",
       "voice": "Core Philosophy",
       "principle": "Maintenance before repair"

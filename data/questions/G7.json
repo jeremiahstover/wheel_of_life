@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G7.A",
+      "id": "G7a",
       "text": "I regularly share meals with people — eating together, not just existing in parallel.",
       "voice": "Core Philosophy",
       "principle": "Shared meals build fellowship"
     },
     {
-      "id": "G7.B",
+      "id": "G7b",
       "text": "I have people who would help me with practical needs (moving, repairs, errands) and vice versa.",
       "voice": "Core Philosophy",
       "principle": "Practical mutual aid"
     },
     {
-      "id": "G7.C",
+      "id": "G7c",
       "text": "I let people into my home and daily life — they see how I actually live, not just a curated version.",
       "voice": "Jordan Peterson",
       "principle": "Domestic transparency"
     },
     {
-      "id": "G7.D",
+      "id": "G7d",
       "text": "I help others with their practical physical needs — I show up when there's work to do.",
       "voice": "Core Philosophy",
       "principle": "Practical service demonstrates fellowship"
     },
     {
-      "id": "G7.E",
+      "id": "G7e",
       "text": "My physical/practical friendships involve actual presence, not just digital connection.",
       "voice": "Core Philosophy",
       "principle": "Embodied fellowship"

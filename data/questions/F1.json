@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "F1.A",
+      "id": "F1a",
       "text": "I believe emotions carry meaningful information — they are signals, not random noise.",
       "voice": "Core Philosophy",
       "principle": "Emotions have meaning"
     },
     {
-      "id": "F1.B",
+      "id": "F1b",
       "text": "I believe emotional patterns can be understood, studied, and interpreted.",
       "voice": "Cloud & Townsend",
       "principle": "Emotional life has discoverable order"
     },
     {
-      "id": "F1.C",
+      "id": "F1c",
       "text": "I see evidence that emotions consistently point to something — unmet needs, violated values, important truths.",
       "voice": "Chase Hughes",
       "principle": "Emotions are diagnostic"
     },
     {
-      "id": "F1.D",
+      "id": "F1d",
       "text": "I reject the idea that emotions are meaningless chemical fluctuations with no connection to reality.",
       "voice": "Jordan Peterson",
       "principle": "Emotional nihilism is false"
     },
     {
-      "id": "F1.E",
+      "id": "F1e",
       "text": "I believe there is an ordered path to emotional health that can be discovered and followed.",
       "voice": "Cloud & Townsend",
       "principle": "Emotional health follows patterns"

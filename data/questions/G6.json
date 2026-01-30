@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G6.A",
+      "id": "G6a",
       "text": "I have consistent access to quality nutrition — I'm not constantly compromising due to scarcity or poor planning.",
       "voice": "Core Philosophy",
       "principle": "Nutritional sufficiency is foundational"
     },
     {
-      "id": "G6.B",
+      "id": "G6b",
       "text": "I get enough quality sleep that I have energy reserves, not just enough to get by.",
       "voice": "Brian Tracy",
       "principle": "Sleep surplus creates daytime capacity"
     },
     {
-      "id": "G6.C",
+      "id": "G6c",
       "text": "My living environment supports rather than drains me — it's a resource, not a liability.",
       "voice": "Jordan Peterson",
       "principle": "Environment can add or subtract energy"
     },
     {
-      "id": "G6.D",
+      "id": "G6d",
       "text": "I have financial margin for quality food, proper rest, and environmental maintenance.",
       "voice": "Core Philosophy",
       "principle": "Financial resources enable physical resources"
     },
     {
-      "id": "G6.E",
+      "id": "G6e",
       "text": "My physical recovery consistently exceeds my physical expenditure — I'm building reserves, not depleting them.",
       "voice": "Cloud & Townsend",
       "principle": "Recovery surplus enables sustained output"

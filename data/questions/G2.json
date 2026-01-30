@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G2.A",
+      "id": "G2a",
       "text": "I understand that my energy levels, clarity, and physical function are directly affected by what I eat and drink.",
       "voice": "Core Philosophy",
       "principle": "Nutritional inputs affect physical outputs"
     },
     {
-      "id": "G2.B",
+      "id": "G2b",
       "text": "I can see the connection between my sleep patterns and my mental/physical performance the next day.",
       "voice": "Brian Tracy",
       "principle": "Sleep quality affects performance"
     },
     {
-      "id": "G2.C",
+      "id": "G2c",
       "text": "I recognize that sustained poor nutrition leads to predictable health outcomes — this isn't random bad luck.",
       "voice": "Jordan Peterson",
       "principle": "Nutritional choices compound into health outcomes"
     },
     {
-      "id": "G2.D",
+      "id": "G2d",
       "text": "I understand that my physical environment (cleanliness, organization, air quality) affects how I feel and function.",
       "voice": "Jordan Peterson",
       "principle": "Environment shapes experience"
     },
     {
-      "id": "G2.E",
+      "id": "G2e",
       "text": "I can connect periods of feeling good or bad physically to what I was eating, drinking, and how I was sleeping.",
       "voice": "Chase Hughes",
       "principle": "Physical state correlates with physical inputs"

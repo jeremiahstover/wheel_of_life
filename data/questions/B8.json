@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "B8.A",
+      "id": "B8a",
       "text": "I use my credibility and reputation to advocate for people who have none — spending my moral capital for their benefit.",
       "voice": "Jordan Peterson",
       "principle": "Reputation can be spent for others"
     },
     {
-      "id": "B8.B",
+      "id": "B8b",
       "text": "I defend unpopular positions or unpopular people when I believe they're right, even at cost to my standing.",
       "voice": "Jordan Peterson",
       "principle": "Moral courage costs"
     },
     {
-      "id": "B8.C",
+      "id": "B8c",
       "text": "I speak uncomfortable truth to people who need to hear it, even when it would be easier to stay silent and popular.",
       "voice": "Cloud & Townsend",
       "principle": "Truth-telling is sacrificial"
     },
     {
-      "id": "B8.D",
+      "id": "B8d",
       "text": "I have taken moral stands that cost me relationships, opportunities, or comfort — and I don't regret them.",
       "voice": "Jordan Peterson",
       "principle": "Integrity sometimes requires sacrifice"
     },
     {
-      "id": "B8.E",
+      "id": "B8e",
       "text": "I advocate for the voiceless and marginalized even when there's nothing in it for me — no recognition, no reciprocity.",
       "voice": "Core Philosophy",
       "principle": "Advocacy for the powerless is pure sacrifice"

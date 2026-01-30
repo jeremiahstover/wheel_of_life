@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G4.A",
+      "id": "G4a",
       "text": "I maintain a consistent sleep schedule (same bedtime and wake time) even on weekends.",
       "voice": "Brian Tracy",
       "principle": "Morning routines start with evening discipline"
     },
     {
-      "id": "G4.B",
+      "id": "G4b",
       "text": "I eat in a way that fuels my body well (real food, appropriate portions) rather than giving in to cravings.",
       "voice": "Jordan Peterson",
       "principle": "Order in the small things"
     },
     {
-      "id": "G4.C",
+      "id": "G4c",
       "text": "I drink adequate water throughout the day and limit substances that impair performance (alcohol, excessive caffeine).",
       "voice": "Core Philosophy",
       "principle": "Basic stewardship"
     },
     {
-      "id": "G4.D",
+      "id": "G4d",
       "text": "I maintain my environment (clean space, organized workspace, reduced toxins/clutter) rather than living in chaos.",
       "voice": "Jordan Peterson / Chase Hughes",
       "principle": "Clean your room; environment shapes behavior"
     },
     {
-      "id": "G4.E",
+      "id": "G4e",
       "text": "I take breaks and rest when needed rather than pushing through to burnout, then crashing.",
       "voice": "Cloud & Townsend",
       "principle": "Boundaries around energy; sustainable pace"

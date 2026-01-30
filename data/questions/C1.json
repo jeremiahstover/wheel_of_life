@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "C1.A",
+      "id": "C1a",
       "text": "I believe spiritual growth follows discoverable patterns — it's not random or mysterious.",
       "voice": "Core Philosophy",
       "principle": "Sanctification has order"
     },
     {
-      "id": "C1.B",
+      "id": "C1b",
       "text": "I believe there are identifiable steps and practices that lead toward holiness.",
       "voice": "Brian Tracy",
       "principle": "Spiritual development can be mapped"
     },
     {
-      "id": "C1.C",
+      "id": "C1c",
       "text": "I see evidence of ordered spiritual development in Scripture (the progression from milk to solid food, from faith to love in 2 Peter 1).",
       "voice": "Core Philosophy",
       "principle": "Biblical patterns reveal spiritual order"
     },
     {
-      "id": "C1.D",
+      "id": "C1d",
       "text": "I reject the idea that holiness is just luck, special grace for special people, or unattainable mystery.",
       "voice": "Jordan Peterson",
       "principle": "Holiness is accessible through ordered practice"
     },
     {
-      "id": "C1.E",
+      "id": "C1e",
       "text": "I believe the path to spiritual maturity can be studied, understood, and followed.",
       "voice": "Brian Tracy",
       "principle": "Spiritual maturity has a learnable path"

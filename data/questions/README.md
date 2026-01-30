@@ -11,6 +11,18 @@
 
 Example: `E4.json` = Will (E) at Discipline (4)
 
+## Address Scheme
+
+| Level | Format | Example | Meaning |
+|-------|--------|---------|---------|
+| Dimension | Letter (A-I) | `E` | Will |
+| Layer | Number (1-8) | `4` | Discipline |
+| Cell | `{dim}{layer}` | `E4` | Will at Discipline |
+| Question | `{cell}{a-e}` | `E4c` | Third question in that cell |
+| Response | `{question}{1-5}` | `E4c3` | Answered "3" (Sometimes) |
+
+Pattern: **Letter-Number-Letter-Number** — categories alternate with scales.
+
 ## Dimensions
 
 | Code | Name | Category | Function |
@@ -55,13 +67,11 @@ Example: `E4.json` = Will (E) at Discipline (4)
     "definition": "Do what needs doing, especially when you don't feel like it."
   },
   "questions": [
-    {
-      "id": "E4.A",
-      "text": "...",
-      "voice": "...",
-      "principle": "..."
-    },
-    ...
+    { "id": "E4a", "text": "...", "voice": "...", "principle": "..." },
+    { "id": "E4b", "text": "...", "voice": "...", "principle": "..." },
+    { "id": "E4c", "text": "...", "voice": "...", "principle": "..." },
+    { "id": "E4d", "text": "...", "voice": "...", "principle": "..." },
+    { "id": "E4e", "text": "...", "voice": "...", "principle": "..." }
   ]
 }
 ```

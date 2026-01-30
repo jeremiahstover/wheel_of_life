@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "I4.A",
+      "id": "I4a",
       "text": "I schedule and attend regular preventive care (checkups, dental, vision) rather than only going when something is wrong.",
       "voice": "Core Philosophy",
       "principle": "Stewardship: maintenance before repair"
     },
     {
-      "id": "I4.B",
+      "id": "I4b",
       "text": "When I notice a health issue (pain, symptom, concern), I address it promptly rather than ignoring it.",
       "voice": "Jordan Peterson",
       "principle": "Don't ignore the small problems; they grow"
     },
     {
-      "id": "I4.C",
+      "id": "I4c",
       "text": "I follow through on medical recommendations (medication, therapy, lifestyle changes) even when inconvenient.",
       "voice": "Core Philosophy",
       "principle": "Integrity: follow through on commitments"
     },
     {
-      "id": "I4.D",
+      "id": "I4d",
       "text": "I manage chronic conditions or health maintenance routines consistently rather than sporadically.",
       "voice": "Brian Tracy",
       "principle": "Systems beat willpower; routine creates results"
     },
     {
-      "id": "I4.E",
+      "id": "I4e",
       "text": "I recognize that physical, mental, and spiritual health are connected and address my body as an integrated whole.",
       "voice": "Core Philosophy",
       "principle": "Integration not separation; tripartite being"

@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "A5.A",
+      "id": "A5a",
       "text": "I am measurably better at prayer, Scripture study, or worship than I was a year ago — not just more consistent, but more skilled.",
       "voice": "Core Philosophy",
       "principle": "Competence grows through practice"
     },
     {
-      "id": "A5.B",
+      "id": "A5b",
       "text": "I can discern God's voice from my own thoughts and from other influences with increasing accuracy.",
       "voice": "Core Philosophy",
       "principle": "Spiritual discernment is a developable skill"
     },
     {
-      "id": "A5.C",
+      "id": "A5c",
       "text": "I understand Scripture at deeper levels than I used to — I can see connections, apply principles, and teach others.",
       "voice": "Brian Tracy",
       "principle": "Expertise deepens with intentional study"
     },
     {
-      "id": "A5.D",
+      "id": "A5d",
       "text": "I have developed specific techniques or practices in my spiritual life that work for me and produce consistent results.",
       "voice": "Chase Hughes",
       "principle": "Skill includes knowing what works"
     },
     {
-      "id": "A5.E",
+      "id": "A5e",
       "text": "I seek feedback on my spiritual life (from mentors, Scripture, the Spirit) and adjust based on what I learn.",
       "voice": "Brian Tracy",
       "principle": "Skill development requires feedback loops"

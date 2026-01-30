@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "H8.A",
+      "id": "H8a",
       "text": "I use my physical strength and capacity to help others — lifting, carrying, building, moving — even when it's tiring.",
       "voice": "Core Philosophy",
       "principle": "Physical labor for others"
     },
     {
-      "id": "H8.B",
+      "id": "H8b",
       "text": "I show up bodily for people in need — I'm physically present, not just sending texts or prayers.",
       "voice": "Core Philosophy",
       "principle": "Physical presence matters"
     },
     {
-      "id": "H8.C",
+      "id": "H8c",
       "text": "I do menial, unglamorous physical work to serve others — cleaning, organizing, manual labor — without needing recognition.",
       "voice": "Core Philosophy",
       "principle": "Humble service"
     },
     {
-      "id": "H8.D",
+      "id": "H8d",
       "text": "I give my physical energy to serve even when I'm tired — I push through fatigue to meet others' needs.",
       "voice": "Core Philosophy",
       "principle": "Serving past comfort"
     },
     {
-      "id": "H8.E",
+      "id": "H8e",
       "text": "I have done physical work for others that was hard, dirty, or exhausting — and I consider it a privilege, not a burden.",
       "voice": "Core Philosophy",
       "principle": "Service as privilege"

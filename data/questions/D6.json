@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "D6.A",
+      "id": "D6a",
       "text": "I have accumulated knowledge that others find valuable — people seek my expertise or perspective.",
       "voice": "Brian Tracy",
       "principle": "Knowledge becomes capital when others value it"
     },
     {
-      "id": "D6.B",
+      "id": "D6b",
       "text": "I have mental models and frameworks that help me navigate situations I haven't seen before.",
       "voice": "Core Philosophy",
       "principle": "Wisdom is portable across contexts"
     },
     {
-      "id": "D6.C",
+      "id": "D6c",
       "text": "I can teach or explain things in my areas of competence — my knowledge is organized enough to transfer.",
       "voice": "Brian Tracy",
       "principle": "Teachable knowledge is usable capital"
     },
     {
-      "id": "D6.D",
+      "id": "D6d",
       "text": "I have intellectual reserves to draw on — I'm not always scrambling to figure things out from scratch.",
       "voice": "Core Philosophy",
       "principle": "Accumulated learning creates efficiency"
     },
     {
-      "id": "D6.E",
+      "id": "D6e",
       "text": "My thinking has produced insights, systems, or content that has value beyond my personal use.",
       "voice": "Brian Tracy",
       "principle": "Thought capital can be externalized"

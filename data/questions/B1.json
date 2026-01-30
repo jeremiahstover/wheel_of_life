@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "B1.A",
+      "id": "B1a",
       "text": "I believe there is an objective moral order — right and wrong are real, not just personal preferences.",
       "voice": "Jordan Peterson",
       "principle": "Moral reality exists independently of opinion"
     },
     {
-      "id": "B1.B",
+      "id": "B1b",
       "text": "I believe moral truth can be discovered through reason, revelation, and conscience.",
       "voice": "Core Philosophy",
       "principle": "Moral order is knowable"
     },
     {
-      "id": "B1.C",
+      "id": "B1c",
       "text": "I see evidence of moral order in the consistency of conscience across cultures and throughout history.",
       "voice": "Jordan Peterson",
       "principle": "Universal moral patterns indicate moral reality"
     },
     {
-      "id": "B1.D",
+      "id": "B1d",
       "text": "I reject the idea that morality is purely constructed, arbitrary, or meaningless.",
       "voice": "Jordan Peterson",
       "principle": "Moral nihilism is false"
     },
     {
-      "id": "B1.E",
+      "id": "B1e",
       "text": "I believe living in alignment with moral order leads to flourishing, while violating it leads to destruction.",
       "voice": "Core Philosophy",
       "principle": "Moral order has real consequences"

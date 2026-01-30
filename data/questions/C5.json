@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "C5.A",
+      "id": "C5a",
       "text": "I know how to conduct an honest self-examination — I have a practiced method that surfaces what needs to surface.",
       "voice": "Jordan Peterson",
       "principle": "Self-examination is a developable skill"
     },
     {
-      "id": "C5.B",
+      "id": "C5b",
       "text": "I can identify the root of a sin pattern, not just its symptoms — I've developed diagnostic skill.",
       "voice": "Chase Hughes",
       "principle": "Root cause analysis is a skill"
     },
     {
-      "id": "C5.C",
+      "id": "C5c",
       "text": "I know how to recover quickly after a spiritual failure — I have a practiced restoration process that works.",
       "voice": "Core Philosophy",
       "principle": "Recovery is a learnable skill"
     },
     {
-      "id": "C5.D",
+      "id": "C5d",
       "text": "I can distinguish between conviction (from God) and condemnation (from the enemy or self) with increasing accuracy.",
       "voice": "Core Philosophy",
       "principle": "Spiritual discernment develops with practice"
     },
     {
-      "id": "C5.E",
+      "id": "C5e",
       "text": "I have practical techniques for fighting specific temptations that work for me — not just generic advice, but tested tactics.",
       "voice": "Chase Hughes",
       "principle": "Tactical skill comes from tested experience"

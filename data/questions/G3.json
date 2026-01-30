@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "G3.A",
+      "id": "G3a",
       "text": "I take responsibility for what I put into my body — food, drink, and substances are my choices.",
       "voice": "Core Philosophy",
       "principle": "Own your intake"
     },
     {
-      "id": "G3.B",
+      "id": "G3b",
       "text": "I own that my sleep and rest are my responsibility to prioritize and protect.",
       "voice": "Brian Tracy",
       "principle": "Personal responsibility for rest"
     },
     {
-      "id": "G3.C",
+      "id": "G3c",
       "text": "I don't blame my schedule, family demands, or work for poor nutrition or inadequate sleep — I make choices within constraints.",
       "voice": "Jordan Peterson",
       "principle": "No blame-shifting for body care"
     },
     {
-      "id": "G3.D",
+      "id": "G3d",
       "text": "I recognize that my physical environment (clean space, organization, reduced toxins) is mine to maintain.",
       "voice": "Jordan Peterson",
       "principle": "Clean your room; own your space"
     },
     {
-      "id": "G3.E",
+      "id": "G3e",
       "text": "I take ownership of creating conditions that allow my body to recover and thrive, rather than just coping with chronic depletion.",
       "voice": "Cloud & Townsend",
       "principle": "Proactive stewardship"

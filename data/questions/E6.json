@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "E6.A",
+      "id": "E6a",
       "text": "I have capacity beyond what's required to maintain my current life — I could take on more if needed.",
       "voice": "Brian Tracy",
       "principle": "Surplus capacity creates opportunity"
     },
     {
-      "id": "E6.B",
+      "id": "E6b",
       "text": "My systems and habits are efficient enough that I have time and energy left over.",
       "voice": "Brian Tracy",
       "principle": "Efficiency creates margin"
     },
     {
-      "id": "E6.C",
+      "id": "E6c",
       "text": "I'm not constantly maxed out — I have reserves of willpower and execution capacity.",
       "voice": "Cloud & Townsend",
       "principle": "Reserve prevents burnout"
     },
     {
-      "id": "E6.D",
+      "id": "E6d",
       "text": "I have developed enough personal productivity that I accomplish more than most with similar time.",
       "voice": "Brian Tracy",
       "principle": "Productivity skill creates time surplus"
     },
     {
-      "id": "E6.E",
+      "id": "E6e",
       "text": "I have margin in my schedule and energy — unexpected demands don't automatically create crisis.",
       "voice": "Cloud & Townsend",
       "principle": "Margin absorbs variance"

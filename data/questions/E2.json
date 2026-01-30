@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "E2.A",
+      "id": "E2a",
       "text": "I understand that my current life situation is largely the result of my accumulated choices, not fate or luck.",
       "voice": "Jordan Peterson",
       "principle": "Life outcomes follow from choices"
     },
     {
-      "id": "E2.B",
+      "id": "E2b",
       "text": "I can trace most of my successes and failures back to specific decisions I made (or avoided making).",
       "voice": "Brian Tracy",
       "principle": "Results are traceable to decisions"
     },
     {
-      "id": "E2.C",
+      "id": "E2c",
       "text": "I recognize that procrastination, avoidance, and inaction are also choices with predictable consequences.",
       "voice": "Brian Tracy",
       "principle": "Non-decisions are decisions with consequences"
     },
     {
-      "id": "E2.D",
+      "id": "E2d",
       "text": "I understand that 'it just happened' is almost never true — there are always causes I could identify if I looked.",
       "voice": "Chase Hughes",
       "principle": "Nothing 'just happens' — causes exist"
     },
     {
-      "id": "E2.E",
+      "id": "E2e",
       "text": "I can see how small daily choices compound into life trajectories over months and years.",
       "voice": "Core Philosophy",
       "principle": "Daily choices compound into life direction"

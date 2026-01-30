@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "I5.A",
+      "id": "I5a",
       "text": "I can recognize early warning signs that something is off in my health — I've developed body awareness and diagnostic skill.",
       "voice": "Chase Hughes",
       "principle": "Early detection is a skill"
     },
     {
-      "id": "I5.B",
+      "id": "I5b",
       "text": "I know how to communicate effectively with healthcare providers — I can describe symptoms, ask good questions, and advocate for myself.",
       "voice": "Core Philosophy",
       "principle": "Medical communication is a skill"
     },
     {
-      "id": "I5.C",
+      "id": "I5c",
       "text": "I understand how body, soul, and spirit interact in my own experience — I can trace connections and address root causes.",
       "voice": "Core Philosophy",
       "principle": "Holistic awareness develops with attention"
     },
     {
-      "id": "I5.D",
+      "id": "I5d",
       "text": "I have practical knowledge of preventive care — I know what screenings, practices, and habits maintain health proactively.",
       "voice": "Brian Tracy",
       "principle": "Prevention knowledge is practical skill"
     },
     {
-      "id": "I5.E",
+      "id": "I5e",
       "text": "I can make informed health decisions — I have enough knowledge to evaluate options and choose wisely.",
       "voice": "Core Philosophy",
       "principle": "Health literacy is developable"

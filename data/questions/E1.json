@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "E1.A",
+      "id": "E1a",
       "text": "I believe my choices matter because they interact with an ordered reality that responds predictably.",
       "voice": "Core Philosophy",
       "principle": "Choices matter because order exists"
     },
     {
-      "id": "E1.B",
+      "id": "E1b",
       "text": "I believe there are better and worse ways to live — not all paths are equal.",
       "voice": "Jordan Peterson",
       "principle": "Some choices are objectively better"
     },
     {
-      "id": "E1.C",
+      "id": "E1c",
       "text": "I see evidence that certain behaviors consistently lead to flourishing while others lead to destruction.",
       "voice": "Brian Tracy",
       "principle": "Behavioral patterns reveal ordered consequences"
     },
     {
-      "id": "E1.D",
+      "id": "E1d",
       "text": "I reject the idea that all choices are equally valid or that 'whatever works for you' is sufficient guidance.",
       "voice": "Jordan Peterson",
       "principle": "Moral relativism denies observable order"
     },
     {
-      "id": "E1.E",
+      "id": "E1e",
       "text": "I believe human action has meaning because it takes place within a structured, meaningful reality.",
       "voice": "Core Philosophy",
       "principle": "Action has meaning because reality has meaning"

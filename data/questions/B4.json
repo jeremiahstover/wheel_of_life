@@ -13,31 +13,31 @@
   },
   "questions": [
     {
-      "id": "B4.A",
+      "id": "B4a",
       "text": "When I sense conviction about something (right or wrong), I act on it promptly rather than rationalizing or delaying.",
       "voice": "Jordan Peterson",
       "principle": "Do not lie, especially to yourself"
     },
     {
-      "id": "B4.B",
+      "id": "B4b",
       "text": "I confess and make things right quickly when I've wronged someone, even when it's uncomfortable.",
       "voice": "Cloud & Townsend",
       "principle": "Integrity requires difficult conversations"
     },
     {
-      "id": "B4.C",
+      "id": "B4c",
       "text": "I say 'no' to requests or opportunities that violate my values, even when saying yes would benefit me.",
       "voice": "Cloud & Townsend",
       "principle": "Boundaries protect integrity"
     },
     {
-      "id": "B4.D",
+      "id": "B4d",
       "text": "I keep my word and follow through on commitments, even small ones, even when no one would notice if I didn't.",
       "voice": "Jordan Peterson",
       "principle": "Your word is your bond with reality"
     },
     {
-      "id": "B4.E",
+      "id": "B4e",
       "text": "When I notice I'm justifying questionable behavior, I stop and examine myself honestly.",
       "voice": "Chase Hughes",
       "principle": "Self-awareness of internal narratives"
