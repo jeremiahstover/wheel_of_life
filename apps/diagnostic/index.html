@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Assessment</title>
+    <style>
+        :root {
+            --spirit: #805ad5;
+            --soul: #3182ce;
+            --body: #38a169;
+            --bg: #0d1117;
+            --card: #161b22;
+            --text: #e2e8f0;
+            --text-muted: #6e7681;
+            --border: #30363d;
+            --accent: #58a6ff;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        
+        /* Phase: Dimension Selection */
+        .dim-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .dim-btn {
+            padding: 16px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+        
+        .dim-btn:hover {
+            border-color: var(--accent);
+            background: rgba(88, 166, 255, 0.1);
+        }
+        
+        .dim-btn .code {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .dim-btn .name {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .dim-btn.spirit .code { color: var(--spirit); }
+        .dim-btn.soul .code { color: var(--soul); }
+        .dim-btn.body .code { color: var(--body); }
+        
+        /* Phase: Questions */
+        .progress-bar {
+            height: 4px;
+            background: var(--border);
+            border-radius: 2px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        .cell-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .cell-label {
+            font-weight: bold;
+        }
+        
+        .cell-layer {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .question-counter {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .question-voice {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+        
+        .answers {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .answer-btn {
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text);
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        
+        .answer-btn:hover {
+            border-color: var(--accent);
+            background: rgba(88, 166, 255, 0.1);
+        }
+        
+        .answer-btn .score-label {
+            display: inline-block;
+            width: 24px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        /* Phase: Processing */
+        .processing {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .processing .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Probe Trail */
+        .probe-trail {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+        
+        .probe-item {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .probe-item.strong {
+            background: rgba(104, 211, 145, 0.2);
+            color: #68d391;
+        }
+        
+        .probe-item.weak {
+            background: rgba(252, 129, 129, 0.2);
+            color: #fc8181;
+        }
+        
+        .probe-item.current {
+            background: rgba(88, 166, 255, 0.2);
+            color: var(--accent);
+        }
+        
+        /* Results */
+        .result-summary {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .result-summary h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+        
+        .result-summary .break-info {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+        
+        .result-summary .break-info strong {
+            color: #fc8181;
+        }
+        
+        .result-summary .break-info.solid strong {
+            color: #68d391;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        .btn-secondary {
+            background: var(--border);
+            color: var(--text);
+        }
+        
+        .btn-row {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        /* Wheel embed */
+        .wheel-container {
+            margin-top: 24px;
+        }
+        
+        #wheel {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diagnostic Assessment</h1>
+        <p class="subtitle">Find your break points efficiently</p>
+        
+        <!-- Phase 1: Select Dimension -->
+        <div id="phase-select" class="card">
+            <h2>Choose a dimension to assess</h2>
+            <div class="dim-grid" id="dim-grid"></div>
+        </div>
+        
+        <!-- Phase 2: Answer Questions -->
+        <div id="phase-questions" class="card hidden">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            
+            <div class="cell-info">
+                <div>
+                    <span class="cell-label" id="cell-label">A1</span>
+                    <span class="cell-layer" id="cell-layer">Order</span>
+                </div>
+                <span class="question-counter" id="question-counter">Q1 of 5</span>
+            </div>
+            
+            <div class="question-voice" id="question-voice"></div>
+            <div class="question-text" id="question-text"></div>
+            
+            <div class="answers" id="answers"></div>
+            
+            <div class="probe-trail" id="probe-trail"></div>
+        </div>
+        
+        <!-- Phase 3: Processing -->
+        <div id="phase-processing" class="card hidden">
+            <div class="processing">
+                <div class="spinner"></div>
+                <p>Analyzing results...</p>
+            </div>
+        </div>
+        
+        <!-- Phase 4: Results -->
+        <div id="phase-results" class="card hidden">
+            <div class="result-summary">
+                <h3 id="result-title">Assessment Complete</h3>
+                <p class="break-info" id="break-info"></p>
+            </div>
+            
+            <div class="wheel-container">
+                <svg id="wheel" viewBox="-260 -260 520 520" width="400" height="400"></svg>
+            </div>
+            
+            <div class="btn-row">
+                <button class="btn btn-secondary" onclick="restart()">Start Over</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    // ============================================
+    // CONFIGURATION
+    // ============================================
+    
+    const DIMENSIONS = {
+        A: { name: 'Communion', category: 'Spirit' },
+        B: { name: 'Conscience', category: 'Spirit' },
+        C: { name: 'Holiness', category: 'Spirit' },
+        D: { name: 'Mind', category: 'Soul' },
+        E: { name: 'Will', category: 'Soul' },
+        F: { name: 'Emotions', category: 'Soul' },
+        G: { name: 'Sustenance', category: 'Body' },
+        H: { name: 'Capability', category: 'Body' },
+        I: { name: 'Wholeness', category: 'Body' },
+    };
+    
+    const LAYERS = {
+        1: 'Order',
+        2: 'Causality', 
+        3: 'Responsibility',
+        4: 'Discipline',
+        5: 'Skill',
+        6: 'Resources',
+        7: 'Fellowship',
+        8: 'Sacrifice'
+    };
+    
+    const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+    const THRESHOLD = 3.5;
+    const DATA_PATH = '../../data/questions/';
+    
+    // ============================================
+    // STATE
+    // ============================================
+    
+    let currentDim = null;
+    let scores = {};           // { layer: score }
+    let probeTrail = [];       // [{ layer, score, status }]
+    let currentCell = null;    // { dim, layer, questions }
+    let currentQuestionIdx = 0;
+    let currentAnswers = [];   // answers for current cell
+    let questionsAnswered = 0;
+    
+    // Binary search state
+    let searchState = {
+        phase: 'initial',      // initial, narrowing, confirming
+        low: 1,
+        high: 8,
+        probeQueue: [],
+    };
+    
+    // ============================================
+    // PHASE MANAGEMENT
+    // ============================================
+    
+    function showPhase(phase) {
+        document.querySelectorAll('.card').forEach(el => el.classList.add('hidden'));
+        document.getElementById(`phase-${phase}`).classList.remove('hidden');
+    }
+    
+    // ============================================
+    // PHASE 1: DIMENSION SELECTION
+    // ============================================
+    
+    function initDimensionSelect() {
+        const grid = document.getElementById('dim-grid');
+        grid.innerHTML = '';
+        
+        DIM_ORDER.forEach(code => {
+            const info = DIMENSIONS[code];
+            const btn = document.createElement('button');
+            btn.className = `dim-btn ${info.category.toLowerCase()}`;
+            btn.innerHTML = `
+                <span class="code">${code}</span>
+                <span class="name">${info.name}</span>
+            `;
+            btn.onclick = () => selectDimension(code);
+            grid.appendChild(btn);
+        });
+    }
+    
+    function selectDimension(dim) {
+        currentDim = dim;
+        scores = {};
+        probeTrail = [];
+        questionsAnswered = 0;
+        
+        // Initialize binary search - start with L3 and L6
+        searchState = {
+            phase: 'initial',
+            probeQueue: [3, 6],
+            tested: {},
+        };
+        
+        showPhase('questions');
+        probeNextLayer();
+    }
+    
+    // ============================================
+    // PHASE 2: BINARY SEARCH & QUESTIONS
+    // ============================================
+    
+    async function probeNextLayer() {
+        // Determine next layer to probe
+        const nextLayer = determineNextProbe();
+        
+        if (nextLayer === null) {
+            // Done probing
+            finishAssessment();
+            return;
+        }
+        
+        // Load and display questions for this cell
+        await loadCell(currentDim, nextLayer);
+    }
+    
+    function determineNextProbe() {
+        const tested = Object.keys(scores).map(Number);
+        
+        if (searchState.phase === 'initial') {
+            // First probe L3, then L6
+            if (searchState.probeQueue.length > 0) {
+                return searchState.probeQueue.shift();
+            }
+            
+            // After initial probes, analyze and decide
+            searchState.phase = 'narrowing';
+            return determineNextProbe();
+        }
+        
+        if (searchState.phase === 'narrowing') {
+            const l3Score = scores[3];
+            const l6Score = scores[6];
+            const l3Strong = l3Score >= THRESHOLD;
+            const l6Strong = l6Score >= THRESHOLD;
+            
+            if (l3Strong && l6Strong) {
+                // Both strong - check upper layers (L7, L8)
+                if (!scores[7]) return 7;
+                if (!scores[8]) return 8;
+            } else if (!l3Strong && !l6Strong) {
+                // Both weak - check lower layers (L1, L2)
+                if (!scores[2]) return 2;
+                if (!scores[1]) return 1;
+            } else if (l3Strong && !l6Strong) {
+                // Break somewhere in L4-L6
+                if (!scores[4]) return 4;
+                if (!scores[5]) return 5;
+            } else {
+                // l3 weak, l6 strong - anomaly, check L4, L5
+                if (!scores[4]) return 4;
+                if (!scores[5]) return 5;
+            }
+            
+            // Fill in any remaining gaps for confirmation
+            searchState.phase = 'confirming';
+            return determineNextProbe();
+        }
+        
+        if (searchState.phase === 'confirming') {
+            // Find break point from what we have
+            const breakInfo = findBreakPoint();
+            
+            // If we have a break, confirm the floor is solid
+            if (breakInfo.break !== null && breakInfo.floor > 0) {
+                // Check layer below break if not tested
+                const floorLayer = breakInfo.floor;
+                if (!scores[floorLayer]) return floorLayer;
+            }
+            
+            // Check if we have enough to determine break
+            // We need contiguous data around the break point
+            if (breakInfo.break !== null) {
+                // Make sure we've tested the break layer
+                if (!scores[breakInfo.break]) return breakInfo.break;
+            }
+        }
+        
+        return null; // Done
+    }
+    
+    async function loadCell(dim, layer) {
+        const url = `${DATA_PATH}${dim}${layer}.json`;
+        
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`Failed to load ${url}`);
+            
+            const cellData = await response.json();
+            currentCell = {
+                dim,
+                layer,
+                questions: cellData.questions,
+                layerName: LAYERS[layer],
+            };
+            currentQuestionIdx = 0;
+            currentAnswers = [];
+            
+            displayQuestion();
+            updateProbeTrail();
+        } catch (error) {
+            console.error('Error loading cell:', error);
+            // Fallback: generate dummy score
+            recordCellScore(layer, 3.0);
+            probeNextLayer();
+        }
+    }
+    
+    function displayQuestion() {
+        const q = currentCell.questions[currentQuestionIdx];
+        
+        document.getElementById('cell-label').textContent = 
+            `${currentCell.dim}${currentCell.layer}: ${DIMENSIONS[currentCell.dim].name}`;
+        document.getElementById('cell-layer').textContent = 
+            `Layer ${currentCell.layer}: ${currentCell.layerName}`;
+        document.getElementById('question-counter').textContent = 
+            `Q${currentQuestionIdx + 1} of ${currentCell.questions.length}`;
+        
+        document.getElementById('question-voice').textContent = 
+            q.voice ? `Voice: ${q.voice}` : '';
+        document.getElementById('question-text').textContent = q.text;
+        
+        // Render answer buttons
+        const answersEl = document.getElementById('answers');
+        answersEl.innerHTML = '';
+        
+        for (let i = 1; i <= 5; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'answer-btn';
+            btn.innerHTML = `<span class="score-label">${i}.</span> ${q.answers[i]}`;
+            btn.onclick = () => selectAnswer(i);
+            answersEl.appendChild(btn);
+        }
+        
+        // Update progress
+        const totalEstimated = 25; // ~5 cells × 5 questions
+        const progress = Math.min(100, (questionsAnswered / totalEstimated) * 100);
+        document.getElementById('progress-fill').style.width = `${progress}%`;
+    }
+    
+    function selectAnswer(score) {
+        currentAnswers.push(score);
+        questionsAnswered++;
+        currentQuestionIdx++;
+        
+        if (currentQuestionIdx < currentCell.questions.length) {
+            displayQuestion();
+        } else {
+            // Cell complete - calculate score
+            const avg = currentAnswers.reduce((a, b) => a + b, 0) / currentAnswers.length;
+            recordCellScore(currentCell.layer, avg);
+            probeNextLayer();
+        }
+    }
+    
+    function recordCellScore(layer, score) {
+        scores[layer] = score;
+        probeTrail.push({
+            layer,
+            score,
+            status: score >= THRESHOLD ? 'strong' : 'weak'
+        });
+    }
+    
+    function updateProbeTrail() {
+        const trailEl = document.getElementById('probe-trail');
+        trailEl.innerHTML = '';
+        
+        probeTrail.forEach(p => {
+            const item = document.createElement('span');
+            item.className = `probe-item ${p.status}`;
+            item.textContent = `L${p.layer}: ${(p.score * 2).toFixed(1)}`;
+            trailEl.appendChild(item);
+        });
+        
+        // Show current
+        if (currentCell) {
+            const current = document.createElement('span');
+            current.className = 'probe-item current';
+            current.textContent = `L${currentCell.layer}...`;
+            trailEl.appendChild(current);
+        }
+    }
+    
+    function findBreakPoint() {
+        let floor = 0;
+        let breakPoint = null;
+        
+        // We may not have all layers, so work with what we have
+        for (let layer = 1; layer <= 8; layer++) {
+            if (scores[layer] !== undefined) {
+                if (scores[layer] >= THRESHOLD) {
+                    floor = layer;
+                } else if (breakPoint === null) {
+                    breakPoint = layer;
+                }
+            }
+        }
+        
+        // Infer break from gaps if needed
+        if (breakPoint === null && floor < 8) {
+            // Check if there's a weak layer above floor
+            for (let layer = floor + 1; layer <= 8; layer++) {
+                if (scores[layer] !== undefined && scores[layer] < THRESHOLD) {
+                    breakPoint = layer;
+                    break;
+                }
+            }
+        }
+        
+        if (breakPoint === null && floor > 0) {
+            return { floor: 8, break: null };
+        }
+        
+        if (floor === 0 && (scores[1] === undefined || scores[1] < THRESHOLD)) {
+            return { floor: 0, break: 1 };
+        }
+        
+        return { floor, break: breakPoint };
+    }
+    
+    // ============================================
+    // PHASE 3 & 4: RESULTS
+    // ============================================
+    
+    function finishAssessment() {
+        showPhase('processing');
+        
+        // Fill in any missing layers by interpolation
+        fillMissingLayers();
+        
+        setTimeout(() => {
+            showPhase('results');
+            displayResults();
+        }, 1000);
+    }
+    
+    function fillMissingLayers() {
+        // For missing layers, interpolate from neighbors
+        for (let layer = 1; layer <= 8; layer++) {
+            if (scores[layer] === undefined) {
+                // Find nearest neighbors
+                let below = null, above = null;
+                for (let l = layer - 1; l >= 1; l--) {
+                    if (scores[l] !== undefined) { below = scores[l]; break; }
+                }
+                for (let l = layer + 1; l <= 8; l++) {
+                    if (scores[l] !== undefined) { above = scores[l]; break; }
+                }
+                
+                if (below !== null && above !== null) {
+                    scores[layer] = (below + above) / 2;
+                } else if (below !== null) {
+                    scores[layer] = below * 0.9; // Decay upward
+                } else if (above !== null) {
+                    scores[layer] = Math.min(5, above * 1.1); // Slightly better below
+                } else {
+                    scores[layer] = 3.0; // Default
+                }
+            }
+        }
+    }
+    
+    function displayResults() {
+        const breakInfo = findBreakPoint();
+        
+        // Update title
+        const titleEl = document.getElementById('result-title');
+        const infoEl = document.getElementById('break-info');
+        
+        if (breakInfo.break === null) {
+            titleEl.textContent = `${currentDim}: ${DIMENSIONS[currentDim].name} — Solid`;
+            infoEl.className = 'break-info solid';
+            infoEl.innerHTML = `<strong>No break point</strong> — strong through all layers`;
+        } else {
+            titleEl.textContent = `${currentDim}: ${DIMENSIONS[currentDim].name}`;
+            infoEl.className = 'break-info';
+            infoEl.innerHTML = `Break at <strong>L${breakInfo.break} ${LAYERS[breakInfo.break]}</strong> — focus here`;
+        }
+        
+        // Build full data (mirror to all dimensions)
+        const fullData = {};
+        DIM_ORDER.forEach(dim => {
+            fullData[dim] = {};
+            for (let layer = 1; layer <= 8; layer++) {
+                fullData[dim][layer] = scores[layer];
+            }
+        });
+        
+        // Render wheel
+        renderWheel(fullData);
+    }
+    
+    // ============================================
+    // WHEEL RENDERING (copied from heatmap)
+    // ============================================
+    
+    const CATEGORY_COLORS = {
+        Spirit: { r: 128, g: 90, b: 213 },
+        Soul:   { r: 49, g: 130, b: 206 },
+        Body:   { r: 56, g: 161, b: 105 },
+    };
+    
+    const CX = 0, CY = 0;
+    const MIN_RADIUS = 30;
+    const MAX_RADIUS = 220;
+    const RING_WIDTH = (MAX_RADIUS - MIN_RADIUS) / 8;
+    const WEDGE_ANGLE = 360 / 9;
+    const GAP = 1;
+    
+    function scoreToColor(score, category) {
+        const brightness = (score - 1) / 4;
+        const baseColor = CATEGORY_COLORS[category];
+        const r = Math.round(baseColor.r * brightness);
+        const g = Math.round(baseColor.g * brightness);
+        const b = Math.round(baseColor.b * brightness);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+    
+    function getCategoryColor(category) {
+        switch(category) {
+            case 'Spirit': return '#805ad5';
+            case 'Soul': return '#3182ce';
+            case 'Body': return '#38a169';
+        }
+    }
+    
+    function polarToCartesian(cx, cy, radius, angleInDegrees) {
+        const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+        return {
+            x: cx + (radius * Math.cos(angleInRadians)),
+            y: cy + (radius * Math.sin(angleInRadians))
+        };
+    }
+    
+    function describeArc(cx, cy, innerRadius, outerRadius, startAngle, endAngle) {
+        const start1 = polarToCartesian(cx, cy, outerRadius, endAngle);
+        const end1 = polarToCartesian(cx, cy, outerRadius, startAngle);
+        const start2 = polarToCartesian(cx, cy, innerRadius, startAngle);
+        const end2 = polarToCartesian(cx, cy, innerRadius, endAngle);
+        const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+        return [
+            "M", start1.x, start1.y,
+            "A", outerRadius, outerRadius, 0, largeArcFlag, 0, end1.x, end1.y,
+            "L", start2.x, start2.y,
+            "A", innerRadius, innerRadius, 0, largeArcFlag, 1, end2.x, end2.y,
+            "Z"
+        ].join(" ");
+    }
+    
+    function getEarliestBreak(data) {
+        let earliest = null;
+        for (const dim of DIM_ORDER) {
+            let breakPoint = null;
+            for (let layer = 1; layer <= 8; layer++) {
+                if (data[dim][layer] < THRESHOLD && breakPoint === null) {
+                    breakPoint = layer;
+                }
+            }
+            if (breakPoint !== null && (earliest === null || breakPoint < earliest)) {
+                earliest = breakPoint;
+            }
+        }
+        return earliest;
+    }
+    
+    function renderFace(svg, earliestBreak) {
+        const faceGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        
+        let faceColor, mouthPath;
+        if (earliestBreak === null || earliestBreak >= 6) {
+            faceColor = '#68d391';
+            mouthPath = 'M -8 4 Q 0 12 8 4';
+        } else if (earliestBreak >= 3) {
+            faceColor = '#f6ad55';
+            mouthPath = 'M -8 6 L 8 6';
+        } else {
+            faceColor = '#fc8181';
+            mouthPath = 'M -8 10 Q 0 4 8 10';
+        }
+        
+        const leftEye = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        leftEye.setAttribute('cx', -6);
+        leftEye.setAttribute('cy', -4);
+        leftEye.setAttribute('r', 3);
+        leftEye.setAttribute('fill', faceColor);
+        faceGroup.appendChild(leftEye);
+        
+        const rightEye = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        rightEye.setAttribute('cx', 6);
+        rightEye.setAttribute('cy', -4);
+        rightEye.setAttribute('r', 3);
+        rightEye.setAttribute('fill', faceColor);
+        faceGroup.appendChild(rightEye);
+        
+        const mouth = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        mouth.setAttribute('d', mouthPath);
+        mouth.setAttribute('stroke', faceColor);
+        mouth.setAttribute('stroke-width', '2.5');
+        mouth.setAttribute('stroke-linecap', 'round');
+        mouth.setAttribute('fill', 'none');
+        faceGroup.appendChild(mouth);
+        
+        svg.appendChild(faceGroup);
+    }
+    
+    function renderWheel(data) {
+        const svg = document.getElementById('wheel');
+        svg.innerHTML = '';
+        
+        // Draw cells
+        DIM_ORDER.forEach((dim, dimIndex) => {
+            const startAngle = dimIndex * WEDGE_ANGLE + GAP/2;
+            const endAngle = (dimIndex + 1) * WEDGE_ANGLE - GAP/2;
+            const category = DIMENSIONS[dim].category;
+            
+            for (let layer = 1; layer <= 8; layer++) {
+                const innerRadius = MIN_RADIUS + (layer - 1) * RING_WIDTH + 1;
+                const outerRadius = MIN_RADIUS + layer * RING_WIDTH - 1;
+                const score = data[dim][layer];
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', describeArc(CX, CY, innerRadius, outerRadius, startAngle, endAngle));
+                path.setAttribute('fill', scoreToColor(score, category));
+                path.setAttribute('stroke', '#0d1117');
+                path.setAttribute('stroke-width', '1');
+                svg.appendChild(path);
+            }
+        });
+        
+        // Dimension labels
+        DIM_ORDER.forEach((dim, dimIndex) => {
+            const angle = (dimIndex + 0.5) * WEDGE_ANGLE;
+            const pos = polarToCartesian(CX, CY, MAX_RADIUS + 20, angle);
+            const info = DIMENSIONS[dim];
+            
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('x', pos.x);
+            text.setAttribute('y', pos.y);
+            text.setAttribute('text-anchor', 'middle');
+            text.setAttribute('dominant-baseline', 'middle');
+            text.setAttribute('fill', getCategoryColor(info.category));
+            text.setAttribute('font-size', '12');
+            text.setAttribute('font-weight', 'bold');
+            text.textContent = dim;
+            svg.appendChild(text);
+        });
+        
+        // Layer labels
+        for (let layer = 1; layer <= 8; layer++) {
+            const radius = MIN_RADIUS + (layer - 0.5) * RING_WIDTH;
+            const pos = polarToCartesian(CX, CY, radius, -10);
+            
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('x', pos.x);
+            text.setAttribute('y', pos.y);
+            text.setAttribute('text-anchor', 'middle');
+            text.setAttribute('dominant-baseline', 'middle');
+            text.setAttribute('fill', '#6e7681');
+            text.setAttribute('font-size', '8');
+            text.textContent = `L${layer}`;
+            svg.appendChild(text);
+        }
+        
+        // Center circle
+        const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        centerCircle.setAttribute('cx', CX);
+        centerCircle.setAttribute('cy', CY);
+        centerCircle.setAttribute('r', MIN_RADIUS - 2);
+        centerCircle.setAttribute('fill', '#0d1117');
+        svg.appendChild(centerCircle);
+        
+        // Face
+        const earliestBreak = getEarliestBreak(data);
+        renderFace(svg, earliestBreak);
+    }
+    
+    // ============================================
+    // RESTART
+    // ============================================
+    
+    function restart() {
+        currentDim = null;
+        scores = {};
+        probeTrail = [];
+        currentCell = null;
+        showPhase('select');
+    }
+    
+    // ============================================
+    // INIT
+    // ============================================
+    
+    initDimensionSelect();
+    </script>
+</body>
+</html>
