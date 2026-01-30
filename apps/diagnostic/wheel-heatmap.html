@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Heatmap - Diagnostic POC</title>
+    <style>
+        :root {
+            --spirit: #805ad5;
+            --soul: #3182ce;
+            --body: #38a169;
+            --bg: #0d1117;
+            --card: #161b22;
+            --text: #e2e8f0;
+            --text-muted: #6e7681;
+            --border: #30363d;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .controls button {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--card);
+            color: var(--text);
+            cursor: pointer;
+        }
+        
+        .controls button:hover {
+            background: var(--border);
+        }
+        
+        .status {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 24px;
+        }
+        
+        @media (max-width: 800px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .wheel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        #wheel {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid var(--border);
+        }
+        
+        .card h3 {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        
+        .hover-info {
+            min-height: 80px;
+        }
+        
+        .hover-info .cell-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .hover-info .cell-detail {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+        
+        .hover-info .cell-score {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .hover-info .cell-status {
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+        
+        .hover-info .cell-status.strong { color: #68d391; }
+        .hover-info .cell-status.weak { color: #fc8181; }
+        
+        .breaks-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .break-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 6px;
+        }
+        
+        .break-item .dim {
+            font-weight: bold;
+        }
+        
+        .break-item .dim.spirit { color: var(--spirit); }
+        .break-item .dim.soul { color: var(--soul); }
+        .break-item .dim.body { color: var(--body); }
+        
+        .break-item .layer {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .break-item .layer.solid {
+            color: #68d391;
+        }
+        
+        .break-item .layer.crisis {
+            color: #fc8181;
+        }
+        
+        .legend {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .legend-gradient {
+            flex: 1;
+            height: 12px;
+            border-radius: 4px;
+            background: linear-gradient(to right, #000, #fff);
+        }
+        
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        
+        .category-labels {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 12px;
+            font-size: 0.75rem;
+        }
+        
+        .category-labels span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .category-labels .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .category-labels .spirit .dot { background: var(--spirit); }
+        .category-labels .soul .dot { background: var(--soul); }
+        .category-labels .body .dot { background: var(--body); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wheel Heatmap</h1>
+        <p class="subtitle">72 cells — brightness = strength, darkness = weakness</p>
+        
+        <div class="controls">
+            <button onclick="randomize()">Randomize Data</button>
+            <span class="status" id="status"></span>
+        </div>
+        
+        <div class="main-layout">
+            <div class="wheel-container">
+                <svg id="wheel" viewBox="-260 -260 520 520" width="500" height="500"></svg>
+            </div>
+            
+            <div class="sidebar">
+                <div class="card hover-info" id="hover-info">
+                    <h3>Cell Details</h3>
+                    <div class="cell-name" id="cell-name">Hover over a cell</div>
+                    <div class="cell-detail" id="cell-detail">—</div>
+                    <div class="cell-score" id="cell-score">—</div>
+                    <div class="cell-status" id="cell-status"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>Break Points</h3>
+                    <div class="breaks-list" id="breaks-list"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>Legend</h3>
+                    <div class="legend-labels">
+                        <span>1 (Crisis)</span>
+                        <span>5 (Exceptional)</span>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-gradient"></div>
+                    </div>
+                    <div class="category-labels">
+                        <span class="spirit"><span class="dot"></span> Spirit</span>
+                        <span class="soul"><span class="dot"></span> Soul</span>
+                        <span class="body"><span class="dot"></span> Body</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    const DIMENSIONS = {
+        A: { name: 'Communion', category: 'Spirit' },
+        B: { name: 'Conscience', category: 'Spirit' },
+        C: { name: 'Holiness', category: 'Spirit' },
+        D: { name: 'Mind', category: 'Soul' },
+        E: { name: 'Will', category: 'Soul' },
+        F: { name: 'Emotions', category: 'Soul' },
+        G: { name: 'Sustenance', category: 'Body' },
+        H: { name: 'Capability', category: 'Body' },
+        I: { name: 'Wholeness', category: 'Body' },
+    };
+    
+    const LAYERS = {
+        1: 'Order',
+        2: 'Causality', 
+        3: 'Responsibility',
+        4: 'Discipline',
+        5: 'Skill',
+        6: 'Resources',
+        7: 'Fellowship',
+        8: 'Sacrifice'
+    };
+    
+    const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+    const THRESHOLD = 3.5;
+    
+    let data = {};
+    
+    // Break point weighted distribution
+    const breakDistribution = [
+        { break: null, weight: 10 },
+        { break: 1, weight: 5 },
+        { break: 2, weight: 8 },
+        { break: 3, weight: 12 },
+        { break: 4, weight: 20 },
+        { break: 5, weight: 18 },
+        { break: 6, weight: 15 },
+        { break: 7, weight: 8 },
+        { break: 8, weight: 4 },
+    ];
+    
+    function pickBreakPoint() {
+        const totalWeight = breakDistribution.reduce((sum, b) => sum + b.weight, 0);
+        let random = Math.random() * totalWeight;
+        for (const b of breakDistribution) {
+            random -= b.weight;
+            if (random <= 0) return b.break;
+        }
+        return 4;
+    }
+    
+    function generateData() {
+        data = {};
+        
+        for (const dim of DIM_ORDER) {
+            data[dim] = {};
+            const breakPoint = pickBreakPoint();
+            
+            if (breakPoint === null) {
+                let ceiling = 4.5 + Math.random() * 0.5;
+                for (let layer = 1; layer <= 8; layer++) {
+                    const minScore = Math.max(3.5, ceiling - 0.8);
+                    const score = minScore + Math.random() * (ceiling - minScore);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+            } else if (breakPoint === 1) {
+                let ceiling = 2.0 + Math.random() * 1.4;
+                for (let layer = 1; layer <= 8; layer++) {
+                    const score = 1 + Math.random() * (ceiling - 1);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+            } else {
+                const floor = breakPoint - 1;
+                let ceiling = 4.2 + Math.random() * 0.8;
+                for (let layer = 1; layer <= floor; layer++) {
+                    const minScore = Math.max(3.6, ceiling - 0.5);
+                    const score = minScore + Math.random() * (ceiling - minScore);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+                const breakCeiling = Math.min(data[dim][floor], 3.4);
+                const breakScore = 1.5 + Math.random() * (breakCeiling - 1.5);
+                data[dim][breakPoint] = Math.round(breakScore * 100) / 100;
+                ceiling = data[dim][breakPoint];
+                for (let layer = breakPoint + 1; layer <= 8; layer++) {
+                    const score = 1 + Math.random() * (ceiling - 1);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+            }
+        }
+    }
+    
+    function findBreakPoint(dimData) {
+        let floor = 0;
+        let breakPoint = null;
+        
+        for (let layer = 1; layer <= 8; layer++) {
+            if (dimData[layer] >= THRESHOLD) {
+                floor = layer;
+            } else {
+                if (breakPoint === null) {
+                    breakPoint = layer;
+                }
+            }
+        }
+        
+        if (breakPoint === null && floor > 0) {
+            return { floor: 8, break: null };
+        }
+        if (floor === 0) {
+            return { floor: 0, break: 1 };
+        }
+        return { floor, break: breakPoint };
+    }
+    
+    function scoreToColor(score) {
+        // Map 1-5 to 0-255 brightness
+        const brightness = Math.round(((score - 1) / 4) * 255);
+        return `rgb(${brightness}, ${brightness}, ${brightness})`;
+    }
+    
+    function getCategoryColor(category) {
+        switch(category) {
+            case 'Spirit': return '#805ad5';
+            case 'Soul': return '#3182ce';
+            case 'Body': return '#38a169';
+        }
+    }
+    
+    function polarToCartesian(cx, cy, radius, angleInDegrees) {
+        const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+        return {
+            x: cx + (radius * Math.cos(angleInRadians)),
+            y: cy + (radius * Math.sin(angleInRadians))
+        };
+    }
+    
+    function describeArc(cx, cy, innerRadius, outerRadius, startAngle, endAngle) {
+        const start1 = polarToCartesian(cx, cy, outerRadius, endAngle);
+        const end1 = polarToCartesian(cx, cy, outerRadius, startAngle);
+        const start2 = polarToCartesian(cx, cy, innerRadius, startAngle);
+        const end2 = polarToCartesian(cx, cy, innerRadius, endAngle);
+        
+        const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+        
+        return [
+            "M", start1.x, start1.y,
+            "A", outerRadius, outerRadius, 0, largeArcFlag, 0, end1.x, end1.y,
+            "L", start2.x, start2.y,
+            "A", innerRadius, innerRadius, 0, largeArcFlag, 1, end2.x, end2.y,
+            "Z"
+        ].join(" ");
+    }
+    
+    function renderWheel() {
+        const svg = document.getElementById('wheel');
+        svg.innerHTML = '';
+        
+        const cx = 0, cy = 0;
+        const minRadius = 30;
+        const maxRadius = 220;
+        const ringWidth = (maxRadius - minRadius) / 8;
+        const wedgeAngle = 360 / 9;
+        const gap = 1; // Gap between cells in degrees
+        
+        // Draw cells
+        DIM_ORDER.forEach((dim, dimIndex) => {
+            const startAngle = dimIndex * wedgeAngle + gap/2;
+            const endAngle = (dimIndex + 1) * wedgeAngle - gap/2;
+            
+            for (let layer = 1; layer <= 8; layer++) {
+                const innerRadius = minRadius + (layer - 1) * ringWidth + 1;
+                const outerRadius = minRadius + layer * ringWidth - 1;
+                const score = data[dim][layer];
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', describeArc(cx, cy, innerRadius, outerRadius, startAngle, endAngle));
+                path.setAttribute('fill', scoreToColor(score));
+                path.setAttribute('stroke', '#0d1117');
+                path.setAttribute('stroke-width', '1');
+                path.setAttribute('data-dim', dim);
+                path.setAttribute('data-layer', layer);
+                path.style.cursor = 'pointer';
+                path.style.transition = 'opacity 0.15s';
+                
+                path.addEventListener('mouseenter', (e) => {
+                    showCellInfo(dim, layer);
+                    path.style.opacity = '0.8';
+                });
+                path.addEventListener('mouseleave', (e) => {
+                    path.style.opacity = '1';
+                });
+                
+                svg.appendChild(path);
+            }
+        });
+        
+        // Draw dimension labels
+        DIM_ORDER.forEach((dim, dimIndex) => {
+            const angle = (dimIndex + 0.5) * wedgeAngle;
+            const pos = polarToCartesian(cx, cy, maxRadius + 25, angle);
+            const info = DIMENSIONS[dim];
+            
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('x', pos.x);
+            text.setAttribute('y', pos.y);
+            text.setAttribute('text-anchor', 'middle');
+            text.setAttribute('dominant-baseline', 'middle');
+            text.setAttribute('fill', getCategoryColor(info.category));
+            text.setAttribute('font-size', '14');
+            text.setAttribute('font-weight', 'bold');
+            text.textContent = dim;
+            svg.appendChild(text);
+        });
+        
+        // Draw layer labels (on one ray)
+        for (let layer = 1; layer <= 8; layer++) {
+            const radius = minRadius + (layer - 0.5) * ringWidth;
+            const pos = polarToCartesian(cx, cy, radius, -10);
+            
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('x', pos.x);
+            text.setAttribute('y', pos.y);
+            text.setAttribute('text-anchor', 'middle');
+            text.setAttribute('dominant-baseline', 'middle');
+            text.setAttribute('fill', '#6e7681');
+            text.setAttribute('font-size', '9');
+            text.textContent = `L${layer}`;
+            svg.appendChild(text);
+        }
+        
+        // Center circle (dark)
+        const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        centerCircle.setAttribute('cx', cx);
+        centerCircle.setAttribute('cy', cy);
+        centerCircle.setAttribute('r', minRadius - 2);
+        centerCircle.setAttribute('fill', '#0d1117');
+        svg.appendChild(centerCircle);
+        
+        renderBreaksList();
+    }
+    
+    function showCellInfo(dim, layer) {
+        const info = DIMENSIONS[dim];
+        const score = data[dim][layer];
+        const isStrong = score >= THRESHOLD;
+        
+        document.getElementById('cell-name').textContent = `${dim}${layer}: ${info.name}`;
+        document.getElementById('cell-detail').textContent = `Layer ${layer}: ${LAYERS[layer]} • ${info.category}`;
+        document.getElementById('cell-score').textContent = score.toFixed(2);
+        
+        const statusEl = document.getElementById('cell-status');
+        statusEl.textContent = isStrong ? 'STRONG' : 'WEAK';
+        statusEl.className = 'cell-status ' + (isStrong ? 'strong' : 'weak');
+    }
+    
+    function renderBreaksList() {
+        const container = document.getElementById('breaks-list');
+        container.innerHTML = '';
+        
+        DIM_ORDER.forEach(dim => {
+            const info = DIMENSIONS[dim];
+            const { floor, break: breakPoint } = findBreakPoint(data[dim]);
+            
+            const item = document.createElement('div');
+            item.className = 'break-item';
+            
+            let layerText, layerClass;
+            if (breakPoint === null) {
+                layerText = 'Solid';
+                layerClass = 'solid';
+            } else if (breakPoint === 1) {
+                layerText = 'L1 Crisis';
+                layerClass = 'crisis';
+            } else {
+                layerText = `L${breakPoint} ${LAYERS[breakPoint]}`;
+                layerClass = '';
+            }
+            
+            item.innerHTML = `
+                <span class="dim ${info.category.toLowerCase()}">${dim} ${info.name}</span>
+                <span class="layer ${layerClass}">${layerText}</span>
+            `;
+            container.appendChild(item);
+        });
+    }
+    
+    function randomize() {
+        generateData();
+        renderWheel();
+        document.getElementById('status').textContent = 'Data randomized';
+        setTimeout(() => document.getElementById('status').textContent = '', 2000);
+    }
+    
+    // Init
+    generateData();
+    renderWheel();
+    
+    // Keyboard shortcut
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'r') randomize();
+    });
+    </script>
+</body>
+</html>
