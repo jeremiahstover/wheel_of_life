@@ -4,8 +4,9 @@
  * Diagnostic Engine POC Runner
  * 
  * Usage:
- *   php poc.php                    # Run full diagnostic (simulated answers)
- *   php poc.php --dim=E            # Run single dimension
+ *   php poc.php                    # Run ONE random dimension (simulated)
+ *   php poc.php --dim=E            # Run specific dimension
+ *   php poc.php --full             # Run all 9 dimensions
  *   php poc.php --interactive      # Interactive mode (you answer)
  *   php poc.php --scenario=crisis  # Run with preset scenario
  */
@@ -15,7 +16,7 @@ require_once __DIR__ . '/engine.php';
 $dataPath = __DIR__ . '/../../data/questions';
 
 // Parse arguments
-$options = getopt('', ['dim:', 'interactive', 'scenario:', 'quiet', 'help']);
+$options = getopt('', ['dim:', 'full', 'interactive', 'scenario:', 'quiet', 'help']);
 
 if (isset($options['help'])) {
     echo <<<HELP
@@ -24,17 +25,29 @@ Drunkard's Walk Diagnostic Engine - POC
 Usage: php poc.php [options]
 
 Options:
-  --dim=X          Run single dimension (A-I)
+  --dim=X          Run specific dimension (A-I)
+  --full           Run all 9 dimensions (default: single random)
   --interactive    Answer questions interactively
   --scenario=NAME  Use preset scenario (crisis, solid, mixed, discipline)
   --quiet          Suppress verbose output
   --help           Show this help
 
+Dimensions:
+  A=Communion   B=Conscience  C=Holiness   (Spirit)
+  D=Mind        E=Will        F=Emotions   (Soul)
+  G=Sustenance  H=Capability  I=Wholeness  (Body)
+
 Scenarios:
   crisis     - Everything weak (foundation broken)
   solid      - Everything strong (no break points)
-  mixed      - Varies by dimension
+  mixed      - Varies by dimension (Spirit>Soul>Body)
   discipline - Break at Layer 4 across most dimensions
+
+Examples:
+  php poc.php                      # Quick test, random dimension
+  php poc.php --dim=E              # Test Will dimension
+  php poc.php --dim=E --interactive # Answer Will questions yourself
+  php poc.php --full --scenario=discipline
 
 HELP;
     exit(0);
@@ -107,32 +120,23 @@ if (isset($options['interactive'])) {
     echo "Running scenario: {$scenarioName}\n";
 }
 
-// Run diagnostic
+// Determine which dimension(s) to run
+$runFull = isset($options['full']);
+$specifiedDim = isset($options['dim']) ? strtoupper($options['dim']) : null;
+
+if ($specifiedDim && !array_key_exists($specifiedDim, DiagnosticEngine::getDimensions())) {
+    echo "Invalid dimension: {$specifiedDim}\n";
+    echo "Valid: A, B, C, D, E, F, G, H, I\n";
+    exit(1);
+}
+
+// Header
 echo "\n" . str_repeat('=', 60) . "\n";
 echo "DRUNKARD'S WALK DIAGNOSTIC ENGINE - POC\n";
 echo str_repeat('=', 60) . "\n";
 
-if (isset($options['dim'])) {
-    // Single dimension
-    $dim = strtoupper($options['dim']);
-    if (!array_key_exists($dim, DiagnosticEngine::getDimensions())) {
-        echo "Invalid dimension: {$dim}\n";
-        echo "Valid: A, B, C, D, E, F, G, H, I\n";
-        exit(1);
-    }
-    
-    $result = $engine->findBreakPoint($dim, $answerCallback);
-    
-    echo "\n" . str_repeat('-', 40) . "\n";
-    echo "RESULT FOR DIMENSION {$dim}\n";
-    echo str_repeat('-', 40) . "\n";
-    echo "Floor:   Layer " . ($result['floor'] ?: 'NONE') . "\n";
-    echo "Break:   Layer " . ($result['break'] ?: 'NONE') . "\n";
-    echo "Message: {$result['message']}\n";
-    echo "Cells probed: " . count($result['scores']) . " (" . (count($result['scores']) * 5) . " questions)\n";
-    
-} else {
-    // Full diagnostic
+if ($runFull) {
+    // Full diagnostic - all 9 dimensions
     $results = $engine->runFullDiagnostic($answerCallback);
     
     echo "\n" . str_repeat('=', 60) . "\n";
@@ -176,6 +180,49 @@ if (isset($options['dim'])) {
         echo "\nPRIMARY FOCUS: Layer {$summary['primary_break_layer']} ({$summary['primary_break_name']})\n";
         echo "This layer has the most break points across dimensions.\n";
         echo "Fix this layer first - higher layers may self-correct.\n";
+    }
+    
+} else {
+    // Single dimension (specified or random)
+    $dim = $specifiedDim;
+    
+    if (!$dim) {
+        // Pick random dimension
+        $dims = array_keys(DiagnosticEngine::getDimensions());
+        $dim = $dims[array_rand($dims)];
+        echo "\nRandom dimension selected: {$dim}\n";
+    }
+    
+    $dimInfo = DiagnosticEngine::getDimensions()[$dim];
+    echo "Testing: {$dim} = {$dimInfo['name']} ({$dimInfo['category']})\n";
+    
+    $result = $engine->findBreakPoint($dim, $answerCallback);
+    
+    echo "\n" . str_repeat('-', 40) . "\n";
+    echo "RESULT FOR DIMENSION {$dim} ({$dimInfo['name']})\n";
+    echo str_repeat('-', 40) . "\n";
+    
+    $floorLabel = $result['floor'] 
+        ? "L{$result['floor']} (" . DiagnosticEngine::getLayers()[$result['floor']] . ")"
+        : "NONE (crisis)";
+    $breakLabel = $result['break']
+        ? "L{$result['break']} (" . DiagnosticEngine::getLayers()[$result['break']] . ")"
+        : "NONE (solid)";
+    
+    echo "Floor:   {$floorLabel}\n";
+    echo "Break:   {$breakLabel}\n";
+    echo "Message: {$result['message']}\n";
+    echo "\nCells probed: " . count($result['scores']) . "\n";
+    echo "Questions:   " . (count($result['scores']) * 5) . " (vs 40 for full dimension)\n";
+    echo "Efficiency:  " . round((1 - count($result['scores']) / 8) * 100) . "% reduction\n";
+    
+    // Show probe trail
+    echo "\nProbe trail:\n";
+    ksort($result['scores']);
+    foreach ($result['scores'] as $layer => $score) {
+        $layerName = DiagnosticEngine::getLayers()[$layer];
+        $status = $score >= 3.5 ? '✓ STRONG' : '✗ WEAK';
+        printf("  L%d %-15s %.2f %s\n", $layer, $layerName, $score, $status);
     }
 }
 
