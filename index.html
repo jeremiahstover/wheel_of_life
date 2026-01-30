@@ -429,7 +429,7 @@
         
         .chart-container {
             position: relative;
-            height: 350px;
+            height: 400px;
             margin: 20px 0;
         }
         
@@ -443,12 +443,12 @@
             height: auto;
         }
         .wheel-label {
-            font-size: 9px;
+            font-size: 16px;
             font-weight: 500;
             fill: var(--text);
         }
         .wheel-label-small {
-            font-size: 7px;
+            font-size: 14px;
             fill: var(--text-muted);
         }
         
@@ -497,7 +497,7 @@
             .card { padding: 20px; }
             .tabs { overflow-x: auto; }
             .tab { padding: 12px 16px; white-space: nowrap; }
-            .chart-container { height: 280px; }
+            .chart-container { height: 320px; }
             .dimension-list { grid-template-columns: 1fr; }
             .category-summary { grid-template-columns: 1fr; }
         }
@@ -510,57 +510,57 @@
             <p class="subtitle">Discipline Layer (Layer 4 of 8)</p>
             
             <div class="wheel-container">
-                <svg class="wheel-svg" viewBox="0 0 300 300" width="300" height="300">
-                    <circle cx="150" cy="150" r="140" fill="none" stroke="#e2e8f0" stroke-width="2"/>
-                    <circle cx="150" cy="150" r="105" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-                    <circle cx="150" cy="150" r="70" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-                    <circle cx="150" cy="150" r="35" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                <svg class="wheel-svg" viewBox="0 0 400 400" width="400" height="400">
+                    <circle cx="200" cy="200" r="140" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+                    <circle cx="200" cy="200" r="105" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                    <circle cx="200" cy="200" r="70" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                    <circle cx="200" cy="200" r="35" fill="none" stroke="#e2e8f0" stroke-width="1"/>
                     
                     <g stroke="#e2e8f0" stroke-width="1">
-                        <line x1="150" y1="150" x2="150" y2="10"/>
-                        <line x1="150" y1="150" x2="254" y2="60"/>
-                        <line x1="150" y1="150" x2="286" y2="150"/>
-                        <line x1="150" y1="150" x2="254" y2="240"/>
-                        <line x1="150" y1="150" x2="150" y2="290"/>
-                        <line x1="150" y1="150" x2="46" y2="240"/>
-                        <line x1="150" y1="150" x2="14" y2="150"/>
-                        <line x1="150" y1="150" x2="46" y2="60"/>
-                        <line x1="150" y1="150" x2="105" y2="17"/>
+                        <line x1="200" y1="200" x2="200" y2="60"/>
+                        <line x1="200" y1="200" x2="304" y2="110"/>
+                        <line x1="200" y1="200" x2="336" y2="200"/>
+                        <line x1="200" y1="200" x2="304" y2="290"/>
+                        <line x1="200" y1="200" x2="200" y2="340"/>
+                        <line x1="200" y1="200" x2="96" y2="290"/>
+                        <line x1="200" y1="200" x2="64" y2="200"/>
+                        <line x1="200" y1="200" x2="96" y2="110"/>
+                        <line x1="200" y1="200" x2="155" y2="67"/>
                     </g>
                     
                     <!-- Spirit arc (purple) -->
-                    <path d="M 150 10 A 140 140 0 0 1 254 60" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 254 60 A 140 140 0 0 1 286 150" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 105 17 A 140 140 0 0 1 150 10" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 200 60 A 140 140 0 0 1 304 110" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 304 110 A 140 140 0 0 1 336 200" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 155 67 A 140 140 0 0 1 200 60" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     
                     <!-- Soul arc (blue) -->
-                    <path d="M 286 150 A 140 140 0 0 1 254 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 254 240 A 140 140 0 0 1 150 290" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 150 290 A 140 140 0 0 1 46 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 336 200 A 140 140 0 0 1 304 290" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 304 290 A 140 140 0 0 1 200 340" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 200 340 A 140 140 0 0 1 96 290" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     
                     <!-- Body arc (green) -->
-                    <path d="M 46 240 A 140 140 0 0 1 14 150" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 14 150 A 140 140 0 0 1 46 60" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 46 60 A 140 140 0 0 1 105 17" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 96 290 A 140 140 0 0 1 64 200" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 64 200 A 140 140 0 0 1 96 110" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
+                    <path d="M 96 110 A 140 140 0 0 1 155 67" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     
                     <!-- Spirit labels -->
-                    <text x="150" y="32" text-anchor="middle" class="wheel-label" fill="#805ad5">Communion</text>
-                    <text x="248" y="55" text-anchor="middle" class="wheel-label" fill="#805ad5">Conscience</text>
-                    <text x="275" y="140" text-anchor="start" class="wheel-label" fill="#805ad5">Holiness</text>
+                    <text x="200" y="42" text-anchor="middle" class="wheel-label" fill="#805ad5">Communion</text>
+                    <text x="320" y="95" text-anchor="middle" class="wheel-label" fill="#805ad5">Conscience</text>
+                    <text x="360" y="200" text-anchor="start" class="wheel-label" fill="#805ad5">Holiness</text>
                     
                     <!-- Soul labels -->
-                    <text x="270" y="195" text-anchor="start" class="wheel-label" fill="#3182ce">Mind</text>
-                    <text x="230" y="255" text-anchor="middle" class="wheel-label" fill="#3182ce">Will</text>
-                    <text x="150" y="285" text-anchor="middle" class="wheel-label" fill="#3182ce">Emotions</text>
+                    <text x="360" y="250" text-anchor="start" class="wheel-label" fill="#3182ce">Mind</text>
+                    <text x="320" y="315" text-anchor="middle" class="wheel-label" fill="#3182ce">Will</text>
+                    <text x="200" y="375" text-anchor="middle" class="wheel-label" fill="#3182ce">Emotions</text>
                     
                     <!-- Body labels -->
-                    <text x="55" y="260" text-anchor="middle" class="wheel-label" fill="#38a169">Sustenance</text>
-                    <text x="25" y="165" text-anchor="start" class="wheel-label" fill="#38a169">Capability</text>
-                    <text x="60" y="55" text-anchor="middle" class="wheel-label" fill="#38a169">Wholeness</text>
+                    <text x="70" y="315" text-anchor="middle" class="wheel-label" fill="#38a169">Sustenance</text>
+                    <text x="40" y="205" text-anchor="end" class="wheel-label" fill="#38a169">Capability</text>
+                    <text x="80" y="95" text-anchor="middle" class="wheel-label" fill="#38a169">Wholeness</text>
                     
                     <!-- Center label -->
-                    <text x="150" y="145" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3748">DISCIPLINE</text>
-                    <text x="150" y="160" text-anchor="middle" font-size="8" fill="#718096">Layer 4</text>
+                    <text x="200" y="193" text-anchor="middle" font-size="20" font-weight="600" fill="#2d3748">DISCIPLINE</text>
+                    <text x="200" y="215" text-anchor="middle" font-size="14" fill="#718096">Layer 4</text>
                 </svg>
             </div>
             
@@ -1188,11 +1188,11 @@
                         max: 10,
                         ticks: {
                             stepSize: 2,
-                            font: { size: 10 },
+                            font: { size: 14 },
                             backdropColor: 'transparent'
                         },
                         pointLabels: {
-                            font: { size: 10 }
+                            font: { size: 16, weight: 500 }
                         },
                         grid: {
                             color: 'rgba(0, 0, 0, 0.08)'
