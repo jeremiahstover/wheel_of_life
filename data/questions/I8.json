@@ -1,0 +1,46 @@
+{
+  "cell": "I8",
+  "dimension": {
+    "code": "I",
+    "name": "Wholeness",
+    "category": "Body",
+    "function": "State"
+  },
+  "layer": {
+    "code": 8,
+    "name": "Sacrifice",
+    "definition": "Using what has been given to you for the purpose for which it was given — to benefit others, freely and without expectation of return. Costs you everything with a GUARANTEE of no return (to you). The return goes to others."
+  },
+  "questions": [
+    {
+      "id": "I8.A",
+      "text": "My life is oriented toward giving, not accumulating — my trajectory is to pour out, not pile up.",
+      "voice": "Core Philosophy",
+      "principle": "Life orientation toward giving"
+    },
+    {
+      "id": "I8.B",
+      "text": "I am working toward 'dying broke' in all three wealth tiers — giving away money, time, AND relational investment.",
+      "voice": "Core Philosophy",
+      "principle": "Die broke trajectory"
+    },
+    {
+      "id": "I8.C",
+      "text": "I sacrifice across all dimensions — spirit, soul, and body — not just in areas that are easy for me.",
+      "voice": "Core Philosophy",
+      "principle": "Integrated sacrifice"
+    },
+    {
+      "id": "I8.D",
+      "text": "I have given at levels that genuinely cost me — not just comfortable giving but sacrifice that hurt.",
+      "voice": "Core Philosophy",
+      "principle": "Costly sacrifice"
+    },
+    {
+      "id": "I8.E",
+      "text": "I see my accumulated resources (Layers 1-6) as held in trust for others — I'm a steward, not an owner.",
+      "voice": "Core Philosophy",
+      "principle": "Stewardship, not ownership"
+    }
+  ]
+}

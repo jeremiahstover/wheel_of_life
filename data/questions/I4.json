@@ -1,0 +1,46 @@
+{
+  "cell": "I4",
+  "dimension": {
+    "code": "I",
+    "name": "Wholeness",
+    "category": "Body",
+    "function": "State"
+  },
+  "layer": {
+    "code": 4,
+    "name": "Discipline",
+    "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it."
+  },
+  "questions": [
+    {
+      "id": "I4.A",
+      "text": "I schedule and attend regular preventive care (checkups, dental, vision) rather than only going when something is wrong.",
+      "voice": "Core Philosophy",
+      "principle": "Stewardship: maintenance before repair"
+    },
+    {
+      "id": "I4.B",
+      "text": "When I notice a health issue (pain, symptom, concern), I address it promptly rather than ignoring it.",
+      "voice": "Jordan Peterson",
+      "principle": "Don't ignore the small problems; they grow"
+    },
+    {
+      "id": "I4.C",
+      "text": "I follow through on medical recommendations (medication, therapy, lifestyle changes) even when inconvenient.",
+      "voice": "Core Philosophy",
+      "principle": "Integrity: follow through on commitments"
+    },
+    {
+      "id": "I4.D",
+      "text": "I manage chronic conditions or health maintenance routines consistently rather than sporadically.",
+      "voice": "Brian Tracy",
+      "principle": "Systems beat willpower; routine creates results"
+    },
+    {
+      "id": "I4.E",
+      "text": "I recognize that physical, mental, and spiritual health are connected and address my body as an integrated whole.",
+      "voice": "Core Philosophy",
+      "principle": "Integration not separation; tripartite being"
+    }
+  ]
+}

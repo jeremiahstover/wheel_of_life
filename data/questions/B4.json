@@ -1,0 +1,46 @@
+{
+  "cell": "B4",
+  "dimension": {
+    "code": "B",
+    "name": "Conscience",
+    "category": "Spirit",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 4,
+    "name": "Discipline",
+    "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it."
+  },
+  "questions": [
+    {
+      "id": "B4.A",
+      "text": "When I sense conviction about something (right or wrong), I act on it promptly rather than rationalizing or delaying.",
+      "voice": "Jordan Peterson",
+      "principle": "Do not lie, especially to yourself"
+    },
+    {
+      "id": "B4.B",
+      "text": "I confess and make things right quickly when I've wronged someone, even when it's uncomfortable.",
+      "voice": "Cloud & Townsend",
+      "principle": "Integrity requires difficult conversations"
+    },
+    {
+      "id": "B4.C",
+      "text": "I say 'no' to requests or opportunities that violate my values, even when saying yes would benefit me.",
+      "voice": "Cloud & Townsend",
+      "principle": "Boundaries protect integrity"
+    },
+    {
+      "id": "B4.D",
+      "text": "I keep my word and follow through on commitments, even small ones, even when no one would notice if I didn't.",
+      "voice": "Jordan Peterson",
+      "principle": "Your word is your bond with reality"
+    },
+    {
+      "id": "B4.E",
+      "text": "When I notice I'm justifying questionable behavior, I stop and examine myself honestly.",
+      "voice": "Chase Hughes",
+      "principle": "Self-awareness of internal narratives"
+    }
+  ]
+}

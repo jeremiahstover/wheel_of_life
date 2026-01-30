@@ -1,0 +1,46 @@
+{
+  "cell": "F2",
+  "dimension": {
+    "code": "F",
+    "name": "Emotions",
+    "category": "Soul",
+    "function": "State"
+  },
+  "layer": {
+    "code": 2,
+    "name": "Causality",
+    "definition": "The relationship between cause and effect; understanding that actions produce consequences and current states result from prior causes."
+  },
+  "questions": [
+    {
+      "id": "F2.A",
+      "text": "I understand that my emotional patterns are influenced by what I consistently think, believe, and practice.",
+      "voice": "Core Philosophy",
+      "principle": "Emotions respond to cognitive and behavioral inputs"
+    },
+    {
+      "id": "F2.B",
+      "text": "I can usually identify what triggered a strong emotional response rather than feeling like emotions 'just happen.'",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional responses have identifiable triggers"
+    },
+    {
+      "id": "F2.C",
+      "text": "I recognize that people who are emotionally healthy built that health through specific practices over time.",
+      "voice": "Jordan Peterson",
+      "principle": "Emotional health is cultivated, not inherited"
+    },
+    {
+      "id": "F2.D",
+      "text": "I understand that chronic emotional struggles (anxiety, anger, depression) usually have root causes that can be identified.",
+      "voice": "Chase Hughes",
+      "principle": "Chronic emotional patterns have root causes"
+    },
+    {
+      "id": "F2.E",
+      "text": "I can see the connection between how I treat my body, mind, and spirit and my emotional state.",
+      "voice": "Core Philosophy",
+      "principle": "Emotional state connects to holistic health"
+    }
+  ]
+}

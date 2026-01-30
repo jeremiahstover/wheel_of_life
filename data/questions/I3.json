@@ -1,0 +1,46 @@
+{
+  "cell": "I3",
+  "dimension": {
+    "code": "I",
+    "name": "Wholeness",
+    "category": "Body",
+    "function": "State"
+  },
+  "layer": {
+    "code": 3,
+    "name": "Responsibility",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood."
+  },
+  "questions": [
+    {
+      "id": "I3.A",
+      "text": "I take responsibility for my health outcomes that are within my control, rather than feeling helpless about my body.",
+      "voice": "Core Philosophy",
+      "principle": "Agency over controllable factors"
+    },
+    {
+      "id": "I3.B",
+      "text": "I don't blame genetics, age, or 'bad luck' for things I can actually influence through my choices.",
+      "voice": "Jordan Peterson",
+      "principle": "No blame-shifting for controllable factors"
+    },
+    {
+      "id": "I3.C",
+      "text": "I own that addressing health issues is my job — I don't wait for others to notice problems or push me to act.",
+      "voice": "Core Philosophy",
+      "principle": "Proactive health ownership"
+    },
+    {
+      "id": "I3.D",
+      "text": "I recognize that integrated wellness (physical, mental, spiritual) is my responsibility to pursue, not separate from my 'spiritual life.'",
+      "voice": "Core Philosophy",
+      "principle": "Holistic stewardship"
+    },
+    {
+      "id": "I3.E",
+      "text": "I take ownership of preventive care and maintenance rather than ignoring my body until something breaks.",
+      "voice": "Core Philosophy",
+      "principle": "Maintenance before repair"
+    }
+  ]
+}

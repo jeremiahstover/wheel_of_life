@@ -1,0 +1,46 @@
+{
+  "cell": "G5",
+  "dimension": {
+    "code": "G",
+    "name": "Sustenance",
+    "category": "Body",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "G5.A",
+      "text": "I know what foods work well for my body and what doesn't — I've experimented and have practical knowledge, not just theory.",
+      "voice": "Core Philosophy",
+      "principle": "Nutritional knowledge is personalized through testing"
+    },
+    {
+      "id": "G5.B",
+      "text": "I know how to optimize my sleep — I understand my sleep needs and have developed practices that ensure quality rest.",
+      "voice": "Brian Tracy",
+      "principle": "Sleep optimization is learnable"
+    },
+    {
+      "id": "G5.C",
+      "text": "I can prepare healthy meals efficiently — I have practical cooking/meal prep skills, not just good intentions.",
+      "voice": "Core Philosophy",
+      "principle": "Food preparation is a practical skill"
+    },
+    {
+      "id": "G5.D",
+      "text": "I know how to create environments that support my work and rest — I've developed practical space management skills.",
+      "voice": "Jordan Peterson",
+      "principle": "Environment design is a skill"
+    },
+    {
+      "id": "G5.E",
+      "text": "I can troubleshoot when my energy or recovery is off — I have diagnostic skill for my own body's signals.",
+      "voice": "Chase Hughes",
+      "principle": "Body awareness develops with attention"
+    }
+  ]
+}

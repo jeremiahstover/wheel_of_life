@@ -1,0 +1,46 @@
+{
+  "cell": "B6",
+  "dimension": {
+    "code": "B",
+    "name": "Conscience",
+    "category": "Spirit",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "B6.A",
+      "text": "I have built a reputation for integrity that precedes me — people trust my word before I speak.",
+      "voice": "Jordan Peterson",
+      "principle": "Moral capital is accumulated through consistent action"
+    },
+    {
+      "id": "B6.B",
+      "text": "I have relational credit built up from past faithfulness that I could draw on if needed.",
+      "voice": "Cloud & Townsend",
+      "principle": "Trust is a bankable resource"
+    },
+    {
+      "id": "B6.C",
+      "text": "My track record of keeping commitments gives me credibility when I make new ones.",
+      "voice": "Brian Tracy",
+      "principle": "Past performance creates future opportunity"
+    },
+    {
+      "id": "B6.D",
+      "text": "I have enough moral standing that people come to me for ethical guidance or as a character reference.",
+      "voice": "Core Philosophy",
+      "principle": "Moral surplus enables influence"
+    },
+    {
+      "id": "B6.E",
+      "text": "My integrity has compounded over time into a genuine asset — doors open because of who I've proven to be.",
+      "voice": "Brian Tracy",
+      "principle": "Character compounds like interest"
+    }
+  ]
+}

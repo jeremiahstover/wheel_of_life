@@ -1,0 +1,46 @@
+{
+  "cell": "A6",
+  "dimension": {
+    "code": "A",
+    "name": "Communion",
+    "category": "Spirit",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "A6.A",
+      "text": "I have spiritual reserves I can draw on in difficult times — my tank is not perpetually near empty.",
+      "voice": "Core Philosophy",
+      "principle": "Spiritual surplus provides resilience"
+    },
+    {
+      "id": "A6.B",
+      "text": "I have accumulated spiritual insights, experiences, and wisdom that I can share with others.",
+      "voice": "Core Philosophy",
+      "principle": "Spiritual capital can be transferred"
+    },
+    {
+      "id": "A6.C",
+      "text": "My spiritual life generates more than it consumes — I'm not constantly depleted, running on fumes.",
+      "voice": "Cloud & Townsend",
+      "principle": "Healthy spirituality produces surplus"
+    },
+    {
+      "id": "A6.D",
+      "text": "I have developed a relationship with God deep enough that I have something real to offer others seeking Him.",
+      "voice": "Core Philosophy",
+      "principle": "Deep relationship produces shareable fruit"
+    },
+    {
+      "id": "A6.E",
+      "text": "My prayer life, Scripture knowledge, and spiritual practices have accumulated into a resource I can deploy.",
+      "voice": "Brian Tracy",
+      "principle": "Consistent investment produces capital"
+    }
+  ]
+}

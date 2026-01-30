@@ -1,0 +1,46 @@
+{
+  "cell": "D5",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "D5.A",
+      "text": "I have developed effective learning methods — I know how I learn best and I use that knowledge intentionally.",
+      "voice": "Brian Tracy",
+      "principle": "Learning how to learn is foundational skill"
+    },
+    {
+      "id": "D5.B",
+      "text": "I can synthesize information from multiple sources into coherent understanding — not just collect facts, but integrate them.",
+      "voice": "Core Philosophy",
+      "principle": "Synthesis is a higher-order skill"
+    },
+    {
+      "id": "D5.C",
+      "text": "I have developed critical thinking skills — I can evaluate arguments, spot logical fallacies, and think clearly under pressure.",
+      "voice": "Jordan Peterson",
+      "principle": "Critical thinking is trainable"
+    },
+    {
+      "id": "D5.D",
+      "text": "I can explain complex ideas simply — my understanding is deep enough to translate for others.",
+      "voice": "Brian Tracy",
+      "principle": "Teaching ability indicates mastery"
+    },
+    {
+      "id": "D5.E",
+      "text": "I actively work to improve my thinking — I treat my mind as a tool to be sharpened, not just used.",
+      "voice": "Core Philosophy",
+      "principle": "Mental capability responds to training"
+    }
+  ]
+}

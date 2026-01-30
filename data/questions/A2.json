@@ -1,0 +1,46 @@
+{
+  "cell": "A2",
+  "dimension": {
+    "code": "A",
+    "name": "Communion",
+    "category": "Spirit",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 2,
+    "name": "Causality",
+    "definition": "The relationship between cause and effect; understanding that actions produce consequences and current states result from prior causes."
+  },
+  "questions": [
+    {
+      "id": "A2.A",
+      "text": "I understand that the quality of my relationship with God is directly connected to the time and attention I invest in it.",
+      "voice": "Core Philosophy",
+      "principle": "Spiritual inputs produce spiritual outputs"
+    },
+    {
+      "id": "A2.B",
+      "text": "I recognize that spiritual dryness usually has identifiable causes — neglected practices, unaddressed sin, or competing priorities.",
+      "voice": "Jordan Peterson",
+      "principle": "Current state results from prior causes"
+    },
+    {
+      "id": "A2.C",
+      "text": "I can see the connection between seasons of consistent prayer/Scripture and seasons of spiritual clarity and peace.",
+      "voice": "Core Philosophy",
+      "principle": "Sowing spiritual disciplines reaps spiritual fruit"
+    },
+    {
+      "id": "A2.D",
+      "text": "I understand that expecting spiritual growth without spiritual investment is like expecting a harvest without planting.",
+      "voice": "Brian Tracy",
+      "principle": "The law of sowing and reaping applies to spiritual life"
+    },
+    {
+      "id": "A2.E",
+      "text": "I can trace my current spiritual state back to specific choices, habits, and investments I've made (or failed to make).",
+      "voice": "Chase Hughes",
+      "principle": "Effects have traceable causes"
+    }
+  ]
+}

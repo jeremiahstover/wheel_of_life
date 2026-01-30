@@ -1,0 +1,46 @@
+{
+  "cell": "B7",
+  "dimension": {
+    "code": "B",
+    "name": "Conscience",
+    "category": "Spirit",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "B7.A",
+      "text": "I have people who have explicit permission to call me out when they see something wrong.",
+      "voice": "Cloud & Townsend",
+      "principle": "Permission enables accountability"
+    },
+    {
+      "id": "B7.B",
+      "text": "I have people who know my specific moral vulnerabilities and check in on them.",
+      "voice": "Chase Hughes",
+      "principle": "Specific accountability addresses specific weakness"
+    },
+    {
+      "id": "B7.C",
+      "text": "When confronted by a friend, I receive it as a gift rather than becoming defensive.",
+      "voice": "Jordan Peterson",
+      "principle": "Receiving correction is a skill"
+    },
+    {
+      "id": "B7.D",
+      "text": "I confront my friends when I see something concerning — I don't let things slide to avoid awkwardness.",
+      "voice": "Cloud & Townsend",
+      "principle": "Mutual accountability requires courage to speak"
+    },
+    {
+      "id": "B7.E",
+      "text": "My accountability relationships have survived confrontation — we've been through hard conversations and stayed connected.",
+      "voice": "Core Philosophy",
+      "principle": "Tested relationships prove genuine"
+    }
+  ]
+}

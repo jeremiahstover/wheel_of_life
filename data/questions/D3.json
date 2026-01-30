@@ -1,0 +1,46 @@
+{
+  "cell": "D3",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 3,
+    "name": "Responsibility",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood."
+  },
+  "questions": [
+    {
+      "id": "D3.A",
+      "text": "I take responsibility for what I consume mentally — content, media, and information are my choices.",
+      "voice": "Core Philosophy",
+      "principle": "Own your mental intake"
+    },
+    {
+      "id": "D3.B",
+      "text": "I own that my thinking patterns are mine to change — I'm not a passive victim of my thoughts.",
+      "voice": "Jordan Peterson",
+      "principle": "Agency over thought patterns"
+    },
+    {
+      "id": "D3.C",
+      "text": "I don't blame my education, background, or intelligence for my current state of knowledge or ignorance.",
+      "voice": "Brian Tracy",
+      "principle": "No excuses for lack of learning"
+    },
+    {
+      "id": "D3.D",
+      "text": "I recognize that learning and intellectual growth are my responsibility — it's not someone else's job to educate me.",
+      "voice": "Brian Tracy",
+      "principle": "Personal responsibility for growth"
+    },
+    {
+      "id": "D3.E",
+      "text": "I take ownership of protecting my mind from influences that harm my thinking, rather than blaming the influences themselves.",
+      "voice": "Core Philosophy",
+      "principle": "Guard your mind proactively"
+    }
+  ]
+}

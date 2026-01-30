@@ -1,0 +1,46 @@
+{
+  "cell": "E4",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 4,
+    "name": "Discipline",
+    "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it."
+  },
+  "questions": [
+    {
+      "id": "E4.A",
+      "text": "When I commit to doing something (to myself or others), I follow through even when it becomes inconvenient.",
+      "voice": "Jordan Peterson",
+      "principle": "Integrity with yourself is the foundation"
+    },
+    {
+      "id": "E4.B",
+      "text": "I do hard things I don't want to do because they need to be done, without excessive internal negotiation.",
+      "voice": "Brian Tracy",
+      "principle": "Eat the Frog; do it first"
+    },
+    {
+      "id": "E4.C",
+      "text": "I make decisions and act on them rather than staying stuck in analysis or procrastination.",
+      "voice": "Brian Tracy",
+      "principle": "Decisiveness; action orientation"
+    },
+    {
+      "id": "E4.D",
+      "text": "When I fail to follow through, I examine why, make adjustments, and try again rather than making excuses.",
+      "voice": "Jordan Peterson",
+      "principle": "Take responsibility; don't rationalize"
+    },
+    {
+      "id": "E4.E",
+      "text": "I build small disciplines in daily life (bed made, dishes done, space organized) that strengthen my overall will.",
+      "voice": "Jordan Peterson / Chase Hughes",
+      "principle": "Clean your room; small behaviors predict large ones"
+    }
+  ]
+}

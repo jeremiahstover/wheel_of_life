@@ -1,0 +1,46 @@
+{
+  "cell": "B5",
+  "dimension": {
+    "code": "B",
+    "name": "Conscience",
+    "category": "Spirit",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "B5.A",
+      "text": "I can navigate morally complex situations with wisdom — not just black-and-white cases, but grey areas that require discernment.",
+      "voice": "Jordan Peterson",
+      "principle": "Ethical skill handles complexity"
+    },
+    {
+      "id": "B5.B",
+      "text": "I have developed the ability to anticipate moral pitfalls before I'm in them — I see the trap before it springs.",
+      "voice": "Chase Hughes",
+      "principle": "Pattern recognition is a skill"
+    },
+    {
+      "id": "B5.C",
+      "text": "I can explain the 'why' behind moral principles — not just that something is wrong, but why it damages flourishing.",
+      "voice": "Jordan Peterson",
+      "principle": "Deep understanding enables wise application"
+    },
+    {
+      "id": "B5.D",
+      "text": "I have practical wisdom about how to make restitution when I've wronged someone — I know what actually heals relationships.",
+      "voice": "Cloud & Townsend",
+      "principle": "Reconciliation is a learnable skill"
+    },
+    {
+      "id": "B5.E",
+      "text": "I can counsel others through moral dilemmas effectively — my ethical skill is developed enough to help, not just opine.",
+      "voice": "Core Philosophy",
+      "principle": "Mature skill can be transferred"
+    }
+  ]
+}

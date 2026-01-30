@@ -1,0 +1,46 @@
+{
+  "cell": "G2",
+  "dimension": {
+    "code": "G",
+    "name": "Sustenance",
+    "category": "Body",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 2,
+    "name": "Causality",
+    "definition": "The relationship between cause and effect; understanding that actions produce consequences and current states result from prior causes."
+  },
+  "questions": [
+    {
+      "id": "G2.A",
+      "text": "I understand that my energy levels, clarity, and physical function are directly affected by what I eat and drink.",
+      "voice": "Core Philosophy",
+      "principle": "Nutritional inputs affect physical outputs"
+    },
+    {
+      "id": "G2.B",
+      "text": "I can see the connection between my sleep patterns and my mental/physical performance the next day.",
+      "voice": "Brian Tracy",
+      "principle": "Sleep quality affects performance"
+    },
+    {
+      "id": "G2.C",
+      "text": "I recognize that sustained poor nutrition leads to predictable health outcomes — this isn't random bad luck.",
+      "voice": "Jordan Peterson",
+      "principle": "Nutritional choices compound into health outcomes"
+    },
+    {
+      "id": "G2.D",
+      "text": "I understand that my physical environment (cleanliness, organization, air quality) affects how I feel and function.",
+      "voice": "Jordan Peterson",
+      "principle": "Environment shapes experience"
+    },
+    {
+      "id": "G2.E",
+      "text": "I can connect periods of feeling good or bad physically to what I was eating, drinking, and how I was sleeping.",
+      "voice": "Chase Hughes",
+      "principle": "Physical state correlates with physical inputs"
+    }
+  ]
+}

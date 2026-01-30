@@ -1,0 +1,46 @@
+{
+  "cell": "I5",
+  "dimension": {
+    "code": "I",
+    "name": "Wholeness",
+    "category": "Body",
+    "function": "State"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "I5.A",
+      "text": "I can recognize early warning signs that something is off in my health — I've developed body awareness and diagnostic skill.",
+      "voice": "Chase Hughes",
+      "principle": "Early detection is a skill"
+    },
+    {
+      "id": "I5.B",
+      "text": "I know how to communicate effectively with healthcare providers — I can describe symptoms, ask good questions, and advocate for myself.",
+      "voice": "Core Philosophy",
+      "principle": "Medical communication is a skill"
+    },
+    {
+      "id": "I5.C",
+      "text": "I understand how body, soul, and spirit interact in my own experience — I can trace connections and address root causes.",
+      "voice": "Core Philosophy",
+      "principle": "Holistic awareness develops with attention"
+    },
+    {
+      "id": "I5.D",
+      "text": "I have practical knowledge of preventive care — I know what screenings, practices, and habits maintain health proactively.",
+      "voice": "Brian Tracy",
+      "principle": "Prevention knowledge is practical skill"
+    },
+    {
+      "id": "I5.E",
+      "text": "I can make informed health decisions — I have enough knowledge to evaluate options and choose wisely.",
+      "voice": "Core Philosophy",
+      "principle": "Health literacy is developable"
+    }
+  ]
+}

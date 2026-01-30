@@ -1,0 +1,46 @@
+{
+  "cell": "D6",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "D6.A",
+      "text": "I have accumulated knowledge that others find valuable — people seek my expertise or perspective.",
+      "voice": "Brian Tracy",
+      "principle": "Knowledge becomes capital when others value it"
+    },
+    {
+      "id": "D6.B",
+      "text": "I have mental models and frameworks that help me navigate situations I haven't seen before.",
+      "voice": "Core Philosophy",
+      "principle": "Wisdom is portable across contexts"
+    },
+    {
+      "id": "D6.C",
+      "text": "I can teach or explain things in my areas of competence — my knowledge is organized enough to transfer.",
+      "voice": "Brian Tracy",
+      "principle": "Teachable knowledge is usable capital"
+    },
+    {
+      "id": "D6.D",
+      "text": "I have intellectual reserves to draw on — I'm not always scrambling to figure things out from scratch.",
+      "voice": "Core Philosophy",
+      "principle": "Accumulated learning creates efficiency"
+    },
+    {
+      "id": "D6.E",
+      "text": "My thinking has produced insights, systems, or content that has value beyond my personal use.",
+      "voice": "Brian Tracy",
+      "principle": "Thought capital can be externalized"
+    }
+  ]
+}

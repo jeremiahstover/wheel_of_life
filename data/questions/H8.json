@@ -1,0 +1,46 @@
+{
+  "cell": "H8",
+  "dimension": {
+    "code": "H",
+    "name": "Capability",
+    "category": "Body",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 8,
+    "name": "Sacrifice",
+    "definition": "Using what has been given to you for the purpose for which it was given — to benefit others, freely and without expectation of return. Costs you everything with a GUARANTEE of no return (to you). The return goes to others."
+  },
+  "questions": [
+    {
+      "id": "H8.A",
+      "text": "I use my physical strength and capacity to help others — lifting, carrying, building, moving — even when it's tiring.",
+      "voice": "Core Philosophy",
+      "principle": "Physical labor for others"
+    },
+    {
+      "id": "H8.B",
+      "text": "I show up bodily for people in need — I'm physically present, not just sending texts or prayers.",
+      "voice": "Core Philosophy",
+      "principle": "Physical presence matters"
+    },
+    {
+      "id": "H8.C",
+      "text": "I do menial, unglamorous physical work to serve others — cleaning, organizing, manual labor — without needing recognition.",
+      "voice": "Core Philosophy",
+      "principle": "Humble service"
+    },
+    {
+      "id": "H8.D",
+      "text": "I give my physical energy to serve even when I'm tired — I push through fatigue to meet others' needs.",
+      "voice": "Core Philosophy",
+      "principle": "Serving past comfort"
+    },
+    {
+      "id": "H8.E",
+      "text": "I have done physical work for others that was hard, dirty, or exhausting — and I consider it a privilege, not a burden.",
+      "voice": "Core Philosophy",
+      "principle": "Service as privilege"
+    }
+  ]
+}

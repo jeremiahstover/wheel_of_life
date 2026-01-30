@@ -1,0 +1,46 @@
+{
+  "cell": "C3",
+  "dimension": {
+    "code": "C",
+    "name": "Holiness",
+    "category": "Spirit",
+    "function": "State"
+  },
+  "layer": {
+    "code": 3,
+    "name": "Responsibility",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood."
+  },
+  "questions": [
+    {
+      "id": "C3.A",
+      "text": "I own that my spiritual state is primarily the result of my choices, not my circumstances, upbringing, or spiritual attacks.",
+      "voice": "Jordan Peterson",
+      "principle": "Take responsibility for your state"
+    },
+    {
+      "id": "C3.B",
+      "text": "I don't blame temptation, the devil, or other people's influence for my sin patterns — I chose to give in.",
+      "voice": "Core Philosophy",
+      "principle": "Own your sin; don't externalize blame"
+    },
+    {
+      "id": "C3.C",
+      "text": "I recognize that addressing areas of spiritual compromise is my responsibility, not something to tolerate until God 'delivers' me.",
+      "voice": "Jordan Peterson",
+      "principle": "Active participation in sanctification"
+    },
+    {
+      "id": "C3.D",
+      "text": "I take ownership of my response to spiritual dryness or difficulty — how I respond is my choice.",
+      "voice": "Core Philosophy",
+      "principle": "Response-ability in hard seasons"
+    },
+    {
+      "id": "C3.E",
+      "text": "I recognize that 'that's just how I am' is not an acceptable excuse for ongoing sin or spiritual weakness.",
+      "voice": "Jordan Peterson",
+      "principle": "Don't rationalize weakness as identity"
+    }
+  ]
+}

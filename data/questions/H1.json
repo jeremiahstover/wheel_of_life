@@ -1,0 +1,46 @@
+{
+  "cell": "H1",
+  "dimension": {
+    "code": "H",
+    "name": "Capability",
+    "category": "Body",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 1,
+    "name": "Order",
+    "definition": "An arrangement that displays the relationship between elements via a particular sequence, pattern, or method; the belief that reality is intelligible, structured, and meaningful rather than chaotic and random."
+  },
+  "questions": [
+    {
+      "id": "H1.A",
+      "text": "I believe physical training works because the body adapts according to predictable principles.",
+      "voice": "Core Philosophy",
+      "principle": "Adaptation follows ordered laws"
+    },
+    {
+      "id": "H1.B",
+      "text": "I believe there are discoverable principles for building strength, endurance, and physical capability.",
+      "voice": "Brian Tracy",
+      "principle": "Fitness has learnable principles"
+    },
+    {
+      "id": "H1.C",
+      "text": "I see evidence of physical order in how athletes consistently improve through systematic training.",
+      "voice": "Brian Tracy",
+      "principle": "Athletic success demonstrates physical order"
+    },
+    {
+      "id": "H1.D",
+      "text": "I reject the idea that physical capability is purely genetic, random, or beyond systematic development.",
+      "voice": "Jordan Peterson",
+      "principle": "Physical fatalism is false"
+    },
+    {
+      "id": "H1.E",
+      "text": "I believe the path to physical improvement can be mapped, studied, and followed.",
+      "voice": "Brian Tracy",
+      "principle": "Physical development has ordered paths"
+    }
+  ]
+}

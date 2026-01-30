@@ -1,0 +1,46 @@
+{
+  "cell": "F7",
+  "dimension": {
+    "code": "F",
+    "name": "Emotions",
+    "category": "Soul",
+    "function": "State"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "F7.A",
+      "text": "I have people who know how I'm really doing emotionally — not just the 'fine' I tell most people.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional transparency enables support"
+    },
+    {
+      "id": "F7.B",
+      "text": "I can cry, rage, or despair in front of certain people without shame — they can hold my emotions.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional safety enables vulnerability"
+    },
+    {
+      "id": "F7.C",
+      "text": "I provide emotional presence for others — I can hold their hard emotions without fixing, fleeing, or freezing.",
+      "voice": "Cloud & Townsend",
+      "principle": "Mutual emotional capacity"
+    },
+    {
+      "id": "F7.D",
+      "text": "My emotional friendships challenge me to grow, not just comfort me in my patterns.",
+      "voice": "Core Philosophy",
+      "principle": "True fellowship transforms, not just supports"
+    },
+    {
+      "id": "F7.E",
+      "text": "I've shared my emotional history (pain, trauma, struggles) with people who've earned that trust.",
+      "voice": "Cloud & Townsend",
+      "principle": "Deep trust enables deep sharing"
+    }
+  ]
+}

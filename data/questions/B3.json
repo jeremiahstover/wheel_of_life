@@ -1,0 +1,46 @@
+{
+  "cell": "B3",
+  "dimension": {
+    "code": "B",
+    "name": "Conscience",
+    "category": "Spirit",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 3,
+    "name": "Responsibility",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood."
+  },
+  "questions": [
+    {
+      "id": "B3.A",
+      "text": "When I do something wrong, I own it rather than making excuses, minimizing, or shifting blame to circumstances.",
+      "voice": "Jordan Peterson",
+      "principle": "Tell the truth; take responsibility"
+    },
+    {
+      "id": "B3.B",
+      "text": "I take responsibility for the impact of my actions on others, including unintended consequences.",
+      "voice": "Cloud & Townsend",
+      "principle": "Own your impact, not just your intent"
+    },
+    {
+      "id": "B3.C",
+      "text": "When confronted with a moral failure, I resist the urge to defend myself or point to what others did.",
+      "voice": "Jordan Peterson",
+      "principle": "No blame-shifting when confronted"
+    },
+    {
+      "id": "B3.D",
+      "text": "I recognize that my integrity is my responsibility — no one else can give it to me or take it away without my participation.",
+      "voice": "Core Philosophy",
+      "principle": "Integrity is personally owned"
+    },
+    {
+      "id": "B3.E",
+      "text": "When I'm convicted of something, I own that addressing it is my job — I don't wait for someone else to fix it or hold me accountable.",
+      "voice": "Chase Hughes",
+      "principle": "Self-accountability precedes external accountability"
+    }
+  ]
+}

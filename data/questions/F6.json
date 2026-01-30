@@ -1,0 +1,46 @@
+{
+  "cell": "F6",
+  "dimension": {
+    "code": "F",
+    "name": "Emotions",
+    "category": "Soul",
+    "function": "State"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "F6.A",
+      "text": "I have emotional reserves — I can absorb difficulty without immediately destabilizing.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional reserves provide resilience"
+    },
+    {
+      "id": "F6.B",
+      "text": "I have enough emotional stability to be present for others' emotions without being overwhelmed.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional surplus enables ministry"
+    },
+    {
+      "id": "F6.C",
+      "text": "I'm not constantly emotionally depleted — I have energy for connection and relationship.",
+      "voice": "Core Philosophy",
+      "principle": "Emotional margin enables relationship"
+    },
+    {
+      "id": "F6.D",
+      "text": "I've processed enough of my own baggage that I'm not triggered by everyone else's.",
+      "voice": "Jordan Peterson",
+      "principle": "Processed pain becomes capacity"
+    },
+    {
+      "id": "F6.E",
+      "text": "I have developed emotional wealth — peace, joy, contentment — that overflows to others.",
+      "voice": "Core Philosophy",
+      "principle": "Positive emotions can be shared"
+    }
+  ]
+}

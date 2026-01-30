@@ -1,0 +1,46 @@
+{
+  "cell": "I7",
+  "dimension": {
+    "code": "I",
+    "name": "Wholeness",
+    "category": "Body",
+    "function": "State"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "I7.A",
+      "text": "I have people who care about my whole health — they notice and comment when something seems off.",
+      "voice": "Cloud & Townsend",
+      "principle": "Attentive friends notice decline"
+    },
+    {
+      "id": "I7.B",
+      "text": "I pay attention to my friends' overall wellbeing — I notice when they're not thriving and I say something.",
+      "voice": "Core Philosophy",
+      "principle": "Mutual attention to wholeness"
+    },
+    {
+      "id": "I7.C",
+      "text": "I have people who would intervene if they saw me making seriously unhealthy choices — and I would let them.",
+      "voice": "Cloud & Townsend",
+      "principle": "Permission for intervention"
+    },
+    {
+      "id": "I7.D",
+      "text": "My close relationships integrate body, soul, and spirit — we don't compartmentalize into 'spiritual friends' vs 'workout buddies.'",
+      "voice": "Core Philosophy",
+      "principle": "Integrated fellowship"
+    },
+    {
+      "id": "I7.E",
+      "text": "I have people who have walked with me through health crises and I have walked with them — tested by difficulty.",
+      "voice": "Core Philosophy",
+      "principle": "Crisis-tested relationships"
+    }
+  ]
+}

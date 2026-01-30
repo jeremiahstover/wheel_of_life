@@ -1,0 +1,46 @@
+{
+  "cell": "A5",
+  "dimension": {
+    "code": "A",
+    "name": "Communion",
+    "category": "Spirit",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "A5.A",
+      "text": "I am measurably better at prayer, Scripture study, or worship than I was a year ago — not just more consistent, but more skilled.",
+      "voice": "Core Philosophy",
+      "principle": "Competence grows through practice"
+    },
+    {
+      "id": "A5.B",
+      "text": "I can discern God's voice from my own thoughts and from other influences with increasing accuracy.",
+      "voice": "Core Philosophy",
+      "principle": "Spiritual discernment is a developable skill"
+    },
+    {
+      "id": "A5.C",
+      "text": "I understand Scripture at deeper levels than I used to — I can see connections, apply principles, and teach others.",
+      "voice": "Brian Tracy",
+      "principle": "Expertise deepens with intentional study"
+    },
+    {
+      "id": "A5.D",
+      "text": "I have developed specific techniques or practices in my spiritual life that work for me and produce consistent results.",
+      "voice": "Chase Hughes",
+      "principle": "Skill includes knowing what works"
+    },
+    {
+      "id": "A5.E",
+      "text": "I seek feedback on my spiritual life (from mentors, Scripture, the Spirit) and adjust based on what I learn.",
+      "voice": "Brian Tracy",
+      "principle": "Skill development requires feedback loops"
+    }
+  ]
+}

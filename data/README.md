@@ -2,80 +2,125 @@
 
 This folder contains the question pool for the Wheel of Life assessment system.
 
-## Dual Organization
+## The Matrix
 
-The same 360 questions are organized two ways for different access patterns:
-
-### `/layers/` — Horizontal Slices
-
-8 files, 45 questions each. One file per layer of the personal development model.
-
-**Use for**: Deep-dive assessment on a single layer. When you've identified a weak layer and want to explore all 9 dimensions at that level.
+The assessment covers **8 layers** (foundation → culmination) across **9 dimensions** (tripartite being).
 
 ```
-Layer 1: Order         → Do you believe patterns exist?
-Layer 2: Causality     → Do you see cause → effect?
-Layer 3: Responsibility → Do you own it?
-Layer 4: Discipline    → Are you consistently doing it?
-Layer 5: Skill         → Are you getting better?
-Layer 6: Resources     → Is skill producing surplus?
-Layer 7: Fellowship    → Mutual investment, transparency, sharpening?
-Layer 8: Sacrifice     → Pouring out without expectation of return?
+     │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │
+─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+  A  │ A1  │ A2  │ A3  │ A4  │ A5  │ A6  │ A7  │ A8  │  Communion
+  B  │ B1  │ B2  │ B3  │ B4  │ B5  │ B6  │ B7  │ B8  │  Conscience
+  C  │ C1  │ C2  │ C3  │ C4  │ C5  │ C6  │ C7  │ C8  │  Holiness
+  D  │ D1  │ D2  │ D3  │ D4  │ D5  │ D6  │ D7  │ D8  │  Mind
+  E  │ E1  │ E2  │ E3  │ E4  │ E5  │ E6  │ E7  │ E8  │  Will
+  F  │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │  Emotions
+  G  │ G1  │ G2  │ G3  │ G4  │ G5  │ G6  │ G7  │ G8  │  Sustenance
+  H  │ H1  │ H2  │ H3  │ H4  │ H5  │ H6  │ H7  │ H8  │  Capability
+  I  │ I1  │ I2  │ I3  │ I4  │ I5  │ I6  │ I7  │ I8  │  Wholeness
 ```
 
-### `/dimensions/` — Vertical Slices
+**72 cells × 5 questions = 360 questions total**
 
-9 files, 40 questions each. One file per dimension of the tripartite being.
+---
 
-**Use for**: Diagnostic assessment using the drunkard's walk algorithm. Navigate across layers within one dimension to find the break point.
+## Dimensions (Letters)
 
-```
-SPIRIT
-  Communion   → Receives (relationship with God)
-  Conscience  → Executes (moral action)
-  Holiness    → State (spiritual health)
+| Code | Name | Category | Function | Description |
+|------|------|----------|----------|-------------|
+| A | Communion | Spirit | Receives | Relationship with God, spiritual intake |
+| B | Conscience | Spirit | Executes | Moral action, conviction applied |
+| C | Holiness | Spirit | State | Spiritual health, sanctification |
+| D | Mind | Soul | Receives | Knowledge, learning, wisdom intake |
+| E | Will | Soul | Executes | Choices, follow-through, action |
+| F | Emotions | Soul | State | Emotional health, processing feelings |
+| G | Sustenance | Body | Receives | Nutrition, rest, environment |
+| H | Capability | Body | Executes | Strength, movement, physical action |
+| I | Wholeness | Body | State | Integrated health, wellness |
 
-SOUL
-  Mind        → Receives (knowledge, wisdom)
-  Will        → Executes (choices, action)
-  Emotions    → State (emotional health)
+---
 
-BODY
-  Sustenance  → Receives (fuel, recovery)
-  Capability  → Executes (strength, function)
-  Wholeness   → State (integrated health)
-```
+## Layers (Numbers)
 
-## The Overlap
+| Code | Name | Core Question | Opposite |
+|------|------|---------------|----------|
+| 1 | Order | Do you believe patterns exist? | Nihilism |
+| 2 | Causality | Do you see cause → effect? | Fatalism |
+| 3 | Responsibility | Do you own it as yours? | Entitlement |
+| 4 | Discipline | Are you consistently doing it? | Hedonism |
+| 5 | Skill | Are you getting better? | Incompetence |
+| 6 | Resources | Is skill producing surplus? | Poverty |
+| 7 | Fellowship | Mutual investment, transparency, sharpening? | Isolation |
+| 8 | Sacrifice | Pouring out without expectation of return? | Hoarding |
 
-These are the **same questions** organized differently:
+---
 
-- `layers/discipline.json` dimension 5 (Will) questions
-- `dimensions/will.json` layer 4 (Discipline) questions
-
-**Same content. Different index.**
-
-Think of a spreadsheet:
-- Layers = rows
-- Dimensions = columns
-- Questions = cells
-
-You can read by row or by column. Same data, different traversal.
-
-## Question ID Format
-
-Questions use a compound ID: `{layer}.{dimension}.{letter}`
-
-Example: `4.5.C` = Layer 4 (Discipline), Dimension 5 (Will), Question C
-
-This allows cross-referencing between the two organizations.
-
-## Remediation Principle
-
-When a layer is weak, the fix is usually in the layer below. The drunkard's walk algorithm exploits this by navigating DOWN from weakness until it finds solid ground.
+## Folder Structure
 
 ```
-Weakness at Layer N + Strength at Layer N-1 = Focus on Layer N
+data/
+├── README.md           # This file
+├── questions/          # 72 cell files (A1.json through I8.json)
+└── layers/             # Archive - original monolithic layer files
 ```
 
-The diagnostic app uses `/dimensions/` to efficiently find this break point across all 9 dimensions simultaneously.
+### `/questions/` — The Active Data
+
+72 files, one per cell. Each contains 5 questions.
+
+Filename format: `{dimension}{layer}.json` (e.g., `E4.json` = Will at Discipline)
+
+**Use for**: All assessment applications. The drunkard's walk diagnostic navigates by incrementing/decrementing the layer number.
+
+### `/layers/` — Archive
+
+The original 8 monolithic files (45 questions each, all 9 dimensions bundled).
+
+**Use for**: Reference, history. May be removed once migration is complete.
+
+---
+
+## The Remediation Principle
+
+Layers build on each other. When a layer is weak, the cause is usually in the layer below.
+
+```
+Layer N:   WEAK   ← Symptom
+Layer N-1: STRONG ← Solid ground
+           ↑
+        FOCUS on Layer N (the break point)
+```
+
+Navigate DOWN until you find strength. The first weak layer above solid ground is your focus.
+
+---
+
+## Drunkard's Walk Example
+
+Finding the break point in dimension E (Will):
+
+```
+Start: Probe E3 and E6 (Responsibility and Resources)
+
+E6 score: 2 (weak)
+E3 score: 4 (strong)
+
+Break is between 3 and 6. Binary search middle:
+  Probe E5: 2 (weak) — still looking for floor
+  Probe E4: 4 (strong) — found the floor
+
+Floor is E4 (Discipline). Break is E5 (Skill).
+Focus: Will at Skill layer.
+```
+
+Navigation is just `$layer--` to go down, `$layer++` to go up.
+
+---
+
+## Scoring
+
+- **Questions**: 1-5 scale (Almost Never → Almost Always)
+- **Cell Score**: Average of 5 questions (1-5 scale)
+- **Threshold**: 3.5 (below = weak, above = strong)
+
+For display, can convert to 1-10: `(average) * 2`

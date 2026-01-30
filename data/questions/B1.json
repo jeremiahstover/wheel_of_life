@@ -1,0 +1,46 @@
+{
+  "cell": "B1",
+  "dimension": {
+    "code": "B",
+    "name": "Conscience",
+    "category": "Spirit",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 1,
+    "name": "Order",
+    "definition": "An arrangement that displays the relationship between elements via a particular sequence, pattern, or method; the belief that reality is intelligible, structured, and meaningful rather than chaotic and random."
+  },
+  "questions": [
+    {
+      "id": "B1.A",
+      "text": "I believe there is an objective moral order — right and wrong are real, not just personal preferences.",
+      "voice": "Jordan Peterson",
+      "principle": "Moral reality exists independently of opinion"
+    },
+    {
+      "id": "B1.B",
+      "text": "I believe moral truth can be discovered through reason, revelation, and conscience.",
+      "voice": "Core Philosophy",
+      "principle": "Moral order is knowable"
+    },
+    {
+      "id": "B1.C",
+      "text": "I see evidence of moral order in the consistency of conscience across cultures and throughout history.",
+      "voice": "Jordan Peterson",
+      "principle": "Universal moral patterns indicate moral reality"
+    },
+    {
+      "id": "B1.D",
+      "text": "I reject the idea that morality is purely constructed, arbitrary, or meaningless.",
+      "voice": "Jordan Peterson",
+      "principle": "Moral nihilism is false"
+    },
+    {
+      "id": "B1.E",
+      "text": "I believe living in alignment with moral order leads to flourishing, while violating it leads to destruction.",
+      "voice": "Core Philosophy",
+      "principle": "Moral order has real consequences"
+    }
+  ]
+}

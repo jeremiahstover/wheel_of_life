@@ -1,0 +1,46 @@
+{
+  "cell": "E6",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "E6.A",
+      "text": "I have capacity beyond what's required to maintain my current life — I could take on more if needed.",
+      "voice": "Brian Tracy",
+      "principle": "Surplus capacity creates opportunity"
+    },
+    {
+      "id": "E6.B",
+      "text": "My systems and habits are efficient enough that I have time and energy left over.",
+      "voice": "Brian Tracy",
+      "principle": "Efficiency creates margin"
+    },
+    {
+      "id": "E6.C",
+      "text": "I'm not constantly maxed out — I have reserves of willpower and execution capacity.",
+      "voice": "Cloud & Townsend",
+      "principle": "Reserve prevents burnout"
+    },
+    {
+      "id": "E6.D",
+      "text": "I have developed enough personal productivity that I accomplish more than most with similar time.",
+      "voice": "Brian Tracy",
+      "principle": "Productivity skill creates time surplus"
+    },
+    {
+      "id": "E6.E",
+      "text": "I have margin in my schedule and energy — unexpected demands don't automatically create crisis.",
+      "voice": "Cloud & Townsend",
+      "principle": "Margin absorbs variance"
+    }
+  ]
+}

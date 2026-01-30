@@ -1,0 +1,46 @@
+{
+  "cell": "H3",
+  "dimension": {
+    "code": "H",
+    "name": "Capability",
+    "category": "Body",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 3,
+    "name": "Responsibility",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood."
+  },
+  "questions": [
+    {
+      "id": "H3.A",
+      "text": "I own that my physical fitness is my responsibility — no one else can exercise for me or make me move.",
+      "voice": "Core Philosophy",
+      "principle": "Personal responsibility for fitness"
+    },
+    {
+      "id": "H3.B",
+      "text": "I don't blame lack of time, resources, equipment, or motivation for my physical condition — I work with what I have.",
+      "voice": "Brian Tracy",
+      "principle": "No excuses; work within constraints"
+    },
+    {
+      "id": "H3.C",
+      "text": "I take responsibility for maintaining and developing my physical capabilities rather than letting them deteriorate by default.",
+      "voice": "Core Philosophy",
+      "principle": "Active maintenance vs passive decay"
+    },
+    {
+      "id": "H3.D",
+      "text": "I recognize that my body's ability to function is directly affected by my choices — not genetics, age, or luck alone.",
+      "voice": "Jordan Peterson",
+      "principle": "Agency over physical state"
+    },
+    {
+      "id": "H3.E",
+      "text": "I own that if I'm physically limited, it's my job to work within those limits and improve where possible.",
+      "voice": "Core Philosophy",
+      "principle": "Maximize capacity within constraints"
+    }
+  ]
+}

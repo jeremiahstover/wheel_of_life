@@ -1,0 +1,46 @@
+{
+  "cell": "E8",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 8,
+    "name": "Sacrifice",
+    "definition": "Using what has been given to you for the purpose for which it was given — to benefit others, freely and without expectation of return. Costs you everything with a GUARANTEE of no return (to you). The return goes to others."
+  },
+  "questions": [
+    {
+      "id": "E8.A",
+      "text": "I regularly give significant time to serve others — not just leftover time, but prime time that costs me something.",
+      "voice": "Core Philosophy",
+      "principle": "Time sacrifice is real sacrifice"
+    },
+    {
+      "id": "E8.B",
+      "text": "I use my execution skill and productivity to help others accomplish their goals, not just my own.",
+      "voice": "Brian Tracy",
+      "principle": "Execution capacity can be given"
+    },
+    {
+      "id": "E8.C",
+      "text": "I help people with practical tasks — moving, building, fixing, organizing — even when I have plenty of my own work to do.",
+      "voice": "Core Philosophy",
+      "principle": "Practical help demonstrates love"
+    },
+    {
+      "id": "E8.D",
+      "text": "I show up for others' important events and moments even when it's inconvenient — weddings, funerals, crises, celebrations.",
+      "voice": "Core Philosophy",
+      "principle": "Presence requires time sacrifice"
+    },
+    {
+      "id": "E8.E",
+      "text": "I give away my margin — the extra capacity I've built — rather than hoarding it for more personal productivity.",
+      "voice": "Core Philosophy",
+      "principle": "Margin is for giving, not hoarding"
+    }
+  ]
+}

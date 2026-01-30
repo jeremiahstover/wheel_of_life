@@ -1,0 +1,46 @@
+{
+  "cell": "E7",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "E7.A",
+      "text": "I have people who know what I've committed to and ask me if I've done it.",
+      "voice": "Brian Tracy",
+      "principle": "External accountability increases follow-through"
+    },
+    {
+      "id": "E7.B",
+      "text": "I tell people my goals specifically so they can hold me accountable — I invite the pressure.",
+      "voice": "Brian Tracy",
+      "principle": "Voluntary accountability is most effective"
+    },
+    {
+      "id": "E7.C",
+      "text": "I hold others accountable for their commitments — I ask, I follow up, I don't let them off the hook.",
+      "voice": "Core Philosophy",
+      "principle": "Mutual accountability"
+    },
+    {
+      "id": "E7.D",
+      "text": "When I fail to follow through, I tell my accountability partners honestly rather than hiding or making excuses.",
+      "voice": "Jordan Peterson",
+      "principle": "Honest reporting enables real accountability"
+    },
+    {
+      "id": "E7.E",
+      "text": "My execution accountability relationships have actually improved my follow-through — they work.",
+      "voice": "Brian Tracy",
+      "principle": "Effective accountability produces results"
+    }
+  ]
+}

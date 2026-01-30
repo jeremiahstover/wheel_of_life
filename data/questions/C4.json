@@ -1,0 +1,46 @@
+{
+  "cell": "C4",
+  "dimension": {
+    "code": "C",
+    "name": "Holiness",
+    "category": "Spirit",
+    "function": "State"
+  },
+  "layer": {
+    "code": 4,
+    "name": "Discipline",
+    "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it."
+  },
+  "questions": [
+    {
+      "id": "C4.A",
+      "text": "When the Holy Spirit convicts me of sin, I confess and repent promptly rather than rationalizing, minimizing, or delaying.",
+      "voice": "Jordan Peterson",
+      "principle": "Don't let things fester; face what you're avoiding"
+    },
+    {
+      "id": "C4.B",
+      "text": "I maintain spiritual disciplines even during dry seasons when I don't feel God's presence or see spiritual fruit.",
+      "voice": "Brian Tracy",
+      "principle": "Consistency regardless of feeling; the discipline creates the result"
+    },
+    {
+      "id": "C4.C",
+      "text": "I actively work to root out areas of habitual sin or compromise rather than tolerating them as 'just how I am.'",
+      "voice": "Jordan Peterson",
+      "principle": "Take responsibility; don't rationalize weakness as identity"
+    },
+    {
+      "id": "C4.D",
+      "text": "I intentionally seek spiritual filling and renewal (worship, solitude, prayer) rather than running on empty until I crash.",
+      "voice": "Cloud & Townsend",
+      "principle": "Boundaries around spiritual refueling; sustainable holiness"
+    },
+    {
+      "id": "C4.E",
+      "text": "I maintain my commitment to holiness in private — when no one would know if I compromised.",
+      "voice": "Chase Hughes",
+      "principle": "Private behavior predicts public character; small disciplines reveal true state"
+    }
+  ]
+}

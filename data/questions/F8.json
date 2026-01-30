@@ -1,0 +1,46 @@
+{
+  "cell": "F8",
+  "dimension": {
+    "code": "F",
+    "name": "Emotions",
+    "category": "Soul",
+    "function": "State"
+  },
+  "layer": {
+    "code": 8,
+    "name": "Sacrifice",
+    "definition": "Using what has been given to you for the purpose for which it was given — to benefit others, freely and without expectation of return. Costs you everything with a GUARANTEE of no return (to you). The return goes to others."
+  },
+  "questions": [
+    {
+      "id": "F8.A",
+      "text": "I enter into others' emotional pain — not just offering advice from a distance, but feeling with them in their suffering.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional presence costs"
+    },
+    {
+      "id": "F8.B",
+      "text": "I give my emotional stability to help regulate others — being a calming presence even when it drains me.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional stability can be spent"
+    },
+    {
+      "id": "F8.C",
+      "text": "I absorb emotional difficulty from others so they don't have to carry it alone — I take on weight that isn't mine.",
+      "voice": "Core Philosophy",
+      "principle": "Emotional burden-bearing"
+    },
+    {
+      "id": "F8.D",
+      "text": "I make myself emotionally available for others' crises even when it's inconvenient or exhausting.",
+      "voice": "Core Philosophy",
+      "principle": "Emotional availability is sacrificial"
+    },
+    {
+      "id": "F8.E",
+      "text": "I have given significant emotional investment to people who later hurt me or left — and I don't regret loving them.",
+      "voice": "Core Philosophy",
+      "principle": "Love risks loss"
+    }
+  ]
+}

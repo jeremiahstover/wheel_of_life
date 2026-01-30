@@ -1,0 +1,46 @@
+{
+  "cell": "D1",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 1,
+    "name": "Order",
+    "definition": "An arrangement that displays the relationship between elements via a particular sequence, pattern, or method; the belief that reality is intelligible, structured, and meaningful rather than chaotic and random."
+  },
+  "questions": [
+    {
+      "id": "D1.A",
+      "text": "I believe reality is ordered and intelligible — it can be studied, understood, and predicted.",
+      "voice": "Core Philosophy",
+      "principle": "Reality is knowable"
+    },
+    {
+      "id": "D1.B",
+      "text": "I believe knowledge is possible because there are patterns in reality waiting to be discovered.",
+      "voice": "Jordan Peterson",
+      "principle": "Knowledge requires underlying order"
+    },
+    {
+      "id": "D1.C",
+      "text": "I see evidence of order in the success of science, mathematics, and logic in describing reality.",
+      "voice": "Core Philosophy",
+      "principle": "Scientific success demonstrates cosmic order"
+    },
+    {
+      "id": "D1.D",
+      "text": "I reject the idea that reality is fundamentally chaotic, unknowable, or meaningless.",
+      "voice": "Jordan Peterson",
+      "principle": "Epistemological nihilism is false"
+    },
+    {
+      "id": "D1.E",
+      "text": "I believe clear thinking is possible because reality itself has clarity and structure.",
+      "voice": "Core Philosophy",
+      "principle": "Mental clarity reflects cosmic order"
+    }
+  ]
+}

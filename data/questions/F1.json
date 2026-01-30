@@ -1,0 +1,46 @@
+{
+  "cell": "F1",
+  "dimension": {
+    "code": "F",
+    "name": "Emotions",
+    "category": "Soul",
+    "function": "State"
+  },
+  "layer": {
+    "code": 1,
+    "name": "Order",
+    "definition": "An arrangement that displays the relationship between elements via a particular sequence, pattern, or method; the belief that reality is intelligible, structured, and meaningful rather than chaotic and random."
+  },
+  "questions": [
+    {
+      "id": "F1.A",
+      "text": "I believe emotions carry meaningful information — they are signals, not random noise.",
+      "voice": "Core Philosophy",
+      "principle": "Emotions have meaning"
+    },
+    {
+      "id": "F1.B",
+      "text": "I believe emotional patterns can be understood, studied, and interpreted.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional life has discoverable order"
+    },
+    {
+      "id": "F1.C",
+      "text": "I see evidence that emotions consistently point to something — unmet needs, violated values, important truths.",
+      "voice": "Chase Hughes",
+      "principle": "Emotions are diagnostic"
+    },
+    {
+      "id": "F1.D",
+      "text": "I reject the idea that emotions are meaningless chemical fluctuations with no connection to reality.",
+      "voice": "Jordan Peterson",
+      "principle": "Emotional nihilism is false"
+    },
+    {
+      "id": "F1.E",
+      "text": "I believe there is an ordered path to emotional health that can be discovered and followed.",
+      "voice": "Cloud & Townsend",
+      "principle": "Emotional health follows patterns"
+    }
+  ]
+}

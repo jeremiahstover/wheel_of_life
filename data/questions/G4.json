@@ -1,0 +1,46 @@
+{
+  "cell": "G4",
+  "dimension": {
+    "code": "G",
+    "name": "Sustenance",
+    "category": "Body",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 4,
+    "name": "Discipline",
+    "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it."
+  },
+  "questions": [
+    {
+      "id": "G4.A",
+      "text": "I maintain a consistent sleep schedule (same bedtime and wake time) even on weekends.",
+      "voice": "Brian Tracy",
+      "principle": "Morning routines start with evening discipline"
+    },
+    {
+      "id": "G4.B",
+      "text": "I eat in a way that fuels my body well (real food, appropriate portions) rather than giving in to cravings.",
+      "voice": "Jordan Peterson",
+      "principle": "Order in the small things"
+    },
+    {
+      "id": "G4.C",
+      "text": "I drink adequate water throughout the day and limit substances that impair performance (alcohol, excessive caffeine).",
+      "voice": "Core Philosophy",
+      "principle": "Basic stewardship"
+    },
+    {
+      "id": "G4.D",
+      "text": "I maintain my environment (clean space, organized workspace, reduced toxins/clutter) rather than living in chaos.",
+      "voice": "Jordan Peterson / Chase Hughes",
+      "principle": "Clean your room; environment shapes behavior"
+    },
+    {
+      "id": "G4.E",
+      "text": "I take breaks and rest when needed rather than pushing through to burnout, then crashing.",
+      "voice": "Cloud & Townsend",
+      "principle": "Boundaries around energy; sustainable pace"
+    }
+  ]
+}

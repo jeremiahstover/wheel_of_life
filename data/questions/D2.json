@@ -1,0 +1,46 @@
+{
+  "cell": "D2",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 2,
+    "name": "Causality",
+    "definition": "The relationship between cause and effect; understanding that actions produce consequences and current states result from prior causes."
+  },
+  "questions": [
+    {
+      "id": "D2.A",
+      "text": "I understand that my thinking patterns are shaped by what I consistently consume — content, conversations, information.",
+      "voice": "Core Philosophy",
+      "principle": "Mental inputs shape mental outputs"
+    },
+    {
+      "id": "D2.B",
+      "text": "I can see the connection between information diet and worldview — garbage in, garbage out applies to the mind.",
+      "voice": "Brian Tracy",
+      "principle": "Information quality affects thinking quality"
+    },
+    {
+      "id": "D2.C",
+      "text": "I recognize that people who think clearly didn't get that way by accident — clear thinking is built through specific practices.",
+      "voice": "Jordan Peterson",
+      "principle": "Mental clarity results from mental discipline"
+    },
+    {
+      "id": "D2.D",
+      "text": "I understand that chronic anxiety, negativity, or confusion often have identifiable inputs that are feeding them.",
+      "voice": "Chase Hughes",
+      "principle": "Mental states have traceable causes"
+    },
+    {
+      "id": "D2.E",
+      "text": "I can connect periods of mental clarity or fog to what I was consuming and practicing during those times.",
+      "voice": "Core Philosophy",
+      "principle": "Mental state correlates with mental investment"
+    }
+  ]
+}

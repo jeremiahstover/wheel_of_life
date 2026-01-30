@@ -1,0 +1,46 @@
+{
+  "cell": "C6",
+  "dimension": {
+    "code": "C",
+    "name": "Holiness",
+    "category": "Spirit",
+    "function": "State"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "C6.A",
+      "text": "I have enough spiritual strength that I can help others fight their battles without being pulled down myself.",
+      "voice": "Core Philosophy",
+      "principle": "Spiritual surplus enables ministry to others"
+    },
+    {
+      "id": "C6.B",
+      "text": "I have built up enough resistance to temptation that I'm not constantly in survival mode spiritually.",
+      "voice": "Chase Hughes",
+      "principle": "Spiritual resilience accumulates"
+    },
+    {
+      "id": "C6.C",
+      "text": "My spiritual health is robust enough to absorb setbacks without crisis — I have margin.",
+      "voice": "Cloud & Townsend",
+      "principle": "Margin provides stability"
+    },
+    {
+      "id": "C6.D",
+      "text": "I have accumulated enough victory over specific sins that I can mentor others facing the same battles.",
+      "voice": "Core Philosophy",
+      "principle": "Tested victory becomes teachable wisdom"
+    },
+    {
+      "id": "C6.E",
+      "text": "My spiritual immune system is strong — exposure to darkness doesn't destabilize me the way it once did.",
+      "voice": "Jordan Peterson",
+      "principle": "Spiritual strength develops through tested exposure"
+    }
+  ]
+}

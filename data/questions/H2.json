@@ -1,0 +1,46 @@
+{
+  "cell": "H2",
+  "dimension": {
+    "code": "H",
+    "name": "Capability",
+    "category": "Body",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 2,
+    "name": "Causality",
+    "definition": "The relationship between cause and effect; understanding that actions produce consequences and current states result from prior causes."
+  },
+  "questions": [
+    {
+      "id": "H2.A",
+      "text": "I understand that my current physical capability is the result of what I've been doing (or not doing) physically.",
+      "voice": "Core Philosophy",
+      "principle": "Physical capability reflects physical history"
+    },
+    {
+      "id": "H2.B",
+      "text": "I can see that people who are physically fit built that fitness through consistent effort over time — not genetics alone.",
+      "voice": "Brian Tracy",
+      "principle": "Fitness is built, not born"
+    },
+    {
+      "id": "H2.C",
+      "text": "I recognize that 'use it or lose it' is a law of the body — physical capability declines without maintenance.",
+      "voice": "Jordan Peterson",
+      "principle": "Physical capability requires ongoing investment"
+    },
+    {
+      "id": "H2.D",
+      "text": "I understand that expecting physical improvement without physical effort is asking for magic, not reasonable results.",
+      "voice": "Brian Tracy",
+      "principle": "Physical results require physical inputs"
+    },
+    {
+      "id": "H2.E",
+      "text": "I can trace my current strength, endurance, and mobility back to my exercise and movement patterns.",
+      "voice": "Chase Hughes",
+      "principle": "Physical state is traceable to physical practices"
+    }
+  ]
+}

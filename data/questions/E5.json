@@ -1,0 +1,46 @@
+{
+  "cell": "E5",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "E5.A",
+      "text": "I have developed effective systems for managing commitments — I rarely drop things because I have reliable methods.",
+      "voice": "Brian Tracy",
+      "principle": "Execution is systematizable"
+    },
+    {
+      "id": "E5.B",
+      "text": "I know how to break large goals into actionable steps — I have skill in planning, not just dreaming.",
+      "voice": "Brian Tracy",
+      "principle": "Planning is a practical skill"
+    },
+    {
+      "id": "E5.C",
+      "text": "I can make decisions efficiently — I have developed frameworks that prevent paralysis without being reckless.",
+      "voice": "Brian Tracy",
+      "principle": "Decision-making is trainable"
+    },
+    {
+      "id": "E5.D",
+      "text": "I know my own patterns of resistance and avoidance — I've studied myself and know how to work with (or around) my weaknesses.",
+      "voice": "Chase Hughes",
+      "principle": "Self-knowledge enables strategic execution"
+    },
+    {
+      "id": "E5.E",
+      "text": "I can estimate how long things will take with reasonable accuracy — my planning skill has been calibrated by experience.",
+      "voice": "Brian Tracy",
+      "principle": "Estimation improves with feedback"
+    }
+  ]
+}

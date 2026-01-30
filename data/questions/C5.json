@@ -1,0 +1,46 @@
+{
+  "cell": "C5",
+  "dimension": {
+    "code": "C",
+    "name": "Holiness",
+    "category": "Spirit",
+    "function": "State"
+  },
+  "layer": {
+    "code": 5,
+    "name": "Skill",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback."
+  },
+  "questions": [
+    {
+      "id": "C5.A",
+      "text": "I know how to conduct an honest self-examination — I have a practiced method that surfaces what needs to surface.",
+      "voice": "Jordan Peterson",
+      "principle": "Self-examination is a developable skill"
+    },
+    {
+      "id": "C5.B",
+      "text": "I can identify the root of a sin pattern, not just its symptoms — I've developed diagnostic skill.",
+      "voice": "Chase Hughes",
+      "principle": "Root cause analysis is a skill"
+    },
+    {
+      "id": "C5.C",
+      "text": "I know how to recover quickly after a spiritual failure — I have a practiced restoration process that works.",
+      "voice": "Core Philosophy",
+      "principle": "Recovery is a learnable skill"
+    },
+    {
+      "id": "C5.D",
+      "text": "I can distinguish between conviction (from God) and condemnation (from the enemy or self) with increasing accuracy.",
+      "voice": "Core Philosophy",
+      "principle": "Spiritual discernment develops with practice"
+    },
+    {
+      "id": "C5.E",
+      "text": "I have practical techniques for fighting specific temptations that work for me — not just generic advice, but tested tactics.",
+      "voice": "Chase Hughes",
+      "principle": "Tactical skill comes from tested experience"
+    }
+  ]
+}

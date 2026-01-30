@@ -1,0 +1,46 @@
+{
+  "cell": "I6",
+  "dimension": {
+    "code": "I",
+    "name": "Wholeness",
+    "category": "Body",
+    "function": "State"
+  },
+  "layer": {
+    "code": 6,
+    "name": "Resources",
+    "definition": "The logical produce of skill; surplus in the forms of money, time, energy, knowledge, and relational capital that can be stewarded and reinvested for ongoing value. Not just having enough — having MORE than enough."
+  },
+  "questions": [
+    {
+      "id": "I6.A",
+      "text": "My health is robust enough to absorb a setback (illness, injury, stress) without cascade failure.",
+      "voice": "Cloud & Townsend",
+      "principle": "Health margin absorbs variance"
+    },
+    {
+      "id": "I6.B",
+      "text": "I recover from illness or injury faster than average — my body has resources to heal.",
+      "voice": "Core Philosophy",
+      "principle": "Recovery capacity indicates reserves"
+    },
+    {
+      "id": "I6.C",
+      "text": "My overall wellness creates capacity for life rather than limiting it.",
+      "voice": "Core Philosophy",
+      "principle": "Health is enabling, not just absence of disease"
+    },
+    {
+      "id": "I6.D",
+      "text": "I have invested in preventive care and maintenance that is paying dividends in current health.",
+      "voice": "Brian Tracy",
+      "principle": "Health investment compounds"
+    },
+    {
+      "id": "I6.E",
+      "text": "My integrated health (body, soul, spirit) creates synergy — each area supports the others rather than dragging them down.",
+      "voice": "Core Philosophy",
+      "principle": "Integrated health multiplies resources"
+    }
+  ]
+}

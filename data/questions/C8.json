@@ -1,0 +1,46 @@
+{
+  "cell": "C8",
+  "dimension": {
+    "code": "C",
+    "name": "Holiness",
+    "category": "Spirit",
+    "function": "State"
+  },
+  "layer": {
+    "code": 8,
+    "name": "Sacrifice",
+    "definition": "Using what has been given to you for the purpose for which it was given — to benefit others, freely and without expectation of return. Costs you everything with a GUARANTEE of no return (to you). The return goes to others."
+  },
+  "questions": [
+    {
+      "id": "C8.A",
+      "text": "I enter into others' spiritual battles — their temptations, their pain, their darkness — to help pull them out, even when it costs me peace.",
+      "voice": "Core Philosophy",
+      "principle": "Entering others' darkness is costly"
+    },
+    {
+      "id": "C8.B",
+      "text": "I bear spiritual burdens that aren't mine — I take on weight for others because they can't carry it alone.",
+      "voice": "Cloud & Townsend",
+      "principle": "Burden-bearing is sacrificial love"
+    },
+    {
+      "id": "C8.C",
+      "text": "I have walked with people through their worst seasons — not just encouraged from a distance, but entered into their suffering.",
+      "voice": "Core Philosophy",
+      "principle": "Presence in suffering costs"
+    },
+    {
+      "id": "C8.D",
+      "text": "I make myself available for spiritual emergencies — interrupting my plans to respond to others' crises.",
+      "voice": "Core Philosophy",
+      "principle": "Availability is costly"
+    },
+    {
+      "id": "C8.E",
+      "text": "I have helped restore people who fell into serious sin — not just from a distance, but at relational risk to myself.",
+      "voice": "Core Philosophy",
+      "principle": "Restoration involves risk and cost"
+    }
+  ]
+}

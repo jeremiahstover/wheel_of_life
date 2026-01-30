@@ -1,0 +1,46 @@
+{
+  "cell": "D7",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "D7.A",
+      "text": "I have people whose thinking challenges mine — they don't just agree with me, they sharpen me.",
+      "voice": "Jordan Peterson",
+      "principle": "Intellectual challenge produces growth"
+    },
+    {
+      "id": "D7.B",
+      "text": "I have relationships where we discuss ideas, debate respectfully, and learn from each other.",
+      "voice": "Core Philosophy",
+      "principle": "Mutual intellectual investment"
+    },
+    {
+      "id": "D7.C",
+      "text": "I can be wrong in front of my intellectual friends without losing face — the relationship is secure enough for failure.",
+      "voice": "Cloud & Townsend",
+      "principle": "Safety enables honest inquiry"
+    },
+    {
+      "id": "D7.D",
+      "text": "I contribute to others' intellectual growth as much as I receive — I'm not just taking, I'm giving.",
+      "voice": "Core Philosophy",
+      "principle": "Mutual sharpening"
+    },
+    {
+      "id": "D7.E",
+      "text": "My intellectual friendships have changed what I believe or how I think — they've had real impact.",
+      "voice": "Jordan Peterson",
+      "principle": "True fellowship produces transformation"
+    }
+  ]
+}

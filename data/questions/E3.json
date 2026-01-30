@@ -1,0 +1,46 @@
+{
+  "cell": "E3",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 3,
+    "name": "Responsibility",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood."
+  },
+  "questions": [
+    {
+      "id": "E3.A",
+      "text": "I own my choices — I don't blame circumstances, other people, or my past for what I decide to do.",
+      "voice": "Jordan Peterson",
+      "principle": "Own your choices completely"
+    },
+    {
+      "id": "E3.B",
+      "text": "When I fail to follow through on something, I take responsibility rather than pointing to obstacles or interference.",
+      "voice": "Brian Tracy",
+      "principle": "No excuses for lack of execution"
+    },
+    {
+      "id": "E3.C",
+      "text": "I recognize that my life outcomes are largely the result of my accumulated choices, not fate or luck.",
+      "voice": "Core Philosophy",
+      "principle": "Causality: choices have consequences"
+    },
+    {
+      "id": "E3.D",
+      "text": "I refuse to see myself as a victim of circumstances beyond my control — I always have choices in how I respond.",
+      "voice": "Jordan Peterson",
+      "principle": "Response-ability in all circumstances"
+    },
+    {
+      "id": "E3.E",
+      "text": "I own that procrastination and avoidance are my choices, not things that 'happen to me.'",
+      "voice": "Brian Tracy",
+      "principle": "Own your avoidance"
+    }
+  ]
+}

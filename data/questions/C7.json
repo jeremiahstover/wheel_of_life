@@ -1,0 +1,46 @@
+{
+  "cell": "C7",
+  "dimension": {
+    "code": "C",
+    "name": "Holiness",
+    "category": "Spirit",
+    "function": "State"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "C7.A",
+      "text": "I have people who know my specific sin struggles — not vague 'accountability' but real knowledge of real battles.",
+      "voice": "Core Philosophy",
+      "principle": "Specific knowledge enables specific help"
+    },
+    {
+      "id": "C7.B",
+      "text": "I have people I can confess to without fear of judgment or rejection — they'll hold me accountable AND hold me close.",
+      "voice": "Cloud & Townsend",
+      "principle": "Grace and truth together"
+    },
+    {
+      "id": "C7.C",
+      "text": "I know my friends' struggles and actively support their sanctification — it's mutual, not just me receiving.",
+      "voice": "Core Philosophy",
+      "principle": "Mutual pursuit of holiness"
+    },
+    {
+      "id": "C7.D",
+      "text": "When I fall, I have people I tell promptly — I don't hide and hope no one notices.",
+      "voice": "Jordan Peterson",
+      "principle": "Quick confession prevents festering"
+    },
+    {
+      "id": "C7.E",
+      "text": "My sanctification relationships help me actually change, not just feel supported — they challenge, not just comfort.",
+      "voice": "Core Philosophy",
+      "principle": "True fellowship produces transformation"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "cell": "E1",
+  "dimension": {
+    "code": "E",
+    "name": "Will",
+    "category": "Soul",
+    "function": "Executes"
+  },
+  "layer": {
+    "code": 1,
+    "name": "Order",
+    "definition": "An arrangement that displays the relationship between elements via a particular sequence, pattern, or method; the belief that reality is intelligible, structured, and meaningful rather than chaotic and random."
+  },
+  "questions": [
+    {
+      "id": "E1.A",
+      "text": "I believe my choices matter because they interact with an ordered reality that responds predictably.",
+      "voice": "Core Philosophy",
+      "principle": "Choices matter because order exists"
+    },
+    {
+      "id": "E1.B",
+      "text": "I believe there are better and worse ways to live — not all paths are equal.",
+      "voice": "Jordan Peterson",
+      "principle": "Some choices are objectively better"
+    },
+    {
+      "id": "E1.C",
+      "text": "I see evidence that certain behaviors consistently lead to flourishing while others lead to destruction.",
+      "voice": "Brian Tracy",
+      "principle": "Behavioral patterns reveal ordered consequences"
+    },
+    {
+      "id": "E1.D",
+      "text": "I reject the idea that all choices are equally valid or that 'whatever works for you' is sufficient guidance.",
+      "voice": "Jordan Peterson",
+      "principle": "Moral relativism denies observable order"
+    },
+    {
+      "id": "E1.E",
+      "text": "I believe human action has meaning because it takes place within a structured, meaningful reality.",
+      "voice": "Core Philosophy",
+      "principle": "Action has meaning because reality has meaning"
+    }
+  ]
+}

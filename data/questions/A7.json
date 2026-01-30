@@ -1,0 +1,46 @@
+{
+  "cell": "A7",
+  "dimension": {
+    "code": "A",
+    "name": "Communion",
+    "category": "Spirit",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 7,
+    "name": "Fellowship",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17)."
+  },
+  "questions": [
+    {
+      "id": "A7.A",
+      "text": "I have people I regularly pray with — not just for, but WITH, sharing burdens and interceding together.",
+      "voice": "Core Philosophy",
+      "principle": "Shared prayer is foundational fellowship"
+    },
+    {
+      "id": "A7.B",
+      "text": "I have relationships where we discuss Scripture, spiritual insights, and what God is teaching us — mutual learning.",
+      "voice": "Core Philosophy",
+      "principle": "Mutual spiritual learning deepens fellowship"
+    },
+    {
+      "id": "A7.C",
+      "text": "I have people who know where I am spiritually — the real state, not just the public version.",
+      "voice": "Jordan Peterson",
+      "principle": "Transparency enables genuine connection"
+    },
+    {
+      "id": "A7.D",
+      "text": "I allow others to challenge my spiritual life and receive it as sharpening, not attack.",
+      "voice": "Core Philosophy",
+      "principle": "Iron sharpens iron"
+    },
+    {
+      "id": "A7.E",
+      "text": "I invest in others' spiritual lives as much as they invest in mine — the relationship is mutual, not one-sided.",
+      "voice": "Cloud & Townsend",
+      "principle": "Mutuality defines fellowship"
+    }
+  ]
+}

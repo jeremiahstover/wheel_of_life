@@ -1,0 +1,46 @@
+{
+  "cell": "D4",
+  "dimension": {
+    "code": "D",
+    "name": "Mind",
+    "category": "Soul",
+    "function": "Receives"
+  },
+  "layer": {
+    "code": 4,
+    "name": "Discipline",
+    "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it."
+  },
+  "questions": [
+    {
+      "id": "D4.A",
+      "text": "I have a consistent practice of reading/learning (books, courses, study) that I maintain even when busy.",
+      "voice": "Brian Tracy",
+      "principle": "Leaders are readers; continuous learning"
+    },
+    {
+      "id": "D4.B",
+      "text": "I engage in deep thinking (reflection, journaling, analysis) rather than only consuming content passively.",
+      "voice": "Jordan Peterson",
+      "principle": "Think things through carefully"
+    },
+    {
+      "id": "D4.C",
+      "text": "I protect focused thinking time from interruptions and distractions (phone, notifications, multitasking).",
+      "voice": "Brian Tracy",
+      "principle": "Single-handling; focus blocks"
+    },
+    {
+      "id": "D4.D",
+      "text": "When I encounter ideas that challenge my thinking, I engage with them honestly rather than dismissing them.",
+      "voice": "Jordan Peterson",
+      "principle": "Seek truth even when uncomfortable"
+    },
+    {
+      "id": "D4.E",
+      "text": "I apply what I learn (wisdom) rather than just accumulating knowledge I never use.",
+      "voice": "Brian Tracy",
+      "principle": "Implementation vs information"
+    }
+  ]
+}
