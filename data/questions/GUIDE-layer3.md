@@ -142,3 +142,58 @@ A question that:
 ...can send the algorithm down the wrong branch and misidentify the break point.
 
 **Every question is load-bearing. No throwaway questions.**
+
+---
+
+## Advanced Patterns (from refinement)
+
+### Answer 1 can be dismissive, not just passive
+
+- ✓ "why would I follow through on that?" (dismissive)
+- ~ "something got in the way" (passive)
+
+Dismissive is often more honest — it reveals the underlying attitude.
+
+### Answer 3 can acknowledge the trade-off
+
+- ✓ "what I get from it feels worth it in the moment"
+- ✓ "life happened, I should have pushed harder"
+
+Honest about the payoff or the gap — not yet owning choice fully.
+
+### Answer 4 hedges should be internal, not external
+
+- ✓ "I messed up, I will try a little harder next time" (weak commitment)
+- ✓ "though I usually drag my feet" (internal slowness)
+- ✗ "though the obstacles were real" (external excuse)
+
+The hedge is about imperfect execution, not blame-shifting.
+
+### Answer 5 can be stark
+
+- ✓ "I did not keep my word"
+- ✓ "on me"
+- ✓ "my choice"
+
+No elaboration needed. Clean ownership.
+
+### Relationship framing
+
+Sometimes the question isn't "do I act?" but "how do I relate to?"
+
+- Body: hostility → burden → ambivalence → care → value
+- Responsibility: denial → avoidance → partial → owned → embraced
+
+### "Getting caught" vs "accountability"
+
+- ✓ "wait to see if anyone else noticed" (honest)
+- ~ "wait for someone to hold me accountable" (sanitized)
+
+The first reveals avoidance; the second sounds almost virtuous.
+
+### Behavior over labels
+
+Show what they actually do, not what they call it:
+
+- ✓ "look for a new church, group, or environment to fix it"
+- ✗ "blame my circumstances"
