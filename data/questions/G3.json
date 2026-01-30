@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G3a",
-      "text": "I take responsibility for what I put into my body — food, drink, and substances are my choices.",
+      "text": "What I put into my body — food, drink, substances — is ...",
       "voice": "Core Philosophy",
-      "principle": "Own your intake"
+      "principle": "Own your intake",
+      "answers": {
+        "4": "my choice, though I don't always choose well",
+        "5": "my choice",
+        "2": "hard to control given my schedule and circumstances",
+        "3": "partly my choice, partly what's practical",
+        "1": "mostly determined by what's available or affordable"
+      }
     },
     {
       "id": "G3b",
-      "text": "I own that my sleep and rest are my responsibility to prioritize and protect.",
+      "text": "My sleep and rest are ...",
       "voice": "Brian Tracy",
-      "principle": "Personal responsibility for rest"
+      "principle": "Personal responsibility for rest",
+      "answers": {
+        "4": "mine to protect, though I don't always succeed",
+        "5": "mine to protect",
+        "2": "hard to protect given everything I'm juggling",
+        "3": "something I try to prioritize, but life often wins",
+        "1": "at the mercy of my schedule and demands"
+      }
     },
     {
       "id": "G3c",
-      "text": "I don't blame my schedule, family demands, or work for poor nutrition or inadequate sleep — I make choices within constraints.",
+      "text": "When my nutrition or sleep suffers, it's because ...",
       "voice": "Jordan Peterson",
-      "principle": "No blame-shifting for body care"
+      "principle": "No blame-shifting for body care",
+      "answers": {
+        "4": "I'm not prioritizing it, though the constraints are real",
+        "5": "I'm not prioritizing it",
+        "2": "work and family take priority — there's only so much time",
+        "3": "life is demanding, but I could make better choices",
+        "1": "my schedule and demands leave no room"
+      }
     },
     {
       "id": "G3d",
-      "text": "I recognize that my physical environment (clean space, organization, reduced toxins) is mine to maintain.",
+      "text": "My physical environment — clean space, organization, toxins — is ...",
       "voice": "Jordan Peterson",
-      "principle": "Clean your room; own your space"
+      "principle": "Clean your room; own your space",
+      "answers": {
+        "4": "mine to shape, though I let it slide sometimes",
+        "5": "on me",
+        "2": "hard to manage with everything else going on",
+        "3": "partly my responsibility, partly limited by circumstances",
+        "1": "out of my control given my living situation"
+      }
     },
     {
       "id": "G3e",
-      "text": "I take ownership of creating conditions that allow my body to recover and thrive, rather than just coping with chronic depletion.",
+      "text": "Creating conditions for my body to recover and thrive is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Proactive stewardship"
+      "principle": "Proactive stewardship",
+      "answers": {
+        "4": "my responsibility, though I often just cope",
+        "5": "my responsibility",
+        "2": "hard — I'm mostly coping with chronic depletion",
+        "3": "something I try, but chronic depletion is real",
+        "1": "a luxury — I'm just managing depletion"
+      }
     }
   ]
 }

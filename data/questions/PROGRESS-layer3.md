@@ -23,7 +23,7 @@ See `GUIDE-layer3.md` for the full writing guide.
 | D3 | Mind | ✓ Complete | 5/5 questions revised |
 | E3 | Will | ✓ Complete | 5/5 questions revised |
 | F3 | Emotions | ✓ Complete | 5/5 questions revised |
-| G3 | Sustenance | ✗ Pending | |
+| G3 | Sustenance | ✓ Complete | 5/5 questions revised |
 | H3 | Capability | ✗ Pending | |
 | I3 | Wholeness | ✗ Pending | |
 
@@ -71,9 +71,16 @@ See `GUIDE-layer3.md` for the full writing guide.
 - F3d: Pursuing emotional health is ...
 - F3e: How my emotional expression affects others is ...
 
+### G3 (Sustenance at Responsibility)
+- G3a: What I put into my body — food, drink, substances — is ...
+- G3b: My sleep and rest are ...
+- G3c: When my nutrition or sleep suffers, it's because ...
+- G3d: My physical environment — clean space, organization, toxins — is ...
+- G3e: Creating conditions for my body to recover and thrive is ...
+
 ## Next Up
 
-**G3 (Sustenance at Responsibility)** — Body / Receives
+**H3 (Capability at Responsibility)** — Body / Executes
 
 ---
 
