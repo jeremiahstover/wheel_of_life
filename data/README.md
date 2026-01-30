@@ -61,7 +61,7 @@ Responsibility has two aspects:
 
 ### Layer 6 Note
 
-Resources span three wealth tiers (from the Ladder of Wealth): (note there are other forms of wealth such as health, intellectual, spiritual, experience/memory)
+Resources span three wealth tiers (from the Ladder of Wealth): 
 - **Money** — financial margin
 - **Time** — capacity margin
 - **Relationships** — relational capital
