@@ -41,10 +41,19 @@
         .card h2, .card h3 { font-size: 1.1rem; margin-bottom: 16px; color: var(--text); }
         .card h3 { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
         
+        /* Mode Selection */
+        .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+        @media (max-width: 600px) { .mode-grid { grid-template-columns: 1fr; } }
+        .mode-btn { padding: 24px; border: 2px solid var(--border); border-radius: 12px; background: transparent; color: var(--text); cursor: pointer; transition: all 0.2s; text-align: left; }
+        .mode-btn:hover { border-color: var(--accent); background: rgba(88, 166, 255, 0.1); }
+        .mode-btn h3 { margin-bottom: 8px; font-size: 1.1rem; color: var(--text); text-transform: none; letter-spacing: normal; }
+        .mode-btn p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.4; margin: 0; }
+        .mode-btn .estimate { margin-top: 12px; font-size: 0.8rem; color: var(--accent); }
+        
         .dim-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
         .dim-btn { padding: 16px; border: 2px solid var(--border); border-radius: 8px; background: transparent; color: var(--text); cursor: pointer; transition: all 0.2s; text-align: center; position: relative; }
         .dim-btn:hover { border-color: var(--accent); background: rgba(88, 166, 255, 0.1); }
-        .dim-btn.completed { border-color: #68d391; background: rgba(104, 211, 145, 0.1); }
+        .dim-btn.completed { border-color: #68d391; background: rgba(104, 211, 145, 0.1); cursor: default; }
         .dim-btn.completed::after { content: '✓'; position: absolute; top: 8px; right: 8px; color: #68d391; font-weight: bold; }
         .dim-btn .code { font-size: 1.5rem; font-weight: bold; display: block; }
         .dim-btn .name { font-size: 0.85rem; color: var(--text-muted); }
@@ -52,8 +61,8 @@
         .dim-btn.soul .code { color: var(--soul); }
         .dim-btn.body .code { color: var(--body); }
         
-        .progress-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; color: var(--text-muted); font-size: 0.85rem; }
-        .progress-info .completed-count { color: #68d391; font-weight: bold; }
+        .resume-section { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); }
+        .resume-info { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px; }
         
         .progress-bar { height: 4px; background: var(--border); border-radius: 2px; margin-bottom: 20px; overflow: hidden; }
         .progress-fill { height: 100%; background: var(--accent); transition: width 0.3s; }
@@ -61,9 +70,7 @@
         .cell-label { font-weight: bold; }
         .cell-layer { color: var(--text-muted); font-size: 0.9rem; }
         .question-counter { color: var(--text-muted); font-size: 0.85rem; }
-        .probe-mode { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; margin-left: 8px; text-transform: uppercase; }
-        .probe-mode.quick { background: rgba(88, 166, 255, 0.2); color: var(--accent); }
-        .probe-mode.full { background: rgba(104, 211, 145, 0.2); color: #68d391; }
+        .confidence-indicator { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; margin-left: 8px; text-transform: uppercase; background: rgba(88, 166, 255, 0.2); color: var(--accent); }
         .question-text { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; }
         .question-voice { color: var(--text-muted); font-size: 0.8rem; font-style: italic; margin-bottom: 16px; }
         .answers { display: flex; flex-direction: column; gap: 10px; }
@@ -75,11 +82,10 @@
         .processing .spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px; }
         @keyframes spin { to { transform: rotate(360deg); } }
         
-        .probe-trail { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
-        .probe-item { padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
-        .probe-item.strong { background: rgba(104, 211, 145, 0.2); color: #68d391; }
-        .probe-item.weak { background: rgba(252, 129, 129, 0.2); color: #fc8181; }
-        .probe-item.current { background: rgba(88, 166, 255, 0.2); color: var(--accent); }
+        .progress-summary { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 16px; }
+        .progress-pip { width: 8px; height: 8px; border-radius: 2px; background: var(--border); }
+        .progress-pip.complete { background: #68d391; }
+        .progress-pip.active { background: var(--accent); }
         
         .results-layout { display: grid; grid-template-columns: 1fr 280px; gap: 24px; }
         @media (max-width: 800px) { .results-layout { grid-template-columns: 1fr; } }
@@ -94,6 +100,7 @@
         .btn:hover { opacity: 0.9; }
         .btn-secondary { background: var(--border); color: var(--text); }
         .btn-primary { background: #68d391; color: #0d1117; font-weight: bold; }
+        .btn-small { padding: 8px 16px; font-size: 0.85rem; }
         .btn-row { display: flex; gap: 12px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
         
         .wheel-container { display: flex; justify-content: center; align-items: center; }
@@ -150,7 +157,6 @@
         .legend-gradient.body { background: linear-gradient(to right, #000, #38a169); }
         .legend-labels { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-top: 4px; margin-left: 58px; }
         
-        /* Modal */
         .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 20px; }
         .modal { background: var(--card); border: 1px solid var(--border); border-radius: 16px; max-width: 500px; width: 100%; max-height: 80vh; overflow-y: auto; }
         .modal-header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
@@ -179,6 +185,9 @@
         .scripture-text { font-style: italic; font-size: 1rem; line-height: 1.6; margin-bottom: 8px; }
         .scripture-ref { font-size: 0.85rem; color: #68d391; font-weight: bold; }
         
+        .export-section { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+        .export-section textarea { width: 100%; height: 80px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text); padding: 12px; font-family: monospace; font-size: 0.8rem; resize: vertical; }
+        
         .hidden { display: none !important; }
     </style>
 </head>
@@ -187,36 +196,63 @@
         <h1>Diagnostic Assessment</h1>
         <p class="subtitle">Find your break points efficiently</p>
         
-        <div id="phase-select" class="card">
-            <h2>Choose a dimension to assess</h2>
-            <div class="progress-info">
-                <span>Select any dimension to begin</span>
-                <span class="completed-count" id="completed-count"></span>
+        <!-- Phase: Mode Selection -->
+        <div id="phase-start" class="card">
+            <h2>Choose Assessment Mode</h2>
+            <div class="mode-grid">
+                <button class="mode-btn" onclick="startQuickMode()">
+                    <h3>Quick Assessment</h3>
+                    <p>Focus on one dimension at a time. Great for a quick check-in or when time is limited.</p>
+                    <div class="estimate">~12-15 questions per dimension</div>
+                </button>
+                <button class="mode-btn" onclick="startFullMode()">
+                    <h3>Full Assessment</h3>
+                    <p>Assess all 9 dimensions with interleaved questions. Harder to game, more accurate results.</p>
+                    <div class="estimate">~100 questions total • 30-45 minutes</div>
+                </button>
             </div>
-            <div class="dim-grid" id="dim-grid"></div>
-            <div class="btn-row" id="view-results-row" style="margin-top: 20px;"></div>
+            <div id="resume-section" class="resume-section hidden">
+                <div class="resume-info" id="resume-info"></div>
+                <div class="btn-row" style="justify-content: flex-start;">
+                    <button class="btn" onclick="resumeAssessment()">Resume Progress</button>
+                    <button class="btn btn-secondary btn-small" onclick="clearProgress()">Clear &amp; Start Fresh</button>
+                </div>
+            </div>
         </div>
         
+        <!-- Phase: Dimension Selection (Quick Mode) -->
+        <div id="phase-select" class="card hidden">
+            <h2>Select a Dimension</h2>
+            <div class="dim-grid" id="dim-grid"></div>
+            <div class="btn-row" style="margin-top: 20px;">
+                <button class="btn btn-secondary" onclick="showStart()">Back</button>
+                <button class="btn" id="view-results-btn" onclick="viewCurrentResults()" style="display: none;">View Results</button>
+            </div>
+        </div>
+        
+        <!-- Phase: Questions -->
         <div id="phase-questions" class="card hidden">
             <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
             <div class="cell-info">
                 <div>
                     <span class="cell-label" id="cell-label">A1</span>
                     <span class="cell-layer" id="cell-layer">Order</span>
-                    <span class="probe-mode" id="probe-mode">quick</span>
+                    <span class="confidence-indicator" id="confidence-indicator">probing</span>
                 </div>
-                <span class="question-counter" id="question-counter">Q1 of 2</span>
+                <span class="question-counter" id="question-counter">Q1</span>
             </div>
             <div class="question-voice" id="question-voice"></div>
             <div class="question-text" id="question-text"></div>
             <div class="answers" id="answers"></div>
-            <div class="probe-trail" id="probe-trail"></div>
+            <div class="progress-summary" id="progress-summary"></div>
         </div>
         
+        <!-- Phase: Processing -->
         <div id="phase-processing" class="card hidden">
             <div class="processing"><div class="spinner"></div><p>Analyzing results...</p></div>
         </div>
         
+        <!-- Phase: Results -->
         <div id="phase-results" class="hidden">
             <div class="results-layout">
                 <div class="wheel-section">
@@ -231,8 +267,18 @@
                         </div>
                         <div class="btn-row">
                             <button class="btn btn-primary" id="whats-next-btn" onclick="showWhatsNext()">What's Next?</button>
-                            <button class="btn" id="continue-btn" onclick="continueAssessment()">Continue Assessment</button>
-                            <button class="btn btn-secondary" onclick="restart()">Start Over</button>
+                            <button class="btn" id="continue-btn" onclick="continueAssessment()">Continue</button>
+                            <button class="btn btn-secondary" onclick="showStart()">Menu</button>
+                        </div>
+                        <div class="export-section">
+                            <button class="btn btn-small btn-secondary" onclick="toggleExport()">Export/Import Data</button>
+                            <div id="export-area" class="hidden" style="margin-top: 12px;">
+                                <textarea id="export-data" readonly></textarea>
+                                <div class="btn-row" style="margin-top: 8px; justify-content: flex-start;">
+                                    <button class="btn btn-small" onclick="copyExport()">Copy</button>
+                                    <button class="btn btn-small btn-secondary" onclick="importData()">Import</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -270,6 +316,7 @@
         </div>
     </div>
     
+    <!-- What's Next Modal -->
     <div id="whats-next-modal" class="modal-overlay hidden">
         <div class="modal">
             <div class="modal-header">
@@ -281,6 +328,9 @@
     </div>
     
     <script>
+    // ============================================
+    // CONSTANTS
+    // ============================================
     const DIMENSIONS = {
         A: { name: 'Communion', category: 'Spirit' },
         B: { name: 'Conscience', category: 'Spirit' },
@@ -298,343 +348,588 @@
     const LIKERT_SCALE = { 1: 'Strongly Disagree', 2: 'Disagree', 3: 'Neutral / Unsure', 4: 'Agree', 5: 'Strongly Agree' };
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
     const THRESHOLD = 3.5, DISPLAY_THRESHOLD = 7, DATA_PATH = '/data/questions/';
-    const QUICK_PROBE_COUNT = 2, QUICK_PROBE_TIEBREAK = 1, STRONG_THRESHOLD = 4, WEAK_THRESHOLD = 2;
-    const DEFAULT_SCORE = 3.0;  // Score for unassessed cells
+    const STORAGE_KEY = 'wheel_diagnostic_v1';
     
-    // Global state - persists across dimension assessments
-    let allScores = {};         // { A: {1: score, 2: score, ...}, B: {...}, ... }
-    let completedDims = new Set();
-    let allBreakCellData = {};  // { A: {...json...}, B: {...}, ... }
-    let totalQuestionsAnswered = 0;
+    // Adaptive questioning
+    const MIN_ANSWERS = 2;
+    const MAX_ANSWERS = 5;
+    const STRONG_THRESHOLD = 4;  // Answers >= this are "strong"
+    const WEAK_THRESHOLD = 2;    // Answers <= this are "weak"
     
-    // Current dimension state
-    let currentDim = null, scores = {}, fullProbes = new Set(), probeTrail = [];
-    let currentCell = null, currentQuestionIdx = 0, currentAnswers = [], questionsAnswered = 0;
-    let breakLayer = null, fullData = null, highlightMarker = null, breakCellData = null;
-    let searchState = { phase: 'initial', probeQueue: [] };
+    // ============================================
+    // STATE
+    // ============================================
+    let state = {
+        mode: null,              // 'quick' or 'full'
+        activeDims: [],          // Which dimensions are being assessed
+        answers: {},             // { A: { 1: [responses], 2: [...], ... }, B: {...}, ... }
+        cellData: {},            // Cached JSON data { 'A1': {...}, 'A2': {...}, ... }
+        usedQuestions: {},       // { 'A1': Set([questionIds]), ... }
+        totalQuestions: 0,
+    };
     
+    let currentQuestion = null;  // { dim, layer, question, cellData }
+    let fullData = null;
+    let highlightMarker = null;
+    
+    // ============================================
+    // PERSISTENCE
+    // ============================================
+    function saveState() {
+        const toSave = {
+            mode: state.mode,
+            activeDims: state.activeDims,
+            answers: state.answers,
+            usedQuestions: {},
+            totalQuestions: state.totalQuestions,
+        };
+        // Convert Sets to arrays for JSON
+        for (const key in state.usedQuestions) {
+            toSave.usedQuestions[key] = [...state.usedQuestions[key]];
+        }
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
+    }
+    
+    function loadState() {
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (!saved) return null;
+            const parsed = JSON.parse(saved);
+            // Convert arrays back to Sets
+            if (parsed.usedQuestions) {
+                for (const key in parsed.usedQuestions) {
+                    parsed.usedQuestions[key] = new Set(parsed.usedQuestions[key]);
+                }
+            }
+            return parsed;
+        } catch (e) {
+            return null;
+        }
+    }
+    
+    function clearState() {
+        localStorage.removeItem(STORAGE_KEY);
+        state = { mode: null, activeDims: [], answers: {}, cellData: {}, usedQuestions: {}, totalQuestions: 0 };
+    }
+    
+    function getExportData() {
+        const toExport = {
+            mode: state.mode,
+            activeDims: state.activeDims,
+            answers: state.answers,
+            totalQuestions: state.totalQuestions,
+            exportedAt: new Date().toISOString(),
+        };
+        return JSON.stringify(toExport);
+    }
+    
+    function toggleExport() {
+        const area = document.getElementById('export-area');
+        area.classList.toggle('hidden');
+        if (!area.classList.contains('hidden')) {
+            document.getElementById('export-data').value = getExportData();
+        }
+    }
+    
+    function copyExport() {
+        const textarea = document.getElementById('export-data');
+        textarea.select();
+        document.execCommand('copy');
+        alert('Copied to clipboard!');
+    }
+    
+    function importData() {
+        const data = prompt('Paste exported data:');
+        if (!data) return;
+        try {
+            const parsed = JSON.parse(data);
+            state.mode = parsed.mode;
+            state.activeDims = parsed.activeDims;
+            state.answers = parsed.answers;
+            state.totalQuestions = parsed.totalQuestions;
+            state.usedQuestions = {};
+            saveState();
+            alert('Data imported successfully!');
+            viewCurrentResults();
+        } catch (e) {
+            alert('Invalid data format');
+        }
+    }
+    
+    // ============================================
+    // PHASE MANAGEMENT
+    // ============================================
     function showPhase(phase) {
-        document.querySelectorAll('#phase-select, #phase-questions, #phase-processing, #phase-results').forEach(el => el.classList.add('hidden'));
+        ['start', 'select', 'questions', 'processing', 'results'].forEach(p => {
+            document.getElementById(`phase-${p}`).classList.add('hidden');
+        });
         document.getElementById(`phase-${phase}`).classList.remove('hidden');
     }
     
-    function initDimensionSelect() {
+    function showStart() {
+        showPhase('start');
+        checkForSavedProgress();
+    }
+    
+    function checkForSavedProgress() {
+        const saved = loadState();
+        const section = document.getElementById('resume-section');
+        const info = document.getElementById('resume-info');
+        
+        if (saved && saved.totalQuestions > 0) {
+            const dims = saved.activeDims.length === 9 ? 'all dimensions' : saved.activeDims.join(', ');
+            const complete = getCompletedDims(saved.answers);
+            info.textContent = `Found saved progress: ${saved.totalQuestions} questions answered, ${complete.length}/9 dimensions complete (${saved.mode} mode)`;
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    }
+    
+    function resumeAssessment() {
+        const saved = loadState();
+        if (saved) {
+            state.mode = saved.mode;
+            state.activeDims = saved.activeDims;
+            state.answers = saved.answers;
+            state.usedQuestions = saved.usedQuestions || {};
+            state.totalQuestions = saved.totalQuestions;
+            
+            if (isAssessmentComplete()) {
+                viewCurrentResults();
+            } else {
+                showPhase('questions');
+                askNextQuestion();
+            }
+        }
+    }
+    
+    function clearProgress() {
+        if (confirm('Are you sure? This will delete all saved progress.')) {
+            clearState();
+            checkForSavedProgress();
+        }
+    }
+    
+    // ============================================
+    // MODE SELECTION
+    // ============================================
+    function startQuickMode() {
+        state.mode = 'quick';
+        state.activeDims = [];
+        state.answers = {};
+        state.usedQuestions = {};
+        state.totalQuestions = 0;
+        showPhase('select');
+        renderDimensionGrid();
+    }
+    
+    function startFullMode() {
+        state.mode = 'full';
+        state.activeDims = [...DIM_ORDER];
+        state.answers = {};
+        state.usedQuestions = {};
+        state.totalQuestions = 0;
+        
+        // Initialize answer structure for all dimensions
+        DIM_ORDER.forEach(dim => {
+            state.answers[dim] = {};
+            for (let l = 1; l <= 8; l++) state.answers[dim][l] = [];
+        });
+        
+        saveState();
+        showPhase('questions');
+        askNextQuestion();
+    }
+    
+    function selectDimension(dim) {
+        if (getCompletedDims(state.answers).includes(dim)) return;
+        
+        state.activeDims = [dim];
+        if (!state.answers[dim]) {
+            state.answers[dim] = {};
+            for (let l = 1; l <= 8; l++) state.answers[dim][l] = [];
+        }
+        
+        saveState();
+        showPhase('questions');
+        askNextQuestion();
+    }
+    
+    function renderDimensionGrid() {
         const grid = document.getElementById('dim-grid');
         grid.innerHTML = '';
+        const completed = getCompletedDims(state.answers);
+        
         DIM_ORDER.forEach(code => {
             const info = DIMENSIONS[code];
             const btn = document.createElement('button');
             btn.className = `dim-btn ${info.category.toLowerCase()}`;
-            if (completedDims.has(code)) btn.classList.add('completed');
+            if (completed.includes(code)) btn.classList.add('completed');
             btn.innerHTML = `<span class="code">${code}</span><span class="name">${info.name}</span>`;
             btn.onclick = () => selectDimension(code);
             grid.appendChild(btn);
         });
         
-        // Update completed count
-        const countEl = document.getElementById('completed-count');
-        if (completedDims.size > 0) {
-            countEl.textContent = `${completedDims.size}/9 completed`;
+        document.getElementById('view-results-btn').style.display = completed.length > 0 ? 'inline-block' : 'none';
+    }
+    
+    function continueAssessment() {
+        if (state.mode === 'quick') {
+            showPhase('select');
+            renderDimensionGrid();
         } else {
-            countEl.textContent = '';
+            showPhase('questions');
+            askNextQuestion();
+        }
+    }
+    
+    // ============================================
+    // CORE ENGINE - Pure Functions
+    // ============================================
+    
+    // Get average score for a cell, or null if not enough data
+    function getCellScore(answers) {
+        if (!answers || answers.length === 0) return null;
+        return answers.reduce((a, b) => a + b, 0) / answers.length;
+    }
+    
+    // Is the cell "decided" - enough confidence to move on?
+    function isCellDecided(answers) {
+        if (!answers || answers.length === 0) return false;
+        if (answers.length >= MAX_ANSWERS) return true;
+        if (answers.length >= MIN_ANSWERS) {
+            const allStrong = answers.every(a => a >= STRONG_THRESHOLD);
+            const allWeak = answers.every(a => a <= WEAK_THRESHOLD);
+            if (allStrong || allWeak) return true;
+        }
+        return false;
+    }
+    
+    // Get computed scores for a dimension (only decided cells)
+    function getDimScores(dimAnswers) {
+        const scores = {};
+        for (let l = 1; l <= 8; l++) {
+            if (dimAnswers[l] && isCellDecided(dimAnswers[l])) {
+                scores[l] = getCellScore(dimAnswers[l]);
+            }
+        }
+        return scores;
+    }
+    
+    // Determine what layer a dimension needs to probe next (pure function)
+    function getNextLayer(scores) {
+        // Initial probes: L3, L6
+        if (scores[3] === undefined) return 3;
+        if (scores[6] === undefined) return 6;
+        
+        const l3Strong = scores[3] >= THRESHOLD;
+        const l6Strong = scores[6] >= THRESHOLD;
+        
+        if (l3Strong && l6Strong) {
+            // Both strong - check upper layers
+            if (scores[7] === undefined) return 7;
+            if (scores[8] === undefined) return 8;
+            return null; // Done - solid
         }
         
-        // Show "View Results" button if any completed
-        const viewResultsRow = document.getElementById('view-results-row');
-        if (completedDims.size > 0) {
-            viewResultsRow.innerHTML = `<button class="btn" onclick="viewCurrentResults()">View Current Results</button>`;
-        } else {
-            viewResultsRow.innerHTML = '';
+        if (!l3Strong && !l6Strong) {
+            // Both weak - problem is low
+            if (scores[2] === undefined) return 2;
+            if (scores[1] === undefined) return 1;
+            // Find break point
+            if (scores[1] >= THRESHOLD) return null; // Break at 2
+            if (scores[2] >= THRESHOLD) return null; // Break at 3
+            return null; // Break at 1
         }
-    }
-    
-    function selectDimension(dim) {
-        currentDim = dim;
-        scores = {};
-        fullProbes = new Set();
-        probeTrail = [];
-        questionsAnswered = 0;
-        breakLayer = null;
-        breakCellData = null;
-        searchState = { phase: 'initial', probeQueue: [3, 6] };
-        showPhase('questions');
-        probeNextLayer();
-    }
-    
-    async function probeNextLayer() {
-        const nextLayer = determineNextProbe();
-        if (nextLayer === null) {
-            if (breakLayer !== null && !fullProbes.has(breakLayer)) {
-                await loadCell(currentDim, breakLayer, true);
-                return;
-            }
-            finishAssessment();
-            return;
+        
+        if (l3Strong && !l6Strong) {
+            // Break between 4-6
+            if (scores[4] === undefined) return 4;
+            if (scores[5] === undefined) return 5;
+            return null; // Have enough to determine
         }
-        await loadCell(currentDim, nextLayer, false);
-    }
-    
-    function determineNextProbe() {
-        if (searchState.phase === 'initial') {
-            if (searchState.probeQueue.length > 0) return searchState.probeQueue.shift();
-            searchState.phase = 'narrowing';
-            return determineNextProbe();
-        }
-        if (searchState.phase === 'narrowing') {
-            const l3Strong = scores[3] >= THRESHOLD, l6Strong = scores[6] >= THRESHOLD;
-            if (l3Strong && l6Strong) {
-                if (scores[7] === undefined) return 7;
-                if (scores[8] === undefined) return 8;
-                breakLayer = null;
-            } else if (!l3Strong && !l6Strong) {
-                if (scores[2] === undefined) return 2;
-                if (scores[1] === undefined) return 1;
-                if (scores[1] >= THRESHOLD) breakLayer = 2;
-                else if (scores[2] >= THRESHOLD) breakLayer = 3;
-                else breakLayer = 1;
-            } else if (l3Strong && !l6Strong) {
-                if (scores[4] === undefined) return 4;
-                if (scores[5] === undefined) return 5;
-                if (scores[4] >= THRESHOLD && scores[5] >= THRESHOLD) breakLayer = 6;
-                else if (scores[4] >= THRESHOLD) breakLayer = 5;
-                else breakLayer = 4;
-            } else {
-                if (scores[2] === undefined) return 2;
-                if (scores[1] === undefined) return 1;
-                if (scores[4] === undefined) return 4;
-                if (scores[5] === undefined) return 5;
-                for (let l = 1; l <= 8; l++) {
-                    if (scores[l] !== undefined && scores[l] < THRESHOLD) { breakLayer = l; break; }
-                }
-            }
-            searchState.phase = 'confirming';
-            return determineNextProbe();
-        }
-        if (searchState.phase === 'confirming') {
-            if (breakLayer !== null && breakLayer > 1) {
-                const floorLayer = breakLayer - 1;
-                if (scores[floorLayer] === undefined) return floorLayer;
-            }
-        }
+        
+        // l3 weak, l6 strong - unusual, probe more
+        if (scores[2] === undefined) return 2;
+        if (scores[1] === undefined) return 1;
+        if (scores[4] === undefined) return 4;
+        if (scores[5] === undefined) return 5;
         return null;
     }
     
-    async function loadCell(dim, layer, isFullProbe) {
-        const url = `${DATA_PATH}${dim}${layer}.json`;
-        try {
-            const response = await fetch(url);
-            if (!response.ok) throw new Error(`Failed to load ${url}`);
-            const cellData = await response.json();
-            currentCell = { dim, layer, questions: cellData.questions, layerName: LAYERS[layer], isFullProbe, rawData: cellData };
-            currentQuestionIdx = 0; currentAnswers = [];
-            displayQuestion();
-            updateProbeTrail();
-        } catch (error) {
-            console.error('Error loading cell:', error);
-            recordCellScore(layer, 3.0, isFullProbe, null);
-            probeNextLayer();
-        }
+    // Is a dimension complete?
+    function isDimComplete(dimAnswers) {
+        const scores = getDimScores(dimAnswers);
+        return getNextLayer(scores) === null;
     }
     
-    function getQuestionsToAsk() {
-        if (currentCell.isFullProbe) return currentCell.questions.length;
-        if (currentAnswers.length < QUICK_PROBE_COUNT) return QUICK_PROBE_COUNT;
-        const allStrong = currentAnswers.every(a => a >= STRONG_THRESHOLD);
-        const allWeak = currentAnswers.every(a => a <= WEAK_THRESHOLD);
-        if (allStrong || allWeak) return QUICK_PROBE_COUNT;
-        return QUICK_PROBE_COUNT + QUICK_PROBE_TIEBREAK;
+    // Get completed dimensions
+    function getCompletedDims(answers) {
+        return DIM_ORDER.filter(dim => answers[dim] && isDimComplete(answers[dim]));
     }
     
-    function displayQuestion() {
-        const q = currentCell.questions[currentQuestionIdx];
-        const questionsToAsk = getQuestionsToAsk();
-        document.getElementById('cell-label').textContent = `${currentCell.dim}${currentCell.layer}: ${DIMENSIONS[currentCell.dim].name}`;
-        document.getElementById('cell-layer').textContent = `Layer ${currentCell.layer}: ${currentCell.layerName}`;
-        const modeEl = document.getElementById('probe-mode');
-        modeEl.textContent = currentCell.isFullProbe ? 'full' : 'quick';
-        modeEl.className = `probe-mode ${currentCell.isFullProbe ? 'full' : 'quick'}`;
-        document.getElementById('question-counter').textContent = `Q${currentQuestionIdx + 1} of ${questionsToAsk}`;
-        document.getElementById('question-voice').textContent = q.voice ? `Voice: ${q.voice}` : '';
-        document.getElementById('question-text').textContent = q.text;
-        const answersEl = document.getElementById('answers');
-        answersEl.innerHTML = '';
-        const hasCustomAnswers = q.answers && typeof q.answers === 'object';
-        for (let i = 1; i <= 5; i++) {
-            const btn = document.createElement('button');
-            btn.className = 'answer-btn';
-            const answerText = hasCustomAnswers ? (q.answers[i] || q.answers[String(i)] || LIKERT_SCALE[i]) : LIKERT_SCALE[i];
-            btn.innerHTML = `<span class="score-label">${i}.</span> ${answerText}`;
-            btn.onclick = () => selectAnswer(i);
-            answersEl.appendChild(btn);
-        }
-        const progress = Math.min(100, ((totalQuestionsAnswered + questionsAnswered) / (15 * 9)) * 100);
-        document.getElementById('progress-fill').style.width = `${progress}%`;
-    }
-    
-    function selectAnswer(score) {
-        currentAnswers.push(score); questionsAnswered++; currentQuestionIdx++;
-        const questionsToAsk = getQuestionsToAsk();
-        if (currentQuestionIdx < questionsToAsk && currentQuestionIdx < currentCell.questions.length) {
-            displayQuestion();
-        } else {
-            const avg = currentAnswers.reduce((a, b) => a + b, 0) / currentAnswers.length;
-            recordCellScore(currentCell.layer, avg, currentCell.isFullProbe, currentCell.rawData);
-            probeNextLayer();
-        }
-    }
-    
-    function recordCellScore(layer, score, isFullProbe, rawData) {
-        scores[layer] = score;
-        if (isFullProbe) { fullProbes.add(layer); if (rawData) breakCellData = rawData; }
-        probeTrail.push({ layer, score, status: score >= THRESHOLD ? 'strong' : 'weak', mode: isFullProbe ? 'full' : 'quick' });
-    }
-    
-    function updateProbeTrail() {
-        const trailEl = document.getElementById('probe-trail');
-        trailEl.innerHTML = '';
-        probeTrail.forEach(p => {
-            const item = document.createElement('span');
-            item.className = `probe-item ${p.status}`;
-            item.textContent = `L${p.layer}: ${(p.score * 2).toFixed(1)}`;
-            if (p.mode === 'full') item.textContent += '★';
-            trailEl.appendChild(item);
-        });
-        if (currentCell) {
-            const current = document.createElement('span');
-            current.className = 'probe-item current';
-            current.textContent = `L${currentCell.layer}...`;
-            trailEl.appendChild(current);
-        }
-    }
-    
-    function findBreakPointForDim(dimScores) {
+    // Find break point for a dimension
+    function findBreakPoint(dimAnswers) {
+        const scores = getDimScores(dimAnswers);
         let floor = 0, bp = null;
+        
         for (let layer = 1; layer <= 8; layer++) {
-            const score = dimScores[layer];
-            if (score !== undefined) {
-                if (score >= THRESHOLD) floor = layer;
+            if (scores[layer] !== undefined) {
+                if (scores[layer] >= THRESHOLD) floor = layer;
                 else if (bp === null) bp = layer;
             }
         }
-        if (bp === null && floor < 8) {
-            for (let layer = floor + 1; layer <= 8; layer++) {
-                if (dimScores[layer] !== undefined && dimScores[layer] < THRESHOLD) { bp = layer; break; }
-            }
-        }
+        
         if (bp === null && floor > 0) return { floor: 8, break: null };
-        if (floor === 0 && (dimScores[1] === undefined || dimScores[1] < THRESHOLD)) return { floor: 0, break: 1 };
+        if (floor === 0 && (scores[1] === undefined || scores[1] < THRESHOLD)) return { floor: 0, break: 1 };
         return { floor, break: bp };
     }
     
-    function finishAssessment() {
-        showPhase('processing');
-        fillMissingLayers();
-        
-        // Save to global state
-        allScores[currentDim] = { ...scores };
-        completedDims.add(currentDim);
-        totalQuestionsAnswered += questionsAnswered;
-        if (breakCellData) allBreakCellData[currentDim] = breakCellData;
-        
-        setTimeout(() => { showPhase('results'); displayResults(); }, 800);
-    }
-    
-    function fillMissingLayers() {
-        for (let layer = 1; layer <= 8; layer++) {
-            if (scores[layer] === undefined) {
-                let below = null, above = null;
-                for (let l = layer - 1; l >= 1; l--) { if (scores[l] !== undefined) { below = scores[l]; break; } }
-                for (let l = layer + 1; l <= 8; l++) { if (scores[l] !== undefined) { above = scores[l]; break; } }
-                if (below !== null && above !== null) scores[layer] = (below + above) / 2;
-                else if (below !== null) scores[layer] = below * 0.9;
-                else if (above !== null) scores[layer] = Math.min(5, above * 1.1);
-                else scores[layer] = 3.0;
-            }
-        }
-    }
-    
-    function buildFullData() {
-        const data = {};
-        DIM_ORDER.forEach(dim => {
-            data[dim] = {};
-            for (let layer = 1; layer <= 8; layer++) {
-                if (allScores[dim] && allScores[dim][layer] !== undefined) {
-                    data[dim][layer] = allScores[dim][layer];
-                } else {
-                    data[dim][layer] = DEFAULT_SCORE;
-                }
-            }
-        });
-        return data;
-    }
-    
-    function findWeakestBreakPoint() {
+    // Find the weakest break point across all completed dimensions
+    function findWeakestBreak() {
         let weakest = null;
-        let weakestLayer = 9;
-        let weakestScore = 6;
         
         for (const dim of DIM_ORDER) {
-            if (!completedDims.has(dim)) continue;
-            const { break: bp } = findBreakPointForDim(allScores[dim]);
+            if (!state.answers[dim] || !isDimComplete(state.answers[dim])) continue;
+            
+            const { break: bp } = findBreakPoint(state.answers[dim]);
             if (bp !== null) {
-                const score = allScores[dim][bp];
-                // Prioritize by: lowest layer first, then lowest score
-                if (bp < weakestLayer || (bp === weakestLayer && score < weakestScore)) {
+                const scores = getDimScores(state.answers[dim]);
+                const score = scores[bp];
+                
+                if (!weakest || bp < weakest.layer || (bp === weakest.layer && score < weakest.score)) {
                     weakest = { dim, layer: bp, score };
-                    weakestLayer = bp;
-                    weakestScore = score;
                 }
             }
         }
         return weakest;
     }
     
+    // ============================================
+    // QUESTION FLOW
+    // ============================================
+    
+    function isAssessmentComplete() {
+        for (const dim of state.activeDims) {
+            if (!isDimComplete(state.answers[dim])) return false;
+        }
+        return true;
+    }
+    
+    async function askNextQuestion() {
+        if (isAssessmentComplete()) {
+            showPhase('processing');
+            setTimeout(() => {
+                showPhase('results');
+                displayResults();
+            }, 500);
+            return;
+        }
+        
+        // Find dimensions that need work
+        const needsWork = state.activeDims.filter(dim => !isDimComplete(state.answers[dim]));
+        
+        // Randomly select one
+        const dim = needsWork[Math.floor(Math.random() * needsWork.length)];
+        const scores = getDimScores(state.answers[dim]);
+        const layer = getNextLayer(scores);
+        
+        // Load cell data
+        const cellKey = `${dim}${layer}`;
+        if (!state.cellData[cellKey]) {
+            try {
+                const response = await fetch(`${DATA_PATH}${cellKey}.json`);
+                state.cellData[cellKey] = await response.json();
+            } catch (e) {
+                console.error('Failed to load cell:', e);
+                // Record neutral score and move on
+                state.answers[dim][layer] = [3, 3];
+                saveState();
+                askNextQuestion();
+                return;
+            }
+        }
+        
+        const cellData = state.cellData[cellKey];
+        
+        // Track used questions
+        if (!state.usedQuestions[cellKey]) {
+            state.usedQuestions[cellKey] = new Set();
+        }
+        
+        // Find unused question
+        const available = cellData.questions.filter(q => !state.usedQuestions[cellKey].has(q.id));
+        if (available.length === 0) {
+            // All questions used - cell is maxed out
+            if (!isCellDecided(state.answers[dim][layer])) {
+                // Force decision with what we have
+                state.answers[dim][layer].push(3); // Neutral to trigger decision
+            }
+            saveState();
+            askNextQuestion();
+            return;
+        }
+        
+        // Random question from available
+        const question = available[Math.floor(Math.random() * available.length)];
+        
+        currentQuestion = { dim, layer, question, cellData };
+        displayQuestion();
+    }
+    
+    function displayQuestion() {
+        const { dim, layer, question } = currentQuestion;
+        const info = DIMENSIONS[dim];
+        const cellAnswers = state.answers[dim][layer] || [];
+        
+        document.getElementById('cell-label').textContent = `${dim}${layer}: ${info.name}`;
+        document.getElementById('cell-layer').textContent = `Layer ${layer}: ${LAYERS[layer]}`;
+        
+        const confidenceEl = document.getElementById('confidence-indicator');
+        confidenceEl.textContent = `${cellAnswers.length}/${MAX_ANSWERS}`;
+        
+        document.getElementById('question-counter').textContent = `Q${state.totalQuestions + 1}`;
+        document.getElementById('question-voice').textContent = question.voice ? `Voice: ${question.voice}` : '';
+        document.getElementById('question-text').textContent = question.text;
+        
+        const answersEl = document.getElementById('answers');
+        answersEl.innerHTML = '';
+        
+        const hasCustom = question.answers && typeof question.answers === 'object';
+        for (let i = 1; i <= 5; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'answer-btn';
+            const text = hasCustom ? (question.answers[i] || question.answers[String(i)] || LIKERT_SCALE[i]) : LIKERT_SCALE[i];
+            btn.innerHTML = `<span class="score-label">${i}.</span> ${text}`;
+            btn.onclick = () => recordAnswer(i);
+            answersEl.appendChild(btn);
+        }
+        
+        // Progress bar
+        const completed = getCompletedDims(state.answers).length;
+        const total = state.activeDims.length;
+        const progress = total > 0 ? (completed / total) * 100 : 0;
+        document.getElementById('progress-fill').style.width = `${progress}%`;
+        
+        // Progress pips
+        renderProgressPips();
+    }
+    
+    function renderProgressPips() {
+        const container = document.getElementById('progress-summary');
+        container.innerHTML = '';
+        
+        state.activeDims.forEach(dim => {
+            const pip = document.createElement('div');
+            pip.className = 'progress-pip';
+            pip.title = `${dim}: ${DIMENSIONS[dim].name}`;
+            
+            if (isDimComplete(state.answers[dim])) {
+                pip.classList.add('complete');
+            } else if (currentQuestion && currentQuestion.dim === dim) {
+                pip.classList.add('active');
+            }
+            container.appendChild(pip);
+        });
+    }
+    
+    function recordAnswer(score) {
+        const { dim, layer, question } = currentQuestion;
+        
+        state.answers[dim][layer].push(score);
+        state.usedQuestions[`${dim}${layer}`].add(question.id);
+        state.totalQuestions++;
+        
+        saveState();
+        askNextQuestion();
+    }
+    
+    // ============================================
+    // RESULTS
+    // ============================================
+    
+    function buildFullData() {
+        const data = {};
+        DIM_ORDER.forEach(dim => {
+            data[dim] = {};
+            const dimAnswers = state.answers[dim] || {};
+            const scores = getDimScores(dimAnswers);
+            
+            for (let layer = 1; layer <= 8; layer++) {
+                if (scores[layer] !== undefined) {
+                    data[dim][layer] = scores[layer];
+                } else if (dimAnswers[layer] && dimAnswers[layer].length > 0) {
+                    // Has answers but not decided - use current average
+                    data[dim][layer] = getCellScore(dimAnswers[layer]);
+                } else {
+                    data[dim][layer] = null; // Not assessed
+                }
+            }
+            
+            // Fill gaps with interpolation for completed dims
+            if (isDimComplete(dimAnswers)) {
+                for (let layer = 1; layer <= 8; layer++) {
+                    if (data[dim][layer] === null) {
+                        let below = null, above = null;
+                        for (let l = layer - 1; l >= 1; l--) if (data[dim][l] !== null) { below = data[dim][l]; break; }
+                        for (let l = layer + 1; l <= 8; l++) if (data[dim][l] !== null) { above = data[dim][l]; break; }
+                        if (below !== null && above !== null) data[dim][layer] = (below + above) / 2;
+                        else if (below !== null) data[dim][layer] = below * 0.9;
+                        else if (above !== null) data[dim][layer] = Math.min(5, above * 1.1);
+                        else data[dim][layer] = 3.0;
+                    }
+                }
+            }
+        });
+        return data;
+    }
+    
     function displayResults() {
-        const breakInfo = findBreakPointForDim(scores);
+        fullData = buildFullData();
+        
+        const completed = getCompletedDims(state.answers);
+        const weakest = findWeakestBreak();
+        const allDone = completed.length === state.activeDims.length;
+        
         const titleEl = document.getElementById('result-title');
         const infoEl = document.getElementById('break-info');
         const statsEl = document.getElementById('result-stats');
-        const whatsNextBtn = document.getElementById('whats-next-btn');
         const continueBtn = document.getElementById('continue-btn');
+        const whatsNextBtn = document.getElementById('whats-next-btn');
         
-        // Find weakest overall
-        const weakest = findWeakestBreakPoint();
-        const allComplete = completedDims.size === 9;
-        const remaining = 9 - completedDims.size;
-        
-        if (allComplete) {
+        if (allDone && state.activeDims.length === 9) {
+            titleEl.textContent = 'Full Assessment Complete';
             if (weakest) {
-                titleEl.textContent = 'Full Assessment Complete';
                 infoEl.className = 'break-info';
                 infoEl.innerHTML = `Primary focus: <strong>${weakest.dim}${weakest.layer} ${DIMENSIONS[weakest.dim].name} — ${LAYERS[weakest.layer]}</strong>`;
             } else {
-                titleEl.textContent = 'Full Assessment Complete — All Solid!';
                 infoEl.className = 'break-info solid';
-                infoEl.innerHTML = `<strong>No break points found</strong> — strong across all dimensions`;
+                infoEl.innerHTML = '<strong>All solid!</strong> No break points found';
             }
             continueBtn.classList.add('hidden');
-        } else {
-            titleEl.textContent = `${currentDim}: ${DIMENSIONS[currentDim].name}`;
-            if (breakInfo.break === null) {
-                infoEl.className = 'break-info solid';
-                infoEl.innerHTML = `<strong>Solid</strong> — ${remaining} dimension${remaining > 1 ? 's' : ''} remaining`;
-            } else {
+        } else if (allDone) {
+            titleEl.textContent = `${completed.length} Dimension${completed.length > 1 ? 's' : ''} Complete`;
+            if (weakest) {
                 infoEl.className = 'break-info';
-                infoEl.innerHTML = `Break at <strong>L${breakInfo.break} ${LAYERS[breakInfo.break]}</strong> — ${remaining} dimension${remaining > 1 ? 's' : ''} remaining`;
+                infoEl.innerHTML = `Focus: <strong>${weakest.dim}${weakest.layer} — ${LAYERS[weakest.layer]}</strong>`;
+            } else {
+                infoEl.className = 'break-info solid';
+                infoEl.innerHTML = '<strong>All assessed dimensions solid</strong>';
             }
+            continueBtn.textContent = state.mode === 'quick' ? 'Assess Another' : 'Continue';
+            continueBtn.classList.remove('hidden');
+        } else {
+            titleEl.textContent = 'Progress Update';
+            infoEl.className = 'break-info';
+            infoEl.innerHTML = `${completed.length}/${state.activeDims.length} dimensions complete`;
+            continueBtn.textContent = 'Continue';
             continueBtn.classList.remove('hidden');
         }
         
-        statsEl.textContent = `${totalQuestionsAnswered} questions answered • ${completedDims.size}/9 dimensions`;
+        statsEl.textContent = `${state.totalQuestions} questions answered`;
+        whatsNextBtn.classList.toggle('hidden', !weakest);
         
-        // Show What's Next if there's a break point
-        if (weakest) {
-            whatsNextBtn.classList.remove('hidden');
-        } else {
-            whatsNextBtn.classList.add('hidden');
-        }
-        
-        fullData = buildFullData();
         renderWheel(fullData);
         renderSidebar(fullData);
     }
@@ -642,60 +937,29 @@
     function viewCurrentResults() {
         fullData = buildFullData();
         showPhase('results');
-        
-        const weakest = findWeakestBreakPoint();
-        const titleEl = document.getElementById('result-title');
-        const infoEl = document.getElementById('break-info');
-        const statsEl = document.getElementById('result-stats');
-        const whatsNextBtn = document.getElementById('whats-next-btn');
-        const continueBtn = document.getElementById('continue-btn');
-        
-        const remaining = 9 - completedDims.size;
-        
-        titleEl.textContent = 'Current Progress';
-        if (weakest) {
-            infoEl.className = 'break-info';
-            infoEl.innerHTML = `Current focus: <strong>${weakest.dim}${weakest.layer} ${DIMENSIONS[weakest.dim].name} — ${LAYERS[weakest.layer]}</strong>`;
-            whatsNextBtn.classList.remove('hidden');
-        } else {
-            infoEl.className = 'break-info solid';
-            infoEl.innerHTML = `<strong>All assessed dimensions solid</strong>`;
-            whatsNextBtn.classList.add('hidden');
-        }
-        
-        statsEl.textContent = `${totalQuestionsAnswered} questions answered • ${completedDims.size}/9 dimensions`;
-        
-        if (remaining > 0) {
-            continueBtn.classList.remove('hidden');
-        } else {
-            continueBtn.classList.add('hidden');
-        }
-        
-        renderWheel(fullData);
-        renderSidebar(fullData);
+        displayResults();
     }
     
-    function continueAssessment() {
-        showPhase('select');
-        initDimensionSelect();
-    }
+    // ============================================
+    // WHAT'S NEXT MODAL
+    // ============================================
     
-    // What's Next Modal
     async function showWhatsNext() {
-        const weakest = findWeakestBreakPoint();
+        const weakest = findWeakestBreak();
         if (!weakest) return;
         
         const modal = document.getElementById('whats-next-modal');
         const modalBody = document.getElementById('modal-body');
         
-        let cellData = allBreakCellData[weakest.dim];
+        const cellKey = `${weakest.dim}${weakest.layer}`;
+        let cellData = state.cellData[cellKey];
+        
         if (!cellData) {
             try {
-                const url = `${DATA_PATH}${weakest.dim}${weakest.layer}.json`;
-                const response = await fetch(url);
+                const response = await fetch(`${DATA_PATH}${cellKey}.json`);
                 cellData = await response.json();
-                allBreakCellData[weakest.dim] = cellData;
-            } catch (error) {
+                state.cellData[cellKey] = cellData;
+            } catch (e) {
                 modalBody.innerHTML = '<p>Unable to load recommendations.</p>';
                 modal.classList.remove('hidden');
                 return;
@@ -734,26 +998,34 @@
         }
         
         if (!remediation.advice && !remediation.scripture) {
-            html += `<div class="modal-section"><p>Focus your energy on strengthening <strong>${LAYERS[weakest.layer]}</strong> in your <strong>${info.name}</strong>. This is the foundation that must be solid before higher layers can hold weight.</p></div>`;
+            html += `<div class="modal-section"><p>Focus on strengthening <strong>${LAYERS[weakest.layer]}</strong> in your <strong>${info.name}</strong>.</p></div>`;
         }
         
         modalBody.innerHTML = html;
         modal.classList.remove('hidden');
     }
     
-    function closeModal() { document.getElementById('whats-next-modal').classList.add('hidden'); }
-    document.getElementById('whats-next-modal').addEventListener('click', (e) => { if (e.target.classList.contains('modal-overlay')) closeModal(); });
+    function closeModal() {
+        document.getElementById('whats-next-modal').classList.add('hidden');
+    }
+    
+    document.getElementById('whats-next-modal').addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal-overlay')) closeModal();
+    });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
     
-    // Sidebar
+    // ============================================
+    // SIDEBAR
+    // ============================================
+    
     function getCategoryMin(data, category) {
-        let min = 5;
-        let hasData = false;
+        let min = 5, hasData = false;
+        const completed = getCompletedDims(state.answers);
         for (const dim of CATEGORIES[category]) {
-            if (completedDims.has(dim)) {
+            if (completed.includes(dim)) {
                 hasData = true;
-                for (let layer = 1; layer <= 8; layer++) {
-                    if (data[dim][layer] < min) min = data[dim][layer];
+                for (let l = 1; l <= 8; l++) {
+                    if (data[dim][l] !== null && data[dim][l] < min) min = data[dim][l];
                 }
             }
         }
@@ -768,20 +1040,21 @@
     function showCellInfo(dim, layer) {
         const info = DIMENSIONS[dim];
         const score = fullData[dim][layer];
-        const displayScore = (score * 2).toFixed(1);
-        const isAssessed = completedDims.has(dim);
-        const isStrong = score >= THRESHOLD;
+        const completed = getCompletedDims(state.answers);
+        const isAssessed = completed.includes(dim);
         
         document.getElementById('hover-cell-name').textContent = `${dim}${layer}: ${info.name}`;
         document.getElementById('hover-cell-name').style.color = getCategoryColor(info.category);
         document.getElementById('hover-cell-detail').textContent = `Layer ${layer}: ${LAYERS[layer]} • ${info.category}`;
-        document.getElementById('hover-cell-score').textContent = isAssessed ? displayScore : '—';
         
         const statusEl = document.getElementById('hover-cell-status');
-        if (!isAssessed) {
+        if (!isAssessed || score === null) {
+            document.getElementById('hover-cell-score').textContent = '—';
             statusEl.textContent = 'Not yet assessed';
             statusEl.className = 'cell-status pending';
         } else {
+            document.getElementById('hover-cell-score').textContent = (score * 2).toFixed(1);
+            const isStrong = score >= THRESHOLD;
             statusEl.textContent = isStrong ? `STRONG (≥${DISPLAY_THRESHOLD})` : `WEAK (<${DISPLAY_THRESHOLD})`;
             statusEl.className = 'cell-status ' + (isStrong ? 'strong' : 'weak');
         }
@@ -798,7 +1071,9 @@
     
     function highlightDimension(dim, breakLayerNum) {
         const svg = document.getElementById('wheel');
-        svg.querySelectorAll('path[data-dim]').forEach(path => { path.style.opacity = path.getAttribute('data-dim') === dim ? '1' : '0.2'; });
+        svg.querySelectorAll('path[data-dim]').forEach(path => {
+            path.style.opacity = path.getAttribute('data-dim') === dim ? '1' : '0.2';
+        });
         if (highlightMarker) { highlightMarker.remove(); highlightMarker = null; }
         if (breakLayerNum !== null && breakLayerNum > 0) {
             const dimIndex = DIM_ORDER.indexOf(dim);
@@ -806,8 +1081,10 @@
             const radius = MIN_RADIUS + (breakLayerNum - 1) * RING_WIDTH;
             const marker = document.createElementNS('http://www.w3.org/2000/svg', 'path');
             marker.setAttribute('d', describeArcLine(CX, CY, radius, startAngle, endAngle));
-            marker.setAttribute('stroke', '#ffffff'); marker.setAttribute('stroke-width', '3');
-            marker.setAttribute('fill', 'none'); marker.setAttribute('stroke-linecap', 'round');
+            marker.setAttribute('stroke', '#ffffff');
+            marker.setAttribute('stroke-width', '3');
+            marker.setAttribute('fill', 'none');
+            marker.setAttribute('stroke-linecap', 'round');
             marker.style.filter = 'drop-shadow(0 0 4px rgba(255,255,255,0.8))';
             svg.appendChild(marker);
             highlightMarker = marker;
@@ -848,13 +1125,15 @@
         
         const breaksList = document.getElementById('breaks-list');
         breaksList.innerHTML = '';
+        const completed = getCompletedDims(state.answers);
+        
         DIM_ORDER.forEach(dim => {
             const info = DIMENSIONS[dim];
             const item = document.createElement('div');
             item.className = 'break-item';
             
-            if (completedDims.has(dim)) {
-                const { break: bp } = findBreakPointForDim(allScores[dim]);
+            if (completed.includes(dim)) {
+                const { break: bp } = findBreakPoint(state.answers[dim]);
                 let layerText, layerClass;
                 if (bp === null) { layerText = 'Solid'; layerClass = 'solid'; }
                 else if (bp === 1) { layerText = 'L1 Crisis'; layerClass = 'crisis'; }
@@ -870,63 +1149,84 @@
         });
     }
     
-    // Wheel
+    // ============================================
+    // WHEEL RENDERING
+    // ============================================
+    
     const CATEGORY_COLORS = { Spirit: { r: 128, g: 90, b: 213 }, Soul: { r: 49, g: 130, b: 206 }, Body: { r: 56, g: 161, b: 105 } };
     const CX = 0, CY = 0, MIN_RADIUS = 30, MAX_RADIUS = 220;
     const RING_WIDTH = (MAX_RADIUS - MIN_RADIUS) / 8, WEDGE_ANGLE = 360 / 9, GAP = 1;
     
-    function scoreToColor(score, category, isAssessed) {
-        if (!isAssessed) return '#1a1f26';  // Dark gray for unassessed
+    function scoreToColor(score, category) {
+        if (score === null) return '#1a1f26';
         const brightness = (score - 1) / 4;
         const c = CATEGORY_COLORS[category];
         return `rgb(${Math.round(c.r * brightness)}, ${Math.round(c.g * brightness)}, ${Math.round(c.b * brightness)})`;
     }
+    
     function getCategoryColor(category) { return { Spirit: '#805ad5', Soul: '#3182ce', Body: '#38a169' }[category]; }
-    function polarToCartesian(cx, cy, radius, angle) { const r = (angle - 90) * Math.PI / 180; return { x: cx + radius * Math.cos(r), y: cy + radius * Math.sin(r) }; }
+    
+    function polarToCartesian(cx, cy, radius, angle) {
+        const r = (angle - 90) * Math.PI / 180;
+        return { x: cx + radius * Math.cos(r), y: cy + radius * Math.sin(r) };
+    }
+    
     function describeArc(cx, cy, ir, or, sa, ea) {
         const s1 = polarToCartesian(cx, cy, or, ea), e1 = polarToCartesian(cx, cy, or, sa);
         const s2 = polarToCartesian(cx, cy, ir, sa), e2 = polarToCartesian(cx, cy, ir, ea);
         const laf = ea - sa <= 180 ? "0" : "1";
         return `M ${s1.x} ${s1.y} A ${or} ${or} 0 ${laf} 0 ${e1.x} ${e1.y} L ${s2.x} ${s2.y} A ${ir} ${ir} 0 ${laf} 1 ${e2.x} ${e2.y} Z`;
     }
+    
     function describeArcLine(cx, cy, r, sa, ea) {
         const s = polarToCartesian(cx, cy, r, sa), e = polarToCartesian(cx, cy, r, ea);
         return `M ${s.x} ${s.y} A ${r} ${r} 0 ${ea - sa <= 180 ? "0" : "1"} 1 ${e.x} ${e.y}`;
     }
+    
     function getEarliestBreak(data) {
+        const completed = getCompletedDims(state.answers);
         let earliest = null;
-        for (const dim of DIM_ORDER) {
-            if (!completedDims.has(dim)) continue;
-            let bp = null;
-            for (let l = 1; l <= 8; l++) if (data[dim][l] < THRESHOLD && bp === null) bp = l;
+        for (const dim of completed) {
+            const { break: bp } = findBreakPoint(state.answers[dim]);
             if (bp !== null && (earliest === null || bp < earliest)) earliest = bp;
         }
         return earliest;
     }
+    
     function renderFace(svg, eb) {
         const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        const completed = getCompletedDims(state.answers);
         let color, mouth;
-        if (completedDims.size === 0) { color = '#6e7681'; mouth = 'M -8 6 L 8 6'; }  // Gray neutral for no data
+        
+        if (completed.length === 0) { color = '#6e7681'; mouth = 'M -8 6 L 8 6'; }
         else if (eb === null || eb >= 6) { color = '#68d391'; mouth = 'M -8 4 Q 0 12 8 4'; }
         else if (eb >= 3) { color = '#f6ad55'; mouth = 'M -8 6 L 8 6'; }
         else { color = '#fc8181'; mouth = 'M -8 10 Q 0 4 8 10'; }
-        [[-6,-4], [6,-4]].forEach(([x,y]) => { const e = document.createElementNS('http://www.w3.org/2000/svg', 'circle'); e.setAttribute('cx', x); e.setAttribute('cy', y); e.setAttribute('r', 3); e.setAttribute('fill', color); g.appendChild(e); });
+        
+        [[-6,-4], [6,-4]].forEach(([x,y]) => {
+            const e = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            e.setAttribute('cx', x); e.setAttribute('cy', y); e.setAttribute('r', 3); e.setAttribute('fill', color);
+            g.appendChild(e);
+        });
         const m = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-        m.setAttribute('d', mouth); m.setAttribute('stroke', color); m.setAttribute('stroke-width', '2.5'); m.setAttribute('stroke-linecap', 'round'); m.setAttribute('fill', 'none');
+        m.setAttribute('d', mouth); m.setAttribute('stroke', color); m.setAttribute('stroke-width', '2.5');
+        m.setAttribute('stroke-linecap', 'round'); m.setAttribute('fill', 'none');
         g.appendChild(m); svg.appendChild(g);
     }
+    
     function renderWheel(data) {
         const svg = document.getElementById('wheel');
         svg.innerHTML = '';
+        
         DIM_ORDER.forEach((dim, di) => {
             const sa = di * WEDGE_ANGLE + GAP/2, ea = (di + 1) * WEDGE_ANGLE - GAP/2;
             const cat = DIMENSIONS[dim].category;
-            const isAssessed = completedDims.has(dim);
+            
             for (let l = 1; l <= 8; l++) {
                 const ir = MIN_RADIUS + (l-1) * RING_WIDTH + 1, or = MIN_RADIUS + l * RING_WIDTH - 1;
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 path.setAttribute('d', describeArc(CX, CY, ir, or, sa, ea));
-                path.setAttribute('fill', scoreToColor(data[dim][l], cat, isAssessed));
+                path.setAttribute('fill', scoreToColor(data[dim][l], cat));
                 path.setAttribute('stroke', '#0d1117'); path.setAttribute('stroke-width', '1');
                 path.setAttribute('data-dim', dim); path.setAttribute('data-layer', l);
                 path.style.cursor = 'pointer'; path.style.transition = 'opacity 0.15s';
@@ -935,6 +1235,7 @@
                 svg.appendChild(path);
             }
         });
+        
         DIM_ORDER.forEach((dim, di) => {
             const pos = polarToCartesian(CX, CY, MAX_RADIUS + 20, (di + 0.5) * WEDGE_ANGLE);
             const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -944,6 +1245,7 @@
             t.setAttribute('font-size', '12'); t.setAttribute('font-weight', 'bold');
             t.textContent = dim; svg.appendChild(t);
         });
+        
         for (let l = 1; l <= 8; l++) {
             const pos = polarToCartesian(CX, CY, MIN_RADIUS + (l - 0.5) * RING_WIDTH, -10);
             const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -952,21 +1254,19 @@
             t.setAttribute('fill', '#6e7681'); t.setAttribute('font-size', '8');
             t.textContent = `L${l}`; svg.appendChild(t);
         }
+        
         const cc = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
         cc.setAttribute('cx', CX); cc.setAttribute('cy', CY); cc.setAttribute('r', MIN_RADIUS - 2); cc.setAttribute('fill', '#0d1117');
         svg.appendChild(cc);
+        
         renderFace(svg, getEarliestBreak(data));
     }
     
-    function restart() {
-        allScores = {}; completedDims = new Set(); allBreakCellData = {}; totalQuestionsAnswered = 0;
-        currentDim = null; scores = {}; fullProbes = new Set(); probeTrail = [];
-        currentCell = null; breakLayer = null; fullData = null; highlightMarker = null; breakCellData = null;
-        showPhase('select');
-        initDimensionSelect();
-    }
+    // ============================================
+    // INIT
+    // ============================================
     
-    initDimensionSelect();
+    showStart();
     </script>
 </body>
 </html>
