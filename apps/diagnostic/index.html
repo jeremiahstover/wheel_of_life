@@ -348,6 +348,36 @@
             padding: 16px;
         }
         
+        /* Hover Info Card */
+        .hover-info {
+            min-height: 80px;
+        }
+        
+        .hover-info .cell-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .hover-info .cell-detail {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+        
+        .hover-info .cell-score {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .hover-info .cell-status {
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+        
+        .hover-info .cell-status.strong { color: #68d391; }
+        .hover-info .cell-status.weak { color: #fc8181; }
+        
         .category-scores {
             display: flex;
             flex-direction: column;
@@ -414,6 +444,12 @@
             padding: 8px;
             background: rgba(0,0,0,0.3);
             border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        
+        .break-item:hover {
+            background: rgba(255,255,255,0.1);
         }
         
         .break-item .dim {
@@ -548,6 +584,14 @@
                 </div>
                 
                 <div class="sidebar">
+                    <div class="card hover-info" id="hover-info">
+                        <h3>Cell Details</h3>
+                        <div class="cell-name" id="hover-cell-name">Hover over wheel</div>
+                        <div class="cell-detail" id="hover-cell-detail">—</div>
+                        <div class="cell-score" id="hover-cell-score">—</div>
+                        <div class="cell-status" id="hover-cell-status"></div>
+                    </div>
+                    
                     <div class="card">
                         <h3>Limiting Factors</h3>
                         <div class="category-scores" id="category-scores"></div>
@@ -633,31 +677,33 @@
     
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
     const THRESHOLD = 3.5;
-    const DATA_PATH = '/data/questions/';  // Absolute path from site root
+    const DISPLAY_THRESHOLD = 7;
+    const DATA_PATH = '/data/questions/';
     
     // Quick probe settings
-    const QUICK_PROBE_COUNT = 2;      // Questions for initial probes
-    const QUICK_PROBE_TIEBREAK = 1;   // Extra question if mixed results
-    const STRONG_THRESHOLD = 4;       // Both answers >= this = strong
-    const WEAK_THRESHOLD = 2;         // Both answers <= this = weak
+    const QUICK_PROBE_COUNT = 2;
+    const QUICK_PROBE_TIEBREAK = 1;
+    const STRONG_THRESHOLD = 4;
+    const WEAK_THRESHOLD = 2;
     
     // ============================================
     // STATE
     // ============================================
     
     let currentDim = null;
-    let scores = {};           // { layer: score (number) }
-    let fullProbes = new Set(); // Layers that have had full 5-question probes
-    let probeTrail = [];       // [{ layer, score, status }]
-    let currentCell = null;    // { dim, layer, questions, isFullProbe }
+    let scores = {};
+    let fullProbes = new Set();
+    let probeTrail = [];
+    let currentCell = null;
     let currentQuestionIdx = 0;
-    let currentAnswers = [];   // answers for current cell
+    let currentAnswers = [];
     let questionsAnswered = 0;
-    let breakLayer = null;     // Once identified, this is the break point
+    let breakLayer = null;
+    let fullData = null;          // Store wheel data for hover
+    let highlightMarker = null;   // For break point arc marker
     
-    // Binary search state
     let searchState = {
-        phase: 'initial',      // initial, narrowing, confirming
+        phase: 'initial',
         probeQueue: [],
     };
     
@@ -700,7 +746,6 @@
         questionsAnswered = 0;
         breakLayer = null;
         
-        // Initialize binary search - start with L3 and L6
         searchState = {
             phase: 'initial',
             probeQueue: [3, 6],
@@ -715,20 +760,17 @@
     // ============================================
     
     async function probeNextLayer() {
-        // Determine next layer to probe
         const nextLayer = determineNextProbe();
         
         if (nextLayer === null) {
-            // Done with quick probes - do full assessment on break layer if we have one
             if (breakLayer !== null && !fullProbes.has(breakLayer)) {
-                await loadCell(currentDim, breakLayer, true); // Full probe
+                await loadCell(currentDim, breakLayer, true);
                 return;
             }
             finishAssessment();
             return;
         }
         
-        // Load and display questions for this cell (quick probe)
         await loadCell(currentDim, nextLayer, false);
     }
     
@@ -746,34 +788,26 @@
             const l6Strong = scores[6] >= THRESHOLD;
             
             if (l3Strong && l6Strong) {
-                // Both strong - check upper layers
                 if (scores[7] === undefined) return 7;
                 if (scores[8] === undefined) return 8;
-                // All strong through L8
                 breakLayer = null;
             } else if (!l3Strong && !l6Strong) {
-                // Both weak - check lower layers
                 if (scores[2] === undefined) return 2;
                 if (scores[1] === undefined) return 1;
-                // Find the break
                 if (scores[1] >= THRESHOLD) breakLayer = 2;
                 else if (scores[2] >= THRESHOLD) breakLayer = 3;
-                else breakLayer = 1; // L1 crisis
+                else breakLayer = 1;
             } else if (l3Strong && !l6Strong) {
-                // Break somewhere in L4-L6
                 if (scores[4] === undefined) return 4;
                 if (scores[5] === undefined) return 5;
-                // Find exact break
                 if (scores[4] >= THRESHOLD && scores[5] >= THRESHOLD) breakLayer = 6;
                 else if (scores[4] >= THRESHOLD) breakLayer = 5;
                 else breakLayer = 4;
             } else {
-                // Anomaly: L3 weak, L6 strong
                 if (scores[2] === undefined) return 2;
                 if (scores[1] === undefined) return 1;
                 if (scores[4] === undefined) return 4;
                 if (scores[5] === undefined) return 5;
-                // Find the real break
                 for (let l = 1; l <= 8; l++) {
                     if (scores[l] !== undefined && scores[l] < THRESHOLD) {
                         breakLayer = l;
@@ -787,14 +821,13 @@
         }
         
         if (searchState.phase === 'confirming') {
-            // Confirm floor is solid if we have a break
             if (breakLayer !== null && breakLayer > 1) {
                 const floorLayer = breakLayer - 1;
                 if (scores[floorLayer] === undefined) return floorLayer;
             }
         }
         
-        return null; // Done with quick probes
+        return null;
     }
     
     async function loadCell(dim, layer, isFullProbe) {
@@ -819,7 +852,6 @@
             updateProbeTrail();
         } catch (error) {
             console.error('Error loading cell:', error);
-            // On error, record a neutral score and move on
             recordCellScore(layer, 3.0, isFullProbe);
             probeNextLayer();
         }
@@ -827,23 +859,20 @@
     
     function getQuestionsToAsk() {
         if (currentCell.isFullProbe) {
-            return currentCell.questions.length; // All 5
+            return currentCell.questions.length;
         }
         
-        // Quick probe: start with 2, maybe add tiebreaker
         if (currentAnswers.length < QUICK_PROBE_COUNT) {
             return QUICK_PROBE_COUNT;
         }
         
-        // Check if we need a tiebreaker
         const allStrong = currentAnswers.every(a => a >= STRONG_THRESHOLD);
         const allWeak = currentAnswers.every(a => a <= WEAK_THRESHOLD);
         
         if (allStrong || allWeak) {
-            return QUICK_PROBE_COUNT; // Clear signal, no tiebreaker needed
+            return QUICK_PROBE_COUNT;
         }
         
-        // Mixed results - need tiebreaker
         return QUICK_PROBE_COUNT + QUICK_PROBE_TIEBREAK;
     }
     
@@ -867,7 +896,6 @@
             q.voice ? `Voice: ${q.voice}` : '';
         document.getElementById('question-text').textContent = q.text;
         
-        // Render answer buttons
         const answersEl = document.getElementById('answers');
         answersEl.innerHTML = '';
         
@@ -886,8 +914,7 @@
             answersEl.appendChild(btn);
         }
         
-        // Update progress
-        const totalEstimated = 15; // Optimistic with quick probes
+        const totalEstimated = 15;
         const progress = Math.min(100, (questionsAnswered / totalEstimated) * 100);
         document.getElementById('progress-fill').style.width = `${progress}%`;
     }
@@ -902,7 +929,6 @@
         if (currentQuestionIdx < questionsToAsk && currentQuestionIdx < currentCell.questions.length) {
             displayQuestion();
         } else {
-            // Cell complete - calculate score
             const avg = currentAnswers.reduce((a, b) => a + b, 0) / currentAnswers.length;
             recordCellScore(currentCell.layer, avg, currentCell.isFullProbe);
             probeNextLayer();
@@ -936,7 +962,6 @@
             trailEl.appendChild(item);
         });
         
-        // Show current
         if (currentCell) {
             const current = document.createElement('span');
             current.className = 'probe-item current';
@@ -1038,7 +1063,7 @@
         statsEl.textContent = `${questionsAnswered} questions answered`;
         
         // Build full data (mirror to all dimensions)
-        const fullData = {};
+        fullData = {};
         DIM_ORDER.forEach(dim => {
             fullData[dim] = {};
             for (let layer = 1; layer <= 8; layer++) {
@@ -1073,6 +1098,106 @@
         return Math.min(spiritMin, soulMin, bodyMin);
     }
     
+    function findDimBreakPoint(dimData) {
+        let floor = 0;
+        let breakPoint = null;
+        
+        for (let layer = 1; layer <= 8; layer++) {
+            if (dimData[layer] >= THRESHOLD) {
+                floor = layer;
+            } else {
+                if (breakPoint === null) {
+                    breakPoint = layer;
+                }
+            }
+        }
+        
+        if (breakPoint === null && floor > 0) {
+            return { floor: 8, break: null };
+        }
+        if (floor === 0) {
+            return { floor: 0, break: 1 };
+        }
+        return { floor, break: breakPoint };
+    }
+    
+    function showCellInfo(dim, layer) {
+        const info = DIMENSIONS[dim];
+        const score = fullData[dim][layer];
+        const displayScore = score * 2;
+        const isStrong = score >= THRESHOLD;
+        
+        document.getElementById('hover-cell-name').textContent = `${dim}${layer}: ${info.name}`;
+        document.getElementById('hover-cell-name').style.color = getCategoryColor(info.category);
+        document.getElementById('hover-cell-detail').textContent = `Layer ${layer}: ${LAYERS[layer]} • ${info.category}`;
+        document.getElementById('hover-cell-score').textContent = displayScore.toFixed(1);
+        
+        const statusEl = document.getElementById('hover-cell-status');
+        statusEl.textContent = isStrong ? `STRONG (≥${DISPLAY_THRESHOLD})` : `WEAK (<${DISPLAY_THRESHOLD})`;
+        statusEl.className = 'cell-status ' + (isStrong ? 'strong' : 'weak');
+    }
+    
+    function resetCellInfo() {
+        document.getElementById('hover-cell-name').textContent = 'Hover over wheel';
+        document.getElementById('hover-cell-name').style.color = '';
+        document.getElementById('hover-cell-detail').textContent = '—';
+        document.getElementById('hover-cell-score').textContent = '—';
+        document.getElementById('hover-cell-status').textContent = '';
+        document.getElementById('hover-cell-status').className = 'cell-status';
+    }
+    
+    function highlightDimension(dim, breakLayerNum) {
+        const svg = document.getElementById('wheel');
+        
+        // Dim all cells except the highlighted dimension
+        svg.querySelectorAll('path[data-dim]').forEach(path => {
+            if (path.getAttribute('data-dim') === dim) {
+                path.style.opacity = '1';
+            } else {
+                path.style.opacity = '0.2';
+            }
+        });
+        
+        // Remove old marker
+        if (highlightMarker) {
+            highlightMarker.remove();
+            highlightMarker = null;
+        }
+        
+        // Draw white arc at break point
+        if (breakLayerNum !== null && breakLayerNum > 0) {
+            const dimIndex = DIM_ORDER.indexOf(dim);
+            const startAngle = dimIndex * WEDGE_ANGLE + GAP/2;
+            const endAngle = (dimIndex + 1) * WEDGE_ANGLE - GAP/2;
+            
+            const radius = MIN_RADIUS + (breakLayerNum - 1) * RING_WIDTH;
+            
+            const marker = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            marker.setAttribute('d', describeArcLine(CX, CY, radius, startAngle, endAngle));
+            marker.setAttribute('stroke', '#ffffff');
+            marker.setAttribute('stroke-width', '3');
+            marker.setAttribute('fill', 'none');
+            marker.setAttribute('stroke-linecap', 'round');
+            marker.style.filter = 'drop-shadow(0 0 4px rgba(255,255,255,0.8))';
+            
+            svg.appendChild(marker);
+            highlightMarker = marker;
+        }
+    }
+    
+    function clearHighlight() {
+        const svg = document.getElementById('wheel');
+        
+        svg.querySelectorAll('path[data-dim]').forEach(path => {
+            path.style.opacity = '1';
+        });
+        
+        if (highlightMarker) {
+            highlightMarker.remove();
+            highlightMarker = null;
+        }
+    }
+    
     function renderSidebar(data) {
         // Category scores
         const container = document.getElementById('category-scores');
@@ -1105,16 +1230,7 @@
         
         DIM_ORDER.forEach(dim => {
             const info = DIMENSIONS[dim];
-            
-            // Find break for this dimension
-            let floor = 0, bp = null;
-            for (let layer = 1; layer <= 8; layer++) {
-                if (data[dim][layer] >= THRESHOLD) {
-                    floor = layer;
-                } else if (bp === null) {
-                    bp = layer;
-                }
-            }
+            const { break: bp } = findDimBreakPoint(data[dim]);
             
             let layerText, layerClass;
             if (bp === null) {
@@ -1134,6 +1250,15 @@
                 <span class="dim ${info.category.toLowerCase()}">${dim} ${info.name}</span>
                 <span class="layer ${layerClass}">${layerText}</span>
             `;
+            
+            // Hover events for highlighting
+            item.addEventListener('mouseenter', () => {
+                highlightDimension(dim, bp);
+            });
+            item.addEventListener('mouseleave', () => {
+                clearHighlight();
+            });
+            
             breaksList.appendChild(item);
         });
     }
@@ -1192,6 +1317,17 @@
             "L", start2.x, start2.y,
             "A", innerRadius, innerRadius, 0, largeArcFlag, 1, end2.x, end2.y,
             "Z"
+        ].join(" ");
+    }
+    
+    function describeArcLine(cx, cy, radius, startAngle, endAngle) {
+        const start = polarToCartesian(cx, cy, radius, startAngle);
+        const end = polarToCartesian(cx, cy, radius, endAngle);
+        const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+        
+        return [
+            "M", start.x, start.y,
+            "A", radius, radius, 0, largeArcFlag, 1, end.x, end.y
         ].join(" ");
     }
     
@@ -1271,6 +1407,21 @@
                 path.setAttribute('fill', scoreToColor(score, category));
                 path.setAttribute('stroke', '#0d1117');
                 path.setAttribute('stroke-width', '1');
+                path.setAttribute('data-dim', dim);
+                path.setAttribute('data-layer', layer);
+                path.style.cursor = 'pointer';
+                path.style.transition = 'opacity 0.15s';
+                
+                // Hover events for cell info
+                path.addEventListener('mouseenter', () => {
+                    showCellInfo(dim, layer);
+                    path.style.opacity = '0.8';
+                });
+                path.addEventListener('mouseleave', () => {
+                    path.style.opacity = '1';
+                    resetCellInfo();
+                });
+                
                 svg.appendChild(path);
             }
         });
@@ -1333,6 +1484,8 @@
         probeTrail = [];
         currentCell = null;
         breakLayer = null;
+        fullData = null;
+        highlightMarker = null;
         showPhase('select');
     }
     
