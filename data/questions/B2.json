@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B2a",
-      "text": "I understand that small compromises in integrity compound into larger character issues over time.",
+      "text": "Small compromises in integrity compound into larger character issues ...",
       "voice": "Jordan Peterson",
-      "principle": "Small causes compound into large effects"
+      "principle": "Small causes compound into large effects",
+      "answers": {
+        "4": "usually — small things tend to grow over time",
+        "5": "reliably — small compromises always set trajectories",
+        "2": "possibly — but it's not predictable",
+        "3": "sometimes — some compromises compound, others don't",
+        "1": "not necessarily — small things stay small"
+      }
     },
     {
       "id": "B2b",
-      "text": "I can see that most 'sudden' moral failures are actually the result of many small prior choices.",
+      "text": "Most 'sudden' moral failures are actually the result of many small prior choices ...",
       "voice": "Chase Hughes",
-      "principle": "Big failures have small precursors"
+      "principle": "Big failures have small precursors",
+      "answers": {
+        "4": "usually — big falls have long approaches",
+        "5": "almost always — the trail of small choices is always there if you look",
+        "2": "possibly — but it's hard to trace",
+        "3": "sometimes — some failures have visible roots, others don't",
+        "1": "not really — some people just snap"
+      }
     },
     {
       "id": "B2c",
-      "text": "I recognize that honesty and deception both have natural consequences — trust or suspicion, clarity or confusion.",
+      "text": "Honesty and deception have natural consequences ...",
       "voice": "Jordan Peterson",
-      "principle": "Truth and lies produce predictable outcomes"
+      "principle": "Truth and lies produce predictable outcomes",
+      "answers": {
+        "4": "generally — trust and suspicion follow predictably",
+        "5": "directly — you reap what you sow in relationships",
+        "2": "weakly — maybe eventually, but not consistently",
+        "3": "somewhat — there are patterns, but with many exceptions",
+        "1": "not reliably — honest people get burned, liars prosper"
+      }
     },
     {
       "id": "B2d",
-      "text": "I understand that when I ignore my conscience repeatedly, it becomes harder to hear — this is cause and effect, not random.",
+      "text": "When I ignore my conscience repeatedly, it becomes harder to hear ...",
       "voice": "Core Philosophy",
-      "principle": "Conscience sensitivity responds to how you treat it"
+      "principle": "Conscience sensitivity responds to how you treat it",
+      "answers": {
+        "4": "usually — there's a clear connection between ignoring and dimming",
+        "5": "absolutely — this is cause and effect, not random",
+        "2": "possibly — but conscience seems to come and go randomly",
+        "3": "sometimes — it's quieter in some areas, not others",
+        "1": "I don't notice that pattern"
+      }
     },
     {
       "id": "B2e",
-      "text": "I can connect the quality of my relationships to how I've treated people — the harvest matches the seed.",
+      "text": "The quality of my relationships connects to how I've treated people ...",
       "voice": "Cloud & Townsend",
-      "principle": "Relational reaping follows relational sowing"
+      "principle": "Relational reaping follows relational sowing",
+      "answers": {
+        "4": "generally — how I treat people usually comes back",
+        "5": "directly — the harvest matches the seed",
+        "2": "weakly — maybe some connection",
+        "3": "partially — some relationships reflect my treatment, others don't",
+        "1": "not really — relationships seem to succeed or fail randomly"
+      }
     }
   ]
 }

@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E2a",
-      "text": "I understand that my current life situation is largely the result of my accumulated choices, not fate or luck.",
+      "text": "My current life situation is largely the result of my accumulated choices ...",
       "voice": "Jordan Peterson",
-      "principle": "Life outcomes follow from choices"
+      "principle": "Life outcomes follow from choices",
+      "answers": {
+        "4": "mostly — my choices have shaped most of where I am",
+        "5": "largely — I am the accumulated result of my decisions",
+        "2": "possibly — but luck and timing matter more",
+        "3": "partially — some of it is my choices, some is fate",
+        "1": "not really — I'm mostly shaped by circumstances beyond my control"
+      }
     },
     {
       "id": "E2b",
-      "text": "I can trace most of my successes and failures back to specific decisions I made (or avoided making).",
+      "text": "I can trace most of my successes and failures back to specific decisions ...",
       "voice": "Brian Tracy",
-      "principle": "Results are traceable to decisions"
+      "principle": "Results are traceable to decisions",
+      "answers": {
+        "4": "usually — I can identify the decision chain for most results",
+        "5": "clearly — successes and failures have identifiable origins",
+        "2": "vaguely — maybe some connections exist",
+        "3": "sometimes — some outcomes trace back, others seem random",
+        "1": "not really — things just happen"
+      }
     },
     {
       "id": "E2c",
-      "text": "I recognize that procrastination, avoidance, and inaction are also choices with predictable consequences.",
+      "text": "Procrastination, avoidance, and inaction are choices with predictable consequences ...",
       "voice": "Brian Tracy",
-      "principle": "Non-decisions are decisions with consequences"
+      "principle": "Non-decisions are decisions with consequences",
+      "answers": {
+        "4": "usually — not deciding is deciding, with predictable results",
+        "5": "always — inaction compounds just like action does",
+        "2": "possibly — but consequences aren't consistent",
+        "3": "sometimes — some inaction costs me, some doesn't",
+        "1": "not really — sometimes delay works out fine"
+      }
     },
     {
       "id": "E2d",
-      "text": "I understand that 'it just happened' is almost never true — there are always causes I could identify if I looked.",
+      "text": "When I think 'it just happened,' there are actually causes I could identify ...",
       "voice": "Chase Hughes",
-      "principle": "Nothing 'just happens' — causes exist"
+      "principle": "Nothing 'just happens' — causes exist",
+      "answers": {
+        "4": "usually — if I look, I can find the causal chain",
+        "5": "almost always — 'it just happened' is almost never true",
+        "2": "possibly — but it's hard to trace back",
+        "3": "sometimes — some things have causes, some don't",
+        "1": "not always — some things really are random"
+      }
     },
     {
       "id": "E2e",
-      "text": "I can see how small daily choices compound into life trajectories over months and years.",
+      "text": "Small daily choices compound into life trajectories over time ...",
       "voice": "Core Philosophy",
-      "principle": "Daily choices compound into life direction"
+      "principle": "Daily choices compound into life direction",
+      "answers": {
+        "4": "mostly — daily patterns shape long-term outcomes",
+        "5": "absolutely — compound effect applies to everything",
+        "2": "possibly — but daily choices feel insignificant",
+        "3": "somewhat — some small choices matter, others don't",
+        "1": "not really — big decisions are what matter"
+      }
     }
   ]
 }

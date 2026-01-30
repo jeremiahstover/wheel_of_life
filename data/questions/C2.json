@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C2a",
-      "text": "I understand that my current spiritual state is largely the accumulated result of my past spiritual choices.",
+      "text": "My current spiritual state is largely the accumulated result of past spiritual choices ...",
       "voice": "Core Philosophy",
-      "principle": "State results from accumulated choices"
+      "principle": "State results from accumulated choices",
+      "answers": {
+        "4": "mostly — I can see how choices shaped where I am",
+        "5": "absolutely — I am the accumulated result of my spiritual investments",
+        "2": "possibly — but I don't see the connections clearly",
+        "3": "partially — some of it traces back, some feels random",
+        "1": "not really — spirituality feels given, not built"
+      }
     },
     {
       "id": "C2b",
-      "text": "I recognize that habitual sin doesn't appear overnight — it grows from seeds I planted and watered.",
+      "text": "Habitual sin grows from seeds I planted and watered ...",
       "voice": "Jordan Peterson",
-      "principle": "Sin patterns have cultivation histories"
+      "principle": "Sin patterns have cultivation histories",
+      "answers": {
+        "4": "usually — I can trace most habits back to small beginnings",
+        "5": "always — nothing is sudden; everything has a causal chain",
+        "2": "possibly — but it feels more sudden than that",
+        "3": "sometimes — some habits have visible roots, others just appear",
+        "1": "not really — sin just happens"
+      }
     },
     {
       "id": "C2c",
-      "text": "I can see that people who are spiritually mature got there through specific practices over time — not special grace unavailable to me.",
+      "text": "Spiritually mature people got there through specific practices over time ...",
       "voice": "Brian Tracy",
-      "principle": "Spiritual maturity follows spiritual investment"
+      "principle": "Spiritual maturity follows spiritual investment",
+      "answers": {
+        "4": "mostly — maturity is built through consistent practice",
+        "5": "definitely — the path is open to anyone who walks it",
+        "2": "possibly — but it seems like some have special grace",
+        "3": "partly — effort matters, but so does something I can't identify",
+        "1": "not necessarily — some people are just more spiritual"
+      }
     },
     {
       "id": "C2d",
-      "text": "I understand that 'sowing to the Spirit' (Galatians 6:8) means specific actions that produce specific spiritual results.",
+      "text": "'Sowing to the Spirit' (Galatians 6:8) means specific actions produce specific results ...",
       "voice": "Core Philosophy",
-      "principle": "Biblical sowing/reaping is concrete, not metaphorical"
+      "principle": "Biblical sowing/reaping is concrete, not metaphorical",
+      "answers": {
+        "4": "generally — spiritual cause and effect is real",
+        "5": "precisely — sow to the Spirit, reap life; sow to flesh, reap decay",
+        "2": "possibly — but the connections are vague",
+        "3": "sometimes — some spiritual sowing produces clear results",
+        "1": "it's more metaphorical than literal"
+      }
     },
     {
       "id": "C2e",
-      "text": "I recognize that asking God to change my spiritual state without changing my spiritual inputs is asking for magic, not faith.",
+      "text": "Asking God to change my spiritual state without changing my inputs is ...",
       "voice": "Jordan Peterson",
-      "principle": "Faith cooperates with causality; it doesn't bypass it"
+      "principle": "Faith cooperates with causality; it doesn't bypass it",
+      "answers": {
+        "4": "generally unrealistic — transformation requires participation",
+        "5": "asking for magic, not faith — faith works through action",
+        "2": "hopeful — maybe He'll just intervene",
+        "3": "mixed — He can act, but I probably need to do something too",
+        "1": "reasonable — God can do anything"
+      }
     }
   ]
 }

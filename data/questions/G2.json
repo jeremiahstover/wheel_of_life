@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G2a",
-      "text": "I understand that my energy levels, clarity, and physical function are directly affected by what I eat and drink.",
+      "text": "My energy levels, clarity, and function are directly affected by what I eat and drink ...",
       "voice": "Core Philosophy",
-      "principle": "Nutritional inputs affect physical outputs"
+      "principle": "Nutritional inputs affect physical outputs",
+      "answers": {
+        "4": "mostly — diet has a noticeable impact on how I function",
+        "5": "directly — food is fuel and the quality shows immediately",
+        "2": "possibly — but I don't notice consistent patterns",
+        "3": "somewhat — some foods clearly affect me, others don't seem to",
+        "1": "not really — I feel the same regardless of what I eat"
+      }
     },
     {
       "id": "G2b",
-      "text": "I can see the connection between my sleep patterns and my mental/physical performance the next day.",
+      "text": "The connection between sleep patterns and next-day performance is ...",
       "voice": "Brian Tracy",
-      "principle": "Sleep quality affects performance"
+      "principle": "Sleep quality affects performance",
+      "answers": {
+        "4": "strong — sleep quality clearly predicts next-day performance",
+        "5": "direct — sleep debt compounds and shows in everything",
+        "2": "unclear — sometimes sleep helps, sometimes it doesn't matter",
+        "3": "partial — poor sleep sometimes affects me",
+        "1": "weak — I function fine on any amount of sleep"
+      }
     },
     {
       "id": "G2c",
-      "text": "I recognize that sustained poor nutrition leads to predictable health outcomes — this isn't random bad luck.",
+      "text": "Sustained poor nutrition leading to predictable health outcomes is ...",
       "voice": "Jordan Peterson",
-      "principle": "Nutritional choices compound into health outcomes"
+      "principle": "Nutritional choices compound into health outcomes",
+      "answers": {
+        "4": "generally true — poor nutrition usually catches up",
+        "5": "certain — you reap what you sow with nutrition",
+        "2": "possible — but genetics matter more",
+        "3": "likely — there's probably a connection, with many exceptions",
+        "1": "overstated — plenty of people eat poorly and stay healthy"
+      }
     },
     {
       "id": "G2d",
-      "text": "I understand that my physical environment (cleanliness, organization, air quality) affects how I feel and function.",
+      "text": "My physical environment affects how I feel and function ...",
       "voice": "Jordan Peterson",
-      "principle": "Environment shapes experience"
+      "principle": "Environment shapes experience",
+      "answers": {
+        "4": "mostly — cleanliness, organization, and air quality clearly matter",
+        "5": "directly — environment shapes energy, focus, and wellbeing",
+        "2": "possibly — but I adapt to any environment",
+        "3": "somewhat — extreme environments affect me, normal ones don't",
+        "1": "not really — I can work anywhere"
+      }
     },
     {
       "id": "G2e",
-      "text": "I can connect periods of feeling good or bad physically to what I was eating, drinking, and how I was sleeping.",
+      "text": "I can connect periods of feeling good or bad physically to what I was consuming ...",
       "voice": "Chase Hughes",
-      "principle": "Physical state correlates with physical inputs"
+      "principle": "Physical state correlates with physical inputs",
+      "answers": {
+        "4": "usually — I can trace most physical states to inputs",
+        "5": "clearly — my body reflects what I put in and how I rest",
+        "2": "vaguely — maybe some connection exists",
+        "3": "sometimes — some periods connect to consumption, others don't",
+        "1": "not at all — physical states seem random"
+      }
     }
   ]
 }

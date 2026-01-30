@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F2a",
-      "text": "I understand that my emotional patterns are influenced by what I consistently think, believe, and practice.",
+      "text": "My emotional patterns are influenced by what I consistently think, believe, and practice ...",
       "voice": "Core Philosophy",
-      "principle": "Emotions respond to cognitive and behavioral inputs"
+      "principle": "Emotions respond to cognitive and behavioral inputs",
+      "answers": {
+        "4": "mostly — there's a clear link between inputs and emotional patterns",
+        "5": "directly — what I feed grows; what I starve fades",
+        "2": "possibly — but it's hard to see the connection",
+        "3": "somewhat — some emotions connect to inputs, others seem random",
+        "1": "not really — emotions just happen to me"
+      }
     },
     {
       "id": "F2b",
-      "text": "I can usually identify what triggered a strong emotional response rather than feeling like emotions 'just happen.'",
+      "text": "When I have a strong emotional response, I can usually identify the trigger ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional responses have identifiable triggers"
+      "principle": "Emotional responses have identifiable triggers",
+      "answers": {
+        "4": "usually — I can trace most reactions to something",
+        "5": "almost always — emotions don't just happen; they're triggered",
+        "2": "sometimes — but often I have no idea",
+        "3": "about half the time — some are clear, some aren't",
+        "1": "rarely — emotions just happen"
+      }
     },
     {
       "id": "F2c",
-      "text": "I recognize that people who are emotionally healthy built that health through specific practices over time.",
+      "text": "Emotionally healthy people built that health through specific practices ...",
       "voice": "Jordan Peterson",
-      "principle": "Emotional health is cultivated, not inherited"
+      "principle": "Emotional health is cultivated, not inherited",
+      "answers": {
+        "4": "mostly — emotional health is cultivated over time",
+        "5": "definitely — emotional health is built, not born",
+        "2": "possibly — but temperament seems more important",
+        "3": "partially — practice helps, but some have it easier",
+        "1": "not necessarily — some people are just naturally stable"
+      }
     },
     {
       "id": "F2d",
-      "text": "I understand that chronic emotional struggles (anxiety, anger, depression) usually have root causes that can be identified.",
+      "text": "Chronic emotional struggles usually have root causes that can be identified ...",
       "voice": "Chase Hughes",
-      "principle": "Chronic emotional patterns have root causes"
+      "principle": "Chronic emotional patterns have root causes",
+      "answers": {
+        "4": "usually — there are identifiable factors feeding chronic patterns",
+        "5": "almost always — emotional patterns have causal roots",
+        "2": "possibly — but causes are often mysterious",
+        "3": "sometimes — some struggles have clear roots, others don't",
+        "1": "not really — anxiety and depression just happen"
+      }
     },
     {
       "id": "F2e",
-      "text": "I can see the connection between how I treat my body, mind, and spirit and my emotional state.",
+      "text": "The connection between how I treat body, mind, and spirit and my emotional state is ...",
       "voice": "Core Philosophy",
-      "principle": "Emotional state connects to holistic health"
+      "principle": "Emotional state connects to holistic health",
+      "answers": {
+        "4": "strong — neglect in one area shows up emotionally",
+        "5": "direct — body, mind, spirit, and emotions are deeply interconnected",
+        "2": "unclear — maybe there's some connection",
+        "3": "partial — some areas affect emotions, others don't seem to",
+        "1": "weak — emotions are separate from physical/mental/spiritual health"
+      }
     }
   ]
 }

@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D2a",
-      "text": "I understand that my thinking patterns are shaped by what I consistently consume — content, conversations, information.",
+      "text": "My thinking patterns are shaped by what I consistently consume ...",
       "voice": "Core Philosophy",
-      "principle": "Mental inputs shape mental outputs"
+      "principle": "Mental inputs shape mental outputs",
+      "answers": {
+        "4": "mostly — consumption patterns clearly affect thinking",
+        "5": "directly — content, conversations, and information shape my mind",
+        "2": "possibly — but I can filter what affects me",
+        "3": "somewhat — some inputs shape me, others I can resist",
+        "1": "not really — I think independently of inputs"
+      }
     },
     {
       "id": "D2b",
-      "text": "I can see the connection between information diet and worldview — garbage in, garbage out applies to the mind.",
+      "text": "The connection between information diet and worldview is ...",
       "voice": "Brian Tracy",
-      "principle": "Information quality affects thinking quality"
+      "principle": "Information quality affects thinking quality",
+      "answers": {
+        "4": "strong — what goes in shapes what comes out",
+        "5": "direct — garbage in, garbage out applies to the mind",
+        "2": "unclear — maybe there's influence",
+        "3": "partial — some influence, but I can think critically",
+        "1": "weak — I form my own views independently"
+      }
     },
     {
       "id": "D2c",
-      "text": "I recognize that people who think clearly didn't get that way by accident — clear thinking is built through specific practices.",
+      "text": "People who think clearly got that way through specific practices ...",
       "voice": "Jordan Peterson",
-      "principle": "Mental clarity results from mental discipline"
+      "principle": "Mental clarity results from mental discipline",
+      "answers": {
+        "4": "mostly — clear thinking is built through discipline",
+        "5": "definitely — clarity is trained, not born",
+        "2": "possibly — but intelligence seems mostly innate",
+        "3": "partially — practice helps, but gifts matter more",
+        "1": "not necessarily — some people are just naturally sharp"
+      }
     },
     {
       "id": "D2d",
-      "text": "I understand that chronic anxiety, negativity, or confusion often have identifiable inputs that are feeding them.",
+      "text": "Chronic anxiety, negativity, or confusion often have identifiable inputs ...",
       "voice": "Chase Hughes",
-      "principle": "Mental states have traceable causes"
+      "principle": "Mental states have traceable causes",
+      "answers": {
+        "4": "usually — I can identify what's feeding negative states",
+        "5": "almost always — mental states have causal roots",
+        "2": "possibly — but the causes are hard to find",
+        "3": "sometimes — some mental states trace to inputs, others don't",
+        "1": "not really — they just happen"
+      }
     },
     {
       "id": "D2e",
-      "text": "I can connect periods of mental clarity or fog to what I was consuming and practicing during those times.",
+      "text": "I can connect periods of mental clarity or fog to what I was consuming ...",
       "voice": "Core Philosophy",
-      "principle": "Mental state correlates with mental investment"
+      "principle": "Mental state correlates with mental investment",
+      "answers": {
+        "4": "usually — I can trace most mental states to inputs",
+        "5": "clearly — my mental state reflects my mental diet",
+        "2": "vaguely — maybe there's some pattern",
+        "3": "sometimes — some periods connect clearly, others don't",
+        "1": "not at all — clarity comes and goes randomly"
+      }
     }
   ]
 }

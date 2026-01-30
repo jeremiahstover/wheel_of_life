@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H2a",
-      "text": "I understand that my current physical capability is the result of what I've been doing (or not doing) physically.",
+      "text": "My current physical capability is the result of what I've been doing physically ...",
       "voice": "Core Philosophy",
-      "principle": "Physical capability reflects physical history"
+      "principle": "Physical capability reflects physical history",
+      "answers": {
+        "4": "mostly — my physical state reflects my physical investment",
+        "5": "directly — I am what I consistently do",
+        "2": "possibly — but genetics set most of it",
+        "3": "partially — some capability is earned, some is given",
+        "1": "not really — I'm just naturally where I am"
+      }
     },
     {
       "id": "H2b",
-      "text": "I can see that people who are physically fit built that fitness through consistent effort over time — not genetics alone.",
+      "text": "People who are physically fit built that fitness through consistent effort ...",
       "voice": "Brian Tracy",
-      "principle": "Fitness is built, not born"
+      "principle": "Fitness is built, not born",
+      "answers": {
+        "4": "mostly — fitness is built through work over time",
+        "5": "definitely — there are no genetic shortcuts to real fitness",
+        "2": "possibly — but genetics plays a bigger role",
+        "3": "partly — effort helps, but some have it easier",
+        "1": "not necessarily — some people are just naturally fit"
+      }
     },
     {
       "id": "H2c",
-      "text": "I recognize that 'use it or lose it' is a law of the body — physical capability declines without maintenance.",
+      "text": "'Use it or lose it' as a law of the body is ...",
       "voice": "Jordan Peterson",
-      "principle": "Physical capability requires ongoing investment"
+      "principle": "Physical capability requires ongoing investment",
+      "answers": {
+        "4": "generally true — capability requires maintenance",
+        "5": "absolute law — the body adapts to what you demand of it",
+        "2": "possibly true — but bodies are resilient",
+        "3": "sometimes true — some abilities fade quickly, others persist",
+        "1": "overstated — capability doesn't decline that fast"
+      }
     },
     {
       "id": "H2d",
-      "text": "I understand that expecting physical improvement without physical effort is asking for magic, not reasonable results.",
+      "text": "Expecting physical improvement without physical effort is ...",
       "voice": "Brian Tracy",
-      "principle": "Physical results require physical inputs"
+      "principle": "Physical results require physical inputs",
+      "answers": {
+        "4": "generally unrealistic — improvement requires work",
+        "5": "asking for magic — physical results require physical investment",
+        "2": "hopeful — maybe something will shift",
+        "3": "optimistic — some improvement happens without effort",
+        "1": "not unreasonable — some people improve naturally"
+      }
     },
     {
       "id": "H2e",
-      "text": "I can trace my current strength, endurance, and mobility back to my exercise and movement patterns.",
+      "text": "I can trace my current strength, endurance, and mobility back to my patterns ...",
       "voice": "Chase Hughes",
-      "principle": "Physical state is traceable to physical practices"
+      "principle": "Physical state is traceable to physical practices",
+      "answers": {
+        "4": "mostly — I can see how my patterns shaped my capability",
+        "5": "clearly — my body is the accumulated result of my movement choices",
+        "2": "vaguely — maybe there's some connection",
+        "3": "partially — some of it traces back, some doesn't",
+        "1": "not really — my physical state feels random"
+      }
     }
   ]
 }

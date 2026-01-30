@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I2a",
-      "text": "I understand that most of my health outcomes are influenced by my accumulated choices, not just genetics or luck.",
+      "text": "Most of my health outcomes are influenced by my accumulated choices ...",
       "voice": "Core Philosophy",
-      "principle": "Health results from accumulated stewardship"
+      "principle": "Health results from accumulated stewardship",
+      "answers": {
+        "4": "mostly — my choices significantly shape my health",
+        "5": "largely — I am the primary author of my health outcomes",
+        "2": "possibly — but so much is beyond my control",
+        "3": "partially — choices matter, but so do factors I can't influence",
+        "1": "not really — health is mostly genetics and luck"
+      }
     },
     {
       "id": "I2b",
-      "text": "I can see that chronic health issues often have lifestyle factors that contributed to them, even if genetics played a role.",
+      "text": "Chronic health issues often have lifestyle factors that contributed ...",
       "voice": "Jordan Peterson",
-      "principle": "Lifestyle choices affect health trajectories"
+      "principle": "Lifestyle choices affect health trajectories",
+      "answers": {
+        "4": "usually — lifestyle choices contribute to most chronic conditions",
+        "5": "almost always — even with genetic factors, lifestyle accelerates or prevents",
+        "2": "possibly — but the connection is unclear",
+        "3": "sometimes — some issues have lifestyle roots, others don't",
+        "1": "not necessarily — chronic issues just happen"
+      }
     },
     {
       "id": "I2c",
-      "text": "I recognize that preventive care and maintenance produce different health outcomes than reactive crisis management.",
+      "text": "Preventive care vs. reactive crisis management produces different outcomes ...",
       "voice": "Brian Tracy",
-      "principle": "Maintenance prevents breakdown"
+      "principle": "Maintenance prevents breakdown",
+      "answers": {
+        "4": "clearly — maintenance produces different long-term results",
+        "5": "dramatically — the approach shapes everything about health trajectory",
+        "2": "possibly — but crises are unpredictable anyway",
+        "3": "somewhat — prevention helps, but some crises can't be avoided",
+        "1": "not significantly — you deal with what comes regardless"
+      }
     },
     {
       "id": "I2d",
-      "text": "I understand that my body, soul, and spirit are connected — neglect in one area affects the others.",
+      "text": "My body, soul, and spirit are connected — neglect in one affects the others ...",
       "voice": "Core Philosophy",
-      "principle": "Holistic cause-effect across domains"
+      "principle": "Holistic cause-effect across domains",
+      "answers": {
+        "4": "clearly — neglect in one area shows up in others",
+        "5": "deeply — I am one integrated being; everything connects",
+        "2": "possibly — but I don't see clear connections",
+        "3": "somewhat — some spillover happens, but they're mostly independent",
+        "1": "not really — they're separate domains"
+      }
     },
     {
       "id": "I2e",
-      "text": "I can see that people who are healthy in their 60s, 70s, and beyond usually made different choices than those who aren't.",
+      "text": "People who are healthy later in life usually made different choices than those who aren't ...",
       "voice": "Brian Tracy",
-      "principle": "Long-term health reflects long-term choices"
+      "principle": "Long-term health reflects long-term choices",
+      "answers": {
+        "4": "usually — long-term health reflects long-term patterns",
+        "5": "consistently — decades of choices compound into decades of outcomes",
+        "2": "possibly — but genetics dominates",
+        "3": "partly — choices matter, but so does fortune",
+        "1": "not necessarily — health in old age is mostly luck"
+      }
     }
   ]
 }

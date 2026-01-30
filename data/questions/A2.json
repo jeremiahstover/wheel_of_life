@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "A2a",
-      "text": "I understand that the quality of my relationship with God is directly connected to the time and attention I invest in it.",
+      "text": "The quality of my relationship with God is connected to the time and attention I invest ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual inputs produce spiritual outputs"
+      "principle": "Spiritual inputs produce spiritual outputs",
+      "answers": {
+        "4": "usually — investment generally produces connection",
+        "5": "directly — time and attention reliably deepen relationship",
+        "2": "possibly — but I don't see a clear pattern",
+        "3": "somewhat — sometimes effort helps, sometimes it doesn't",
+        "1": "not really — closeness to God seems random"
+      }
     },
     {
       "id": "A2b",
-      "text": "I recognize that spiritual dryness usually has identifiable causes — neglected practices, unaddressed sin, or competing priorities.",
+      "text": "Spiritual dryness usually has identifiable causes ...",
       "voice": "Jordan Peterson",
-      "principle": "Current state results from prior causes"
+      "principle": "Current state results from prior causes",
+      "answers": {
+        "4": "usually — I can typically trace dryness to something specific",
+        "5": "almost always — neglected practices, unaddressed sin, or competing priorities",
+        "2": "possibly — but I can't identify them",
+        "3": "sometimes — some dry seasons have clear causes, others don't",
+        "1": "not really — it just comes and goes"
+      }
     },
     {
       "id": "A2c",
-      "text": "I can see the connection between seasons of consistent prayer/Scripture and seasons of spiritual clarity and peace.",
+      "text": "The connection between consistent prayer/Scripture and spiritual clarity is ...",
       "voice": "Core Philosophy",
-      "principle": "Sowing spiritual disciplines reaps spiritual fruit"
+      "principle": "Sowing spiritual disciplines reaps spiritual fruit",
+      "answers": {
+        "4": "generally clear — consistency usually produces clarity",
+        "5": "unmistakable — spiritual input directly produces spiritual output",
+        "2": "vague — maybe there's something there",
+        "3": "partial — sometimes they connect, sometimes not",
+        "1": "nonexistent — I don't see a pattern"
+      }
     },
     {
       "id": "A2d",
-      "text": "I understand that expecting spiritual growth without spiritual investment is like expecting a harvest without planting.",
+      "text": "Expecting spiritual growth without spiritual investment is ...",
       "voice": "Brian Tracy",
-      "principle": "The law of sowing and reaping applies to spiritual life"
+      "principle": "The law of sowing and reaping applies to spiritual life",
+      "answers": {
+        "4": "generally unrealistic — growth usually requires investment",
+        "5": "like expecting harvest without planting — cause and effect applies",
+        "2": "somewhat naive — but effort isn't everything",
+        "3": "mixed — some growth requires effort, some is given",
+        "1": "reasonable — growth is God's job, not mine"
+      }
     },
     {
       "id": "A2e",
-      "text": "I can trace my current spiritual state back to specific choices, habits, and investments I've made (or failed to make).",
+      "text": "I can trace my current spiritual state back to specific choices and habits ...",
       "voice": "Chase Hughes",
-      "principle": "Effects have traceable causes"
+      "principle": "Effects have traceable causes",
+      "answers": {
+        "4": "mostly — I can see most of the causal chain",
+        "5": "clearly — my choices directly shaped where I am spiritually",
+        "2": "vaguely — maybe there's some connection",
+        "3": "partially — some of it traces back, some doesn't",
+        "1": "not at all — my spiritual state feels random"
+      }
     }
   ]
 }
