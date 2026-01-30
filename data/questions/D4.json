@@ -14,67 +14,67 @@
   "questions": [
     {
       "id": "D4a",
-      "text": "I have a consistent practice of reading/learning (books, courses, study) that I maintain even when busy.",
+      "text": "My learning is ...",
       "voice": "Brian Tracy",
       "principle": "Leaders are readers; continuous learning",
       "answers": {
-        "1": "I rarely read or learn intentionally — information comes passively if at all",
-        "2": "I buy books and sign up for courses but rarely finish them",
-        "3": "I learn in bursts when interested, but busyness easily disrupts my habits",
-        "4": "I maintain a learning practice most of the time, occasionally dropping it when overwhelmed",
-        "5": "Learning is a non-negotiable habit — I have protected time and I use it"
+        "4": "mostly focused on what matters, though I get distracted sometimes",
+        "5": "intentional — I learn what I need for what I'm building",
+        "2": "scattered — I follow whatever interests me in the moment",
+        "3": "partly focused — some is useful, some is just curiosity",
+        "1": "passive — I absorb whatever comes my way"
       }
     },
     {
       "id": "D4b",
-      "text": "I engage in deep thinking (reflection, journaling, analysis) rather than only consuming content passively.",
+      "text": "Setting aside time to actually think is ...",
       "voice": "Jordan Peterson",
       "principle": "Think things through carefully",
       "answers": {
-        "1": "I consume content but rarely process it — thinking deeply feels like a luxury I don't have",
-        "2": "I know I should reflect more but I prefer distraction to the effort of thinking",
-        "3": "I do some reflection but often skim the surface or get distracted midway",
-        "4": "I regularly engage in deep thinking, though sometimes I take shortcuts",
-        "5": "Deep thinking is built into my week — I don't just consume, I process and apply"
+        "4": "regular, though I skip it when busy",
+        "5": "protected — I don't just consume, I process",
+        "2": "something I intend but rarely make time for",
+        "3": "inconsistent — sometimes I do, often I don't",
+        "1": "not something I do — I just consume"
       }
     },
     {
       "id": "D4c",
-      "text": "I protect focused thinking time from interruptions and distractions (phone, notifications, multitasking).",
+      "text": "When I need to think deeply, distractions are ...",
       "voice": "Brian Tracy",
       "principle": "Single-handling; focus blocks",
       "answers": {
-        "1": "I'm constantly interrupted and I've stopped trying to control it",
-        "2": "I try to focus but always keep notifications on 'just in case'",
-        "3": "I protect focus time sometimes, but often let distractions creep in",
-        "4": "I usually protect focus time well, with occasional breaches",
-        "5": "Deep work time is sacred — phone goes away, notifications are off, door is closed"
+        "4": "usually blocked, with occasional breaches",
+        "5": "eliminated — phone goes away, notifications off, door closed",
+        "2": "always available — I keep notifications on 'just in case'",
+        "3": "sometimes blocked, but they often creep in",
+        "1": "constant — I've stopped trying to control them"
       }
     },
     {
       "id": "D4d",
-      "text": "When I encounter ideas that challenge my thinking, I engage with them honestly rather than dismissing them.",
+      "text": "When I encounter ideas that challenge my thinking, I ...",
       "voice": "Jordan Peterson",
       "principle": "Seek truth even when uncomfortable",
       "answers": {
-        "1": "I avoid ideas that challenge me — it's more comfortable to stay in my bubble",
-        "2": "I encounter challenging ideas but quickly find reasons to dismiss them",
-        "3": "I engage sometimes, but often only with ideas that don't threaten my core beliefs",
-        "4": "I usually engage honestly with challenging ideas, though some topics are harder",
-        "5": "I actively seek ideas that challenge me — being wrong is how I learn"
+        "4": "usually engage, though I avoid some topics",
+        "5": "always engage — I don't let discomfort stop me",
+        "2": "rarely make myself engage",
+        "3": "sometimes engage, sometimes avoid",
+        "1": "avoid them"
       }
     },
     {
       "id": "D4e",
-      "text": "I apply what I learn (wisdom) rather than just accumulating knowledge I never use.",
+      "text": "When I learn something new, I ...",
       "voice": "Brian Tracy",
       "principle": "Implementation vs information",
       "answers": {
-        "1": "I collect information without applying it — knowing feels like doing",
-        "2": "I intend to apply what I learn but rarely follow through",
-        "3": "I apply some things, but much of what I learn never makes it into practice",
-        "4": "I usually try to apply one thing from everything I learn",
-        "5": "Implementation is the point — if I'm not going to apply it, why learn it?"
+        "4": "apply it, though not always right away",
+        "5": "apply it before I move on",
+        "2": "think about applying it",
+        "3": "find something useful to take away (though I usually forget it quickly)",
+        "1": "move on to the next thing"
       }
     }
   ]
