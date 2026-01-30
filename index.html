@@ -484,6 +484,11 @@
         .dimension-group li {
             padding: 2px 0;
         }
+        .dimension-group .function {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
         
         .hidden { display: none !important; }
         
@@ -523,35 +528,37 @@
                         <line x1="150" y1="150" x2="105" y2="17"/>
                     </g>
                     
+                    <!-- Spirit arc (purple) -->
                     <path d="M 150 10 A 140 140 0 0 1 254 60" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 254 60 A 140 140 0 0 1 286 150" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 105 17 A 140 140 0 0 1 150 10" fill="none" stroke="#805ad5" stroke-width="8" stroke-linecap="round"/>
                     
+                    <!-- Soul arc (blue) -->
                     <path d="M 286 150 A 140 140 0 0 1 254 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 254 240 A 140 140 0 0 1 150 290" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 150 290 A 140 140 0 0 1 46 240" fill="none" stroke="#3182ce" stroke-width="8" stroke-linecap="round"/>
                     
+                    <!-- Body arc (green) -->
                     <path d="M 46 240 A 140 140 0 0 1 14 150" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 14 150 A 140 140 0 0 1 46 60" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     <path d="M 46 60 A 140 140 0 0 1 105 17" fill="none" stroke="#38a169" stroke-width="8" stroke-linecap="round"/>
                     
-                    <text x="150" y="28" text-anchor="middle" class="wheel-label" fill="#805ad5">Connection</text>
-                    <text x="150" y="38" text-anchor="middle" class="wheel-label-small" fill="#805ad5">to God</text>
+                    <!-- Spirit labels -->
+                    <text x="150" y="32" text-anchor="middle" class="wheel-label" fill="#805ad5">Communion</text>
                     <text x="248" y="55" text-anchor="middle" class="wheel-label" fill="#805ad5">Conscience</text>
-                    <text x="275" y="135" text-anchor="start" class="wheel-label" fill="#805ad5">Purpose</text>
-                    <text x="275" y="145" text-anchor="start" class="wheel-label-small" fill="#805ad5">/Calling</text>
+                    <text x="275" y="140" text-anchor="start" class="wheel-label" fill="#805ad5">Holiness</text>
                     
+                    <!-- Soul labels -->
                     <text x="270" y="195" text-anchor="start" class="wheel-label" fill="#3182ce">Mind</text>
                     <text x="230" y="255" text-anchor="middle" class="wheel-label" fill="#3182ce">Will</text>
                     <text x="150" y="285" text-anchor="middle" class="wheel-label" fill="#3182ce">Emotions</text>
                     
-                    <text x="55" y="255" text-anchor="middle" class="wheel-label" fill="#38a169">Fuel &amp;</text>
-                    <text x="55" y="265" text-anchor="middle" class="wheel-label-small" fill="#38a169">Recovery</text>
-                    <text x="25" y="165" text-anchor="start" class="wheel-label" fill="#38a169">Capacity</text>
-                    <text x="25" y="175" text-anchor="start" class="wheel-label-small" fill="#38a169">&amp; Function</text>
-                    <text x="60" y="50" text-anchor="middle" class="wheel-label" fill="#38a169">Health &amp;</text>
-                    <text x="60" y="60" text-anchor="middle" class="wheel-label-small" fill="#38a169">Wholeness</text>
+                    <!-- Body labels -->
+                    <text x="55" y="260" text-anchor="middle" class="wheel-label" fill="#38a169">Sustenance</text>
+                    <text x="25" y="165" text-anchor="start" class="wheel-label" fill="#38a169">Capability</text>
+                    <text x="60" y="55" text-anchor="middle" class="wheel-label" fill="#38a169">Wholeness</text>
                     
+                    <!-- Center label -->
                     <text x="150" y="145" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3748">DISCIPLINE</text>
                     <text x="150" y="160" text-anchor="middle" font-size="8" fill="#718096">Layer 4</text>
                 </svg>
@@ -565,25 +572,25 @@
                 <div class="dimension-group spirit">
                     <h4>Spirit</h4>
                     <ul>
-                        <li>Connection to God</li>
-                        <li>Conscience</li>
-                        <li>Purpose/Calling</li>
+                        <li>Communion <span class="function">(receives)</span></li>
+                        <li>Conscience <span class="function">(executes)</span></li>
+                        <li>Holiness <span class="function">(state)</span></li>
                     </ul>
                 </div>
                 <div class="dimension-group soul">
                     <h4>Soul</h4>
                     <ul>
-                        <li>Mind</li>
-                        <li>Will</li>
-                        <li>Emotions</li>
+                        <li>Mind <span class="function">(receives)</span></li>
+                        <li>Will <span class="function">(executes)</span></li>
+                        <li>Emotions <span class="function">(state)</span></li>
                     </ul>
                 </div>
                 <div class="dimension-group body">
                     <h4>Body</h4>
                     <ul>
-                        <li>Fuel &amp; Recovery</li>
-                        <li>Capacity &amp; Function</li>
-                        <li>Health &amp; Wholeness</li>
+                        <li>Sustenance <span class="function">(receives)</span></li>
+                        <li>Capability <span class="function">(executes)</span></li>
+                        <li>Wholeness <span class="function">(state)</span></li>
                     </ul>
                 </div>
             </div>
@@ -621,7 +628,7 @@
             </div>
             
             <span class="category-badge" id="category-badge">Spirit</span>
-            <div class="dimension-name" id="dimension-name">Connection to God</div>
+            <div class="dimension-name" id="dimension-name">Communion</div>
             <div class="question-text" id="question-text"></div>
             <div class="principle" id="principle"></div>
             
@@ -1100,9 +1107,9 @@
             <p>Your <span class="strongest">${strongest}</span> disciplines are strongest (${catScores[strongest].toFixed(1)}/10), 
             while your <span class="weakest">${weakest}</span> disciplines need the most attention (${catScores[weakest].toFixed(1)}/10).</p>
             <p style="margin-top: 8px; font-size: 0.9rem; color: var(--text-muted);">
-                ${weakest === 'Spirit' ? 'The spiritual disciplines anchor everything else. Without connection to God, purpose, and conscience, the other areas lack their foundation.' : ''}
+                ${weakest === 'Spirit' ? 'The spiritual disciplines anchor everything else. Without communion with God, conscience, and holiness, the other areas lack their foundation.' : ''}
                 ${weakest === 'Soul' ? 'The soul disciplines (mind, will, emotions) are the bridge between spirit and body. Strengthening these enables better follow-through in all areas.' : ''}
-                ${weakest === 'Body' ? 'The body disciplines provide the physical foundation. Fuel, capacity, and health directly impact your ability to sustain disciplines in other areas.' : ''}
+                ${weakest === 'Body' ? 'The body disciplines provide the physical foundation. Sustenance, capability, and wholeness directly impact your ability to sustain disciplines in other areas.' : ''}
             </p>
         `;
         
