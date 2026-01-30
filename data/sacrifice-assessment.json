@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Sacrifice Layer",
+    "version": "1.0",
+    "layer_focus": "Sacrifice (Layer 8 of 8)",
+    "definition": "Using what has been given to you for the purpose for which it was given — to benefit others, freely and without expectation of return. Costs you everything with a GUARANTEE of no return (to you). The return goes to others.",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Sacrifice is the culmination of all previous layers. Resources (Layer 6) gives you something to sacrifice. Fellowship (Layer 7) gives you relationships in which sacrifice makes sense. Without the foundation of Layers 1-7, sacrifice becomes either impossible (nothing to give) or unhealthy (giving from deficit).",
+    "key_distinctives": {
+      "sacrifice_vs_fellowship": "Fellowship is mutual — both parties invest and receive. Sacrifice is unilateral — you give without expectation of return.",
+      "sacrifice_vs_transaction": "Transactions expect reciprocity. Sacrifice guarantees none. You give knowing you won't get it back.",
+      "sacrifice_vs_enabling": "True sacrifice helps the recipient grow. Enabling sacrifice does harm by removing consequences or preventing growth.",
+      "sacrifice_vs_self_destruction": "We are commanded to give our second cloak, not our first. Sacrifice from surplus, not from foundation."
+    },
+    "model_for_sacrifice": "Christ (Philippians 2:5-8) — emptied himself, took the form of a servant, became obedient unto death."
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "Hoarding — keeping everything for self; no sacrificial giving" },
+      "3-4": { "label": "Below Baseline", "description": "Occasional giving but primarily self-focused" },
+      "5-6": { "label": "Maintaining", "description": "Some sacrifice but calculated or with strings attached" },
+      "7-8": { "label": "Target Zone", "description": "Genuine sacrificial living — giving freely without expectation" },
+      "9-10": { "label": "Exceptional", "description": "Emptied out for others — 'die broke' trajectory across all resources" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Pouring out your spiritual resources for others — intercession, teaching, presence — without expectation of return",
+      "scripture_anchor": {
+        "text": "I will most gladly spend and be spent for your souls.",
+        "reference": "2 Corinthians 12:15"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I intercede for others at cost to myself — time, energy, emotional investment — without expecting them to know or reciprocate.",
+          "voice": "Core Philosophy",
+          "principle": "Hidden intercession is pure sacrifice"
+        },
+        {
+          "id": "1.2",
+          "text": "I share my spiritual wisdom and insights freely, even with people who may never thank me or follow through.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual teaching given freely"
+        },
+        {
+          "id": "1.3",
+          "text": "I invest spiritual time in people who cannot repay me — the poor, the difficult, the ungrateful.",
+          "voice": "Core Philosophy",
+          "principle": "Sacrifice targets those who cannot reciprocate"
+        },
+        {
+          "id": "1.4",
+          "text": "I pour out spiritual energy for others' benefit even when my own spiritual tank is not overflowing.",
+          "voice": "Cloud & Townsend",
+          "principle": "Sacrifice sometimes costs from limited reserves"
+        },
+        {
+          "id": "1.5",
+          "text": "I have given significant spiritual investment to people who later rejected, betrayed, or abandoned me — and I would do it again.",
+          "voice": "Core Philosophy",
+          "principle": "True sacrifice continues despite poor returns"
+        }
+      ],
+      "remediation": {
+        "advice": "Spiritual sacrifice means giving your spiritual resources without strings. If you only invest in people who reciprocate, appreciate, or succeed, you're trading, not sacrificing. Start with secret intercession — pray costly prayers for people who will never know.",
+        "scripture": {
+          "text": "Freely you have received; freely give.",
+          "reference": "Matthew 10:8"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Spending your moral capital for others — advocating for the unpopular, defending the defenseless, risking reputation for righteousness",
+      "scripture_anchor": {
+        "text": "Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.",
+        "reference": "Hebrews 13:3"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "I use my credibility and reputation to advocate for people who have none — spending my moral capital for their benefit.",
+          "voice": "Jordan Peterson",
+          "principle": "Reputation can be spent for others"
+        },
+        {
+          "id": "2.2",
+          "text": "I defend unpopular positions or unpopular people when I believe they're right, even at cost to my standing.",
+          "voice": "Jordan Peterson",
+          "principle": "Moral courage costs"
+        },
+        {
+          "id": "2.3",
+          "text": "I speak uncomfortable truth to people who need to hear it, even when it would be easier to stay silent and popular.",
+          "voice": "Cloud & Townsend",
+          "principle": "Truth-telling is sacrificial"
+        },
+        {
+          "id": "2.4",
+          "text": "I have taken moral stands that cost me relationships, opportunities, or comfort — and I don't regret them.",
+          "voice": "Jordan Peterson",
+          "principle": "Integrity sometimes requires sacrifice"
+        },
+        {
+          "id": "2.5",
+          "text": "I advocate for the voiceless and marginalized even when there's nothing in it for me — no recognition, no reciprocity.",
+          "voice": "Core Philosophy",
+          "principle": "Advocacy for the powerless is pure sacrifice"
+        }
+      ],
+      "remediation": {
+        "advice": "Moral capital can be hoarded or spent. Hoarding means protecting your reputation, avoiding controversy, staying safe. Spending means using the credibility you've built to advocate for truth, defend the weak, and challenge injustice — even at cost to yourself.",
+        "scripture": {
+          "text": "Open your mouth for the mute, for the rights of all who are destitute.",
+          "reference": "Proverbs 31:8"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Entering into others' spiritual battles at cost to yourself — bearing burdens that aren't yours, entering darkness to pull others out",
+      "scripture_anchor": {
+        "text": "Bear one another's burdens, and so fulfill the law of Christ.",
+        "reference": "Galatians 6:2"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I enter into others' spiritual battles — their temptations, their pain, their darkness — to help pull them out, even when it costs me peace.",
+          "voice": "Core Philosophy",
+          "principle": "Entering others' darkness is costly"
+        },
+        {
+          "id": "3.2",
+          "text": "I bear spiritual burdens that aren't mine — I take on weight for others because they can't carry it alone.",
+          "voice": "Cloud & Townsend",
+          "principle": "Burden-bearing is sacrificial love"
+        },
+        {
+          "id": "3.3",
+          "text": "I have walked with people through their worst seasons — not just encouraged from a distance, but entered into their suffering.",
+          "voice": "Core Philosophy",
+          "principle": "Presence in suffering costs"
+        },
+        {
+          "id": "3.4",
+          "text": "I make myself available for spiritual emergencies — interrupting my plans to respond to others' crises.",
+          "voice": "Core Philosophy",
+          "principle": "Availability is costly"
+        },
+        {
+          "id": "3.5",
+          "text": "I have helped restore people who fell into serious sin — not just from a distance, but at relational risk to myself.",
+          "voice": "Core Philosophy",
+          "principle": "Restoration involves risk and cost"
+        }
+      ],
+      "remediation": {
+        "advice": "Holiness sacrifice means you're willing to get your hands dirty — to enter into messy situations, difficult people, spiritual darkness — to help pull others out. This costs peace, time, emotional energy, sometimes reputation. If you stay clean and comfortable, you're hoarding.",
+        "scripture": {
+          "text": "Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+          "reference": "Galatians 6:1"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Giving away your intellectual resources — teaching, mentoring, creating content that benefits others without expecting compensation",
+      "scripture_anchor": {
+        "text": "And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.",
+        "reference": "2 Timothy 2:2"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I freely share knowledge and expertise that I could charge for — I teach, mentor, and help without expecting payment.",
+          "voice": "Brian Tracy",
+          "principle": "Knowledge freely given"
+        },
+        {
+          "id": "4.2",
+          "text": "I create content, resources, or materials that benefit others without requiring anything in return.",
+          "voice": "Core Philosophy",
+          "principle": "Intellectual generosity"
+        },
+        {
+          "id": "4.3",
+          "text": "I invest serious intellectual effort in helping people solve their problems — not just quick advice, but real engagement.",
+          "voice": "Core Philosophy",
+          "principle": "Deep help costs time and thought"
+        },
+        {
+          "id": "4.4",
+          "text": "I teach and train others even though they may eventually surpass me or compete with me — I'm not threatened by their growth.",
+          "voice": "Brian Tracy",
+          "principle": "Teaching potential competitors is generous"
+        },
+        {
+          "id": "4.5",
+          "text": "I have given significant intellectual help to people who never thanked me, followed through, or succeeded — and I don't regret it.",
+          "voice": "Core Philosophy",
+          "principle": "True giving doesn't require results"
+        }
+      ],
+      "remediation": {
+        "advice": "Intellectual sacrifice means giving away what you know — not hoarding knowledge for competitive advantage or demanding payment for every insight. Teach freely. Mentor generously. Create resources that help others even if they never pay or thank you.",
+        "scripture": {
+          "text": "Whoever brings blessing will be enriched, and one who waters will himself be watered.",
+          "reference": "Proverbs 11:25"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Giving your time, energy, and execution capacity for others' benefit — doing for others what you could be doing for yourself",
+      "scripture_anchor": {
+        "text": "Let each of you look not only to his own interests, but also to the interests of others.",
+        "reference": "Philippians 2:4"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I regularly give significant time to serve others — not just leftover time, but prime time that costs me something.",
+          "voice": "Core Philosophy",
+          "principle": "Time sacrifice is real sacrifice"
+        },
+        {
+          "id": "5.2",
+          "text": "I use my execution skill and productivity to help others accomplish their goals, not just my own.",
+          "voice": "Brian Tracy",
+          "principle": "Execution capacity can be given"
+        },
+        {
+          "id": "5.3",
+          "text": "I help people with practical tasks — moving, building, fixing, organizing — even when I have plenty of my own work to do.",
+          "voice": "Core Philosophy",
+          "principle": "Practical help demonstrates love"
+        },
+        {
+          "id": "5.4",
+          "text": "I show up for others' important events and moments even when it's inconvenient — weddings, funerals, crises, celebrations.",
+          "voice": "Core Philosophy",
+          "principle": "Presence requires time sacrifice"
+        },
+        {
+          "id": "5.5",
+          "text": "I give away my margin — the extra capacity I've built — rather than hoarding it for more personal productivity.",
+          "voice": "Core Philosophy",
+          "principle": "Margin is for giving, not hoarding"
+        }
+      ],
+      "remediation": {
+        "advice": "Time is the one resource you can't make more of. Giving time is giving life itself. If you hoard every hour for your own advancement, you're not living sacrificially. Build margin (Layer 6) precisely so you can give it away (Layer 8).",
+        "scripture": {
+          "text": "Greater love has no one than this, that someone lay down his life for his friends.",
+          "reference": "John 15:13"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Giving your emotional presence and capacity to others — bearing their emotions, being present in their pain, at cost to your own peace",
+      "scripture_anchor": {
+        "text": "Rejoice with those who rejoice, weep with those who weep.",
+        "reference": "Romans 12:15"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I enter into others' emotional pain — not just offering advice from a distance, but feeling with them in their suffering.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional presence costs"
+        },
+        {
+          "id": "6.2",
+          "text": "I give my emotional stability to help regulate others — being a calming presence even when it drains me.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional stability can be spent"
+        },
+        {
+          "id": "6.3",
+          "text": "I absorb emotional difficulty from others so they don't have to carry it alone — I take on weight that isn't mine.",
+          "voice": "Core Philosophy",
+          "principle": "Emotional burden-bearing"
+        },
+        {
+          "id": "6.4",
+          "text": "I make myself emotionally available for others' crises even when it's inconvenient or exhausting.",
+          "voice": "Core Philosophy",
+          "principle": "Emotional availability is sacrificial"
+        },
+        {
+          "id": "6.5",
+          "text": "I have given significant emotional investment to people who later hurt me or left — and I don't regret loving them.",
+          "voice": "Core Philosophy",
+          "principle": "Love risks loss"
+        }
+      ],
+      "remediation": {
+        "advice": "Emotional sacrifice means being willing to feel with others — to enter their joy and their pain, not just observe it. This costs peace, stability, and energy. If you protect yourself from all emotional investment, you're hoarding. Build reserves (Layer 6) so you can give them away.",
+        "scripture": {
+          "text": "Bear one another's burdens, and so fulfill the law of Christ.",
+          "reference": "Galatians 6:2"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Giving your physical resources and provision to others — food, shelter, financial help — without expecting return",
+      "scripture_anchor": {
+        "text": "If anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him?",
+        "reference": "1 John 3:17"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I give financial resources to people in need without expecting repayment or reciprocity.",
+          "voice": "Core Philosophy",
+          "principle": "Financial giving without strings"
+        },
+        {
+          "id": "7.2",
+          "text": "I share my physical resources — home, food, possessions — freely with others who have need.",
+          "voice": "Core Philosophy",
+          "principle": "Hospitality is sacrificial"
+        },
+        {
+          "id": "7.3",
+          "text": "I give generously to causes and people even when I can't see how my giving makes a difference.",
+          "voice": "Core Philosophy",
+          "principle": "Giving without guaranteed results"
+        },
+        {
+          "id": "7.4",
+          "text": "I help meet others' physical needs even when my own resources are not abundant — I give from what I have, not just from excess.",
+          "voice": "Core Philosophy",
+          "principle": "Sacrifice from limited resources"
+        },
+        {
+          "id": "7.5",
+          "text": "I have given significant financial or material help to people who later wasted it, rejected me, or didn't change — and I would give again.",
+          "voice": "Core Philosophy",
+          "principle": "True giving doesn't require good outcomes"
+        }
+      ],
+      "remediation": {
+        "advice": "Financial and material sacrifice is the most tangible form of giving. It's also the area where hoarding is most tempting and visible. If you're not giving materially to others, examine why. Fear? Greed? Lack of trust in God's provision? Start where you are; give what you can.",
+        "scripture": {
+          "text": "Give, and it will be given to you. Good measure, pressed down, shaken together, running over, will be put into your lap.",
+          "reference": "Luke 6:38"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Using your physical strength and capacity to serve others — manual labor, physical help, bodily presence in times of need",
+      "scripture_anchor": {
+        "text": "For even the Son of Man came not to be served but to serve.",
+        "reference": "Mark 10:45"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "I use my physical strength and capacity to help others — lifting, carrying, building, moving — even when it's tiring.",
+          "voice": "Core Philosophy",
+          "principle": "Physical labor for others"
+        },
+        {
+          "id": "8.2",
+          "text": "I show up bodily for people in need — I'm physically present, not just sending texts or prayers.",
+          "voice": "Core Philosophy",
+          "principle": "Physical presence matters"
+        },
+        {
+          "id": "8.3",
+          "text": "I do menial, unglamorous physical work to serve others — cleaning, organizing, manual labor — without needing recognition.",
+          "voice": "Core Philosophy",
+          "principle": "Humble service"
+        },
+        {
+          "id": "8.4",
+          "text": "I give my physical energy to serve even when I'm tired — I push through fatigue to meet others' needs.",
+          "voice": "Core Philosophy",
+          "principle": "Serving past comfort"
+        },
+        {
+          "id": "8.5",
+          "text": "I have done physical work for others that was hard, dirty, or exhausting — and I consider it a privilege, not a burden.",
+          "voice": "Core Philosophy",
+          "principle": "Service as privilege"
+        }
+      ],
+      "remediation": {
+        "advice": "Physical service is one of the most basic forms of sacrifice — using your body to help others. It's also one of the most neglected in our comfort-focused culture. Look for opportunities to serve with your hands and your strength, not just your words or your money.",
+        "scripture": {
+          "text": "If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet.",
+          "reference": "John 13:14"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Integrated sacrifice — giving across all dimensions, holding nothing back, trajectory toward 'dying broke' in money, time, AND relationships",
+      "scripture_anchor": {
+        "text": "He who did not spare his own Son but gave him up for us all, how will he not also with him graciously give us all things?",
+        "reference": "Romans 8:32"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "My life is oriented toward giving, not accumulating — my trajectory is to pour out, not pile up.",
+          "voice": "Core Philosophy",
+          "principle": "Life orientation toward giving"
+        },
+        {
+          "id": "9.2",
+          "text": "I am working toward 'dying broke' in all three wealth tiers — giving away money, time, AND relational investment.",
+          "voice": "Core Philosophy",
+          "principle": "Die broke trajectory"
+        },
+        {
+          "id": "9.3",
+          "text": "I sacrifice across all dimensions — spirit, soul, and body — not just in areas that are easy for me.",
+          "voice": "Core Philosophy",
+          "principle": "Integrated sacrifice"
+        },
+        {
+          "id": "9.4",
+          "text": "I have given at levels that genuinely cost me — not just comfortable giving but sacrifice that hurt.",
+          "voice": "Core Philosophy",
+          "principle": "Costly sacrifice"
+        },
+        {
+          "id": "9.5",
+          "text": "I see my accumulated resources (Layers 1-6) as held in trust for others — I'm a steward, not an owner.",
+          "voice": "Core Philosophy",
+          "principle": "Stewardship, not ownership"
+        }
+      ],
+      "remediation": {
+        "advice": "Integrated sacrifice means your whole life is oriented toward giving, not just isolated acts of generosity. The goal is to end with nothing held back — to have poured out money, time, and relational investment for others. If you're accumulating in any dimension without a plan to give it away, examine why.",
+        "scripture": {
+          "text": "For whoever would save his life will lose it, but whoever loses his life for my sake will find it.",
+          "reference": "Matthew 16:25"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 indicates hoarding in that area. You're accumulating without giving, holding resources that could be flowing to others. This may feel safe, but it's the path of the rich fool who built bigger barns. Start giving somewhere — anywhere.",
+      "maintenance": "Dimensions scoring 5-6 show some sacrifice but calculated or conditional. You give, but with strings attached, or only when it's convenient, or only to people who might reciprocate. Move toward genuine sacrifice — giving without expectation of return.",
+      "strength": "Dimensions scoring 7+ show genuine sacrificial living. You're giving freely, without strings, at real cost to yourself. This is the culmination of the entire 8-layer model — resources built through discipline and skill, now poured out for others.",
+      "integration": "Sacrifice should span all dimensions. Financial generosity without time or emotional investment is incomplete. Sacrifice across spirit, soul, and body — hold nothing back."
+    },
+    "next_steps": [
+      "Identify areas of hoarding — where are you accumulating without giving?",
+      "For each area, ask: What's preventing me from giving here? Fear? Greed? Lack of trust in God?",
+      "Start with one costly sacrifice — not comfortable giving, but something that hurts a little",
+      "Remember: sacrifice to the undeserving is grace, not foolishness",
+      "Check your trajectory: Are you accumulating or pouring out?",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_fellowship": "Fellowship is mutual — both parties invest. Sacrifice is unilateral — you give without expectation. Both are needed: fellowship builds the relationships in which sacrifice makes sense; sacrifice goes beyond fellowship to pour out even when nothing comes back.",
+    "the_paradox": "Sacrifice costs you everything with a guarantee of no return (to you). And yet, paradoxically, those who give most freely often find themselves most full. 'Whoever loses his life will find it.' This is not a technique for getting — it's the fruit of understanding that all you have was given to you for exactly this purpose: to be given away.",
+    "warning_against_unhealthy_sacrifice": {
+      "principle": "We are commanded to give our second cloak, not our first.",
+      "explanation": "Sacrifice from surplus, not from foundation. If you haven't built resources (Layer 6), you have nothing to give sustainably. Build first, then pour out. Depleting yourself completely isn't noble — it's self-destruction that eventually stops your ability to serve. Maintain foundation; sacrifice surplus."
+    }
+  }
+}
