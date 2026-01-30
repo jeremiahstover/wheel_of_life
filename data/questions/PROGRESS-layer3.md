@@ -1,0 +1,52 @@
+# Layer 3 (Responsibility) Progress
+
+Tracking revision of questions to sentence stem format with conversational answers.
+
+## Pattern Reference
+
+See `GUIDE-layer3.md` for the full writing guide.
+
+**Quick summary:**
+- Questions use sentence stems ("When X happens, I ...")
+- Answers flow 1→5 from external/passive to internal/owned
+- Describe behavior, not labels
+- No "correct answer" framing
+- Each answer clearly distinct from adjacent ones
+
+## Cell Status
+
+| Cell | Dimension | Status | Notes |
+|------|-----------|--------|-------|
+| A3 | Communion | ✓ Complete | 5/5 questions revised |
+| B3 | Conscience | ✓ Complete | 5/5 questions revised |
+| C3 | Holiness | ✗ Pending | |
+| D3 | Mind | ✗ Pending | |
+| E3 | Will | ✗ Pending | |
+| F3 | Emotions | ✗ Pending | |
+| G3 | Sustenance | ✗ Pending | |
+| H3 | Capability | ✗ Pending | |
+| I3 | Wholeness | ✗ Pending | |
+
+## Completed Questions
+
+### A3 (Communion at Responsibility)
+- A3a: My spiritual growth is driven by ...
+- A3b: When my spiritual life feels dry, I ...
+- A3c: When life gets full, my time with God ...
+- A3d: Who I am today is the result of ...
+- A3e: My spiritual growth depends on ...
+
+### B3 (Conscience at Responsibility)
+- B3a: When I do something wrong, I ...
+- B3b: When my actions hurt someone unintentionally, I ...
+- B3c: When confronted with a moral failure, I ...
+- B3d: My integrity is ...
+- B3e: When I'm convicted of something, I ...
+
+## Next Up
+
+**C3 (Holiness at Responsibility)** — Spirit / State
+
+---
+
+*Last updated: 2026-01-30*
