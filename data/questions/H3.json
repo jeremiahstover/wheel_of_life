@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H3a",
-      "text": "I own that my physical fitness is my responsibility — no one else can exercise for me or make me move.",
+      "text": "My physical fitness is ...",
       "voice": "Core Philosophy",
-      "principle": "Personal responsibility for fitness"
+      "principle": "Personal responsibility for fitness",
+      "answers": {
+        "4": "my responsibility, though I don't always act on it",
+        "5": "my responsibility",
+        "2": "hard to improve given my situation",
+        "3": "partly my responsibility, partly limited by what I'm working with",
+        "1": "limited by my genetics and circumstances"
+      }
     },
     {
       "id": "H3b",
-      "text": "I don't blame lack of time, resources, equipment, or motivation for my physical condition — I work with what I have.",
+      "text": "My physical condition is limited by ...",
       "voice": "Brian Tracy",
-      "principle": "No excuses; work within constraints"
+      "principle": "No excuses; work within constraints",
+      "answers": {
+        "4": "mostly my choices, though some constraints are real",
+        "5": "my choices — I work with what I have",
+        "2": "circumstances that make it hard to stay consistent",
+        "3": "real constraints, but also my choices within them",
+        "1": "lack of time, resources, and equipment"
+      }
     },
     {
       "id": "H3c",
-      "text": "I take responsibility for maintaining and developing my physical capabilities rather than letting them deteriorate by default.",
+      "text": "Developing my physical capabilities is ...",
       "voice": "Core Philosophy",
-      "principle": "Active maintenance vs passive decay"
+      "principle": "Active maintenance vs passive decay",
+      "answers": {
+        "4": "my responsibility, though I often settle for good enough",
+        "5": "my responsibility — I don't settle",
+        "2": "limited by my age, body type, or situation",
+        "3": "something I'd like, but I've mostly settled for where I am",
+        "1": "not realistic given where I'm starting from"
+      }
     },
     {
       "id": "H3d",
-      "text": "I recognize that my body's ability to function is directly affected by my choices — not genetics, age, or luck alone.",
+      "text": "My body's ability to function is mostly determined by ...",
       "voice": "Jordan Peterson",
-      "principle": "Agency over physical state"
+      "principle": "Agency over physical state",
+      "answers": {
+        "4": "my choices, though genetics and age play a role",
+        "5": "my choices",
+        "2": "factors I didn't choose and can't change much",
+        "3": "some genetics, some choices — hard to separate",
+        "1": "genetics, age, and luck"
+      }
     },
     {
       "id": "H3e",
-      "text": "I own that if I'm physically limited, it's my job to work within those limits and improve where possible.",
+      "text": "When I face physical limitations, I ...",
       "voice": "Core Philosophy",
-      "principle": "Maximize capacity within constraints"
+      "principle": "Maximize capacity within constraints",
+      "answers": {
+        "4": "work to improve, though some feel fixed",
+        "5": "work within them and push to improve where possible",
+        "2": "work around them, but they define what's possible",
+        "3": "accept some, push against others",
+        "1": "accept them as the ceiling"
+      }
     }
   ]
 }

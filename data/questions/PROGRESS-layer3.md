@@ -24,7 +24,7 @@ See `GUIDE-layer3.md` for the full writing guide.
 | E3 | Will | ✓ Complete | 5/5 questions revised |
 | F3 | Emotions | ✓ Complete | 5/5 questions revised |
 | G3 | Sustenance | ✓ Complete | 5/5 questions revised |
-| H3 | Capability | ✗ Pending | |
+| H3 | Capability | ✓ Complete | 5/5 questions revised |
 | I3 | Wholeness | ✗ Pending | |
 
 ## Completed Questions
@@ -78,9 +78,16 @@ See `GUIDE-layer3.md` for the full writing guide.
 - G3d: My physical environment — clean space, organization, toxins — is ...
 - G3e: Creating conditions for my body to recover and thrive is ...
 
+### H3 (Capability at Responsibility)
+- H3a: My physical fitness is ...
+- H3b: My physical condition is limited by ...
+- H3c: Developing my physical capabilities is ...
+- H3d: My body's ability to function is mostly determined by ...
+- H3e: When I face physical limitations, I ...
+
 ## Next Up
 
-**H3 (Capability at Responsibility)** — Body / Executes
+**I3 (Wholeness at Responsibility)** — Body / State
 
 ---
 
