@@ -16,31 +16,66 @@
       "id": "A3a",
       "text": "I recognize that my relationship with God is MY responsibility — no pastor, spouse, or program can do my spiritual work for me.",
       "voice": "Core Philosophy",
-      "principle": "Personal responsibility for spiritual life"
+      "principle": "Personal responsibility for spiritual life",
+      "answers": {
+        "4": "I mostly own my spiritual life, though I sometimes lean on others too much",
+        "5": "My walk with God is mine — I engage regardless of what others do or don't do",
+        "2": "I rely heavily on programs or people to keep me spiritually engaged",
+        "3": "I know it's my job but often wait for external structure to carry me",
+        "1": "I expect others (church, spouse, pastor) to drive my spiritual growth"
+      }
     },
     {
       "id": "A3b",
       "text": "When my spiritual life feels dry, I look at my own choices and habits first rather than blaming circumstances or others.",
       "voice": "Jordan Peterson",
-      "principle": "Take responsibility; examine yourself first"
+      "principle": "Take responsibility; examine yourself first",
+      "answers": {
+        "4": "I generally look inward first, though I occasionally rearrange externals",
+        "5": "Dryness triggers self-examination — what have I neglected or avoided?",
+        "2": "I usually adjust my circumstances — new app, new routine, new setting",
+        "3": "I sometimes examine myself, but often adjust external things first",
+        "1": "When I'm dry, I look for a new church, group, or environment to fix it"
+      }
     },
     {
       "id": "A3c",
       "text": "I own that creating time and space for God is my job — I don't wait for the 'right conditions' to appear.",
       "voice": "Brian Tracy",
-      "principle": "If it's to be, it's up to me"
+      "principle": "If it's to be, it's up to me",
+      "answers": {
+        "4": "I guard spiritual time, though urgent things occasionally displace it",
+        "5": "Time with God is non-negotiable — other things flex around it, not the reverse",
+        "2": "Other priorities regularly push out spiritual time; it only happens when convenient",
+        "3": "I protect time with God sometimes, but it often loses to other demands",
+        "1": "Almost anything bumps my time with God — it's first to go when life gets full"
+      }
     },
     {
       "id": "A3d",
-      "text": "I don't blame my upbringing, church experience, or busy schedule for the current state of my spiritual life.",
+      "text": "My upbringing, church experiences, and circumstances have created who I am today.",
       "voice": "Jordan Peterson",
-      "principle": "No blame-shifting; own your situation"
+      "principle": "No blame-shifting; own your situation",
+      "answers": {
+        "4": "The past shaped me, but my choices shape me more",
+        "5": "Whatever happened before, what I do with it now is all mine",
+        "2": "Some things from my past have set limits I can't really get past",
+        "3": "I take some responsibility, but the past needs to carry some as well",
+        "1": "My spiritual state makes sense when you consider what I've been through"
+      }
     },
     {
       "id": "A3e",
-      "text": "I recognize that spiritual growth requires my active participation — God won't force-feed me what I refuse to receive.",
+      "text": "My spiritual growth depends on ...",
       "voice": "Core Philosophy",
-      "principle": "Active participation in sanctification"
+      "principle": "Active participation in sanctification",
+      "answers": {
+        "4": "my engagement, but I sometimes get in my own way",
+        "5": "my reaching out to receive what God has already provided",
+        "2": "mostly God, though I have to be available",
+        "3": "I have to reach out to God, but He has to reach out to me",
+        "1": "God — if He wants me to grow, He'll make it happen"
+      }
     }
   ]
 }
