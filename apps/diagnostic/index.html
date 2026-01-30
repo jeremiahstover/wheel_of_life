@@ -633,7 +633,7 @@
     
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
     const THRESHOLD = 3.5;
-    const DATA_PATH = 'data/questions/';
+    const DATA_PATH = '/data/questions/';  // Absolute path from site root
     
     // Quick probe settings
     const QUICK_PROBE_COUNT = 2;      // Questions for initial probes
@@ -819,7 +819,8 @@
             updateProbeTrail();
         } catch (error) {
             console.error('Error loading cell:', error);
-            recordCellScore(layer, 3.0, false);
+            // On error, record a neutral score and move on
+            recordCellScore(layer, 3.0, isFullProbe);
             probeNextLayer();
         }
     }
