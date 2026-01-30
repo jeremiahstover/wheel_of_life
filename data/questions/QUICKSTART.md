@@ -53,17 +53,20 @@ The core patterns and workflow are documented. The nuance comes through collabor
 
 | Layer | Status |
 |-------|--------|
-| 1 - Order | Pending |
-| 2 - Causality | Pending |
-| 3 - Responsibility | ✓ Complete |
-| 4 - Discipline | ✓ Complete |
-| 5 - Skill | Pending |
-| 6 - Resources | Pending |
-| 7 - Fellowship | Pending |
-| 8 - Sacrifice | Pending |
+| 1 - Order | ✓ Draft answers |
+| 2 - Causality | ✓ Draft answers |
+| 3 - Responsibility | ✓ **Polished** (review complete) |
+| 4 - Discipline | ✓ **Polished** (review complete) |
+| 5 - Skill | ✓ Draft answers |
+| 6 - Resources | ✓ Draft answers |
+| 7 - Fellowship | ✓ Draft answers |
+| 8 - Sacrifice | ✓ Draft answers |
 
-**90/360 questions complete (25%)**
+**360/360 questions have answers (100%)**
+- 90 polished (Layers 3-4)
+- 270 draft (Layers 1-2, 5-8) — ready for review
 
 ---
 
 *Last updated: 2026-01-30*
+
