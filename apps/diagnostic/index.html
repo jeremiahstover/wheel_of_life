@@ -646,7 +646,8 @@
     // ============================================
     
     let currentDim = null;
-    let scores = {};           // { layer: score }
+    let scores = {};           // { layer: score (number) }
+    let fullProbes = new Set(); // Layers that have had full 5-question probes
     let probeTrail = [];       // [{ layer, score, status }]
     let currentCell = null;    // { dim, layer, questions, isFullProbe }
     let currentQuestionIdx = 0;
@@ -656,7 +657,7 @@
     
     // Binary search state
     let searchState = {
-        phase: 'initial',      // initial, narrowing, confirming, full
+        phase: 'initial',      // initial, narrowing, confirming
         probeQueue: [],
     };
     
@@ -694,6 +695,7 @@
     function selectDimension(dim) {
         currentDim = dim;
         scores = {};
+        fullProbes = new Set();
         probeTrail = [];
         questionsAnswered = 0;
         breakLayer = null;
@@ -717,8 +719,8 @@
         const nextLayer = determineNextProbe();
         
         if (nextLayer === null) {
-            // Done probing - do full assessment on break layer if we have one
-            if (breakLayer !== null && !scores[breakLayer]?.fullProbe) {
+            // Done with quick probes - do full assessment on break layer if we have one
+            if (breakLayer !== null && !fullProbes.has(breakLayer)) {
                 await loadCell(currentDim, breakLayer, true); // Full probe
                 return;
             }
@@ -908,16 +910,15 @@
     
     function recordCellScore(layer, score, isFullProbe) {
         scores[layer] = score;
-        scores[layer] = { value: score, fullProbe: isFullProbe };
         
-        // For compatibility, also store just the value
-        const actualScore = typeof scores[layer] === 'object' ? scores[layer].value : scores[layer];
-        scores[layer] = actualScore;
+        if (isFullProbe) {
+            fullProbes.add(layer);
+        }
         
         probeTrail.push({
             layer,
-            score: actualScore,
-            status: actualScore >= THRESHOLD ? 'strong' : 'weak',
+            score,
+            status: score >= THRESHOLD ? 'strong' : 'weak',
             mode: isFullProbe ? 'full' : 'quick'
         });
     }
@@ -1327,6 +1328,7 @@
     function restart() {
         currentDim = null;
         scores = {};
+        fullProbes = new Set();
         probeTrail = [];
         currentCell = null;
         breakLayer = null;
