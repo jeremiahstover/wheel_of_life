@@ -1,11 +1,12 @@
 {
   "meta": {
     "title": "Wheel of Life Assessment: Discipline Layer",
-    "version": "1.0",
+    "version": "2.0",
     "layer_focus": "Discipline (Layer 4 of 8)",
     "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it.",
     "total_questions": 45,
-    "questions_per_dimension": 5
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)"
   },
   "scoring": {
     "response_scale": {
@@ -31,9 +32,10 @@
   "dimensions": [
     {
       "id": 1,
-      "name": "Connection to God",
+      "name": "Communion",
       "category": "Spirit",
-      "description": "Discipline in maintaining communion with God through spiritual practices",
+      "function": "Receives",
+      "description": "Discipline in receiving from God through spiritual practices — revelation, presence, grace, calling",
       "scripture_anchor": {
         "text": "But seek first the kingdom of God and his righteousness, and all these things will be added to you.",
         "reference": "Matthew 6:33"
@@ -82,7 +84,8 @@
       "id": 2,
       "name": "Conscience",
       "category": "Spirit",
-      "description": "Discipline in acting on moral conviction and maintaining integrity",
+      "function": "Executes",
+      "description": "Discipline in acting on moral conviction — the faculty that directs spiritual behavior, educated by the Word",
       "scripture_anchor": {
         "text": "So whoever knows the right thing to do and fails to do it, for him it is sin.",
         "reference": "James 4:17"
@@ -129,50 +132,51 @@
     },
     {
       "id": 3,
-      "name": "Purpose/Calling",
+      "name": "Holiness",
       "category": "Spirit",
-      "description": "Discipline in staying aligned with your calling and resisting distractions",
+      "function": "State",
+      "description": "Discipline in maintaining spiritual purity — sanctification, abiding in Christ, lacking leaven",
       "scripture_anchor": {
-        "text": "I press on toward the goal for the prize of the upward call of God in Christ Jesus.",
-        "reference": "Philippians 3:14"
+        "text": "As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct.",
+        "reference": "1 Peter 1:14-15"
       },
       "questions": [
         {
           "id": "3.1",
-          "text": "I regularly evaluate opportunities against my calling and say no to good things that aren't my things.",
-          "voice": "Simon Sinek / Cloud & Townsend",
-          "principle": "Start with Why; Necessary Endings"
+          "text": "When the Holy Spirit convicts me of sin, I confess and repent promptly rather than rationalizing, minimizing, or delaying.",
+          "voice": "Jordan Peterson",
+          "principle": "Don't let things fester; face what you're avoiding"
         },
         {
           "id": "3.2",
-          "text": "When I feel purposeless or directionless, I take specific action to seek clarity rather than just drifting.",
-          "voice": "Jordan Peterson",
-          "principle": "Aim at something meaningful"
+          "text": "I maintain spiritual disciplines even during dry seasons when I don't feel God's presence or see spiritual fruit.",
+          "voice": "Brian Tracy",
+          "principle": "Consistency regardless of feeling; the discipline creates the result"
         },
         {
           "id": "3.3",
-          "text": "I spend time on work that aligns with my calling even when more urgent (but less important) tasks compete for attention.",
-          "voice": "Brian Tracy",
-          "principle": "Important vs Urgent; Eat the Frog"
+          "text": "I actively work to root out areas of habitual sin or compromise rather than tolerating them as 'just how I am.'",
+          "voice": "Jordan Peterson",
+          "principle": "Take responsibility; don't rationalize weakness as identity"
         },
         {
           "id": "3.4",
-          "text": "I regularly review my life direction (annually, quarterly) and make adjustments to stay on course.",
-          "voice": "Brian Tracy",
-          "principle": "Goal review; planning rhythm"
+          "text": "I intentionally seek spiritual filling and renewal (worship, solitude, prayer) rather than running on empty until I crash.",
+          "voice": "Cloud & Townsend",
+          "principle": "Boundaries around spiritual refueling; sustainable holiness"
         },
         {
           "id": "3.5",
-          "text": "I persist in my calling even during seasons when the results aren't visible or the work isn't rewarding.",
-          "voice": "Simon Sinek",
-          "principle": "The Why sustains through the hard What"
+          "text": "I maintain my commitment to holiness in private — when no one would know if I compromised.",
+          "voice": "Chase Hughes",
+          "principle": "Private behavior predicts public character; small disciplines reveal true state"
         }
       ],
       "remediation": {
-        "advice": "As Simon Sinek teaches: 'People don't buy what you do, they buy why you do it.' If you don't know your why, start there. Write one sentence answering: 'What am I made for?' Then evaluate this week's calendar against that sentence.",
+        "advice": "Holiness isn't perfection — it's direction. As Jordan Peterson teaches, you must face what you're avoiding. Identify ONE area of compromise you've been tolerating. Confess it. Make a plan to address it.",
         "scripture": {
-          "text": "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.",
-          "reference": "Ephesians 2:10"
+          "text": "He who conceals his transgressions will not prosper, but he who confesses and forsakes them will find compassion.",
+          "reference": "Proverbs 28:13"
         }
       }
     },
@@ -180,6 +184,7 @@
       "id": 4,
       "name": "Mind",
       "category": "Soul",
+      "function": "Receives",
       "description": "Discipline in learning, growing intellectually, and renewing your thinking",
       "scripture_anchor": {
         "text": "Do not be conformed to this world, but be transformed by the renewal of your mind.",
@@ -229,7 +234,8 @@
       "id": 5,
       "name": "Will",
       "category": "Soul",
-      "description": "Discipline in follow-through - the meta-discipline of executing on your commitments to yourself",
+      "function": "Executes",
+      "description": "Discipline in follow-through — the meta-discipline of executing on your commitments to yourself",
       "scripture_anchor": {
         "text": "For God gave us a spirit not of fear but of power and love and self-control.",
         "reference": "2 Timothy 1:7"
@@ -278,6 +284,7 @@
       "id": 6,
       "name": "Emotions",
       "category": "Soul",
+      "function": "State",
       "description": "Discipline in processing emotions and managing actions (not feelings themselves)",
       "scripture_anchor": {
         "text": "Be angry and do not sin; do not let the sun go down on your anger.",
@@ -325,9 +332,10 @@
     },
     {
       "id": 7,
-      "name": "Fuel & Recovery",
+      "name": "Sustenance",
       "category": "Body",
-      "description": "Discipline in nutrition, sleep, hydration, and environment quality",
+      "function": "Receives",
+      "description": "Discipline in nutrition, sleep, hydration, and environment quality — what sustains the body",
       "scripture_anchor": {
         "text": "Do you not know that your body is a temple of the Holy Spirit within you?",
         "reference": "1 Corinthians 6:19"
@@ -374,8 +382,9 @@
     },
     {
       "id": 8,
-      "name": "Capacity & Function",
+      "name": "Capability",
       "category": "Body",
+      "function": "Executes",
       "description": "Discipline in physical exercise, movement, and building what your body can do",
       "scripture_anchor": {
         "text": "For while bodily training is of some value, godliness is of value in every way.",
@@ -423,8 +432,9 @@
     },
     {
       "id": 9,
-      "name": "Health & Wholeness",
+      "name": "Wholeness",
       "category": "Body",
+      "function": "State",
       "description": "Discipline in preventive care, addressing issues, and maintaining integrated wellness",
       "scripture_anchor": {
         "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
