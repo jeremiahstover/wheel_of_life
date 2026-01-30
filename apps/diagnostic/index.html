@@ -378,9 +378,18 @@
         8: 'Sacrifice'
     };
     
+    // Standard Likert scale answers
+    const LIKERT_SCALE = {
+        1: 'Strongly Disagree',
+        2: 'Disagree',
+        3: 'Neutral / Unsure',
+        4: 'Agree',
+        5: 'Strongly Agree'
+    };
+    
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
     const THRESHOLD = 3.5;
-    const DATA_PATH = '../../data/questions/';
+    const DATA_PATH = 'data/questions/';
     
     // ============================================
     // STATE
@@ -397,8 +406,6 @@
     // Binary search state
     let searchState = {
         phase: 'initial',      // initial, narrowing, confirming
-        low: 1,
-        high: 8,
         probeQueue: [],
     };
     
@@ -442,7 +449,6 @@
         searchState = {
             phase: 'initial',
             probeQueue: [3, 6],
-            tested: {},
         };
         
         showPhase('questions');
@@ -468,8 +474,6 @@
     }
     
     function determineNextProbe() {
-        const tested = Object.keys(scores).map(Number);
-        
         if (searchState.phase === 'initial') {
             // First probe L3, then L6
             if (searchState.probeQueue.length > 0) {
@@ -500,9 +504,11 @@
                 if (!scores[4]) return 4;
                 if (!scores[5]) return 5;
             } else {
-                // l3 weak, l6 strong - anomaly, check L4, L5
+                // l3 weak, l6 strong - anomaly, check L4, L5, L2, L1
                 if (!scores[4]) return 4;
                 if (!scores[5]) return 5;
+                if (!scores[2]) return 2;
+                if (!scores[1]) return 1;
             }
             
             // Fill in any remaining gaps for confirmation
@@ -516,16 +522,13 @@
             
             // If we have a break, confirm the floor is solid
             if (breakInfo.break !== null && breakInfo.floor > 0) {
-                // Check layer below break if not tested
                 const floorLayer = breakInfo.floor;
                 if (!scores[floorLayer]) return floorLayer;
             }
             
-            // Check if we have enough to determine break
-            // We need contiguous data around the break point
-            if (breakInfo.break !== null) {
-                // Make sure we've tested the break layer
-                if (!scores[breakInfo.break]) return breakInfo.break;
+            // Make sure we've tested the break layer
+            if (breakInfo.break !== null && !scores[breakInfo.break]) {
+                return breakInfo.break;
             }
         }
         
@@ -573,14 +576,14 @@
             q.voice ? `Voice: ${q.voice}` : '';
         document.getElementById('question-text').textContent = q.text;
         
-        // Render answer buttons
+        // Render answer buttons (standard Likert scale)
         const answersEl = document.getElementById('answers');
         answersEl.innerHTML = '';
         
         for (let i = 1; i <= 5; i++) {
             const btn = document.createElement('button');
             btn.className = 'answer-btn';
-            btn.innerHTML = `<span class="score-label">${i}.</span> ${q.answers[i]}`;
+            btn.innerHTML = `<span class="score-label">${i}.</span> ${LIKERT_SCALE[i]}`;
             btn.onclick = () => selectAnswer(i);
             answersEl.appendChild(btn);
         }
@@ -652,7 +655,6 @@
         
         // Infer break from gaps if needed
         if (breakPoint === null && floor < 8) {
-            // Check if there's a weak layer above floor
             for (let layer = floor + 1; layer <= 8; layer++) {
                 if (scores[layer] !== undefined && scores[layer] < THRESHOLD) {
                     breakPoint = layer;
@@ -689,10 +691,8 @@
     }
     
     function fillMissingLayers() {
-        // For missing layers, interpolate from neighbors
         for (let layer = 1; layer <= 8; layer++) {
             if (scores[layer] === undefined) {
-                // Find nearest neighbors
                 let below = null, above = null;
                 for (let l = layer - 1; l >= 1; l--) {
                     if (scores[l] !== undefined) { below = scores[l]; break; }
@@ -704,11 +704,11 @@
                 if (below !== null && above !== null) {
                     scores[layer] = (below + above) / 2;
                 } else if (below !== null) {
-                    scores[layer] = below * 0.9; // Decay upward
+                    scores[layer] = below * 0.9;
                 } else if (above !== null) {
-                    scores[layer] = Math.min(5, above * 1.1); // Slightly better below
+                    scores[layer] = Math.min(5, above * 1.1);
                 } else {
-                    scores[layer] = 3.0; // Default
+                    scores[layer] = 3.0;
                 }
             }
         }
@@ -717,7 +717,6 @@
     function displayResults() {
         const breakInfo = findBreakPoint();
         
-        // Update title
         const titleEl = document.getElementById('result-title');
         const infoEl = document.getElementById('break-info');
         
@@ -740,12 +739,11 @@
             }
         });
         
-        // Render wheel
         renderWheel(fullData);
     }
     
     // ============================================
-    // WHEEL RENDERING (copied from heatmap)
+    // WHEEL RENDERING
     // ============================================
     
     const CATEGORY_COLORS = {
