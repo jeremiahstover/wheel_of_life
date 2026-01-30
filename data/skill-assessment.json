@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Skill Layer",
+    "version": "1.0",
+    "layer_focus": "Skill (Layer 5 of 8)",
+    "definition": "The ability to do something well; expertise. Not just doing something, but developing competence — getting better through deliberate practice and feedback.",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Skill builds on Discipline (Layer 4). If Skill is weak, check if Discipline is present — you can't develop competence without consistent practice. Skill produces Resources (Layer 6) — competence generates money, time efficiency, and relational capital."
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "No competence development; immediate attention required" },
+      "3-4": { "label": "Below Baseline", "description": "Skills underdeveloped; needs focused work" },
+      "5-6": { "label": "Maintaining", "description": "Basic competence but not growing" },
+      "7-8": { "label": "Target Zone", "description": "Developing real expertise" },
+      "9-10": { "label": "Exceptional", "description": "High competence; approaching mastery" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Developing actual competence in receiving from God — not just showing up, but getting better at prayer, Scripture intake, hearing His voice",
+      "scripture_anchor": {
+        "text": "But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil.",
+        "reference": "Hebrews 5:14"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I am measurably better at prayer, Scripture study, or worship than I was a year ago — not just more consistent, but more skilled.",
+          "voice": "Core Philosophy",
+          "principle": "Competence grows through practice"
+        },
+        {
+          "id": "1.2",
+          "text": "I can discern God's voice from my own thoughts and from other influences with increasing accuracy.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual discernment is a developable skill"
+        },
+        {
+          "id": "1.3",
+          "text": "I understand Scripture at deeper levels than I used to — I can see connections, apply principles, and teach others.",
+          "voice": "Brian Tracy",
+          "principle": "Expertise deepens with intentional study"
+        },
+        {
+          "id": "1.4",
+          "text": "I have developed specific techniques or practices in my spiritual life that work for me and produce consistent results.",
+          "voice": "Chase Hughes",
+          "principle": "Skill includes knowing what works"
+        },
+        {
+          "id": "1.5",
+          "text": "I seek feedback on my spiritual life (from mentors, Scripture, the Spirit) and adjust based on what I learn.",
+          "voice": "Brian Tracy",
+          "principle": "Skill development requires feedback loops"
+        }
+      ],
+      "remediation": {
+        "advice": "Skill in communion comes from treating spiritual practices as skills to develop, not just boxes to check. Study how mature believers pray. Learn hermeneutics. Practice lectio divina. Get coaching from someone further along. Competence doesn't come automatically from showing up.",
+        "scripture": {
+          "text": "Study to show yourself approved unto God, a worker who has no need to be ashamed, rightly handling the word of truth.",
+          "reference": "2 Timothy 2:15"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Developing practical wisdom in moral discernment — not just knowing right from wrong, but skillfully navigating complex ethical terrain",
+      "scripture_anchor": {
+        "text": "The prudent sees danger and hides himself, but the simple go on and suffer for it.",
+        "reference": "Proverbs 22:3"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "I can navigate morally complex situations with wisdom — not just black-and-white cases, but grey areas that require discernment.",
+          "voice": "Jordan Peterson",
+          "principle": "Ethical skill handles complexity"
+        },
+        {
+          "id": "2.2",
+          "text": "I have developed the ability to anticipate moral pitfalls before I'm in them — I see the trap before it springs.",
+          "voice": "Chase Hughes",
+          "principle": "Pattern recognition is a skill"
+        },
+        {
+          "id": "2.3",
+          "text": "I can explain the 'why' behind moral principles — not just that something is wrong, but why it damages flourishing.",
+          "voice": "Jordan Peterson",
+          "principle": "Deep understanding enables wise application"
+        },
+        {
+          "id": "2.4",
+          "text": "I have practical wisdom about how to make restitution when I've wronged someone — I know what actually heals relationships.",
+          "voice": "Cloud & Townsend",
+          "principle": "Reconciliation is a learnable skill"
+        },
+        {
+          "id": "2.5",
+          "text": "I can counsel others through moral dilemmas effectively — my ethical skill is developed enough to help, not just opine.",
+          "voice": "Core Philosophy",
+          "principle": "Mature skill can be transferred"
+        }
+      ],
+      "remediation": {
+        "advice": "Ethical skill goes beyond 'I know right from wrong.' Study moral philosophy. Learn from case studies. Practice ethical reasoning with mentors. Develop the practical wisdom that knows HOW to do the right thing in complex situations, not just WHAT the right thing is in simple ones.",
+        "scripture": {
+          "text": "Give your servant therefore an understanding mind to govern your people, that I may discern between good and evil.",
+          "reference": "1 Kings 3:9"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Developing competence in maintaining spiritual health — knowing how to examine yourself, address sin, and restore after stumbling",
+      "scripture_anchor": {
+        "text": "Examine yourselves, to see whether you are in the faith. Test yourselves.",
+        "reference": "2 Corinthians 13:5"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I know how to conduct an honest self-examination — I have a practiced method that surfaces what needs to surface.",
+          "voice": "Jordan Peterson",
+          "principle": "Self-examination is a developable skill"
+        },
+        {
+          "id": "3.2",
+          "text": "I can identify the root of a sin pattern, not just its symptoms — I've developed diagnostic skill.",
+          "voice": "Chase Hughes",
+          "principle": "Root cause analysis is a skill"
+        },
+        {
+          "id": "3.3",
+          "text": "I know how to recover quickly after a spiritual failure — I have a practiced restoration process that works.",
+          "voice": "Core Philosophy",
+          "principle": "Recovery is a learnable skill"
+        },
+        {
+          "id": "3.4",
+          "text": "I can distinguish between conviction (from God) and condemnation (from the enemy or self) with increasing accuracy.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual discernment develops with practice"
+        },
+        {
+          "id": "3.5",
+          "text": "I have practical techniques for fighting specific temptations that work for me — not just generic advice, but tested tactics.",
+          "voice": "Chase Hughes",
+          "principle": "Tactical skill comes from tested experience"
+        }
+      ],
+      "remediation": {
+        "advice": "Holiness skill means you know HOW to pursue purity, not just that you should. Develop a practiced examination of conscience. Learn your particular temptation patterns and what actually defeats them. Build a restoration protocol for when you fail. This is craft, not just desire.",
+        "scripture": {
+          "text": "But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified.",
+          "reference": "1 Corinthians 9:27"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Developing competence in learning, thinking, and knowledge acquisition — the skill of getting smarter",
+      "scripture_anchor": {
+        "text": "An intelligent heart acquires knowledge, and the ear of the wise seeks knowledge.",
+        "reference": "Proverbs 18:15"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I have developed effective learning methods — I know how I learn best and I use that knowledge intentionally.",
+          "voice": "Brian Tracy",
+          "principle": "Learning how to learn is foundational skill"
+        },
+        {
+          "id": "4.2",
+          "text": "I can synthesize information from multiple sources into coherent understanding — not just collect facts, but integrate them.",
+          "voice": "Core Philosophy",
+          "principle": "Synthesis is a higher-order skill"
+        },
+        {
+          "id": "4.3",
+          "text": "I have developed critical thinking skills — I can evaluate arguments, spot logical fallacies, and think clearly under pressure.",
+          "voice": "Jordan Peterson",
+          "principle": "Critical thinking is trainable"
+        },
+        {
+          "id": "4.4",
+          "text": "I can explain complex ideas simply — my understanding is deep enough to translate for others.",
+          "voice": "Brian Tracy",
+          "principle": "Teaching ability indicates mastery"
+        },
+        {
+          "id": "4.5",
+          "text": "I actively work to improve my thinking — I treat my mind as a tool to be sharpened, not just used.",
+          "voice": "Core Philosophy",
+          "principle": "Mental capability responds to training"
+        }
+      ],
+      "remediation": {
+        "advice": "Thinking is a skill. Reading is a skill. Learning is a skill. Study how to learn (spaced repetition, active recall, elaboration). Practice critical thinking deliberately. Write to clarify your thoughts. The mind is trainable — but you have to actually train it.",
+        "scripture": {
+          "text": "Wisdom is the principal thing; therefore get wisdom: and with all your getting get understanding.",
+          "reference": "Proverbs 4:7"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Developing competence in execution and follow-through — the skill of actually getting things done",
+      "scripture_anchor": {
+        "text": "The soul of the sluggard craves and gets nothing, while the soul of the diligent is richly supplied.",
+        "reference": "Proverbs 13:4"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I have developed effective systems for managing commitments — I rarely drop things because I have reliable methods.",
+          "voice": "Brian Tracy",
+          "principle": "Execution is systematizable"
+        },
+        {
+          "id": "5.2",
+          "text": "I know how to break large goals into actionable steps — I have skill in planning, not just dreaming.",
+          "voice": "Brian Tracy",
+          "principle": "Planning is a practical skill"
+        },
+        {
+          "id": "5.3",
+          "text": "I can make decisions efficiently — I have developed frameworks that prevent paralysis without being reckless.",
+          "voice": "Brian Tracy",
+          "principle": "Decision-making is trainable"
+        },
+        {
+          "id": "5.4",
+          "text": "I know my own patterns of resistance and avoidance — I've studied myself and know how to work with (or around) my weaknesses.",
+          "voice": "Chase Hughes",
+          "principle": "Self-knowledge enables strategic execution"
+        },
+        {
+          "id": "5.5",
+          "text": "I can estimate how long things will take with reasonable accuracy — my planning skill has been calibrated by experience.",
+          "voice": "Brian Tracy",
+          "principle": "Estimation improves with feedback"
+        }
+      ],
+      "remediation": {
+        "advice": "Execution is a skill, not just willpower. Learn productivity systems (GTD, time blocking, MIT framework). Study your own failure patterns. Build reliable external systems so you're not relying on memory and motivation. Get good at the craft of getting things done.",
+        "scripture": {
+          "text": "The plans of the diligent lead surely to abundance, but everyone who is hasty comes only to poverty.",
+          "reference": "Proverbs 21:5"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Developing emotional intelligence — the skill of understanding, managing, and working with emotions (yours and others')",
+      "scripture_anchor": {
+        "text": "Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city.",
+        "reference": "Proverbs 16:32"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I can accurately identify what I'm feeling — I have a developed emotional vocabulary and self-awareness.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional granularity is a skill"
+        },
+        {
+          "id": "6.2",
+          "text": "I can read others' emotional states with reasonable accuracy — I've developed social perception skills.",
+          "voice": "Chase Hughes",
+          "principle": "Reading others is trainable"
+        },
+        {
+          "id": "6.3",
+          "text": "I have practical techniques for regulating strong emotions that actually work for me — tested, not theoretical.",
+          "voice": "Chase Hughes",
+          "principle": "Regulation techniques require practice"
+        },
+        {
+          "id": "6.4",
+          "text": "I can have difficult emotional conversations productively — I've developed skill in navigating conflict and vulnerability.",
+          "voice": "Cloud & Townsend",
+          "principle": "Difficult conversations are a learnable skill"
+        },
+        {
+          "id": "6.5",
+          "text": "I understand the connection between my thoughts, beliefs, and emotions — I can work at the cognitive level to affect the emotional level.",
+          "voice": "Core Philosophy",
+          "principle": "Cognitive-emotional connection can be leveraged skillfully"
+        }
+      ],
+      "remediation": {
+        "advice": "Emotional intelligence is a skill set, not a personality trait. Learn emotional vocabulary. Practice naming what you feel. Study body language. Develop specific regulation techniques (breathing, reframing, grounding). Get feedback on your blind spots. EQ is trainable.",
+        "scripture": {
+          "text": "A man of quick temper acts foolishly, and a man of evil devices is hated.",
+          "reference": "Proverbs 14:17"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Developing practical competence in nutrition, sleep, and environment management — knowing what works for YOUR body",
+      "scripture_anchor": {
+        "text": "Do you not know that your bodies are temples of the Holy Spirit?",
+        "reference": "1 Corinthians 6:19"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I know what foods work well for my body and what doesn't — I've experimented and have practical knowledge, not just theory.",
+          "voice": "Core Philosophy",
+          "principle": "Nutritional knowledge is personalized through testing"
+        },
+        {
+          "id": "7.2",
+          "text": "I know how to optimize my sleep — I understand my sleep needs and have developed practices that ensure quality rest.",
+          "voice": "Brian Tracy",
+          "principle": "Sleep optimization is learnable"
+        },
+        {
+          "id": "7.3",
+          "text": "I can prepare healthy meals efficiently — I have practical cooking/meal prep skills, not just good intentions.",
+          "voice": "Core Philosophy",
+          "principle": "Food preparation is a practical skill"
+        },
+        {
+          "id": "7.4",
+          "text": "I know how to create environments that support my work and rest — I've developed practical space management skills.",
+          "voice": "Jordan Peterson",
+          "principle": "Environment design is a skill"
+        },
+        {
+          "id": "7.5",
+          "text": "I can troubleshoot when my energy or recovery is off — I have diagnostic skill for my own body's signals.",
+          "voice": "Chase Hughes",
+          "principle": "Body awareness develops with attention"
+        }
+      ],
+      "remediation": {
+        "advice": "Knowing THAT you should eat well and sleep well is not the same as knowing HOW. Learn to cook. Experiment with your sleep environment. Track what foods affect you how. Develop practical, personalized knowledge about YOUR body — not just generic health advice.",
+        "scripture": {
+          "text": "So, whether you eat or drink, or whatever you do, do all to the glory of God.",
+          "reference": "1 Corinthians 10:31"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Developing physical competence — skill in training, movement, and building what your body can do",
+      "scripture_anchor": {
+        "text": "For while bodily training is of some value, godliness is of value in every way.",
+        "reference": "1 Timothy 4:8"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "I know proper form and technique for my physical practices — I've learned how to train effectively, not just hard.",
+          "voice": "Brian Tracy",
+          "principle": "Training technique is learnable"
+        },
+        {
+          "id": "8.2",
+          "text": "I understand principles of progression — I know how to systematically build capacity rather than just randomly exercising.",
+          "voice": "Brian Tracy",
+          "principle": "Progressive training follows principles"
+        },
+        {
+          "id": "8.3",
+          "text": "I can program my own training effectively — I have enough knowledge to design workouts that achieve my goals.",
+          "voice": "Core Philosophy",
+          "principle": "Training design is a skill"
+        },
+        {
+          "id": "8.4",
+          "text": "I know how to prevent injury and recover from setbacks — I've developed practical physical maintenance skills.",
+          "voice": "Core Philosophy",
+          "principle": "Injury prevention is learned"
+        },
+        {
+          "id": "8.5",
+          "text": "I can assess my own physical state accurately — I know when to push and when to back off based on real signals.",
+          "voice": "Chase Hughes",
+          "principle": "Physical self-awareness is developable"
+        }
+      ],
+      "remediation": {
+        "advice": "Showing up to exercise is discipline. Getting better at exercise is skill. Learn proper technique. Understand programming principles. Study recovery. Develop the knowledge that turns effort into results. Physical competence is a craft.",
+        "scripture": {
+          "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+          "reference": "1 Corinthians 9:24"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Developing competence in health maintenance and integration — the skill of keeping your whole system running well",
+      "scripture_anchor": {
+        "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
+        "reference": "3 John 1:2"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "I can recognize early warning signs that something is off in my health — I've developed body awareness and diagnostic skill.",
+          "voice": "Chase Hughes",
+          "principle": "Early detection is a skill"
+        },
+        {
+          "id": "9.2",
+          "text": "I know how to communicate effectively with healthcare providers — I can describe symptoms, ask good questions, and advocate for myself.",
+          "voice": "Core Philosophy",
+          "principle": "Medical communication is a skill"
+        },
+        {
+          "id": "9.3",
+          "text": "I understand how body, soul, and spirit interact in my own experience — I can trace connections and address root causes.",
+          "voice": "Core Philosophy",
+          "principle": "Holistic awareness develops with attention"
+        },
+        {
+          "id": "9.4",
+          "text": "I have practical knowledge of preventive care — I know what screenings, practices, and habits maintain health proactively.",
+          "voice": "Brian Tracy",
+          "principle": "Prevention knowledge is practical skill"
+        },
+        {
+          "id": "9.5",
+          "text": "I can make informed health decisions — I have enough knowledge to evaluate options and choose wisely.",
+          "voice": "Core Philosophy",
+          "principle": "Health literacy is developable"
+        }
+      ],
+      "remediation": {
+        "advice": "Health management is a skill. Learn to read your body's signals. Understand basic health literacy. Know what preventive care matters at your age. Develop the practical knowledge to be a good steward of your own health, not just a passive recipient of medical services.",
+        "scripture": {
+          "text": "And the God of peace will sanctify you completely, and may your whole spirit and soul and body be kept blameless.",
+          "reference": "1 Thessalonians 5:23"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 indicates competence deficit. You may be disciplined (showing up) but not skilled (getting better). Without skill, discipline produces effort without improvement — you're working hard but not getting anywhere.",
+      "maintenance": "Dimensions scoring 5-6 show basic competence but not growth. You can do the thing, but you're not developing expertise. Look for where you've plateaued because you stopped learning.",
+      "strength": "Dimensions scoring 7+ show developing expertise. You're not just doing — you're getting good. Now check if this skill is producing resources (Layer 6) — is your competence generating value?",
+      "integration": "Skill applies across all domains. If you're highly competent professionally but incompetent relationally or spiritually, you're unbalanced. Develop skill in all areas, not just where it's comfortable."
+    },
+    "next_steps": [
+      "Identify areas where you're disciplined but not improving — where have you plateaued?",
+      "For each weak area, ask: 'What would deliberate practice look like here?'",
+      "Find mentors or resources that can teach you HOW, not just WHAT",
+      "Build feedback loops — you can't improve what you don't measure",
+      "Where skill is strong, check if resources (Layer 6) are following",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_discipline": "Discipline without skill is showing up without improving — you're running in place. Skill without discipline is competence without consistency — you can do it well but you don't do it. Both are needed: discipline provides the reps; skill provides the improvement curve."
+  }
+}
