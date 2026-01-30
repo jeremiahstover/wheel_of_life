@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B3a",
-      "text": "When I do something wrong, I own it rather than making excuses, minimizing, or shifting blame to circumstances.",
+      "text": "When I do something wrong, I ...",
       "voice": "Jordan Peterson",
-      "principle": "Tell the truth; take responsibility"
+      "principle": "Tell the truth; take responsibility",
+      "answers": {
+        "4": "realize it's on me, though I'm still working on my triggers",
+        "5": "realize that's all on me",
+        "2": "can see how circumstances conspired against me",
+        "3": "own my part, but the situation set me up",
+        "1": "can usually understand why it wasn't really my fault"
+      }
     },
     {
       "id": "B3b",
-      "text": "I take responsibility for the impact of my actions on others, including unintended consequences.",
+      "text": "When my actions hurt someone unintentionally, I ...",
       "voice": "Cloud & Townsend",
-      "principle": "Own your impact, not just your intent"
+      "principle": "Own your impact, not just your intent",
+      "answers": {
+        "4": "own the impact, but I'm still struggling to go there first",
+        "5": "own what I did — what I meant doesn't change what I did",
+        "2": "apologize but explain why they shouldn't take it that way",
+        "3": "own my part, but make sure they understand my intent",
+        "1": "point out that I didn't mean to — intent is what matters"
+      }
     },
     {
       "id": "B3c",
-      "text": "When confronted with a moral failure, I resist the urge to defend myself or point to what others did.",
+      "text": "When confronted with a moral failure, I ...",
       "voice": "Jordan Peterson",
-      "principle": "No blame-shifting when confronted"
+      "principle": "No blame-shifting when confronted",
+      "answers": {
+        "4": "own it, but my first instinct is still to explain",
+        "5": "own it — no defense, no deflection",
+        "2": "explain the context that led to it",
+        "3": "own a part, but need to be understood",
+        "1": "defend myself and point out what others did too"
+      }
     },
     {
       "id": "B3d",
-      "text": "I recognize that my integrity is my responsibility — no one else can give it to me or take it away without my participation.",
+      "text": "My integrity is ...",
       "voice": "Core Philosophy",
-      "principle": "Integrity is personally owned"
+      "principle": "Integrity is personally owned",
+      "answers": {
+        "4": "mine to protect, though I sometimes let pressure compromise it",
+        "5": "mine alone — no one can give it or take it without my participation",
+        "2": "hard to maintain given my circumstances",
+        "3": "mine, but others can really damage it",
+        "1": "shaped by what others have done to me"
+      }
     },
     {
       "id": "B3e",
-      "text": "When I'm convicted of something, I own that addressing it is my job — I don't wait for someone else to fix it or hold me accountable.",
+      "text": "When I'm convicted of something, I ...",
       "voice": "Chase Hughes",
-      "principle": "Self-accountability precedes external accountability"
+      "principle": "Self-accountability precedes external accountability",
+      "answers": {
+        "4": "address it, though I usually drag my feet",
+        "5": "address it — I don't wait for someone else to make me",
+        "2": "hope the feeling passes or circumstances change",
+        "3": "feel the weight, but often wait for a reason to act",
+        "1": "wait to see if anyone else noticed"
+      }
     }
   ]
 }
