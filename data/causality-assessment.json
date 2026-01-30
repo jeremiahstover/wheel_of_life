@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Causality Layer",
+    "version": "1.0",
+    "layer_focus": "Causality (Layer 2 of 8)",
+    "definition": "The relationship between cause and effect; understanding that actions produce consequences and current states result from prior causes.",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Causality is the foundation for Responsibility (Layer 3). If Responsibility is weak, shore up Causality first. You cannot take responsibility for what you don't believe you caused."
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "Fatalistic thinking dominates; immediate attention required" },
+      "3-4": { "label": "Below Baseline", "description": "Cause-effect connection is weak; needs focused work" },
+      "5-6": { "label": "Maintaining", "description": "Some understanding but inconsistent application" },
+      "7-8": { "label": "Target Zone", "description": "Strong understanding of sowing and reaping" },
+      "9-10": { "label": "Exceptional", "description": "Causality thinking is integrated into worldview" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Understanding that spiritual inputs produce spiritual outputs — what you feed your spirit determines what grows",
+      "scripture_anchor": {
+        "text": "Draw near to God, and he will draw near to you.",
+        "reference": "James 4:8"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I understand that the quality of my relationship with God is directly connected to the time and attention I invest in it.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual inputs produce spiritual outputs"
+        },
+        {
+          "id": "1.2",
+          "text": "I recognize that spiritual dryness usually has identifiable causes — neglected practices, unaddressed sin, or competing priorities.",
+          "voice": "Jordan Peterson",
+          "principle": "Current state results from prior causes"
+        },
+        {
+          "id": "1.3",
+          "text": "I can see the connection between seasons of consistent prayer/Scripture and seasons of spiritual clarity and peace.",
+          "voice": "Core Philosophy",
+          "principle": "Sowing spiritual disciplines reaps spiritual fruit"
+        },
+        {
+          "id": "1.4",
+          "text": "I understand that expecting spiritual growth without spiritual investment is like expecting a harvest without planting.",
+          "voice": "Brian Tracy",
+          "principle": "The law of sowing and reaping applies to spiritual life"
+        },
+        {
+          "id": "1.5",
+          "text": "I can trace my current spiritual state back to specific choices, habits, and investments I've made (or failed to make).",
+          "voice": "Chase Hughes",
+          "principle": "Effects have traceable causes"
+        }
+      ],
+      "remediation": {
+        "advice": "If your spiritual life feels random or disconnected from your choices, start tracking. Note what you did spiritually each day, then observe your spiritual state. The correlation will reveal causality you've been missing.",
+        "scripture": {
+          "text": "Whoever sows sparingly will also reap sparingly, and whoever sows bountifully will also reap bountifully.",
+          "reference": "2 Corinthians 9:6"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Understanding that moral choices have moral consequences — integrity and compromise both produce predictable results",
+      "scripture_anchor": {
+        "text": "Do not be deceived: God cannot be mocked. A man reaps what he sows.",
+        "reference": "Galatians 6:7"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "I understand that small compromises in integrity compound into larger character issues over time.",
+          "voice": "Jordan Peterson",
+          "principle": "Small causes compound into large effects"
+        },
+        {
+          "id": "2.2",
+          "text": "I can see that most 'sudden' moral failures are actually the result of many small prior choices.",
+          "voice": "Chase Hughes",
+          "principle": "Big failures have small precursors"
+        },
+        {
+          "id": "2.3",
+          "text": "I recognize that honesty and deception both have natural consequences — trust or suspicion, clarity or confusion.",
+          "voice": "Jordan Peterson",
+          "principle": "Truth and lies produce predictable outcomes"
+        },
+        {
+          "id": "2.4",
+          "text": "I understand that when I ignore my conscience repeatedly, it becomes harder to hear — this is cause and effect, not random.",
+          "voice": "Core Philosophy",
+          "principle": "Conscience sensitivity responds to how you treat it"
+        },
+        {
+          "id": "2.5",
+          "text": "I can connect the quality of my relationships to how I've treated people — the harvest matches the seed.",
+          "voice": "Cloud & Townsend",
+          "principle": "Relational reaping follows relational sowing"
+        }
+      ],
+      "remediation": {
+        "advice": "Look at the patterns in your life that feel like 'bad luck.' Trace them backward. What did you sow that produced this harvest? This isn't about guilt — it's about understanding causality so you can plant differently.",
+        "scripture": {
+          "text": "Whoever sows injustice will reap calamity, and the rod of his fury will fail.",
+          "reference": "Proverbs 22:8"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Understanding that spiritual purity is the result of accumulated spiritual choices, not random spiritual luck",
+      "scripture_anchor": {
+        "text": "For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life.",
+        "reference": "Galatians 6:8"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I understand that my current spiritual state is largely the accumulated result of my past spiritual choices.",
+          "voice": "Core Philosophy",
+          "principle": "State results from accumulated choices"
+        },
+        {
+          "id": "3.2",
+          "text": "I recognize that habitual sin doesn't appear overnight — it grows from seeds I planted and watered.",
+          "voice": "Jordan Peterson",
+          "principle": "Sin patterns have cultivation histories"
+        },
+        {
+          "id": "3.3",
+          "text": "I can see that people who are spiritually mature got there through specific practices over time — not special grace unavailable to me.",
+          "voice": "Brian Tracy",
+          "principle": "Spiritual maturity follows spiritual investment"
+        },
+        {
+          "id": "3.4",
+          "text": "I understand that 'sowing to the Spirit' (Galatians 6:8) means specific actions that produce specific spiritual results.",
+          "voice": "Core Philosophy",
+          "principle": "Biblical sowing/reaping is concrete, not metaphorical"
+        },
+        {
+          "id": "3.5",
+          "text": "I recognize that asking God to change my spiritual state without changing my spiritual inputs is asking for magic, not faith.",
+          "voice": "Jordan Peterson",
+          "principle": "Faith cooperates with causality; it doesn't bypass it"
+        }
+      ],
+      "remediation": {
+        "advice": "Holiness is not a lottery. It's agriculture. Study people you admire spiritually — what did they plant? What can you plant today that will produce that harvest in 5 years?",
+        "scripture": {
+          "text": "Since we have these promises, dear friends, let us purify ourselves from everything that contaminates body and spirit, perfecting holiness out of reverence for God.",
+          "reference": "2 Corinthians 7:1"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Understanding that mental inputs shape mental outputs — what you consume shapes how you think",
+      "scripture_anchor": {
+        "text": "Do not be conformed to this world, but be transformed by the renewal of your mind.",
+        "reference": "Romans 12:2"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I understand that my thinking patterns are shaped by what I consistently consume — content, conversations, information.",
+          "voice": "Core Philosophy",
+          "principle": "Mental inputs shape mental outputs"
+        },
+        {
+          "id": "4.2",
+          "text": "I can see the connection between information diet and worldview — garbage in, garbage out applies to the mind.",
+          "voice": "Brian Tracy",
+          "principle": "Information quality affects thinking quality"
+        },
+        {
+          "id": "4.3",
+          "text": "I recognize that people who think clearly didn't get that way by accident — clear thinking is built through specific practices.",
+          "voice": "Jordan Peterson",
+          "principle": "Mental clarity results from mental discipline"
+        },
+        {
+          "id": "4.4",
+          "text": "I understand that chronic anxiety, negativity, or confusion often have identifiable inputs that are feeding them.",
+          "voice": "Chase Hughes",
+          "principle": "Mental states have traceable causes"
+        },
+        {
+          "id": "4.5",
+          "text": "I can connect periods of mental clarity or fog to what I was consuming and practicing during those times.",
+          "voice": "Core Philosophy",
+          "principle": "Mental state correlates with mental investment"
+        }
+      ],
+      "remediation": {
+        "advice": "Audit your information diet for one week. Write down everything you consume mentally — social media, news, conversations, entertainment. Then look at your mental state. The connection between input and output will become obvious.",
+        "scripture": {
+          "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable... think about these things.",
+          "reference": "Philippians 4:8"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Understanding that choices produce outcomes — your life is largely the sum of your decisions",
+      "scripture_anchor": {
+        "text": "But each person is tempted when they are dragged away by their own evil desire and enticed. Then, after desire has conceived, it gives birth to sin; and sin, when it is full-grown, gives birth to death.",
+        "reference": "James 1:14-15"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I understand that my current life situation is largely the result of my accumulated choices, not fate or luck.",
+          "voice": "Jordan Peterson",
+          "principle": "Life outcomes follow from choices"
+        },
+        {
+          "id": "5.2",
+          "text": "I can trace most of my successes and failures back to specific decisions I made (or avoided making).",
+          "voice": "Brian Tracy",
+          "principle": "Results are traceable to decisions"
+        },
+        {
+          "id": "5.3",
+          "text": "I recognize that procrastination, avoidance, and inaction are also choices with predictable consequences.",
+          "voice": "Brian Tracy",
+          "principle": "Non-decisions are decisions with consequences"
+        },
+        {
+          "id": "5.4",
+          "text": "I understand that 'it just happened' is almost never true — there are always causes I could identify if I looked.",
+          "voice": "Chase Hughes",
+          "principle": "Nothing 'just happens' — causes exist"
+        },
+        {
+          "id": "5.5",
+          "text": "I can see how small daily choices compound into life trajectories over months and years.",
+          "voice": "Core Philosophy",
+          "principle": "Daily choices compound into life direction"
+        }
+      ],
+      "remediation": {
+        "advice": "Write down where you are in three key life areas. Then trace backward: what decisions led here? Be brutally honest. The goal isn't guilt — it's understanding that if choices got you here, different choices can get you somewhere else.",
+        "scripture": {
+          "text": "Do not be deceived: God cannot be mocked. A man reaps what he sows.",
+          "reference": "Galatians 6:7"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Understanding that emotional patterns have causes — feelings don't appear from nowhere",
+      "scripture_anchor": {
+        "text": "A heart at peace gives life to the body, but envy rots the bones.",
+        "reference": "Proverbs 14:30"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I understand that my emotional patterns are influenced by what I consistently think, believe, and practice.",
+          "voice": "Core Philosophy",
+          "principle": "Emotions respond to cognitive and behavioral inputs"
+        },
+        {
+          "id": "6.2",
+          "text": "I can usually identify what triggered a strong emotional response rather than feeling like emotions 'just happen.'",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional responses have identifiable triggers"
+        },
+        {
+          "id": "6.3",
+          "text": "I recognize that people who are emotionally healthy built that health through specific practices over time.",
+          "voice": "Jordan Peterson",
+          "principle": "Emotional health is cultivated, not inherited"
+        },
+        {
+          "id": "6.4",
+          "text": "I understand that chronic emotional struggles (anxiety, anger, depression) usually have root causes that can be identified.",
+          "voice": "Chase Hughes",
+          "principle": "Chronic emotional patterns have root causes"
+        },
+        {
+          "id": "6.5",
+          "text": "I can see the connection between how I treat my body, mind, and spirit and my emotional state.",
+          "voice": "Core Philosophy",
+          "principle": "Emotional state connects to holistic health"
+        }
+      ],
+      "remediation": {
+        "advice": "Emotions are signals, not random noise. When you feel something strong, ask: 'What am I believing right now? What just happened? What pattern is this part of?' The cause is there if you look for it.",
+        "scripture": {
+          "text": "Be angry and do not sin; do not let the sun go down on your anger.",
+          "reference": "Ephesians 4:26"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Understanding that what you put into your body determines what you get out of it",
+      "scripture_anchor": {
+        "text": "Do you not know that your bodies are temples of the Holy Spirit?",
+        "reference": "1 Corinthians 6:19"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I understand that my energy levels, clarity, and physical function are directly affected by what I eat and drink.",
+          "voice": "Core Philosophy",
+          "principle": "Nutritional inputs affect physical outputs"
+        },
+        {
+          "id": "7.2",
+          "text": "I can see the connection between my sleep patterns and my mental/physical performance the next day.",
+          "voice": "Brian Tracy",
+          "principle": "Sleep quality affects performance"
+        },
+        {
+          "id": "7.3",
+          "text": "I recognize that sustained poor nutrition leads to predictable health outcomes — this isn't random bad luck.",
+          "voice": "Jordan Peterson",
+          "principle": "Nutritional choices compound into health outcomes"
+        },
+        {
+          "id": "7.4",
+          "text": "I understand that my physical environment (cleanliness, organization, air quality) affects how I feel and function.",
+          "voice": "Jordan Peterson",
+          "principle": "Environment shapes experience"
+        },
+        {
+          "id": "7.5",
+          "text": "I can connect periods of feeling good or bad physically to what I was eating, drinking, and how I was sleeping.",
+          "voice": "Chase Hughes",
+          "principle": "Physical state correlates with physical inputs"
+        }
+      ],
+      "remediation": {
+        "advice": "Track what you eat and how you feel for two weeks. The correlation between fuel quality and performance quality will become undeniable. Your body is a machine that runs on what you give it.",
+        "scripture": {
+          "text": "So, whether you eat or drink, or whatever you do, do all to the glory of God.",
+          "reference": "1 Corinthians 10:31"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Understanding that physical capability is built through physical investment — use it or lose it",
+      "scripture_anchor": {
+        "text": "For while bodily training is of some value, godliness is of value in every way.",
+        "reference": "1 Timothy 4:8"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "I understand that my current physical capability is the result of what I've been doing (or not doing) physically.",
+          "voice": "Core Philosophy",
+          "principle": "Physical capability reflects physical history"
+        },
+        {
+          "id": "8.2",
+          "text": "I can see that people who are physically fit built that fitness through consistent effort over time — not genetics alone.",
+          "voice": "Brian Tracy",
+          "principle": "Fitness is built, not born"
+        },
+        {
+          "id": "8.3",
+          "text": "I recognize that 'use it or lose it' is a law of the body — physical capability declines without maintenance.",
+          "voice": "Jordan Peterson",
+          "principle": "Physical capability requires ongoing investment"
+        },
+        {
+          "id": "8.4",
+          "text": "I understand that expecting physical improvement without physical effort is asking for magic, not reasonable results.",
+          "voice": "Brian Tracy",
+          "principle": "Physical results require physical inputs"
+        },
+        {
+          "id": "8.5",
+          "text": "I can trace my current strength, endurance, and mobility back to my exercise and movement patterns.",
+          "voice": "Chase Hughes",
+          "principle": "Physical state is traceable to physical practices"
+        }
+      ],
+      "remediation": {
+        "advice": "Your body adapts to what you ask of it. If you ask nothing, you get weakness. If you ask consistently, you get capability. The causality is direct and observable — start small and watch what happens.",
+        "scripture": {
+          "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+          "reference": "1 Corinthians 9:24"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Understanding that health and wellness are the accumulated results of how you've cared for your body",
+      "scripture_anchor": {
+        "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
+        "reference": "3 John 1:2"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "I understand that most of my health outcomes are influenced by my accumulated choices, not just genetics or luck.",
+          "voice": "Core Philosophy",
+          "principle": "Health results from accumulated stewardship"
+        },
+        {
+          "id": "9.2",
+          "text": "I can see that chronic health issues often have lifestyle factors that contributed to them, even if genetics played a role.",
+          "voice": "Jordan Peterson",
+          "principle": "Lifestyle choices affect health trajectories"
+        },
+        {
+          "id": "9.3",
+          "text": "I recognize that preventive care and maintenance produce different health outcomes than reactive crisis management.",
+          "voice": "Brian Tracy",
+          "principle": "Maintenance prevents breakdown"
+        },
+        {
+          "id": "9.4",
+          "text": "I understand that my body, soul, and spirit are connected — neglect in one area affects the others.",
+          "voice": "Core Philosophy",
+          "principle": "Holistic cause-effect across domains"
+        },
+        {
+          "id": "9.5",
+          "text": "I can see that people who are healthy in their 60s, 70s, and beyond usually made different choices than those who aren't.",
+          "voice": "Brian Tracy",
+          "principle": "Long-term health reflects long-term choices"
+        }
+      ],
+      "remediation": {
+        "advice": "Look at older people you know. The healthy ones made different choices than the unhealthy ones. You are currently planting seeds for your future health. What harvest are your current choices producing in 20 years?",
+        "scripture": {
+          "text": "Honor God with your bodies.",
+          "reference": "1 Corinthians 6:20"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 indicates fatalistic thinking. Without understanding cause and effect, responsibility is impossible — why take responsibility for what you don't believe you caused?",
+      "maintenance": "Dimensions scoring 5-6 show partial understanding of causality. The connection between actions and outcomes is seen inconsistently. Look for where you still believe in luck, fate, or victimhood.",
+      "strength": "Dimensions scoring 7+ show strong causality thinking. You understand that sowing and reaping apply to this area. Now check if responsibility (Layer 3) is following.",
+      "integration": "Causality applies across all domains. If you understand cause-effect in your body but not your spirit, you're applying the principle inconsistently."
+    },
+    "next_steps": [
+      "Identify areas where you still think in terms of luck, fate, or victimhood",
+      "For each weak area, practice asking: 'What did I sow that produced this harvest?'",
+      "Notice language patterns: 'It just happened' vs 'I can see how my choices led to this'",
+      "Where causality is strong, check if responsibility (Layer 3) is following",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_responsibility": "Causality without responsibility is understanding without ownership — you see the connection but don't accept that it's yours to address. Responsibility without causality is ownership without understanding — you feel guilty but can't see how to change. Both are needed."
+  }
+}
