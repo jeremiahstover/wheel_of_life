@@ -77,5 +77,12 @@
         "1": "not happening — no one knows that"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Emotional fellowship is the hardest for many (especially men). It requires vulnerability that feels dangerous. But isolation guarantees you'll carry your emotional burdens alone, which eventually breaks you. Find one safe person. Share one real thing. Build from there.",
+    "scripture": {
+      "text": "Rejoice with those who rejoice, weep with those who weep.",
+      "reference": "Romans 12:15"
+    }
+  }
 }

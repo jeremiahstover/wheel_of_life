@@ -77,5 +77,12 @@
         "1": "can't help what gets in — it's everywhere"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Your mind is a garden you tend. Taking responsibility means admitting: 'What's growing here is what I planted or allowed.' If you want different thoughts, consume different content. If you want clearer thinking, do the work to develop it. No one else is responsible for your mental state.",
+    "scripture": {
+      "text": "Be transformed by the renewal of your mind.",
+      "reference": "Romans 12:2"
+    }
+  }
 }

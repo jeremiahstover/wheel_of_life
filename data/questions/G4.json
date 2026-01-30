@@ -77,5 +77,12 @@
         "1": "push until I crash, recover, repeat"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Start with sleep. Everything else becomes harder when you're tired. Set a non-negotiable bedtime for one week. As Brian Tracy says: 'How you start your morning determines the quality of your entire day.' And how you end your evening determines how you start your morning.",
+    "scripture": {
+      "text": "It is in vain that you rise up early and go late to rest, eating the bread of anxious toil; for he gives to his beloved sleep.",
+      "reference": "Psalm 127:2"
+    }
+  }
 }

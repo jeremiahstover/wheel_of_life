@@ -77,5 +77,12 @@
         "1": "terrible — I'm wrong by factors, not percentages"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Execution is a skill, not just willpower. Learn productivity systems (GTD, time blocking, MIT framework). Study your own failure patterns. Build reliable external systems so you're not relying on memory and motivation. Get good at the craft of getting things done.",
+    "scripture": {
+      "text": "The plans of the diligent lead surely to abundance, but everyone who is hasty comes only to poverty.",
+      "reference": "Proverbs 21:5"
+    }
+  }
 }

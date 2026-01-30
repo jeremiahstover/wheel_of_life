@@ -77,5 +77,12 @@
         "1": "absent — the areas drag each other down"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Health reserves are built through all previous layers: order (believing health follows patterns), causality (seeing cause-effect), responsibility (owning your health), discipline (consistent practices), and skill (knowing what works). If reserves are low, trace back to find the weak link.",
+    "scripture": {
+      "text": "And the God of peace will sanctify you completely, and may your whole spirit and soul and body be kept blameless.",
+      "reference": "1 Thessalonians 5:23"
+    }
+  }
 }

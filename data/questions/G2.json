@@ -77,5 +77,12 @@
         "1": "not at all — physical states seem random"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Track what you eat and how you feel for two weeks. The correlation between fuel quality and performance quality will become undeniable. Your body is a machine that runs on what you give it.",
+    "scripture": {
+      "text": "So, whether you eat or drink, or whatever you do, do all to the glory of God.",
+      "reference": "1 Corinthians 10:31"
+    }
+  }
 }

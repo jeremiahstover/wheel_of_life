@@ -77,5 +77,12 @@
         "1": "not my problem — I can't control how they take it"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Emotional responsibility means admitting: 'No one makes me feel anything — I generate my own emotional responses.' Your history explains your patterns but doesn't excuse them. Taking responsibility for your emotional life is the first step to actually changing it.",
+    "scripture": {
+      "text": "Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city.",
+      "reference": "Proverbs 16:32"
+    }
+  }
 }

@@ -77,5 +77,12 @@
         "1": "none — I handle crises alone"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Holistic fellowship means having people who see and care about all of you — not compartmentalized friendships that only touch one dimension. If no one in your life would notice or say something if you started declining, you don't have true fellowship. Build relationships with that depth of mutual attention.",
+    "scripture": {
+      "text": "A friend loves at all times, and a brother is born for adversity.",
+      "reference": "Proverbs 17:17"
+    }
+  }
 }

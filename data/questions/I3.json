@@ -77,5 +77,12 @@
         "1": "something I'll get to when something breaks"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Responsibility for wholeness means owning: 'My body's state is significantly influenced by my stewardship.' You may have conditions you didn't choose, but how you respond to them is always your choice. Take responsibility for what you can control, and don't use what you can't control as an excuse for what you can.",
+    "scripture": {
+      "text": "Honor God with your bodies.",
+      "reference": "1 Corinthians 6:20"
+    }
+  }
 }

@@ -77,5 +77,12 @@
         "1": "not happening — I don't have those relationships"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Sanctification fellowship requires extreme vulnerability — letting people know your actual sins, not just sanitized versions. This feels dangerous because it is — you're trusting someone with ammunition. Choose wisely, but choose. Isolation guarantees failure.",
+    "scripture": {
+      "text": "Two are better than one... if they fall, one will lift up his fellow. But woe to him who is alone when he falls.",
+      "reference": "Ecclesiastes 4:9-10"
+    }
+  }
 }

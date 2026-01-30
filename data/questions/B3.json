@@ -77,5 +77,12 @@
         "1": "wait to see if anyone else noticed"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Responsibility for conscience means owning your moral choices without deflection. The mature response to 'you did wrong' is not 'but they...' or 'because circumstances...' — it's 'yes, I did, and here's what I'm going to do about it.'",
+    "scripture": {
+      "text": "Each one should test their own actions. Then they can take pride in themselves alone, without comparing themselves to someone else.",
+      "reference": "Galatians 6:4"
+    }
+  }
 }

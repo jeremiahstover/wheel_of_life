@@ -77,5 +77,12 @@
         "1": "untested — we haven't had hard conversations"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Moral accountability requires both giving and receiving permission to confront. Most people fail at one or both. If no one ever challenges you, you've either isolated yourself or trained everyone that you won't receive it. If you never challenge others, you're not being a faithful friend.",
+    "scripture": {
+      "text": "Iron sharpens iron, and one man sharpens another.",
+      "reference": "Proverbs 27:17"
+    }
+  }
 }

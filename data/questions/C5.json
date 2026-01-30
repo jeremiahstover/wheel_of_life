@@ -77,5 +77,12 @@
         "1": "nonexistent — I just try to resist and usually fail"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Holiness skill means you know HOW to pursue purity, not just that you should. Develop a practiced examination of conscience. Learn your particular temptation patterns and what actually defeats them. Build a restoration protocol for when you fail. This is craft, not just desire.",
+    "scripture": {
+      "text": "But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified.",
+      "reference": "1 Corinthians 9:27"
+    }
+  }
 }

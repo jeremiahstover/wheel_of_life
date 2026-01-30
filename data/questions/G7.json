@@ -77,5 +77,12 @@
         "1": "rare — most connection is online"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Physical fellowship is increasingly rare in our isolated, digital world. But humans are embodied — we need to share physical space, food, work. If all your relationships are disembodied (texts, calls, online), you're missing a crucial dimension. Share a meal. Help someone move. Be physically present.",
+    "scripture": {
+      "text": "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares.",
+      "reference": "Hebrews 13:2"
+    }
+  }
 }

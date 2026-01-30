@@ -77,5 +77,12 @@
         "1": "not happening — no such relationships"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Physical fellowship combines the benefits of training with the benefits of relationship. Find a gym buddy, a running partner, a sports team, a hiking group. You'll be more consistent, push harder, and build relationship simultaneously. If you only train alone, you're missing an opportunity.",
+    "scripture": {
+      "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+      "reference": "1 Corinthians 9:24"
+    }
+  }
 }

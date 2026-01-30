@@ -77,5 +77,12 @@
         "1": "nonexistent — I'm completely depleted by normal activities"
       }
     }
-  ]
+  ],
+  "remediation": {
+    "advice": "Physical capacity surplus is built through consistent training (discipline) and smart training (skill). If your physical capability is barely enough for daily life, you're one injury or illness away from crisis. Build margin through progressive training.",
+    "scripture": {
+      "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+      "reference": "1 Corinthians 9:24"
+    }
+  }
 }
