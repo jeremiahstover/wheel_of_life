@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Fellowship Layer",
+    "version": "1.0",
+    "layer_focus": "Fellowship (Layer 7 of 8)",
+    "definition": "Building relationships with friends who are on the journey with you; mutual investment, transparency, and sharpening. 'Two are better than one' (Ecclesiastes 4:9-12). 'Iron sharpens iron' (Proverbs 27:17).",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Fellowship requires Resources (Layer 6) — you need something to bring to mutual relationships. Fellowship enables Sacrifice (Layer 8) — deep relationships become the context for sacrificial giving. Without fellowship, sacrifice becomes isolated heroism rather than integrated service.",
+    "key_distinctives": {
+      "fellowship_vs_receiving": "Receiving is one-directional (you take). Fellowship is bidirectional (mutual investment).",
+      "fellowship_vs_sacrifice": "Sacrifice is giving without expectation of return. Fellowship expects mutual investment — both parties contribute.",
+      "fellowship_vs_networking": "Networking is transactional. Fellowship is covenantal — committed through difficulty, not just convenience."
+    }
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "Isolation — no mutual relationships; immediate attention required" },
+      "3-4": { "label": "Below Baseline", "description": "Superficial connections — relationships lack depth or mutuality" },
+      "5-6": { "label": "Maintaining", "description": "Some fellowship but limited; not fully open or invested" },
+      "7-8": { "label": "Target Zone", "description": "Genuine fellowship — mutual, transparent, sharpening" },
+      "9-10": { "label": "Exceptional", "description": "Deep fellowship — 'a cord of three strands' relationships" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Having spiritual fellowship — people you share your spiritual journey with, pray with, study Scripture with, pursue God together",
+      "scripture_anchor": {
+        "text": "And let us consider how to stir up one another to love and good works, not neglecting to meet together.",
+        "reference": "Hebrews 10:24-25"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I have people I regularly pray with — not just for, but WITH, sharing burdens and interceding together.",
+          "voice": "Core Philosophy",
+          "principle": "Shared prayer is foundational fellowship"
+        },
+        {
+          "id": "1.2",
+          "text": "I have relationships where we discuss Scripture, spiritual insights, and what God is teaching us — mutual learning.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual spiritual learning deepens fellowship"
+        },
+        {
+          "id": "1.3",
+          "text": "I have people who know where I am spiritually — the real state, not just the public version.",
+          "voice": "Jordan Peterson",
+          "principle": "Transparency enables genuine connection"
+        },
+        {
+          "id": "1.4",
+          "text": "I allow others to challenge my spiritual life and receive it as sharpening, not attack.",
+          "voice": "Core Philosophy",
+          "principle": "Iron sharpens iron"
+        },
+        {
+          "id": "1.5",
+          "text": "I invest in others' spiritual lives as much as they invest in mine — the relationship is mutual, not one-sided.",
+          "voice": "Cloud & Townsend",
+          "principle": "Mutuality defines fellowship"
+        }
+      ],
+      "remediation": {
+        "advice": "Spiritual fellowship requires vulnerability — letting others see your real spiritual state. If you're isolated spiritually, it's usually pride (not wanting to appear weak) or fear (not trusting others with your struggles). Start with one person. Be honest. See what happens.",
+        "scripture": {
+          "text": "Therefore, confess your sins to one another and pray for one another, that you may be healed.",
+          "reference": "James 5:16"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Having moral accountability — people who can call you out, who know your temptations, who have permission to confront",
+      "scripture_anchor": {
+        "text": "Better is open rebuke than hidden love. Faithful are the wounds of a friend.",
+        "reference": "Proverbs 27:5-6"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "I have people who have explicit permission to call me out when they see something wrong.",
+          "voice": "Cloud & Townsend",
+          "principle": "Permission enables accountability"
+        },
+        {
+          "id": "2.2",
+          "text": "I have people who know my specific moral vulnerabilities and check in on them.",
+          "voice": "Chase Hughes",
+          "principle": "Specific accountability addresses specific weakness"
+        },
+        {
+          "id": "2.3",
+          "text": "When confronted by a friend, I receive it as a gift rather than becoming defensive.",
+          "voice": "Jordan Peterson",
+          "principle": "Receiving correction is a skill"
+        },
+        {
+          "id": "2.4",
+          "text": "I confront my friends when I see something concerning — I don't let things slide to avoid awkwardness.",
+          "voice": "Cloud & Townsend",
+          "principle": "Mutual accountability requires courage to speak"
+        },
+        {
+          "id": "2.5",
+          "text": "My accountability relationships have survived confrontation — we've been through hard conversations and stayed connected.",
+          "voice": "Core Philosophy",
+          "principle": "Tested relationships prove genuine"
+        }
+      ],
+      "remediation": {
+        "advice": "Moral accountability requires both giving and receiving permission to confront. Most people fail at one or both. If no one ever challenges you, you've either isolated yourself or trained everyone that you won't receive it. If you never challenge others, you're not being a faithful friend.",
+        "scripture": {
+          "text": "Iron sharpens iron, and one man sharpens another.",
+          "reference": "Proverbs 27:17"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Having sanctification partners — people who know your struggles, walk with you in purity, and pursue holiness together",
+      "scripture_anchor": {
+        "text": "Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness.",
+        "reference": "Galatians 6:1"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I have people who know my specific sin struggles — not vague 'accountability' but real knowledge of real battles.",
+          "voice": "Core Philosophy",
+          "principle": "Specific knowledge enables specific help"
+        },
+        {
+          "id": "3.2",
+          "text": "I have people I can confess to without fear of judgment or rejection — they'll hold me accountable AND hold me close.",
+          "voice": "Cloud & Townsend",
+          "principle": "Grace and truth together"
+        },
+        {
+          "id": "3.3",
+          "text": "I know my friends' struggles and actively support their sanctification — it's mutual, not just me receiving.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual pursuit of holiness"
+        },
+        {
+          "id": "3.4",
+          "text": "When I fall, I have people I tell promptly — I don't hide and hope no one notices.",
+          "voice": "Jordan Peterson",
+          "principle": "Quick confession prevents festering"
+        },
+        {
+          "id": "3.5",
+          "text": "My sanctification relationships help me actually change, not just feel supported — they challenge, not just comfort.",
+          "voice": "Core Philosophy",
+          "principle": "True fellowship produces transformation"
+        }
+      ],
+      "remediation": {
+        "advice": "Sanctification fellowship requires extreme vulnerability — letting people know your actual sins, not just sanitized versions. This feels dangerous because it is — you're trusting someone with ammunition. Choose wisely, but choose. Isolation guarantees failure.",
+        "scripture": {
+          "text": "Two are better than one... if they fall, one will lift up his fellow. But woe to him who is alone when he falls.",
+          "reference": "Ecclesiastes 4:9-10"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Having intellectual fellowship — people who sharpen your thinking, challenge your ideas, and grow with you mentally",
+      "scripture_anchor": {
+        "text": "As iron sharpens iron, so one person sharpens another.",
+        "reference": "Proverbs 27:17"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I have people whose thinking challenges mine — they don't just agree with me, they sharpen me.",
+          "voice": "Jordan Peterson",
+          "principle": "Intellectual challenge produces growth"
+        },
+        {
+          "id": "4.2",
+          "text": "I have relationships where we discuss ideas, debate respectfully, and learn from each other.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual intellectual investment"
+        },
+        {
+          "id": "4.3",
+          "text": "I can be wrong in front of my intellectual friends without losing face — the relationship is secure enough for failure.",
+          "voice": "Cloud & Townsend",
+          "principle": "Safety enables honest inquiry"
+        },
+        {
+          "id": "4.4",
+          "text": "I contribute to others' intellectual growth as much as I receive — I'm not just taking, I'm giving.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual sharpening"
+        },
+        {
+          "id": "4.5",
+          "text": "My intellectual friendships have changed what I believe or how I think — they've had real impact.",
+          "voice": "Jordan Peterson",
+          "principle": "True fellowship produces transformation"
+        }
+      ],
+      "remediation": {
+        "advice": "Intellectual fellowship requires finding people smart enough to challenge you who are also safe enough to be wrong around. If everyone you know either agrees with you or makes you defensive, you're not growing. Seek out people who think differently and can argue without attacking.",
+        "scripture": {
+          "text": "The way of a fool is right in his own eyes, but a wise man listens to advice.",
+          "reference": "Proverbs 12:15"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Having execution accountability — people who know your commitments and hold you to them",
+      "scripture_anchor": {
+        "text": "And let us consider how to stir up one another to love and good works.",
+        "reference": "Hebrews 10:24"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I have people who know what I've committed to and ask me if I've done it.",
+          "voice": "Brian Tracy",
+          "principle": "External accountability increases follow-through"
+        },
+        {
+          "id": "5.2",
+          "text": "I tell people my goals specifically so they can hold me accountable — I invite the pressure.",
+          "voice": "Brian Tracy",
+          "principle": "Voluntary accountability is most effective"
+        },
+        {
+          "id": "5.3",
+          "text": "I hold others accountable for their commitments — I ask, I follow up, I don't let them off the hook.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual accountability"
+        },
+        {
+          "id": "5.4",
+          "text": "When I fail to follow through, I tell my accountability partners honestly rather than hiding or making excuses.",
+          "voice": "Jordan Peterson",
+          "principle": "Honest reporting enables real accountability"
+        },
+        {
+          "id": "5.5",
+          "text": "My execution accountability relationships have actually improved my follow-through — they work.",
+          "voice": "Brian Tracy",
+          "principle": "Effective accountability produces results"
+        }
+      ],
+      "remediation": {
+        "advice": "Execution accountability only works if you're honest about failures and if your partners actually follow up. Most 'accountability' is theater — people ask, you give vague answers, no one pushes. Find people who will actually hold you to your word, and be that person for others.",
+        "scripture": {
+          "text": "Faithful are the wounds of a friend; profuse are the kisses of an enemy.",
+          "reference": "Proverbs 27:6"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Having emotional intimacy — people you can be fully emotionally honest with, who know your inner world",
+      "scripture_anchor": {
+        "text": "Bear one another's burdens, and so fulfill the law of Christ.",
+        "reference": "Galatians 6:2"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I have people who know how I'm really doing emotionally — not just the 'fine' I tell most people.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional transparency enables support"
+        },
+        {
+          "id": "6.2",
+          "text": "I can cry, rage, or despair in front of certain people without shame — they can hold my emotions.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional safety enables vulnerability"
+        },
+        {
+          "id": "6.3",
+          "text": "I provide emotional presence for others — I can hold their hard emotions without fixing, fleeing, or freezing.",
+          "voice": "Cloud & Townsend",
+          "principle": "Mutual emotional capacity"
+        },
+        {
+          "id": "6.4",
+          "text": "My emotional friendships challenge me to grow, not just comfort me in my patterns.",
+          "voice": "Core Philosophy",
+          "principle": "True fellowship transforms, not just supports"
+        },
+        {
+          "id": "6.5",
+          "text": "I've shared my emotional history (pain, trauma, struggles) with people who've earned that trust.",
+          "voice": "Cloud & Townsend",
+          "principle": "Deep trust enables deep sharing"
+        }
+      ],
+      "remediation": {
+        "advice": "Emotional fellowship is the hardest for many (especially men). It requires vulnerability that feels dangerous. But isolation guarantees you'll carry your emotional burdens alone, which eventually breaks you. Find one safe person. Share one real thing. Build from there.",
+        "scripture": {
+          "text": "Rejoice with those who rejoice, weep with those who weep.",
+          "reference": "Romans 12:15"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Having physical/practical fellowship — people you share meals with, help with physical needs, do life's practical tasks together",
+      "scripture_anchor": {
+        "text": "And day by day, attending the temple together and breaking bread in their homes, they received their food with glad and generous hearts.",
+        "reference": "Acts 2:46"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I regularly share meals with people — eating together, not just existing in parallel.",
+          "voice": "Core Philosophy",
+          "principle": "Shared meals build fellowship"
+        },
+        {
+          "id": "7.2",
+          "text": "I have people who would help me with practical needs (moving, repairs, errands) and vice versa.",
+          "voice": "Core Philosophy",
+          "principle": "Practical mutual aid"
+        },
+        {
+          "id": "7.3",
+          "text": "I let people into my home and daily life — they see how I actually live, not just a curated version.",
+          "voice": "Jordan Peterson",
+          "principle": "Domestic transparency"
+        },
+        {
+          "id": "7.4",
+          "text": "I help others with their practical physical needs — I show up when there's work to do.",
+          "voice": "Core Philosophy",
+          "principle": "Practical service demonstrates fellowship"
+        },
+        {
+          "id": "7.5",
+          "text": "My physical/practical friendships involve actual presence, not just digital connection.",
+          "voice": "Core Philosophy",
+          "principle": "Embodied fellowship"
+        }
+      ],
+      "remediation": {
+        "advice": "Physical fellowship is increasingly rare in our isolated, digital world. But humans are embodied — we need to share physical space, food, work. If all your relationships are disembodied (texts, calls, online), you're missing a crucial dimension. Share a meal. Help someone move. Be physically present.",
+        "scripture": {
+          "text": "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares.",
+          "reference": "Hebrews 13:2"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Having physical/training fellowship — people who push your physical development, train with you, hold you accountable for fitness",
+      "scripture_anchor": {
+        "text": "Two are better than one, because they have a good reward for their toil.",
+        "reference": "Ecclesiastes 4:9"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "I have people I exercise or train with — shared physical activity, not just solo workouts.",
+          "voice": "Core Philosophy",
+          "principle": "Training partners increase consistency"
+        },
+        {
+          "id": "8.2",
+          "text": "I have people who push my physical development — they challenge me to do more than I would alone.",
+          "voice": "Brian Tracy",
+          "principle": "Mutual challenge increases growth"
+        },
+        {
+          "id": "8.3",
+          "text": "I hold others accountable for their physical health/fitness — I ask, encourage, challenge.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual accountability"
+        },
+        {
+          "id": "8.4",
+          "text": "I share physical activities (sports, hiking, movement) with others as a form of connection.",
+          "voice": "Core Philosophy",
+          "principle": "Shared activity builds bonds"
+        },
+        {
+          "id": "8.5",
+          "text": "My physical fellowship relationships have improved my actual fitness — they've had real impact.",
+          "voice": "Brian Tracy",
+          "principle": "Effective fellowship produces results"
+        }
+      ],
+      "remediation": {
+        "advice": "Physical fellowship combines the benefits of training with the benefits of relationship. Find a gym buddy, a running partner, a sports team, a hiking group. You'll be more consistent, push harder, and build relationship simultaneously. If you only train alone, you're missing an opportunity.",
+        "scripture": {
+          "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+          "reference": "1 Corinthians 9:24"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Having holistic fellowship — people who care about your whole health (body, soul, spirit) and you care about theirs",
+      "scripture_anchor": {
+        "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
+        "reference": "3 John 1:2"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "I have people who care about my whole health — they notice and comment when something seems off.",
+          "voice": "Cloud & Townsend",
+          "principle": "Attentive friends notice decline"
+        },
+        {
+          "id": "9.2",
+          "text": "I pay attention to my friends' overall wellbeing — I notice when they're not thriving and I say something.",
+          "voice": "Core Philosophy",
+          "principle": "Mutual attention to wholeness"
+        },
+        {
+          "id": "9.3",
+          "text": "I have people who would intervene if they saw me making seriously unhealthy choices — and I would let them.",
+          "voice": "Cloud & Townsend",
+          "principle": "Permission for intervention"
+        },
+        {
+          "id": "9.4",
+          "text": "My close relationships integrate body, soul, and spirit — we don't compartmentalize into 'spiritual friends' vs 'workout buddies.'",
+          "voice": "Core Philosophy",
+          "principle": "Integrated fellowship"
+        },
+        {
+          "id": "9.5",
+          "text": "I have people who have walked with me through health crises and I have walked with them — tested by difficulty.",
+          "voice": "Core Philosophy",
+          "principle": "Crisis-tested relationships"
+        }
+      ],
+      "remediation": {
+        "advice": "Holistic fellowship means having people who see and care about all of you — not compartmentalized friendships that only touch one dimension. If no one in your life would notice or say something if you started declining, you don't have true fellowship. Build relationships with that depth of mutual attention.",
+        "scripture": {
+          "text": "A friend loves at all times, and a brother is born for adversity.",
+          "reference": "Proverbs 17:17"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 indicates isolation in that area. 'Woe to him who is alone when he falls' (Ecclesiastes 4:10). Without fellowship, you carry burdens alone, lack sharpening, and are vulnerable to undetected decline. Isolation is a crisis even when it feels comfortable.",
+      "maintenance": "Dimensions scoring 5-6 show some connection but lacking depth or mutuality. You may have friends but not fellowship — people you know but who don't really know you, or relationships that are one-sided. Deepen existing relationships or find new ones that can go deeper.",
+      "strength": "Dimensions scoring 7+ show genuine fellowship — mutual, transparent, sharpening. These relationships are 'a cord of three strands' that won't quickly break. Now check if Sacrifice (Layer 8) is following — is your fellowship producing sacrificial love?",
+      "integration": "Fellowship should span all dimensions. Spiritual fellowship without emotional intimacy is shallow. Physical training buddies without moral accountability miss the point. Seek integrated fellowship — whole people known by whole people."
+    },
+    "next_steps": [
+      "Identify dimensions where you're isolated — no one knows you there",
+      "For each gap, ask: Is it pride (not wanting to be known)? Fear (not trusting others)? Circumstance (haven't found the right people)?",
+      "Audit mutuality: Are you investing as much as you receive? Or are relationships one-sided?",
+      "Check transparency: Do people know the real you, or a curated version?",
+      "Where fellowship is strong, check if Sacrifice (Layer 8) is following",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_resources": "Resources without fellowship is wealth with no one to share it — lonely abundance. Fellowship without resources is connection without contribution — you're taking but have nothing to give. Both are needed: resources provide what you bring; fellowship provides where you bring it.",
+    "three_elements_of_fellowship": {
+      "mutual_investment": "Both parties contribute. If you're always giving or always receiving, it's not fellowship.",
+      "transparency": "Both parties know the real other. If you're hiding, you're not in fellowship, just proximity.",
+      "sharpening": "Both parties challenge each other to grow. If you just affirm each other, you're not fellowshipping, you're enabling."
+    }
+  }
+}
