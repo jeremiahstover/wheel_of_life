@@ -179,16 +179,37 @@
         
         .legend {
             display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .legend-row {
+            display: flex;
             align-items: center;
             gap: 8px;
-            margin-top: 8px;
+        }
+        
+        .legend-label {
+            width: 50px;
+            font-size: 0.75rem;
         }
         
         .legend-gradient {
             flex: 1;
             height: 12px;
             border-radius: 4px;
-            background: linear-gradient(to right, #000, #fff);
+        }
+        
+        .legend-gradient.spirit {
+            background: linear-gradient(to right, #000, #805ad5);
+        }
+        
+        .legend-gradient.soul {
+            background: linear-gradient(to right, #000, #3182ce);
+        }
+        
+        .legend-gradient.body {
+            background: linear-gradient(to right, #000, #38a169);
         }
         
         .legend-labels {
@@ -197,37 +218,14 @@
             font-size: 0.7rem;
             color: var(--text-muted);
             margin-top: 4px;
+            margin-left: 58px;
         }
-        
-        .category-labels {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            margin-top: 12px;
-            font-size: 0.75rem;
-        }
-        
-        .category-labels span {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        
-        .category-labels .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-        }
-        
-        .category-labels .spirit .dot { background: var(--spirit); }
-        .category-labels .soul .dot { background: var(--soul); }
-        .category-labels .body .dot { background: var(--body); }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Wheel Heatmap</h1>
-        <p class="subtitle">72 cells — brightness = strength, darkness = weakness</p>
+        <p class="subtitle">72 cells — brightness = strength, color = category</p>
         
         <div class="controls">
             <button onclick="randomize()">Randomize Data</button>
@@ -255,17 +253,23 @@
                 
                 <div class="card">
                     <h3>Legend</h3>
+                    <div class="legend">
+                        <div class="legend-row">
+                            <span class="legend-label" style="color: var(--spirit)">Spirit</span>
+                            <div class="legend-gradient spirit"></div>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-label" style="color: var(--soul)">Soul</span>
+                            <div class="legend-gradient soul"></div>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-label" style="color: var(--body)">Body</span>
+                            <div class="legend-gradient body"></div>
+                        </div>
+                    </div>
                     <div class="legend-labels">
                         <span>1 (Crisis)</span>
                         <span>5 (Exceptional)</span>
-                    </div>
-                    <div class="legend">
-                        <div class="legend-gradient"></div>
-                    </div>
-                    <div class="category-labels">
-                        <span class="spirit"><span class="dot"></span> Spirit</span>
-                        <span class="soul"><span class="dot"></span> Soul</span>
-                        <span class="body"><span class="dot"></span> Body</span>
                     </div>
                 </div>
             </div>
@@ -294,6 +298,13 @@
         6: 'Resources',
         7: 'Fellowship',
         8: 'Sacrifice'
+    };
+    
+    // Category base colors (RGB)
+    const CATEGORY_COLORS = {
+        Spirit: { r: 128, g: 90, b: 213 },   // #805ad5
+        Soul:   { r: 49, g: 130, b: 206 },   // #3182ce
+        Body:   { r: 56, g: 161, b: 105 },   // #38a169
     };
     
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
@@ -391,10 +402,17 @@
         return { floor, break: breakPoint };
     }
     
-    function scoreToColor(score) {
-        // Map 1-5 to 0-255 brightness
-        const brightness = Math.round(((score - 1) / 4) * 255);
-        return `rgb(${brightness}, ${brightness}, ${brightness})`;
+    function scoreToColor(score, category) {
+        // Map 1-5 to 0-1 brightness
+        const brightness = (score - 1) / 4;
+        const baseColor = CATEGORY_COLORS[category];
+        
+        // Interpolate from black (0,0,0) to category color
+        const r = Math.round(baseColor.r * brightness);
+        const g = Math.round(baseColor.g * brightness);
+        const b = Math.round(baseColor.b * brightness);
+        
+        return `rgb(${r}, ${g}, ${b})`;
     }
     
     function getCategoryColor(category) {
@@ -445,6 +463,7 @@
         DIM_ORDER.forEach((dim, dimIndex) => {
             const startAngle = dimIndex * wedgeAngle + gap/2;
             const endAngle = (dimIndex + 1) * wedgeAngle - gap/2;
+            const category = DIMENSIONS[dim].category;
             
             for (let layer = 1; layer <= 8; layer++) {
                 const innerRadius = minRadius + (layer - 1) * ringWidth + 1;
@@ -453,7 +472,7 @@
                 
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 path.setAttribute('d', describeArc(cx, cy, innerRadius, outerRadius, startAngle, endAngle));
-                path.setAttribute('fill', scoreToColor(score));
+                path.setAttribute('fill', scoreToColor(score, category));
                 path.setAttribute('stroke', '#0d1117');
                 path.setAttribute('stroke-width', '1');
                 path.setAttribute('data-dim', dim);
@@ -524,6 +543,7 @@
         const isStrong = score >= THRESHOLD;
         
         document.getElementById('cell-name').textContent = `${dim}${layer}: ${info.name}`;
+        document.getElementById('cell-name').style.color = getCategoryColor(info.category);
         document.getElementById('cell-detail').textContent = `Layer ${layer}: ${LAYERS[layer]} • ${info.category}`;
         document.getElementById('cell-score').textContent = score.toFixed(2);
         
