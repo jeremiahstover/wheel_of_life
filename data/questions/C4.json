@@ -66,15 +66,15 @@
     },
     {
       "id": "C4e",
-      "text": "When no one would know if I compromised, I ...",
+      "text": "When I'm alone and tempted to cut a corner, I ...",
       "voice": "Chase Hughes",
       "principle": "Private behavior predicts public character; small disciplines reveal true state",
       "answers": {
-        "4": "am mostly consistent, with occasional private lapses",
-        "5": "hold the line — my character doesn't change based on who's watching",
-        "2": "relax my standards — small compromises feel harmless when no one sees",
-        "3": "give myself more slack than I would in public",
-        "1": "compromise freely — my private life and public image are very different"
+        "4": "usually hold, though I slip sometimes",
+        "5": "hold — who I am doesn't depend on who's watching",
+        "2": "cut it if it's not hurting anyone",
+        "3": "sometimes hold, sometimes cut — depends on the moment",
+        "1": "cut it — no one will know"
       }
     }
   ]
