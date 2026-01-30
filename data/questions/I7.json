@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I7a",
-      "text": "I have people who care about my whole health — they notice and comment when something seems off.",
+      "text": "People who care about my whole health (notice when something's off) are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Attentive friends notice decline"
+      "principle": "Attentive friends notice decline",
+      "answers": {
+        "4": "several — they pay attention",
+        "5": "my inner circle — they notice and speak up",
+        "2": "maybe one — vaguely aware",
+        "3": "a few — they notice some things",
+        "1": "none — no one's watching my health"
+      }
     },
     {
       "id": "I7b",
-      "text": "I pay attention to my friends' overall wellbeing — I notice when they're not thriving and I say something.",
+      "text": "My attention to friends' overall wellbeing (noticing when they're not thriving) is ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual attention to wholeness"
+      "principle": "Mutual attention to wholeness",
+      "answers": {
+        "4": "consistent — I notice and say something",
+        "5": "deep — I'm watching for their whole wellbeing",
+        "2": "occasional — sometimes I notice",
+        "3": "moderate — I pay attention to some",
+        "1": "minimal — I'm not tuned in"
+      }
     },
     {
       "id": "I7c",
-      "text": "I have people who would intervene if they saw me making seriously unhealthy choices — and I would let them.",
+      "text": "People who would intervene if I made seriously unhealthy choices (and I'd let them) are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Permission for intervention"
+      "principle": "Permission for intervention",
+      "answers": {
+        "4": "several — and I'd receive it",
+        "5": "my inner circle — full permission to intervene",
+        "2": "maybe one — but I might resist",
+        "3": "a few — for certain things",
+        "1": "none — no one has that access"
+      }
     },
     {
       "id": "I7d",
-      "text": "My close relationships integrate body, soul, and spirit — we don't compartmentalize into 'spiritual friends' vs 'workout buddies.'",
+      "text": "Close relationships integrating body, soul, and spirit (not compartmentalized) is ...",
       "voice": "Core Philosophy",
-      "principle": "Integrated fellowship"
+      "principle": "Integrated fellowship",
+      "answers": {
+        "4": "common — my close friends know the whole me",
+        "5": "normal — integrated friendship is the standard",
+        "2": "limited — mostly single-dimension connections",
+        "3": "moderate — some integration in some relationships",
+        "1": "rare — my friendships are compartmentalized"
+      }
     },
     {
       "id": "I7e",
-      "text": "I have people who have walked with me through health crises and I have walked with them — tested by difficulty.",
+      "text": "People who have walked with me through health crises (and I with them) are ...",
       "voice": "Core Philosophy",
-      "principle": "Crisis-tested relationships"
+      "principle": "Crisis-tested relationships",
+      "answers": {
+        "4": "several — tested by difficulty",
+        "5": "my trusted circle — we've proven faithful through hard times",
+        "2": "maybe one — in limited ways",
+        "3": "a few — we've been through some things",
+        "1": "none — I handle crises alone"
+      }
     }
   ]
 }

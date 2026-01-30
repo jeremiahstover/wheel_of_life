@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D7a",
-      "text": "I have people whose thinking challenges mine — they don't just agree with me, they sharpen me.",
+      "text": "People whose thinking challenges mine (not just agrees) are ...",
       "voice": "Jordan Peterson",
-      "principle": "Intellectual challenge produces growth"
+      "principle": "Intellectual challenge produces growth",
+      "answers": {
+        "4": "several — regular sharpening conversations",
+        "5": "valued — I seek out challenging thinkers",
+        "2": "rare — most of my circle thinks like me",
+        "3": "some — a few challenge me occasionally",
+        "1": "none — I avoid people who disagree"
+      }
     },
     {
       "id": "D7b",
-      "text": "I have relationships where we discuss ideas, debate respectfully, and learn from each other.",
+      "text": "Relationships where we discuss ideas, debate, and learn from each other are ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual intellectual investment"
+      "principle": "Mutual intellectual investment",
+      "answers": {
+        "4": "regular — a valued part of key relationships",
+        "5": "rich — intellectual exchange is woven throughout",
+        "2": "rare — occasionally surfaces",
+        "3": "some — with a few people",
+        "1": "nonexistent — my relationships don't go there"
+      }
     },
     {
       "id": "D7c",
-      "text": "I can be wrong in front of my intellectual friends without losing face — the relationship is secure enough for failure.",
+      "text": "Being wrong in front of intellectual friends is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Safety enables honest inquiry"
+      "principle": "Safety enables honest inquiry",
+      "answers": {
+        "4": "safe — the relationship can handle it",
+        "5": "welcomed — being wrong is how we learn",
+        "2": "uncomfortable — I try to hide mistakes",
+        "3": "acceptable — in some relationships",
+        "1": "terrifying — I avoid it at all costs"
+      }
     },
     {
       "id": "D7d",
-      "text": "I contribute to others' intellectual growth as much as I receive — I'm not just taking, I'm giving.",
+      "text": "My contribution to others' intellectual growth is ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual sharpening"
+      "principle": "Mutual sharpening",
+      "answers": {
+        "4": "substantial — I'm a resource for others",
+        "5": "significant — mutual intellectual investment",
+        "2": "occasional — I contribute sometimes",
+        "3": "moderate — I give and receive",
+        "1": "minimal — I'm mostly on the receiving end"
+      }
     },
     {
       "id": "D7e",
-      "text": "My intellectual friendships have changed what I believe or how I think — they've had real impact.",
+      "text": "My intellectual friendships changing what I believe or how I think is ...",
       "voice": "Jordan Peterson",
-      "principle": "True fellowship produces transformation"
+      "principle": "True fellowship produces transformation",
+      "answers": {
+        "4": "regular — they've had real impact",
+        "5": "profound — these relationships have shaped me",
+        "2": "rare — small adjustments at best",
+        "3": "occasional — some real shifts",
+        "1": "not happening — no one has changed my mind"
+      }
     }
   ]
 }

@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C7a",
-      "text": "I have people who know my specific sin struggles — not vague 'accountability' but real knowledge of real battles.",
+      "text": "People who know my specific sin struggles (real knowledge, not vague accountability) are ...",
       "voice": "Core Philosophy",
-      "principle": "Specific knowledge enables specific help"
+      "principle": "Specific knowledge enables specific help",
+      "answers": {
+        "4": "several — they know the real battles",
+        "5": "my trusted circle — no hiding",
+        "2": "maybe one — and even that's surface level",
+        "3": "a few — they know some struggles",
+        "1": "none — those stay private"
+      }
     },
     {
       "id": "C7b",
-      "text": "I have people I can confess to without fear of judgment or rejection — they'll hold me accountable AND hold me close.",
+      "text": "People I can confess to without fear of judgment or rejection are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Grace and truth together"
+      "principle": "Grace and truth together",
+      "answers": {
+        "4": "several — I know they'll hold me close",
+        "5": "my inner circle — safe for full confession",
+        "2": "maybe one — and I'm still cautious",
+        "3": "a few — for certain things",
+        "1": "none — confession feels too risky"
+      }
     },
     {
       "id": "C7c",
-      "text": "I know my friends' struggles and actively support their sanctification — it's mutual, not just me receiving.",
+      "text": "My support of friends' sanctification (not just receiving) is ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual pursuit of holiness"
+      "principle": "Mutual pursuit of holiness",
+      "answers": {
+        "4": "substantial — I know their battles and help",
+        "5": "deep — mutual investment in each other's holiness",
+        "2": "minimal — I encourage vaguely",
+        "3": "moderate — I support some friends actively",
+        "1": "absent — I'm not in their business"
+      }
     },
     {
       "id": "C7d",
-      "text": "When I fall, I have people I tell promptly — I don't hide and hope no one notices.",
+      "text": "When I fall, people I tell promptly are ...",
       "voice": "Jordan Peterson",
-      "principle": "Quick confession prevents festering"
+      "principle": "Quick confession prevents festering",
+      "answers": {
+        "4": "my accountability partners — fairly quickly",
+        "5": "my inner circle — immediately",
+        "2": "maybe one — eventually",
+        "3": "a few — when I'm ready",
+        "1": "none — I hide and hope no one notices"
+      }
     },
     {
       "id": "C7e",
-      "text": "My sanctification relationships help me actually change, not just feel supported — they challenge, not just comfort.",
+      "text": "My sanctification relationships helping me actually change (not just feel supported) is ...",
       "voice": "Core Philosophy",
-      "principle": "True fellowship produces transformation"
+      "principle": "True fellowship produces transformation",
+      "answers": {
+        "4": "usually — they challenge me to grow",
+        "5": "consistent — these relationships produce real change",
+        "2": "rare — mostly comfort, little challenge",
+        "3": "sometimes — depends on the relationship",
+        "1": "not happening — I don't have those relationships"
+      }
     }
   ]
 }

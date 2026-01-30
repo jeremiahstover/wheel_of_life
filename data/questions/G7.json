@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G7a",
-      "text": "I regularly share meals with people — eating together, not just existing in parallel.",
+      "text": "Regularly sharing meals with people (eating together, not just parallel) is ...",
       "voice": "Core Philosophy",
-      "principle": "Shared meals build fellowship"
+      "principle": "Shared meals build fellowship",
+      "answers": {
+        "4": "common — eating together is normal for me",
+        "5": "central — shared meals are how I connect",
+        "2": "occasional — sometimes with others",
+        "3": "moderate — fairly regular shared meals",
+        "1": "rare — I mostly eat alone"
+      }
     },
     {
       "id": "G7b",
-      "text": "I have people who would help me with practical needs (moving, repairs, errands) and vice versa.",
+      "text": "People who would help with practical needs (and vice versa) are ...",
       "voice": "Core Philosophy",
-      "principle": "Practical mutual aid"
+      "principle": "Practical mutual aid",
+      "answers": {
+        "4": "several — mutual practical support",
+        "5": "a network — we show up for each other",
+        "2": "maybe one or two — in emergencies",
+        "3": "some — I could ask a few people",
+        "1": "none — I handle things myself"
+      }
     },
     {
       "id": "G7c",
-      "text": "I let people into my home and daily life — they see how I actually live, not just a curated version.",
+      "text": "Letting people into my home and daily life (not just curated versions) is ...",
       "voice": "Jordan Peterson",
-      "principle": "Domestic transparency"
+      "principle": "Domestic transparency",
+      "answers": {
+        "4": "common — I'm fairly open",
+        "5": "normal — my life is accessible to friends",
+        "2": "selective — only when things are presentable",
+        "3": "moderate — some people see the real version",
+        "1": "rare — people don't see how I live"
+      }
     },
     {
       "id": "G7d",
-      "text": "I help others with their practical physical needs — I show up when there's work to do.",
+      "text": "Helping others with practical physical needs (showing up when there's work) is ...",
       "voice": "Core Philosophy",
-      "principle": "Practical service demonstrates fellowship"
+      "principle": "Practical service demonstrates fellowship",
+      "answers": {
+        "4": "regular — I make time to help",
+        "5": "consistent — I'm someone people can count on",
+        "2": "occasional — when it's convenient",
+        "3": "moderate — I help when I can",
+        "1": "rare — I'm not usually available"
+      }
     },
     {
       "id": "G7e",
-      "text": "My physical/practical friendships involve actual presence, not just digital connection.",
+      "text": "Physical/practical friendships involving actual presence (not just digital) is ...",
       "voice": "Core Philosophy",
-      "principle": "Embodied fellowship"
+      "principle": "Embodied fellowship",
+      "answers": {
+        "4": "common — I have regular physical presence",
+        "5": "primary — in-person is how I connect",
+        "2": "occasional — sometimes in person",
+        "3": "moderate — a mix of digital and physical",
+        "1": "rare — most connection is online"
+      }
     }
   ]
 }

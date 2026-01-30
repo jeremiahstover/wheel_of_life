@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H7a",
-      "text": "I have people I exercise or train with — shared physical activity, not just solo workouts.",
+      "text": "People I exercise or train with (shared physical activity) are ...",
       "voice": "Core Philosophy",
-      "principle": "Training partners increase consistency"
+      "principle": "Training partners increase consistency",
+      "answers": {
+        "4": "regular — I have training partners",
+        "5": "integral — shared physical activity is how I connect",
+        "2": "rare — occasionally join something",
+        "3": "some — periodic shared activity",
+        "1": "none — I work out alone"
+      }
     },
     {
       "id": "H7b",
-      "text": "I have people who push my physical development — they challenge me to do more than I would alone.",
+      "text": "People who push my physical development (challenge me to do more) are ...",
       "voice": "Brian Tracy",
-      "principle": "Mutual challenge increases growth"
+      "principle": "Mutual challenge increases growth",
+      "answers": {
+        "4": "regular — I have people who push me",
+        "5": "consistent — mutual physical challenge is normal",
+        "2": "rare — occasional push",
+        "3": "some — a few people in certain activities",
+        "1": "none — no one challenges me physically"
+      }
     },
     {
       "id": "H7c",
-      "text": "I hold others accountable for their physical health/fitness — I ask, encourage, challenge.",
+      "text": "Holding others accountable for physical health/fitness is ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual accountability"
+      "principle": "Mutual accountability",
+      "answers": {
+        "4": "regular — I ask, encourage, challenge",
+        "5": "mutual — we hold each other accountable",
+        "2": "rare — I might mention something",
+        "3": "occasional — with some people",
+        "1": "not my place — I stay out of that"
+      }
     },
     {
       "id": "H7d",
-      "text": "I share physical activities (sports, hiking, movement) with others as a form of connection.",
+      "text": "Sharing physical activities (sports, hiking, movement) as connection is ...",
       "voice": "Core Philosophy",
-      "principle": "Shared activity builds bonds"
+      "principle": "Shared activity builds bonds",
+      "answers": {
+        "4": "common — physical activity is social for me",
+        "5": "central — shared movement is how I connect",
+        "2": "occasional — sometimes I join things",
+        "3": "moderate — some shared physical connection",
+        "1": "rare — physical activity is solo for me"
+      }
     },
     {
       "id": "H7e",
-      "text": "My physical fellowship relationships have improved my actual fitness — they've had real impact.",
+      "text": "Physical fellowship relationships improving my actual fitness is ...",
       "voice": "Brian Tracy",
-      "principle": "Effective fellowship produces results"
+      "principle": "Effective fellowship produces results",
+      "answers": {
+        "4": "clear — they've helped my fitness",
+        "5": "substantial — these relationships have transformed my physical life",
+        "2": "minimal — little real impact",
+        "3": "moderate — some improvement",
+        "1": "not happening — no such relationships"
+      }
     }
   ]
 }

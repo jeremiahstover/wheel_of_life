@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E7a",
-      "text": "I have people who know what I've committed to and ask me if I've done it.",
+      "text": "People who know my commitments and ask if I've followed through are ...",
       "voice": "Brian Tracy",
-      "principle": "External accountability increases follow-through"
+      "principle": "External accountability increases follow-through",
+      "answers": {
+        "4": "several — regular accountability",
+        "5": "my accountability partners — they always ask",
+        "2": "rare — occasionally someone asks",
+        "3": "some — a few people in a few areas",
+        "1": "none — I keep my commitments to myself"
+      }
     },
     {
       "id": "E7b",
-      "text": "I tell people my goals specifically so they can hold me accountable — I invite the pressure.",
+      "text": "Telling people my goals so they can hold me accountable is ...",
       "voice": "Brian Tracy",
-      "principle": "Voluntary accountability is most effective"
+      "principle": "Voluntary accountability is most effective",
+      "answers": {
+        "4": "regular — I invite the pressure",
+        "5": "built in — accountability is part of goal-setting",
+        "2": "rare — only when I have to",
+        "3": "sometimes — for certain goals",
+        "1": "something I avoid — I keep goals private"
+      }
     },
     {
       "id": "E7c",
-      "text": "I hold others accountable for their commitments — I ask, I follow up, I don't let them off the hook.",
+      "text": "Holding others accountable for their commitments is ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual accountability"
+      "principle": "Mutual accountability",
+      "answers": {
+        "4": "regular — I follow up consistently",
+        "5": "mutual — I hold and am held accountable",
+        "2": "rare — I hint but don't push",
+        "3": "sometimes — depends on the relationship",
+        "1": "not my role — I don't do that"
+      }
     },
     {
       "id": "E7d",
-      "text": "When I fail to follow through, I tell my accountability partners honestly rather than hiding or making excuses.",
+      "text": "When I fail to follow through, telling accountability partners honestly is ...",
       "voice": "Jordan Peterson",
-      "principle": "Honest reporting enables real accountability"
+      "principle": "Honest reporting enables real accountability",
+      "answers": {
+        "4": "usual — I tell them even when it's hard",
+        "5": "automatic — honesty is the point",
+        "2": "hard — I often minimize or delay",
+        "3": "inconsistent — sometimes honest, sometimes not",
+        "1": "not happening — I hide failures"
+      }
     },
     {
       "id": "E7e",
-      "text": "My execution accountability relationships have actually improved my follow-through — they work.",
+      "text": "My execution accountability relationships improving my follow-through is ...",
       "voice": "Brian Tracy",
-      "principle": "Effective accountability produces results"
+      "principle": "Effective accountability produces results",
+      "answers": {
+        "4": "clear — they've definitely helped",
+        "5": "substantial — these relationships work",
+        "2": "minimal — hasn't made much difference",
+        "3": "moderate — some improvement in some areas",
+        "1": "not happening — I don't have these"
+      }
     }
   ]
 }

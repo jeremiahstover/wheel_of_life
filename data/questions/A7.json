@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "A7a",
-      "text": "I have people I regularly pray with — not just for, but WITH, sharing burdens and interceding together.",
+      "text": "People I regularly pray WITH (not just for) are ...",
       "voice": "Core Philosophy",
-      "principle": "Shared prayer is foundational fellowship"
+      "principle": "Shared prayer is foundational fellowship",
+      "answers": {
+        "4": "regular — I have consistent prayer partners",
+        "5": "integral — shared prayer is a core part of my life",
+        "2": "rare — occasional prayer with others",
+        "3": "some — I pray with people sometimes",
+        "1": "nonexistent — I pray alone"
+      }
     },
     {
       "id": "A7b",
-      "text": "I have relationships where we discuss Scripture, spiritual insights, and what God is teaching us — mutual learning.",
+      "text": "Relationships where we discuss Scripture and what God is teaching us are ...",
       "voice": "Core Philosophy",
-      "principle": "Mutual spiritual learning deepens fellowship"
+      "principle": "Mutual spiritual learning deepens fellowship",
+      "answers": {
+        "4": "regular — I have ongoing spiritual conversations",
+        "5": "rich — mutual learning is woven through my relationships",
+        "2": "rare — occasionally, in formal settings",
+        "3": "some — a few people, sometimes",
+        "1": "nonexistent — I don't have these conversations"
+      }
     },
     {
       "id": "A7c",
-      "text": "I have people who know where I am spiritually — the real state, not just the public version.",
+      "text": "People who know my real spiritual state (not just the public version) are ...",
       "voice": "Jordan Peterson",
-      "principle": "Transparency enables genuine connection"
+      "principle": "Transparency enables genuine connection",
+      "answers": {
+        "4": "several — they know most of it",
+        "5": "my inner circle — they know the truth",
+        "2": "maybe one — and even they don't know everything",
+        "3": "a few — in limited areas",
+        "1": "none — I keep that private"
+      }
     },
     {
       "id": "A7d",
-      "text": "I allow others to challenge my spiritual life and receive it as sharpening, not attack.",
+      "text": "When others challenge my spiritual life, I ...",
       "voice": "Core Philosophy",
-      "principle": "Iron sharpens iron"
+      "principle": "Iron sharpens iron",
+      "answers": {
+        "4": "usually receive it as sharpening",
+        "5": "welcome it — I've invited this",
+        "2": "resist — it feels like attack",
+        "3": "sometimes receive it, sometimes get defensive",
+        "1": "don't let them — no one has that access"
+      }
     },
     {
       "id": "A7e",
-      "text": "I invest in others' spiritual lives as much as they invest in mine — the relationship is mutual, not one-sided.",
+      "text": "Investment in others' spiritual lives compared to what I receive is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Mutuality defines fellowship"
+      "principle": "Mutuality defines fellowship",
+      "answers": {
+        "4": "mostly mutual — genuine exchange",
+        "5": "deeply mutual — we sharpen each other consistently",
+        "2": "unbalanced — significantly more one way",
+        "3": "somewhat mutual — trying to balance",
+        "1": "one-sided — I mostly receive or mostly give"
+      }
     }
   ]
 }

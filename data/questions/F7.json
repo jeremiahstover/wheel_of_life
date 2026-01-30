@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F7a",
-      "text": "I have people who know how I'm really doing emotionally — not just the 'fine' I tell most people.",
+      "text": "People who know how I'm really doing emotionally (not just 'fine') are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional transparency enables support"
+      "principle": "Emotional transparency enables support",
+      "answers": {
+        "4": "several — they know the real state",
+        "5": "my inner circle — full emotional access",
+        "2": "maybe one — and even that's limited",
+        "3": "a few — in certain seasons or areas",
+        "1": "none — I keep emotions private"
+      }
     },
     {
       "id": "F7b",
-      "text": "I can cry, rage, or despair in front of certain people without shame — they can hold my emotions.",
+      "text": "People I can cry, rage, or despair in front of without shame are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional safety enables vulnerability"
+      "principle": "Emotional safety enables vulnerability",
+      "answers": {
+        "4": "several — they can hold my emotions",
+        "5": "my safe people — complete emotional honesty",
+        "2": "maybe one — and it's still uncomfortable",
+        "3": "a few — in the right circumstances",
+        "1": "none — I don't show that to anyone"
+      }
     },
     {
       "id": "F7c",
-      "text": "I provide emotional presence for others — I can hold their hard emotions without fixing, fleeing, or freezing.",
+      "text": "My ability to provide emotional presence for others (hold their emotions) is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Mutual emotional capacity"
+      "principle": "Mutual emotional capacity",
+      "answers": {
+        "4": "good — I can usually hold space",
+        "5": "strong — I'm a safe place for others' emotions",
+        "2": "limited — I try but struggle",
+        "3": "moderate — I can do it sometimes",
+        "1": "poor — I fix, flee, or freeze"
+      }
     },
     {
       "id": "F7d",
-      "text": "My emotional friendships challenge me to grow, not just comfort me in my patterns.",
+      "text": "My emotional friendships challenging me to grow (not just comfort) is ...",
       "voice": "Core Philosophy",
-      "principle": "True fellowship transforms, not just supports"
+      "principle": "True fellowship transforms, not just supports",
+      "answers": {
+        "4": "regular — they push me to grow",
+        "5": "consistent — comfort AND challenge",
+        "2": "rare — mostly validation",
+        "3": "sometimes — depends on the relationship",
+        "1": "not happening — just comfort or nothing"
+      }
     },
     {
       "id": "F7e",
-      "text": "I've shared my emotional history (pain, trauma, struggles) with people who've earned that trust.",
+      "text": "Sharing my emotional history (pain, trauma) with people who've earned trust is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Deep trust enables deep sharing"
+      "principle": "Deep trust enables deep sharing",
+      "answers": {
+        "4": "substantial — key people know the story",
+        "5": "complete — my trusted circle knows it all",
+        "2": "minimal — bits and pieces",
+        "3": "partial — some people know some things",
+        "1": "not happening — no one knows that"
+      }
     }
   ]
 }

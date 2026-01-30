@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B7a",
-      "text": "I have people who have explicit permission to call me out when they see something wrong.",
+      "text": "People with explicit permission to call me out are ...",
       "voice": "Cloud & Townsend",
-      "principle": "Permission enables accountability"
+      "principle": "Permission enables accountability",
+      "answers": {
+        "4": "several — and they use the permission",
+        "5": "my inner circle — open access, frequently exercised",
+        "2": "technically there but rarely used",
+        "3": "a few — but I'm selective about what they can address",
+        "1": "none — I haven't given anyone that permission"
+      }
     },
     {
       "id": "B7b",
-      "text": "I have people who know my specific moral vulnerabilities and check in on them.",
+      "text": "People who know my specific moral vulnerabilities are ...",
       "voice": "Chase Hughes",
-      "principle": "Specific accountability addresses specific weakness"
+      "principle": "Specific accountability addresses specific weakness",
+      "answers": {
+        "4": "several — they know the real struggles",
+        "5": "my accountability partners — full knowledge, regular check-ins",
+        "2": "maybe one — vaguely",
+        "3": "a few — they know some things",
+        "1": "none — I keep those hidden"
+      }
     },
     {
       "id": "B7c",
-      "text": "When confronted by a friend, I receive it as a gift rather than becoming defensive.",
+      "text": "When confronted by a friend, I ...",
       "voice": "Jordan Peterson",
-      "principle": "Receiving correction is a skill"
+      "principle": "Receiving correction is a skill",
+      "answers": {
+        "4": "usually receive it as a gift",
+        "5": "thank them — I know it costs them to speak",
+        "2": "struggle to receive it",
+        "3": "sometimes receive it, sometimes push back",
+        "1": "get defensive and shut down"
+      }
     },
     {
       "id": "B7d",
-      "text": "I confront my friends when I see something concerning — I don't let things slide to avoid awkwardness.",
+      "text": "When I see something concerning in a friend, I ...",
       "voice": "Cloud & Townsend",
-      "principle": "Mutual accountability requires courage to speak"
+      "principle": "Mutual accountability requires courage to speak",
+      "answers": {
+        "4": "usually address it, though it's uncomfortable",
+        "5": "address it directly — love requires honesty",
+        "2": "hint but avoid direct conversation",
+        "3": "sometimes speak up, sometimes let it go",
+        "1": "stay silent — not my place"
+      }
     },
     {
       "id": "B7e",
-      "text": "My accountability relationships have survived confrontation — we've been through hard conversations and stayed connected.",
+      "text": "My accountability relationships surviving hard conversations is ...",
       "voice": "Core Philosophy",
-      "principle": "Tested relationships prove genuine"
+      "principle": "Tested relationships prove genuine",
+      "answers": {
+        "4": "mostly proven — we've been through things",
+        "5": "deeply tested — hard conversations have strengthened us",
+        "2": "failed — some relationships didn't survive",
+        "3": "mixed — some have, some haven't",
+        "1": "untested — we haven't had hard conversations"
+      }
     }
   ]
 }
