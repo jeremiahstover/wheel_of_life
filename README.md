@@ -49,19 +49,19 @@ Results saved to `/storage/result_*.json` for tracking progress over time.
 
 **Definition of Discipline:** Consistently making yourself do what needs to be done, especially when you don't feel like doing it.
 
-### 9 Dimensions (5 questions each = 45 total)
+### Tripartite Model v2 (Receives/Executes/State)
 
-| Category | Dimension | Focus |
-|----------|-----------|-------|
-| Spirit | Connection to God | Communion through spiritual practices |
-| Spirit | Conscience | Acting on moral conviction |
-| Spirit | Purpose/Calling | Staying aligned, resisting distractions |
-| Soul | Mind | Learning, intellectual growth |
-| Soul | Will | Follow-through, integrity with self |
-| Soul | Emotions | Processing feelings, managing actions |
-| Body | Fuel &amp; Recovery | Nutrition, sleep, environment |
-| Body | Capacity &amp; Function | Exercise, movement, physical ability |
-| Body | Health &amp; Wholeness | Preventive care, integrated wellness |
+| Category | Function | Dimension | Focus |
+|----------|----------|-----------|-------|
+| Spirit | Receives | Communion | Receiving from God through spiritual practices |
+| Spirit | Executes | Conscience | Acting on moral conviction |
+| Spirit | State | Holiness | Maintaining spiritual purity, sanctification |
+| Soul | Receives | Mind | Learning, intellectual growth |
+| Soul | Executes | Will | Follow-through, integrity with self |
+| Soul | State | Emotions | Processing feelings, managing actions |
+| Body | Receives | Sustenance | Nutrition, sleep, environment |
+| Body | Executes | Capability | Exercise, movement, physical ability |
+| Body | State | Wholeness | Preventive care, integrated wellness |
 
 ### Scoring
 
