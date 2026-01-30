@@ -14,67 +14,67 @@
   "questions": [
     {
       "id": "G4a",
-      "text": "I maintain a consistent sleep schedule (same bedtime and wake time) even on weekends.",
+      "text": "My sleep schedule is ...",
       "voice": "Brian Tracy",
       "principle": "Morning routines start with evening discipline",
       "answers": {
-        "1": "My sleep schedule is chaotic — I sleep when I'm exhausted and wake when I have to",
-        "2": "I have a vague target but rarely hit it — weekends especially are a free-for-all",
-        "3": "I'm consistent during the week but weekends throw me completely off",
-        "4": "I mostly maintain my schedule, with occasional deviations",
-        "5": "My sleep schedule is locked in — same time every day, including weekends"
+        "4": "mostly maintained, with occasional deviations",
+        "5": "locked in — same time every day, including weekends",
+        "2": "loose — I have a vague target but rarely hit it",
+        "3": "consistent during the week, but weekends throw me off",
+        "1": "chaotic — I sleep when exhausted and wake when I have to"
       }
     },
     {
       "id": "G4b",
-      "text": "I eat in a way that fuels my body well (real food, appropriate portions) rather than giving in to cravings.",
+      "text": "My eating is ...",
       "voice": "Jordan Peterson",
       "principle": "Order in the small things",
       "answers": {
-        "1": "I eat whatever's convenient — nutrition rarely factors into my choices",
-        "2": "I know what I should eat but consistently choose otherwise",
-        "3": "I eat well when it's easy, but stress, busyness, or availability derails me",
-        "4": "Most of my meals are intentional — I plan and prepare, with occasional lapses",
-        "5": "Eating well is a settled discipline — I've built systems that make it automatic"
+        "4": "mostly intentional, with occasional lapses",
+        "5": "settled — I've built systems that make it automatic",
+        "2": "mostly convenience, occasionally intentional",
+        "3": "good when it's easy, but stress or busyness derails me",
+        "1": "whatever's convenient — nutrition rarely factors in"
       }
     },
     {
       "id": "G4c",
-      "text": "I drink adequate water throughout the day and limit substances that impair performance (alcohol, excessive caffeine).",
+      "text": "My hydration and substance intake are ...",
       "voice": "Core Philosophy",
       "principle": "Basic stewardship",
       "answers": {
-        "1": "I run on caffeine and rarely drink water — I notice but don't change",
-        "2": "I know my substance intake is too high but cutting back feels impossible",
-        "3": "I manage hydration and substances sometimes, but easily slip into bad patterns",
-        "4": "I usually stay well hydrated and moderate with substances, with occasional excess",
-        "5": "Hydration is automatic and I'm intentional about anything that affects my performance"
+        "4": "usually good, with occasional excess",
+        "5": "automatic — hydration is handled and I'm intentional about performance",
+        "2": "something I think about but don't change",
+        "3": "managed sometimes, but I easily slip into bad patterns",
+        "1": "not something I track — I run on caffeine and rarely drink water"
       }
     },
     {
       "id": "G4d",
-      "text": "I maintain my environment (clean space, organized workspace, reduced toxins/clutter) rather than living in chaos.",
+      "text": "My physical environment is ...",
       "voice": "Jordan Peterson / Chase Hughes",
       "principle": "Clean your room; environment shapes behavior",
       "answers": {
-        "1": "My environment is chaotic and I've stopped seeing it",
-        "2": "I clean up occasionally but it quickly returns to disorder",
-        "3": "Some areas are organized, others are perpetual disaster zones",
-        "4": "I mostly keep things ordered, with occasional pileups that I address",
-        "5": "My environment stays clean and organized — I've built systems that maintain it"
+        "4": "mostly ordered, with occasional pileups that I address",
+        "5": "clean and organized — I've built systems that maintain it",
+        "2": "occasionally cleaned up, but quickly returns to disorder",
+        "3": "mixed — some areas organized, others perpetual disaster zones",
+        "1": "chaotic — I've stopped seeing it"
       }
     },
     {
       "id": "G4e",
-      "text": "I take breaks and rest when needed rather than pushing through to burnout, then crashing.",
+      "text": "My approach to rest and breaks is ...",
       "voice": "Cloud & Townsend",
       "principle": "Boundaries around energy; sustainable pace",
       "answers": {
-        "1": "I push until I crash, recover, repeat — I don't know another way",
-        "2": "I know I need breaks but taking them feels like weakness",
-        "3": "I take breaks sometimes but often ignore the signs until it's too late",
-        "4": "I usually take appropriate breaks, occasionally pushing too hard before I do",
-        "5": "I've learned my limits and I respect them — breaks are scheduled, not emergency measures"
+        "4": "usually appropriate, occasionally pushing too hard before I do",
+        "5": "scheduled — I've learned my limits and I respect them",
+        "2": "rare — taking them feels like weakness",
+        "3": "inconsistent — I often ignore the signs until I crash",
+        "1": "push until I crash, recover, repeat"
       }
     }
   ]
