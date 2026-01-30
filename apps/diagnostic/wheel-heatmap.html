@@ -395,6 +395,18 @@
         }
     }
     
+    function calculateOverallScore() {
+        let total = 0;
+        let count = 0;
+        for (const dim of DIM_ORDER) {
+            for (let layer = 1; layer <= 8; layer++) {
+                total += data[dim][layer];
+                count++;
+            }
+        }
+        return total / count; // Returns 1-5 scale
+    }
+    
     function findBreakPoint(dimData) {
         let floor = 0;
         let breakPoint = null;
@@ -480,6 +492,82 @@
         ].join(" ");
     }
     
+    function renderFace(svg, overallScore) {
+        // overallScore is 1-5, convert to display (2-10)
+        const displayScore = toDisplayScore(overallScore);
+        
+        // Thresholds on display scale:
+        // >= 7.5: happy (smile)
+        // 6.0 - 7.5: neutral (flat)
+        // < 6.0: sad (frown)
+        
+        const faceGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        faceGroup.setAttribute('class', 'face');
+        
+        // Face background circle
+        const faceCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        faceCircle.setAttribute('cx', CX);
+        faceCircle.setAttribute('cy', CY);
+        faceCircle.setAttribute('r', MIN_RADIUS - 4);
+        faceCircle.setAttribute('fill', '#0d1117');
+        faceGroup.appendChild(faceCircle);
+        
+        // Determine face color based on score
+        let faceColor;
+        if (displayScore >= 7.5) {
+            faceColor = '#68d391'; // green - happy
+        } else if (displayScore >= 6.0) {
+            faceColor = '#f6e05e'; // yellow - neutral
+        } else {
+            faceColor = '#fc8181'; // red - sad
+        }
+        
+        // Eyes
+        const eyeRadius = 3;
+        const eyeY = CY - 5;
+        const eyeSpacing = 10;
+        
+        const leftEye = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        leftEye.setAttribute('cx', CX - eyeSpacing);
+        leftEye.setAttribute('cy', eyeY);
+        leftEye.setAttribute('r', eyeRadius);
+        leftEye.setAttribute('fill', faceColor);
+        faceGroup.appendChild(leftEye);
+        
+        const rightEye = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        rightEye.setAttribute('cx', CX + eyeSpacing);
+        rightEye.setAttribute('cy', eyeY);
+        rightEye.setAttribute('r', eyeRadius);
+        rightEye.setAttribute('fill', faceColor);
+        faceGroup.appendChild(rightEye);
+        
+        // Mouth
+        const mouthY = CY + 8;
+        const mouthWidth = 14;
+        const mouth = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        
+        let mouthPath;
+        if (displayScore >= 7.5) {
+            // Smile - arc curving down (appears as smile)
+            mouthPath = `M ${CX - mouthWidth} ${mouthY} Q ${CX} ${mouthY + 10} ${CX + mouthWidth} ${mouthY}`;
+        } else if (displayScore >= 6.0) {
+            // Flat line
+            mouthPath = `M ${CX - mouthWidth} ${mouthY} L ${CX + mouthWidth} ${mouthY}`;
+        } else {
+            // Frown - arc curving up (appears as frown)
+            mouthPath = `M ${CX - mouthWidth} ${mouthY + 5} Q ${CX} ${mouthY - 5} ${CX + mouthWidth} ${mouthY + 5}`;
+        }
+        
+        mouth.setAttribute('d', mouthPath);
+        mouth.setAttribute('stroke', faceColor);
+        mouth.setAttribute('stroke-width', '3');
+        mouth.setAttribute('stroke-linecap', 'round');
+        mouth.setAttribute('fill', 'none');
+        faceGroup.appendChild(mouth);
+        
+        svg.appendChild(faceGroup);
+    }
+    
     function renderWheel() {
         const svg = document.getElementById('wheel');
         svg.innerHTML = '';
@@ -551,13 +639,9 @@
             svg.appendChild(text);
         }
         
-        // Center circle (dark)
-        const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        centerCircle.setAttribute('cx', CX);
-        centerCircle.setAttribute('cy', CY);
-        centerCircle.setAttribute('r', MIN_RADIUS - 2);
-        centerCircle.setAttribute('fill', '#0d1117');
-        svg.appendChild(centerCircle);
+        // Draw face in center
+        const overallScore = calculateOverallScore();
+        renderFace(svg, overallScore);
         
         renderBreaksList();
     }
