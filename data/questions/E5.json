@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E5a",
-      "text": "I have developed effective systems for managing commitments — I rarely drop things because I have reliable methods.",
+      "text": "My systems for managing commitments are ...",
       "voice": "Brian Tracy",
-      "principle": "Execution is systematizable"
+      "principle": "Execution is systematizable",
+      "answers": {
+        "4": "solid — I rarely drop things because I have reliable methods",
+        "5": "refined — my systems are tight and I continuously improve them",
+        "2": "basic — I have some systems but they often fail",
+        "3": "developing — my systems work sometimes, fail others",
+        "1": "nonexistent — I rely on memory and drop things constantly"
+      }
     },
     {
       "id": "E5b",
-      "text": "I know how to break large goals into actionable steps — I have skill in planning, not just dreaming.",
+      "text": "My skill in breaking large goals into actionable steps is ...",
       "voice": "Brian Tracy",
-      "principle": "Planning is a practical skill"
+      "principle": "Planning is a practical skill",
+      "answers": {
+        "4": "good — I can usually create workable action plans",
+        "5": "strong — I can turn any vision into executable steps",
+        "2": "basic — I can break things down but the steps are usually wrong",
+        "3": "developing — I plan some things well, botch others",
+        "1": "poor — I dream but can't plan"
+      }
     },
     {
       "id": "E5c",
-      "text": "I can make decisions efficiently — I have developed frameworks that prevent paralysis without being reckless.",
+      "text": "My decision-making efficiency is ...",
       "voice": "Brian Tracy",
-      "principle": "Decision-making is trainable"
+      "principle": "Decision-making is trainable",
+      "answers": {
+        "4": "good — I have frameworks that help me decide without paralysis",
+        "5": "refined — I make good decisions quickly and confidently",
+        "2": "slow — decisions take much longer than they should",
+        "3": "inconsistent — I decide well sometimes, poorly others",
+        "1": "poor — I get paralyzed or decide recklessly"
+      }
     },
     {
       "id": "E5d",
-      "text": "I know my own patterns of resistance and avoidance — I've studied myself and know how to work with (or around) my weaknesses.",
+      "text": "My understanding of my own patterns of resistance and avoidance is ...",
       "voice": "Chase Hughes",
-      "principle": "Self-knowledge enables strategic execution"
+      "principle": "Self-knowledge enables strategic execution",
+      "answers": {
+        "4": "good — I know my weaknesses and can work around them",
+        "5": "thorough — I've studied myself and know exactly how to handle my resistance",
+        "2": "vague — I know I resist but don't understand why or how",
+        "3": "developing — I've identified some patterns, others remain hidden",
+        "1": "absent — I don't see my patterns"
+      }
     },
     {
       "id": "E5e",
-      "text": "I can estimate how long things will take with reasonable accuracy — my planning skill has been calibrated by experience.",
+      "text": "My accuracy in estimating how long things will take is ...",
       "voice": "Brian Tracy",
-      "principle": "Estimation improves with feedback"
+      "principle": "Estimation improves with feedback",
+      "answers": {
+        "4": "good — my estimates are usually in the ballpark",
+        "5": "calibrated — experience has taught me to estimate accurately",
+        "2": "poor — I consistently underestimate or overestimate",
+        "3": "improving — I get some estimates right",
+        "1": "terrible — I'm wrong by factors, not percentages"
+      }
     }
   ]
 }

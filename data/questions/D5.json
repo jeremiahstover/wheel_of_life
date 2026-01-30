@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D5a",
-      "text": "I have developed effective learning methods — I know how I learn best and I use that knowledge intentionally.",
+      "text": "My effectiveness as a learner is ...",
       "voice": "Brian Tracy",
-      "principle": "Learning how to learn is foundational skill"
+      "principle": "Learning how to learn is foundational skill",
+      "answers": {
+        "4": "good — I know how I learn best and use that knowledge",
+        "5": "optimized — I have refined methods that make learning efficient",
+        "2": "basic — I can learn but slowly and inefficiently",
+        "3": "developing — some approaches work, I'm still figuring it out",
+        "1": "poor — I struggle to learn new things"
+      }
     },
     {
       "id": "D5b",
-      "text": "I can synthesize information from multiple sources into coherent understanding — not just collect facts, but integrate them.",
+      "text": "My ability to synthesize information from multiple sources is ...",
       "voice": "Core Philosophy",
-      "principle": "Synthesis is a higher-order skill"
+      "principle": "Synthesis is a higher-order skill",
+      "answers": {
+        "4": "good — I can build coherent understanding from diverse inputs",
+        "5": "strong — I naturally integrate information into bigger pictures",
+        "2": "basic — I can combine simple ideas but struggle with complexity",
+        "3": "developing — I synthesize some things well, fragment others",
+        "1": "poor — I collect facts but can't integrate them"
+      }
     },
     {
       "id": "D5c",
-      "text": "I have developed critical thinking skills — I can evaluate arguments, spot logical fallacies, and think clearly under pressure.",
+      "text": "My critical thinking skills are ...",
       "voice": "Jordan Peterson",
-      "principle": "Critical thinking is trainable"
+      "principle": "Critical thinking is trainable",
+      "answers": {
+        "4": "good — I can evaluate arguments and spot fallacies reliably",
+        "5": "sharp — I think clearly under pressure and see what others miss",
+        "2": "basic — I can spot obvious errors but miss subtle ones",
+        "3": "developing — I think critically sometimes, accept uncritically others",
+        "1": "poor — I accept what I hear without evaluation"
+      }
     },
     {
       "id": "D5d",
-      "text": "I can explain complex ideas simply — my understanding is deep enough to translate for others.",
+      "text": "My ability to explain complex ideas simply is ...",
       "voice": "Brian Tracy",
-      "principle": "Teaching ability indicates mastery"
+      "principle": "Teaching ability indicates mastery",
+      "answers": {
+        "4": "good — I can translate complexity for others",
+        "5": "strong — I can make almost anything understandable",
+        "2": "basic — I can explain simple things simply",
+        "3": "developing — I explain some things well, muddle others",
+        "1": "poor — I struggle to explain even what I understand"
+      }
     },
     {
       "id": "D5e",
-      "text": "I actively work to improve my thinking — I treat my mind as a tool to be sharpened, not just used.",
+      "text": "My intentional work to improve my thinking is ...",
       "voice": "Core Philosophy",
-      "principle": "Mental capability responds to training"
+      "principle": "Mental capability responds to training",
+      "answers": {
+        "4": "regular — I treat my mind as a tool to be sharpened",
+        "5": "systematic — I have ongoing practices that continuously improve my thinking",
+        "2": "occasional — I sometimes try to think better",
+        "3": "inconsistent — I work on it sometimes, neglect it others",
+        "1": "absent — I just use my mind as-is"
+      }
     }
   ]
 }

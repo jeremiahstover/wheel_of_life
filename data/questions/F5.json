@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F5a",
-      "text": "I can accurately identify what I'm feeling — I have a developed emotional vocabulary and self-awareness.",
+      "text": "My ability to accurately identify what I'm feeling is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional granularity is a skill"
+      "principle": "Emotional granularity is a skill",
+      "answers": {
+        "4": "good — I have vocabulary and awareness for most emotional states",
+        "5": "sharp — I can name what I'm feeling with precision",
+        "2": "basic — I can identify strong emotions but miss subtler ones",
+        "3": "developing — I'm getting better but still miss a lot",
+        "1": "poor — I often don't know what I feel"
+      }
     },
     {
       "id": "F5b",
-      "text": "I can read others' emotional states with reasonable accuracy — I've developed social perception skills.",
+      "text": "My ability to read others' emotional states is ...",
       "voice": "Chase Hughes",
-      "principle": "Reading others is trainable"
+      "principle": "Reading others is trainable",
+      "answers": {
+        "4": "good — I can usually tell what's going on with people",
+        "5": "strong — I pick up emotional signals others miss",
+        "2": "basic — I catch obvious signals but miss subtle ones",
+        "3": "developing — I read some people well, others not at all",
+        "1": "poor — I'm often blindsided by others' emotions"
+      }
     },
     {
       "id": "F5c",
-      "text": "I have practical techniques for regulating strong emotions that actually work for me — tested, not theoretical.",
+      "text": "My techniques for regulating strong emotions are ...",
       "voice": "Chase Hughes",
-      "principle": "Regulation techniques require practice"
+      "principle": "Regulation techniques require practice",
+      "answers": {
+        "4": "practical — I have tested methods that actually work",
+        "5": "refined — I know exactly what works for me in different situations",
+        "2": "theoretical — I know ideas but they don't work for me",
+        "3": "developing — some techniques work, others don't",
+        "1": "nonexistent — I'm at the mercy of my emotions"
+      }
     },
     {
       "id": "F5d",
-      "text": "I can have difficult emotional conversations productively — I've developed skill in navigating conflict and vulnerability.",
+      "text": "My skill in having difficult emotional conversations is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Difficult conversations are a learnable skill"
+      "principle": "Difficult conversations are a learnable skill",
+      "answers": {
+        "4": "good — I can navigate conflict and vulnerability productively",
+        "5": "strong — I can guide difficult conversations to good outcomes",
+        "2": "basic — I can have them but they often go badly",
+        "3": "developing — some go well, others blow up",
+        "1": "poor — I avoid them or make them worse"
+      }
     },
     {
       "id": "F5e",
-      "text": "I understand the connection between my thoughts, beliefs, and emotions — I can work at the cognitive level to affect the emotional level.",
+      "text": "My understanding of how thoughts and beliefs affect emotions is ...",
       "voice": "Core Philosophy",
-      "principle": "Cognitive-emotional connection can be leveraged skillfully"
+      "principle": "Cognitive-emotional connection can be leveraged skillfully",
+      "answers": {
+        "4": "good — I can usually trace emotions to beliefs and work there",
+        "5": "deep — I understand the connection and use it effectively",
+        "2": "basic — I know there's a connection but can't use it",
+        "3": "developing — I sometimes work at the cognitive level to affect emotions",
+        "1": "absent — I see them as separate"
+      }
     }
   ]
 }

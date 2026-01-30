@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G5a",
-      "text": "I know what foods work well for my body and what doesn't — I've experimented and have practical knowledge, not just theory.",
+      "text": "My practical knowledge of what foods work for my body is ...",
       "voice": "Core Philosophy",
-      "principle": "Nutritional knowledge is personalized through testing"
+      "principle": "Nutritional knowledge is personalized through testing",
+      "answers": {
+        "4": "good — I know what fuels me well and what doesn't",
+        "5": "dialed in — I've experimented and know exactly what my body needs",
+        "2": "basic — I know some foods are bad but not what works best",
+        "3": "developing — I've figured out some things through trial and error",
+        "1": "absent — I eat whatever and don't notice effects"
+      }
     },
     {
       "id": "G5b",
-      "text": "I know how to optimize my sleep — I understand my sleep needs and have developed practices that ensure quality rest.",
+      "text": "My skill in optimizing my sleep is ...",
       "voice": "Brian Tracy",
-      "principle": "Sleep optimization is learnable"
+      "principle": "Sleep optimization is learnable",
+      "answers": {
+        "4": "good — I understand my sleep needs and have practices that work",
+        "5": "optimized — I've dialed in sleep quality through tested methods",
+        "2": "basic — I know sleep matters but don't know how to improve it",
+        "3": "developing — I've improved some aspects, still working on others",
+        "1": "absent — I just sleep when I can"
+      }
     },
     {
       "id": "G5c",
-      "text": "I can prepare healthy meals efficiently — I have practical cooking/meal prep skills, not just good intentions.",
+      "text": "My practical cooking and meal prep skills are ...",
       "voice": "Core Philosophy",
-      "principle": "Food preparation is a practical skill"
+      "principle": "Food preparation is a practical skill",
+      "answers": {
+        "4": "good — I can prepare healthy meals efficiently",
+        "5": "strong — I have systems that make healthy eating easy",
+        "2": "basic — I can make a few things but not efficiently",
+        "3": "developing — I can prepare some healthy meals",
+        "1": "nonexistent — I can't cook, so I can't eat well"
+      }
     },
     {
       "id": "G5d",
-      "text": "I know how to create environments that support my work and rest — I've developed practical space management skills.",
+      "text": "My skill in creating environments that support my work and rest is ...",
       "voice": "Jordan Peterson",
-      "principle": "Environment design is a skill"
+      "principle": "Environment design is a skill",
+      "answers": {
+        "4": "good — I know how to set up spaces that support me",
+        "5": "refined — I've learned exactly what environment I need and create it",
+        "2": "basic — I know environment matters but don't know how to optimize",
+        "3": "developing — I've improved some spaces, others need work",
+        "1": "absent — I work wherever and it shows"
+      }
     },
     {
       "id": "G5e",
-      "text": "I can troubleshoot when my energy or recovery is off — I have diagnostic skill for my own body's signals.",
+      "text": "My ability to troubleshoot when my energy or recovery is off is ...",
       "voice": "Chase Hughes",
-      "principle": "Body awareness develops with attention"
+      "principle": "Body awareness develops with attention",
+      "answers": {
+        "4": "good — I can usually figure out what's off and fix it",
+        "5": "sharp — I read my body's signals accurately and know how to respond",
+        "2": "basic — I can sometimes guess what's wrong",
+        "3": "developing — I can diagnose some issues, not others",
+        "1": "absent — when I feel bad I don't know why"
+      }
     }
   ]
 }

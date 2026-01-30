@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "A5a",
-      "text": "I am measurably better at prayer, Scripture study, or worship than I was a year ago — not just more consistent, but more skilled.",
+      "text": "My skill in prayer, Scripture study, or worship compared to a year ago is ...",
       "voice": "Core Philosophy",
-      "principle": "Competence grows through practice"
+      "principle": "Competence grows through practice",
+      "answers": {
+        "4": "noticeably better — I have methods that work",
+        "5": "significantly deeper — I can see growth I couldn't have imagined",
+        "2": "slightly better — but I'm still struggling to find what works",
+        "3": "improved in some areas — inconsistent in others",
+        "1": "the same or worse — I haven't developed"
+      }
     },
     {
       "id": "A5b",
-      "text": "I can discern God's voice from my own thoughts and from other influences with increasing accuracy.",
+      "text": "My ability to discern God's voice from my own thoughts is ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual discernment is a developable skill"
+      "principle": "Spiritual discernment is a developable skill",
+      "answers": {
+        "4": "good — I can usually discern with reasonable confidence",
+        "5": "sharp — I've learned to recognize His voice clearly",
+        "2": "weak — I sometimes think I hear, but I'm usually uncertain",
+        "3": "developing — I get it right sometimes, wrong others",
+        "1": "nonexistent — I can't tell the difference"
+      }
     },
     {
       "id": "A5c",
-      "text": "I understand Scripture at deeper levels than I used to — I can see connections, apply principles, and teach others.",
+      "text": "My understanding of Scripture is ...",
       "voice": "Brian Tracy",
-      "principle": "Expertise deepens with intentional study"
+      "principle": "Expertise deepens with intentional study",
+      "answers": {
+        "4": "solid — I can see patterns, apply principles, and explain to others",
+        "5": "deep — I can teach, connect across the whole Bible, and find fresh insight",
+        "2": "basic — I understand simple passages but struggle with complexity",
+        "3": "growing — I see some connections and can apply some principles",
+        "1": "surface level — I read but don't really grasp deeper meaning"
+      }
     },
     {
       "id": "A5d",
-      "text": "I have developed specific techniques or practices in my spiritual life that work for me and produce consistent results.",
+      "text": "Specific spiritual practices that produce consistent results for me are ...",
       "voice": "Chase Hughes",
-      "principle": "Skill includes knowing what works"
+      "principle": "Skill includes knowing what works",
+      "answers": {
+        "4": "established — I have a toolkit of practices that reliably produce fruit",
+        "5": "refined — I know exactly what works and why, and I'm still optimizing",
+        "2": "unclear — I'm still searching for what works",
+        "3": "emerging — some things work sometimes",
+        "1": "nonexistent — nothing seems to work reliably"
+      }
     },
     {
       "id": "A5e",
-      "text": "I seek feedback on my spiritual life (from mentors, Scripture, the Spirit) and adjust based on what I learn.",
+      "text": "My practice of seeking and applying feedback on my spiritual life is ...",
       "voice": "Brian Tracy",
-      "principle": "Skill development requires feedback loops"
+      "principle": "Skill development requires feedback loops",
+      "answers": {
+        "4": "regular — I have people and practices that give me input I use",
+        "5": "systematic — I actively pursue feedback and adjust accordingly",
+        "2": "rare — I occasionally hear feedback but don't act on it",
+        "3": "inconsistent — I sometimes seek and apply, sometimes don't",
+        "1": "absent — I don't seek feedback"
+      }
     }
   ]
 }

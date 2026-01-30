@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C5a",
-      "text": "I know how to conduct an honest self-examination — I have a practiced method that surfaces what needs to surface.",
+      "text": "My skill in honest self-examination is ...",
       "voice": "Jordan Peterson",
-      "principle": "Self-examination is a developable skill"
+      "principle": "Self-examination is a developable skill",
+      "answers": {
+        "4": "good — I have a method that surfaces what needs to surface",
+        "5": "sharp — I can search my heart honestly and thoroughly",
+        "2": "basic — I try but often miss or deceive myself",
+        "3": "developing — I catch some things, miss others",
+        "1": "absent — I don't know how to examine myself effectively"
+      }
     },
     {
       "id": "C5b",
-      "text": "I can identify the root of a sin pattern, not just its symptoms — I've developed diagnostic skill.",
+      "text": "My ability to identify the root of a sin pattern is ...",
       "voice": "Chase Hughes",
-      "principle": "Root cause analysis is a skill"
+      "principle": "Root cause analysis is a skill",
+      "answers": {
+        "4": "good — I can usually diagnose what's really going on",
+        "5": "sharp — I've developed real diagnostic skill for spiritual issues",
+        "2": "basic — I know there's something deeper but can't find it",
+        "3": "developing — I sometimes trace to roots, sometimes stay at surface",
+        "1": "poor — I only see symptoms"
+      }
     },
     {
       "id": "C5c",
-      "text": "I know how to recover quickly after a spiritual failure — I have a practiced restoration process that works.",
+      "text": "My ability to recover quickly after spiritual failure is ...",
       "voice": "Core Philosophy",
-      "principle": "Recovery is a learnable skill"
+      "principle": "Recovery is a learnable skill",
+      "answers": {
+        "4": "good — I have a restoration process that works",
+        "5": "refined — I know how to repent, receive grace, and move on quickly",
+        "2": "slow — recovery takes a long time and lots of energy",
+        "3": "inconsistent — sometimes I bounce back, sometimes I don't",
+        "1": "poor — I spiral and stay down"
+      }
     },
     {
       "id": "C5d",
-      "text": "I can distinguish between conviction (from God) and condemnation (from the enemy or self) with increasing accuracy.",
+      "text": "My ability to distinguish conviction from condemnation is ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual discernment develops with practice"
+      "principle": "Spiritual discernment develops with practice",
+      "answers": {
+        "4": "good — I can usually tell whether it's from God or not",
+        "5": "sharp — I recognize the difference clearly and respond accordingly",
+        "2": "basic — I know they're different but can't always tell which is which",
+        "3": "developing — I sometimes discern correctly, sometimes confuse them",
+        "1": "poor — it all feels the same"
+      }
     },
     {
       "id": "C5e",
-      "text": "I have practical techniques for fighting specific temptations that work for me — not just generic advice, but tested tactics.",
+      "text": "My practical techniques for fighting specific temptations are ...",
       "voice": "Chase Hughes",
-      "principle": "Tactical skill comes from tested experience"
+      "principle": "Tactical skill comes from tested experience",
+      "answers": {
+        "4": "tested — I have approaches that work for my specific struggles",
+        "5": "refined — I've developed personalized tactics that are highly effective",
+        "2": "generic — I know the standard advice but it doesn't work for me",
+        "3": "developing — some tactics work, others don't",
+        "1": "nonexistent — I just try to resist and usually fail"
+      }
     }
   ]
 }

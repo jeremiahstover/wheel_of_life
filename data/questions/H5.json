@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H5a",
-      "text": "I know proper form and technique for my physical practices — I've learned how to train effectively, not just hard.",
+      "text": "My knowledge of proper form and technique for physical training is ...",
       "voice": "Brian Tracy",
-      "principle": "Training technique is learnable"
+      "principle": "Training technique is learnable",
+      "answers": {
+        "4": "solid — I know how to train effectively, not just hard",
+        "5": "strong — I understand technique deeply and can coach others",
+        "2": "basic — I know a few things but often do exercises wrong",
+        "3": "developing — I have good form in some areas, poor in others",
+        "1": "absent — I just move and hope for the best"
+      }
     },
     {
       "id": "H5b",
-      "text": "I understand principles of progression — I know how to systematically build capacity rather than just randomly exercising.",
+      "text": "My understanding of how to progressively build capacity is ...",
       "voice": "Brian Tracy",
-      "principle": "Progressive training follows principles"
+      "principle": "Progressive training follows principles",
+      "answers": {
+        "4": "good — I know how to systematically build over time",
+        "5": "deep — I understand periodization, adaptation, and can design programs",
+        "2": "basic — I know I should progress but not how",
+        "3": "developing — I understand some principles of progression",
+        "1": "absent — I just exercise randomly"
+      }
     },
     {
       "id": "H5c",
-      "text": "I can program my own training effectively — I have enough knowledge to design workouts that achieve my goals.",
+      "text": "My ability to program my own training effectively is ...",
       "voice": "Core Philosophy",
-      "principle": "Training design is a skill"
+      "principle": "Training design is a skill",
+      "answers": {
+        "4": "good — I can create programs that achieve my goals",
+        "5": "strong — I can design sophisticated training for various goals",
+        "2": "poor — I try but my programs don't work",
+        "3": "developing — I can design some effective workouts",
+        "1": "absent — I need someone to tell me what to do"
+      }
     },
     {
       "id": "H5d",
-      "text": "I know how to prevent injury and recover from setbacks — I've developed practical physical maintenance skills.",
+      "text": "My skill in preventing injury and recovering from setbacks is ...",
       "voice": "Core Philosophy",
-      "principle": "Injury prevention is learned"
+      "principle": "Injury prevention is learned",
+      "answers": {
+        "4": "good — I know how to train safely and recover well",
+        "5": "refined — I rarely get injured and know exactly how to rehab when I do",
+        "2": "basic — I know some injury prevention but still get hurt",
+        "3": "developing — I prevent some injuries, still deal with others",
+        "1": "absent — I get injured a lot and don't know how to recover"
+      }
     },
     {
       "id": "H5e",
-      "text": "I can assess my own physical state accurately — I know when to push and when to back off based on real signals.",
+      "text": "My ability to assess my own physical state accurately is ...",
       "voice": "Chase Hughes",
-      "principle": "Physical self-awareness is developable"
+      "principle": "Physical self-awareness is developable",
+      "answers": {
+        "4": "good — I know when to push and when to back off",
+        "5": "sharp — I read my body accurately and respond appropriately",
+        "2": "basic — I sometimes read signals but often miss them",
+        "3": "developing — I read some signals well, miss others",
+        "1": "poor — I can't tell when to push or back off"
+      }
     }
   ]
 }

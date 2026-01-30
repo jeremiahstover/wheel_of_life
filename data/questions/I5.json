@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I5a",
-      "text": "I can recognize early warning signs that something is off in my health — I've developed body awareness and diagnostic skill.",
+      "text": "My ability to recognize early warning signs in my health is ...",
       "voice": "Chase Hughes",
-      "principle": "Early detection is a skill"
+      "principle": "Early detection is a skill",
+      "answers": {
+        "4": "good — I've developed body awareness that catches things early",
+        "5": "sharp — I pick up signals quickly and respond before problems grow",
+        "2": "basic — I catch obvious signs but miss subtle ones",
+        "3": "developing — I notice some early warnings, miss others",
+        "1": "poor — I don't notice problems until they're serious"
+      }
     },
     {
       "id": "I5b",
-      "text": "I know how to communicate effectively with healthcare providers — I can describe symptoms, ask good questions, and advocate for myself.",
+      "text": "My skill in communicating with healthcare providers is ...",
       "voice": "Core Philosophy",
-      "principle": "Medical communication is a skill"
+      "principle": "Medical communication is a skill",
+      "answers": {
+        "4": "good — I can describe symptoms, ask questions, and advocate for myself",
+        "5": "strong — I'm an effective partner in my own healthcare",
+        "2": "basic — I can describe problems but don't ask good questions",
+        "3": "developing — I communicate some things well, fumble others",
+        "1": "poor — I don't know what to say or ask"
+      }
     },
     {
       "id": "I5c",
-      "text": "I understand how body, soul, and spirit interact in my own experience — I can trace connections and address root causes.",
+      "text": "My understanding of how body, soul, and spirit interact in my own experience is ...",
       "voice": "Core Philosophy",
-      "principle": "Holistic awareness develops with attention"
+      "principle": "Holistic awareness develops with attention",
+      "answers": {
+        "4": "good — I can usually trace how issues in one area affect others",
+        "5": "deep — I understand my own integration and address root causes",
+        "2": "basic — I know they're connected but can't trace it",
+        "3": "developing — I see some connections clearly, others not",
+        "1": "absent — I don't see how they connect"
+      }
     },
     {
       "id": "I5d",
-      "text": "I have practical knowledge of preventive care — I know what screenings, practices, and habits maintain health proactively.",
+      "text": "My practical knowledge of preventive care is ...",
       "voice": "Brian Tracy",
-      "principle": "Prevention knowledge is practical skill"
+      "principle": "Prevention knowledge is practical skill",
+      "answers": {
+        "4": "solid — I know what screenings and habits maintain health",
+        "5": "comprehensive — I understand prevention deeply and practice it",
+        "2": "basic — I know the big things but not details",
+        "3": "partial — I know some preventive practices, not others",
+        "1": "absent — I don't know what I should be doing"
+      }
     },
     {
       "id": "I5e",
-      "text": "I can make informed health decisions — I have enough knowledge to evaluate options and choose wisely.",
+      "text": "My ability to make informed health decisions is ...",
       "voice": "Core Philosophy",
-      "principle": "Health literacy is developable"
+      "principle": "Health literacy is developable",
+      "answers": {
+        "4": "good — I can evaluate options and choose wisely most of the time",
+        "5": "strong — I have the knowledge to make informed decisions confidently",
+        "2": "basic — I can make simple decisions but get lost in complexity",
+        "3": "developing — I make some good decisions, stumble on others",
+        "1": "poor — I just do what I'm told or nothing at all"
+      }
     }
   ]
 }

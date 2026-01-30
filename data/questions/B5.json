@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B5a",
-      "text": "I can navigate morally complex situations with wisdom — not just black-and-white cases, but grey areas that require discernment.",
+      "text": "My ability to navigate morally complex situations is ...",
       "voice": "Jordan Peterson",
-      "principle": "Ethical skill handles complexity"
+      "principle": "Ethical skill handles complexity",
+      "answers": {
+        "4": "solid — I can usually find wisdom in difficult territory",
+        "5": "strong — I navigate complexity with discernment and confidence",
+        "2": "weak — I can handle simple cases but get lost in complexity",
+        "3": "developing — I manage some situations well, others poorly",
+        "1": "poor — I freeze or stumble in grey areas"
+      }
     },
     {
       "id": "B5b",
-      "text": "I have developed the ability to anticipate moral pitfalls before I'm in them — I see the trap before it springs.",
+      "text": "My ability to anticipate moral pitfalls before I'm in them is ...",
       "voice": "Chase Hughes",
-      "principle": "Pattern recognition is a skill"
+      "principle": "Pattern recognition is a skill",
+      "answers": {
+        "4": "good — I usually see the setup before the spring",
+        "5": "sharp — I've learned to spot danger early and steer clear",
+        "2": "weak — I occasionally notice danger but often too late",
+        "3": "inconsistent — I catch some traps, walk into others",
+        "1": "absent — I usually don't see it coming"
+      }
     },
     {
       "id": "B5c",
-      "text": "I can explain the 'why' behind moral principles — not just that something is wrong, but why it damages flourishing.",
+      "text": "My ability to explain the 'why' behind moral principles is ...",
       "voice": "Jordan Peterson",
-      "principle": "Deep understanding enables wise application"
+      "principle": "Deep understanding enables wise application",
+      "answers": {
+        "4": "solid — I can articulate why things matter, not just that they do",
+        "5": "strong — I understand and can explain the architecture of morality",
+        "2": "basic — I can explain simple cases but not deeper logic",
+        "3": "developing — I understand some principles deeply, others surface-level",
+        "1": "poor — I know rules but not reasons"
+      }
     },
     {
       "id": "B5d",
-      "text": "I have practical wisdom about how to make restitution when I've wronged someone — I know what actually heals relationships.",
+      "text": "My practical wisdom about making restitution when I've wronged someone is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Reconciliation is a learnable skill"
+      "principle": "Reconciliation is a learnable skill",
+      "answers": {
+        "4": "good — I know how to make things right in most cases",
+        "5": "strong — I've learned what actually heals and I practice it",
+        "2": "basic — I apologize but don't know what actually heals",
+        "3": "developing — I sometimes restore well, sometimes make it worse",
+        "1": "nonexistent — I don't know how to repair what I've broken"
+      }
     },
     {
       "id": "B5e",
-      "text": "I can counsel others through moral dilemmas effectively — my ethical skill is developed enough to help, not just opine.",
+      "text": "My ability to counsel others through moral dilemmas is ...",
       "voice": "Core Philosophy",
-      "principle": "Mature skill can be transferred"
+      "principle": "Mature skill can be transferred",
+      "answers": {
+        "4": "solid — I can walk people through complexity effectively",
+        "5": "strong — I can help others find wisdom they couldn't find alone",
+        "2": "basic — I can offer opinions but not real guidance",
+        "3": "developing — I help sometimes, other times I'm in over my head",
+        "1": "absent — I can barely navigate my own dilemmas"
+      }
     }
   ]
 }
