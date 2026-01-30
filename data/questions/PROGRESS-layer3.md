@@ -21,7 +21,7 @@ See `GUIDE-layer3.md` for the full writing guide.
 | B3 | Conscience | ✓ Complete | 5/5 questions revised |
 | C3 | Holiness | ✓ Complete | 5/5 questions revised |
 | D3 | Mind | ✓ Complete | 5/5 questions revised |
-| E3 | Will | ✗ Pending | |
+| E3 | Will | ✓ Complete | 5/5 questions revised |
 | F3 | Emotions | ✗ Pending | |
 | G3 | Sustenance | ✗ Pending | |
 | H3 | Capability | ✗ Pending | |
@@ -57,9 +57,16 @@ See `GUIDE-layer3.md` for the full writing guide.
 - D3d: My intellectual growth is ...
 - D3e: When harmful influences affect my thinking, I ...
 
+### E3 (Will at Responsibility)
+- E3a: My choices are ...
+- E3b: When I fail to follow through on something, it's because ...
+- E3c: My life outcomes are mostly the result of ...
+- E3d: When circumstances beyond my control hit, I ...
+- E3e: When I procrastinate or avoid something, it's ...
+
 ## Next Up
 
-**E3 (Will at Responsibility)** — Soul / Executes
+**F3 (Emotions at Responsibility)** — Soul / State
 
 ---
 

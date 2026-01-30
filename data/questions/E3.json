@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E3a",
-      "text": "I own my choices — I don't blame circumstances, other people, or my past for what I decide to do.",
+      "text": "My choices are ...",
       "voice": "Jordan Peterson",
-      "principle": "Own your choices completely"
+      "principle": "Own your choices completely",
+      "answers": {
+        "4": "mine, though circumstances make some harder",
+        "5": "mine",
+        "2": "shaped heavily by my circumstances and past",
+        "3": "partly mine, partly a product of my situation",
+        "1": "mostly reactions to what life throws at me"
+      }
     },
     {
       "id": "E3b",
-      "text": "When I fail to follow through on something, I take responsibility rather than pointing to obstacles or interference.",
+      "text": "When I fail to follow through on something, it's because ...",
       "voice": "Brian Tracy",
-      "principle": "No excuses for lack of execution"
+      "principle": "No excuses for lack of execution",
+      "answers": {
+        "4": "I messed up, I will try a little harder next time",
+        "5": "I did not keep my word",
+        "2": "something more important showed up",
+        "3": "life happened, I should have pushed harder",
+        "1": "why would I follow through on that?"
+      }
     },
     {
       "id": "E3c",
-      "text": "I recognize that my life outcomes are largely the result of my accumulated choices, not fate or luck.",
+      "text": "My life outcomes are mostly the result of ...",
       "voice": "Core Philosophy",
-      "principle": "Causality: choices have consequences"
+      "principle": "Causality: choices have consequences",
+      "answers": {
+        "4": "my choices, though some breaks went against me",
+        "5": "my accumulated choices",
+        "2": "circumstances I was born into or dealt",
+        "3": "some luck, some choices — hard to separate",
+        "1": "fate, luck, or things outside my control"
+      }
     },
     {
       "id": "E3d",
-      "text": "I refuse to see myself as a victim of circumstances beyond my control — I always have choices in how I respond.",
+      "text": "When circumstances beyond my control hit, I ...",
       "voice": "Jordan Peterson",
-      "principle": "Response-ability in all circumstances"
+      "principle": "Response-ability in all circumstances",
+      "answers": {
+        "4": "focus on my response, though it's hard sometimes",
+        "5": "focus on what I can control — my response",
+        "2": "do what I can, but there's only so much I can control",
+        "3": "feel stuck, but know I have some choice in how I respond",
+        "1": "am a victim of what happened"
+      }
     },
     {
       "id": "E3e",
-      "text": "I own that procrastination and avoidance are my choices, not things that 'happen to me.'",
+      "text": "When I procrastinate or avoid something, it's ...",
       "voice": "Brian Tracy",
-      "principle": "Own your avoidance"
+      "principle": "Own your avoidance",
+      "answers": {
+        "4": "my choice, though some things are harder to face",
+        "5": "my choice",
+        "2": "because I'm overwhelmed or don't have what I need",
+        "3": "partly the task, partly how I'm dealing with life right now",
+        "1": "just how I'm wired"
+      }
     }
   ]
 }
