@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Viewer - Diagnostic POC</title>
+    <style>
+        :root {
+            --spirit: #805ad5;
+            --soul: #3182ce;
+            --body: #38a169;
+            --bg: #1a202c;
+            --card: #2d3748;
+            --text: #e2e8f0;
+            --text-muted: #a0aec0;
+            --border: #4a5568;
+            --crisis: #fc8181;
+            --weak: #f6ad55;
+            --ok: #faf089;
+            --strong: #68d391;
+            --exceptional: #63b3ed;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        
+        .dimension-selector {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .dim-btn {
+            padding: 12px 16px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            background: var(--card);
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s;
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        .dim-btn:hover {
+            border-color: var(--text-muted);
+        }
+        
+        .dim-btn.active {
+            border-color: var(--spirit);
+            background: rgba(128, 90, 213, 0.2);
+        }
+        
+        .dim-btn.spirit.active { border-color: var(--spirit); background: rgba(128, 90, 213, 0.2); }
+        .dim-btn.soul.active { border-color: var(--soul); background: rgba(49, 130, 206, 0.2); }
+        .dim-btn.body.active { border-color: var(--body); background: rgba(56, 161, 105, 0.2); }
+        
+        .dim-btn .code {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .dim-btn .name {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .dim-btn.spirit .code { color: var(--spirit); }
+        .dim-btn.soul .code { color: var(--soul); }
+        .dim-btn.body .code { color: var(--body); }
+        
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .ray-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .ray-title {
+            font-size: 1.3rem;
+        }
+        
+        .ray-category {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .ray-category.spirit { background: var(--spirit); }
+        .ray-category.soul { background: var(--soul); }
+        .ray-category.body { background: var(--body); }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        
+        .layer-bars {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 250px;
+            padding: 0 10px;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        .layer-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 80px;
+        }
+        
+        .bar-wrapper {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        .bar {
+            width: 50px;
+            border-radius: 4px 4px 0 0;
+            transition: height 0.3s ease, background 0.3s ease;
+            position: relative;
+        }
+        
+        .bar .score {
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .bar.crisis { background: var(--crisis); }
+        .bar.weak { background: var(--weak); }
+        .bar.ok { background: var(--ok); }
+        .bar.strong { background: var(--strong); }
+        .bar.exceptional { background: var(--exceptional); }
+        
+        .layer-label {
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        .layer-label .num {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .layer-label .name {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        
+        .threshold-line {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            border-top: 2px dashed var(--text-muted);
+            opacity: 0.5;
+        }
+        
+        .threshold-label {
+            position: absolute;
+            right: 15px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            transform: translateY(-50%);
+        }
+        
+        .analysis {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .analysis-box {
+            padding: 16px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        
+        .analysis-box h4 {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .analysis-box .value {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        
+        .analysis-box .detail {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        
+        .floor { color: var(--strong); }
+        .break { color: var(--crisis); }
+        
+        .legend {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .controls button {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--card);
+            color: var(--text);
+            cursor: pointer;
+        }
+        
+        .controls button:hover {
+            background: var(--border);
+        }
+        
+        .status {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ray Viewer</h1>
+        <p class="subtitle">8 layers × 1 dimension — slide through the rays</p>
+        
+        <div class="dimension-selector" id="dim-selector"></div>
+        
+        <div class="controls">
+            <button onclick="prevDim()">← Prev</button>
+            <button onclick="nextDim()">Next →</button>
+            <button onclick="randomize()">Randomize Data</button>
+            <span class="status" id="status"></span>
+        </div>
+        
+        <div class="card">
+            <div class="ray-header">
+                <span class="ray-title" id="ray-title">A: Communion</span>
+                <span class="ray-category spirit" id="ray-category">Spirit</span>
+            </div>
+            
+            <div class="chart-container">
+                <div class="threshold-line" style="bottom: calc(70% + 50px);"></div>
+                <div class="threshold-label" style="bottom: calc(70% + 50px);">3.5 threshold</div>
+                
+                <div class="layer-bars" id="layer-bars"></div>
+            </div>
+            
+            <div class="analysis">
+                <div class="analysis-box">
+                    <h4>Floor (Solid Ground)</h4>
+                    <div class="value floor" id="floor-value">L3</div>
+                    <div class="detail" id="floor-detail">Responsibility</div>
+                </div>
+                <div class="analysis-box">
+                    <h4>Break Point</h4>
+                    <div class="value break" id="break-value">L4</div>
+                    <div class="detail" id="break-detail">Discipline — focus here</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background: var(--crisis)"></div> Crisis (≤2)</div>
+            <div class="legend-item"><div class="legend-color" style="background: var(--weak)"></div> Weak (2-3.5)</div>
+            <div class="legend-item"><div class="legend-color" style="background: var(--ok)"></div> Maintaining (3.5-4)</div>
+            <div class="legend-item"><div class="legend-color" style="background: var(--strong)"></div> Strong (4-4.5)</div>
+            <div class="legend-item"><div class="legend-color" style="background: var(--exceptional)"></div> Exceptional (4.5+)</div>
+        </div>
+    </div>
+    
+    <script>
+    const DIMENSIONS = {
+        A: { name: 'Communion', category: 'Spirit' },
+        B: { name: 'Conscience', category: 'Spirit' },
+        C: { name: 'Holiness', category: 'Spirit' },
+        D: { name: 'Mind', category: 'Soul' },
+        E: { name: 'Will', category: 'Soul' },
+        F: { name: 'Emotions', category: 'Soul' },
+        G: { name: 'Sustenance', category: 'Body' },
+        H: { name: 'Capability', category: 'Body' },
+        I: { name: 'Wholeness', category: 'Body' },
+    };
+    
+    const LAYERS = {
+        1: 'Order',
+        2: 'Causality', 
+        3: 'Responsibility',
+        4: 'Discipline',
+        5: 'Skill',
+        6: 'Resources',
+        7: 'Fellowship',
+        8: 'Sacrifice'
+    };
+    
+    const THRESHOLD = 3.5;
+    
+    // Simulated data - scores for all 72 cells
+    let data = {};
+    
+    let currentDim = 'A';
+    
+    function generateData() {
+        data = {};
+        for (const dim of Object.keys(DIMENSIONS)) {
+            data[dim] = {};
+            // Simulate: lower layers tend to be stronger
+            for (let layer = 1; layer <= 8; layer++) {
+                // Base score decreases as layer increases (foundation stronger)
+                const base = 4.5 - (layer * 0.15);
+                // Add randomness
+                const variance = (Math.random() - 0.5) * 1.5;
+                data[dim][layer] = Math.max(1, Math.min(5, base + variance));
+            }
+        }
+    }
+    
+    function getScoreClass(score) {
+        if (score <= 2) return 'crisis';
+        if (score <= 3.5) return 'weak';
+        if (score <= 4) return 'ok';
+        if (score <= 4.5) return 'strong';
+        return 'exceptional';
+    }
+    
+    function findBreakPoint(dimData) {
+        let floor = 0;
+        let breakPoint = null;
+        
+        // Walk up from L1, find last strong layer
+        for (let layer = 1; layer <= 8; layer++) {
+            if (dimData[layer] >= THRESHOLD) {
+                floor = layer;
+            } else {
+                if (floor > 0 && breakPoint === null) {
+                    breakPoint = layer;
+                }
+            }
+        }
+        
+        // If no break found but we have a floor, check if everything above is strong
+        if (breakPoint === null && floor > 0) {
+            // All strong from floor up
+            return { floor: 8, break: null };
+        }
+        
+        // If floor is 0, check if L1 itself is weak
+        if (floor === 0) {
+            return { floor: 0, break: 1 };
+        }
+        
+        return { floor, break: breakPoint };
+    }
+    
+    function renderDimensionSelector() {
+        const container = document.getElementById('dim-selector');
+        container.innerHTML = '';
+        
+        for (const [code, info] of Object.entries(DIMENSIONS)) {
+            const btn = document.createElement('button');
+            btn.className = `dim-btn ${info.category.toLowerCase()} ${code === currentDim ? 'active' : ''}`;
+            btn.innerHTML = `<div class="code">${code}</div><div class="name">${info.name}</div>`;
+            btn.onclick = () => selectDim(code);
+            container.appendChild(btn);
+        }
+    }
+    
+    function selectDim(dim) {
+        currentDim = dim;
+        renderDimensionSelector();
+        renderChart();
+    }
+    
+    function prevDim() {
+        const dims = Object.keys(DIMENSIONS);
+        const idx = dims.indexOf(currentDim);
+        currentDim = dims[(idx - 1 + dims.length) % dims.length];
+        renderDimensionSelector();
+        renderChart();
+    }
+    
+    function nextDim() {
+        const dims = Object.keys(DIMENSIONS);
+        const idx = dims.indexOf(currentDim);
+        currentDim = dims[(idx + 1) % dims.length];
+        renderDimensionSelector();
+        renderChart();
+    }
+    
+    function randomize() {
+        generateData();
+        renderChart();
+        document.getElementById('status').textContent = 'Data randomized';
+        setTimeout(() => document.getElementById('status').textContent = '', 2000);
+    }
+    
+    function renderChart() {
+        const info = DIMENSIONS[currentDim];
+        const dimData = data[currentDim];
+        
+        // Update header
+        document.getElementById('ray-title').textContent = `${currentDim}: ${info.name}`;
+        const catEl = document.getElementById('ray-category');
+        catEl.textContent = info.category;
+        catEl.className = `ray-category ${info.category.toLowerCase()}`;
+        
+        // Render bars
+        const barsContainer = document.getElementById('layer-bars');
+        barsContainer.innerHTML = '';
+        
+        for (let layer = 1; layer <= 8; layer++) {
+            const score = dimData[layer];
+            const heightPct = (score / 5) * 100;
+            const scoreClass = getScoreClass(score);
+            
+            const col = document.createElement('div');
+            col.className = 'layer-col';
+            col.innerHTML = `
+                <div class="bar-wrapper">
+                    <div class="bar ${scoreClass}" style="height: ${heightPct}%">
+                        <span class="score">${score.toFixed(1)}</span>
+                    </div>
+                </div>
+                <div class="layer-label">
+                    <div class="num">L${layer}</div>
+                    <div class="name">${LAYERS[layer]}</div>
+                </div>
+            `;
+            barsContainer.appendChild(col);
+        }
+        
+        // Calculate and show break point
+        const { floor, break: breakPoint } = findBreakPoint(dimData);
+        
+        const floorValue = document.getElementById('floor-value');
+        const floorDetail = document.getElementById('floor-detail');
+        const breakValue = document.getElementById('break-value');
+        const breakDetail = document.getElementById('break-detail');
+        
+        if (floor === 0) {
+            floorValue.textContent = 'NONE';
+            floorDetail.textContent = 'Foundation crisis';
+        } else if (floor === 8) {
+            floorValue.textContent = 'L8';
+            floorDetail.textContent = 'Solid through top';
+        } else {
+            floorValue.textContent = `L${floor}`;
+            floorDetail.textContent = LAYERS[floor];
+        }
+        
+        if (breakPoint === null) {
+            breakValue.textContent = 'NONE';
+            breakDetail.textContent = 'No break — solid';
+            breakValue.className = 'value strong';
+        } else {
+            breakValue.textContent = `L${breakPoint}`;
+            breakDetail.textContent = `${LAYERS[breakPoint]} — focus here`;
+            breakValue.className = 'value break';
+        }
+    }
+    
+    // Init
+    generateData();
+    renderDimensionSelector();
+    renderChart();
+    
+    // Keyboard nav
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prevDim();
+        if (e.key === 'ArrowRight') nextDim();
+        if (e.key === 'r') randomize();
+    });
+    </script>
+</body>
+</html>
