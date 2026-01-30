@@ -484,6 +484,23 @@
         return Math.min(spiritMin, soulMin, bodyMin);
     }
     
+    // Get the earliest (lowest) break point across all dimensions
+    // Returns null if all solid, or the lowest layer number where a break occurs
+    function getEarliestBreak() {
+        let earliest = null;
+        
+        for (const dim of DIM_ORDER) {
+            const { break: breakPoint } = findBreakPoint(data[dim]);
+            if (breakPoint !== null) {
+                if (earliest === null || breakPoint < earliest) {
+                    earliest = breakPoint;
+                }
+            }
+        }
+        
+        return earliest;
+    }
+    
     function findBreakPoint(dimData) {
         let floor = 0;
         let breakPoint = null;
@@ -569,14 +586,11 @@
         ].join(" ");
     }
     
-    function renderFace(svg, overallScore) {
-        // overallScore is 1-5, convert to display (2-10)
-        const displayScore = toDisplayScore(overallScore);
-        
-        // Thresholds on display scale:
-        // >= 7.5: happy (smile)
-        // 6.0 - 7.5: neutral (flat)
-        // < 6.0: sad (frown)
+    function renderFace(svg, earliestBreak) {
+        // Face based on earliest break point:
+        // Frown (red):    break at L1 Order or L2 Causality
+        // Neutral (yellow): break at L3 Responsibility, L4 Discipline, L5 Skill  
+        // Smile (green):  no break until L6+ (Resources, Fellowship, Sacrifice) or solid
         
         const faceGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
         faceGroup.setAttribute('class', 'face');
@@ -589,55 +603,44 @@
         faceCircle.setAttribute('fill', '#0d1117');
         faceGroup.appendChild(faceCircle);
         
-        // Determine face color based on score
-        let faceColor;
-        if (displayScore >= 7.5) {
-            faceColor = '#68d391'; // green - happy
-        } else if (displayScore >= 6.0) {
-            faceColor = '#f6e05e'; // yellow - neutral
+        // Determine mood based on earliest break
+        let faceColor, mouthPath;
+        
+        if (earliestBreak === null || earliestBreak >= 6) {
+            // Smile: solid OR break at L6/L7/L8 (Resources/Fellowship/Sacrifice)
+            faceColor = '#68d391'; // green
+            mouthPath = 'M -8 4 Q 0 12 8 4'; // smile
+        } else if (earliestBreak >= 3) {
+            // Neutral: break at L3/L4/L5 (Responsibility/Discipline/Skill)
+            faceColor = '#f6ad55'; // orange
+            mouthPath = 'M -8 6 L 8 6'; // flat
         } else {
-            faceColor = '#fc8181'; // red - sad
+            // Frown: break at L1/L2 (Order/Causality)
+            faceColor = '#fc8181'; // red
+            mouthPath = 'M -8 10 Q 0 4 8 10'; // frown
         }
         
-        // Eyes
-        const eyeRadius = 3;
-        const eyeY = CY - 5;
-        const eyeSpacing = 10;
-        
+        // Left eye
         const leftEye = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        leftEye.setAttribute('cx', CX - eyeSpacing);
-        leftEye.setAttribute('cy', eyeY);
-        leftEye.setAttribute('r', eyeRadius);
+        leftEye.setAttribute('cx', -6);
+        leftEye.setAttribute('cy', -4);
+        leftEye.setAttribute('r', 3);
         leftEye.setAttribute('fill', faceColor);
         faceGroup.appendChild(leftEye);
         
+        // Right eye
         const rightEye = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        rightEye.setAttribute('cx', CX + eyeSpacing);
-        rightEye.setAttribute('cy', eyeY);
-        rightEye.setAttribute('r', eyeRadius);
+        rightEye.setAttribute('cx', 6);
+        rightEye.setAttribute('cy', -4);
+        rightEye.setAttribute('r', 3);
         rightEye.setAttribute('fill', faceColor);
         faceGroup.appendChild(rightEye);
         
         // Mouth
-        const mouthY = CY + 8;
-        const mouthWidth = 14;
         const mouth = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-        
-        let mouthPath;
-        if (displayScore >= 7.5) {
-            // Smile - arc curving down (appears as smile)
-            mouthPath = `M ${CX - mouthWidth} ${mouthY} Q ${CX} ${mouthY + 10} ${CX + mouthWidth} ${mouthY}`;
-        } else if (displayScore >= 6.0) {
-            // Flat line
-            mouthPath = `M ${CX - mouthWidth} ${mouthY} L ${CX + mouthWidth} ${mouthY}`;
-        } else {
-            // Frown - arc curving up (appears as frown)
-            mouthPath = `M ${CX - mouthWidth} ${mouthY + 5} Q ${CX} ${mouthY - 5} ${CX + mouthWidth} ${mouthY + 5}`;
-        }
-        
         mouth.setAttribute('d', mouthPath);
         mouth.setAttribute('stroke', faceColor);
-        mouth.setAttribute('stroke-width', '3');
+        mouth.setAttribute('stroke-width', '2.5');
         mouth.setAttribute('stroke-linecap', 'round');
         mouth.setAttribute('fill', 'none');
         faceGroup.appendChild(mouth);
@@ -716,9 +719,17 @@
             svg.appendChild(text);
         }
         
-        // Draw face in center (based on limiting factor)
-        const overallScore = getOverallScore();
-        renderFace(svg, overallScore);
+        // Center circle background
+        const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        centerCircle.setAttribute('cx', CX);
+        centerCircle.setAttribute('cy', CY);
+        centerCircle.setAttribute('r', MIN_RADIUS - 2);
+        centerCircle.setAttribute('fill', '#0d1117');
+        svg.appendChild(centerCircle);
+        
+        // Draw face based on earliest break point
+        const earliestBreak = getEarliestBreak();
+        renderFace(svg, earliestBreak);
         
         renderCategoryScores();
         renderBreaksList();
