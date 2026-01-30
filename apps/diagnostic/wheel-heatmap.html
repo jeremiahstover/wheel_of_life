@@ -183,6 +183,59 @@
             color: #fc8181;
         }
         
+        .category-scores {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .category-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 8px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 6px;
+        }
+        
+        .category-row .cat-name {
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        
+        .category-row .cat-name.spirit { color: var(--spirit); }
+        .category-row .cat-name.soul { color: var(--soul); }
+        .category-row .cat-name.body { color: var(--body); }
+        
+        .category-row .cat-score {
+            font-weight: bold;
+        }
+        
+        .category-row .cat-score.strong { color: #68d391; }
+        .category-row .cat-score.weak { color: #fc8181; }
+        
+        .overall-row {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .overall-row .label {
+            font-weight: bold;
+            color: var(--text);
+        }
+        
+        .overall-row .score {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .overall-row .score.strong { color: #68d391; }
+        .overall-row .score.weak { color: #fc8181; }
+        
         .legend {
             display: flex;
             flex-direction: column;
@@ -253,6 +306,15 @@
                 </div>
                 
                 <div class="card">
+                    <h3>Limiting Factors</h3>
+                    <div class="category-scores" id="category-scores"></div>
+                    <div class="overall-row">
+                        <span class="label">Overall</span>
+                        <span class="score" id="overall-score">—</span>
+                    </div>
+                </div>
+                
+                <div class="card">
                     <h3>Break Points</h3>
                     <div class="breaks-list" id="breaks-list"></div>
                 </div>
@@ -306,6 +368,12 @@
         8: 'Sacrifice'
     };
     
+    const CATEGORIES = {
+        Spirit: ['A', 'B', 'C'],
+        Soul: ['D', 'E', 'F'],
+        Body: ['G', 'H', 'I']
+    };
+    
     // Category base colors (RGB)
     const CATEGORY_COLORS = {
         Spirit: { r: 128, g: 90, b: 213 },   // #805ad5
@@ -315,7 +383,7 @@
     
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
     const THRESHOLD = 3.5; // Internal (1-5 scale)
-    const DISPLAY_THRESHOLD = 7; // Display (1-10 scale)
+    const DISPLAY_THRESHOLD = 7; // Display (2-10 scale)
     
     // Wheel geometry constants
     const CX = 0, CY = 0;
@@ -395,16 +463,25 @@
         }
     }
     
-    function calculateOverallScore() {
-        let total = 0;
-        let count = 0;
-        for (const dim of DIM_ORDER) {
+    // Get minimum cell score within a category (limiting factor)
+    function getCategoryMin(category) {
+        let min = 5;
+        for (const dim of CATEGORIES[category]) {
             for (let layer = 1; layer <= 8; layer++) {
-                total += data[dim][layer];
-                count++;
+                if (data[dim][layer] < min) {
+                    min = data[dim][layer];
+                }
             }
         }
-        return total / count; // Returns 1-5 scale
+        return min;
+    }
+    
+    // Get overall score = min of category mins (limiting factor of limiting factors)
+    function getOverallScore() {
+        const spiritMin = getCategoryMin('Spirit');
+        const soulMin = getCategoryMin('Soul');
+        const bodyMin = getCategoryMin('Body');
+        return Math.min(spiritMin, soulMin, bodyMin);
     }
     
     function findBreakPoint(dimData) {
@@ -639,11 +716,42 @@
             svg.appendChild(text);
         }
         
-        // Draw face in center
-        const overallScore = calculateOverallScore();
+        // Draw face in center (based on limiting factor)
+        const overallScore = getOverallScore();
         renderFace(svg, overallScore);
         
+        renderCategoryScores();
         renderBreaksList();
+    }
+    
+    function renderCategoryScores() {
+        const container = document.getElementById('category-scores');
+        container.innerHTML = '';
+        
+        const categoryOrder = ['Spirit', 'Soul', 'Body'];
+        const catMins = {};
+        
+        categoryOrder.forEach(cat => {
+            const min = getCategoryMin(cat);
+            catMins[cat] = min;
+            const displayMin = toDisplayScore(min);
+            const isStrong = min >= THRESHOLD;
+            
+            const row = document.createElement('div');
+            row.className = 'category-row';
+            row.innerHTML = `
+                <span class="cat-name ${cat.toLowerCase()}">${cat}</span>
+                <span class="cat-score ${isStrong ? 'strong' : 'weak'}">${displayMin.toFixed(1)}</span>
+            `;
+            container.appendChild(row);
+        });
+        
+        // Overall
+        const overall = getOverallScore();
+        const displayOverall = toDisplayScore(overall);
+        const overallEl = document.getElementById('overall-score');
+        overallEl.textContent = displayOverall.toFixed(1);
+        overallEl.className = 'score ' + (overall >= THRESHOLD ? 'strong' : 'weak');
     }
     
     function highlightDimension(dim, breakLayer) {
