@@ -14,67 +14,67 @@
   "questions": [
     {
       "id": "A4a",
-      "text": "When my alarm goes off for morning prayer/devotion time, I get up and do it even when I don't feel like it.",
+      "text": "When my alarm goes off for morning devotion time, I ...",
       "voice": "Brian Tracy",
       "principle": "Eat the Frog: Do the most important thing first",
       "answers": {
-        "1": "I don't have a set devotion time — spiritual practice happens whenever I think of it (rarely)",
-        "2": "I've tried setting a morning devotion time but I consistently hit snooze or skip it",
-        "3": "I get up for devotions some mornings, but tiredness or busyness often wins",
-        "4": "I usually make it to my devotion time, only missing occasionally when legitimately disrupted",
-        "5": "My morning devotion time is non-negotiable — I'm up and present even when I don't feel like it"
+        "4": "usually make it, only missing occasionally when legitimately disrupted",
+        "5": "get up — it's non-negotiable even when I don't feel like it",
+        "2": "consistently hit snooze or skip it",
+        "3": "get up some mornings, but tiredness or busyness often wins",
+        "1": "don't have a set devotion time — spiritual practice happens whenever I think of it"
       }
     },
     {
       "id": "A4b",
-      "text": "I have a specific, scheduled time for prayer and Scripture reading that I protect from other demands.",
+      "text": "My time for prayer and Scripture reading is ...",
       "voice": "Brian Tracy",
       "principle": "Time blocking for priorities",
       "answers": {
-        "1": "I don't have a scheduled time — I pray and read when the mood strikes or not at all",
-        "2": "I have a vague idea of when I should do devotions but it's easily overridden by anything else",
-        "3": "I have a scheduled time but it frequently gets bumped for work, family, or other demands",
-        "4": "My devotion time is mostly protected — I only adjust for genuine emergencies",
-        "5": "My spiritual time block is firm — other demands work around it, not the other way around"
+        "4": "mostly protected — I only adjust for genuine emergencies",
+        "5": "firm — other demands work around it, not the other way around",
+        "2": "vague and easily overridden by anything else",
+        "3": "scheduled but frequently gets bumped for work, family, or other demands",
+        "1": "nonexistent — I pray and read when the mood strikes or not at all"
       }
     },
     {
       "id": "A4c",
-      "text": "When I miss a day of spiritual disciplines, I return to them the next day without spiraling into guilt or giving up.",
+      "text": "When I miss a day of spiritual disciplines, I ...",
       "voice": "Jordan Peterson",
       "principle": "Order from chaos, getting back up",
       "answers": {
-        "1": "Missing a day usually turns into weeks — guilt makes me avoid trying again",
-        "2": "I beat myself up when I miss, which makes returning harder and less likely",
-        "3": "I sometimes bounce back quickly, other times I spiral into guilt and extended absence",
-        "4": "I usually return the next day, though I still feel some unnecessary guilt about missing",
-        "5": "Missing a day is just data — I note it, examine why, and show up the next day without drama"
+        "4": "usually return the next day, though I still feel some unnecessary guilt",
+        "5": "note it, examine why, and show up the next day without drama",
+        "2": "beat myself up, which makes returning harder and less likely",
+        "3": "sometimes bounce back quickly, other times spiral into guilt and extended absence",
+        "1": "usually let it turn into weeks — guilt makes me avoid trying again"
       }
     },
     {
       "id": "A4d",
-      "text": "I practice Sabbath rest intentionally, even when there's work I could be doing.",
+      "text": "My approach to Sabbath rest is ...",
       "voice": "Cloud & Townsend",
       "principle": "Boundaries around rest",
       "answers": {
-        "1": "Rest feels irresponsible to me — I work until I crash, then recover, then repeat",
-        "2": "I know I should rest but I can't stop the mental churn — work bleeds into every day",
-        "3": "I try to take Sabbath but often fill it with errands or feel guilty for not being productive",
-        "4": "I usually protect a rest day, though I occasionally cheat with 'small' work tasks",
-        "5": "Sabbath is sacred in my calendar — I rest intentionally and without guilt"
+        "4": "mostly protected, though I occasionally cheat with 'small' work tasks",
+        "5": "sacred — I rest intentionally and without guilt",
+        "2": "aspirational — I can't stop the mental churn and work bleeds into every day",
+        "3": "inconsistent — I try but often fill it with errands or feel guilty",
+        "1": "nonexistent — I work until I crash, then recover, then repeat"
       }
     },
     {
       "id": "A4e",
-      "text": "I follow through on spiritual commitments (church attendance, small group, serving) even when inconvenient.",
+      "text": "My follow-through on spiritual commitments (church, small group, serving) is ...",
       "voice": "Simon Sinek",
       "principle": "Commitment to the 'why' even when 'what' is hard",
       "answers": {
-        "1": "I show up when it's convenient and skip when anything else comes up",
-        "2": "I intend to be consistent but frequently bail due to tiredness, weather, or competing plans",
-        "3": "I attend about half the time — consistency depends on how I'm feeling that week",
-        "4": "I'm reliable most of the time, only missing for legitimate conflicts or illness",
-        "5": "My spiritual commitments are in ink — I show up as committed regardless of convenience"
+        "4": "reliable most of the time, only missing for legitimate conflicts or illness",
+        "5": "in ink — I show up as committed regardless of convenience",
+        "2": "inconsistent — I frequently bail due to tiredness, weather, or competing plans",
+        "3": "about half the time — depends on how I'm feeling that week",
+        "1": "convenience-based — I skip when anything else comes up"
       }
     }
   ]
