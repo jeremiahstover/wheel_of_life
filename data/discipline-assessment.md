@@ -1,26 +1,25 @@
 # Wheel of Life Assessment: Discipline Layer
 
-**Purpose**: Assess how consistently you execute in each of the 9 dimensions of life.
-
-**Definition of Discipline**: Consistently making yourself do what needs to be done, especially when you don't feel like doing it.
-
-**Scoring**: Each question uses a 1-5 scale. Average per dimension, multiply by 2 for 1-10 wheel score.
+**Version**: 2.0  
+**Layer Focus**: Discipline (Layer 4 of 8)  
+**Definition**: Consistently making yourself do what needs to be done, especially when you don't feel like doing it.  
+**Model**: Tripartite Model v2 (Receives/Executes/State pattern)
 
 ---
 
 ## The 9 Dimensions
 
-| Category | Dimension | Focus |
-|----------|-----------|-------|
-| Spirit | 1. Connection to God | Communion through spiritual practices |
-| Spirit | 2. Conscience | Acting on moral conviction |
-| Spirit | 3. Purpose/Calling | Staying aligned, resisting distractions |
-| Soul | 4. Mind | Learning, intellectual growth |
-| Soul | 5. Will | Follow-through, integrity with self |
-| Soul | 6. Emotions | Processing feelings, managing actions |
-| Body | 7. Fuel & Recovery | Nutrition, sleep, environment |
-| Body | 8. Capacity & Function | Exercise, movement, physical ability |
-| Body | 9. Health & Wholeness | Preventive care, integrated wellness |
+| Category | Function | Dimension | Focus |
+|----------|----------|-----------|-------|
+| Spirit | Receives | 1. Communion | Receiving from God through spiritual practices |
+| Spirit | Executes | 2. Conscience | Acting on moral conviction |
+| Spirit | State | 3. Holiness | Maintaining spiritual purity, sanctification |
+| Soul | Receives | 4. Mind | Learning, intellectual growth |
+| Soul | Executes | 5. Will | Follow-through, integrity with self |
+| Soul | State | 6. Emotions | Processing feelings, managing actions |
+| Body | Receives | 7. Sustenance | Nutrition, sleep, environment |
+| Body | Executes | 8. Capability | Exercise, movement, physical ability |
+| Body | State | 9. Wholeness | Preventive care, integrated wellness |
 
 ---
 
@@ -34,11 +33,13 @@
 | 4 | Usually | 61-80% of the time |
 | 5 | Almost Always | 81-100% of the time |
 
+**Scoring**: Sum 5 questions → divide by 5 → multiply by 2 = Dimension Score (1-10)
+
 ---
 
-## SPIRIT
+## SPIRIT (God-facing)
 
-### Connection to God (Dimension 1)
+### Communion (Dimension 1 — Receives)
 
 > *"But seek first the kingdom of God and his righteousness, and all these things will be added to you."* — Matthew 6:33
 
@@ -52,7 +53,7 @@
 
 ---
 
-### Conscience (Dimension 2)
+### Conscience (Dimension 2 — Executes)
 
 > *"So whoever knows the right thing to do and fails to do it, for him it is sin."* — James 4:17
 
@@ -62,27 +63,27 @@
 4. I keep my word and follow through on commitments, even small ones, even when no one would notice if I didn't.
 5. When I notice I'm justifying questionable behavior, I stop and examine myself honestly.
 
-**If struggling**: Jordan Peterson's rule: "Tell the truth, or at least don't lie." Every rationalization weakens your conscience; every honest act strengthens it.
+**If struggling**: "Tell the truth, or at least don't lie." Every rationalization weakens your conscience; every honest act strengthens it.
 
 ---
 
-### Purpose/Calling (Dimension 3)
+### Holiness (Dimension 3 — State)
 
-> *"I press on toward the goal for the prize of the upward call of God in Christ Jesus."* — Philippians 3:14
+> *"As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct."* — 1 Peter 1:14-15
 
-1. I regularly evaluate opportunities against my calling and say no to good things that aren't my things.
-2. When I feel purposeless or directionless, I take specific action to seek clarity rather than just drifting.
-3. I spend time on work that aligns with my calling even when more urgent (but less important) tasks compete for attention.
-4. I regularly review my life direction (annually, quarterly) and make adjustments to stay on course.
-5. I persist in my calling even during seasons when the results aren't visible or the work isn't rewarding.
+1. When the Holy Spirit convicts me of sin, I confess and repent promptly rather than rationalizing, minimizing, or delaying.
+2. I maintain spiritual disciplines even during dry seasons when I don't feel God's presence or see spiritual fruit.
+3. I actively work to root out areas of habitual sin or compromise rather than tolerating them as 'just how I am.'
+4. I intentionally seek spiritual filling and renewal (worship, solitude, prayer) rather than running on empty until I crash.
+5. I maintain my commitment to holiness in private — when no one would know if I compromised.
 
-**If struggling**: Write one sentence answering: "What am I made for?" Then evaluate this week's calendar against that sentence.
+**If struggling**: Holiness isn't perfection — it's direction. Identify ONE area of compromise you've been tolerating. Confess it. Make a plan to address it.
 
 ---
 
-## SOUL
+## SOUL (Self-facing)
 
-### Mind (Dimension 4)
+### Mind (Dimension 4 — Receives)
 
 > *"Do not be conformed to this world, but be transformed by the renewal of your mind."* — Romans 12:2
 
@@ -96,7 +97,7 @@
 
 ---
 
-### Will (Dimension 5)
+### Will (Dimension 5 — Executes)
 
 > *"For God gave us a spirit not of fear but of power and love and self-control."* — 2 Timothy 1:7
 
@@ -106,11 +107,11 @@
 4. When I fail to follow through, I examine why, make adjustments, and try again rather than making excuses.
 5. I build small disciplines in daily life (bed made, dishes done, space organized) that strengthen my overall will.
 
-**If struggling**: Jordan Peterson: "Start by cleaning your room." Pick one tiny discipline and make it non-negotiable for 30 days.
+**If struggling**: "Start by cleaning your room." Pick one tiny discipline and make it non-negotiable for 30 days.
 
 ---
 
-### Emotions (Dimension 6)
+### Emotions (Dimension 6 — State)
 
 > *"Be angry and do not sin; do not let the sun go down on your anger."* — Ephesians 4:26
 
@@ -124,9 +125,9 @@
 
 ---
 
-## BODY
+## BODY (World-facing)
 
-### Fuel & Recovery (Dimension 7)
+### Sustenance (Dimension 7 — Receives)
 
 > *"Do you not know that your body is a temple of the Holy Spirit within you?"* — 1 Corinthians 6:19
 
@@ -140,7 +141,7 @@
 
 ---
 
-### Capacity & Function (Dimension 8)
+### Capability (Dimension 8 — Executes)
 
 > *"For while bodily training is of some value, godliness is of value in every way."* — 1 Timothy 4:8
 
@@ -154,7 +155,7 @@
 
 ---
 
-### Health & Wholeness (Dimension 9)
+### Wholeness (Dimension 9 — State)
 
 > *"Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul."* — 3 John 1:2
 
@@ -209,17 +210,17 @@ Discipline ← Responsibility ← Causality ← Order
 ## Visual: The Wheel
 
 ```
-              Connection to God (1)
+                 Communion (1)
                       |
-         Purpose (3)  |  Conscience (2)
+         Holiness (3) |  Conscience (2)
               \       |       /
                \      |      /
-    Health (9)--\-----|-----/--Mind (4)
-                 \    |    /
-                  \   |   /
-    Capacity (8)---\--|--/---Will (5)
-                    \ | /
-         Fuel (7)----\|/----Emotions (6)
+  Wholeness (9)--\----|-----/--Mind (4)
+                  \   |    /
+                   \  |   /
+  Capability (8)----\-|--/----Will (5)
+                     \|/
+       Sustenance (7)-+-Emotions (6)
 ```
 
 Plot each score (1-10) on its spoke. Connect the dots.
