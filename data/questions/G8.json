@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "G8a",
-      "text": "I give financial resources to people in need without expecting repayment or reciprocity.",
+      "text": "Giving financial resources without expecting repayment is ...",
       "voice": "Core Philosophy",
-      "principle": "Financial giving without strings"
+      "principle": "Financial giving without strings",
+      "answers": {
+        "4": "common — I give generously",
+        "5": "expected — money is for giving",
+        "2": "limited — small amounts, close people",
+        "3": "moderate — I give from surplus",
+        "1": "rare — I expect to be paid back"
+      }
     },
     {
       "id": "G8b",
-      "text": "I share my physical resources — home, food, possessions — freely with others who have need.",
+      "text": "Sharing physical resources (home, food, possessions) freely is ...",
       "voice": "Core Philosophy",
-      "principle": "Hospitality is sacrificial"
+      "principle": "Hospitality is sacrificial",
+      "answers": {
+        "4": "common — my home and resources are open",
+        "5": "normal — everything I have is available",
+        "2": "limited — for close friends",
+        "3": "moderate — I share when I have plenty",
+        "1": "rare — I protect what's mine"
+      }
     },
     {
       "id": "G8c",
-      "text": "I give generously to causes and people even when I can't see how my giving makes a difference.",
+      "text": "Giving generously even when I can't see the difference it makes is ...",
       "voice": "Core Philosophy",
-      "principle": "Giving without guaranteed results"
+      "principle": "Giving without guaranteed results",
+      "answers": {
+        "4": "common — I trust the giving matters",
+        "5": "expected — the giving is the point",
+        "2": "limited — I prefer measurable giving",
+        "3": "moderate — I give some on faith",
+        "1": "rare — I want to see impact"
+      }
     },
     {
       "id": "G8d",
-      "text": "I help meet others' physical needs even when my own resources are not abundant — I give from what I have, not just from excess.",
+      "text": "Helping meet others' needs when my own resources are not abundant is ...",
       "voice": "Core Philosophy",
-      "principle": "Sacrifice from limited resources"
+      "principle": "Sacrifice from limited resources",
+      "answers": {
+        "4": "common — I give from what I have",
+        "5": "expected — the widow's mite is the model",
+        "2": "limited — I protect my minimum",
+        "3": "moderate — I stretch sometimes",
+        "1": "rare — I give from excess only"
+      }
     },
     {
       "id": "G8e",
-      "text": "I have given significant financial or material help to people who later wasted it, rejected me, or didn't change — and I would give again.",
+      "text": "Having given to people who wasted it or rejected me (and would give again) is ...",
       "voice": "Core Philosophy",
-      "principle": "True giving doesn't require good outcomes"
+      "principle": "True giving doesn't require good outcomes",
+      "answers": {
+        "4": "part of giving — I keep giving anyway",
+        "5": "expected — outcomes aren't my department",
+        "2": "frustrating — I'm more selective now",
+        "3": "real — it's made me cautious",
+        "1": "not my experience — I vet recipients"
+      }
     }
   ]
 }

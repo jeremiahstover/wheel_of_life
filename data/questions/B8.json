@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "B8a",
-      "text": "I use my credibility and reputation to advocate for people who have none — spending my moral capital for their benefit.",
+      "text": "Using my credibility to advocate for people who have none is ...",
       "voice": "Jordan Peterson",
-      "principle": "Reputation can be spent for others"
+      "principle": "Reputation can be spent for others",
+      "answers": {
+        "4": "common — I spend moral capital for others",
+        "5": "expected — that's what reputation is for",
+        "2": "occasional — for safe causes",
+        "3": "moderate — when the cost is manageable",
+        "1": "rare — I protect my reputation"
+      }
     },
     {
       "id": "B8b",
-      "text": "I defend unpopular positions or unpopular people when I believe they're right, even at cost to my standing.",
+      "text": "Defending unpopular positions or people at cost to my standing is ...",
       "voice": "Jordan Peterson",
-      "principle": "Moral courage costs"
+      "principle": "Moral courage costs",
+      "answers": {
+        "4": "common — truth matters more than popularity",
+        "5": "automatic — I defend what's right regardless of cost",
+        "2": "occasional — when I feel strongly enough",
+        "3": "moderate — for important causes",
+        "1": "rare — I avoid controversy"
+      }
     },
     {
       "id": "B8c",
-      "text": "I speak uncomfortable truth to people who need to hear it, even when it would be easier to stay silent and popular.",
+      "text": "Speaking uncomfortable truth when it would be easier to stay silent is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Truth-telling is sacrificial"
+      "principle": "Truth-telling is sacrificial",
+      "answers": {
+        "4": "common — I say what needs saying",
+        "5": "expected — love requires honesty",
+        "2": "occasional — when the stakes are high",
+        "3": "moderate — I speak up sometimes",
+        "1": "rare — I prefer to keep the peace"
+      }
     },
     {
       "id": "B8d",
-      "text": "I have taken moral stands that cost me relationships, opportunities, or comfort — and I don't regret them.",
+      "text": "Moral stands that cost me relationships or opportunities (without regret) is ...",
       "voice": "Jordan Peterson",
-      "principle": "Integrity sometimes requires sacrifice"
+      "principle": "Integrity sometimes requires sacrifice",
+      "answers": {
+        "4": "real — I've paid prices and accepted it",
+        "5": "part of the cost — integrity is worth any price",
+        "2": "rare — and I second-guess myself",
+        "3": "occasional — with mixed feelings",
+        "1": "not my experience — I avoid those situations"
+      }
     },
     {
       "id": "B8e",
-      "text": "I advocate for the voiceless and marginalized even when there's nothing in it for me — no recognition, no reciprocity.",
+      "text": "Advocating for the voiceless with nothing in it for me is ...",
       "voice": "Core Philosophy",
-      "principle": "Advocacy for the powerless is pure sacrifice"
+      "principle": "Advocacy for the powerless is pure sacrifice",
+      "answers": {
+        "4": "regular — I actively seek to advocate",
+        "5": "central — the voiceless are my priority",
+        "2": "occasional — when it's easy",
+        "3": "moderate — I support some causes",
+        "1": "rare — I focus on my own concerns"
+      }
     }
   ]
 }

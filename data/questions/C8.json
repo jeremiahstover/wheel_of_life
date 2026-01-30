@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C8a",
-      "text": "I enter into others' spiritual battles — their temptations, their pain, their darkness — to help pull them out, even when it costs me peace.",
+      "text": "Entering into others' spiritual battles to help pull them out (even when it costs me peace) is ...",
       "voice": "Core Philosophy",
-      "principle": "Entering others' darkness is costly"
+      "principle": "Entering others' darkness is costly",
+      "answers": {
+        "4": "common — I go into the battle with them",
+        "5": "expected — this is what love does",
+        "2": "occasional — for close friends",
+        "3": "moderate — when the need is clear",
+        "1": "rare — I stay out of others' darkness"
+      }
     },
     {
       "id": "C8b",
-      "text": "I bear spiritual burdens that aren't mine — I take on weight for others because they can't carry it alone.",
+      "text": "Bearing spiritual burdens that aren't mine (taking weight for others) is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Burden-bearing is sacrificial love"
+      "principle": "Burden-bearing is sacrificial love",
+      "answers": {
+        "4": "common — I regularly take on others' burdens",
+        "5": "normal — burden-bearing is how I live",
+        "2": "occasional — in emergencies",
+        "3": "moderate — for people I'm close to",
+        "1": "rare — I carry my own weight"
+      }
     },
     {
       "id": "C8c",
-      "text": "I have walked with people through their worst seasons — not just encouraged from a distance, but entered into their suffering.",
+      "text": "Walking with people through their worst seasons (entering suffering, not just encouraging) is ...",
       "voice": "Core Philosophy",
-      "principle": "Presence in suffering costs"
+      "principle": "Presence in suffering costs",
+      "answers": {
+        "4": "common — I go into the darkness with them",
+        "5": "expected — presence in suffering is the gift",
+        "2": "occasional — when I can't avoid it",
+        "3": "moderate — I enter some people's suffering",
+        "1": "rare — I encourage from a distance"
+      }
     },
     {
       "id": "C8d",
-      "text": "I make myself available for spiritual emergencies — interrupting my plans to respond to others' crises.",
+      "text": "Being available for spiritual emergencies (interrupting my plans) is ...",
       "voice": "Core Philosophy",
-      "principle": "Availability is costly"
+      "principle": "Availability is costly",
+      "answers": {
+        "4": "common — I respond to crises",
+        "5": "normal — availability is part of my calling",
+        "2": "limited — for true emergencies only",
+        "3": "moderate — I'm sometimes interruptible",
+        "1": "rare — I protect my schedule"
+      }
     },
     {
       "id": "C8e",
-      "text": "I have helped restore people who fell into serious sin — not just from a distance, but at relational risk to myself.",
+      "text": "Helping restore people who fell into serious sin (at relational risk to myself) is ...",
       "voice": "Core Philosophy",
-      "principle": "Restoration involves risk and cost"
+      "principle": "Restoration involves risk and cost",
+      "answers": {
+        "4": "common — I engage in restoration",
+        "5": "expected — the fallen need someone willing to risk",
+        "2": "limited — only from safe distance",
+        "3": "moderate — I've helped some people",
+        "1": "rare — that's not my role"
+      }
     }
   ]
 }

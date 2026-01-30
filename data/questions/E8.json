@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "E8a",
-      "text": "I regularly give significant time to serve others — not just leftover time, but prime time that costs me something.",
+      "text": "Giving significant time to serve others (prime time, not just leftovers) is ...",
       "voice": "Core Philosophy",
-      "principle": "Time sacrifice is real sacrifice"
+      "principle": "Time sacrifice is real sacrifice",
+      "answers": {
+        "4": "common — I sacrifice prime time for others",
+        "5": "central — my best time goes to serving",
+        "2": "occasional — when it doesn't conflict",
+        "3": "moderate — I give time from surplus",
+        "1": "rare — my time is for my priorities"
+      }
     },
     {
       "id": "E8b",
-      "text": "I use my execution skill and productivity to help others accomplish their goals, not just my own.",
+      "text": "Using my execution skill to help others accomplish their goals (not just mine) is ...",
       "voice": "Brian Tracy",
-      "principle": "Execution capacity can be given"
+      "principle": "Execution capacity can be given",
+      "answers": {
+        "4": "common — I deploy my skills for others",
+        "5": "expected — my capacity is for serving",
+        "2": "occasional — for close friends",
+        "3": "moderate — I help others sometimes",
+        "1": "rare — my capacity serves my goals"
+      }
     },
     {
       "id": "E8c",
-      "text": "I help people with practical tasks — moving, building, fixing, organizing — even when I have plenty of my own work to do.",
+      "text": "Helping with practical tasks (moving, building, fixing) when I have my own work is ...",
       "voice": "Core Philosophy",
-      "principle": "Practical help demonstrates love"
+      "principle": "Practical help demonstrates love",
+      "answers": {
+        "4": "common — I make time to help",
+        "5": "normal — showing up is what I do",
+        "2": "occasional — when it's convenient",
+        "3": "moderate — I help when I can",
+        "1": "rare — I focus on my responsibilities"
+      }
     },
     {
       "id": "E8d",
-      "text": "I show up for others' important events and moments even when it's inconvenient — weddings, funerals, crises, celebrations.",
+      "text": "Showing up for others' important moments even when inconvenient is ...",
       "voice": "Core Philosophy",
-      "principle": "Presence requires time sacrifice"
+      "principle": "Presence requires time sacrifice",
+      "answers": {
+        "4": "common — I prioritize showing up",
+        "5": "expected — presence is non-negotiable",
+        "2": "selective — for important people",
+        "3": "moderate — I try to be there",
+        "1": "rare — I often miss things"
+      }
     },
     {
       "id": "E8e",
-      "text": "I give away my margin — the extra capacity I've built — rather than hoarding it for more personal productivity.",
+      "text": "Giving away my margin (extra capacity) rather than hoarding it is ...",
       "voice": "Core Philosophy",
-      "principle": "Margin is for giving, not hoarding"
+      "principle": "Margin is for giving, not hoarding",
+      "answers": {
+        "4": "common — I give margin generously",
+        "5": "automatic — margin exists for giving",
+        "2": "limited — I keep most of it",
+        "3": "moderate — I share some margin",
+        "1": "rare — I protect my margin"
+      }
     }
   ]
 }

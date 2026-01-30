@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F8a",
-      "text": "I enter into others' emotional pain — not just offering advice from a distance, but feeling with them in their suffering.",
+      "text": "Entering into others' emotional pain (feeling with them, not just advising) is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional presence costs"
+      "principle": "Emotional presence costs",
+      "answers": {
+        "4": "common — I feel with people in their suffering",
+        "5": "expected — empathy means entering the pain",
+        "2": "limited — I engage surface pain",
+        "3": "moderate — I enter some people's pain",
+        "1": "rare — I offer advice from a distance"
+      }
     },
     {
       "id": "F8b",
-      "text": "I give my emotional stability to help regulate others — being a calming presence even when it drains me.",
+      "text": "Giving my emotional stability to help regulate others (even when it drains me) is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Emotional stability can be spent"
+      "principle": "Emotional stability can be spent",
+      "answers": {
+        "4": "common — I offer my stability freely",
+        "5": "expected — my calm is for sharing",
+        "2": "limited — for close relationships",
+        "3": "moderate — I stabilize some people",
+        "1": "rare — I protect my emotional energy"
+      }
     },
     {
       "id": "F8c",
-      "text": "I absorb emotional difficulty from others so they don't have to carry it alone — I take on weight that isn't mine.",
+      "text": "Absorbing emotional difficulty so others don't carry it alone is ...",
       "voice": "Core Philosophy",
-      "principle": "Emotional burden-bearing"
+      "principle": "Emotional burden-bearing",
+      "answers": {
+        "4": "common — I regularly carry others' burdens",
+        "5": "normal — burden-bearing is love",
+        "2": "limited — only for closest people",
+        "3": "moderate — I take on some weight",
+        "1": "rare — I keep boundaries"
+      }
     },
     {
       "id": "F8d",
-      "text": "I make myself emotionally available for others' crises even when it's inconvenient or exhausting.",
+      "text": "Being emotionally available for others' crises (even when inconvenient) is ...",
       "voice": "Core Philosophy",
-      "principle": "Emotional availability is sacrificial"
+      "principle": "Emotional availability is sacrificial",
+      "answers": {
+        "4": "common — I make myself available",
+        "5": "expected — availability is part of love",
+        "2": "limited — for emergencies only",
+        "3": "moderate — I'm sometimes available",
+        "1": "rare — I protect my emotional space"
+      }
     },
     {
       "id": "F8e",
-      "text": "I have given significant emotional investment to people who later hurt me or left — and I don't regret loving them.",
+      "text": "Having invested emotionally in people who hurt me (without regret) is ...",
       "voice": "Core Philosophy",
-      "principle": "Love risks loss"
+      "principle": "Love risks loss",
+      "answers": {
+        "4": "part of loving — I keep investing",
+        "5": "expected — love always risks and I accept that",
+        "2": "painful — I'm more cautious now",
+        "3": "real — but it's affected how I love",
+        "1": "not my experience — I guard against that"
+      }
     }
   ]
 }

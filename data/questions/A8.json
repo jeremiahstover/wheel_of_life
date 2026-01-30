@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "A8a",
-      "text": "I intercede for others at cost to myself — time, energy, emotional investment — without expecting them to know or reciprocate.",
+      "text": "Interceding for others at cost to myself (without expecting them to know) is ...",
       "voice": "Core Philosophy",
-      "principle": "Hidden intercession is pure sacrifice"
+      "principle": "Hidden intercession is pure sacrifice",
+      "answers": {
+        "4": "regular — I invest significantly in intercession",
+        "5": "central — costly intercession is how I live",
+        "2": "occasional — when it's convenient",
+        "3": "moderate — I pray for others from surplus",
+        "1": "rare — I pray for myself mostly"
+      }
     },
     {
       "id": "A8b",
-      "text": "I share my spiritual wisdom and insights freely, even with people who may never thank me or follow through.",
+      "text": "Sharing spiritual wisdom freely (even with those who may not follow through) is ...",
       "voice": "Core Philosophy",
-      "principle": "Spiritual teaching given freely"
+      "principle": "Spiritual teaching given freely",
+      "answers": {
+        "4": "common — I give freely to most",
+        "5": "automatic — wisdom is meant to be given away",
+        "2": "selective — only for those who've earned it",
+        "3": "moderate — I share when I have surplus energy",
+        "1": "rare — I protect my insights"
+      }
     },
     {
       "id": "A8c",
-      "text": "I invest spiritual time in people who cannot repay me — the poor, the difficult, the ungrateful.",
+      "text": "Investing spiritual time in people who cannot repay me is ...",
       "voice": "Core Philosophy",
-      "principle": "Sacrifice targets those who cannot reciprocate"
+      "principle": "Sacrifice targets those who cannot reciprocate",
+      "answers": {
+        "4": "regular — I intentionally serve the ungrateful",
+        "5": "prioritized — the least become the most important",
+        "2": "occasional — sometimes when moved",
+        "3": "moderate — I give some time to the poor and difficult",
+        "1": "rare — I invest where there's return"
+      }
     },
     {
       "id": "A8d",
-      "text": "I pour out spiritual energy for others' benefit even when my own spiritual tank is not overflowing.",
+      "text": "Pouring out spiritual energy when my own tank is low is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Sacrifice sometimes costs from limited reserves"
+      "principle": "Sacrifice sometimes costs from limited reserves",
+      "answers": {
+        "4": "common — I often give beyond comfort",
+        "5": "normal — I pour out whether full or not",
+        "2": "rare — only in emergencies",
+        "3": "occasional — when the need is clear",
+        "1": "not happening — I protect my reserves"
+      }
     },
     {
       "id": "A8e",
-      "text": "I have given significant spiritual investment to people who later rejected, betrayed, or abandoned me — and I would do it again.",
+      "text": "Having invested in people who rejected or betrayed me (and being willing to do it again) is ...",
       "voice": "Core Philosophy",
-      "principle": "True sacrifice continues despite poor returns"
+      "principle": "True sacrifice continues despite poor returns",
+      "answers": {
+        "4": "part of the cost — I keep investing",
+        "5": "expected — love always risks and I accept that",
+        "2": "painful — I'm more guarded now",
+        "3": "real — but it's made me cautious",
+        "1": "not my experience — I don't invest that deeply"
+      }
     }
   ]
 }

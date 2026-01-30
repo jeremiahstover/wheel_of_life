@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D8a",
-      "text": "I freely share knowledge and expertise that I could charge for — I teach, mentor, and help without expecting payment.",
+      "text": "Freely sharing knowledge I could charge for (teaching, mentoring without payment) is ...",
       "voice": "Brian Tracy",
-      "principle": "Knowledge freely given"
+      "principle": "Knowledge freely given",
+      "answers": {
+        "4": "common — I teach and mentor generously",
+        "5": "automatic — knowledge is meant to be given",
+        "2": "occasional — for people who've earned it",
+        "3": "moderate — I share some things freely",
+        "1": "rare — I protect my expertise"
+      }
     },
     {
       "id": "D8b",
-      "text": "I create content, resources, or materials that benefit others without requiring anything in return.",
+      "text": "Creating resources that benefit others without requiring anything in return is ...",
       "voice": "Core Philosophy",
-      "principle": "Intellectual generosity"
+      "principle": "Intellectual generosity",
+      "answers": {
+        "4": "common — I regularly create for others' benefit",
+        "5": "central — my intellectual output is for giving away",
+        "2": "occasional — sometimes I share what I make",
+        "3": "moderate — I've created some free resources",
+        "1": "rare — I create for my own purposes"
+      }
     },
     {
       "id": "D8c",
-      "text": "I invest serious intellectual effort in helping people solve their problems — not just quick advice, but real engagement.",
+      "text": "Investing serious intellectual effort in others' problems (not just quick advice) is ...",
       "voice": "Core Philosophy",
-      "principle": "Deep help costs time and thought"
+      "principle": "Deep help costs time and thought",
+      "answers": {
+        "4": "common — I engage deeply with others' problems",
+        "5": "normal — others' problems get my best thinking",
+        "2": "occasional — for important people",
+        "3": "moderate — I invest real effort sometimes",
+        "1": "rare — I give quick answers"
+      }
     },
     {
       "id": "D8d",
-      "text": "I teach and train others even though they may eventually surpass me or compete with me — I'm not threatened by their growth.",
+      "text": "Training others who may surpass or compete with me is ...",
       "voice": "Brian Tracy",
-      "principle": "Teaching potential competitors is generous"
+      "principle": "Teaching potential competitors is generous",
+      "answers": {
+        "4": "welcome — I want them to grow",
+        "5": "the goal — their growth is my success",
+        "2": "uncomfortable — I'm cautious",
+        "3": "acceptable — I can do it",
+        "1": "threatening — I hold back"
+      }
     },
     {
       "id": "D8e",
-      "text": "I have given significant intellectual help to people who never thanked me, followed through, or succeeded — and I don't regret it.",
+      "text": "Having given significant intellectual help that was never thanked or used (without regret) is ...",
       "voice": "Core Philosophy",
-      "principle": "True giving doesn't require results"
+      "principle": "True giving doesn't require results",
+      "answers": {
+        "4": "part of giving — I keep investing anyway",
+        "5": "expected — the gift is in the giving",
+        "2": "frustrating — I'm more careful now",
+        "3": "real — but it's made me selective",
+        "1": "not my experience — I invest where there's return"
+      }
     }
   ]
 }

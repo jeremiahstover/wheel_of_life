@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "I8a",
-      "text": "My life is oriented toward giving, not accumulating — my trajectory is to pour out, not pile up.",
+      "text": "My life being oriented toward giving (not accumulating) is ...",
       "voice": "Core Philosophy",
-      "principle": "Life orientation toward giving"
+      "principle": "Life orientation toward giving",
+      "answers": {
+        "4": "significant — generosity is a priority",
+        "5": "central — my trajectory is to pour out",
+        "2": "beginning — I'm starting to shift",
+        "3": "partial — giving is part of my life",
+        "1": "not true — I'm focused on building"
+      }
     },
     {
       "id": "I8b",
-      "text": "I am working toward 'dying broke' in all three wealth tiers — giving away money, time, AND relational investment.",
+      "text": "Working toward 'dying broke' in money, time, AND relationships is ...",
       "voice": "Core Philosophy",
-      "principle": "Die broke trajectory"
+      "principle": "Die broke trajectory",
+      "answers": {
+        "4": "intentional — I'm moving in this direction",
+        "5": "the plan — full depletion in service of others",
+        "2": "foreign — I'm still accumulating",
+        "3": "emerging — I'm beginning to think this way",
+        "1": "not my goal — I want to leave a legacy"
+      }
     },
     {
       "id": "I8c",
-      "text": "I sacrifice across all dimensions — spirit, soul, and body — not just in areas that are easy for me.",
+      "text": "Sacrificing across all dimensions (spirit, soul, body) — not just easy areas — is ...",
       "voice": "Core Philosophy",
-      "principle": "Integrated sacrifice"
+      "principle": "Integrated sacrifice",
+      "answers": {
+        "4": "common — I sacrifice across dimensions",
+        "5": "integrated — whole-person sacrifice",
+        "2": "limited — I sacrifice in some areas",
+        "3": "moderate — I give in most areas",
+        "1": "rare — I give where it's comfortable"
+      }
     },
     {
       "id": "I8d",
-      "text": "I have given at levels that genuinely cost me — not just comfortable giving but sacrifice that hurt.",
+      "text": "Giving at levels that genuinely cost me (not just comfortable giving) is ...",
       "voice": "Core Philosophy",
-      "principle": "Costly sacrifice"
+      "principle": "Costly sacrifice",
+      "answers": {
+        "4": "regular — I give until it hurts",
+        "5": "normal — sacrifice is the point",
+        "2": "occasional — sometimes it costs",
+        "3": "moderate — I sacrifice some",
+        "1": "rare — I give from excess"
+      }
     },
     {
       "id": "I8e",
-      "text": "I see my accumulated resources (Layers 1-6) as held in trust for others — I'm a steward, not an owner.",
+      "text": "Seeing my accumulated resources as held in trust for others (steward, not owner) is ...",
       "voice": "Core Philosophy",
-      "principle": "Stewardship, not ownership"
+      "principle": "Stewardship, not ownership",
+      "answers": {
+        "4": "real — I hold loosely",
+        "5": "foundational — nothing is mine",
+        "2": "sometimes — in theory",
+        "3": "growing — I'm learning this perspective",
+        "1": "not how I think — I earned it"
+      }
     }
   ]
 }

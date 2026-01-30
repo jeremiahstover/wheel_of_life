@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "H8a",
-      "text": "I use my physical strength and capacity to help others — lifting, carrying, building, moving — even when it's tiring.",
+      "text": "Using my physical strength to help others (lifting, carrying, building) even when tiring is ...",
       "voice": "Core Philosophy",
-      "principle": "Physical labor for others"
+      "principle": "Physical labor for others",
+      "answers": {
+        "4": "common — I offer my strength freely",
+        "5": "expected — strength is for serving",
+        "2": "limited — when it's not too much",
+        "3": "moderate — I help when I can",
+        "1": "rare — I conserve my energy"
+      }
     },
     {
       "id": "H8b",
-      "text": "I show up bodily for people in need — I'm physically present, not just sending texts or prayers.",
+      "text": "Showing up bodily for people in need (physical presence, not just texts) is ...",
       "voice": "Core Philosophy",
-      "principle": "Physical presence matters"
+      "principle": "Physical presence matters",
+      "answers": {
+        "4": "common — I prioritize physical presence",
+        "5": "expected — presence is the gift",
+        "2": "limited — for close people",
+        "3": "moderate — I show up sometimes",
+        "1": "rare — I support from a distance"
+      }
     },
     {
       "id": "H8c",
-      "text": "I do menial, unglamorous physical work to serve others — cleaning, organizing, manual labor — without needing recognition.",
+      "text": "Doing menial, unglamorous physical work to serve (cleaning, manual labor) is ...",
       "voice": "Core Philosophy",
-      "principle": "Humble service"
+      "principle": "Humble service",
+      "answers": {
+        "4": "common — I do whatever needs doing",
+        "5": "welcomed — humble work is honorable",
+        "2": "limited — when there's no alternative",
+        "3": "acceptable — I do it when needed",
+        "1": "rare — that's not my role"
+      }
     },
     {
       "id": "H8d",
-      "text": "I give my physical energy to serve even when I'm tired — I push through fatigue to meet others' needs.",
+      "text": "Giving physical energy to serve even when tired is ...",
       "voice": "Core Philosophy",
-      "principle": "Serving past comfort"
+      "principle": "Serving past comfort",
+      "answers": {
+        "4": "common — I serve beyond comfort",
+        "5": "expected — fatigue doesn't stop service",
+        "2": "limited — only in emergencies",
+        "3": "moderate — I push through sometimes",
+        "1": "rare — I protect my energy"
+      }
     },
     {
       "id": "H8e",
-      "text": "I have done physical work for others that was hard, dirty, or exhausting — and I consider it a privilege, not a burden.",
+      "text": "Having done hard, dirty, exhausting work for others (and considering it a privilege) is ...",
       "voice": "Core Philosophy",
-      "principle": "Service as privilege"
+      "principle": "Service as privilege",
+      "answers": {
+        "4": "common — I do it willingly",
+        "5": "honored — serving this way is meaningful",
+        "2": "limited — it feels like burden",
+        "3": "real — but it's not my preference",
+        "1": "rare — I avoid that kind of work"
+      }
     }
   ]
 }
