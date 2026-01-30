@@ -1,20 +1,21 @@
 {
   "meta": {
     "title": "Wheel of Life Assessment: Discipline Layer",
-    "version": "2.0",
+    "version": "2.1",
     "layer_focus": "Discipline (Layer 4 of 8)",
     "definition": "Consistently making yourself do what needs to be done, especially when you don't feel like doing it.",
     "total_questions": 45,
     "questions_per_dimension": 5,
-    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)"
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "answer_format": "Pointed behavioral descriptions replacing generic frequency scale"
   },
   "scoring": {
     "response_scale": {
-      "1": { "label": "Almost Never", "range": "0-20% of the time" },
-      "2": { "label": "Rarely", "range": "21-40% of the time" },
-      "3": { "label": "Sometimes", "range": "41-60% of the time" },
-      "4": { "label": "Usually", "range": "61-80% of the time" },
-      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+      "1": { "label": "Level 1", "description": "No discipline present - reactive/default behavior" },
+      "2": { "label": "Level 2", "description": "Awareness exists but action doesn't follow" },
+      "3": { "label": "Level 3", "description": "Inconsistent - discipline depends on circumstances" },
+      "4": { "label": "Level 4", "description": "Discipline established with occasional gaps" },
+      "5": { "label": "Level 5", "description": "Discipline is integrated - it's who you are" }
     },
     "calculation": {
       "method": "Sum dimension questions, divide by 5, multiply by 2",
@@ -45,31 +46,66 @@
           "id": "1.1",
           "text": "When my alarm goes off for morning prayer/devotion time, I get up and do it even when I don't feel like it.",
           "voice": "Brian Tracy",
-          "principle": "Eat the Frog: Do the most important thing first"
+          "principle": "Eat the Frog: Do the most important thing first",
+          "answers": {
+            "1": "I don't have a set devotion time — spiritual practice happens whenever I think of it (rarely)",
+            "2": "I've tried setting a morning devotion time but I consistently hit snooze or skip it",
+            "3": "I get up for devotions some mornings, but tiredness or busyness often wins",
+            "4": "I usually make it to my devotion time, only missing occasionally when legitimately disrupted",
+            "5": "My morning devotion time is non-negotiable — I'm up and present even when I don't feel like it"
+          }
         },
         {
           "id": "1.2",
           "text": "I have a specific, scheduled time for prayer and Scripture reading that I protect from other demands.",
           "voice": "Brian Tracy",
-          "principle": "Time blocking for priorities"
+          "principle": "Time blocking for priorities",
+          "answers": {
+            "1": "I don't have a scheduled time — I pray and read when the mood strikes or not at all",
+            "2": "I have a vague idea of when I should do devotions but it's easily overridden by anything else",
+            "3": "I have a scheduled time but it frequently gets bumped for work, family, or other demands",
+            "4": "My devotion time is mostly protected — I only adjust for genuine emergencies",
+            "5": "My spiritual time block is firm — other demands work around it, not the other way around"
+          }
         },
         {
           "id": "1.3",
           "text": "When I miss a day of spiritual disciplines, I return to them the next day without spiraling into guilt or giving up.",
           "voice": "Jordan Peterson",
-          "principle": "Order from chaos, getting back up"
+          "principle": "Order from chaos, getting back up",
+          "answers": {
+            "1": "Missing a day usually turns into weeks — guilt makes me avoid trying again",
+            "2": "I beat myself up when I miss, which makes returning harder and less likely",
+            "3": "I sometimes bounce back quickly, other times I spiral into guilt and extended absence",
+            "4": "I usually return the next day, though I still feel some unnecessary guilt about missing",
+            "5": "Missing a day is just data — I note it, examine why, and show up the next day without drama"
+          }
         },
         {
           "id": "1.4",
           "text": "I practice Sabbath rest intentionally, even when there's work I could be doing.",
           "voice": "Cloud & Townsend",
-          "principle": "Boundaries around rest"
+          "principle": "Boundaries around rest",
+          "answers": {
+            "1": "Rest feels irresponsible to me — I work until I crash, then recover, then repeat",
+            "2": "I know I should rest but I can't stop the mental churn — work bleeds into every day",
+            "3": "I try to take Sabbath but often fill it with errands or feel guilty for not being productive",
+            "4": "I usually protect a rest day, though I occasionally cheat with 'small' work tasks",
+            "5": "Sabbath is sacred in my calendar — I rest intentionally and without guilt"
+          }
         },
         {
           "id": "1.5",
           "text": "I follow through on spiritual commitments (church attendance, small group, serving) even when inconvenient.",
           "voice": "Simon Sinek",
-          "principle": "Commitment to the 'why' even when 'what' is hard"
+          "principle": "Commitment to the 'why' even when 'what' is hard",
+          "answers": {
+            "1": "I show up when it's convenient and skip when anything else comes up",
+            "2": "I intend to be consistent but frequently bail due to tiredness, weather, or competing plans",
+            "3": "I attend about half the time — consistency depends on how I'm feeling that week",
+            "4": "I'm reliable most of the time, only missing for legitimate conflicts or illness",
+            "5": "My spiritual commitments are in ink — I show up as committed regardless of convenience"
+          }
         }
       ],
       "remediation": {
@@ -95,31 +131,66 @@
           "id": "2.1",
           "text": "When I sense conviction about something (right or wrong), I act on it promptly rather than rationalizing or delaying.",
           "voice": "Jordan Peterson",
-          "principle": "Do not lie, especially to yourself"
+          "principle": "Do not lie, especially to yourself",
+          "answers": {
+            "1": "I've gotten skilled at ignoring or explaining away conviction — it rarely changes my behavior",
+            "2": "I feel conviction but usually talk myself out of acting on it",
+            "3": "I act on conviction sometimes, but often delay until the urgency fades",
+            "4": "I usually respond to conviction fairly promptly, though occasionally I drag my feet",
+            "5": "When conviction hits, I act — delay only makes it harder"
+          }
         },
         {
           "id": "2.2",
           "text": "I confess and make things right quickly when I've wronged someone, even when it's uncomfortable.",
           "voice": "Cloud & Townsend",
-          "principle": "Integrity requires difficult conversations"
+          "principle": "Integrity requires difficult conversations",
+          "answers": {
+            "1": "I avoid confronting wrongs I've done — time heals all wounds, right?",
+            "2": "I might apologize eventually but I procrastinate until it's awkward to bring up",
+            "3": "I confess sometimes, but often only when forced or when the discomfort becomes unbearable",
+            "4": "I usually make things right within a few days, though I dread the conversation",
+            "5": "I confess quickly — the discomfort of unresolved wrongs is worse than the awkwardness of confession"
+          }
         },
         {
           "id": "2.3",
           "text": "I say 'no' to requests or opportunities that violate my values, even when saying yes would benefit me.",
           "voice": "Cloud & Townsend",
-          "principle": "Boundaries protect integrity"
+          "principle": "Boundaries protect integrity",
+          "answers": {
+            "1": "I bend my values regularly when there's personal benefit on the line",
+            "2": "I feel conflicted but usually rationalize why this particular compromise is okay",
+            "3": "I hold the line on big things but let smaller compromises slide",
+            "4": "I usually say no to value violations, though some situations really test me",
+            "5": "My values aren't negotiable — no benefit is worth compromising who I am"
+          }
         },
         {
           "id": "2.4",
           "text": "I keep my word and follow through on commitments, even small ones, even when no one would notice if I didn't.",
           "voice": "Jordan Peterson",
-          "principle": "Your word is your bond with reality"
+          "principle": "Your word is your bond with reality",
+          "answers": {
+            "1": "I make promises casually and break them just as casually — no one's really keeping track",
+            "2": "I keep the big commitments but let small ones slide if they become inconvenient",
+            "3": "I try to keep my word but frequently find reasons why this particular promise doesn't count",
+            "4": "I'm reliable on most commitments, though occasionally I drop small ones unintentionally",
+            "5": "My word is my bond — if I said it, I do it, regardless of who's watching"
+          }
         },
         {
           "id": "2.5",
           "text": "When I notice I'm justifying questionable behavior, I stop and examine myself honestly.",
           "voice": "Chase Hughes",
-          "principle": "Self-awareness of internal narratives"
+          "principle": "Self-awareness of internal narratives",
+          "answers": {
+            "1": "I'm excellent at justification — I can make almost anything seem reasonable to myself",
+            "2": "I sometimes notice my rationalizations but usually keep going anyway",
+            "3": "I catch myself justifying sometimes and occasionally stop to examine it",
+            "4": "I'm usually able to recognize when I'm making excuses and course correct",
+            "5": "Self-deception is something I actively guard against — I know my patterns and catch them early"
+          }
         }
       ],
       "remediation": {
@@ -145,31 +216,66 @@
           "id": "3.1",
           "text": "When the Holy Spirit convicts me of sin, I confess and repent promptly rather than rationalizing, minimizing, or delaying.",
           "voice": "Jordan Peterson",
-          "principle": "Don't let things fester; face what you're avoiding"
+          "principle": "Don't let things fester; face what you're avoiding",
+          "answers": {
+            "1": "I've learned to tune out conviction — it's just guilt I don't need",
+            "2": "I feel conviction but usually minimize the issue or tell myself I'll deal with it later",
+            "3": "Sometimes I respond quickly, other times I let conviction sit for days or weeks",
+            "4": "I usually confess and repent fairly promptly, though occasionally I resist",
+            "5": "Conviction is a gift — when it comes, I stop, confess, and repent without delay"
+          }
         },
         {
           "id": "3.2",
           "text": "I maintain spiritual disciplines even during dry seasons when I don't feel God's presence or see spiritual fruit.",
           "voice": "Brian Tracy",
-          "principle": "Consistency regardless of feeling; the discipline creates the result"
+          "principle": "Consistency regardless of feeling; the discipline creates the result",
+          "answers": {
+            "1": "When I don't feel anything, I stop showing up — what's the point?",
+            "2": "Dry seasons knock me off my disciplines quickly — I need to feel something to continue",
+            "3": "I persist for a while during dry seasons but eventually drift away until things feel better",
+            "4": "I mostly maintain disciplines in dry seasons, though my commitment wavers",
+            "5": "Feelings aren't my gauge — I show up whether it feels fruitful or not"
+          }
         },
         {
           "id": "3.3",
           "text": "I actively work to root out areas of habitual sin or compromise rather than tolerating them as 'just how I am.'",
           "voice": "Jordan Peterson",
-          "principle": "Take responsibility; don't rationalize weakness as identity"
+          "principle": "Take responsibility; don't rationalize weakness as identity",
+          "answers": {
+            "1": "I've accepted my sin patterns as permanent features of my personality",
+            "2": "I know I should work on these areas but I've given up trying to change",
+            "3": "I make occasional efforts but quickly return to old patterns",
+            "4": "I'm actively working on most areas of compromise, with slow but real progress",
+            "5": "I treat habitual sin as an enemy to be defeated, not a roommate to tolerate"
+          }
         },
         {
           "id": "3.4",
           "text": "I intentionally seek spiritual filling and renewal (worship, solitude, prayer) rather than running on empty until I crash.",
           "voice": "Cloud & Townsend",
-          "principle": "Boundaries around spiritual refueling; sustainable holiness"
+          "principle": "Boundaries around spiritual refueling; sustainable holiness",
+          "answers": {
+            "1": "I run on spiritual fumes until I'm empty, then wonder why I feel disconnected",
+            "2": "I know I need spiritual refueling but rarely make time for it until crisis hits",
+            "3": "I seek renewal sometimes, but often let myself get depleted before I do",
+            "4": "I usually keep my spiritual tank reasonably full, occasionally letting it get low",
+            "5": "Spiritual renewal is scheduled and protected — I don't wait until I'm empty"
+          }
         },
         {
           "id": "3.5",
           "text": "I maintain my commitment to holiness in private — when no one would know if I compromised.",
           "voice": "Chase Hughes",
-          "principle": "Private behavior predicts public character; small disciplines reveal true state"
+          "principle": "Private behavior predicts public character; small disciplines reveal true state",
+          "answers": {
+            "1": "My private life and public image are very different — I compromise freely when alone",
+            "2": "I'm more relaxed in private — small compromises feel harmless when no one sees",
+            "3": "I try to be consistent but definitely give myself more slack when alone",
+            "4": "I'm mostly the same in private and public, with occasional private lapses",
+            "5": "Private holiness is the foundation — my character doesn't change based on who's watching"
+          }
         }
       ],
       "remediation": {
@@ -195,31 +301,66 @@
           "id": "4.1",
           "text": "I have a consistent practice of reading/learning (books, courses, study) that I maintain even when busy.",
           "voice": "Brian Tracy",
-          "principle": "Leaders are readers; continuous learning"
+          "principle": "Leaders are readers; continuous learning",
+          "answers": {
+            "1": "I rarely read or learn intentionally — information comes passively if at all",
+            "2": "I buy books and sign up for courses but rarely finish them",
+            "3": "I learn in bursts when interested, but busyness easily disrupts my habits",
+            "4": "I maintain a learning practice most of the time, occasionally dropping it when overwhelmed",
+            "5": "Learning is a non-negotiable habit — I have protected time and I use it"
+          }
         },
         {
           "id": "4.2",
           "text": "I engage in deep thinking (reflection, journaling, analysis) rather than only consuming content passively.",
           "voice": "Jordan Peterson",
-          "principle": "Think things through carefully"
+          "principle": "Think things through carefully",
+          "answers": {
+            "1": "I consume content but rarely process it — thinking deeply feels like a luxury I don't have",
+            "2": "I know I should reflect more but I prefer distraction to the effort of thinking",
+            "3": "I do some reflection but often skim the surface or get distracted midway",
+            "4": "I regularly engage in deep thinking, though sometimes I take shortcuts",
+            "5": "Deep thinking is built into my week — I don't just consume, I process and apply"
+          }
         },
         {
           "id": "4.3",
           "text": "I protect focused thinking time from interruptions and distractions (phone, notifications, multitasking).",
           "voice": "Brian Tracy",
-          "principle": "Single-handling; focus blocks"
+          "principle": "Single-handling; focus blocks",
+          "answers": {
+            "1": "I'm constantly interrupted and I've stopped trying to control it",
+            "2": "I try to focus but always keep notifications on 'just in case'",
+            "3": "I protect focus time sometimes, but often let distractions creep in",
+            "4": "I usually protect focus time well, with occasional breaches",
+            "5": "Deep work time is sacred — phone goes away, notifications are off, door is closed"
+          }
         },
         {
           "id": "4.4",
           "text": "When I encounter ideas that challenge my thinking, I engage with them honestly rather than dismissing them.",
           "voice": "Jordan Peterson",
-          "principle": "Seek truth even when uncomfortable"
+          "principle": "Seek truth even when uncomfortable",
+          "answers": {
+            "1": "I avoid ideas that challenge me — it's more comfortable to stay in my bubble",
+            "2": "I encounter challenging ideas but quickly find reasons to dismiss them",
+            "3": "I engage sometimes, but often only with ideas that don't threaten my core beliefs",
+            "4": "I usually engage honestly with challenging ideas, though some topics are harder",
+            "5": "I actively seek ideas that challenge me — being wrong is how I learn"
+          }
         },
         {
           "id": "4.5",
           "text": "I apply what I learn (wisdom) rather than just accumulating knowledge I never use.",
           "voice": "Brian Tracy",
-          "principle": "Implementation vs information"
+          "principle": "Implementation vs information",
+          "answers": {
+            "1": "I collect information without applying it — knowing feels like doing",
+            "2": "I intend to apply what I learn but rarely follow through",
+            "3": "I apply some things, but much of what I learn never makes it into practice",
+            "4": "I usually try to apply one thing from everything I learn",
+            "5": "Implementation is the point — if I'm not going to apply it, why learn it?"
+          }
         }
       ],
       "remediation": {
@@ -245,31 +386,66 @@
           "id": "5.1",
           "text": "When I commit to doing something (to myself or others), I follow through even when it becomes inconvenient.",
           "voice": "Jordan Peterson",
-          "principle": "Integrity with yourself is the foundation"
+          "principle": "Integrity with yourself is the foundation",
+          "answers": {
+            "1": "I regularly abandon commitments when they get hard or inconvenient",
+            "2": "I follow through on easy things but back out when real resistance shows up",
+            "3": "I push through sometimes, but difficulty often wins — it depends on my mood",
+            "4": "I usually finish what I start, though I occasionally need external accountability",
+            "5": "Once I commit, I execute — difficulty is expected and doesn't change my course"
+          }
         },
         {
           "id": "5.2",
           "text": "I do hard things I don't want to do because they need to be done, without excessive internal negotiation.",
           "voice": "Brian Tracy",
-          "principle": "Eat the Frog; do it first"
+          "principle": "Eat the Frog; do it first",
+          "answers": {
+            "1": "I avoid hard things until forced or until the consequences become unbearable",
+            "2": "I negotiate extensively with myself, often finding reasons why it can wait",
+            "3": "I do hard things sometimes, but often after significant internal resistance",
+            "4": "I usually tackle hard things with minimal negotiation, though some tasks really test me",
+            "5": "Hard things go first — if I don't feel like doing it, that's exactly why I should"
+          }
         },
         {
           "id": "5.3",
           "text": "I make decisions and act on them rather than staying stuck in analysis or procrastination.",
           "voice": "Brian Tracy",
-          "principle": "Decisiveness; action orientation"
+          "principle": "Decisiveness; action orientation",
+          "answers": {
+            "1": "I get paralyzed by decisions — I research endlessly and often never choose",
+            "2": "I make decisions slowly and often revisit them, wasting time on second-guessing",
+            "3": "I decide reasonably well on small things but get stuck on bigger choices",
+            "4": "I usually make decisions efficiently, occasionally overthinking complex situations",
+            "5": "I decide, act, and adjust — waiting for perfect information is its own decision (a bad one)"
+          }
         },
         {
           "id": "5.4",
           "text": "When I fail to follow through, I examine why, make adjustments, and try again rather than making excuses.",
           "voice": "Jordan Peterson",
-          "principle": "Take responsibility; don't rationalize"
+          "principle": "Take responsibility; don't rationalize",
+          "answers": {
+            "1": "Failure proves I can't do it — I give up and move on to something else",
+            "2": "I make excuses to protect my ego rather than honestly examining what went wrong",
+            "3": "Sometimes I examine failures honestly, other times I just feel bad and don't learn",
+            "4": "I usually analyze failures and try again, though occasionally I repeat the same mistakes",
+            "5": "Failure is data — I examine it honestly, adjust the approach, and go again"
+          }
         },
         {
           "id": "5.5",
           "text": "I build small disciplines in daily life (bed made, dishes done, space organized) that strengthen my overall will.",
           "voice": "Jordan Peterson / Chase Hughes",
-          "principle": "Clean your room; small behaviors predict large ones"
+          "principle": "Clean your room; small behaviors predict large ones",
+          "answers": {
+            "1": "My environment reflects my chaos — small disciplines feel pointless",
+            "2": "I know small disciplines matter but I can't seem to maintain them",
+            "3": "I'm disciplined in some small areas but not others — it's inconsistent",
+            "4": "I maintain most small disciplines, with occasional lapses",
+            "5": "My environment is ordered because I've made small disciplines automatic"
+          }
         }
       ],
       "remediation": {
@@ -295,31 +471,66 @@
           "id": "6.1",
           "text": "I feel the full range of emotions throughout the day without those emotions dictating my actions.",
           "voice": "Core Philosophy",
-          "principle": "Feel the rollercoaster, don't act on the rollercoaster"
+          "principle": "Feel the rollercoaster, don't act on the rollercoaster",
+          "answers": {
+            "1": "My emotions run the show — when I feel it, I act on it",
+            "2": "I try to suppress emotions entirely, which leads to explosions",
+            "3": "I manage some emotions well but others (anger, anxiety) still control me",
+            "4": "I usually feel without acting impulsively, though strong emotions can still hijack me",
+            "5": "I feel everything fully — and then I choose my response deliberately"
+          }
         },
         {
           "id": "6.2",
           "text": "I process difficult emotions (journaling, talking, praying) rather than burying or numbing them.",
           "voice": "Jordan Peterson",
-          "principle": "Face what you're avoiding"
+          "principle": "Face what you're avoiding",
+          "answers": {
+            "1": "I bury or numb difficult emotions — if I don't think about them, they don't exist",
+            "2": "I know I should process emotions but I prefer distraction to the discomfort",
+            "3": "I process sometimes but often let things build up until they overflow",
+            "4": "I usually process difficult emotions, though some get buried longer than they should",
+            "5": "Processing emotions is scheduled into my life — nothing stays buried"
+          }
         },
         {
           "id": "6.3",
           "text": "I pause before responding when emotionally triggered rather than reacting impulsively.",
           "voice": "Chase Hughes",
-          "principle": "Pattern interrupt; response vs reaction"
+          "principle": "Pattern interrupt; response vs reaction",
+          "answers": {
+            "1": "When triggered, I react immediately — the words are out before I think",
+            "2": "I know I should pause but I rarely manage it in the moment",
+            "3": "I pause sometimes, but strong triggers still get instant reactions",
+            "4": "I usually pause before responding, though occasionally I react first",
+            "5": "Pause is automatic — I've trained myself to create space between trigger and response"
+          }
         },
         {
           "id": "6.4",
           "text": "I have healthy outlets for stress and negative emotions rather than destructive coping mechanisms.",
           "voice": "Cloud & Townsend",
-          "principle": "Healthy boundaries include self-care"
+          "principle": "Healthy boundaries include self-care",
+          "answers": {
+            "1": "My coping mechanisms are mostly destructive — I know it but can't seem to stop",
+            "2": "I have some healthy outlets but often default to unhealthy ones when stressed",
+            "3": "I use a mix of healthy and unhealthy coping — depends on how bad it is",
+            "4": "I mostly use healthy outlets, occasionally slipping into old patterns under pressure",
+            "5": "I've built a robust set of healthy outlets that I use consistently"
+          }
         },
         {
           "id": "6.5",
           "text": "I address emotional issues in relationships directly rather than letting resentment build or avoiding conflict.",
           "voice": "Cloud & Townsend",
-          "principle": "Boundaries; necessary conversations"
+          "principle": "Boundaries; necessary conversations",
+          "answers": {
+            "1": "I avoid conflict at all costs — resentment builds until the relationship breaks",
+            "2": "I might address things eventually but usually let issues fester for too long",
+            "3": "I address some issues directly but avoid the really uncomfortable ones",
+            "4": "I usually address issues fairly promptly, though sometimes I delay too long",
+            "5": "I address relational issues quickly and directly — resentment can't build if I don't let it"
+          }
         }
       ],
       "remediation": {
@@ -345,31 +556,66 @@
           "id": "7.1",
           "text": "I maintain a consistent sleep schedule (same bedtime and wake time) even on weekends.",
           "voice": "Brian Tracy",
-          "principle": "Morning routines start with evening discipline"
+          "principle": "Morning routines start with evening discipline",
+          "answers": {
+            "1": "My sleep schedule is chaotic — I sleep when I'm exhausted and wake when I have to",
+            "2": "I have a vague target but rarely hit it — weekends especially are a free-for-all",
+            "3": "I'm consistent during the week but weekends throw me completely off",
+            "4": "I mostly maintain my schedule, with occasional deviations",
+            "5": "My sleep schedule is locked in — same time every day, including weekends"
+          }
         },
         {
           "id": "7.2",
           "text": "I eat in a way that fuels my body well (real food, appropriate portions) rather than giving in to cravings.",
           "voice": "Jordan Peterson",
-          "principle": "Order in the small things"
+          "principle": "Order in the small things",
+          "answers": {
+            "1": "I eat whatever's convenient — nutrition rarely factors into my choices",
+            "2": "I know what I should eat but consistently choose otherwise",
+            "3": "I eat well when it's easy, but stress, busyness, or availability derails me",
+            "4": "Most of my meals are intentional — I plan and prepare, with occasional lapses",
+            "5": "Eating well is a settled discipline — I've built systems that make it automatic"
+          }
         },
         {
           "id": "7.3",
           "text": "I drink adequate water throughout the day and limit substances that impair performance (alcohol, excessive caffeine).",
           "voice": "Core Philosophy",
-          "principle": "Basic stewardship"
+          "principle": "Basic stewardship",
+          "answers": {
+            "1": "I run on caffeine and rarely drink water — I notice but don't change",
+            "2": "I know my substance intake is too high but cutting back feels impossible",
+            "3": "I manage hydration and substances sometimes, but easily slip into bad patterns",
+            "4": "I usually stay well hydrated and moderate with substances, with occasional excess",
+            "5": "Hydration is automatic and I'm intentional about anything that affects my performance"
+          }
         },
         {
           "id": "7.4",
           "text": "I maintain my environment (clean space, organized workspace, reduced toxins/clutter) rather than living in chaos.",
           "voice": "Jordan Peterson / Chase Hughes",
-          "principle": "Clean your room; environment shapes behavior"
+          "principle": "Clean your room; environment shapes behavior",
+          "answers": {
+            "1": "My environment is chaotic and I've stopped seeing it",
+            "2": "I clean up occasionally but it quickly returns to disorder",
+            "3": "Some areas are organized, others are perpetual disaster zones",
+            "4": "I mostly keep things ordered, with occasional pileups that I address",
+            "5": "My environment stays clean and organized — I've built systems that maintain it"
+          }
         },
         {
           "id": "7.5",
           "text": "I take breaks and rest when needed rather than pushing through to burnout, then crashing.",
           "voice": "Cloud & Townsend",
-          "principle": "Boundaries around energy; sustainable pace"
+          "principle": "Boundaries around energy; sustainable pace",
+          "answers": {
+            "1": "I push until I crash, recover, repeat — I don't know another way",
+            "2": "I know I need breaks but taking them feels like weakness",
+            "3": "I take breaks sometimes but often ignore the signs until it's too late",
+            "4": "I usually take appropriate breaks, occasionally pushing too hard before I do",
+            "5": "I've learned my limits and I respect them — breaks are scheduled, not emergency measures"
+          }
         }
       ],
       "remediation": {
@@ -395,31 +641,66 @@
           "id": "8.1",
           "text": "I exercise regularly according to a schedule rather than only when I feel like it.",
           "voice": "Brian Tracy",
-          "principle": "Schedule it or it won't happen"
+          "principle": "Schedule it or it won't happen",
+          "answers": {
+            "1": "I don't have an exercise routine — I move when I have to and otherwise don't",
+            "2": "I've tried many exercise schedules but can't stick with any of them",
+            "3": "I exercise in bursts — consistent for a while, then completely off",
+            "4": "I have a regular schedule I mostly keep, with occasional missed sessions",
+            "5": "Exercise is blocked in my calendar and I show up — feeling like it isn't required"
+          }
         },
         {
           "id": "8.2",
           "text": "I do my planned workout even when I don't feel motivated, knowing motivation follows action.",
           "voice": "Brian Tracy / Jordan Peterson",
-          "principle": "Action creates motivation; do it anyway"
+          "principle": "Action creates motivation; do it anyway",
+          "answers": {
+            "1": "No motivation means no workout — I need to feel like it before I'll do it",
+            "2": "I often skip workouts when not motivated, planning to make up for it later (I don't)",
+            "3": "Sometimes I push through lack of motivation, other times it wins",
+            "4": "I usually do the workout even unmotivated, though occasionally I negotiate down",
+            "5": "Motivation is irrelevant — the workout happens whether I feel like it or not"
+          }
         },
         {
           "id": "8.3",
           "text": "I incorporate movement throughout my day (standing, walking, stretching) rather than being sedentary for long periods.",
           "voice": "Core Philosophy",
-          "principle": "Functional capacity through daily movement"
+          "principle": "Functional capacity through daily movement",
+          "answers": {
+            "1": "I sit for hours without moving and only realize it when something hurts",
+            "2": "I know I should move more but I don't actually do it",
+            "3": "I incorporate some movement but often forget for long stretches",
+            "4": "I usually build movement into my day, occasionally getting trapped at my desk",
+            "5": "Movement is built into my day — I have triggers and habits that keep me from being sedentary"
+          }
         },
         {
           "id": "8.4",
           "text": "I progressively challenge my body (increased weight, distance, intensity) rather than staying in my comfort zone.",
           "voice": "Jordan Peterson",
-          "principle": "Voluntary exposure to challenge makes you stronger"
+          "principle": "Voluntary exposure to challenge makes you stronger",
+          "answers": {
+            "1": "I don't challenge myself physically — I stay well within what's comfortable",
+            "2": "I've been doing the same routine at the same level for years",
+            "3": "I occasionally push myself but often coast at a comfortable level",
+            "4": "I usually progress my training, though sometimes I plateau by not pushing",
+            "5": "Progressive challenge is the point — I track, measure, and deliberately increase"
+          }
         },
         {
           "id": "8.5",
           "text": "I maintain my exercise habit even during travel, busy seasons, or disrupted routines.",
           "voice": "Brian Tracy",
-          "principle": "Non-negotiable habits"
+          "principle": "Non-negotiable habits",
+          "answers": {
+            "1": "Any disruption ends my exercise routine — I'll restart when things settle (they don't)",
+            "2": "I try to maintain during disruptions but usually fail within days",
+            "3": "I keep up some exercise during disruptions but at much reduced frequency",
+            "4": "I mostly maintain during disruptions, adapting my routine as needed",
+            "5": "Routine disruptions don't stop me — I have travel workouts, backup plans, and minimal options"
+          }
         }
       ],
       "remediation": {
@@ -445,31 +726,66 @@
           "id": "9.1",
           "text": "I schedule and attend regular preventive care (checkups, dental, vision) rather than only going when something is wrong.",
           "voice": "Core Philosophy",
-          "principle": "Stewardship: maintenance before repair"
+          "principle": "Stewardship: maintenance before repair",
+          "answers": {
+            "1": "I only see doctors when something is really wrong — preventive care feels unnecessary",
+            "2": "I know I should get checkups but I keep postponing them",
+            "3": "I'm current on some preventive care but way behind on others",
+            "4": "I mostly stay on top of preventive care, occasionally falling behind",
+            "5": "Preventive care is scheduled and I show up — maintenance is easier than repair"
+          }
         },
         {
           "id": "9.2",
           "text": "When I notice a health issue (pain, symptom, concern), I address it promptly rather than ignoring it.",
           "voice": "Jordan Peterson",
-          "principle": "Don't ignore the small problems; they grow"
+          "principle": "Don't ignore the small problems; they grow",
+          "answers": {
+            "1": "I ignore health issues until they become impossible to ignore",
+            "2": "I notice things but convince myself it's probably nothing and hope it goes away",
+            "3": "I address some issues promptly but let others linger for too long",
+            "4": "I usually address health issues fairly quickly, occasionally delaying",
+            "5": "I don't let things fester — if something's off, I address it before it grows"
+          }
         },
         {
           "id": "9.3",
           "text": "I follow through on medical recommendations (medication, therapy, lifestyle changes) even when inconvenient.",
           "voice": "Core Philosophy",
-          "principle": "Integrity: follow through on commitments"
+          "principle": "Integrity: follow through on commitments",
+          "answers": {
+            "1": "I get recommendations and then ignore them",
+            "2": "I start following recommendations but quickly fall off",
+            "3": "I follow some recommendations but not others — depends on how inconvenient they are",
+            "4": "I mostly follow through on recommendations, occasionally skipping or forgetting",
+            "5": "If I've agreed to a treatment plan, I execute it fully — that's the point"
+          }
         },
         {
           "id": "9.4",
           "text": "I manage chronic conditions or health maintenance routines consistently rather than sporadically.",
           "voice": "Brian Tracy",
-          "principle": "Systems beat willpower; routine creates results"
+          "principle": "Systems beat willpower; routine creates results",
+          "answers": {
+            "1": "I'm inconsistent with health routines and it shows",
+            "2": "I manage routines for a while then completely drop them",
+            "3": "I'm consistent with some routines but others are hit or miss",
+            "4": "I mostly maintain my health routines, with occasional lapses",
+            "5": "Health maintenance is built into my life — it happens automatically"
+          }
         },
         {
           "id": "9.5",
           "text": "I recognize that physical, mental, and spiritual health are connected and address my body as an integrated whole.",
           "voice": "Core Philosophy",
-          "principle": "Integration not separation; tripartite being"
+          "principle": "Integration not separation; tripartite being",
+          "answers": {
+            "1": "I treat symptoms in isolation without seeing how they connect",
+            "2": "I intellectually know they're connected but I don't act on it",
+            "3": "I sometimes address health holistically, other times I just treat what hurts",
+            "4": "I usually take an integrated approach, though occasionally I get tunnel vision",
+            "5": "Holistic health is my operating assumption — I look for root causes and connections"
+          }
         }
       ],
       "remediation": {
