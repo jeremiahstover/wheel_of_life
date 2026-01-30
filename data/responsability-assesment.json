@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Responsibility Layer",
+    "version": "1.0",
+    "layer_focus": "Responsibility (Layer 3 of 8)",
+    "definition": "The state or fact of having a duty to deal with something; owning what is yours to handle without blame-shifting or victimhood.",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Responsibility is the foundation for Discipline (Layer 4). If Discipline is weak, shore up Responsibility first."
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "Immediate attention required" },
+      "3-4": { "label": "Below Baseline", "description": "Needs focused work" },
+      "5-6": { "label": "Maintaining", "description": "Functional but not growing" },
+      "7-8": { "label": "Target Zone", "description": "Ownership established" },
+      "9-10": { "label": "Exceptional", "description": "Approaching mastery" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Taking ownership of your spiritual intake — your relationship with God is yours to cultivate",
+      "scripture_anchor": {
+        "text": "Draw near to God, and he will draw near to you.",
+        "reference": "James 4:8"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I recognize that my relationship with God is MY responsibility — no pastor, spouse, or program can do my spiritual work for me.",
+          "voice": "Core Philosophy",
+          "principle": "Personal responsibility for spiritual life"
+        },
+        {
+          "id": "1.2",
+          "text": "When my spiritual life feels dry, I look at my own choices and habits first rather than blaming circumstances or others.",
+          "voice": "Jordan Peterson",
+          "principle": "Take responsibility; examine yourself first"
+        },
+        {
+          "id": "1.3",
+          "text": "I own that creating time and space for God is my job — I don't wait for the 'right conditions' to appear.",
+          "voice": "Brian Tracy",
+          "principle": "If it's to be, it's up to me"
+        },
+        {
+          "id": "1.4",
+          "text": "I don't blame my upbringing, church experience, or busy schedule for the current state of my spiritual life.",
+          "voice": "Jordan Peterson",
+          "principle": "No blame-shifting; own your situation"
+        },
+        {
+          "id": "1.5",
+          "text": "I recognize that spiritual growth requires my active participation — God won't force-feed me what I refuse to receive.",
+          "voice": "Core Philosophy",
+          "principle": "Active participation in sanctification"
+        }
+      ],
+      "remediation": {
+        "advice": "Responsibility for your spiritual life begins with a simple admission: 'This is mine to handle.' Stop waiting for circumstances to change or others to motivate you. The question isn't 'why isn't my spiritual life better?' but 'what am I going to do about it?'",
+        "scripture": {
+          "text": "Work out your own salvation with fear and trembling.",
+          "reference": "Philippians 2:12"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Taking ownership of acting on moral conviction — your integrity is yours to maintain",
+      "scripture_anchor": {
+        "text": "So whoever knows the right thing to do and fails to do it, for him it is sin.",
+        "reference": "James 4:17"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "When I do something wrong, I own it rather than making excuses, minimizing, or shifting blame to circumstances.",
+          "voice": "Jordan Peterson",
+          "principle": "Tell the truth; take responsibility"
+        },
+        {
+          "id": "2.2",
+          "text": "I take responsibility for the impact of my actions on others, including unintended consequences.",
+          "voice": "Cloud & Townsend",
+          "principle": "Own your impact, not just your intent"
+        },
+        {
+          "id": "2.3",
+          "text": "When confronted with a moral failure, I resist the urge to defend myself or point to what others did.",
+          "voice": "Jordan Peterson",
+          "principle": "No blame-shifting when confronted"
+        },
+        {
+          "id": "2.4",
+          "text": "I recognize that my integrity is my responsibility — no one else can give it to me or take it away without my participation.",
+          "voice": "Core Philosophy",
+          "principle": "Integrity is personally owned"
+        },
+        {
+          "id": "2.5",
+          "text": "When I'm convicted of something, I own that addressing it is my job — I don't wait for someone else to fix it or hold me accountable.",
+          "voice": "Chase Hughes",
+          "principle": "Self-accountability precedes external accountability"
+        }
+      ],
+      "remediation": {
+        "advice": "Responsibility for conscience means owning your moral choices without deflection. The mature response to 'you did wrong' is not 'but they...' or 'because circumstances...' — it's 'yes, I did, and here's what I'm going to do about it.'",
+        "scripture": {
+          "text": "Each one should test their own actions. Then they can take pride in themselves alone, without comparing themselves to someone else.",
+          "reference": "Galatians 6:4"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Taking ownership of your spiritual purity — your sanctification requires your cooperation",
+      "scripture_anchor": {
+        "text": "Since we have these promises, dear friends, let us purify ourselves from everything that contaminates body and spirit.",
+        "reference": "2 Corinthians 7:1"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I own that my spiritual state is primarily the result of my choices, not my circumstances, upbringing, or spiritual attacks.",
+          "voice": "Jordan Peterson",
+          "principle": "Take responsibility for your state"
+        },
+        {
+          "id": "3.2",
+          "text": "I don't blame temptation, the devil, or other people's influence for my sin patterns — I chose to give in.",
+          "voice": "Core Philosophy",
+          "principle": "Own your sin; don't externalize blame"
+        },
+        {
+          "id": "3.3",
+          "text": "I recognize that addressing areas of spiritual compromise is my responsibility, not something to tolerate until God 'delivers' me.",
+          "voice": "Jordan Peterson",
+          "principle": "Active participation in sanctification"
+        },
+        {
+          "id": "3.4",
+          "text": "I take ownership of my response to spiritual dryness or difficulty — how I respond is my choice.",
+          "voice": "Core Philosophy",
+          "principle": "Response-ability in hard seasons"
+        },
+        {
+          "id": "3.5",
+          "text": "I recognize that 'that's just how I am' is not an acceptable excuse for ongoing sin or spiritual weakness.",
+          "voice": "Jordan Peterson",
+          "principle": "Don't rationalize weakness as identity"
+        }
+      ],
+      "remediation": {
+        "advice": "Taking responsibility for holiness means admitting: 'My spiritual state is largely my doing.' This isn't about guilt — it's about agency. If you caused it, you can change it. Stop waiting for deliverance and start cooperating with the sanctification process.",
+        "scripture": {
+          "text": "Put to death, therefore, whatever belongs to your earthly nature.",
+          "reference": "Colossians 3:5"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Taking ownership of what you put into your mind — your mental diet is yours to curate",
+      "scripture_anchor": {
+        "text": "Finally, brothers, whatever is true, whatever is honorable... think about these things.",
+        "reference": "Philippians 4:8"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I take responsibility for what I consume mentally — content, media, and information are my choices.",
+          "voice": "Core Philosophy",
+          "principle": "Own your mental intake"
+        },
+        {
+          "id": "4.2",
+          "text": "I own that my thinking patterns are mine to change — I'm not a passive victim of my thoughts.",
+          "voice": "Jordan Peterson",
+          "principle": "Agency over thought patterns"
+        },
+        {
+          "id": "4.3",
+          "text": "I don't blame my education, background, or intelligence for my current state of knowledge or ignorance.",
+          "voice": "Brian Tracy",
+          "principle": "No excuses for lack of learning"
+        },
+        {
+          "id": "4.4",
+          "text": "I recognize that learning and intellectual growth are my responsibility — it's not someone else's job to educate me.",
+          "voice": "Brian Tracy",
+          "principle": "Personal responsibility for growth"
+        },
+        {
+          "id": "4.5",
+          "text": "I take ownership of protecting my mind from influences that harm my thinking, rather than blaming the influences themselves.",
+          "voice": "Core Philosophy",
+          "principle": "Guard your mind proactively"
+        }
+      ],
+      "remediation": {
+        "advice": "Your mind is a garden you tend. Taking responsibility means admitting: 'What's growing here is what I planted or allowed.' If you want different thoughts, consume different content. If you want clearer thinking, do the work to develop it. No one else is responsible for your mental state.",
+        "scripture": {
+          "text": "Be transformed by the renewal of your mind.",
+          "reference": "Romans 12:2"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Taking ownership of your choices and their consequences — your decisions are yours alone",
+      "scripture_anchor": {
+        "text": "But each person is tempted when they are dragged away by their own evil desire and enticed.",
+        "reference": "James 1:14"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I own my choices — I don't blame circumstances, other people, or my past for what I decide to do.",
+          "voice": "Jordan Peterson",
+          "principle": "Own your choices completely"
+        },
+        {
+          "id": "5.2",
+          "text": "When I fail to follow through on something, I take responsibility rather than pointing to obstacles or interference.",
+          "voice": "Brian Tracy",
+          "principle": "No excuses for lack of execution"
+        },
+        {
+          "id": "5.3",
+          "text": "I recognize that my life outcomes are largely the result of my accumulated choices, not fate or luck.",
+          "voice": "Core Philosophy",
+          "principle": "Causality: choices have consequences"
+        },
+        {
+          "id": "5.4",
+          "text": "I refuse to see myself as a victim of circumstances beyond my control — I always have choices in how I respond.",
+          "voice": "Jordan Peterson",
+          "principle": "Response-ability in all circumstances"
+        },
+        {
+          "id": "5.5",
+          "text": "I own that procrastination and avoidance are my choices, not things that 'happen to me.'",
+          "voice": "Brian Tracy",
+          "principle": "Own your avoidance"
+        }
+      ],
+      "remediation": {
+        "advice": "Responsibility for will means accepting: 'I am where I am largely because of the choices I've made.' This isn't harsh — it's empowering. If your choices got you here, different choices can get you somewhere else. You're not a leaf in the wind; you're a person with agency.",
+        "scripture": {
+          "text": "Do not be deceived: God cannot be mocked. A man reaps what he sows.",
+          "reference": "Galatians 6:7"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Taking ownership of your emotional life — your responses are yours to manage",
+      "scripture_anchor": {
+        "text": "A fool gives full vent to his spirit, but a wise man quietly holds it back.",
+        "reference": "Proverbs 29:11"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I take responsibility for my emotional responses — others don't 'make me' feel angry, sad, or anxious.",
+          "voice": "Cloud & Townsend",
+          "principle": "Own your emotional responses"
+        },
+        {
+          "id": "6.2",
+          "text": "I own that processing and managing my emotions is my job, not someone else's responsibility to regulate me.",
+          "voice": "Core Philosophy",
+          "principle": "Self-regulation is personal duty"
+        },
+        {
+          "id": "6.3",
+          "text": "I don't blame my upbringing, past trauma, or difficult experiences for my current emotional patterns without also owning my power to change them.",
+          "voice": "Jordan Peterson",
+          "principle": "Acknowledge influence without surrendering agency"
+        },
+        {
+          "id": "6.4",
+          "text": "I recognize that pursuing emotional health is my responsibility — I can't outsource my inner work.",
+          "voice": "Cloud & Townsend",
+          "principle": "Personal responsibility for emotional health"
+        },
+        {
+          "id": "6.5",
+          "text": "I take ownership of how my emotional expression affects others — my feelings don't justify harmful behavior.",
+          "voice": "Cloud & Townsend",
+          "principle": "Own the impact of your emotions"
+        }
+      ],
+      "remediation": {
+        "advice": "Emotional responsibility means admitting: 'No one makes me feel anything — I generate my own emotional responses.' Your history explains your patterns but doesn't excuse them. Taking responsibility for your emotional life is the first step to actually changing it.",
+        "scripture": {
+          "text": "Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city.",
+          "reference": "Proverbs 16:32"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Taking ownership of what sustains your body — nutrition, rest, and environment are yours to manage",
+      "scripture_anchor": {
+        "text": "Do you not know that your bodies are temples of the Holy Spirit?",
+        "reference": "1 Corinthians 6:19"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I take responsibility for what I put into my body — food, drink, and substances are my choices.",
+          "voice": "Core Philosophy",
+          "principle": "Own your intake"
+        },
+        {
+          "id": "7.2",
+          "text": "I own that my sleep and rest are my responsibility to prioritize and protect.",
+          "voice": "Brian Tracy",
+          "principle": "Personal responsibility for rest"
+        },
+        {
+          "id": "7.3",
+          "text": "I don't blame my schedule, family demands, or work for poor nutrition or inadequate sleep — I make choices within constraints.",
+          "voice": "Jordan Peterson",
+          "principle": "No blame-shifting for body care"
+        },
+        {
+          "id": "7.4",
+          "text": "I recognize that my physical environment (clean space, organization, reduced toxins) is mine to maintain.",
+          "voice": "Jordan Peterson",
+          "principle": "Clean your room; own your space"
+        },
+        {
+          "id": "7.5",
+          "text": "I take ownership of creating conditions that allow my body to recover and thrive, rather than just coping with chronic depletion.",
+          "voice": "Cloud & Townsend",
+          "principle": "Proactive stewardship"
+        }
+      ],
+      "remediation": {
+        "advice": "Responsibility for sustenance means owning: 'What goes into my body and environment is my doing.' You can blame your job, your family, your budget — but at the end of the day, you chose what you ate, when you slept, and what surrounds you. Start there.",
+        "scripture": {
+          "text": "So, whether you eat or drink, or whatever you do, do all to the glory of God.",
+          "reference": "1 Corinthians 10:31"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Taking ownership of your physical capability — your fitness and function are yours to develop",
+      "scripture_anchor": {
+        "text": "For while bodily training is of some value, godliness is of value in every way.",
+        "reference": "1 Timothy 4:8"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "I own that my physical fitness is my responsibility — no one else can exercise for me or make me move.",
+          "voice": "Core Philosophy",
+          "principle": "Personal responsibility for fitness"
+        },
+        {
+          "id": "8.2",
+          "text": "I don't blame lack of time, resources, equipment, or motivation for my physical condition — I work with what I have.",
+          "voice": "Brian Tracy",
+          "principle": "No excuses; work within constraints"
+        },
+        {
+          "id": "8.3",
+          "text": "I take responsibility for maintaining and developing my physical capabilities rather than letting them deteriorate by default.",
+          "voice": "Core Philosophy",
+          "principle": "Active maintenance vs passive decay"
+        },
+        {
+          "id": "8.4",
+          "text": "I recognize that my body's ability to function is directly affected by my choices — not genetics, age, or luck alone.",
+          "voice": "Jordan Peterson",
+          "principle": "Agency over physical state"
+        },
+        {
+          "id": "8.5",
+          "text": "I own that if I'm physically limited, it's my job to work within those limits and improve where possible.",
+          "voice": "Core Philosophy",
+          "principle": "Maximize capacity within constraints"
+        }
+      ],
+      "remediation": {
+        "advice": "Taking responsibility for capability means admitting: 'My physical state reflects my choices more than my circumstances.' Yes, genetics and age matter — but within those constraints, you have enormous agency. Stop blaming and start building with what you have.",
+        "scripture": {
+          "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+          "reference": "1 Corinthians 9:24"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Taking ownership of your health and wellness — your body's state is yours to steward",
+      "scripture_anchor": {
+        "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
+        "reference": "3 John 1:2"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "I take responsibility for my health outcomes that are within my control, rather than feeling helpless about my body.",
+          "voice": "Core Philosophy",
+          "principle": "Agency over controllable factors"
+        },
+        {
+          "id": "9.2",
+          "text": "I don't blame genetics, age, or 'bad luck' for things I can actually influence through my choices.",
+          "voice": "Jordan Peterson",
+          "principle": "No blame-shifting for controllable factors"
+        },
+        {
+          "id": "9.3",
+          "text": "I own that addressing health issues is my job — I don't wait for others to notice problems or push me to act.",
+          "voice": "Core Philosophy",
+          "principle": "Proactive health ownership"
+        },
+        {
+          "id": "9.4",
+          "text": "I recognize that integrated wellness (physical, mental, spiritual) is my responsibility to pursue, not separate from my 'spiritual life.'",
+          "voice": "Core Philosophy",
+          "principle": "Holistic stewardship"
+        },
+        {
+          "id": "9.5",
+          "text": "I take ownership of preventive care and maintenance rather than ignoring my body until something breaks.",
+          "voice": "Core Philosophy",
+          "principle": "Maintenance before repair"
+        }
+      ],
+      "remediation": {
+        "advice": "Responsibility for wholeness means owning: 'My body's state is significantly influenced by my stewardship.' You may have conditions you didn't choose, but how you respond to them is always your choice. Take responsibility for what you can control, and don't use what you can't control as an excuse for what you can.",
+        "scripture": {
+          "text": "Honor God with your bodies.",
+          "reference": "1 Corinthians 6:20"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 needs immediate attention. Without responsibility, discipline cannot be built — you can't consistently do what you don't believe is yours to do.",
+      "maintenance": "Dimensions scoring 5-6 are functional but may have blind spots of blame-shifting or victimhood. Look for where you're still making excuses.",
+      "strength": "Dimensions scoring 7+ show strong ownership. You recognize these areas as yours to handle. Now ensure discipline is following.",
+      "integration": "No dimension exists in isolation. If you take responsibility for your spiritual life but not your body, you're not operating as an integrated whole."
+    },
+    "next_steps": [
+      "Identify areas where you're still blame-shifting or making excuses",
+      "For each weak area, complete the sentence: 'I am responsible for my ___ because...'",
+      "Notice language patterns: 'I have to' vs 'I choose to', 'They made me' vs 'I responded by'",
+      "Where responsibility is strong, check if discipline (Layer 4) is following",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_discipline": "Responsibility without discipline is ownership without execution — you know it's yours but don't do it. Discipline without responsibility is execution without ownership — you do it but resent it or do it for the wrong reasons. Both are needed."
+  }
+}
