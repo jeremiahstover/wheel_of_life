@@ -274,8 +274,8 @@
                         </div>
                     </div>
                     <div class="legend-labels">
-                        <span>1 (Crisis)</span>
-                        <span>5 (Exceptional)</span>
+                        <span>2 (Crisis)</span>
+                        <span>10 (Exceptional)</span>
                     </div>
                 </div>
             </div>
@@ -314,7 +314,8 @@
     };
     
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
-    const THRESHOLD = 3.5;
+    const THRESHOLD = 3.5; // Internal (1-5 scale)
+    const DISPLAY_THRESHOLD = 7; // Display (1-10 scale)
     
     // Wheel geometry constants
     const CX = 0, CY = 0;
@@ -415,6 +416,11 @@
             return { floor: 0, break: 1 };
         }
         return { floor, break: breakPoint };
+    }
+    
+    // Convert internal score (1-5) to display score (2-10)
+    function toDisplayScore(score) {
+        return score * 2;
     }
     
     function scoreToColor(score, category) {
@@ -614,15 +620,16 @@
     function showCellInfo(dim, layer) {
         const info = DIMENSIONS[dim];
         const score = data[dim][layer];
+        const displayScore = toDisplayScore(score);
         const isStrong = score >= THRESHOLD;
         
         document.getElementById('cell-name').textContent = `${dim}${layer}: ${info.name}`;
         document.getElementById('cell-name').style.color = getCategoryColor(info.category);
         document.getElementById('cell-detail').textContent = `Layer ${layer}: ${LAYERS[layer]} • ${info.category}`;
-        document.getElementById('cell-score').textContent = score.toFixed(2);
+        document.getElementById('cell-score').textContent = displayScore.toFixed(1);
         
         const statusEl = document.getElementById('cell-status');
-        statusEl.textContent = isStrong ? 'STRONG' : 'WEAK';
+        statusEl.textContent = isStrong ? `STRONG (≥${DISPLAY_THRESHOLD})` : `WEAK (<${DISPLAY_THRESHOLD})`;
         statusEl.className = 'cell-status ' + (isStrong ? 'strong' : 'weak');
     }
     
