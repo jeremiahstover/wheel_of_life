@@ -1,116 +1,106 @@
-# Wheel of Life - Discipline Assessment
+# Wheel of Life Assessment Framework
 
-Assessment tool for the Discipline layer (Layer 4 of 8) from the Wheel of Life framework.
+A comprehensive personal development assessment system based on the 8-layer model of growth and the tripartite nature of human beings (Spirit, Soul, Body).
 
-## Two Interfaces
+**Live demo**: [tripartite.us](https://tripartite.us)
 
-### Web Interface (Recommended)
+## The Framework
 
-Single HTML file, no server required. Results stored in URL for easy bookmarking and sharing.
+### 8 Layers (Foundation → Culmination)
 
-**To use:**
-1. Enable GitHub Pages on this repo (Settings → Pages → Deploy from main branch)
-2. Visit: `https://jeremiahstover.github.io/wheel_of_life/`
+| Layer | Name | Core Question | Opposite |
+|-------|------|---------------|----------|
+| 1 | Order | Do you believe patterns exist? | Nihilism |
+| 2 | Causality | Do you see cause → effect? | Fatalism |
+| 3 | Responsibility | Do you own it as yours? | Entitlement |
+| 4 | Discipline | Are you consistently doing it? | Hedonism |
+| 5 | Skill | Are you getting better? | Incompetence |
+| 6 | Resources | Is skill producing surplus? | Poverty |
+| 7 | Fellowship | Mutual investment, transparency, sharpening? | Isolation |
+| 8 | Sacrifice | Pouring out without expectation of return? | Hoarding |
 
-Or open `index.html` locally with a web server:
-```bash
-# Python
-python -m http.server 8000
+### 9 Dimensions (Tripartite Model)
 
-# PHP
-php -S localhost:8000
+| Category | Function | Dimension |
+|----------|----------|-----------|
+| **Spirit** | Receives | Communion |
+| | Executes | Conscience |
+| | State | Holiness |
+| **Soul** | Receives | Mind |
+| | Executes | Will |
+| | State | Emotions |
+| **Body** | Receives | Sustenance |
+| | Executes | Capability |
+| | State | Wholeness |
 
-# Node
-npx serve
+### The Remediation Principle
+
+When a layer is weak, fix the layer below. Keep going down until you find solid ground.
+
+```
+Layer N:   WEAK   ← This is where the house is wobbling
+Layer N-1: STRONG ← This is solid ground
+           ↑
+        FOCUS HERE
 ```
 
-**Features:**
-- One question per page with progress indicator
-- Keyboard shortcuts (1-5 to answer, Backspace to go back)
-- Results stored in URL hash - bookmark or share the link
-- Three-tab results view:
-  - **Graph**: Radar chart visualization of all 9 dimensions
-  - **Conclusion**: Score bars, crisis areas, strength areas
-  - **Suggestions**: Top 3 priorities with remediation advice and scripture
+## Project Structure
 
-### CLI Interface
-
-Vanilla PHP, no dependencies.
-
-```bash
-php quiz.php           # Take the assessment
-php quiz.php --report  # View last saved results
-php quiz.php --help    # Help
+```
+wheel_of_life/
+├── data/                    # Shared question pool (360 questions)
+│   ├── layers/              # Organized by layer (8 files, 45 questions each)
+│   └── dimensions/          # Organized by dimension (9 files, 40 questions each)
+│
+├── apps/
+│   ├── cli/                 # Original command-line tool
+│   ├── html/                # Static HTML (deployed to tripartite.us)
+│   └── diagnostic/          # NEW: Drunkard's walk algorithm
+│
+└── README.md
 ```
 
-Results saved to `/storage/result_*.json` for tracking progress over time.
+## Applications
 
-## The Assessment
+### Static HTML (`/apps/html/`)
+Single-page assessment, currently deployed at [tripartite.us](https://tripartite.us). No server required.
 
-**Definition of Discipline:** Consistently making yourself do what needs to be done, especially when you don't feel like doing it.
+### CLI Tool (`/apps/cli/`)
+PHP command-line assessment with result persistence.
 
-### Tripartite Model v2 (Receives/Executes/State)
+### Diagnostic Tool (`/apps/diagnostic/`)
+Optimized assessment using the "drunkard's walk" algorithm. Finds your break point across all layers and dimensions in ~45 questions instead of 360.
 
-| Category | Function | Dimension | Focus |
-|----------|----------|-----------|-------|
-| Spirit | Receives | Communion | Receiving from God through spiritual practices |
-| Spirit | Executes | Conscience | Acting on moral conviction |
-| Spirit | State | Holiness | Maintaining spiritual purity, sanctification |
-| Soul | Receives | Mind | Learning, intellectual growth |
-| Soul | Executes | Will | Follow-through, integrity with self |
-| Soul | State | Emotions | Processing feelings, managing actions |
-| Body | Receives | Sustenance | Nutrition, sleep, environment |
-| Body | Executes | Capability | Exercise, movement, physical ability |
-| Body | State | Wholeness | Preventive care, integrated wellness |
+## Data Organization
 
-### Scoring
+The same 360 questions are organized two ways:
+
+- **`/data/layers/`** — Horizontal slices. One file per layer, all 9 dimensions. Use for deep-dive on a specific layer.
+
+- **`/data/dimensions/`** — Vertical slices. One file per dimension, all 8 layers. Use for the drunkard's walk diagnostic.
+
+See `/data/README.md` for details on the dual organization.
+
+## Scoring
 
 - **Questions**: 1-5 scale (Almost Never → Almost Always)
-- **Dimension Score**: (sum / 5) × 2 = 1-10 scale
+- **Dimension Score**: (sum of 5 questions / 5) × 2 = 1-10 scale
 
 | Score | Level | Meaning |
 |-------|-------|---------|
 | 1-2 | Crisis | Immediate attention required |
-| 3-4 | Below Baseline | Needs focused work |
+| 3-4 | Below Baseline | Foundation cracked |
 | 5-6 | Maintaining | Functional but not growing |
-| 7-8 | Target Zone | Disciplines established |
-| 9-10 | Exceptional | Approaching mastery |
+| 7-8 | Target Zone | Solid ground |
+| 9-10 | Exceptional | Ready to build higher |
 
-## Project Structure (DLPR)
+## Philosophy
 
-```
-wheel_of_life/
-├── index.html                    # Web interface (single file)
-├── quiz.php                      # CLI entry point
-├── data/
-│   ├── discipline-assessment.json  # Source data
-│   ├── discipline-assessment.md    # Human-readable reference
-│   ├── entities/Entities.php
-│   └── persistence/Persistence.php
-├── logic/
-│   ├── rules/ScoringRules.php
-│   └── usecases/UseCases.php
-├── presentation/CliPresenter.php
-└── storage/                      # CLI results (gitignored)
-```
+This framework is grounded in the conviction that:
 
-## The Remediation Principle
+1. **Integration, not separation** — Life, work, and ministry are one
+2. **Layers build on layers** — You can't skip foundation work
+3. **The goal is sacrifice** — Build resources so you can pour them out for others
+4. **"Give your second cloak, not your first"** — Sacrifice from surplus, not self-destruction
 
-If Discipline is weak, shore up Responsibility. Go down the layers until you find solid ground:
-
-```
-Discipline ← Responsibility ← Causality ← Order
-```
-
-## URL Format
-
-Web results are encoded in the URL hash:
-```
-https://example.com/index.html#r=MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1MzQ1
-```
-
-The `r=` parameter contains base64-encoded answers (45 digits, each 1-5). This allows:
-- Bookmarking results
-- Sharing via link
-- No server-side storage needed
-- Privacy (results never leave the browser)
+See the full philosophy documentation in the source repository.
