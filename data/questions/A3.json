@@ -14,54 +14,54 @@
   "questions": [
     {
       "id": "A3a",
-      "text": "I recognize that my relationship with God is MY responsibility — no pastor, spouse, or program can do my spiritual work for me.",
+      "text": "My spiritual growth is driven by ...",
       "voice": "Core Philosophy",
       "principle": "Personal responsibility for spiritual life",
       "answers": {
-        "4": "I mostly own my spiritual life, though I sometimes lean on others too much",
-        "5": "My walk with God is mine — I engage regardless of what others do or don't do",
-        "2": "I rely heavily on programs or people to keep me spiritually engaged",
-        "3": "I know it's my job but often wait for external structure to carry me",
-        "1": "I expect others (church, spouse, pastor) to drive my spiritual growth"
+        "4": "me, though I lean on others more than I should",
+        "5": "me — I engage regardless of what others do or don't do",
+        "2": "programs and people; I engage when there's structure",
+        "3": "external structure mostly, though I contribute too",
+        "1": "my church, pastor, or spouse — they set the pace"
       }
     },
     {
       "id": "A3b",
-      "text": "When my spiritual life feels dry, I look at my own choices and habits first rather than blaming circumstances or others.",
+      "text": "When my spiritual life feels dry, I ...",
       "voice": "Jordan Peterson",
       "principle": "Take responsibility; examine yourself first",
       "answers": {
-        "4": "I generally look inward first, though I occasionally rearrange externals",
-        "5": "Dryness triggers self-examination — what have I neglected or avoided?",
-        "2": "I usually adjust my circumstances — new app, new routine, new setting",
-        "3": "I sometimes examine myself, but often adjust external things first",
-        "1": "When I'm dry, I look for a new church, group, or environment to fix it"
+        "4": "dig into my own patterns, though I sometimes rearrange externals too",
+        "5": "ask what I am neglecting or avoiding",
+        "2": "adjust my circumstances — new app, new routine, new setting",
+        "3": "check myself briefly, then adjust my circumstances",
+        "1": "look for a new church, group, or environment to fix it"
       }
     },
     {
       "id": "A3c",
-      "text": "I own that creating time and space for God is my job — I don't wait for the 'right conditions' to appear.",
+      "text": "When life gets full, my time with God ...",
       "voice": "Brian Tracy",
       "principle": "If it's to be, it's up to me",
       "answers": {
-        "4": "I guard spiritual time, though urgent things occasionally displace it",
-        "5": "Time with God is non-negotiable — other things flex around it, not the reverse",
-        "2": "Other priorities regularly push out spiritual time; it only happens when convenient",
-        "3": "I protect time with God sometimes, but it often loses to other demands",
-        "1": "Almost anything bumps my time with God — it's first to go when life gets full"
+        "4": "is usually guarded, though urgent things occasionally displace it",
+        "5": "is non-negotiable — other things flex around it, not the reverse",
+        "2": "only happens when convenient; other priorities push it out",
+        "3": "sometimes survives, but often loses to other demands",
+        "1": "is first to go — almost anything bumps it"
       }
     },
     {
       "id": "A3d",
-      "text": "My upbringing, church experiences, and circumstances have created who I am today.",
+      "text": "Who I am today is the result of ...",
       "voice": "Jordan Peterson",
       "principle": "No blame-shifting; own your situation",
       "answers": {
-        "4": "The past shaped me, but my choices shape me more",
-        "5": "Whatever happened before, what I do with it now is all mine",
-        "2": "Some things from my past have set limits I can't really get past",
-        "3": "I take some responsibility, but the past needs to carry some as well",
-        "1": "My spiritual state makes sense when you consider what I've been through"
+        "4": "mostly my choices, though the past shaped me too",
+        "5": "what I choose to do with whatever happened — that's all mine",
+        "2": "circumstances that have set limits I can't really get past",
+        "3": "both my past and my choices — they each carry weight",
+        "1": "what I've been through — it makes sense given my past"
       }
     },
     {
