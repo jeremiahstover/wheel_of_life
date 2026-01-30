@@ -154,6 +154,12 @@
             padding: 8px;
             background: rgba(0,0,0,0.3);
             border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        
+        .break-item:hover {
+            background: rgba(255,255,255,0.1);
         }
         
         .break-item .dim {
@@ -310,7 +316,16 @@
     const DIM_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
     const THRESHOLD = 3.5;
     
+    // Wheel geometry constants
+    const CX = 0, CY = 0;
+    const MIN_RADIUS = 30;
+    const MAX_RADIUS = 220;
+    const RING_WIDTH = (MAX_RADIUS - MIN_RADIUS) / 8;
+    const WEDGE_ANGLE = 360 / 9;
+    const GAP = 1;
+    
     let data = {};
+    let highlightMarker = null;
     
     // Break point weighted distribution
     const breakDistribution = [
@@ -448,30 +463,34 @@
         ].join(" ");
     }
     
+    function describeArcLine(cx, cy, radius, startAngle, endAngle) {
+        const start = polarToCartesian(cx, cy, radius, startAngle);
+        const end = polarToCartesian(cx, cy, radius, endAngle);
+        const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+        
+        return [
+            "M", start.x, start.y,
+            "A", radius, radius, 0, largeArcFlag, 1, end.x, end.y
+        ].join(" ");
+    }
+    
     function renderWheel() {
         const svg = document.getElementById('wheel');
         svg.innerHTML = '';
         
-        const cx = 0, cy = 0;
-        const minRadius = 30;
-        const maxRadius = 220;
-        const ringWidth = (maxRadius - minRadius) / 8;
-        const wedgeAngle = 360 / 9;
-        const gap = 1; // Gap between cells in degrees
-        
         // Draw cells
         DIM_ORDER.forEach((dim, dimIndex) => {
-            const startAngle = dimIndex * wedgeAngle + gap/2;
-            const endAngle = (dimIndex + 1) * wedgeAngle - gap/2;
+            const startAngle = dimIndex * WEDGE_ANGLE + GAP/2;
+            const endAngle = (dimIndex + 1) * WEDGE_ANGLE - GAP/2;
             const category = DIMENSIONS[dim].category;
             
             for (let layer = 1; layer <= 8; layer++) {
-                const innerRadius = minRadius + (layer - 1) * ringWidth + 1;
-                const outerRadius = minRadius + layer * ringWidth - 1;
+                const innerRadius = MIN_RADIUS + (layer - 1) * RING_WIDTH + 1;
+                const outerRadius = MIN_RADIUS + layer * RING_WIDTH - 1;
                 const score = data[dim][layer];
                 
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                path.setAttribute('d', describeArc(cx, cy, innerRadius, outerRadius, startAngle, endAngle));
+                path.setAttribute('d', describeArc(CX, CY, innerRadius, outerRadius, startAngle, endAngle));
                 path.setAttribute('fill', scoreToColor(score, category));
                 path.setAttribute('stroke', '#0d1117');
                 path.setAttribute('stroke-width', '1');
@@ -494,8 +513,8 @@
         
         // Draw dimension labels
         DIM_ORDER.forEach((dim, dimIndex) => {
-            const angle = (dimIndex + 0.5) * wedgeAngle;
-            const pos = polarToCartesian(cx, cy, maxRadius + 25, angle);
+            const angle = (dimIndex + 0.5) * WEDGE_ANGLE;
+            const pos = polarToCartesian(CX, CY, MAX_RADIUS + 25, angle);
             const info = DIMENSIONS[dim];
             
             const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -512,8 +531,8 @@
         
         // Draw layer labels (on one ray)
         for (let layer = 1; layer <= 8; layer++) {
-            const radius = minRadius + (layer - 0.5) * ringWidth;
-            const pos = polarToCartesian(cx, cy, radius, -10);
+            const radius = MIN_RADIUS + (layer - 0.5) * RING_WIDTH;
+            const pos = polarToCartesian(CX, CY, radius, -10);
             
             const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             text.setAttribute('x', pos.x);
@@ -528,13 +547,68 @@
         
         // Center circle (dark)
         const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        centerCircle.setAttribute('cx', cx);
-        centerCircle.setAttribute('cy', cy);
-        centerCircle.setAttribute('r', minRadius - 2);
+        centerCircle.setAttribute('cx', CX);
+        centerCircle.setAttribute('cy', CY);
+        centerCircle.setAttribute('r', MIN_RADIUS - 2);
         centerCircle.setAttribute('fill', '#0d1117');
         svg.appendChild(centerCircle);
         
         renderBreaksList();
+    }
+    
+    function highlightDimension(dim, breakLayer) {
+        const svg = document.getElementById('wheel');
+        
+        // Dim all cells except the highlighted dimension
+        svg.querySelectorAll('path[data-dim]').forEach(path => {
+            if (path.getAttribute('data-dim') === dim) {
+                path.style.opacity = '1';
+            } else {
+                path.style.opacity = '0.2';
+            }
+        });
+        
+        // Remove old marker
+        if (highlightMarker) {
+            highlightMarker.remove();
+            highlightMarker = null;
+        }
+        
+        // Draw white arc at break point (if there is one)
+        if (breakLayer !== null && breakLayer > 0) {
+            const dimIndex = DIM_ORDER.indexOf(dim);
+            const startAngle = dimIndex * WEDGE_ANGLE + GAP/2;
+            const endAngle = (dimIndex + 1) * WEDGE_ANGLE - GAP/2;
+            
+            // Draw arc at the inner edge of the break layer
+            const radius = MIN_RADIUS + (breakLayer - 1) * RING_WIDTH;
+            
+            const marker = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            marker.setAttribute('d', describeArcLine(CX, CY, radius, startAngle, endAngle));
+            marker.setAttribute('stroke', '#ffffff');
+            marker.setAttribute('stroke-width', '3');
+            marker.setAttribute('fill', 'none');
+            marker.setAttribute('stroke-linecap', 'round');
+            marker.style.filter = 'drop-shadow(0 0 4px rgba(255,255,255,0.8))';
+            
+            svg.appendChild(marker);
+            highlightMarker = marker;
+        }
+    }
+    
+    function clearHighlight() {
+        const svg = document.getElementById('wheel');
+        
+        // Restore all cells
+        svg.querySelectorAll('path[data-dim]').forEach(path => {
+            path.style.opacity = '1';
+        });
+        
+        // Remove marker
+        if (highlightMarker) {
+            highlightMarker.remove();
+            highlightMarker = null;
+        }
     }
     
     function showCellInfo(dim, layer) {
@@ -579,6 +653,15 @@
                 <span class="dim ${info.category.toLowerCase()}">${dim} ${info.name}</span>
                 <span class="layer ${layerClass}">${layerText}</span>
             `;
+            
+            // Hover events
+            item.addEventListener('mouseenter', () => {
+                highlightDimension(dim, breakPoint);
+            });
+            item.addEventListener('mouseleave', () => {
+                clearHighlight();
+            });
+            
             container.appendChild(item);
         });
     }
