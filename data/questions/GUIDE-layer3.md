@@ -1,0 +1,129 @@
+# Answer Writing Guide — Layer 3 (Responsibility)
+
+Guidelines for writing conversational answer text for assessment questions.
+
+---
+
+## Core Principle
+
+**Make honest self-assessment easy.** People avoid answers that make them feel judged. Describe *behavior*, not character flaws.
+
+---
+
+## Question Text
+
+### 1. Avoid "correct answer" framing
+
+The question shouldn't telegraph which answer is "right."
+
+- ❌ "I don't blame my upbringing for my spiritual state"
+- ✓ "My upbringing, church experiences, and circumstances have created who I am today"
+
+The second makes the low-responsibility answer easier to honestly select.
+
+### 2. Sentence stems invite projection
+
+Open-ended completion reveals more than agree/disagree.
+
+- ❌ "I recognize that spiritual growth requires my active participation"
+- ✓ "My spiritual growth depends on ..."
+
+### 3. Avoid preachy or loaded language
+
+Words like "blame," "excuse," "should" trigger defensiveness. Describe the behavior instead.
+
+- ❌ "I blame circumstances"
+- ✓ "I look for a new church, group, or environment to fix it"
+
+Same behavior, no judgment word.
+
+### 4. Watch for jargon and connotations
+
+Words carry baggage in specific contexts. Use neutral language where possible.
+
+---
+
+## Answer Progression (1→5)
+
+| Score | Posture | Key Characteristics |
+|-------|---------|---------------------|
+| 1 | Passive / External | Someone or something else is responsible; waiting for change to happen to me |
+| 2 | Mostly External | Heavy reliance on others/circumstances; minimal personal agency |
+| 3 | Split / Honest Middle | "Both/and" — acknowledges responsibility but still leans on externals |
+| 4 | Mostly Owned | Takes responsibility but with an honest hedge or imperfection |
+| 5 | Fully Owned | Clean ownership, no excuses, no hedging |
+
+---
+
+## Writing Rules
+
+### 1. Describe behavior, not labels
+
+- ❌ "I'm irresponsible about spiritual time"
+- ✓ "Almost anything bumps my time with God — it's first to go when life gets full"
+
+### 2. Answer 1 is passive/victim without being cartoonish
+
+Should feel like something a real person would say.
+
+- ✓ "My spiritual state makes sense when you consider what I've been through"
+
+### 3. Answer 3 is the honest middle ground
+
+Acknowledges both sides without being wishy-washy.
+
+- ✓ "I take some responsibility, but the past needs to carry some as well"
+
+### 4. Answer 4 is real imperfection, not a cop-out
+
+Owns it but admits a genuine struggle. Often the most relatable answer.
+
+- ✓ "The past shaped me, but my choices shape me more"
+- ✓ "...but I sometimes get in my own way"
+
+### 5. Answer 5 is clean — no hedging
+
+No "but," no qualifiers.
+
+- ✓ "Whatever happened before, what I do with it now is all mine"
+
+### 6. Each answer should be clearly distinct from adjacent ones
+
+- If 4 encroaches on 5's space, reword
+- If 2 and 3 blur together, sharpen the distinction
+
+### 7. Flow should be smooth
+
+Read 1→5 as a progression. Should feel like a spectrum, not random statements.
+
+---
+
+## Anti-patterns
+
+| Pattern | Problem | Fix |
+|---------|---------|-----|
+| "Blame" language | Triggers defensiveness | Describe the behavior instead |
+| Self-referencing answers | "I know I should but..." references the "right" answer | State position directly |
+| Questions with obvious correct answer | Hard to answer honestly | Flip framing to make low scores easier to admit |
+| Defining words with themselves | "Responsibility is being responsible" | Use concrete descriptions |
+| Hedging in the 5 answer | Muddies the top | Keep it clean |
+
+---
+
+## Layer 3 Specific Notes
+
+Responsibility is about **ownership** — who/what gets credit or blame for your current state and future trajectory.
+
+The spectrum runs from:
+- **External locus** (1): Life happens to me
+- **Internal locus** (5): I happen to life
+
+Key behaviors to probe:
+- Where do you look first when things aren't working? (Self vs. circumstances)
+- What gets protected vs. displaced when life gets full?
+- How do you frame your past? (Explanation vs. excuse)
+- Who/what do you wait on before acting?
+
+---
+
+*This guide may need adjustment for other layers. Each layer has its own ownership spectrum.*
