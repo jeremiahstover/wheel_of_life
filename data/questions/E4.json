@@ -16,31 +16,66 @@
       "id": "E4a",
       "text": "When I commit to doing something (to myself or others), I follow through even when it becomes inconvenient.",
       "voice": "Jordan Peterson",
-      "principle": "Integrity with yourself is the foundation"
+      "principle": "Integrity with yourself is the foundation",
+      "answers": {
+        "1": "I regularly abandon commitments when they get hard or inconvenient",
+        "2": "I follow through on easy things but back out when real resistance shows up",
+        "3": "I push through sometimes, but difficulty often wins — it depends on my mood",
+        "4": "I usually finish what I start, though I occasionally need external accountability",
+        "5": "Once I commit, I execute — difficulty is expected and doesn't change my course"
+      }
     },
     {
       "id": "E4b",
       "text": "I do hard things I don't want to do because they need to be done, without excessive internal negotiation.",
       "voice": "Brian Tracy",
-      "principle": "Eat the Frog; do it first"
+      "principle": "Eat the Frog; do it first",
+      "answers": {
+        "1": "I avoid hard things until forced or until the consequences become unbearable",
+        "2": "I negotiate extensively with myself, often finding reasons why it can wait",
+        "3": "I do hard things sometimes, but often after significant internal resistance",
+        "4": "I usually tackle hard things with minimal negotiation, though some tasks really test me",
+        "5": "Hard things go first — if I don't feel like doing it, that's exactly why I should"
+      }
     },
     {
       "id": "E4c",
       "text": "I make decisions and act on them rather than staying stuck in analysis or procrastination.",
       "voice": "Brian Tracy",
-      "principle": "Decisiveness; action orientation"
+      "principle": "Decisiveness; action orientation",
+      "answers": {
+        "1": "I get paralyzed by decisions — I research endlessly and often never choose",
+        "2": "I make decisions slowly and often revisit them, wasting time on second-guessing",
+        "3": "I decide reasonably well on small things but get stuck on bigger choices",
+        "4": "I usually make decisions efficiently, occasionally overthinking complex situations",
+        "5": "I decide, act, and adjust — waiting for perfect information is its own decision (a bad one)"
+      }
     },
     {
       "id": "E4d",
       "text": "When I fail to follow through, I examine why, make adjustments, and try again rather than making excuses.",
       "voice": "Jordan Peterson",
-      "principle": "Take responsibility; don't rationalize"
+      "principle": "Take responsibility; don't rationalize",
+      "answers": {
+        "1": "Failure proves I can't do it — I give up and move on to something else",
+        "2": "I make excuses to protect my ego rather than honestly examining what went wrong",
+        "3": "Sometimes I examine failures honestly, other times I just feel bad and don't learn",
+        "4": "I usually analyze failures and try again, though occasionally I repeat the same mistakes",
+        "5": "Failure is data — I examine it honestly, adjust the approach, and go again"
+      }
     },
     {
       "id": "E4e",
       "text": "I build small disciplines in daily life (bed made, dishes done, space organized) that strengthen my overall will.",
       "voice": "Jordan Peterson / Chase Hughes",
-      "principle": "Clean your room; small behaviors predict large ones"
+      "principle": "Clean your room; small behaviors predict large ones",
+      "answers": {
+        "1": "My environment reflects my chaos — small disciplines feel pointless",
+        "2": "I know small disciplines matter but I can't seem to maintain them",
+        "3": "I'm disciplined in some small areas but not others — it's inconsistent",
+        "4": "I maintain most small disciplines, with occasional lapses",
+        "5": "My environment is ordered because I've made small disciplines automatic"
+      }
     }
   ]
 }

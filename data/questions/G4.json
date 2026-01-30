@@ -16,31 +16,66 @@
       "id": "G4a",
       "text": "I maintain a consistent sleep schedule (same bedtime and wake time) even on weekends.",
       "voice": "Brian Tracy",
-      "principle": "Morning routines start with evening discipline"
+      "principle": "Morning routines start with evening discipline",
+      "answers": {
+        "1": "My sleep schedule is chaotic — I sleep when I'm exhausted and wake when I have to",
+        "2": "I have a vague target but rarely hit it — weekends especially are a free-for-all",
+        "3": "I'm consistent during the week but weekends throw me completely off",
+        "4": "I mostly maintain my schedule, with occasional deviations",
+        "5": "My sleep schedule is locked in — same time every day, including weekends"
+      }
     },
     {
       "id": "G4b",
       "text": "I eat in a way that fuels my body well (real food, appropriate portions) rather than giving in to cravings.",
       "voice": "Jordan Peterson",
-      "principle": "Order in the small things"
+      "principle": "Order in the small things",
+      "answers": {
+        "1": "I eat whatever's convenient — nutrition rarely factors into my choices",
+        "2": "I know what I should eat but consistently choose otherwise",
+        "3": "I eat well when it's easy, but stress, busyness, or availability derails me",
+        "4": "Most of my meals are intentional — I plan and prepare, with occasional lapses",
+        "5": "Eating well is a settled discipline — I've built systems that make it automatic"
+      }
     },
     {
       "id": "G4c",
       "text": "I drink adequate water throughout the day and limit substances that impair performance (alcohol, excessive caffeine).",
       "voice": "Core Philosophy",
-      "principle": "Basic stewardship"
+      "principle": "Basic stewardship",
+      "answers": {
+        "1": "I run on caffeine and rarely drink water — I notice but don't change",
+        "2": "I know my substance intake is too high but cutting back feels impossible",
+        "3": "I manage hydration and substances sometimes, but easily slip into bad patterns",
+        "4": "I usually stay well hydrated and moderate with substances, with occasional excess",
+        "5": "Hydration is automatic and I'm intentional about anything that affects my performance"
+      }
     },
     {
       "id": "G4d",
       "text": "I maintain my environment (clean space, organized workspace, reduced toxins/clutter) rather than living in chaos.",
       "voice": "Jordan Peterson / Chase Hughes",
-      "principle": "Clean your room; environment shapes behavior"
+      "principle": "Clean your room; environment shapes behavior",
+      "answers": {
+        "1": "My environment is chaotic and I've stopped seeing it",
+        "2": "I clean up occasionally but it quickly returns to disorder",
+        "3": "Some areas are organized, others are perpetual disaster zones",
+        "4": "I mostly keep things ordered, with occasional pileups that I address",
+        "5": "My environment stays clean and organized — I've built systems that maintain it"
+      }
     },
     {
       "id": "G4e",
       "text": "I take breaks and rest when needed rather than pushing through to burnout, then crashing.",
       "voice": "Cloud & Townsend",
-      "principle": "Boundaries around energy; sustainable pace"
+      "principle": "Boundaries around energy; sustainable pace",
+      "answers": {
+        "1": "I push until I crash, recover, repeat — I don't know another way",
+        "2": "I know I need breaks but taking them feels like weakness",
+        "3": "I take breaks sometimes but often ignore the signs until it's too late",
+        "4": "I usually take appropriate breaks, occasionally pushing too hard before I do",
+        "5": "I've learned my limits and I respect them — breaks are scheduled, not emergency measures"
+      }
     }
   ]
 }

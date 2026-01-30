@@ -16,31 +16,66 @@
       "id": "C4a",
       "text": "When the Holy Spirit convicts me of sin, I confess and repent promptly rather than rationalizing, minimizing, or delaying.",
       "voice": "Jordan Peterson",
-      "principle": "Don't let things fester; face what you're avoiding"
+      "principle": "Don't let things fester; face what you're avoiding",
+      "answers": {
+        "1": "I've learned to tune out conviction — it's just guilt I don't need",
+        "2": "I feel conviction but usually minimize the issue or tell myself I'll deal with it later",
+        "3": "Sometimes I respond quickly, other times I let conviction sit for days or weeks",
+        "4": "I usually confess and repent fairly promptly, though occasionally I resist",
+        "5": "Conviction is a gift — when it comes, I stop, confess, and repent without delay"
+      }
     },
     {
       "id": "C4b",
       "text": "I maintain spiritual disciplines even during dry seasons when I don't feel God's presence or see spiritual fruit.",
       "voice": "Brian Tracy",
-      "principle": "Consistency regardless of feeling; the discipline creates the result"
+      "principle": "Consistency regardless of feeling; the discipline creates the result",
+      "answers": {
+        "1": "When I don't feel anything, I stop showing up — what's the point?",
+        "2": "Dry seasons knock me off my disciplines quickly — I need to feel something to continue",
+        "3": "I persist for a while during dry seasons but eventually drift away until things feel better",
+        "4": "I mostly maintain disciplines in dry seasons, though my commitment wavers",
+        "5": "Feelings aren't my gauge — I show up whether it feels fruitful or not"
+      }
     },
     {
       "id": "C4c",
       "text": "I actively work to root out areas of habitual sin or compromise rather than tolerating them as 'just how I am.'",
       "voice": "Jordan Peterson",
-      "principle": "Take responsibility; don't rationalize weakness as identity"
+      "principle": "Take responsibility; don't rationalize weakness as identity",
+      "answers": {
+        "1": "I've accepted my sin patterns as permanent features of my personality",
+        "2": "I know I should work on these areas but I've given up trying to change",
+        "3": "I make occasional efforts but quickly return to old patterns",
+        "4": "I'm actively working on most areas of compromise, with slow but real progress",
+        "5": "I treat habitual sin as an enemy to be defeated, not a roommate to tolerate"
+      }
     },
     {
       "id": "C4d",
       "text": "I intentionally seek spiritual filling and renewal (worship, solitude, prayer) rather than running on empty until I crash.",
       "voice": "Cloud & Townsend",
-      "principle": "Boundaries around spiritual refueling; sustainable holiness"
+      "principle": "Boundaries around spiritual refueling; sustainable holiness",
+      "answers": {
+        "1": "I run on spiritual fumes until I'm empty, then wonder why I feel disconnected",
+        "2": "I know I need spiritual refueling but rarely make time for it until crisis hits",
+        "3": "I seek renewal sometimes, but often let myself get depleted before I do",
+        "4": "I usually keep my spiritual tank reasonably full, occasionally letting it get low",
+        "5": "Spiritual renewal is scheduled and protected — I don't wait until I'm empty"
+      }
     },
     {
       "id": "C4e",
       "text": "I maintain my commitment to holiness in private — when no one would know if I compromised.",
       "voice": "Chase Hughes",
-      "principle": "Private behavior predicts public character; small disciplines reveal true state"
+      "principle": "Private behavior predicts public character; small disciplines reveal true state",
+      "answers": {
+        "1": "My private life and public image are very different — I compromise freely when alone",
+        "2": "I'm more relaxed in private — small compromises feel harmless when no one sees",
+        "3": "I try to be consistent but definitely give myself more slack when alone",
+        "4": "I'm mostly the same in private and public, with occasional private lapses",
+        "5": "Private holiness is the foundation — my character doesn't change based on who's watching"
+      }
     }
   ]
 }

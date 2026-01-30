@@ -16,31 +16,66 @@
       "id": "I4a",
       "text": "I schedule and attend regular preventive care (checkups, dental, vision) rather than only going when something is wrong.",
       "voice": "Core Philosophy",
-      "principle": "Stewardship: maintenance before repair"
+      "principle": "Stewardship: maintenance before repair",
+      "answers": {
+        "1": "I only see doctors when something is really wrong — preventive care feels unnecessary",
+        "2": "I know I should get checkups but I keep postponing them",
+        "3": "I'm current on some preventive care but way behind on others",
+        "4": "I mostly stay on top of preventive care, occasionally falling behind",
+        "5": "Preventive care is scheduled and I show up — maintenance is easier than repair"
+      }
     },
     {
       "id": "I4b",
       "text": "When I notice a health issue (pain, symptom, concern), I address it promptly rather than ignoring it.",
       "voice": "Jordan Peterson",
-      "principle": "Don't ignore the small problems; they grow"
+      "principle": "Don't ignore the small problems; they grow",
+      "answers": {
+        "1": "I ignore health issues until they become impossible to ignore",
+        "2": "I notice things but convince myself it's probably nothing and hope it goes away",
+        "3": "I address some issues promptly but let others linger for too long",
+        "4": "I usually address health issues fairly quickly, occasionally delaying",
+        "5": "I don't let things fester — if something's off, I address it before it grows"
+      }
     },
     {
       "id": "I4c",
       "text": "I follow through on medical recommendations (medication, therapy, lifestyle changes) even when inconvenient.",
       "voice": "Core Philosophy",
-      "principle": "Integrity: follow through on commitments"
+      "principle": "Integrity: follow through on commitments",
+      "answers": {
+        "1": "I get recommendations and then ignore them",
+        "2": "I start following recommendations but quickly fall off",
+        "3": "I follow some recommendations but not others — depends on how inconvenient they are",
+        "4": "I mostly follow through on recommendations, occasionally skipping or forgetting",
+        "5": "If I've agreed to a treatment plan, I execute it fully — that's the point"
+      }
     },
     {
       "id": "I4d",
       "text": "I manage chronic conditions or health maintenance routines consistently rather than sporadically.",
       "voice": "Brian Tracy",
-      "principle": "Systems beat willpower; routine creates results"
+      "principle": "Systems beat willpower; routine creates results",
+      "answers": {
+        "1": "I'm inconsistent with health routines and it shows",
+        "2": "I manage routines for a while then completely drop them",
+        "3": "I'm consistent with some routines but others are hit or miss",
+        "4": "I mostly maintain my health routines, with occasional lapses",
+        "5": "Health maintenance is built into my life — it happens automatically"
+      }
     },
     {
       "id": "I4e",
       "text": "I recognize that physical, mental, and spiritual health are connected and address my body as an integrated whole.",
       "voice": "Core Philosophy",
-      "principle": "Integration not separation; tripartite being"
+      "principle": "Integration not separation; tripartite being",
+      "answers": {
+        "1": "I treat symptoms in isolation without seeing how they connect",
+        "2": "I intellectually know they're connected but I don't act on it",
+        "3": "I sometimes address health holistically, other times I just treat what hurts",
+        "4": "I usually take an integrated approach, though occasionally I get tunnel vision",
+        "5": "Holistic health is my operating assumption — I look for root causes and connections"
+      }
     }
   ]
 }

@@ -16,31 +16,66 @@
       "id": "H4a",
       "text": "I exercise regularly according to a schedule rather than only when I feel like it.",
       "voice": "Brian Tracy",
-      "principle": "Schedule it or it won't happen"
+      "principle": "Schedule it or it won't happen",
+      "answers": {
+        "1": "I don't have an exercise routine — I move when I have to and otherwise don't",
+        "2": "I've tried many exercise schedules but can't stick with any of them",
+        "3": "I exercise in bursts — consistent for a while, then completely off",
+        "4": "I have a regular schedule I mostly keep, with occasional missed sessions",
+        "5": "Exercise is blocked in my calendar and I show up — feeling like it isn't required"
+      }
     },
     {
       "id": "H4b",
       "text": "I do my planned workout even when I don't feel motivated, knowing motivation follows action.",
       "voice": "Brian Tracy / Jordan Peterson",
-      "principle": "Action creates motivation; do it anyway"
+      "principle": "Action creates motivation; do it anyway",
+      "answers": {
+        "1": "No motivation means no workout — I need to feel like it before I'll do it",
+        "2": "I often skip workouts when not motivated, planning to make up for it later (I don't)",
+        "3": "Sometimes I push through lack of motivation, other times it wins",
+        "4": "I usually do the workout even unmotivated, though occasionally I negotiate down",
+        "5": "Motivation is irrelevant — the workout happens whether I feel like it or not"
+      }
     },
     {
       "id": "H4c",
       "text": "I incorporate movement throughout my day (standing, walking, stretching) rather than being sedentary for long periods.",
       "voice": "Core Philosophy",
-      "principle": "Functional capacity through daily movement"
+      "principle": "Functional capacity through daily movement",
+      "answers": {
+        "1": "I sit for hours without moving and only realize it when something hurts",
+        "2": "I know I should move more but I don't actually do it",
+        "3": "I incorporate some movement but often forget for long stretches",
+        "4": "I usually build movement into my day, occasionally getting trapped at my desk",
+        "5": "Movement is built into my day — I have triggers and habits that keep me from being sedentary"
+      }
     },
     {
       "id": "H4d",
       "text": "I progressively challenge my body (increased weight, distance, intensity) rather than staying in my comfort zone.",
       "voice": "Jordan Peterson",
-      "principle": "Voluntary exposure to challenge makes you stronger"
+      "principle": "Voluntary exposure to challenge makes you stronger",
+      "answers": {
+        "1": "I don't challenge myself physically — I stay well within what's comfortable",
+        "2": "I've been doing the same routine at the same level for years",
+        "3": "I occasionally push myself but often coast at a comfortable level",
+        "4": "I usually progress my training, though sometimes I plateau by not pushing",
+        "5": "Progressive challenge is the point — I track, measure, and deliberately increase"
+      }
     },
     {
       "id": "H4e",
       "text": "I maintain my exercise habit even during travel, busy seasons, or disrupted routines.",
       "voice": "Brian Tracy",
-      "principle": "Non-negotiable habits"
+      "principle": "Non-negotiable habits",
+      "answers": {
+        "1": "Any disruption ends my exercise routine — I'll restart when things settle (they don't)",
+        "2": "I try to maintain during disruptions but usually fail within days",
+        "3": "I keep up some exercise during disruptions but at much reduced frequency",
+        "4": "I mostly maintain during disruptions, adapting my routine as needed",
+        "5": "Routine disruptions don't stop me — I have travel workouts, backup plans, and minimal options"
+      }
     }
   ]
 }

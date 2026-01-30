@@ -16,31 +16,66 @@
       "id": "A4a",
       "text": "When my alarm goes off for morning prayer/devotion time, I get up and do it even when I don't feel like it.",
       "voice": "Brian Tracy",
-      "principle": "Eat the Frog: Do the most important thing first"
+      "principle": "Eat the Frog: Do the most important thing first",
+      "answers": {
+        "1": "I don't have a set devotion time — spiritual practice happens whenever I think of it (rarely)",
+        "2": "I've tried setting a morning devotion time but I consistently hit snooze or skip it",
+        "3": "I get up for devotions some mornings, but tiredness or busyness often wins",
+        "4": "I usually make it to my devotion time, only missing occasionally when legitimately disrupted",
+        "5": "My morning devotion time is non-negotiable — I'm up and present even when I don't feel like it"
+      }
     },
     {
       "id": "A4b",
       "text": "I have a specific, scheduled time for prayer and Scripture reading that I protect from other demands.",
       "voice": "Brian Tracy",
-      "principle": "Time blocking for priorities"
+      "principle": "Time blocking for priorities",
+      "answers": {
+        "1": "I don't have a scheduled time — I pray and read when the mood strikes or not at all",
+        "2": "I have a vague idea of when I should do devotions but it's easily overridden by anything else",
+        "3": "I have a scheduled time but it frequently gets bumped for work, family, or other demands",
+        "4": "My devotion time is mostly protected — I only adjust for genuine emergencies",
+        "5": "My spiritual time block is firm — other demands work around it, not the other way around"
+      }
     },
     {
       "id": "A4c",
       "text": "When I miss a day of spiritual disciplines, I return to them the next day without spiraling into guilt or giving up.",
       "voice": "Jordan Peterson",
-      "principle": "Order from chaos, getting back up"
+      "principle": "Order from chaos, getting back up",
+      "answers": {
+        "1": "Missing a day usually turns into weeks — guilt makes me avoid trying again",
+        "2": "I beat myself up when I miss, which makes returning harder and less likely",
+        "3": "I sometimes bounce back quickly, other times I spiral into guilt and extended absence",
+        "4": "I usually return the next day, though I still feel some unnecessary guilt about missing",
+        "5": "Missing a day is just data — I note it, examine why, and show up the next day without drama"
+      }
     },
     {
       "id": "A4d",
       "text": "I practice Sabbath rest intentionally, even when there's work I could be doing.",
       "voice": "Cloud & Townsend",
-      "principle": "Boundaries around rest"
+      "principle": "Boundaries around rest",
+      "answers": {
+        "1": "Rest feels irresponsible to me — I work until I crash, then recover, then repeat",
+        "2": "I know I should rest but I can't stop the mental churn — work bleeds into every day",
+        "3": "I try to take Sabbath but often fill it with errands or feel guilty for not being productive",
+        "4": "I usually protect a rest day, though I occasionally cheat with 'small' work tasks",
+        "5": "Sabbath is sacred in my calendar — I rest intentionally and without guilt"
+      }
     },
     {
       "id": "A4e",
       "text": "I follow through on spiritual commitments (church attendance, small group, serving) even when inconvenient.",
       "voice": "Simon Sinek",
-      "principle": "Commitment to the 'why' even when 'what' is hard"
+      "principle": "Commitment to the 'why' even when 'what' is hard",
+      "answers": {
+        "1": "I show up when it's convenient and skip when anything else comes up",
+        "2": "I intend to be consistent but frequently bail due to tiredness, weather, or competing plans",
+        "3": "I attend about half the time — consistency depends on how I'm feeling that week",
+        "4": "I'm reliable most of the time, only missing for legitimate conflicts or illness",
+        "5": "My spiritual commitments are in ink — I show up as committed regardless of convenience"
+      }
     }
   ]
 }

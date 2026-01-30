@@ -16,31 +16,66 @@
       "id": "B4a",
       "text": "When I sense conviction about something (right or wrong), I act on it promptly rather than rationalizing or delaying.",
       "voice": "Jordan Peterson",
-      "principle": "Do not lie, especially to yourself"
+      "principle": "Do not lie, especially to yourself",
+      "answers": {
+        "1": "I've gotten skilled at ignoring or explaining away conviction — it rarely changes my behavior",
+        "2": "I feel conviction but usually talk myself out of acting on it",
+        "3": "I act on conviction sometimes, but often delay until the urgency fades",
+        "4": "I usually respond to conviction fairly promptly, though occasionally I drag my feet",
+        "5": "When conviction hits, I act — delay only makes it harder"
+      }
     },
     {
       "id": "B4b",
       "text": "I confess and make things right quickly when I've wronged someone, even when it's uncomfortable.",
       "voice": "Cloud & Townsend",
-      "principle": "Integrity requires difficult conversations"
+      "principle": "Integrity requires difficult conversations",
+      "answers": {
+        "1": "I avoid confronting wrongs I've done — time heals all wounds, right?",
+        "2": "I might apologize eventually but I procrastinate until it's awkward to bring up",
+        "3": "I confess sometimes, but often only when forced or when the discomfort becomes unbearable",
+        "4": "I usually make things right within a few days, though I dread the conversation",
+        "5": "I confess quickly — the discomfort of unresolved wrongs is worse than the awkwardness of confession"
+      }
     },
     {
       "id": "B4c",
       "text": "I say 'no' to requests or opportunities that violate my values, even when saying yes would benefit me.",
       "voice": "Cloud & Townsend",
-      "principle": "Boundaries protect integrity"
+      "principle": "Boundaries protect integrity",
+      "answers": {
+        "1": "I bend my values regularly when there's personal benefit on the line",
+        "2": "I feel conflicted but usually rationalize why this particular compromise is okay",
+        "3": "I hold the line on big things but let smaller compromises slide",
+        "4": "I usually say no to value violations, though some situations really test me",
+        "5": "My values aren't negotiable — no benefit is worth compromising who I am"
+      }
     },
     {
       "id": "B4d",
       "text": "I keep my word and follow through on commitments, even small ones, even when no one would notice if I didn't.",
       "voice": "Jordan Peterson",
-      "principle": "Your word is your bond with reality"
+      "principle": "Your word is your bond with reality",
+      "answers": {
+        "1": "I make promises casually and break them just as casually — no one's really keeping track",
+        "2": "I keep the big commitments but let small ones slide if they become inconvenient",
+        "3": "I try to keep my word but frequently find reasons why this particular promise doesn't count",
+        "4": "I'm reliable on most commitments, though occasionally I drop small ones unintentionally",
+        "5": "My word is my bond — if I said it, I do it, regardless of who's watching"
+      }
     },
     {
       "id": "B4e",
       "text": "When I notice I'm justifying questionable behavior, I stop and examine myself honestly.",
       "voice": "Chase Hughes",
-      "principle": "Self-awareness of internal narratives"
+      "principle": "Self-awareness of internal narratives",
+      "answers": {
+        "1": "I'm excellent at justification — I can make almost anything seem reasonable to myself",
+        "2": "I sometimes notice my rationalizations but usually keep going anyway",
+        "3": "I catch myself justifying sometimes and occasionally stop to examine it",
+        "4": "I'm usually able to recognize when I'm making excuses and course correct",
+        "5": "Self-deception is something I actively guard against — I know my patterns and catch them early"
+      }
     }
   ]
 }
