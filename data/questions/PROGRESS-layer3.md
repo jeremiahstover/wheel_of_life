@@ -19,7 +19,7 @@ See `GUIDE-layer3.md` for the full writing guide.
 |------|-----------|--------|-------|
 | A3 | Communion | ✓ Complete | 5/5 questions revised |
 | B3 | Conscience | ✓ Complete | 5/5 questions revised |
-| C3 | Holiness | ✗ Pending | |
+| C3 | Holiness | ✓ Complete | 5/5 questions revised |
 | D3 | Mind | ✗ Pending | |
 | E3 | Will | ✗ Pending | |
 | F3 | Emotions | ✗ Pending | |
@@ -43,9 +43,16 @@ See `GUIDE-layer3.md` for the full writing guide.
 - B3d: My integrity is ...
 - B3e: When I'm convicted of something, I ...
 
+### C3 (Holiness at Responsibility)
+- C3a: My spiritual state is primarily the result of ...
+- C3b: My sin patterns exist because ...
+- C3c: Areas of spiritual compromise in my life are ...
+- C3d: When I'm in a spiritually dry or difficult season, how I respond is ...
+- C3e: Ongoing sin or spiritual weakness in my life is ...
+
 ## Next Up
 
-**C3 (Holiness at Responsibility)** — Spirit / State
+**D3 (Mind at Responsibility)** — Soul / Receives
 
 ---
 

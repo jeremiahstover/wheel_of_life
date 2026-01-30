@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "C3a",
-      "text": "I own that my spiritual state is primarily the result of my choices, not my circumstances, upbringing, or spiritual attacks.",
+      "text": "My spiritual state is primarily the result of ...",
       "voice": "Jordan Peterson",
-      "principle": "Take responsibility for your state"
+      "principle": "Take responsibility for your state",
+      "answers": {
+        "4": "my choices, though external factors still have influence",
+        "5": "my choices — circumstances explain, they don't define",
+        "2": "factors that have shaped me in ways I can't easily change",
+        "3": "both external forces and my choices — it's complicated",
+        "1": "circumstances, upbringing, or spiritual attacks beyond my control"
+      }
     },
     {
       "id": "C3b",
-      "text": "I don't blame temptation, the devil, or other people's influence for my sin patterns — I chose to give in.",
+      "text": "My sin patterns exist because ...",
       "voice": "Core Philosophy",
-      "principle": "Own your sin; don't externalize blame"
+      "principle": "Own your sin; don't externalize blame",
+      "answers": {
+        "4": "I choose to give in, though some temptations are harder than others",
+        "5": "I choose to give in — the temptation doesn't make the choice",
+        "2": "certain influences make it nearly impossible to resist",
+        "3": "what I get from it feels worth it in the moment",
+        "1": "I can't help it"
+      }
     },
     {
       "id": "C3c",
-      "text": "I recognize that addressing areas of spiritual compromise is my responsibility, not something to tolerate until God 'delivers' me.",
+      "text": "Areas of spiritual compromise in my life are ...",
       "voice": "Jordan Peterson",
-      "principle": "Active participation in sanctification"
+      "principle": "Active participation in sanctification",
+      "answers": {
+        "4": "mine to address, though I often drag my feet",
+        "5": "mine to address now",
+        "2": "struggles I'll deal with when God gives me the strength",
+        "3": "on my list, but I'm waiting for the right season to tackle them",
+        "1": "things I'm waiting on God to deliver me from"
+      }
     },
     {
       "id": "C3d",
-      "text": "I take ownership of my response to spiritual dryness or difficulty — how I respond is my choice.",
+      "text": "When I'm in a spiritually dry or difficult season, how I respond is ...",
       "voice": "Core Philosophy",
-      "principle": "Response-ability in hard seasons"
+      "principle": "Response-ability in hard seasons",
+      "answers": {
+        "4": "my choice, though I don't always respond well",
+        "5": "my choice — the season doesn't dictate my response",
+        "2": "shaped by the difficulty — hard seasons make for hard choices",
+        "3": "partly my choice, partly driven by circumstances",
+        "1": "understandable given what I'm going through"
+      }
     },
     {
       "id": "C3e",
-      "text": "I recognize that 'that's just how I am' is not an acceptable excuse for ongoing sin or spiritual weakness.",
+      "text": "Ongoing sin or spiritual weakness in my life is ...",
       "voice": "Jordan Peterson",
-      "principle": "Don't rationalize weakness as identity"
+      "principle": "Don't rationalize weakness as identity",
+      "answers": {
+        "4": "something I am changing, while holding on to some",
+        "5": "something I'm responsible to change",
+        "2": "deeply rooted at this point",
+        "3": "something I regret but have to live with",
+        "1": "just how I am — some things don't change"
+      }
     }
   ]
 }
