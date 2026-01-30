@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "F3a",
-      "text": "I take responsibility for my emotional responses — others don't 'make me' feel angry, sad, or anxious.",
+      "text": "When I feel angry, sad, or anxious, it's because ...",
       "voice": "Cloud & Townsend",
-      "principle": "Own your emotional responses"
+      "principle": "Own your emotional responses",
+      "answers": {
+        "4": "I'm reacting, though some triggers are harder than others",
+        "5": "that's how I'm responding — the trigger didn't make me",
+        "2": "the situation triggered me",
+        "3": "there was a trigger, but my response could have been better",
+        "1": "someone or something made me feel that way"
+      }
     },
     {
       "id": "F3b",
-      "text": "I own that processing and managing my emotions is my job, not someone else's responsibility to regulate me.",
+      "text": "Processing and managing my emotions is ...",
       "voice": "Core Philosophy",
-      "principle": "Self-regulation is personal duty"
+      "principle": "Self-regulation is personal duty",
+      "answers": {
+        "4": "my job, though I don't always do it well",
+        "5": "my job",
+        "2": "easier when I have support to lean on",
+        "3": "my job, but I need help sometimes",
+        "1": "hard when no one is there to help me through it"
+      }
     },
     {
       "id": "F3c",
-      "text": "I don't blame my upbringing, past trauma, or difficult experiences for my current emotional patterns without also owning my power to change them.",
+      "text": "My current emotional patterns are ...",
       "voice": "Jordan Peterson",
-      "principle": "Acknowledge influence without surrendering agency"
+      "principle": "Acknowledge influence without surrendering agency",
+      "answers": {
+        "4": "mine to change, though the past makes some more difficult",
+        "5": "mine to change",
+        "2": "shaped by my past in ways that are hard to undo",
+        "3": "created by my past, I can influence them",
+        "1": "the result of what I've been through"
+      }
     },
     {
       "id": "F3d",
-      "text": "I recognize that pursuing emotional health is my responsibility — I can't outsource my inner work.",
+      "text": "Pursuing emotional health is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Personal responsibility for emotional health"
+      "principle": "Personal responsibility for emotional health",
+      "answers": {
+        "4": "my responsibility, though I don't always prioritize it",
+        "5": "my responsibility",
+        "2": "dependent on having resources and help",
+        "3": "my responsibility, but I need the right help to get there",
+        "1": "hard without the right therapist or support system"
+      }
     },
     {
       "id": "F3e",
-      "text": "I take ownership of how my emotional expression affects others — my feelings don't justify harmful behavior.",
+      "text": "How my emotional expression affects others is ...",
       "voice": "Cloud & Townsend",
-      "principle": "Own the impact of your emotions"
+      "principle": "Own the impact of your emotions",
+      "answers": {
+        "4": "my responsibility, though I don't always catch it in time",
+        "5": "my responsibility",
+        "2": "something I think about, but my feelings are my feelings",
+        "3": "something I should consider, but I can't always control it",
+        "1": "not my problem — I can't control how they take it"
+      }
     }
   ]
 }

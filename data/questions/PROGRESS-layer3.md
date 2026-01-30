@@ -22,7 +22,7 @@ See `GUIDE-layer3.md` for the full writing guide.
 | C3 | Holiness | ✓ Complete | 5/5 questions revised |
 | D3 | Mind | ✓ Complete | 5/5 questions revised |
 | E3 | Will | ✓ Complete | 5/5 questions revised |
-| F3 | Emotions | ✗ Pending | |
+| F3 | Emotions | ✓ Complete | 5/5 questions revised |
 | G3 | Sustenance | ✗ Pending | |
 | H3 | Capability | ✗ Pending | |
 | I3 | Wholeness | ✗ Pending | |
@@ -64,9 +64,16 @@ See `GUIDE-layer3.md` for the full writing guide.
 - E3d: When circumstances beyond my control hit, I ...
 - E3e: When I procrastinate or avoid something, it's ...
 
+### F3 (Emotions at Responsibility)
+- F3a: When I feel angry, sad, or anxious, it's because ...
+- F3b: Processing and managing my emotions is ...
+- F3c: My current emotional patterns are ...
+- F3d: Pursuing emotional health is ...
+- F3e: How my emotional expression affects others is ...
+
 ## Next Up
 
-**F3 (Emotions at Responsibility)** — Soul / State
+**G3 (Sustenance at Responsibility)** — Body / Receives
 
 ---
 
