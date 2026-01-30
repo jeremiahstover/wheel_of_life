@@ -27,16 +27,16 @@ Example: `E4.json` = Will (E) at Discipline (4)
 
 ## Layers
 
-| Code | Name |
-|------|------|
-| 1 | Order |
-| 2 | Causality |
-| 3 | Responsibility |
-| 4 | Discipline |
-| 5 | Skill |
-| 6 | Resources |
-| 7 | Fellowship |
-| 8 | Sacrifice |
+| Code | Name | Definition |
+|------|------|------------|
+| 1 | Order | Reality has patterns that can be discovered and used. |
+| 2 | Causality | Actions have consequences; you reap what you sow. |
+| 3 | Responsibility | If it's in your life, it's yours to address. |
+| 4 | Discipline | Do what needs doing, especially when you don't feel like it. |
+| 5 | Skill | Get measurably better at what matters. |
+| 6 | Resources | Margin to steward and invest. |
+| 7 | Fellowship | Mutual investment, transparency, and sharpening. |
+| 8 | Sacrifice | Pour out for others with no expectation of return. |
 
 ## File Format
 
@@ -52,7 +52,7 @@ Example: `E4.json` = Will (E) at Discipline (4)
   "layer": {
     "code": 4,
     "name": "Discipline",
-    "definition": "..."
+    "definition": "Do what needs doing, especially when you don't feel like it."
   },
   "questions": [
     {

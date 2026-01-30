@@ -42,16 +42,31 @@ The assessment covers **8 layers** (foundation → culmination) across **9 dimen
 
 ## Layers (Numbers)
 
-| Code | Name | Core Question | Opposite |
-|------|------|---------------|----------|
-| 1 | Order | Do you believe patterns exist? | Nihilism |
-| 2 | Causality | Do you see cause → effect? | Fatalism |
-| 3 | Responsibility | Do you own it as yours? | Entitlement |
-| 4 | Discipline | Are you consistently doing it? | Hedonism |
-| 5 | Skill | Are you getting better? | Incompetence |
-| 6 | Resources | Is skill producing surplus? | Poverty |
-| 7 | Fellowship | Mutual investment, transparency, sharpening? | Isolation |
-| 8 | Sacrifice | Pouring out without expectation of return? | Hoarding |
+| Code | Name | Definition | Opposite |
+|------|------|------------|----------|
+| 1 | Order | Reality has patterns that can be discovered and used. | Nihilism |
+| 2 | Causality | Actions have consequences; you reap what you sow. | Fatalism |
+| 3 | Responsibility | If it's in your life, it's yours to address. | Entitlement |
+| 4 | Discipline | Do what needs doing, especially when you don't feel like it. | Hedonism |
+| 5 | Skill | Get measurably better at what matters. | Incompetence |
+| 6 | Resources | Margin to steward and invest. | Poverty |
+| 7 | Fellowship | Mutual investment, transparency, and sharpening. | Isolation |
+| 8 | Sacrifice | Pour out for others with no expectation of return. | Hoarding |
+
+### Layer 3 Note
+
+Responsibility has two aspects:
+- **What's mine**: "If it's in your life, it's yours to address."
+- **How to hold it**: "Own it — no blame, no excuses."
+
+### Layer 6 Note
+
+Resources span three wealth tiers (from the Ladder of Wealth):
+- **Money** — financial margin
+- **Time** — capacity margin
+- **Relationships** — relational capital
+
+Surplus should flow upward: use money surplus to buy back time; use time surplus to invest in relationships.
 
 ---
 
