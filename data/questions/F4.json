@@ -14,67 +14,67 @@
   "questions": [
     {
       "id": "F4a",
-      "text": "I feel the full range of emotions throughout the day without those emotions dictating my actions.",
+      "text": "When strong emotions hit, I ...",
       "voice": "Core Philosophy",
       "principle": "Feel the rollercoaster, don't act on the rollercoaster",
       "answers": {
-        "1": "My emotions run the show — when I feel it, I act on it",
-        "2": "I try to suppress emotions entirely, which leads to explosions",
-        "3": "I manage some emotions well but others (anger, anxiety) still control me",
-        "4": "I usually feel without acting impulsively, though strong emotions can still hijack me",
-        "5": "I feel everything fully — and then I choose my response deliberately"
+        "4": "usually feel without acting impulsively, though strong ones can still hijack me",
+        "5": "feel them fully — and then choose my response",
+        "2": "push them down — if they're important I'll deal with them later",
+        "3": "manage some well, but others (anger, anxiety) still control me",
+        "1": "act on them — when I feel it, I do it"
       }
     },
     {
       "id": "F4b",
-      "text": "I process difficult emotions (journaling, talking, praying) rather than burying or numbing them.",
+      "text": "Difficult emotions are ...",
       "voice": "Jordan Peterson",
       "principle": "Face what you're avoiding",
       "answers": {
-        "1": "I bury or numb difficult emotions — if I don't think about them, they don't exist",
-        "2": "I know I should process emotions but I prefer distraction to the discomfort",
-        "3": "I process sometimes but often let things build up until they overflow",
-        "4": "I usually process difficult emotions, though some get buried longer than they should",
-        "5": "Processing emotions is scheduled into my life — nothing stays buried"
+        "4": "usually processed, though some get buried longer than they should",
+        "5": "scheduled — nothing stays buried",
+        "2": "avoided — I prefer distraction to the discomfort",
+        "3": "sometimes processed, but often left to build until they overflow",
+        "1": "buried — if I don't think about them, they don't exist"
       }
     },
     {
       "id": "F4c",
-      "text": "I pause before responding when emotionally triggered rather than reacting impulsively.",
+      "text": "When emotionally triggered, I ...",
       "voice": "Chase Hughes",
       "principle": "Pattern interrupt; response vs reaction",
       "answers": {
-        "1": "When triggered, I react immediately — the words are out before I think",
-        "2": "I know I should pause but I rarely manage it in the moment",
-        "3": "I pause sometimes, but strong triggers still get instant reactions",
-        "4": "I usually pause before responding, though occasionally I react first",
-        "5": "Pause is automatic — I've trained myself to create space between trigger and response"
+        "4": "usually pause, though occasionally I react first",
+        "5": "pause automatically — I've trained myself to create space",
+        "2": "rarely pause — I react and regret later",
+        "3": "pause sometimes, but strong triggers still get instant reactions",
+        "1": "react immediately — the words are out before I think"
       }
     },
     {
       "id": "F4d",
-      "text": "I have healthy outlets for stress and negative emotions rather than destructive coping mechanisms.",
+      "text": "When stressed, I cope by ...",
       "voice": "Cloud & Townsend",
       "principle": "Healthy boundaries include self-care",
       "answers": {
-        "1": "My coping mechanisms are mostly destructive — I know it but can't seem to stop",
-        "2": "I have some healthy outlets but often default to unhealthy ones when stressed",
-        "3": "I use a mix of healthy and unhealthy coping — depends on how bad it is",
-        "4": "I mostly use healthy outlets, occasionally slipping into old patterns under pressure",
-        "5": "I've built a robust set of healthy outlets that I use consistently"
+        "4": "mostly moving, talking, or creating — occasionally numbing",
+        "5": "outlets that restore me — I've built them and I use them",
+        "2": "mostly numbing, occasionally something better",
+        "3": "a mix — depends on how bad it is",
+        "1": "numbing — food, drink, screens, whatever stops the feeling"
       }
     },
     {
       "id": "F4e",
-      "text": "I address emotional issues in relationships directly rather than letting resentment build or avoiding conflict.",
+      "text": "When something bothers me in a relationship, I ...",
       "voice": "Cloud & Townsend",
       "principle": "Boundaries; necessary conversations",
       "answers": {
-        "1": "I avoid conflict at all costs — resentment builds until the relationship breaks",
-        "2": "I might address things eventually but usually let issues fester for too long",
-        "3": "I address some issues directly but avoid the really uncomfortable ones",
-        "4": "I usually address issues fairly promptly, though sometimes I delay too long",
-        "5": "I address relational issues quickly and directly — resentment can't build if I don't let it"
+        "4": "usually address it fairly promptly, though sometimes I delay",
+        "5": "address it quickly — resentment can't build if I don't let it",
+        "2": "might address it eventually, but usually let it fester too long",
+        "3": "address some things, avoid the really uncomfortable ones",
+        "1": "avoid it — resentment builds until something breaks"
       }
     }
   ]
