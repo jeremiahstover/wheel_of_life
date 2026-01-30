@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "title": "Wheel of Life Assessment: Order Layer",
+    "version": "1.0",
+    "layer_focus": "Order (Layer 1 of 8)",
+    "definition": "An arrangement that displays the relationship between elements via a particular sequence, pattern, or method; the belief that reality is intelligible, structured, and meaningful rather than chaotic and random.",
+    "total_questions": 45,
+    "questions_per_dimension": 5,
+    "model_version": "Tripartite Model v2 (Receives/Executes/State pattern)",
+    "relationship_to_other_layers": "Order is the foundation for Causality (Layer 2). If Causality is weak, shore up Order first. You cannot believe in cause and effect if you don't first believe reality has discoverable patterns."
+  },
+  "scoring": {
+    "response_scale": {
+      "1": { "label": "Almost Never", "range": "0-20% of the time" },
+      "2": { "label": "Rarely", "range": "21-40% of the time" },
+      "3": { "label": "Sometimes", "range": "41-60% of the time" },
+      "4": { "label": "Usually", "range": "61-80% of the time" },
+      "5": { "label": "Almost Always", "range": "81-100% of the time" }
+    },
+    "calculation": {
+      "method": "Sum dimension questions, divide by 5, multiply by 2",
+      "formula": "(sum / 5) * 2",
+      "result_range": "1-10"
+    },
+    "interpretation": {
+      "1-2": { "label": "Crisis", "description": "Nihilistic thinking dominates; immediate attention required" },
+      "3-4": { "label": "Below Baseline", "description": "Belief in order is weak or inconsistent; needs focused work" },
+      "5-6": { "label": "Maintaining", "description": "Some belief in order but not fully integrated" },
+      "7-8": { "label": "Target Zone", "description": "Strong belief in discoverable order and meaning" },
+      "9-10": { "label": "Exceptional", "description": "Order-based thinking is integrated into worldview" }
+    }
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Communion",
+      "category": "Spirit",
+      "function": "Receives",
+      "description": "Believing there is an ordered spiritual reality to receive from — that God exists, is knowable, and has established ways to connect",
+      "scripture_anchor": {
+        "text": "For God is not a God of confusion but of peace.",
+        "reference": "1 Corinthians 14:33"
+      },
+      "questions": [
+        {
+          "id": "1.1",
+          "text": "I believe there is a spiritual reality that is ordered and knowable, not random or chaotic.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual order exists and can be discovered"
+        },
+        {
+          "id": "1.2",
+          "text": "I believe God has established patterns and practices through which He can be known and experienced.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual connection follows discoverable patterns"
+        },
+        {
+          "id": "1.3",
+          "text": "I see evidence of divine order in Scripture, creation, and the lives of faithful people throughout history.",
+          "voice": "Jordan Peterson",
+          "principle": "Order is observable in spiritual reality"
+        },
+        {
+          "id": "1.4",
+          "text": "I believe the spiritual disciplines (prayer, Scripture, worship) work because they align with how God designed spiritual reality.",
+          "voice": "Core Philosophy",
+          "principle": "Spiritual practices reflect spiritual design"
+        },
+        {
+          "id": "1.5",
+          "text": "I reject the idea that spiritual experience is purely subjective, random, or meaningless.",
+          "voice": "Jordan Peterson",
+          "principle": "Spiritual reality is objective, not arbitrary"
+        }
+      ],
+      "remediation": {
+        "advice": "If spiritual life feels random or meaningless, start observing. Look for patterns in Scripture. Study how saints throughout history connected with God. The order is there — you may just not have looked for it yet.",
+        "scripture": {
+          "text": "The heavens declare the glory of God, and the sky above proclaims his handiwork. Day to day pours out speech, and night to night reveals knowledge.",
+          "reference": "Psalm 19:1-2"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Conscience",
+      "category": "Spirit",
+      "function": "Executes",
+      "description": "Believing there is a moral order — that right and wrong are real, discoverable, and not arbitrary",
+      "scripture_anchor": {
+        "text": "For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves... They show that the work of the law is written on their hearts.",
+        "reference": "Romans 2:14-15"
+      },
+      "questions": [
+        {
+          "id": "2.1",
+          "text": "I believe there is an objective moral order — right and wrong are real, not just personal preferences.",
+          "voice": "Jordan Peterson",
+          "principle": "Moral reality exists independently of opinion"
+        },
+        {
+          "id": "2.2",
+          "text": "I believe moral truth can be discovered through reason, revelation, and conscience.",
+          "voice": "Core Philosophy",
+          "principle": "Moral order is knowable"
+        },
+        {
+          "id": "2.3",
+          "text": "I see evidence of moral order in the consistency of conscience across cultures and throughout history.",
+          "voice": "Jordan Peterson",
+          "principle": "Universal moral patterns indicate moral reality"
+        },
+        {
+          "id": "2.4",
+          "text": "I reject the idea that morality is purely constructed, arbitrary, or meaningless.",
+          "voice": "Jordan Peterson",
+          "principle": "Moral nihilism is false"
+        },
+        {
+          "id": "2.5",
+          "text": "I believe living in alignment with moral order leads to flourishing, while violating it leads to destruction.",
+          "voice": "Core Philosophy",
+          "principle": "Moral order has real consequences"
+        }
+      ],
+      "remediation": {
+        "advice": "If morality feels arbitrary or meaningless, examine the evidence. Why do all cultures have similar core prohibitions? Why does conscience exist? Why does integrity produce peace and deception produce anxiety? The moral order is written into reality.",
+        "scripture": {
+          "text": "Woe to those who call evil good and good evil, who put darkness for light and light for darkness.",
+          "reference": "Isaiah 5:20"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiness",
+      "category": "Spirit",
+      "function": "State",
+      "description": "Believing there is an ordered path to spiritual wholeness — that sanctification follows patterns, not randomness",
+      "scripture_anchor": {
+        "text": "As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct.",
+        "reference": "1 Peter 1:14-15"
+      },
+      "questions": [
+        {
+          "id": "3.1",
+          "text": "I believe spiritual growth follows discoverable patterns — it's not random or mysterious.",
+          "voice": "Core Philosophy",
+          "principle": "Sanctification has order"
+        },
+        {
+          "id": "3.2",
+          "text": "I believe there are identifiable steps and practices that lead toward holiness.",
+          "voice": "Brian Tracy",
+          "principle": "Spiritual development can be mapped"
+        },
+        {
+          "id": "3.3",
+          "text": "I see evidence of ordered spiritual development in Scripture (the progression from milk to solid food, from faith to love in 2 Peter 1).",
+          "voice": "Core Philosophy",
+          "principle": "Biblical patterns reveal spiritual order"
+        },
+        {
+          "id": "3.4",
+          "text": "I reject the idea that holiness is just luck, special grace for special people, or unattainable mystery.",
+          "voice": "Jordan Peterson",
+          "principle": "Holiness is accessible through ordered practice"
+        },
+        {
+          "id": "3.5",
+          "text": "I believe the path to spiritual maturity can be studied, understood, and followed.",
+          "voice": "Brian Tracy",
+          "principle": "Spiritual maturity has a learnable path"
+        }
+      ],
+      "remediation": {
+        "advice": "Study someone whose spiritual life you admire. What did they do? How did they grow? You'll find patterns, practices, and progression — not randomness. Holiness has an order; it can be pursued systematically.",
+        "scripture": {
+          "text": "For this very reason, make every effort to supplement your faith with virtue, and virtue with knowledge, and knowledge with self-control...",
+          "reference": "2 Peter 1:5-7"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Mind",
+      "category": "Soul",
+      "function": "Receives",
+      "description": "Believing the world is intelligible — that knowledge is possible because reality has discoverable order",
+      "scripture_anchor": {
+        "text": "Great are the works of the LORD, studied by all who delight in them.",
+        "reference": "Psalm 111:2"
+      },
+      "questions": [
+        {
+          "id": "4.1",
+          "text": "I believe reality is ordered and intelligible — it can be studied, understood, and predicted.",
+          "voice": "Core Philosophy",
+          "principle": "Reality is knowable"
+        },
+        {
+          "id": "4.2",
+          "text": "I believe knowledge is possible because there are patterns in reality waiting to be discovered.",
+          "voice": "Jordan Peterson",
+          "principle": "Knowledge requires underlying order"
+        },
+        {
+          "id": "4.3",
+          "text": "I see evidence of order in the success of science, mathematics, and logic in describing reality.",
+          "voice": "Core Philosophy",
+          "principle": "Scientific success demonstrates cosmic order"
+        },
+        {
+          "id": "4.4",
+          "text": "I reject the idea that reality is fundamentally chaotic, unknowable, or meaningless.",
+          "voice": "Jordan Peterson",
+          "principle": "Epistemological nihilism is false"
+        },
+        {
+          "id": "4.5",
+          "text": "I believe clear thinking is possible because reality itself has clarity and structure.",
+          "voice": "Core Philosophy",
+          "principle": "Mental clarity reflects cosmic order"
+        }
+      ],
+      "remediation": {
+        "advice": "If the world seems chaotic and unknowable, look at what humans have discovered: mathematics, physics, biology, psychology. Every field succeeds because it finds patterns. The order is there — that's why research works.",
+        "scripture": {
+          "text": "It is the glory of God to conceal things, but the glory of kings is to search things out.",
+          "reference": "Proverbs 25:2"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Will",
+      "category": "Soul",
+      "function": "Executes",
+      "description": "Believing choices matter because reality has structure — that decisions interact with an ordered world",
+      "scripture_anchor": {
+        "text": "See, I have set before you today life and good, death and evil... Therefore choose life.",
+        "reference": "Deuteronomy 30:15, 19"
+      },
+      "questions": [
+        {
+          "id": "5.1",
+          "text": "I believe my choices matter because they interact with an ordered reality that responds predictably.",
+          "voice": "Core Philosophy",
+          "principle": "Choices matter because order exists"
+        },
+        {
+          "id": "5.2",
+          "text": "I believe there are better and worse ways to live — not all paths are equal.",
+          "voice": "Jordan Peterson",
+          "principle": "Some choices are objectively better"
+        },
+        {
+          "id": "5.3",
+          "text": "I see evidence that certain behaviors consistently lead to flourishing while others lead to destruction.",
+          "voice": "Brian Tracy",
+          "principle": "Behavioral patterns reveal ordered consequences"
+        },
+        {
+          "id": "5.4",
+          "text": "I reject the idea that all choices are equally valid or that 'whatever works for you' is sufficient guidance.",
+          "voice": "Jordan Peterson",
+          "principle": "Moral relativism denies observable order"
+        },
+        {
+          "id": "5.5",
+          "text": "I believe human action has meaning because it takes place within a structured, meaningful reality.",
+          "voice": "Core Philosophy",
+          "principle": "Action has meaning because reality has meaning"
+        }
+      ],
+      "remediation": {
+        "advice": "If choices feel meaningless, observe the patterns. Some people's lives work; others fall apart. The difference isn't luck — it's choices interacting with an ordered reality. Your decisions matter because the world has structure.",
+        "scripture": {
+          "text": "There is a way that seems right to a man, but its end is the way to death.",
+          "reference": "Proverbs 14:12"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Emotions",
+      "category": "Soul",
+      "function": "State",
+      "description": "Believing emotions have meaning and order — they are signals, not random noise",
+      "scripture_anchor": {
+        "text": "Search me, O God, and know my heart! Try me and know my thoughts!",
+        "reference": "Psalm 139:23"
+      },
+      "questions": [
+        {
+          "id": "6.1",
+          "text": "I believe emotions carry meaningful information — they are signals, not random noise.",
+          "voice": "Core Philosophy",
+          "principle": "Emotions have meaning"
+        },
+        {
+          "id": "6.2",
+          "text": "I believe emotional patterns can be understood, studied, and interpreted.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional life has discoverable order"
+        },
+        {
+          "id": "6.3",
+          "text": "I see evidence that emotions consistently point to something — unmet needs, violated values, important truths.",
+          "voice": "Chase Hughes",
+          "principle": "Emotions are diagnostic"
+        },
+        {
+          "id": "6.4",
+          "text": "I reject the idea that emotions are meaningless chemical fluctuations with no connection to reality.",
+          "voice": "Jordan Peterson",
+          "principle": "Emotional nihilism is false"
+        },
+        {
+          "id": "6.5",
+          "text": "I believe there is an ordered path to emotional health that can be discovered and followed.",
+          "voice": "Cloud & Townsend",
+          "principle": "Emotional health follows patterns"
+        }
+      ],
+      "remediation": {
+        "advice": "If emotions feel random and overwhelming, start treating them as data. Ask: 'What is this feeling telling me?' Emotions have logic — they're responding to something. Find the pattern and you find meaning.",
+        "scripture": {
+          "text": "Anxiety in a man's heart weighs him down, but a good word makes him glad.",
+          "reference": "Proverbs 12:25"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sustenance",
+      "category": "Body",
+      "function": "Receives",
+      "description": "Believing the body operates according to discoverable principles — nutrition, rest, and environment follow patterns",
+      "scripture_anchor": {
+        "text": "Do you not know that your bodies are temples of the Holy Spirit?",
+        "reference": "1 Corinthians 6:19"
+      },
+      "questions": [
+        {
+          "id": "7.1",
+          "text": "I believe the body operates according to discoverable principles — there are right and wrong ways to fuel it.",
+          "voice": "Core Philosophy",
+          "principle": "Physical order exists"
+        },
+        {
+          "id": "7.2",
+          "text": "I believe nutrition, sleep, and environment affect the body in predictable, patterned ways.",
+          "voice": "Brian Tracy",
+          "principle": "Physical inputs follow physical laws"
+        },
+        {
+          "id": "7.3",
+          "text": "I see evidence of physical order in how the body consistently responds to good or poor treatment.",
+          "voice": "Jordan Peterson",
+          "principle": "Physical patterns are observable"
+        },
+        {
+          "id": "7.4",
+          "text": "I reject the idea that the body is random, unknowable, or that 'anything goes' for physical health.",
+          "voice": "Core Philosophy",
+          "principle": "Physical nihilism is false"
+        },
+        {
+          "id": "7.5",
+          "text": "I believe physical health can be studied, understood, and pursued systematically.",
+          "voice": "Brian Tracy",
+          "principle": "Physical health has discoverable order"
+        }
+      ],
+      "remediation": {
+        "advice": "If physical health feels mysterious, study it. The body follows laws — chemistry, biology, physics. What you eat, how you sleep, what environment you create — these interact with predictable patterns. The order is there to be discovered.",
+        "scripture": {
+          "text": "Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God?",
+          "reference": "1 Corinthians 6:19"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Capability",
+      "category": "Body",
+      "function": "Executes",
+      "description": "Believing physical capability follows ordered principles — that training works because the body adapts predictably",
+      "scripture_anchor": {
+        "text": "For while bodily training is of some value, godliness is of value in every way.",
+        "reference": "1 Timothy 4:8"
+      },
+      "questions": [
+        {
+          "id": "8.1",
+          "text": "I believe physical training works because the body adapts according to predictable principles.",
+          "voice": "Core Philosophy",
+          "principle": "Adaptation follows ordered laws"
+        },
+        {
+          "id": "8.2",
+          "text": "I believe there are discoverable principles for building strength, endurance, and physical capability.",
+          "voice": "Brian Tracy",
+          "principle": "Fitness has learnable principles"
+        },
+        {
+          "id": "8.3",
+          "text": "I see evidence of physical order in how athletes consistently improve through systematic training.",
+          "voice": "Brian Tracy",
+          "principle": "Athletic success demonstrates physical order"
+        },
+        {
+          "id": "8.4",
+          "text": "I reject the idea that physical capability is purely genetic, random, or beyond systematic development.",
+          "voice": "Jordan Peterson",
+          "principle": "Physical fatalism is false"
+        },
+        {
+          "id": "8.5",
+          "text": "I believe the path to physical improvement can be mapped, studied, and followed.",
+          "voice": "Brian Tracy",
+          "principle": "Physical development has ordered paths"
+        }
+      ],
+      "remediation": {
+        "advice": "Physical training works because the body follows laws. Progressive overload, adaptation, recovery — these are patterns, not mysteries. The order is so reliable that entire industries are built on it. Learn the principles.",
+        "scripture": {
+          "text": "Do you not know that in a race all the runners run, but only one receives the prize? So run that you may obtain it.",
+          "reference": "1 Corinthians 9:24"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wholeness",
+      "category": "Body",
+      "function": "State",
+      "description": "Believing health and wholeness follow discoverable patterns — wellness is ordered, not random",
+      "scripture_anchor": {
+        "text": "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.",
+        "reference": "3 John 1:2"
+      },
+      "questions": [
+        {
+          "id": "9.1",
+          "text": "I believe health and wellness follow discoverable patterns — they're not random luck.",
+          "voice": "Core Philosophy",
+          "principle": "Health has order"
+        },
+        {
+          "id": "9.2",
+          "text": "I believe the integration of body, soul, and spirit follows principles that can be understood.",
+          "voice": "Core Philosophy",
+          "principle": "Holistic health has discoverable patterns"
+        },
+        {
+          "id": "9.3",
+          "text": "I see evidence of ordered wholeness in how neglect in one area (body, soul, or spirit) affects the others predictably.",
+          "voice": "Jordan Peterson",
+          "principle": "Integrated health follows consistent patterns"
+        },
+        {
+          "id": "9.4",
+          "text": "I reject the idea that health is purely genetic, fated, or beyond systematic pursuit.",
+          "voice": "Brian Tracy",
+          "principle": "Health nihilism is false"
+        },
+        {
+          "id": "9.5",
+          "text": "I believe there is an ordered path to wholeness that can be discovered and walked.",
+          "voice": "Core Philosophy",
+          "principle": "Wholeness has a learnable path"
+        }
+      ],
+      "remediation": {
+        "advice": "Wholeness isn't mysterious — it's ordered. The healthiest people you know got there through patterns, not luck. Study them. Find the principles. The order exists; you just need to discover it and align with it.",
+        "scripture": {
+          "text": "And the God of peace will sanctify you completely, and may your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ.",
+          "reference": "1 Thessalonians 5:23"
+        }
+      }
+    }
+  ],
+  "results_guidance": {
+    "crisis_threshold": 4,
+    "target_threshold": 7,
+    "overall_interpretation": {
+      "crisis": "Any dimension scoring 1-4 indicates nihilistic thinking in that area. Without believing in order, you cannot believe in causality — why look for cause and effect in chaos? This is the most foundational layer.",
+      "maintenance": "Dimensions scoring 5-6 show partial belief in order. You may intellectually acknowledge patterns but not viscerally trust them. Look for where you still believe 'it's all random anyway.'",
+      "strength": "Dimensions scoring 7+ show strong belief in discoverable order. You trust that patterns exist and can be found. Now check if causality (Layer 2) is following — do you see the specific cause-effect relationships?",
+      "integration": "Order applies across all domains. If you believe in physical order but not moral order, you're applying the principle inconsistently. Reality is integrated; your belief in order should be too."
+    },
+    "next_steps": [
+      "Identify areas where you still believe 'it's all random' or 'nothing matters'",
+      "For each weak area, look for evidence of patterns others have discovered",
+      "Notice language patterns: 'It's all chaos' vs 'There are principles here I can learn'",
+      "Where order is strong, check if causality (Layer 2) is following",
+      "Re-assess quarterly"
+    ],
+    "relationship_to_causality": "Order without causality is believing in patterns without tracing specific connections — you know there's structure but can't see how things link. Causality without order is tracking cause-effect while secretly believing it's meaningless. Both are needed: order provides the foundation; causality applies it specifically."
+  }
+}
