@@ -14,67 +14,67 @@
   "questions": [
     {
       "id": "I4a",
-      "text": "I schedule and attend regular preventive care (checkups, dental, vision) rather than only going when something is wrong.",
+      "text": "My approach to preventive care (checkups, dental, vision) is ...",
       "voice": "Core Philosophy",
       "principle": "Stewardship: maintenance before repair",
       "answers": {
-        "1": "I only see doctors when something is really wrong — preventive care feels unnecessary",
-        "2": "I know I should get checkups but I keep postponing them",
-        "3": "I'm current on some preventive care but way behind on others",
-        "4": "I mostly stay on top of preventive care, occasionally falling behind",
-        "5": "Preventive care is scheduled and I show up — maintenance is easier than repair"
+        "4": "mostly on schedule, occasionally falling behind",
+        "5": "scheduled and attended — maintenance is easier than repair",
+        "2": "always on the list, never on the calendar",
+        "3": "current on some, way behind on others",
+        "1": "only when something is really wrong"
       }
     },
     {
       "id": "I4b",
-      "text": "When I notice a health issue (pain, symptom, concern), I address it promptly rather than ignoring it.",
+      "text": "When I notice a health issue, I ...",
       "voice": "Jordan Peterson",
       "principle": "Don't ignore the small problems; they grow",
       "answers": {
-        "1": "I ignore health issues until they become impossible to ignore",
-        "2": "I notice things but convince myself it's probably nothing and hope it goes away",
-        "3": "I address some issues promptly but let others linger for too long",
-        "4": "I usually address health issues fairly quickly, occasionally delaying",
-        "5": "I don't let things fester — if something's off, I address it before it grows"
+        "4": "usually address it fairly quickly, occasionally delaying",
+        "5": "address it before it grows — I don't let things fester",
+        "2": "convince myself it's probably nothing and hope it goes away",
+        "3": "address some promptly, let others linger",
+        "1": "ignore it until it's impossible to ignore"
       }
     },
     {
       "id": "I4c",
-      "text": "I follow through on medical recommendations (medication, therapy, lifestyle changes) even when inconvenient.",
+      "text": "When I get medical recommendations, I ...",
       "voice": "Core Philosophy",
       "principle": "Integrity: follow through on commitments",
       "answers": {
-        "1": "I get recommendations and then ignore them",
-        "2": "I start following recommendations but quickly fall off",
-        "3": "I follow some recommendations but not others — depends on how inconvenient they are",
-        "4": "I mostly follow through on recommendations, occasionally skipping or forgetting",
-        "5": "If I've agreed to a treatment plan, I execute it fully — that's the point"
+        "4": "mostly follow through, occasionally skipping or forgetting",
+        "5": "execute them fully — that's the point",
+        "2": "start following them but quickly fall off",
+        "3": "follow some but not others — depends on how inconvenient",
+        "1": "ignore them"
       }
     },
     {
       "id": "I4d",
-      "text": "I manage chronic conditions or health maintenance routines consistently rather than sporadically.",
+      "text": "My health maintenance routines are ...",
       "voice": "Brian Tracy",
       "principle": "Systems beat willpower; routine creates results",
       "answers": {
-        "1": "I'm inconsistent with health routines and it shows",
-        "2": "I manage routines for a while then completely drop them",
-        "3": "I'm consistent with some routines but others are hit or miss",
-        "4": "I mostly maintain my health routines, with occasional lapses",
-        "5": "Health maintenance is built into my life — it happens automatically"
+        "4": "mostly maintained, with occasional lapses",
+        "5": "built into my life — they happen automatically",
+        "2": "maintained for a while, then dropped",
+        "3": "consistent in some areas, hit or miss in others",
+        "1": "inconsistent and it shows"
       }
     },
     {
       "id": "I4e",
-      "text": "I recognize that physical, mental, and spiritual health are connected and address my body as an integrated whole.",
+      "text": "My approach to health is ...",
       "voice": "Core Philosophy",
       "principle": "Integration not separation; tripartite being",
       "answers": {
-        "1": "I treat symptoms in isolation without seeing how they connect",
-        "2": "I intellectually know they're connected but I don't act on it",
-        "3": "I sometimes address health holistically, other times I just treat what hurts",
-        "4": "I usually take an integrated approach, though occasionally I get tunnel vision",
-        "5": "Holistic health is my operating assumption — I look for root causes and connections"
+        "4": "usually integrated, though occasionally I get tunnel vision",
+        "5": "holistic — I look for root causes and connections",
+        "2": "focused on whatever hurts right now",
+        "3": "sometimes holistic, sometimes just treating what hurts",
+        "1": "treat symptoms in isolation"
       }
     }
   ]
