@@ -20,7 +20,7 @@ See `GUIDE-layer3.md` for the full writing guide.
 | A3 | Communion | ✓ Complete | 5/5 questions revised |
 | B3 | Conscience | ✓ Complete | 5/5 questions revised |
 | C3 | Holiness | ✓ Complete | 5/5 questions revised |
-| D3 | Mind | ✗ Pending | |
+| D3 | Mind | ✓ Complete | 5/5 questions revised |
 | E3 | Will | ✗ Pending | |
 | F3 | Emotions | ✗ Pending | |
 | G3 | Sustenance | ✗ Pending | |
@@ -50,9 +50,16 @@ See `GUIDE-layer3.md` for the full writing guide.
 - C3d: When I'm in a spiritually dry or difficult season, how I respond is ...
 - C3e: Ongoing sin or spiritual weakness in my life is ...
 
+### D3 (Mind at Responsibility)
+- D3a: What I consume mentally — content, media, information — is ...
+- D3b: My thinking patterns are ...
+- D3c: My current state of knowledge is ...
+- D3d: My intellectual growth is ...
+- D3e: When harmful influences affect my thinking, I ...
+
 ## Next Up
 
-**D3 (Mind at Responsibility)** — Soul / Receives
+**E3 (Will at Responsibility)** — Soul / Executes
 
 ---
 

@@ -14,33 +14,68 @@
   "questions": [
     {
       "id": "D3a",
-      "text": "I take responsibility for what I consume mentally — content, media, and information are my choices.",
+      "text": "What I consume mentally — content, media, information — is ...",
       "voice": "Core Philosophy",
-      "principle": "Own your mental intake"
+      "principle": "Own your mental intake",
+      "answers": {
+        "4": "my choice, though I don't always choose well",
+        "5": "my choice",
+        "2": "hard to control given how much is pushed at me",
+        "3": "partly my choice, partly what the algorithm feeds me",
+        "1": "mostly determined by what's around me"
+      }
     },
     {
       "id": "D3b",
-      "text": "I own that my thinking patterns are mine to change — I'm not a passive victim of my thoughts.",
+      "text": "My thinking patterns are ...",
       "voice": "Jordan Peterson",
-      "principle": "Agency over thought patterns"
+      "principle": "Agency over thought patterns",
+      "answers": {
+        "4": "mine to change, though some are stubborn",
+        "5": "mine to change",
+        "2": "deeply ingrained — hard to change at this point",
+        "3": "partly fixed, partly changeable",
+        "1": "just how my brain works"
+      }
     },
     {
       "id": "D3c",
-      "text": "I don't blame my education, background, or intelligence for my current state of knowledge or ignorance.",
+      "text": "My current state of knowledge is ...",
       "voice": "Brian Tracy",
-      "principle": "No excuses for lack of learning"
+      "principle": "No excuses for lack of learning",
+      "answers": {
+        "4": "mostly my responsibility, though I started behind",
+        "5": "my responsibility — I can learn anything I decide to",
+        "2": "shaped by opportunities I didn't have",
+        "3": "partly my background, partly my effort",
+        "1": "limited by my education and background"
+      }
     },
     {
       "id": "D3d",
-      "text": "I recognize that learning and intellectual growth are my responsibility — it's not someone else's job to educate me.",
+      "text": "My intellectual growth is ...",
       "voice": "Brian Tracy",
-      "principle": "Personal responsibility for growth"
+      "principle": "Personal responsibility for growth",
+      "answers": {
+        "4": "my job, though good resources make it easier",
+        "5": "my job — I find what I need",
+        "2": "limited by what's available to me",
+        "3": "partly on me, partly on having access to good material",
+        "1": "dependent on having the right teachers or resources"
+      }
     },
     {
       "id": "D3e",
-      "text": "I take ownership of protecting my mind from influences that harm my thinking, rather than blaming the influences themselves.",
+      "text": "When harmful influences affect my thinking, I ...",
       "voice": "Core Philosophy",
-      "principle": "Guard your mind proactively"
+      "principle": "Guard your mind proactively",
+      "answers": {
+        "4": "guard my mind, though I'm not always vigilant",
+        "5": "guard my mind — what gets in is on me",
+        "2": "do my best, but some things are unavoidable",
+        "3": "filter some, but a lot still gets through",
+        "1": "can't help what gets in — it's everywhere"
+      }
     }
   ]
 }
