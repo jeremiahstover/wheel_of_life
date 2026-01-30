@@ -369,22 +369,95 @@
     
     let currentDim = 'A';
     
+    /**
+     * Generate realistic data by picking break point first
+     * 
+     * Distribution of break points (weighted toward middle layers):
+     *   null (solid): 10%
+     *   L1: 5%   (rare - total crisis)
+     *   L2: 8%
+     *   L3: 12%
+     *   L4: 20%  (most common - discipline is hard)
+     *   L5: 18%
+     *   L6: 15%
+     *   L7: 8%
+     *   L8: 4%   (rare - almost made it)
+     */
     function generateData() {
         data = {};
+        
+        // Break point distribution (weighted)
+        const breakDistribution = [
+            { break: null, weight: 10 },  // solid all the way
+            { break: 1, weight: 5 },
+            { break: 2, weight: 8 },
+            { break: 3, weight: 12 },
+            { break: 4, weight: 20 },
+            { break: 5, weight: 18 },
+            { break: 6, weight: 15 },
+            { break: 7, weight: 8 },
+            { break: 8, weight: 4 },
+        ];
+        
+        function pickBreakPoint() {
+            const totalWeight = breakDistribution.reduce((sum, b) => sum + b.weight, 0);
+            let random = Math.random() * totalWeight;
+            for (const b of breakDistribution) {
+                random -= b.weight;
+                if (random <= 0) return b.break;
+            }
+            return 4; // fallback
+        }
+        
         for (const dim of Object.keys(DIMENSIONS)) {
             data[dim] = {};
             
-            // L1 starts with random value between 2.5 and 5
-            let ceiling = 2.5 + Math.random() * 2.5;
+            const breakPoint = pickBreakPoint();
             
-            for (let layer = 1; layer <= 8; layer++) {
-                // Score is random from 1 to ceiling (can't exceed layer below)
-                const floor = 1;
-                const score = floor + Math.random() * (ceiling - floor);
-                data[dim][layer] = Math.round(score * 100) / 100;
+            if (breakPoint === null) {
+                // Solid all the way - all layers strong, descending
+                let ceiling = 4.5 + Math.random() * 0.5; // 4.5-5.0
+                for (let layer = 1; layer <= 8; layer++) {
+                    // Strong: 3.5-ceiling, slight decay
+                    const minScore = Math.max(3.5, ceiling - 0.8);
+                    const score = minScore + Math.random() * (ceiling - minScore);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+            } else if (breakPoint === 1) {
+                // Foundation crisis - L1 is weak, everything cascades down
+                let ceiling = 2.0 + Math.random() * 1.4; // 2.0-3.4 (weak)
+                for (let layer = 1; layer <= 8; layer++) {
+                    const score = 1 + Math.random() * (ceiling - 1);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+            } else {
+                // Break at layer N: layers 1 to N-1 are strong, N+ are weak
+                const floor = breakPoint - 1;
                 
-                // Next layer's ceiling is this layer's score
-                ceiling = data[dim][layer];
+                // Generate strong layers (1 to floor)
+                let ceiling = 4.2 + Math.random() * 0.8; // 4.2-5.0
+                for (let layer = 1; layer <= floor; layer++) {
+                    // Strong but with slight natural decay
+                    const minScore = Math.max(3.6, ceiling - 0.5);
+                    const score = minScore + Math.random() * (ceiling - minScore);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
+                
+                // Break layer itself - must be below threshold but capped by floor
+                const breakCeiling = Math.min(data[dim][floor], 3.4);
+                const breakScore = 1.5 + Math.random() * (breakCeiling - 1.5);
+                data[dim][breakPoint] = Math.round(breakScore * 100) / 100;
+                ceiling = data[dim][breakPoint];
+                
+                // Layers above break - cascade down from break
+                for (let layer = breakPoint + 1; layer <= 8; layer++) {
+                    const score = 1 + Math.random() * (ceiling - 1);
+                    data[dim][layer] = Math.round(score * 100) / 100;
+                    ceiling = data[dim][layer];
+                }
             }
         }
     }
@@ -406,19 +479,18 @@
             if (dimData[layer] >= THRESHOLD) {
                 floor = layer;
             } else {
-                if (floor > 0 && breakPoint === null) {
+                if (breakPoint === null) {
                     breakPoint = layer;
                 }
             }
         }
         
-        // If no break found but we have a floor, check if everything above is strong
+        // If no break found but we have a floor, all strong
         if (breakPoint === null && floor > 0) {
-            // All strong from floor up
             return { floor: 8, break: null };
         }
         
-        // If floor is 0, check if L1 itself is weak
+        // If floor is 0, L1 itself is weak
         if (floor === 0) {
             return { floor: 0, break: 1 };
         }
